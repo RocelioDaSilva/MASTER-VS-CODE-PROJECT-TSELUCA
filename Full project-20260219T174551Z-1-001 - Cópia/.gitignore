@@ -18,25 +18,20 @@ env/
 *.synctex.gz
 *.synctex
 %OUTDIR%/
-
 # Jupyter
 .ipynb_checkpoints/
-
 # Node
 node_modules/
 npm-debug.log*
 package-lock.json
-
 # OS
 .DS_Store
 Thumbs.db
-
 # IDEs
 .vscode/
 .idea/
-
 # Environment
 .env
 .env.*
-
 # Misc
+*.pdf

@@ -17,14 +17,12 @@ pip-wheel-metadata/
 .pytest_cache/
 .mypy_cache/
 .smart-env/
-
 # ── Build outputs ────────────────────────────────────────────────────────────
 dist/
 build/
 *.class
 *.o
 *.so
-
 # ── OS / Editor ──────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
@@ -32,16 +30,14 @@ desktop.ini
 *.lnk
 ~$*
 .obsidian/cache
-
 # ── Logs & temp ──────────────────────────────────────────────────────────────
 *.tmp
 *.crdownload
 *.synctex(busy)
 *.swp
-
 # ── Syncthing ────────────────────────────────────────────────────────────────
 .stfolder/
 .stversions/
-
 # ── Archives ─────────────────────────────────────────────────────────────────
 workspace-archive.zip
+*.zip
