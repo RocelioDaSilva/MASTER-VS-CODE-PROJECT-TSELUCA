@@ -1,0 +1,16 @@
+.git/
+.venv/
+venv/
+node_modules/
+repo_admin/reorg_archives/
+.vscode/
+__pycache__/
+*.pyc
+*.log
+*.aux
+*.fls
+*.fdb_latexmk
+*.toc
+*.syncthing/
+.DS_Store
+Thumbs.db

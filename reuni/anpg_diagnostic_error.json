@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-02-25T00:05:27.077Z",
+  "error": "Navigation timeout of 15000 ms exceeded",
+  "stack": "TimeoutError: Navigation timeout of 15000 ms exceeded\n    at new Deferred (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\util\\Deferred.js:60:34)\n    at Deferred.create (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\util\\Deferred.js:21:16)\n    at new LifecycleWatcher (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\cdp\\LifecycleWatcher.js:73:60)\n    at CdpFrame.goto (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\cdp\\Frame.js:149:29)\n    at CdpFrame.<anonymous> (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\util\\decorators.js:109:27)\n    at CdpPage.goto (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\api\\Page.js:580:43)\n    at diagnoseANPG (C:\\Users\\rocel\\OneDrive\\Desktop\\reuni\\ANPG_DIAGNOSTIC.js:21:33)"
+}

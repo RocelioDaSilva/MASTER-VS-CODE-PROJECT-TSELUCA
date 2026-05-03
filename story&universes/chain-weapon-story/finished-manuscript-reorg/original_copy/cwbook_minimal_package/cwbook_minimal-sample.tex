@@ -1,0 +1,17 @@
+
+\documentclass{cwbook_minimal}
+
+\begin{document}
+\ENV{env-top.png}{env-bottom.png}
+\POV{\glyphAisen}{Aisen}
+
+% --- Workflow: replace chapter text in `chapter01.tex` ---
+% 1) Edit `chapter01.tex` with your chapter text (one chapter per file is recommended).
+% 2) Place POV changes at the start of the section with `\POV{<glyph>}{<Name>}`.
+% 3) Switch scene strips using `\ENV{top-file.png}{bottom-file.png}` when the environment changes.
+% 4) Compile with `xelatex` or your LaTeX editor in the package folder.
+
+% The chapter content is pulled from `chapter01.tex` so you can replace that file safely.
+\input{chapter01.tex}
+
+\end{document}

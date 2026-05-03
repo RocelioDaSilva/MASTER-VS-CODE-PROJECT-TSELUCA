@@ -1,0 +1,74 @@
+%! TEX program = xelatex
+\documentclass[12pt, twoside, openright]{book}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% PACKAGES & SETUP
+% ═══════════════════════════════════════════════════════════════════════════
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{Cambria}
+\newfontfamily{\titlefont}{Garamond}
+\newfontfamily{\ornamentalfont}{Georgia}
+
+% Colors
+\usepackage[dvipsnames, svgnames]{xcolor}
+\definecolor{parchment}{HTML}{f5ede0}
+\definecolor{parchmentdark}{HTML}{e8d9c4}
+\definecolor{ink}{HTML}{1a1410}
+\definecolor{inkfaded}{HTML}{3d3028}
+\definecolor{sepia}{HTML}{7a5c3a}
+\definecolor{sepiafade}{HTML}{b89070}
+\definecolor{sepiapale}{HTML}{d4b896}
+\definecolor{gold}{HTML}{c8a84b}
+\definecolor{goldlight}{HTML}{e5c97a}
+\definecolor{chapterstripe}{HTML}{2a1f14}
+\definecolor{stripeaccent}{HTML}{8b6840}
+\definecolor{border}{HTML}{9a7a58}
+
+% Page Layout
+\usepackage[inner=1.2in, outer=0.8in, top=0.8in, bottom=0.8in]{geometry}
+
+% Typography and spacing
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage{lettrine}
+\usepackage{setspace}
+\setstretch{1.85}
+
+% Graphics
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning}
+\usepackage{fancyhdr}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% PAGE STYLING
+% ═══════════════════════════════════════════════════════════════════════════
+
+% Page colors
+\pagecolor{parchment}
+\color{inkfaded}
+
+% Custom page style
+\fancypagestyle{bookpage}{%
+  \fancyhf{}
+  \fancyhead[LE]{{\ornamentalfont\fontsize{9}{9}\selectfont\color{sepiapale}\thepage}}
+  \fancyhead[RO]{{\ornamentalfont\fontsize{9}{9}\selectfont\color{sepiapale}\thepage}}
+  \fancyfoot[C]{{\titlefont\fontsize{10}{10}\selectfont\color{sepiapale}\itshape Embers of the Forsaken Keep}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.5pt}
+  \renewcommand{\footrule}{\color{border}\vskip-\footruleskip\hrule width\headwidth height 0.5pt\vskip\footruleskip}
+}
+
+\pagestyle{bookpage}
+
+% Add chapter stripe to left of pages via TikZ
+\usepackage{tikzpagenodes}
+\AtBeginShipout{%
+  \AtBeginShipoutUpperLeft{%
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[chapterstripe] (current page.north west) rectangle ([xshift=0.2in]current page.south west);
+      \draw[stripeaccent, line width=2pt] ([xshift=0.2in]current page.north west) -- ([xshift=0.2in]current page.south west);
+    \end{tikzpicture}%
+  }%
+}

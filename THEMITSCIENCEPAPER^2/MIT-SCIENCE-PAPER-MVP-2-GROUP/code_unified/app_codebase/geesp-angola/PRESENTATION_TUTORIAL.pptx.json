@@ -1,0 +1,88 @@
+{
+  "slides": [
+    {
+      "title": "How to Present Your SOL Project",
+      "content": [
+        "A step-by-step guide based on the GEESP-Angola project and SOL.tex manuscript.",
+        "Presenter: [Your Name]",
+        "Affiliation: [Your Institution]",
+        "Date: [Presentation Date]"
+      ]
+    },
+    {
+      "title": "Problem Statement",
+      "content": [
+        "Why is rural electrification in Angola important?",
+        "Key statistics: electrification rates, SDG7 context"
+      ]
+    },
+    {
+      "title": "Project Objective",
+      "content": [
+        "What is GEESP-Angola?",
+        "What gap does it fill?"
+      ]
+    },
+    {
+      "title": "Methodology Overview",
+      "content": [
+        "MCDA-GIS, AHP, and LCOE explained",
+        "[Insert flowchart of your framework]"
+      ]
+    },
+    {
+      "title": "Data and Criteria",
+      "content": [
+        "Data layers and criteria used",
+        "[Insert table or icons for each criterion]"
+      ]
+    },
+    {
+      "title": "Site Selection Process",
+      "content": [
+        "How were sites prioritized? (weighted overlay, clustering)",
+        "[Insert map of study area with priority zones]"
+      ]
+    },
+    {
+      "title": "Results",
+      "content": [
+        "Key findings: 3 priority zones, LCOE estimates",
+        "[Insert charts, maps, or summary tables]"
+      ]
+    },
+    {
+      "title": "Validation and Impact",
+      "content": [
+        "Model validation methods",
+        "Projected impacts: health, education, economy",
+        "[Insert before/after or impact infographics]"
+      ]
+    },
+    {
+      "title": "Risk Mitigation and Sustainability",
+      "content": [
+        "How does your approach address common project risks?",
+        "[Insert risk matrix or checklist]"
+      ]
+    },
+    {
+      "title": "Policy and Replicability",
+      "content": [
+        "How can this be scaled or replicated elsewhere?"
+      ]
+    },
+    {
+      "title": "Conclusion and Recommendations",
+      "content": [
+        "Main takeaways and next steps"
+      ]
+    },
+    {
+      "title": "Q&A",
+      "content": [
+        "Questions?"
+      ]
+    }
+  ]
+}

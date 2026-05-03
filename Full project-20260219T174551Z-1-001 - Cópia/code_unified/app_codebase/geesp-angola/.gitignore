@@ -1,0 +1,212 @@
+# ============================================================================
+# PYTHON
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================================
+venv/
+ENV/
+env/
+.venv/
+virtualenv/
+.env.local
+.env.*.local
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.directory
+*.iml
+.classpath
+.c9/
+*.launch
+.env.local
+.env.*.local
+
+# ============================================================================
+# TESTING & COVERAGE
+# ============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nose*
+cover/
+*.cover
+.hypothesis/
+
+# ============================================================================
+# TYPE CHECKING
+# ============================================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+.ipynb_checkpoints/
+# Note: Keep *.ipynb for demo notebooks, but don't track local changes
+
+# ============================================================================
+# DATA & CACHE
+# ============================================================================
+data/raw/
+data/downloads/
+data/cache/
+data/tmp/
+*.cache
+*.pkl
+*.pickle
+*.parquet
+*.hdf5
+.cache/
+
+# Note: data/processed/ IS included in repo (demonstration maps)
+
+# ============================================================================
+# OUTPUTS & LOGS
+# ============================================================================
+outputs/
+results/
+logs/
+*.log
+*.log.*
+geesp-angola.log
+compilation.log
+debug.log
+
+# ============================================================================
+# LARGE FILES (should use Git LFS or external storage)
+# ============================================================================
+*.tif
+*.tiff
+*.geotiff
+*.h5
+*.hdf5
+*.nc
+*.netcdf
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.tgz
+*.gzip
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+temp/
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.#*
+*.pyo
+
+# ============================================================================
+# GEE EXPORTS & CREDENTIALS
+# ============================================================================
+geesp-angola-exports/
+ee-exports/
+credentials.json
+gee-key.json
+credentials/
+*credentials*
+*token*
+
+# ============================================================================
+# CONFIGURATION (LOCAL & SENSITIVE)
+# ============================================================================
+.env
+.env.local
+.env.*.local
+local_config.json
+config.local.json
+settings.local.py
+
+# ============================================================================
+# BUILD & PACKAGE FILES
+# ============================================================================
+*.egg-info/
+dist/
+build/
+*.wheel
+*.tar.gz
+*.zip
+
+# ============================================================================
+# DATABASE FILES
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.dbf
+
+# ============================================================================
+# STATIC & MEDIA (if using web framework)
+# ============================================================================
+/staticfiles/
+/media/
+/static/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================================================
+# CONTAINER & CLOUD
+# ============================================================================
+.dockerignore
+docker-compose.override.yml
+.env.docker
+.env.k8s
+
+# ============================================================================
+# MONITORING & METRICS
+# ============================================================================
+prometheus_data/
+grafana_data/
+*.prom

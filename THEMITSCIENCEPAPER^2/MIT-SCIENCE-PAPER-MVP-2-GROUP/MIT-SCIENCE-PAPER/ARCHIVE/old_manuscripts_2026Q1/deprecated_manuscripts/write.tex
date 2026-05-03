@@ -1,0 +1,208 @@
+﻿% DEPRECATED: This is an older draft. The canonical manuscript is in:
+% Full project/01_Science/manuscript/SOL.tex
+% This file is kept for reference only.
+
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=2.5cm}
+\onehalfspacing
+
+\begin{document}
+
+% TÃTULO E AUTORES
+\title{Um Framework Multi-CritÃ©rio para LocalizaÃ§Ã£o de Sistemas Solares ComunitÃ¡rios em Angola: Estudo de Caso da ProvÃ­ncia de [Nome]}
+\author{
+    Nome do Autor 1\thanks{InstituiÃ§Ã£o, email} \and 
+    Nome do Autor 2\thanks{InstituiÃ§Ã£o, email} \and 
+    Nome do Autor 3\thanks{InstituiÃ§Ã£o, email}
+}
+\date{\today}
+\maketitle
+
+% RESUMO E PALAVRAS-CHAVE
+\begin{abstract}
+    \textbf{Contexto:} [Escreva aqui o contexto em 2-3 linhas] \\
+    \textbf{Objetivo:} [Objetivo claro em 1-2 linhas] \\
+    \textbf{Metodologia:} [DescriÃ§Ã£o metodolÃ³gica concisa] \\
+    \textbf{Resultados:} [Principais resultados encontrados] \\
+    \textbf{ConclusÃµes:} [ConclusÃ£o principal e implicaÃ§Ãµes] \\
+    \textbf{Palavras-chave:} energia solar comunitÃ¡ria; sistemas de informaÃ§Ã£o geogrÃ¡fica; anÃ¡lise multi-critÃ©rio; planeamento energÃ©tico; Angola.
+\end{abstract}
+
+\newpage
+
+% ÃNDICE
+\tableofcontents
+\newpage
+
+% SEÃ‡ÃƒO 1: INTRODUÃ‡ÃƒO
+\section{IntroduÃ§Ã£o}
+\subsection{Contexto Global e RelevÃ¢ncia do Problema}
+\subsubsection{O Desafio do Acesso Ã  Energia em Ãfrica}
+\subsubsection{Os Objetivos de Desenvolvimento SustentÃ¡vel e a Energia}
+
+\subsection{Contexto Nacional Angolano}
+\subsubsection{Panorama EnergÃ©tico de Angola}
+\subsubsection{Desafios EspecÃ­ficos da EletrificaÃ§Ã£o Rural}
+
+\subsection{RevisÃ£o da Literatura}
+\subsubsection{Sistemas Solares ComunitÃ¡rios: ExperiÃªncias Internacionais}
+\subsubsection{MÃ©todos de LocalizaÃ§Ã£o de Infraestruturas EnergÃ©ticas}
+\subsubsection{Lacunas na Literatura EspecÃ­fica para Angola}
+
+\subsection{Objetivos do Estudo}
+\subsubsection{Objetivo Principal}
+\subsubsection{Objetivos EspecÃ­ficos}
+
+\subsection{Estrutura do Artigo}
+
+% SEÃ‡ÃƒO 2: ENQUADRAMENTO TEÃ“RICO
+\section{Enquadramento TeÃ³rico}
+\subsection{Conceito de Sistemas Solares ComunitÃ¡rios}
+\subsubsection{DefiniÃ§Ã£o e CaracterÃ­sticas}
+\subsubsection{Modelos de NegÃ³cio e GovernanÃ§a}
+
+\subsection{AnÃ¡lise Multi-CritÃ©rio para DecisÃ£o Espacial}
+\subsubsection{Fundamentos da AnÃ¡lise Multi-CritÃ©rio}
+\subsubsection{AplicaÃ§Ã£o em Planeamento EnergÃ©tico}
+
+\subsection{Sistemas de InformaÃ§Ã£o GeogrÃ¡fica para Energias RenovÃ¡veis}
+\subsubsection{Ferramentas e TÃ©cnicas Relevantes}
+
+% SEÃ‡ÃƒO 3: METODOLOGIA
+\section{Metodologia}
+\subsection{Ãrea de Estudo}
+\subsubsection{JustificaÃ§Ã£o da SeleÃ§Ã£o}
+\subsubsection{CaracterizaÃ§Ã£o da RegiÃ£o}
+
+\subsection{Framework MetodolÃ³gico}
+\subsubsection{VisÃ£o Geral do Processo}
+
+\subsection{CritÃ©rios de SeleÃ§Ã£o e Fontes de Dados}
+\subsubsection{CritÃ©rios TÃ©cnicos}
+\begin{itemize}
+    \item IrradiaÃ§Ã£o Solar
+    \item Topografia e InclinaÃ§Ã£o
+    \item Proximidade de Infraestruturas
+\end{itemize}
+
+\subsubsection{CritÃ©rios SocioeconÃ´micos}
+\begin{itemize}
+    \item Densidade Populacional
+    \item Ãndices de Pobreza
+    \item Atividades EconÃ´micas Locais
+\end{itemize}
+
+\subsubsection{CritÃ©rios Ambientais}
+\begin{itemize}
+    \item Uso do Solo
+    \item Ãreas Protegidas
+    \item Impacto Visual
+\end{itemize}
+
+\subsubsection{Fontes de Dados e PrÃ©-processamento}
+
+\subsection{PonderaÃ§Ã£o dos CritÃ©rios}
+\subsubsection{MÃ©todo de DeterminaÃ§Ã£o de Pesos}
+\subsubsection{Matriz de ComparaÃ§Ã£o Par a Par}
+
+\subsection{AnÃ¡lise em Sistema de InformaÃ§Ã£o GeogrÃ¡fica}
+\subsubsection{Processamento Espacial}
+\subsubsection{AnÃ¡lise de SobreposiÃ§Ã£o}
+
+\subsection{AvaliaÃ§Ã£o de Tecnologias}
+\subsubsection{OpÃ§Ãµes TecnolÃ³gicas Consideradas}
+\subsubsection{ParÃ¢metros de ComparaÃ§Ã£o}
+
+\subsection{LimitaÃ§Ãµes MetodolÃ³gicas}
+
+% SEÃ‡ÃƒO 4: RESULTADOS
+\section{Resultados}
+\subsection{CaracterizaÃ§Ã£o da Ãrea de Estudo}
+\subsubsection{AnÃ¡lise dos Dados Base}
+
+\subsection{Mapas de AptidÃ£o por CritÃ©rio Individual}
+\subsubsection{Mapa de Potencial Solar}
+\subsubsection{Mapa de Densidade Populacional}
+\subsubsection{Mapa de Acesso Ã  Rede ElÃ©trica}
+\subsubsection{Mapa de Compatibilidade de Uso do Solo}
+
+\subsection{Mapa de AptidÃ£o Integrada}
+\subsubsection{Zonas de Prioridade Alta, MÃ©dia e Baixa}
+\subsubsection{AnÃ¡lise das Ãreas PrioritÃ¡rias}
+
+\subsection{AvaliaÃ§Ã£o Comparativa de Tecnologias}
+\subsubsection{Tabela Comparativa de OpÃ§Ãµes TecnolÃ³gicas}
+\subsubsection{RecomendaÃ§Ãµes por Tipo de Zona}
+
+\subsection{Sensibilidade da AnÃ¡lise}
+\subsubsection{AnÃ¡lise de Sensibilidade dos Pesos}
+
+% SEÃ‡ÃƒO 5: DISCUSSÃƒO
+\section{DiscussÃ£o}
+\subsection{InterpretaÃ§Ã£o dos Resultados Principais}
+\subsubsection{Significado das Zonas PrioritÃ¡rias Identificadas}
+\subsubsection{Fatores Determinantes na SeleÃ§Ã£o}
+
+\subsection{ComparaÃ§Ã£o com Estudos Similares}
+\subsubsection{SemelhanÃ§as e DiferenÃ§as com Outros Contextos}
+\subsubsection{Especificidades do Caso Angolano}
+
+\subsection{ImplicaÃ§Ãµes PrÃ¡ticas}
+\subsubsection{Para PolÃ­ticas PÃºblicas}
+\subsubsection{Para Investidores e Projetistas}
+\subsubsection{Para as Comunidades Locais}
+
+\subsection{LimitaÃ§Ãµes do Estudo}
+\subsubsection{LimitaÃ§Ãµes de Dados}
+\subsubsection{LimitaÃ§Ãµes MetodolÃ³gicas}
+\subsubsection{LimitaÃ§Ãµes de Escopo}
+
+\subsection{SugestÃµes para InvestigaÃ§Ã£o Futura}
+\subsubsection{ExpansÃ£o GeogrÃ¡fica}
+\subsubsection{Refinamento MetodolÃ³gico}
+\subsubsection{AnÃ¡lises Complementares}
+
+% SEÃ‡ÃƒO 6: CONCLUSÃ•ES
+\section{ConclusÃµes}
+\subsection{Resumo das Principais Descobertas}
+\subsection{ContribuiÃ§Ãµes do Estudo}
+\subsubsection{ContribuiÃ§Ãµes TeÃ³ricas}
+\subsubsection{ContribuiÃ§Ãµes PrÃ¡ticas}
+
+\subsection{RecomendaÃ§Ãµes Finais}
+\subsubsection{RecomendaÃ§Ãµes para AÃ§Ã£o Imediata}
+\subsubsection{RecomendaÃ§Ãµes para PolÃ­ticas de Longo Prazo}
+
+\subsection{ReflexÃ£o Final}
+
+% AGRADECIMENTOS
+\section*{Agradecimentos}
+Os autores agradecem... [Aqui vÃ£o os agradecimentos especÃ­ficos]
+
+% REFERÃŠNCIAS
+\begin{thebibliography}{99}
+\bibitem{} [Sua primeira referÃªncia]
+\bibitem{} [Sua segunda referÃªncia]
+\end{thebibliography}
+
+% APÃŠNDICES
+\appendix
+\section{Dados e Metodologia Complementar}
+\subsection{DescriÃ§Ã£o Detalhada dos Dados}
+\subsection{Scripts de Processamento em SIG}
+\subsection{QuestionÃ¡rio de Especialistas (se aplicÃ¡vel)}
+
+\end{document}

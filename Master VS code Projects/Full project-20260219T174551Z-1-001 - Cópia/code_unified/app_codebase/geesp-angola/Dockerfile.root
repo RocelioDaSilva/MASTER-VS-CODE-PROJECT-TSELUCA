@@ -1,0 +1,33 @@
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1
+ENV PIP_NO_CACHE_DIR=1
+
+# Install build dependencies, create app user, then remove apt lists in one layer
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       build-essential \
+       gcc \
+       git \
+       ca-certificates \
+    && useradd --create-home --shell /bin/bash appuser \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Install Python dependencies first (cacheable layer)
+COPY requirements.txt /app/requirements.txt
+RUN python -m pip install --upgrade pip \
+    && pip install --no-cache-dir -r /app/requirements.txt
+
+# Copy project files (use .dockerignore to reduce context)
+COPY . /app
+
+# Ensure correct permissions and run as non-root
+RUN chown -R appuser:appuser /app
+USER appuser
+
+EXPOSE 8501
+
+# Default: run Streamlit if STREAMLIT_APP defined, otherwise run tests
+CMD ["bash", "-lc", "if [ -n \"$STREAMLIT_APP\" ] && [ -f \"$STREAMLIT_APP\" ]; then streamlit run \"$STREAMLIT_APP\" --server.port=8501 --server.address=0.0.0.0; else python -m pytest \"Coding parts/geesp-angola/tests\" -q; fi"]

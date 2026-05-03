@@ -1,0 +1,511 @@
+
+--- PAGE 21 ---
+Capítulo2.Desenvolvimento 20
+2.3 P ropriedadesFundamentaisdeRochaeFluido
+Paraconstruirqualquermodelodereservatório — pormaissimplesqueseja —, épreciso
+saberduascoisasfundamentaissobrearocha:quantoespaçoelatemdisponívelparaarmazenar
+fluidos,ecomquefacilidadeessesfluidosconseguemsemoverdentrodela.Essasduasperguntas,
+aparentementesimples,deramorigemadécadasdeinvestigaçãolaboratorialedecampoque
+constituemabasedapetrofísica(????).
+2.3.1 P orosidadeePermeabilidade
+Aporosidade(ϕ) éafraçãodovolumetotaldarochaocupadaporespaçosvazios:
+ϕ=Vp
+Vt=Vt−Vs
+Vt(2.2)
+Adistinçãoentreporosidadetotaleporosidadeefetiva— oespaçoporalinterconectado,
+acessívelaofluido — foiumrefinamentoconceitualfundamentaldesenvolvidonasdécadasde
+1920e1930.Umarochapodesermuitoporosaeaindaassimimprodutiva,seos seusporosnão
+estiveremconectadosentresi(??).
+Apermeabilidadequantificaafacilidadecomquefluidosatravessamomeioporoso
+sobaaçãodeumgradientedepressão.ExpressaemDarcyouemmilidarcy(mD),ela é
+umapropriedadeintrinsecamenteligada àgeometriadoespaçoporal —tamanho,formatoe
+conectividadedosporos.Reservatóriosconvencionaisapresentampermeabilidadestípicasentre
+1mDealgunsDarcies;reservatóriosdeshalepodemapresentarvaloresinferioresa0,001mD
+(??).
+ImagemdeMicroscopiaEletrônicadeVarredura(MEV)
+dearenitooucarbonato,mostrandoaestruturadosporos
+eageometriadoespaçoporalquecontrolaporosidade
+epermeabilidadedarochareservatório.
+Sugestão:“SandstoneSEMporestructure” – MDPIOpenAccess
+ouWikimediaCommons
+Figura6 –Imagemdemicroscopiaderochareservatório:aestruturamicroscópicadosporoscontrola
+diretamenteaspropriedadespetrofísicas(porosidadeepermeabilidade)quedeterminama
+capacidadeprodutivadoreservatório.
+Fonte:[INSERIRREFERÊNCIADAIMAGEMREAL]
+Oconceitodepermeabilidaderelativa,formuladoporLeveretteLewis(1941), descreve
+ocomportamentodecadafasefluida(óleo, águaegás)quandoduasoumaisfasescoexistem
+nosporos.Ascurvasdepermeabilidaderelativasãodependentesdasaturaçãodecadafaseeda
+históriademolhabilidadedarocha,sendoindispensáveisparaamodelagemdodeslocamento
+multifásico(??).
+
+--- PAGE 22 ---
+Capítulo2.Desenvolvimento 21
+2.3.2 A nálisePVTeClassificaçãodosFluidosdeReservatório
+Temperatura(T)Pressão(P)
+PontocríticoCondensado
+retrógrado Líquido Gás
+RegiãobifásicaTreserv.
+Figura7 –DiagramadefasesPVTesquemático,ilustrandoaenvoltóriadefases,opontocríticoea
+regiãodecondensadoretrógrado.Aposiçãodatemperaturadereservatórioemrelação à
+envoltóriadeterminaotipodefluidoeaestratégiadeproduçãoadequada.
+Fonte:Adaptadode??).
+Aspropriedadesdosfluidosdereservatóriovariamsignificativamentecomapressãoea
+temperatura,edevemserdeterminadasporanálisesPVT.Aobrade(??)consolidou-secomoa
+referênciadefinitivaparacorrelaçãoeprediçãodessaspropriedades,reunindodécadasdedados
+experimentaisdecamposaoredordomundo.
+Combase nodiagramaPVT(Figura7),osfluidosforamclassificadosemcincocategorias
+(????):óleonegro,óleovolátil,gáscondensadoretrógrado,gás úmidoegásseco.Cadacategoria
+exigeumaestratégiadedesenvolvimentoeinstalaçõesdesuperfícieespecíficas,tornandoa
+caracterizaçãoPVTumpassoanterioreobrigatórioaqualquerplanodedesenvolvimentode
+campo.
+2.4 C onsolidaçãoCientífica:OSéculoXX
+OséculoXX é,semexagero,aeradeourodaEngenhariadeReservatórios.Asduas
+guerrasmundiaiseaindustrializaçãoaceleradacriaramumademandaenergéticasemprecedentes,
+eopetróleoestavanocentrodetudo:moviatanques,aviões,naviosefábricas.Essapressão —
+económica,políticaeestratégica — comprimiudécadasdedesenvolvimentocientíficonormal
+empoucosanosetransformouaengenhariadereservatóriosdeumapráticaartesanalemuma
+ciênciarigorosa(????).
+2.4.1 M uskateaSistematizaçãodaEngenhariadeReservatórios
+SeDarcydeu àdisciplinaasuaequaçãofundamental,MorrisMuskat(1900–1998)
+deu-lheasuaestruturateóricacompleta.Comformaçãoemfísicateóricaeumacapacidade
+analíticaextraordinária,Muskatabordouosproblemasdereservatórioscomorigormatemático
+deumfísicoeasensibilidadepráticadeumengenheirodecampo.
+
+--- PAGE 23 ---
+Capítulo2.Desenvolvimento 22
+EmTheFlowofHomogeneousFluidsThroughPorousMedia(1937)eemPhysical
+PrinciplesofOilProduction(1949),MuskatintegrouaLeide Darcycomasequaçõesdecontinu-
+idadeedeestadodosfluidos,estabelecendoasbasesmatemáticasdosmecanismosdeprodução
+edarecuperaçãosecundária(??).Nessasobras,oengenheirodeixoudeserumempiristaque
+“sabiaoquefuncionava”epassouaserumcientistacapazdepreverocomportamentodeum
+reservatórioantesdeperfurarum únicopoçonovo.
+2.4.2 M ecanismosdeProduçãodeReservatórios
+UmadascontribuiçõesmaispráticasdoséculoXXfoiaidentificaçãosistemáticados
+mecanismosnaturaisqueimpulsionamosfluidosdoreservatórioemdireçãoaopoço.Compreen-
+deressesmecanismos écompreenderaenergiaqueopróprioreservatóriocarrega — ecomo
+aproveitá-ladeformainteligente(??).
+Oscincomecanismosprimáriosidentificadossão:
+i.Expansãodefluidoerocha:aenergiaarmazenadasobaformadecompressibilidadedo
+óleo,da águaconnataedarocha éliberada àmedidaqueapressãodeclina. Éomecanismo
+maissimples — etambémomenoseficienteemtermosderecuperação;
+ii.Gásemsolução(solutiongasdrive):abaixodapressãodebolha,ogásdissolvidose
+libertaeexpande,empurrandoo óleoemdireçãoaopoço.Aeficiênciadeteriora-sequando
+asaturaçãodegáslivresuperaovalorcrítico,poisogáscomeçaafluirpreferencialmente;
+iii.Capadegás(gascapdrive):aexpansãodeumacapadegáslivrenotopodoreservatório
+auxilianaexpulsãodo óleo,comeficiênciasuperioraogásemsolução;
+iv.Influxode água(waterdrive):aexpansãodoaquíferoassociadodeslocao óleoparaos
+poços — tipicamenteomecanismodemaiorfatorderecuperação,podendoatingir50a
+70%doOOIP;
+v.Segregaçãogravitacional:adiferençadedensidadesentregás, óleoe águainduzsepara-
+çãoverticalnatural,quepodeseraproveitadaemestratégiasdegravitydrainage.
+Naprática,amaioriadosreservatóriosoperasobinfluênciacombinadadedoisoumais
+mecanismos,eidentificaromecanismodominante édecisivoparaaestratégiaderecuperação
+secundária(????).
+2.4.3 O MétododoBalançodeMateriais
+Háumaelegânciagenuínanométododobalançodemateriais:aideiadeque épossível
+“pesar”umreservatório — estimaroseuvolumeoriginalde óleoeidentificarosseusmecanismos
+deprodução — usandoapenasosdadoshistóricosdepressãoeprodução,semabrirum único
+
+--- PAGE 24 ---
+Capítulo2.Desenvolvimento 23
+metroquadradoderocha.Trata-sedeumdosresultadosmaispoderosos eduradourosdetodaa
+disciplina(????).
+Fundamentadonoprincípiodeconservaçãodemassa,aequaçãogeraldobalançode
+materiaisparaumreservatóriode óleocomcapadegáseaquífero é(??):
+Np[Bo+(Rp−Rs)Bg]+WpBw=
+N
+(Bo−Boi)+mBoiBg
+Bgi−1
++(1+m)BoicwSwi+cf
+1−Swi∆P
++WeBw(2.3)
+Oladoesquerdorepresentaovolumetotaldefluidosproduzidos;oladodireito,as
+fontesdeenergiaqueosexpulsaram.Areformulaçãográficade(??)simplificouenormementea
+aplicaçãoprática:aorepresentaraequaçãocomoumarelaçãolinearentrefunçõesdosdados
+deproduçãoepressão,osautorestornarampossívelaidentificaçãográficadosmecanismos
+dominanteseodiagnósticodeinconsistênciasnosdados — umaabordagemqueaindahoje é
+indispensávelparaverificaçãodemodelosdesimulação(????).
+2.4.4 A nálisedePressãoTransiente
+Imaginepoder “enxergar”dentrodeumreservatórioacentenasdemetrosdeprofundi-
+dade,identificarfalhasgeológicas,zonasdealtapermeabilidadeelimitesestruturais — usando
+apenasdadosdepressãomedidosemsuperfície. Éexatamenteissoqueaanálisedepressão
+transientepermitefazer(??).
+OmétododebuildupdeHorner(1951)foipioneiroaopermitiraestimativadepermeabi-
+lidadeedeskinapartirdecurvaslogarítmicasderestauraçãodepressão.Arevoluçãodefinitiva
+nessa áreaveioem1983comaintroduçãodométododaderivadadepressãopor(??):a
+análisedaderivadareveloucaracterísticasdoreservatório — falhas,zonasdealtapermeabilidade,
+limitesexternos,duplaporosidade — queeraminvisíveisnascurvasconvencionais.Esseavanço
+transformoudefinitivamenteaanálisedepressãoemumatécnicadediagnósticodereservatórios
+deprecisãocirúrgica(??).
+2.4.5 A ModelagemComputacionalcomoRupturaParadigmática
+NasegundametadedoséculoXX,achegadadocomputadordigitalmudouasregrasdo
+jogoparasempre.Derepente,erapossívelresolversistemasdeequaçõesdiferenciaisparciais
+emgeometriastridimensionaiscompropriedadesvariáveis — algoabsolutamente inviávelpara
+umserhumanocompapelecaneta.Asimulaçãocomputacionaldereservatórioshaviachegado
+(????).
+
+--- PAGE 25 ---
+Capítulo2.Desenvolvimento 24
+Poço
+AltakMédiakBaixak
+Griddediscretização –cadacélulaarmazenaϕ,k,So,P
+Figura8 –Representaçãodeumamalhadesimulaçãonuméricacomheterogeneidadedepermeabilidade.
+Cadacélulaarmazenavaloresdeporosidade,permeabilidade,saturaçãoepressão,
+constituindoaunidadecomputacionalbásicadosimulador.Adiversidadedecoresilustraa
+variaçãoespacialdepermeabilidade — arealidadedequalquercamporeal.
+Fonte:Elaboraçãoprópria.
+Aequaçãodedifusividade — basedosprimeirossimuladores,derivadadacombinação
+daLeideDarcycomaequaçãodecontinuidade — é (??):
+∇2P=ϕµct
+k∂P
+∂t(2.4)
+Aobrafundamentalde(??)estabeleceuosmétodosnuméricosdediscretizaçãopordife-
+rençasfinitas;(??)sistematizouosmétodosdevolumesfinitosparageometriasmaiscomplexas.
+Asprimeirasversõescomerciaisdesimuladoressurgiramnosanos1970–1980,esuadifusãore-
+presentouumamudançadefinitivanapráticaprofissional:oengenheirodereservatóriosganhou,
+pelaprimeiravez,acapacidadedepreverofuturodeumcampocomdécadasdeantecedência.
+Interfacedesoftwaredesimulaçãonuméricadereservatórios
+(ex.:Eclipse,CMGIMEX,tNavigatorouPetrelRE),
+mostrandomodelo3Ddeumcampocomdistribuição
+desaturaçãode óleoapóssimulação.
+Sugestão:materialeducacionaldofabricante(SLB/Schlumberger,
+CMG,RockFlowDynamics) –verificarlicençadeuso.
+Figura9 –Interfacedesimulaçãonuméricadereservatóriomoderno:omodelotridimensionalpermite
+visualizaradistribuiçãodesaturação,pressãoefluxoemumcampo inteiro,integrandodados
+geológicos,petrofísicosedeproduçãoemuma únicaplataformadeanálise.
+Fonte:[INSERIRREFERÊNCIADOSOFTWARE/IMAGEMREAL]
+
+--- PAGE 26 ---
+Capítulo2.Desenvolvimento 25
+2.5 A EraDigitaleosDesafiosContemporâneos
+“Omaiorreservatóriodoséculo
+XXInão édepetróleo — é de
+dados.Equemsouberrefiná-los
+teráa maiorvantagemcompetitiva
+dahistória. ”
+—Paráfrasedeperspectivada
+indústria4.0
+OiníciodoséculoXXIintroduziuumnovoparadigmaparaaEngenhariadeReservatórios,
+caracterizadopelaconvergênciaentremodelagemfísicaclássica,monitoramentoemtemporeal
+porsensoresdigitaisetécnicasdeaprendizadodemáquina.Essaconvergêncianãoapenas
+aumentaaprecisãodasanálises — elatransformaanaturezadotrabalhodoengenheiro,que
+deixadeserumanalistadedadoshistóricosepassaaoperaremumambientededecisãocontínua
+eorientadapordadosemtemporeal(????).
+2.5.1 R ecuperaçãoAvançadadePetróleo(EOR)
+MétodosEOR
+Térmico
+Vapor
+Combustão
+insituMiscível
+CO2
+N2
+HCenriquecidoQuímico
+Polímero
+Surfactante
+AlcalinoMicrobiológico
+Bio-surfactante
+Biopolímero
+Fatorderecuperaçãoadicionaltípico:+5%a+25%doOOIP(dependendodométodoedocampo)
+Figura10 –CategoriasdemétodosdeRecuperaçãoAvançadadePetróleo(EOR).Aseleçãodométodo
+adequadodependedaspropriedadesdofluidoedarocha,dascondiçõesdepressãoe
+temperaturadoreservatório,edaanáliseeconómicadocampo.
+Fonte:Adaptadode??).
+Emcamposmaduros,afraçãode óleonãorecuperadapodesuperar60%doOOIP —
+umenormepotencial économicoeestratégico àesperadetecnologiaadequada.Osmétodos
+EORvisammobilizaresse óleoresidualmedianteaalteraçãodaspropriedadesdosfluidosoudo
+escoamentonoreservatório(????):
+•MétodosTérmicos:injeçãodevapor(especialmenteeficazpara óleospesados,cuja
+viscosidade édrasticamentereduzidacomoaumentodetemperatura)ecombustãoin
+situ.Sãoosmaismaduros,comdécadasdeexperiênciaemcamposdaVenezuelaeda
+Califórnia;
+
+--- PAGE 27 ---
+Capítulo2.Desenvolvimento 26
+•MétodosMiscíveis:injeçãodeCO2,nitrogênioougásenriquecidoquesetornammiscíveis
+como óleo,eliminandoatensãointerfacialedeslocando óleoresidualretidonosporos
+porcapilaridade;
+•MétodosQuímicos:polímeros(paramelhorarovarrimento),surfactantes(parareduzir
+tensãointerfacial óleo-água)esoluçõesalcalinasquegeramsurfactantesinsitu;
+•MétodosMicrobiológicos:microrganismosquealteramaspropriedadesdofluidoeda
+rochaoubloqueiamzonasdealtapermeabilidadeparamelhorarovarrimento.
+2.5.2 M onitoramentoeInstrumentaçãoemTempoReal
+SensorIoT/transmissãoCentrodeControle
+Análiseem
+temporeal
+ModelosdeIADecisãooperacional
+Poçocomsensor Formaçãosubsuperficial
+Figura11 –Arquiteturademonitoramentoemtemporeal:sensorespermanentesinstaladosnofundodo
+poçotransmitemcontinuamentedadosdepressão,temperatura,vazãoecomposiçãopara
+centrosdecontroleondealgoritmosdeanáliseidentificamanomaliaseoportunidadesde
+otimização.
+Fonte:Elaboraçãoprópria.
+AdifusãodaInternetdasCoisas(IoT)edossensoresdefundodepoçodealtaprecisão
+revolucionouomonitoramentodecampospetrolíferos.Sensorespermanentestransmitem,de
+formacontínua,mediçõesdepressão,temperatura,vazãoecomposiçãoparacentrosdecontrole
+emsuperfície(Figura11).Issopermitedetectarprecocementeanomaliasoperacionais,identificar
+oportunidadesdeotimizaçãoecalibrarmodelosdereservatóriodeformadinâmica — reduzindo
+aincertezaeaumentandoaeficiênciadocampo(??).
+Aintegraçãodessesdadoscommodelosdesimulaçãoemtemporealdeuorigemaos
+chamadosreservatóriosdigitais(digitaltwins):réplicas virtuaisepermanentementeatualizadas
+doscamposfísicos,quepermitemtestarcenáriosdeprodução,anteciparfalhaseotimizar
+decisõesoperacionaisseminterromperaprodução.
+2.5.3ModelagemComputacionalAvançadaeSistemasdeSuporte àDeci-
+são
+Osmodeloscomputacionaiscontemporâneostranscendemossimuladoresclássicosde
+diferençasfinitas.AFluidodinâmicaComputacional(CFD)simulaemdetalhetridimensionalo
+escoamentomultifásicoempoços,tubulaçõeseinstalaçõesdesuperfície,permitindoaotimização
+
+--- PAGE 28 ---
+Capítulo2.Desenvolvimento 27
+dodesigndecompletaçãoeocálculoprecisodegradientesdepressãoeminstalaçõessubmarinas
+de águasprofundas.
+OsSistemasdeSuporte àDecisão(SSD)integramdadosdeproduçãohistórica,modelos
+dereservatórioealgoritmosdeotimização — comoalgoritmosgenéticos,programaçãodinâmica
+eotimizaçãoestocástica — paradefinirasmelhoresestratégiasdealocaçãodeinvestimentos,
+sequenciamentode perfuraçãoeotimizaçãocontínuadaprodução.Essessistemasintroduzem
+rigormatemáticoondeanteshaviajulgamentointuitivo(????).
+2.5.4 I nteligênciaArtificialeAprendizadodeMáquina
+RepresentaçãovisualdeaplicaçãodeInteligênciaArtificial
+emEngenhariadeReservatórios:redesneuraisparaprevisão
+dedeclíniodeprodução,ouinterfacedeplataformade
+analíticaavançada(SLBDelfi,HalliburtonDecisionSpace365).
+Sugestão:“Machinelearningoilreservoir” –Unsplash/Pexels(licença
+gratuita)oumaterialeducacionaldefabricantedesoftware
+Figura12 –InteligênciaArtificialaplicada àEngenhariadeReservatórios:redesneuraisealgoritmosde
+aprendizadodemáquinapermitemprevercurvasdedeclínio,otimizarparâmetrosde
+produçãoemtemporealeidentificarpadrõesemdadossísmicos4Dcomprecisãoe
+velocidadesemprecedentes.
+Fonte:[INSERIRREFERÊNCIADAIMAGEMREAL]
+AsegundadécadadoséculoXXImarcouaentradaconsolidadadastécnicasdeapren-
+dizadodemáquinaedeInteligênciaArtificialnaEngenhariadeReservatórios.Adiferença
+fundamentalemrelaçãoaosmodelosfísicosclássicos équeosmodelosdeMLaprendempadrões
+diretamentedosdados,semnecessidadedeespecificaçãoexplícitadetodasasrelaçõescausais —
+oqueostornaespecialmentepoderososquandoafísicadosistema éparcialmentedesconhecida
+ouexcessivamentecomplexa.
+Asaplicaçõesjáconsolidadasincluem:(i)previsãodedeclíniodeproduçãomediante
+redesneuraisrecorrentes;(ii)otimizaçãoemtemporealdepressãodefundodepoçoerazão
+deinjeçãode água;(iii)caracterizaçãopetrofísicaautomatizadaapartirdeimagensdigitais
+detestemunho(digitalrockphysics);(iv)identificaçãodepadrõesemdadossísmicos4Dpara
+monitoramentodefrentesdefluido;e(v)detecçãoprecocedeanomaliasemequipamentosde
+fundodepoço(????).
+
+--- PAGE 29 ---
+Capítulo2.Desenvolvimento 28
+2.5.5 R eservatóriosNãoConvencionais
+RochaselanteinferiorFormaçãodeshale(reservatórioalvo)RochaselantesuperiorPoço
+Fraturashidráulicas
+Fluxodegás/óleo
+Figura13 –Esquemadepoçohorizontalcomfraturashidráulicasemreservatóriodeshale:aredede
+fraturasartificiaiscriaapermeabilidadenecessáriaparaviabilizareconomicamentea
+produçãoemformaçõesdeultra-baixapermeabilidade(nanodarcies).
+Fonte:Adaptadode??).
+Oshaleboomnorte-americano,apartirde2008,foiumadasmaioresrevoluçõesenergé-
+ticasdahistóriarecente.Acombinaçãodeperfuraçãohorizontalcomfraturamentohidráulico
+emmúltiplosestágiostornouviávelaproduçãoemformaçõesdeargilaorgânicacompermea-
+bilidadesdaordemde nanodarcies — absolutamenteimpensávelcomtécnicasconvencionais
+(??).
+Maisdoqueumarevoluçãotecnológica,oshaleimpôsnovosdesafiosteóricos:aLei
+deDarcyclássicatorna-seinadequadanessasescalas,sendonecessárioincorporardifusãode
+Knudsen,adsorçãomoleculardometanonasparedesdosmesoporosegeomecânicaacoplada.A
+modelagemdereservatóriosnãoconvencionaiscontinuasendoumadasfronteirasmaisativasda
+pesquisana área(??).
+2.5.6 Gá sNaturaleaEngenhariadeReservatóriosdeGás
+Ocrescimentodogásnaturalcomocombustíveldetransiçãoenergética — menos
+intensivoemcarbonoqueo óleoeocarvão — ampliousignificativamenteoescopo dadisciplina.
+Osreservatóriosdegásapresentamparticularidadesqueexigemtratamentoespecializado:o
+comportamentodegasesreaisdescritopelofatorZ,aformaçãodehidratosemcondiçõesde
+altapressãoebaixatemperatura,eagestãodecondensadoretrógradoaoredordopoço.Aobra
+de(??)constituireferênciaessencialparaotratamentoaprofundadodessasparticularidadesem
+línguaportuguesa.
+
+--- PAGE 30 ---
+Capítulo2.Desenvolvimento 29
+2.5.7 C apturaeArmazenamentoGeológicodeCO2
+Superfície
+Camadarasa
+Rochaselante
+Reservatóriodepletado
+Formaçãosalinaprofunda
+SelanteprofundoCO2
+injetado
+plumaCO2Monitoramento
+sísmico4D
+Figura14 –EsquemadeCapturaeArmazenamentoGeológicodeCO2(CCS):oCO2capturado é
+injetadoemformaçõessalinasprofundasoureservatóriosdepletados,commonitoramento
+sísmico4Dparaverificaroconfinamentodaplumaaolongodedécadas.
+Fonte:Adaptadode??).
+Umadasfronteirasmaispromissoraseestratégicasdadisciplinanaatualidade éa
+suacontribuiçãoparaasmetasclimáticasglobaispormeiodaCapturaeArmazenamentode
+CO2(CCS).Oconhecimentoacumuladoemcaracterizaçãodereservatórios,modelagemde
+escoamentomultifásicoemonitoramentosísmicoestásendodiretamentereaproveitadopara
+oarmazenamentopermanentedeCO2emformaçõessalinasprofundaseemreservatórios
+depletados(??).
+Nocontextoangolano,aavaliaçãodopotencialdecamposmadurosparaarmazena-
+mentogeológicodeCO2representaumaoportunidadesingulardediversificaçãotécnicaede
+contribuiçãotangívelparaoscompromissosnacionaiscomosacordosclimáticosinternacionais.
+2.6 Sí nteseHistórica:PrincipaisMarcos
+AFigura15apresentaumalinhadotempocomosmarcosmaisrelevantesdaevolução
+dadisciplina,daformulaçãodaLeideDarcyem1856 àeradigitaldoséculoXXI.
+Empírica Fundamentação Consolidaçãocientífica Eradigital1856
+Leide
+Darcy1937
+Muskat1951
+Horner1963
+Havlena-
+Odeh1977
+Peaceman2008
+Shaleboom2010s
+IA&IoT
+1859
+PoçoDrake1941
+Perm.
+relativa1956
+1◦simu-
+lador1979
+Aziz&
+Settari1983
+Derivada
+pressão2000
+CCS
+(Bachu)Ano
+Figura15 –LinhadotempodosprincipaismarcoshistóricosdaEngenhariadeReservatóriosde
+Petróleo:dafundamentaçãoteóricaclássica àeradigital.Asfaixascoloridasdemarcamas
+quatroerasparadigmáticasidentificadasnestetrabalho.
+Fonte:Elaboraçãoprópria.
+
+--- PAGE 31 ---
+Capítulo2.Desenvolvimento 30
+Tabela1 –MarcoshistóricosdaEngenhariadeReservatóriosdePetróleo
+PeríodoMarco/Evento Referência/Autor
+1856 LeideDarcy –leifundamen-
+taldoescoamentoemmeios
+porosos(??)
+1859 PoçoDrake –fundaçãodain-
+dústriapetrolíferacomercial(??)
+1937–
+1949Sistematização matemáticada
+E.R.porMuskat(??)
+1941 Permeabilidaderelativa(Leve-
+rett&Lewis)(??)
+1947 CorrelaçõesPVTdeStanding(??)
+1951 MétododeHornerparaaná-
+lisedebuildup(??)
+1963 Balançodemateriaiscomore-
+laçãolinear(Havlena-Odeh)(??)
+1977 Fundamentosdasimulação
+numéricadereservatórios(Pe-
+aceman)(??)
+1979 Simulaçãoporelementosfini-
+tos(Aziz&Settari)(??)
+1983 Métododaderivadadepres-
+sãoemtestesdepoço(Bour-
+det)(??)
+1990 Propriedadesdefluidospetro-
+líferos(McCain)(??)
+2000 Armazenamentogeológicode
+CO2(Bachu)(??)
+2006 EngenhariadeReservatórios
+dePetróleo(Rosaetal.)(??)
+2008 Boomdoshalegas/oil–no-
+vosmodelosdeescoamento(??)
+2010 ReservoirEngineeringHand-
+book,4.ªed.(Ahmed)(??)
+
+--- PAGE 32 ---
+Capítulo2.Desenvolvimento 31
+ContinuaçãodaTabela1
+PeríodoMarco/Evento Referência/Autor
+2014 The PracticeofReservoirEn-
+gineering,ed.rev.(Dake)(??)
+2015 AppliedPetroleumReservoir
+Engineering,3.ªed.(Terryet
+al.)(??)
+2016 Fundamentos Computacionais
+emEng.dePetróleo(Ramos)(??)
+2019 PropriedadesMicroscópicas
+deRochasReservatório(Alya-
+fei)(??)
+2020 EngenhariadeReservatórios:
+MétodosAnalíticoseCompu-
+tacionais(Ramos)(??)
+
+--- PAGE 33 ---
+32
+3Conclusão
+AopercorreratrajetóriadaEngenhariadeReservatóriosdePetróleodesdeaspráticas
+artesanaisdaMesopotâmiaatéosalgoritmosdeaprendizadodemáquinadoséculoXXI,o
+queserevelanão éapenasumahistóriadeprogressotécnico — é u mahistóriasobrecomoa
+humanidadeaprendeafazerperguntascadavezmelhoressobreomundoquearodeia.
+Atrajetóriapercorridarevelacincorupturasparadigmáticasfundamentaisquemerecem
+serdestacadas.AprimeirafoiaLeideDarcy(1856):antesdela,oengenheirodecampooperava
+porinstintoeexperiência;depoisdela,passouaterumalinguagemmatemáticaprecisapara
+descreveroquesepassavanosubsolo.AsegundafoiopoçoDrake(1859):demonstrouque
+extrairpetróleodeformacontroladaerapossíveleviável,abrindoumciclodeinovaçãosem
+precedentes.AterceirafoiasistematizaçãomatemáticadeMuskat(1937;1949):aexperiência
+acumuladadecampofoitransformadaemteoriarigorosademecanismosdeprodução.A
+quartafoiasimulaçãocomputacional(décadasde 1960–1980):permitiumodelarreservatórios
+tridimensionaisheterogêneosmultifásicos,ampliandoradicalmenteohorizontedeprevisão
+disponívelaoengenheiro.Aquintaemaisrecente éaintegraçãoentremodelagemfísicae
+inteligênciaartificial,queprometetransformarnovamenteanaturezadotrabalhodeengenharia
+dereservatóriosnaspróximasdécadas(????????).
+Nocontextoangolano,essasconclusõestêmimplicaçõespráticaseurgentes.Angola,
+comosegundomaiorprodutorpetrolíferoda Áfricasubsaariana,temnodomíniotécnicoda
+EngenhariadeReservatóriosnãoapenasumimperativoeconômico,masuma condiçãode
+soberaniaenergética.Acrescentematuridadedoscamposdoblocooffshoreeodesenvolvimento
+denovasdescobertasem águasultra-profundasexigemprofissionaiscapazesdeaplicaras
+metodologiasmaisavançadasdecaracterização,simulaçãoeotimizaçãodereservatórios.A
+formaçãooferecidapeloISPTEC — apoiadaespecialmentenasobrasde(??)e(??),que
+articulamosfundamentosclássicoscomasferramentascomputacionaiscontemporâneasno
+contextolusófono — é umpilarfundamentaldessacapacidadetécnicanacional.
+Parafortaleceraindamaisessaformação,recomendam-seasseguintesdiretrizes:
+i.Integraçãocurriculardaciênciadedados:incorporardeformaestruturadaastécnicas
+deaprendizadodemáquinaedeanálisedegrandesvolumesdedadosnoscurrículosde
+EngenhariadePetróleo,articulando-ascomosfundamentosfísicosclássicos;
+ii.Parceriascomoperadoresnacionaiseinternacionais:estimularacordosdecooperação
+técnicaecientíficaentreoISPTECeosprincipaisoperadorespresentesemAngola,
+visandoaoacessoadadosreaisdecampoparafinsdidáticosedeinvestigação;
+iii.Investigaçãoemreservatóriosangolanos:desenvolverlinhasdepesquisadedicadas
+àsespecificidadesdosreservatóriosangolanos — carbonatosdopré-sal,turbiditosdo
+
+--- PAGE 34 ---
+Capítulo3.Conclusão 33
+pós-salepotencialdearmazenamentodeCO2em camposmaduros —,contribuindopara
+oconhecimentocientíficoregional;
+iv.Fortalecimentodapublicaçãocientíficalusófona:incentivaraproduçãoepublicação
+deobrasdereferênciaedeartigoscientíficosemlínguaportuguesa, àsemelhançadas
+contribuiçõespioneirasde(??),(??)e(??).
+Emsíntese,aEngenhariadeReservatóriosdePetróleopermaneceumadisciplinaviva
+eemconstantetransformação.Compreendê-lahistoricamente écompreender,emminiatura,a
+própriaessênciadaengenharia:aaplicaçãometódicaecriativadoconhecimentohumanopara
+resolverproblemasreais.EemAngola,ondeosrecursosnaturaisdosubsolosãoachavedo
+desenvolvimentonacional,essacompreensãonão éumluxoacadémico — é umanecessidade
+estratégicadamaisaltaordem.
+
+--- PAGE 35 ---
+34
+Referências
+AHMED,T.ReservoirEngineeringHandbook.4thed.GulfProfessionalPublishing,2010.
+ALYAFEI,N.MicroscopicPropertiesofReservoirRocks.QatarUniversity,2019.
+AZIZ,K.;SETTARI,A.PetroleumReservoirSimulation.AppliedSciencePublishers,1979.
+BACHU,S.SequestrationofCO2inGeologicalMedia:CriteriaandApproachforSiteSelection
+inResponsetoClimateChange.EnergyConversionandManagement,v.41,n.9,p.953–970,
+2000.
+BOURDET,D.;AYOUB,J.A.;PIRARD,Y.M.UseofPressureDerivativeinWell-Test
+Interpretation.SPEFormationEvaluation,v.4,n.2,p.293–302,1989.
+DAKE,L.P.ThePracticeofReservoirEngineering.Reviseded.Elsevier,2014.
+HAVLENA,D.;ODEH,A.S.TheMaterialBalanceasanEquationofaStraightLine.Journal
+ofPetroleumTechnology,v.15,n.8,p.896–900,1963.
+JAVADPOUR,F.NanoporesandApparentPermeabilityofGasFlowinMudrocks(Shalesand
+Siltstone).JournalofCanadianPetroleumTechnology,v.48,n.8,p.16–21,2009.
+McCAIN,W.D.ThePropertiesofPetroleumFluids.2nded.PennWellBooks,1990.
+MUSKAT,M.PhysicalPrinciplesofOilProduction.McGraw-Hill,1949.
+PEACEMAN,D.W.FundamentalsofNumericalReservoirSimulation.Elsevier,1977.
+RAMOS,G.A.R.FundamentosComputacionaisemEngenhariadePetróleo.ISPTEC,Luanda,
+2016.
+RAMOS,G.A.R.Engenhariade Reservatórios:MétodosAnalíticoseComputacionais.
+ISPTEC,Luanda,2020.
+ROSA,A.J.;CARVALHO,R.S.;XAVIER,J.A.D.EngenhariadeReservatóriosdePetróleo.
+Interciência,RiodeJaneiro,2006.
+TERRY,R.E.;ROGERS,J.B.;CRAFT,B.C.AppliedPetroleumReservoirEngineering.3rded.
+Pearson,2015.
+YERGIN,D.ThePrize:TheEpicQuestforOil,Money,andPower.Simon&Schuster,1991.

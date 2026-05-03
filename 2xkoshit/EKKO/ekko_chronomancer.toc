@@ -1,0 +1,94 @@
+\contentsline {chapter}{\numberline {1}Champion Overview}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Who is Ekko?}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Strengths and Weaknesses}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Move List Reference}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Notation Guide}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Normal Moves}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Move Demonstrations}{5}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Command Normals}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Special Moves}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Key Special Move Gameplay}{6}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Throw}{6}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Supers and Ultimate}{7}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Assist Moves}{7}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Frame Data}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Normal Moves Frame Data Table}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Reading the Frame Data}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Practical Frame Data Notes}{9}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Unique Mechanics}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Afterimage System}{10}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Normal Afterimage (Uncharged S2)}{10}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Volatile Afterimage (Hold S2 until frame 18+)}{10}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Afterimage Cancel}{11}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Timewinder Mechanics}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Distance-Dependent Properties}{11}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Batting Timewinder}{11}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Air Hop}{11}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Neutral Game}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Core Neutral Pillars}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Key Neutral Buttons}{12}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Timewinder Okizeme}{13}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Corner Throw Oki Trap}{13}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Approach Tactics}{13}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Mixup System}{14}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Core Mixup Tools}{14}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}S2 HOLD vs. Immediate S2}{14}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Down S2 Sandwich}{14}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Flip It Overhead (3M)}{15}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Temporal Slip 50/50}{15}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Jump Mixup Triangle}{15}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Corner Throw Trap Full Sequence}{15}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Combo Guide}{16}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Pulse Fuse Combos (Beginner)}{16}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Beginner Combos}{17}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Intermediate Combos}{17}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Advanced Combos}{18}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Corner Carry Routing}{19}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Limit Break / Limit Strike Extensions}{19}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Archetype Matchup Strategies}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}vs. Zoners}{20}{section.8.1}%
+\contentsline {section}{\numberline {8.2}vs. Rushdowns}{20}{section.8.2}%
+\contentsline {section}{\numberline {8.3}vs. Grapplers}{21}{section.8.3}%
+\contentsline {section}{\numberline {8.4}vs. Defensive / Turtle}{21}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Individual Champion Matchups}{22}{chapter.9}%
+\contentsline {section}{\numberline {9.1}vs. \textcolor {ekkoAccent}{\textbf {Ahri}}}{22}{section.9.1}%
+\contentsline {section}{\numberline {9.2}vs. \textcolor {ekkoAccent}{\textbf {Blitzcrank}}}{22}{section.9.2}%
+\contentsline {section}{\numberline {9.3}vs. \textcolor {ekkoAccent}{\textbf {Braum}}}{23}{section.9.3}%
+\contentsline {section}{\numberline {9.4}vs. \textcolor {ekkoAccent}{\textbf {Darius}}}{23}{section.9.4}%
+\contentsline {section}{\numberline {9.5}vs. \textcolor {ekkoAccent}{\textbf {Illaoi}}}{24}{section.9.5}%
+\contentsline {section}{\numberline {9.6}vs. \textcolor {ekkoAccent}{\textbf {Jinx}}}{24}{section.9.6}%
+\contentsline {section}{\numberline {9.7}vs. \textcolor {ekkoAccent}{\textbf {Teemo}}}{24}{section.9.7}%
+\contentsline {section}{\numberline {9.8}vs. \textcolor {ekkoAccent}{\textbf {Vi}}}{25}{section.9.8}%
+\contentsline {section}{\numberline {9.9}vs. \textcolor {ekkoAccent}{\textbf {Warwick}}}{25}{section.9.9}%
+\contentsline {section}{\numberline {9.10}vs. \textcolor {ekkoAccent}{\textbf {Yasuo}}}{26}{section.9.10}%
+\contentsline {chapter}{\numberline {10}Team Compositions and Synergies}{27}{chapter.10}%
+\contentsline {section}{\numberline {10.1}What Ekko Wants in a Partner}{27}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Best Teams Overview}{27}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Ekko / Vi}{28}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Why This Team Works}{28}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Role Distribution}{28}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Combo Synergy}{28}{subsection.10.3.3}%
+\contentsline {subsection}{\numberline {10.3.4}Neutral Strategy}{28}{subsection.10.3.4}%
+\contentsline {subsection}{\numberline {10.3.5}Defensive Strategy}{28}{subsection.10.3.5}%
+\contentsline {section}{\numberline {10.4}Ekko / Warwick}{28}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Why This Team Works}{29}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Role Distribution}{29}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Combo Synergy}{29}{subsection.10.4.3}%
+\contentsline {subsection}{\numberline {10.4.4}Neutral Strategy}{29}{subsection.10.4.4}%
+\contentsline {section}{\numberline {10.5}Ekko / Ahri}{29}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}Why This Team Works}{29}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}Role Distribution}{29}{subsection.10.5.2}%
+\contentsline {subsection}{\numberline {10.5.3}Combo Synergy}{30}{subsection.10.5.3}%
+\contentsline {subsection}{\numberline {10.5.4}Neutral Strategy}{30}{subsection.10.5.4}%
+\contentsline {section}{\numberline {10.6}Fuse Recommendations}{30}{section.10.6}%
+\contentsline {section}{\numberline {10.7}Using Ekko as Assist}{30}{section.10.7}%
+\contentsline {subsection}{\numberline {10.7.1}Forward Assist (My Time! --- Forward T)}{30}{subsection.10.7.1}%
+\contentsline {subsection}{\numberline {10.7.2}Back Assist (Timewinder --- Back T)}{30}{subsection.10.7.2}%
+\contentsline {chapter}{\numberline {11}Advanced Concepts and Tips}{32}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Afterimage Cancel Deep Dive}{32}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Training Mode Optimization}{32}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Common Mistakes to Avoid}{32}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Season 1 Patch Notes Summary (Version 1.1.3)}{33}{section.11.4}%
+\contentsline {chapter}{\numberline {12}Quick Reference}{34}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Essential Inputs Cheat Sheet}{34}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Tiered Gameplan Checklist}{34}{section.12.2}%

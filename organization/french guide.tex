@@ -1,0 +1,1162 @@
+% LaTeX document recreating the French learning guide
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+\usepackage{bookmark}  % added to avoid hyperref warnings
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{multicol}
+
+% For conditional formatting and better tables
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% Title and author
+\title{Francês --- Guia Completo de Aprendizagem}
+\author{}
+\date{Última atualização: 6 de março de 2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Objetivo}
+B1 (Conversação prática) em 200--240 horas \\
+\textbf{Timeline:} 4 meses com 45--90 min/dia, 5--6 dias/semana \\
+\textbf{Método Base:} Active Recall (Anki) + Aulas estruturadas + Conversação \\
+\textbf{Evidência Científica:} Spaced Repetition (Ebbinghaus 1880) + Active Recall (50+ estudos)
+
+\section*{Nota importante}
+Este guia é estruturado com base em pesquisas de aquisição de linguagem revisadas por pares:
+\begin{itemize}
+    \item CEFR Framework: A1 (Iniciante) $\to$ A2 (Elementar) $\to$ B1 (Conversação prática)
+    \item Spaced Repetition: Reveja a gramática em intervalos crescentes (1 dia, 3 dias, 7 dias, 14 dias)
+    \item Active Recall: Teste-se nas regras gramaticais — NÃO leitura passiva
+    \item Sono e Memória: Estude à noite $\to$ 7--9h de sono $\to$ pratique no dia seguinte = 2x taxa de retenção
+\end{itemize}
+
+\tableofcontents
+\newpage
+
+% ----------------------------------------------------------------------
+% Seção: Roadmap Visual
+% ----------------------------------------------------------------------
+\section{Roadmap Visual — Caminho para B1}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7, every node/.style={align=center}]
+    % Draw horizontal timeline
+    \draw[thick,->] (0,0) -- (16,0) node[anchor=west] {Semanas};
+    \foreach \x in {0,4,8,12,16}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+    % Level boxes
+    \fill[blue!20] (0,0.2) rectangle (4,1) node[midway] {A1\\Fundações};
+    \fill[green!20] (4,0.2) rectangle (8,1) node[midway] {A2\\Passado};
+    \fill[orange!20] (8,0.2) rectangle (12,1) node[midway] {B1 Inicial\\Futuro};
+    \fill[red!20] (12,0.2) rectangle (16,1) node[midway] {B1 Fluência\\Consolidação};
+    \draw[thick,<->] (0,1.2) -- (4,1.2) node[midway,above] {40h};
+    \draw[thick,<->] (4,1.2) -- (8,1.2) node[midway,above] {80h};
+    \draw[thick,<->] (8,1.2) -- (12,1.2) node[midway,above] {130h};
+    \draw[thick,<->] (12,1.2) -- (16,1.2) node[midway,above] {200h};
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Distribuição Total}
+\begin{tabular}{clcc}
+    \toprule
+    Mês & Horas & Nível & Foco Principal \\
+    \midrule
+    Mês 1 & 40h & A1 & Present regular \& irregular \\
+    Mês 2 & 80h & A2 & Passado completo \\
+    Mês 3 & 130h & B1 (Inicial) & Futuro \& Conversação \\
+    Mês 4 & 200h & B1 & Fluência \\
+    \bottomrule
+\end{tabular}
+
+% ----------------------------------------------------------------------
+% Seção: Progressão de Horas
+% ----------------------------------------------------------------------
+\section{Progressão de Horas Investidas}
+
+\subsection*{Cronograma Semanal}
+\textbf{Distribuição de Tempo:}
+\begin{itemize}
+    \item Total Base: 260 minutos/semana = 4,3 horas/semana
+    \item 16 Semanas: 69 horas de estudo dirigido + 130 horas de exposição = 200 horas totais
+    \item Semana 1: 104 min (40\% — ajuste)
+    \item Semanas 2--4: 260 min (60\% — consistente)
+    \item Semanas 5--8: 260 min (60\% — consolidação)
+    \item Semanas 9--16: 280 min (70\% — foco intenso)
+\end{itemize}
+
+\subsection*{Progresso Cumulativo por Mês}
+\begin{tabular}{clcc}
+    \toprule
+    Período & Horas Acumuladas & Nível & Domínio \\
+    \midrule
+    Mês 1 & 40h & A1 & Present (regular \& irregular) \\
+    Mês 2 & 80h & A2 & Passado completo \\
+    Mês 3 & 130h & B1 Inicial & Futuro + Conversação \\
+    Mês 4 & 200h & B1 & Fluência \\
+    \bottomrule
+\end{tabular}
+\emph{META: 200--240h}
+
+\subsection*{Timeline de 16 Semanas — Sua Jornada até B1}
+\begin{tabular}{clccc}
+    \toprule
+    Período & Semanas & Nível & Foco & Meta de Horas \\
+    \midrule
+    Fundações & 1--4 & A1 & Verbos -ER/-IR, Présent Regular & 40h \\
+    Passado & 5--8 & A2 & Passé Composé, Imparfait, DRMRS & 80h \\
+    Futuro \& Conversação & 9--12 & B1 Inicial & Futur, Conditionnel, Subjonctif & 130h \\
+    Consolidação & 13--16 & B1 Fluência & Reading, Listening, Production & 200h \\
+    \bottomrule
+\end{tabular}
+
+\subsection*{Marcos Importantes}
+\begin{itemize}
+    \item \textbf{Semana 4:} Domina todos os tempos no presente $\to$ Primeiro teste de conversação simples
+    \item \textbf{Semana 8:} Completa o passado $\to$ Pode narrar histórias em francês
+    \item \textbf{Semana 12:} Domina futuro e condicional $\to$ Conversa sobre planos e hipóteses
+    \item \textbf{Semana 16:} Chega a B1 $\to$ Simula prova DELF com sucesso
+\end{itemize}
+
+% ----------------------------------------------------------------------
+% Seção: Estrutura Gramatical
+% ----------------------------------------------------------------------
+\section{Estrutura Gramatical Francesa — Visão Geral}
+
+\subsection{Partes do Discurso (Parts of Speech)}
+\subsubsection{Substantivos (Noms)}
+\begin{itemize}
+    \item Todos os substantivos têm gênero: masculino ou feminino
+    \item São precedidos por artigos (\emph{un, une, le, la, les})
+    \item Exemplo: \emph{le livre} (o livro - masculino), \emph{la maison} (a casa - feminino)
+\end{itemize}
+
+\subsubsection{Artigos (Articles)}
+\begin{tabular}{clcc}
+    \toprule
+    Tipo & Singular & Plural \\
+    \midrule
+    Indefinido & un (m), une (f) & des \\
+    Definido & le (m), la (f), l' (vocal) & les \\
+    Partitivo & du, de la, de l' & des \\
+    \bottomrule
+\end{tabular}
+
+\subsubsection{Adjetivos (Adjectifs)}
+\begin{itemize}
+    \item Concordam em gênero e número com o substantivo
+    \item Feminino geralmente adiciona \emph{-e} ao masculino
+    \item Plural geralmente adiciona \emph{-s} ao singular
+    \item Exemplo: \emph{un livre rouge} (um livro vermelho), \emph{une maison rouge} (uma casa vermelha)
+\end{itemize}
+
+\subsubsection{Verbos (Verbes)}
+Três grupos principais baseados na terminação do infinitivo:
+\begin{itemize}
+    \item 1º grupo: verbos \emph{-ER} (parler, danser) — cerca de 80\% dos verbos
+    \item 2º grupo: verbos \emph{-IR} (finir, choisir) — cerca de 300 verbos
+    \item 3º grupo: verbos irregulares (être, avoir, aller, venir) — cerca de 100 verbos
+\end{itemize}
+
+\subsubsection{Pronomes (Pronoms)}
+\begin{tabular}{lcc}
+    \toprule
+    Tipo & Singular & Plural \\
+    \midrule
+    Sujeito & je, tu, il, elle, on & nous, vous, ils, elles \\
+    Objeto direto & me, te, le, la & nous, vous, les \\
+    Objeto indireto & me, te, lui & nous, vous, leur \\
+    Reflexivo & me, te, se & nous, vous, se \\
+    \bottomrule
+\end{tabular}
+
+\subsection{Tempos Verbais Essenciais}
+\subsubsection{PRÉSENT (Presente)}
+Uso: Ações atuais e habituais. \\
+Estrutura Regular -ER: \emph{je parle, tu parles, il/elle parle, nous parlons, vous parlez, ils/elles parlent} \\
+Exemplos: \emph{Je parle français} | \emph{Tu danses bien} | \emph{Il chante}
+
+\subsubsection{PASSÉ COMPOSÉ (Perfeito)}
+Uso: Ações passadas concluídas. \\
+Estrutura: Auxiliar (avoir/être) + Participio Passado. \\
+Exemplos:
+\begin{itemize}
+    \item Com avoir: \emph{J’ai parlé} (Eu falei)
+    \item Com être: \emph{Je suis allé(e)} (Eu fui)
+\end{itemize}
+
+\subsubsection{IMPARFAIT (Pretérito Imperfeito)}
+Uso: Ações passadas contínuas ou habituais; narração de contexto. \\
+Estrutura: radical do presente + terminações (-ais, -ais, -ait, -ions, -iez, -aient). \\
+Exemplos: \emph{Je parlais} (Eu falava / estava falando) | \emph{Tu dansais} | \emph{Il chantait}
+
+\subsubsection{FUTUR SIMPLE (Futuro Simples)}
+Uso: Ações futuras. \\
+Estrutura Regular -ER: \emph{je parlerai, tu parleras, il/elle parlera, nous parlerons, vous parlerez, ils/elles parleront} \\
+Exemplos: \emph{Je parlerai français} | \emph{Tu danseras demain}
+
+\subsubsection{CONDITIONNEL (Condicional)}
+Uso: Situações hipotéticas, polidez, conselhos. \\
+Estrutura: Radical do futuro + terminações do imparfait. \\
+Exemplos: \emph{Je parlerais} (Eu falaria) | \emph{Je voudrais} (Eu gostaria) | \emph{Tu devrais} (Tu devias)
+
+\subsubsection{SUBJONCTIF (Subjuntivo)}
+Uso: Após expressões de dúvida, desejo, necessidade, emoção. \\
+Estrutura: que + sujeito + forma subjuntiva. \\
+Exemplos: \emph{Je veux que tu parles} (Eu quero que tu fales) | \emph{Il faut que je parte} (É necessário que eu parta)
+
+\subsection{Estrutura da Frase}
+\subsubsection{Ordem das Palavras}
+Padrão Básico: Sujeito + Verbo + Objeto. \\
+Exemplos:
+\begin{itemize}
+    \item \emph{Je parle français} (Eu falo francês)
+    \item \emph{Elle lit un livre} (Ela lê um livro)
+    \item \emph{Nous mangeons une pizza} (Nós comemos uma pizza)
+\end{itemize}
+Perguntas: Inversão (verbo antes do sujeito) ou \emph{est-ce que}.
+\begin{itemize}
+    \item \emph{Tu parles français?} (Você fala francês? — somente com entonação)
+    \item \emph{Parles-tu français?} (Você fala francês? — inversão formal)
+    \item \emph{Est-ce que tu parles français?} (Você fala francês? — com est-ce que)
+\end{itemize}
+
+\subsubsection{Negação}
+\begin{tabular}{lll}
+    \toprule
+    Estrutura & Significado & Exemplo \\
+    \midrule
+    ne...pas & não & \emph{Je ne suis pas} (Eu não sou) \\
+    ne...jamais & nunca & \emph{Je ne vais jamais} (Eu nunca vou) \\
+    ne...rien & nada & \emph{Je ne dis rien} (Eu não digo nada) \\
+    ne...plus & não mais & \emph{Je ne suis plus} (Eu já não sou) \\
+    \bottomrule
+\end{tabular}
+
+\subsubsection{Palavras Interrogativas}
+Essenciais para fazer perguntas:
+\begin{itemize}
+    \item \emph{Qui?} (Quem?) | \emph{Qui est là?}
+    \item \emph{Que/Quoi?} (O que?) | \emph{Que fais-tu?}
+    \item \emph{Où?} (Onde?) | \emph{Où vas-tu?}
+    \item \emph{Quand?} (Quando?) | \emph{Quand arrives-tu?}
+    \item \emph{Pourquoi?} (Por quê?) | \emph{Pourquoi souris-tu?}
+    \item \emph{Comment?} (Como?) | \emph{Comment vas-tu?}
+\end{itemize}
+
+\subsection{Concordância de Gênero e Número}
+\begin{itemize}
+    \item Gênero: Masculino (\emph{le, un}) / Feminino (\emph{la, une})
+    \item Adjetivos e artigos devem concordar com o gênero do substantivo
+    \item Número: Singular (um item) / Plural (múltiplos itens, geralmente adiciona \emph{-s})
+    \item Plurais irregulares em \emph{-au, -eau, -eux}
+\end{itemize}
+
+\subsection{Preposições (Prépositions)}
+\begin{tabular}{ll}
+    \toprule
+    Preposição & Uso \\
+    \midrule
+    à & a, em \\
+    de & de, desde \\
+    en & em \\
+    sur & sobre \\
+    sous & sob \\
+    avec & com \\
+    sans & sem \\
+    entre & entre \\
+    devant & diante de \\
+    \bottomrule
+\end{tabular}
+Contrações: \emph{au} (à + le), \emph{du} (de + le), \emph{aux} (à + les), \emph{des} (de + les).
+
+% ----------------------------------------------------------------------
+% Seção: Plano de Aulas Detalhado
+% ----------------------------------------------------------------------
+\section{Plano de Aulas Detalhado Semana a Semana (16 Semanas)}
+\subsection{Mês 1: Présent (Semanas 1–4)}
+\subsubsection*{Semana 1: Présent dos Verbos -ER (Regulares)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Presente do indicativo: verbos terminados em \emph{-ER} (parler, chanter, danser, étudier, travailler). Conjugação: -e, -es, -e, -ons, -ez, -ent. \\
+    Vocabulário & 30 cognatos diretos (palavras idênticas ou muito próximas): animal, important, possible, problème, général, naturel, original, particulier, visible, horrible, terrible, flexible, responsable, art, part, classe, phrase, image, ligne, musique, note, texte, total, triple, universal, vertical, etc. \\
+    Exercícios & 1. Conjugar 10 verbos -ER no presente. 2. Traduzir frases simples: "Eu falo francês" $\to$ "\emph{Je parle français}". 3. Identificar cognatos em um texto curto. \\
+    Conversação & Apresentar-se: "\emph{Je m'appelle...}", "\emph{Je suis portugais...}", "\emph{Je parle portugais et j'apprends le français}". \\
+    Anki & 20 cards: verbos -ER regulares + cognatos. \\
+\end{tabularx}
+
+\subsubsection*{Semana 2: Présent dos Verbos -IR e -RE (Regulares)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Presente: verbos -IR (finir, choisir, réussir) — conjugação: -is, -is, -it, -issons, -issez, -issent; verbos -RE (vendre, attendre, entendre) — conjugação: -s, -s, (nada), -ons, -ez, -ent. \\
+    Vocabulário & 30 palavras com padrões de conversão: -tion (nation, chanson, éducation), -té (cité, vérité, université), -ble (aimable, possible, terrible). \\
+    Exercícios & 1. Conjugar verbos -IR/-RE. 2. Converter palavras portuguesas usando padrões. 3. Completar frases. \\
+    Conversação & Falar sobre rotina: "\emph{Tous les jours, je mange à midi...}", "\emph{J'habite à...}", "\emph{Je travaille comme...}" \\
+    Anki & 20 cards: verbos -IR/-RE + palavras com padrões. \\
+\end{tabularx}
+
+\subsubsection*{Semana 3: Présent dos Verbos Irregulares}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Presente dos irregulares fundamentais: \\
+    & - AVOIR (j'ai, tu as, il a, nous avons, vous avez, ils ont) \\
+    & - ÊTRE (je suis, tu es, il est, nous sommes, vous êtes, ils sont) \\
+    & - ALLER (je vais, tu vas, il va, nous allons, vous allez, ils vont) \\
+    & - FAIRE (je fais, tu fais, il fait, nous faisons, vous faites, ils font) \\
+    Vocabulário & Expressões comuns com esses verbos: avoir faim/soif/froid/chaud, être fatigué/malade, aller bien/mal, faire attention/chaud/froid. \\
+    Exercícios & 1. Completar frases com o verbo correto. 2. Traduzir expressões do português. 3. Formar frases negativas. \\
+    Conversação & Descrever estados e ações: "\emph{J'ai faim. Je suis fatigué. Je vais au travail. Je fais du sport.}" \\
+    Anki & 20 cards: verbos irregulares + expressões. \\
+\end{tabularx}
+
+\subsubsection*{Semana 4: Verbos Pronominais + Falsos Amigos + Revisão}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Verbos pronominais (reflexivos): se lever, s'appeler, se laver, se promener. Conjugação com pronomes reflexivos: je me lève, tu te lèves, il se lève, nous nous levons, vous vous levez, ils se lèvent. \\
+    Vocabulário & Lista dos 30 falsos amigos mais comuns (ver seção específica). Ênfase: actuellement, librairie, présenter, etc. \\
+    Exercícios & 1. Conjugar verbos pronominais. 2. Tradução evitando falsos amigos. 3. Pequeno texto usando presente e pronominais. \\
+    Conversação & Rotina diária com pronominais: "\emph{Je me lève à 7h, je m'appelle...}" \\
+    Anki & 20 cards: falsos amigos + verbos pronominais. \\
+\end{tabularx}
+
+\subsection{Mês 2: Passado (Semanas 5–8)}
+\subsubsection*{Semana 5: Passé Composé com Avoir (Regulares)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Passé Composé: avoir conjugado no presente + participio passado. Participios regulares: -ER $\to$ -é (parlé), -IR $\to$ -i (fini), -RE $\to$ -u (vendu). Negação: n'ai pas parlé. \\
+    Vocabulário & Marcadores temporais: hier, avant-hier, la semaine dernière, en 2020, déjà, jamais. \\
+    Exercícios & 1. Formar participios passados. 2. Conjugar verbos no passé composé. 3. Narrar ações concluídas: "\emph{Hier, j'ai mangé une pizza.}" \\
+    Conversação & Contar o que fez ontem: "\emph{Hier, je me suis levé à 8h, j'ai travaillé, j'ai déjeuné avec des amis...}" \\
+    Anki & 20 cards: passé composé regular. \\
+\end{tabularx}
+
+\subsubsection*{Semana 6: Passé Composé com Être (DR \& MRS VANDERTRAMP)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Verbos que usam être no passé composé (movimento e mudança de estado): DR \& MRS VANDERTRAMP: Devenir, Revenir, Monter, Rester, Sortir, Venir, Aller, Naître, Descendre, Entrer, Rentrer, Tomber, Retourner, Arriver, Mourir, Partir. Concordância do participio com o sujeito: "\emph{Elle est allée.}" \\
+    Vocabulário & Lista completa dos 17 verbos + seus derivados. \\
+    Exercícios & 1. Conjugar verbos com être. 2. Frases com concordância. 3. Diferenciar verbos com avoir vs être. \\
+    Conversação & Narrar uma viagem: "\emph{Je suis allé à Paris. Je suis arrivé lundi. Je suis resté trois jours.}" \\
+    Anki & 20 cards: passé composé com être. \\
+\end{tabularx}
+
+\subsubsection*{Semana 7: Imparfait}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Imparfait: radical da 1ª pessoa do plural do presente (nous parlons $\to$ parl-) + terminações: -ais, -ais, -ait, -ions, -iez, -aient. Único irregular: être (j'étais). \\
+    Uso & Ações habituais no passado, descrições, cenário para outra ação. Ex: "\emph{Quand j'étais enfant, je jouais au foot.}" \\
+    Exercícios & 1. Conjugar verbos no imparfait. 2. Descrever a infância. 3. Diferenciar passé composé vs imparfait. \\
+    Conversação & "\emph{Quand j'étais petit, j'habitais à... Je jouais avec mes amis...}" \\
+    Anki & 20 cards: imparfait. \\
+\end{tabularx}
+
+\subsubsection*{Semana 8: Passé Composé vs Imparfait (Narrativa)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Contraste: passé composé (ação concluída, pontual, sequencial) vs imparfait (ação em andamento, habitual, descritiva, cenário). Ex: "\emph{Je marchais quand j'ai vu un ami.}" \\
+    Exercícios & 1. Completar histórias escolhendo o tempo correto. 2. Escrever um parágrafo misturando os dois. 3. Identificar em textos autênticos. \\
+    Conversação & Contar uma história completa (ex: um dia memorável) usando ambos os tempos. \\
+    Anki & 20 cards: frases com escolha de tempo. \\
+\end{tabularx}
+
+\subsection{Mês 3: Futuro, Condicional e Subjuntivo (Semanas 9–12)}
+\subsubsection*{Semana 9: Futur Proche e Futur Simple}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Futur proche: aller + infinitif (je vais étudier). Futur simple: infinitif + terminaisons -ai, -as, -a, -ons, -ez, -ont. Irregulares: être (ser-), avoir (aur-), aller (ir-), faire (fer-), pouvoir (pourr-), vouloir (voudr-), voir (verr-). \\
+    Exercícios & 1. Formar frases com futur proche. 2. Conjugar no futur simple. 3. Planejar o futuro. \\
+    Conversação & "\emph{L'année prochaine, je voyagerai en France. D'abord, je vais visiter Paris...}" \\
+    Anki & 20 cards: futur. \\
+\end{tabularx}
+
+\subsubsection*{Semana 10: Conditionnel Présent}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Conditionnel présent: radical do futur simple + terminaisons de l'imparfait (-ais, -ais, -ait, -ions, -iez, -aient). Usos: polidez (je voudrais), hipoteses (si j'avais...), conselhos (tu devrais). \\
+    Exercícios & 1. Conjugar no conditionnel. 2. Frases de polidez. 3. Frases com "si". \\
+    Conversação & Pedir educadamente: "\emph{Je voudrais un café, s'il vous plaît.}" Dar conselhos: "\emph{Tu devrais étudier plus.}" \\
+    Anki & 20 cards: conditionnel. \\
+\end{tabularx}
+
+\subsubsection*{Semana 11: Subjonctif Présent (Introdução)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Formação do subjonctif présent: radical da 3ª pessoa do plural do presente (ils parlent $\to$ parl-) + terminações: -e, -es, -e, -ions, -iez, -ent. Irregulares: être (sois, sois, soit, soyons, soyez, soient); avoir (aie, aies, ait, ayons, ayez, aient); aller (aille, ailles, aille, allions, alliez, aillent); faire (fasse); pouvoir (puisse); savoir (sache). \\
+    Uso & Após expressões de necessidade, vontade, emoção, dúvida: "\emph{Il faut que tu étudies. Je veux que tu viennes.}" \\
+    Exercícios & 1. Conjugar no subjonctif. 2. Completar frases. \\
+    Conversação & Expressar desejos e necessidades: "\emph{Il faut que je parte. Je suis content que tu sois là.}" \\
+    Anki & 20 cards: subjonctif. \\
+\end{tabularx}
+
+\subsubsection*{Semana 12: Consolidação de Todos os Tempos}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Gramática & Revisão geral: présent, passé composé, imparfait, futur, conditionnel, subjonctif. Misturar tempos em uma conversa. \\
+    Exercícios & 1. Teste escrito com todos os tempos. 2. Produzir um diálogo longo. 3. Identificar tempos em textos. \\
+    Conversação & Conversa de 15 minutos sobre temas variados (viagens, planos, infância, desejos). \\
+    Anki & Revisão intensiva de todos os cards. \\
+\end{tabularx}
+
+\subsection{Mês 4: Consolidação B1 (Semanas 13–16)}
+\subsubsection*{Semana 13: Leitura e Vocabulário Temático}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Leitura & Artigos de jornal adaptados (ex: "Ijourlactu"), contos curtos (200-300 palavras). Identificar cognatos e novos vocabulários. \\
+    Vocabulário & Temas: voyage, travail, santé, famille, loisirs. \\
+    Exercícios & Responder perguntas de compreensão. \\
+    Conversação & Discutir o texto lido. \\
+    Anki & Vocabulário temático. \\
+\end{tabularx}
+
+\subsubsection*{Semana 14: Compréhension Orale (Listening)}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Áudio & Podcasts para aprendizes: "InnerFrench", "Français Authentique", "Coffee Break French". Músicas (Stromae, Angèle, Zaz), noticiários lentos ("Journal en français facile" da RFI). \\
+    Atividades & Ouvir e anotar palavras-chave, responder perguntas, transcrever trechos. \\
+    Conversação & Resumir o que ouviu. \\
+    Anki & Frases ouvidas nos áudios. \\
+\end{tabularx}
+
+\subsubsection*{Semana 15: Production Écrite}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Escrita & Redações curtas (150-200 palavras) sobre temas: "Ma ville", "Un voyage inoubliable", "Mes projets pour l'avenir". \\
+    Correção & Auto-correção ou com falante nativo (via Tandem, Hello-Talk). \\
+    Conversação & Apresentar a redação oralmente. \\
+    Anki & Erros corrigidos. \\
+\end{tabularx}
+
+\subsubsection*{Semana 16: Simulation DELF B1 et Révision Finale}
+\begin{tabularx}{\linewidth}{>{\bfseries}l L}
+    Avaliação & Prova simulada de DELF B1 (compréhension écrite, orale, production écrite et orale). \\
+    Révision & Pontos fracos identificados. \\
+    Célébration! & Vous avez atteint le niveau B1 en français ! \\
+\end{tabularx}
+
+% ----------------------------------------------------------------------
+% Seção: Programa Estruturado de 4 Semanas (Intensivo)
+% ----------------------------------------------------------------------
+\section{Programa Estruturado de 4 Semanas (Intensivo)}
+Se você preferir um foco mais intensivo nas primeiras 4 semanas, siga este plano:
+
+\subsection{Semana 1: Fundações}
+Foco: Saudações, être/avoir, presente básico \\
+\begin{itemize}
+    \item Dia 1-2: Dominar pronomes e essenciais
+    \item Dia 3-4: Fundamentos de ser e ter
+    \item Dia 5-6: Presente simples
+    \item Dia 7: Revisão e conversações básicas
+\end{itemize}
+
+\subsection{Semana 2: Comunicação Essencial}
+Foco: Verbos comuns, artigos, perguntas \\
+\begin{itemize}
+    \item Dia 1-2: Verbos regulares (parler, aller, faire)
+    \item Dia 3-4: Artigos e negação
+    \item Dia 5-6: Formação de perguntas
+    \item Dia 7: Prática de diálogo
+\end{itemize}
+
+\subsection{Semana 3: Gramática e Adjetivos}
+Foco: Passé composé, concordância de adjetivos \\
+\begin{itemize}
+    \item Dia 1-2: Passé composé
+    \item Dia 3-4: Concordância de adjetivos
+    \item Dia 5-6: Advérbios e frases comuns
+    \item Dia 7: Escrever narrativa simples
+\end{itemize}
+
+\subsection{Semana 4: Integração e Fluência}
+Foco: Futuro, frases complexas, conversação \\
+\begin{itemize}
+    \item Dia 1-2: Futur simple
+    \item Dia 3-4: Frases preposicionais
+    \item Dia 5-6: Cenários reais de conversação
+    \item Dia 7: Avaliação completa
+\end{itemize}
+
+% ----------------------------------------------------------------------
+% Seção: Os 100 Verbos Mais Usados
+% ----------------------------------------------------------------------
+\section{Os 100 Verbos Mais Usados em Francês}
+Baseado em análises de frequência linguística (Corpus Lexique 3.80).
+
+% CORREÇÃO: Agora a tabela tem 6 colunas (c l c l c l)
+\begin{longtable}{c l c l c l}
+    \toprule
+    N° & Verbe & Traduction & N° & Verbe & Traduction \\
+    \midrule
+    1 & être & ser/estar & 51 & suivre & seguir \\
+    2 & avoir & ter & 52 & entendre & ouvir \\
+    3 & pouvoir & poder & 53 & marcher & andar/funcionar \\
+    4 & faire & fazer & 54 & arriver & chegar/acontecer \\
+    5 & dire & dizer & 55 & porter & levar/carregar \\
+    6 & aller & ir & 56 & parler & falar \\
+    7 & voir & ver & 57 & rester & ficar/permanecer \\
+    8 & savoir & saber & 58 & sortir & sair \\
+    9 & vouloir & querer & 59 & revenir & voltar \\
+    10 & venir & vir & 60 & devenir & tornar-se \\
+    11 & falloir & precisar (impessoal) & 61 & entrer & entrar \\
+    12 & devoir & dever & 62 & repartir & partir novamente \\
+    13 & croire & acreditar & 63 & oublier & esquecer \\
+    14 & trouver & encontrar & 64 & appeler & chamar \\
+    15 & donner & dar & 65 & préparer & preparar \\
+    16 & prendre & pegar/tomar & 66 & jouer & jogar/tocar \\
+    17 & parler & falar & 67 & lire & ler \\
+    18 & aimer & amar/gostar & 68 & ouvrir & abrir \\
+    19 & penser & pensar & 69 & mourir & morrer \\
+    20 & regarder & olhar & 70 & compter & contar \\
+    21 & comprendre & compreender & 71 & fermer & fechar \\
+    22 & connaître & conhecer & 72 & perdre & perder \\
+    23 & demander & perguntar/pedir & 73 & offrir & oferecer \\
+    24 & répondre & responder & 74 & apprendre & aprender \\
+    25 & rendre & devolver/tornar & 75 & recevoir & receber \\
+    26 & attendre & esperar (aguardar) & 76 & envoyer & enviar \\
+    27 & laisser & deixar (permitir) & 77 & essayer & tentar \\
+    28 & passer & passar & 78 & montrer & mostrar \\
+    29 & mettre & pôr/colocar & 79 & continuer & continuar \\
+    30 & changer & mudar & 80 & gagner & ganhar \\
+    31 & accepter & aceitar & 81 & couper & cortar \\
+    32 & acheter & comprar & 82 & présenter & apresentar \\
+    33 & arrêter & parar & 83 & raconter & contar (narrar) \\
+    34 & apporter & trazer & 84 & quitter & deixar (partir) \\
+    35 & chercher & procurar & 85 & sonner & soar/tocar \\
+    36 & tomber & cair & 86 & monter & subir \\
+    37 & tenir & segurar & 87 & descendre & descer \\
+    38 & commencer & começar & 88 & vivre & viver \\
+    39 & finir & terminar & 89 & manger & comer \\
+    40 & servir & servir & 90 & boire & beber \\
+    41 & oublier & esquecer & 91 & dormir & dormir \\
+    42 & perdre & perder & 92 & sentir & sentir \\
+    43 & rappeler & lembrar & 93 & courir & correr \\
+    44 & expliquer & explicar & 94 & choisir & escolher \\
+    45 & imaginer & imaginar & 95 & habiter & morar \\
+    46 & espérer & esperar (ter esperança) & 96 & voyager & viajar \\
+    47 & préférer & preferir & 97 & travailler & trabalhar \\
+    48 & exister & existir & 98 & étudier & estudar \\
+    49 & manquer & faltar & 99 & danser & dançar \\
+    50 & utiliser & utilizar & 100 & chanter & cantar \\
+    \bottomrule
+\end{longtable}
+
+% ----------------------------------------------------------------------
+% Seção: Quick Reference
+% ----------------------------------------------------------------------
+\section{Os 100 Verbos Mais Usados — Quick Reference}
+\subsection*{Os 20 Verbos Fundamentais - Quick Cards}
+\begin{multicols}{2}
+\begin{itemize}
+    \item \textbf{être} - ser/estar
+    \item \textbf{avoir} - ter
+    \item \textbf{pouvoir} - poder
+    \item \textbf{faire} - fazer
+    \item \textbf{dire} - dizer
+    \item \textbf{aller} - ir
+    \item \textbf{voir} - ver
+    \item \textbf{savoir} - saber
+    \item \textbf{vouloir} - querer
+    \item \textbf{venir} - vir
+    \item \textbf{falloir} - precisar (imp.)
+    \item \textbf{devoir} - dever
+    \item \textbf{croire} - acreditar
+    \item \textbf{trouver} - encontrar
+    \item \textbf{donner} - dar
+    \item \textbf{prendre} - pegar
+    \item \textbf{parler} - falar
+    \item \textbf{aimer} - amar/gostar
+    \item \textbf{penser} - pensar
+    \item \textbf{regarder} - olhar
+\end{itemize}
+\end{multicols}
+\emph{Dica Estratégica:} Memorize os 20 primeiros verbos com Anki — eles cobrem aproximadamente 80\% do francês conversacional. Os 80 restantes completam habilidades específicas (+20\%).
+
+% ----------------------------------------------------------------------
+% Seção: As 100 Palavras Mais Usadas
+% ----------------------------------------------------------------------
+\section{As 100 Palavras Mais Usadas em Francês}
+\subsection{Verbos e Palavras Essenciais (1-50)}
+\begin{multicols}{2}
+\begin{enumerate}[label=\arabic*., start=1]
+    \item être (ser/estar)
+    \item avoir (ter)
+    \item aller (ir)
+    \item pouvoir (poder)
+    \item devoir (dever)
+    \item faire (fazer)
+    \item vouloir (querer)
+    \item savoir (saber)
+    \item prendre (pegar)
+    \item venir (vir)
+    \item voir (ver)
+    \item donner (dar)
+    \item parler (falar)
+    \item mettre (pôr)
+    \item trouver (encontrar)
+    \item dire (dizer)
+    \item croire (acreditar)
+    \item arriver (chegar)
+    \item appeler (chamar)
+    \item chercher (procurar)
+    \item le (o - m)
+    \item la (a - f)
+    \item de (de)
+    \item un (um)
+    \item une (uma)
+    \item et (e)
+    \item à (a)
+    \item en (em)
+    \item que (que)
+    \item est (é)
+    \item au (ao)
+    \item non (não)
+    \item ne (não)
+    \item pas (não)
+    \item se (se)
+    \item qu’ (que - abreviado)
+    \item son (seu - m)
+    \item sa (sua - f)
+    \item mes (meus)
+    \item ses (seus)
+    \item nous (nós)
+    \item vous (vós/você)
+    \item me (me)
+    \item te (te)
+    \item lui (lhe/ele)
+    \item leur (seu/eles)
+    \item les (os/as)
+    \item des (dos/alguns)
+    \item sur (sobre)
+    \item pour (para)
+\end{enumerate}
+\end{multicols}
+
+\subsection{Substantivos e Descritores Comuns (51-100)}
+\begin{multicols}{2}
+\begin{enumerate}[label=\arabic*., start=51]
+    \item temps (tempo)
+    \item façon (maneira)
+    \item part (parte)
+    \item chose (coisa)
+    \item vie (vida)
+    \item homme (homem)
+    \item monde (mundo)
+    \item personne (pessoa)
+    \item gens (pessoas)
+    \item jour (dia)
+    \item main (mão)
+    \item moment (momento)
+    \item cas (caso)
+    \item femme (mulher)
+    \item lieu (lugar)
+    \item idée (ideia)
+    \item connaissance (conhecimento)
+    \item résultat (resultado)
+    \item vérité (verdade)
+    \item problème (problema)
+    \item raison (razão)
+    \item argent (dinheiro)
+    \item parole (palavra)
+    \item loi (lei)
+    \item nombre (número)
+    \item pays (país)
+    \item nom (nome)
+    \item année (ano)
+    \item eau (água)
+    \item heure (hora)
+    \item nouveau (novo)
+    \item petit (pequeno)
+    \item grand (grande)
+    \item bon (bom)
+    \item mauvais (mau)
+    \item premier (primeiro)
+    \item dernier (último)
+    \item seul (só)
+    \item possible (possível)
+    \item différent (diferente)
+    \item plus (mais)
+    \item moins (menos)
+    \item très (muito)
+    \item bien (bem)
+    \item mal (mal)
+    \item maintenant (agora)
+    \item avant (antes)
+    \item aujourd’hui (hoje)
+    \item demain (amanhã)
+    \item hier (ontem)
+\end{enumerate}
+\end{multicols}
+
+% ----------------------------------------------------------------------
+% Seção: Exercícios Diários de Prática
+% ----------------------------------------------------------------------
+\section{Exercícios Diários de Prática}
+
+\subsection*{Saudações Essenciais}
+Instrução: Preencha os espaços com a resposta correta.
+\begin{enumerate}
+    \item \_\_\_ ! (Olá) $\to$ Bonjour
+    \item Ça va \_\_\_ ? (Como vai você bem?) $\to$ bien
+    \item \_\_\_ beaucoup (Muito obrigado) $\to$ Merci
+    \item \_\_\_ -moi (Desculpe-me) $\to$ Excusez
+    \item De \_\_\_ (De nada) $\to$ rien
+\end{enumerate}
+
+\subsection*{2. Conjugação de ÊTRE}
+Instrução: Complete com o verbo correto.
+\begin{enumerate}
+    \item Je \_\_\_ français(e) $\to$ suis
+    \item Tu \_\_\_ étudiant(e) $\to$ es
+    \item Il \_\_\_ médecin $\to$ est
+    \item Nous \_\_\_ heureux(ses) $\to$ sommes
+    \item Vous \_\_\_ professeur $\to$ êtes
+\end{enumerate}
+
+\subsection{Conjunto 3: Conjugação de Avoir}
+\begin{enumerate}
+    \item J’ \_\_\_ un chat $\to$ ai
+    \item Tu \_\_\_ une voiture $\to$ as
+    \item Elle \_\_\_ des enfants $\to$ a
+    \item Nous \_\_\_ une maison $\to$ avons
+    \item Ils \_\_\_ des amis $\to$ ont
+\end{enumerate}
+
+\subsection{Conjunto 4: Artigos (le, la, les)}
+\begin{enumerate}
+    \item \_\_\_ livre $\to$ Le
+    \item \_\_\_ maison $\to$ La
+    \item \_\_\_ enfants $\to$ Les
+    \item \_\_\_ pomme $\to$ La
+    \item \_\_\_ école $\to$ L’
+\end{enumerate}
+
+\subsection{Conjunto 5: Tradução}
+\begin{enumerate}
+    \item I am French $\to$ Je suis français(e)
+    \item She has a dog $\to$ Elle a un chien
+    \item We are happy $\to$ Nous sommes heureux
+    \item Do you speak English? $\to$ Parlez-vous anglais?
+    \item Where is the station? $\to$ Où est la gare?
+\end{enumerate}
+
+\subsection{Drill 1: Verbos Regulares -ER}
+\emph{Parler} (falar) : je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent \\
+Prática: Conjugue 3 verbos -ER completamente.
+
+\subsection{Drill 2: Concordância de Adjetivos}
+Masculino: un livre rouge \\
+Feminino: une maison rouge \\
+Masculino plural: des livres rouges \\
+Feminino plural: des maisons rouges \\
+Prática: Descreva 5 objetos concordando gênero/número.
+
+\subsection{Drill 3: Negação (Ne...Pas)}
+\emph{Je ne suis pas français} \\
+\emph{Elle n’aime pas le café} \\
+\emph{Nous ne parlons pas anglais} \\
+Prática: Faça 5 frases negativas.
+
+\subsection{Drill 4: Formação de Perguntas}
+\begin{enumerate}
+    \item Entonação: \emph{Tu parles français?}
+    \item Est-ce que: \emph{Est-ce que tu parles français?}
+    \item Inversão: \emph{Parles-tu français?}
+\end{enumerate}
+Prática: Crie 5 perguntas usando os 3 métodos.
+
+\subsection{Drill 5: Contrações}
+à + le = au \quad à + les = aux \quad de + le = du \quad de + les = des \\
+Prática: Escreva 5 frases usando cada contração.
+
+% ----------------------------------------------------------------------
+% Seção: Vocabulário por Tema
+% ----------------------------------------------------------------------
+\section{Construção de Vocabulário por Tema}
+\subsection{Tema 1: Comida (Nourriture)}
+pain (pão), fromage (queijo), poisson (peixe), viande (carne), légumes (legumes), fruits (frutas), vin (vinho), beurre (manteiga), œufs (ovos) \\
+Prática: Escreva uma refeição completa usando 8+ palavras.
+
+\subsection{Tema 2: Família (Famille)}
+père (pai), mère (mãe), frère (irmão), sœur (irmã), grand-père (avô), grand-mère (avó), oncle (tio), tante (tia) \\
+Prática: Apresente sua família (5-7 frases).
+
+\subsection{Tema 3: Casa (Pièces)}
+salon (sala), chambre (quarto), cuisine (cozinha), salle de bain (banheiro), bureau (escritório), garage (garagem), jardin (jardim) \\
+Prática: Descreva sua casa com localizações dos cômodos.
+
+\subsection{Tema 4: Roupa (Vêtements)}
+chemise (camisa), pantalon (calça), robe (vestido), chaussures (sapatos), chapeau (chapéu), manteau (casaco) \\
+Prática: Descreva uma roupa usando cores e adjetivos.
+
+% ----------------------------------------------------------------------
+% Seção: Prática de Conversação
+% ----------------------------------------------------------------------
+\section{Prática de Conversação}
+\subsection{Cenário 1: Encontro}
+\begin{verbatim}
+A: Bonjour, je m’appelle Marie.
+B: Je m’appelle Pierre. Enchanté(e).
+A: D’où viens-tu?
+B: De Paris. Et toi?
+A: De Lyon. Qu’est-ce que tu fais?
+B: Je suis ingénieur. Et toi?
+\end{verbatim}
+Sua vez: Crie um diálogo similar.
+
+\subsection{Cenário 2: Café}
+\begin{verbatim}
+Serveur: Bonjour, que désirez-vous?
+Toi: Un café et un croissant, s’il vous plaît.
+Serveur: Petit ou grand?
+Toi: Petit, s’il vous plaît.
+\end{verbatim}
+Sua vez: Peça itens diferentes.
+
+\subsection{Cenário 3: Direções}
+\begin{verbatim}
+Toi: Où est la gare?
+Passant: À gauche, cinq minutes.
+Toi: Merci beaucoup!
+\end{verbatim}
+Sua vez: Pergunte por diferentes locais.
+
+% ----------------------------------------------------------------------
+% Seção: Exercícios de Tradução
+% ----------------------------------------------------------------------
+\section{Exercícios de Tradução}
+\subsection{Fácil}
+\begin{enumerate}
+    \item I am French $\to$ Je suis français(e)
+    \item She speaks English $\to$ Elle parle anglais
+    \item We have a cat $\to$ Nous avons un chat
+    \item They are happy $\to$ Ils sont heureux
+\end{enumerate}
+\subsection{Médio}
+\begin{enumerate}
+    \item I don't like coffee $\to$ Je n'aime pas le café
+    \item Where are you? $\to$ Où es-tu?
+    \item Do they have children? $\to$ Ont-ils des enfants?
+\end{enumerate}
+\subsection{Avançado}
+\begin{enumerate}
+    \item I have spoken to him $\to$ Je lui ai parlé
+    \item She was reading when I arrived $\to$ Elle lisait quand je suis arrivé(e)
+    \item We went to Paris last summer $\to$ Nous sommes allés à Paris l'été dernier
+\end{enumerate}
+
+% ----------------------------------------------------------------------
+% Seção: Notas Culturais
+% ----------------------------------------------------------------------
+\section{Notas Culturais}
+\subsection{Regiões Francófonas}
+\begin{itemize}
+    \item França: Moda, vinho, culinária
+    \item Quebec: Dialeto francês distinto
+    \item Bélgica, Suíça: Sociedades multilíngues
+    \item África: Senegal, Costa do Marfim, Congo
+\end{itemize}
+\subsection{Etiqueta}
+\begin{itemize}
+    \item Beijo na bochecha para cumprimentar (1-4 beijos variam por região)
+    \item Sempre diga "Bonjour" e "Au revoir"
+    \item Use "Vous" com estranhos/idosos
+    \item Jantar é a refeição principal (19h-20h)
+    \item Tempo de qualidade com a família é valorizado
+\end{itemize}
+
+% ----------------------------------------------------------------------
+% Seção: Dicas de Estudo
+% ----------------------------------------------------------------------
+\section{Dicas de Estudo}
+\subsection{Métodos}
+\begin{enumerate}
+    \item Shadowing de falantes nativos
+    \item Parceiros de conversação
+    \item Filmes e TV franceses (Netflix)
+    \item Podcasts: RFI, Français Facile
+    \item Escrita diária de frases
+\end{enumerate}
+\subsection{Truques de Memória}
+\begin{enumerate}
+    \item Rimar padrões verbais
+    \item Agrupar verbos similares
+    \item Aprender palavras em frases
+    \item Visualizar significados
+    \item Criar associações
+\end{enumerate}
+\subsection{Erros Comuns}
+\begin{enumerate}
+    \item Pronúncia (letras silenciosas)
+    \item Esquecer o gênero dos substantivos
+    \item Erros de conjugação verbal
+    \item Colocação de acentos
+    \item Ordem das palavras com pronomes
+\end{enumerate}
+\subsection{Rotina Diária}
+\begin{itemize}
+    \item 5 min: Vocabulário (Anki)
+    \item 10 min: Drill gramatical
+    \item 15 min: Prática de listening
+    \item 10 min: Fala (grave-se)
+    \item 5 min: Escreva 3 frases
+    \item Total: 45 minutos
+\end{itemize}
+\subsection{Metas Semanais}
+\begin{itemize}
+    \item Semana 1: 25-30 palavras, dominar saudações
+    \item Semana 2: Conjugações completas, perguntas
+    \item Semana 3: Usar passé composé, ler textos
+    \item Semana 4: Conversas de 3 minutos
+\end{itemize}
+
+% ----------------------------------------------------------------------
+% Seção: Avaliação de Progresso
+% ----------------------------------------------------------------------
+\section{Avaliação de Progresso — Benchmarking}
+\subsection{Teste Inicial - Baseline (Data: \_\_\_/\_\_\_/\_\_\_)}
+\subsubsection{1. Vocabulário Básico (A1)}
+Traduza sem olhar:
+\begin{enumerate}
+    \item Chat = \_\_\_\_\_\_\_\_\_\_
+    \item Maison = \_\_\_\_\_\_\_\_\_\_
+    \item Manger = \_\_\_\_\_\_\_\_\_\_
+    \item Eau = \_\_\_\_\_\_\_\_\_\_
+    \item Merci = \_\_\_\_\_\_\_\_\_\_
+\end{enumerate}
+Pontuação: \_\_\_ / 5
+
+\subsubsection{2. Compreensão (Listening A1)}
+Quando você compreende:
+\begin{itemize}
+    \item Saudações (Bonjour, Ça va?)
+    \item Números (0-10)
+    \item Nomes
+    \item Comida comum
+    \item Funções (Oui, Non, S’il vous plaît)
+\end{itemize}
+Nível Atingido: \_\_\_ / 5
+
+\subsubsection{3. Fala Básica}
+Você tem capacidade de dizer (em voz alta, confiante):
+\begin{itemize}
+    \item "Je m’appelle..."
+    \item "Je suis de..."
+    \item "J’ai... ans"
+    \item "Comment allez-vous?"
+    \item "D’où venez-vous?"
+\end{itemize}
+Nível Atingido: \_\_\_ / 5
+
+\subsubsection{4. Conversação Simples}
+Complete sem ajuda:
+\begin{verbatim}
+A: "Bonjour, comment t’appelles-tu?"
+B: "_________________________________"
+A: "D’où es-tu?"
+B: "_________________________________"
+A: "Que fais-tu?"
+B: "_________________________________"
+\end{verbatim}
+Pontuação: \_\_\_ / 3
+
+\subsection{Progressão Mensal}
+\subsubsection{Mês 1 (Data: \_\_\_/\_\_\_/\_\_\_)}
+\begin{tabular}{lcc}
+    \toprule
+    Teste & Pontuação & Nível \\
+    \midrule
+    Vocabulário (50 palavras) & \_\_\_ / 50 & \\
+    Listening (A1) & \_\_\_ / 10 & \\
+    Fala (5 frases) & \_\_\_ / 5 & \\
+    Conversação (3 Q\&R) & \_\_\_ / 3 & \\
+    TOTAL & \_\_\_ / 68 & \\
+    \bottomrule
+\end{tabular}
+
+\subsubsection{Mês 2 (Data: \_\_\_/\_\_\_/\_\_\_)}
+\begin{tabular}{lcc}
+    \toprule
+    Teste & Pontuação & Nível \\
+    \midrule
+    Vocabulário (100 palavras) & \_\_\_ / 100 & \\
+    Listening (A2) & \_\_\_ / 15 & \\
+    Fala (8 frases) & \_\_\_ / 8 & \\
+    Conversação (5 Q\&R) & \_\_\_ / 5 & \\
+    TOTAL & \_\_\_ / 128 & \\
+    \bottomrule
+\end{tabular}
+
+\subsubsection{Mês 3 (Data: \_\_\_/\_\_\_/\_\_\_)}
+\begin{tabular}{lcc}
+    \toprule
+    Teste & Pontuação & Nível \\
+    \midrule
+    Vocabulário (150 palavras) & \_\_\_ / 150 & \\
+    Listening (B1) & \_\_\_ / 20 & \\
+    Fala (12 frases) & \_\_\_ / 12 & \\
+    Conversação (8 Q\&R) & \_\_\_ / 8 & \\
+    TOTAL & \_\_\_ / 190 & \\
+    \bottomrule
+\end{tabular}
+
+\subsection{Indicadores de Progresso}
+\subsubsection*{Sinais Positivos:}
+\begin{itemize}
+    \item Reconheço 30+ palavras novas por mês
+    \item Compreendo conversas simples em filmes
+    \item Posso me apresentar sem estresse
+    \item Peço no restaurante sem medo
+    \item Minha pronúncia melhora a cada semana
+\end{itemize}
+\subsubsection*{Sinais de Alerta:}
+\begin{itemize}
+    \item Nenhuma palavra nova aprendida
+    \item Ainda não consigo dizer meu nome em francês
+    \item Tenho medo de falar em voz alta
+    \item Assisto filme mas não entendo NADA
+    \item Estudo mas nunca pratico
+\end{itemize}
+
+% ----------------------------------------------------------------------
+% Seção: Cognatos e Falsos Amigos
+% ----------------------------------------------------------------------
+\section{Listas de Palavras Similares (Cognatos)}
+\subsection{Cognatos Perfeitos (Escrita Idêntica ou Quase Idêntica)}
+\begin{multicols}{4}
+\begin{itemize}
+    \item animal
+    \item terrible
+    \item note
+    \item important
+    \item flexible
+    \item texte
+    \item possible
+    \item responsable
+    \item total
+    \item problème
+    \item art
+    \item triple
+    \item général
+    \item part
+    \item universel
+    \item naturel
+    \item classe
+    \item vertical
+    \item original
+    \item phrase
+    \item culture
+    \item particulier
+    \item image
+    \item nature
+    \item visible
+    \item ligne
+    \item aventure
+    \item horrible
+    \item musique
+    \item lecture
+\end{itemize}
+\end{multicols}
+
+\subsection{Padrões de Conversão Mais Comuns}
+\subsubsection{Português -ção $\to$ Français -tion}
+\begin{tabular}{ll}
+    \toprule
+    Português & Français \\
+    \midrule
+    nação & nation \\
+    canção & chanson (exceção) \\
+    educação & éducation \\
+    informação & information \\
+    situação & situation \\
+    atenção & attention \\
+    condição & condition \\
+    tradição & tradition \\
+    produção & production \\
+    construção & construction \\
+    \bottomrule
+\end{tabular}
+
+\subsubsection{Português -dade $\to$ Français -té}
+\begin{tabular}{ll}
+    \toprule
+    Português & Français \\
+    \midrule
+    cidade & cité \\
+    verdade & vérité \\
+    universidade & université \\
+    felicidade & félicité (menos usado) / bonheur \\
+    liberdade & liberté \\
+    oportunidade & opportunité \\
+    facilidade & facilité \\
+    dificuldade & difficulté \\
+    amizade & amitié \\
+    \bottomrule
+\end{tabular}
+
+\subsubsection{Português -vel $\to$ Français -ble}
+\begin{tabular}{ll}
+    \toprule
+    Português & Français \\
+    \midrule
+    possível & possible \\
+    amável & aimable \\
+    terrível & terrible \\
+    horrível & horrible \\
+    flexível & flexible \\
+    responsável & responsable \\
+    notável & notable \\
+    durável & durable \\
+    favorável & favorable \\
+    viável & viable \\
+    \bottomrule
+\end{tabular}
+
+\subsection{Falsos Amigos (Faux Amis) — Cuidado!}
+\begin{tabular}{lll}
+    \toprule
+    Português & Francês & Significado real em francês \\
+    \midrule
+    atualmente & actuellement & atualmente (não "atualmente") \\
+    biblioteca & bibliothèque & biblioteca \\
+    presentear & présenter & apresentar (não dar presente) \\
+    propaganda & propagande & propaganda política (não publicidade) \\
+    saco & sac & bolsa/saco \\
+    puxe & pousser & empurrar (não puxar) \\
+    tire & tirer & puxar (não tirar) \\
+    brincar & brinquebaler & sacudir (não brincar) \\
+    barato & baratin & confusão (não barato) \\
+    esquisito & exquis & delicioso, requintado \\
+    rato & rate & falha (não rato) \\
+    vaso & vase & vaso (mas também "lama") \\
+    assistir & assister & participar (não assistir como espectador) \\
+    \bottomrule
+\end{tabular}
+
+% ----------------------------------------------------------------------
+% Seção: Recursos Recomendados
+% ----------------------------------------------------------------------
+\section{Recursos Recomendados}
+\begin{itemize}
+    \item \textbf{Dicionários:} WordReference (com fórum), Linguee, Reverso Context
+    \item \textbf{Anki Decks:} "French Frequency 500", "French Verb Conjugations", "DELF B1 Preparation"
+    \item \textbf{YouTube:} Lingoni French, Easy French, Français avec Pierre, InnerFrench
+    \item \textbf{Podcasts:} "InnerFrench", "Français Authentique", "Coffee Break French", "Journal en français facile" (RFI)
+    \item \textbf{Séries e Filmes:} "Extra French" (A2), "Dix pour cent" (B1+), "Lupin" (B1+)
+    \item \textbf{Apps de Troca de Idiomas:} Tandem, HelloTalk
+\end{itemize}
+
+% ----------------------------------------------------------------------
+% Seção: Conselhos Finais
+% ----------------------------------------------------------------------
+\section{Conselhos Finais}
+\begin{enumerate}
+    \item A regularidade é mais importante que a intensidade. 30 minutos por dia valem mais que 3 horas uma vez por semana.
+    \item Nunca pule o Anki. É a base da memorização de longo prazo.
+    \item Fale em voz alta desde o primeiro dia. Mesmo que cometa erros.
+    \item Ouça muito francês. Seu cérebro precisa se habituar aos sons.
+    \item Seja paciente. O francês é mais desafiador para um lusófono, mas com este plano, você atingirá o B1 em 4 meses.
+\end{enumerate}
+
+\end{document}

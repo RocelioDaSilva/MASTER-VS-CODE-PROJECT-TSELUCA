@@ -1,0 +1,55 @@
+{
+  "endpoint": "POST /api/auth/login",
+  "description": "Login successful - returns JWT tokens",
+  "method": "POST",
+  "url": "http://localhost:3000/api/auth/login",
+  "summary": "Authenticate with email and password",
+  
+  "request": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "email": "user@example.com",
+      "password": "SecurePass123!"
+    }
+  },
+  
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": true,
+      "message": "Login successful",
+      "data": {
+        "user": {
+          "id": "550e8400-e29b-41d4-a716-446655440000",
+          "email": "user@example.com",
+          "created_at": "2026-03-01T08:15:00Z"
+        },
+        "tokens": {
+          "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImVtYWlsIjoidXNlckBleGFtcGxlLmNvbSIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjQ2NTQxNTAwfQ.signature",
+          "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjUxMzI0NjAwfQ.signature",
+          "accessTokenExpiry": 900,
+          "refreshTokenExpiry": 604800
+        }
+      }
+    }
+  },
+  
+  "notes": [
+    "HTTP 200 returned on success",
+    "accessToken valid for 15 minutes (900 seconds)",
+    "refreshToken valid for 7 days (604800 seconds)",
+    "Use accessToken in subsequent requests: Authorization: Bearer <accessToken>",
+    "When accessToken expires, use refreshToken to get new accessToken",
+    "Rate limited: Max 5 login attempts per 15 minutes per IP"
+  ],
+  
+  "usage": {
+    "next_request": "Use accessToken in header: -H 'Authorization: Bearer eyJ...'"
+  }
+}

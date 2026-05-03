@@ -1,0 +1,40 @@
+# ============================================================================
+# GEESP-Angola: Development Dependencies
+# Includes all dependencies from requirements-app.txt plus dev tools
+# Usage: pip install -r requirements-dev.txt
+# ============================================================================
+
+# Application dependencies
+-r requirements-app.txt
+
+# Code Quality & Linting
+black==24.2.0
+flake8==7.0.0
+isort==5.13.2
+pylint==3.0.3
+mypy==1.8.0
+
+# Testing & Coverage
+pytest==7.4.4
+pytest-cov==4.1.0
+pytest-xdist==3.6.1
+
+# Pre-commit Hooks
+pre-commit==3.6.0
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==2.0.0
+
+# Type Stubs
+types-PyYAML==6.0.1
+types-requests==2.32.0
+
+# Development Utilities
+jupyter==1.0.0
+ipython==8.21.0
+ipdb==0.13.13
+
+# Performance Profiling
+line-profiler==4.1.1
+memory-profiler==0.61.0

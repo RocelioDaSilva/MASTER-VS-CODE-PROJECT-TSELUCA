@@ -1,0 +1,299 @@
+{
+  "tipos_reservatorios": [
+    {
+      "tipo": "Reservatório de Petróleo Pesado/Viscoso",
+      "caracteristicas": {
+        "viscosidade_api": "Inferior a 20 °API (petróleo pesado)",
+        "mobilidade": "Baixa - requer redução de viscosidade",
+        "densidade": "Elevada",
+        "escoamento": "Limitado à pressão e temperatura originais",
+        "profundidade_tipica": "Geralmente rasos a intermediários",
+        "porosidade": "Moderada a elevada (favorável)",
+        "permeabilidade": "Moderada a elevada (favorável para métodos convencionais)",
+        "pressao_reservatorio": "Moderada",
+        "temperatura_reservatorio": "Moderada a elevada",
+        "saturacao_petroleo": "Elevada"
+      },
+      "profundidade_tipica": "Rasos a intermediários (< 2500m típico)",
+      "impacto_eor": "Métodos térmicos altamente apropriados - vapor ou combustão in situ para reduzir viscosidade e melhorar mobilidade. Recuperação típica: 50-60% (vapor)",
+      "suitability_criterios": {
+        "metodo_preferido": "Térmico (Vapor ou Combustão in situ)",
+        "restricoes": "Requer alto petróleo viscoso (padrão ideal: >100 cp), zona produtiva >20 pés recomendado",
+        "vantagem_economica": "Custo de aquecimento ligado ao preço do petróleo - quando preço cai, custo cai",
+        "limitacao_geografica": "Não ideal para áreas remotas (custo importação alta)"
+      }
+    },
+    {
+      "tipo": "Reservatório Convencional Onshore",
+      "caracteristicas": {
+        "profundidade": "Moderada (500-2000m típico)",
+        "porosidade": "Elevada (>15% desejável)",
+        "permeabilidade": "Elevada (> 500 mD)",
+        "espaçamento_poços": "Próximo e regular",
+        "heterogeneidade": "Reduzida a moderada (homogeneidade preferível)",
+        "teor_argila": "Baixo (<5% recomendado)",
+        "salinidade_formacao": "Baixa a moderada (< 20000 ppm ideal)",
+        "ions_divalentes": "Baixos (< 500 ppm Ca++ e Mg++)",
+        "viscosidade_petroleo": "Leve a médio (20-35 °API)",
+        "saturacao_petroleo": "Moderada (55-75% vol poros)"
+      },
+      "profundidade_tipica": "500-2000 metros",
+      "impacto_eor": "Múltiplos métodos viáveis - Injeção de água com polímeros, surfactantes ou alcalinos. Recuperação típica: 15-25% (polímeros), 35-45% (alcalino), 5-15% (gás miscível). Melhoria de varredura macroscópica com polímeros.",
+      "suitability_criterios": {
+        "metodo_preferido": "Químico (Polímero, Surfactante, Alcalino) ou Gás Miscível",
+        "restricoes_quimicas": "Concentração polímeros: 500-1500 ppm. Varredura área >50% em injeção água recomendada. Evitar formações com anidrite/gesso (alcalino indesejável)",
+        "restricoes_permeabilidade": "Mínimo 50 mD para polímeros. Máximo 2000-3000 mD (para evitar passagem prematura)",
+        "salinidade_limite": "Máximo 20000 ppm para polímeros e surfactantes",
+        "profundidade_limite": "Polímeros: <2000m. Surfactantes: <3000m. Temperatura <93°C recomendado"
+      }
+    },
+    {
+      "tipo": "Reservatório Profundo/Ultra-profundo",
+      "caracteristicas": {
+        "profundidade": "Superior a 2500 metros",
+        "pressao_alta": "Muito elevada (>400 bar)",
+        "temperatura_alta": "Elevada (>93°C)",
+        "espaçamento_poços": "Maior (offshore) - coloca desafios na aquisição dados",
+        "ambiente": "Predominantemente offshore",
+        "custos": "Muito elevados para perfuração e modificação plataformas",
+        "dados_disponíveis": "Frequentemente limitados e caros",
+        "conectividade": "Desafios com segregação gravitacional",
+        "mobilidade": "Podem beneficiar de gás miscível ou injeção CO2"
+      },
+      "profundidade_tipica": "2500-5000+ metros",
+      "impacto_eor": "Gás miscível (CO2, nitrogénio, gás hidrocarbonetos) apropriado para explorar miscibilidade a alta pressão. Recuperação típica: 5-15%. Métodos térmicos geralmente impraticáveis. Desafio maior: custo da plataforma e infraestrutura.",
+      "suitability_criterios": {
+        "metodo_preferido": "Gás Miscível (CO2, N2 ou Gás Hidrocarbonetos) ou Imiscível",
+        "pressao_minima_miscivel": "1200-3000 psi para GLP. 3000-5000 psi para gás alta pressão",
+        "restricoes": "Requer reservatório com inclinação acentuada (>30°) para estabilização gravitacional. Miscibilidade com óleos leves desejável",
+        "custos": "Muito elevados - requer nova infraestrutura superficial completa e redimensionamento plataformas",
+        "desafios_operacionais": "Dificuldade dedilhação viscosa. Necessidade compressores. Corrosão no gás de combustão. Ruptura precoce do CO2"
+      }
+    },
+    {
+      "tipo": "Reservatório Offshore Intermediário",
+      "caracteristicas": {
+        "profundidade_agua": "100-1000m",
+        "profundidade_reservatorio": "1500-3000m",
+        "espaçamento_poços": "Moderadamente espaçado",
+        "heterogeneidade": "Moderada a elevada",
+        "pressao": "Moderada a elevada",
+        "temperatura": "Moderada",
+        "acesso_equipamentos": "Limitado pela plataforma disponível",
+        "logistica": "Desafios de transporte fluidos injeção"
+      },
+      "profundidade_tipica": "1500-3000 metros (coluna água 100-1000m)",
+      "impacto_eor": "Métodos mistos possíveis - químico com gás miscível. Desafios maiores em logística e infraestrutura. Recuperação depende do tipo específico. Planejamento crítico para designar espaço plataforma durante desenvolvimento inicial.",
+      "suitability_criterios": {
+        "metodo_preferido": "Depende propriedades fluido-rocha. Híbrido: Químico + Gás Miscível possível",
+        "planejamento_critico": "Plataforma deve ser redimensionada no desenvolvimento para acomodar equipamentos EOR futuro",
+        "infraestrutura_necessaria": "Separadores, tratamento água, compressores, misturadores químicos, tubações isoladas (para vapor se aplicável)",
+        "restricoes_espaciais": "Peso máximo equipamento limitado por capacidade plataforma"
+      }
+    },
+    {
+      "tipo": "Reservatório Carbonatado",
+      "caracteristicas": {
+        "litologia": "Calcário, dolomita",
+        "porosidade": "Altamente variável (1-30%) - frequentemente baixa",
+        "permeabilidade": "Altamente variável - fraturas dominam fluxo",
+        "molhabilidade": "Frequentemente hidrofóbica (óleo-molhado)",
+        "anidrite_gesso": "Presença comum",
+        "rugosidade_superficial": "Elevada",
+        "escoamento": "Controlado por fraturas naturais",
+        "heterogeneidade": "Muito elevada",
+        "matriz": "Isolada/não contribuinte"
+      },
+      "profundidade_tipica": "Variável (500-3500m) conforme contexto geológico",
+      "impacto_eor": "Desafio importante para métodos químicos convencionais - anidrite/gesso consomem grandes quantidades reagentes alcalinos, tornando impraticável. Gás miscível ou métodos alternativos preferidos. Recuperação mais difícil de prever.",
+      "suitability_criterios": {
+        "metodo_evitar": "Alcalino-Surfactante-Polímero (ASP) NÃO RECOMENDADO - consumo excessivo alcali",
+        "metodo_preferir": "Gás Miscível, CO2, Polímero com modificação, Surfactante puro (com cautela)",
+        "restricao_principal": "Presença anidrite/gesso elimina viabilidade alcalino",
+        "caracterizacao_critica": "Análise difração raios-X (XRD) e microscopia (SEM) para quantificar mineralogia",
+        "alternativa": "Estudar EOR alternativo ou IOR com poços adicionais"
+      }
+    },
+    {
+      "tipo": "Reservatório com Teor Argila Elevado",
+      "caracteristicas": {
+        "argila_percentual": ">10% areia + argila misturada",
+        "tipos_argila": "Ilita, caolinita, montmorillonita, clorita",
+        "adsorção": "Muito elevada para surfactantes e polímeros",
+        "injeção_agua": "Sensível - mudanças salinidade/pH causam inchação argila",
+        "permeabilidade_reduzida": "Bloqueios de fluxo comum",
+        "molhabilidade": "Frequentemente favorável (hidrofílica natural)",
+        "custo_quimicos": "Elevado - necessário volume maior"
+      },
+      "profundidade_tipica": "Variável - comum em bacias prolíferas",
+      "impacto_eor": "Métodos químicos desafiadores - alta adsorção reduz eficiência slug químico. Polímeros especialmente afetados. Calculado em projeto como perda de até 30-50% do polímero. Gás miscível menos afetado.",
+      "suitability_criterios": {
+        "metodo_viavel": "Gás Miscível ou Baixa Salinidade (Less Damaging)",
+        "restricao_quimica": "Surfactantes e polímeros sofrem adsorção severa - calcular retenção em projeto (teste SCAL obrigatório)",
+        "teste_laboratorial_critico": "Adsorção isotérmica (ASTM D3860) para quantificar perda",
+        "design_quimico": "Se usar químico: concentrações maiores necessárias (20-30% acima normal), ou usar co-surfactantes para reduzir adsorção",
+        "custos_aumentados": "Volume químico pode ser 1.5x-2x maior"
+      }
+    }
+  ],
+  "criterios_suitability": {
+    "Injeção Vapor": {
+      "profundidade_ideal": "<1500m (requer zona espessa para minimizar perda calor)",
+      "viscosidade_petroleo": ">100 cp (pesado) - IDEAL",
+      "porosidade_minima": "Moderada (>12%)",
+      "permeabilidade_minima": "Moderada (>100 mD)",
+      "espessura_zona": ">20 pés recomendado",
+      "temperatura_max": "Sem limite formal, mas custos aumentam",
+      "pressao_max": "Moderada-Elevada (poço deve resistir)",
+      "litologia": "Areias não consolidadas, arenitos de boa qualidade",
+      "limitacoes": "NÃO APLICÁVEL: zonas água, fraturas excessivas, perda calor > 50%",
+      "recuperacao_tipica": "50-60%",
+      "problemas_operacionais": "Mobilidade adversa, sobreposição injeção, perda calor, poluição termal"
+    },
+    "Combustão in-situ": {
+      "profundidade_ideal": "Rasa-Intermediária (preferível <2000m, perda calor excessiva além)",
+      "viscosidade_petroleo": "Pesada, com suficiente coque queimável",
+      "porosidade_minima": "Elevada (>15%)",
+      "permeabilidade_minima": "Boa (>200 mD) para ar percolar",
+      "saturacao_petroleo": "Elevada (60-80%) para depositar coque",
+      "litologia": "Areias não consolidadas PREFERÍVEL",
+      "limitacoes_severas": "Não em areias consolidadas, estratos água/gás problemáticos, alta perda calor",
+      "temperatura_max": "Limitada pela corrosão (<200°C problemas severos)",
+      "pressao_ar": "Elevada necessária (10+ Mscf ar/bbl óleo produzido)",
+      "recuperacao_tipica": "10-15%",
+      "problemas_operacionais": "Controlo combustão difícil, emissões gás, corrosão, emulsões água-óleo, deposição coque/cera"
+    },
+    "Polímero": {
+      "profundidade_ideal": "<2000m (polímero decompõe a temperatura >93°C)",
+      "viscosidade_petroleo": "Leve-Média (13-35 °API)",
+      "porosidade_minima": "Moderada (>10%)",
+      "permeabilidade_minima": "50-500 mD",
+      "permeabilidade_maxima": "Evitar >2000 mD (bypass prematuro)",
+      "salinidade_max": "20000 ppm (polímero instável em alta salinidade)",
+      "ions_divalentes_max": "<500 ppm Ca++ e Mg++",
+      "litologia": "Areitas homogéneas PREFERÍVEL",
+      "varredura_area": ">50% em injeção água prévia recomendado",
+      "restricoes": "Evitar fraturas excessivas, formações muito heterogéneas",
+      "concentracao_tipica": "300-1500 ppm (viscosidade dependente)",
+      "recuperacao_tipica": "15-25%",
+      "problemas_operacionais": "Degradação por cisalhamento, perda viscosidade, injeção difícil, adsorção argilas"
+    },
+    "Surfactante": {
+      "profundidade_ideal": "<3000m",
+      "viscosidade_petroleo": "Leve-Média (idealmente)",
+      "porosidade_minima": "Boa (>12%)",
+      "permeabilidade_minima": ">50 mD",
+      "salinidade_max": "20000 ppm",
+      "ions_divalentes_max": "<500 ppm",
+      "teor_anidrido_gesso": "NENHUM recomendado (consumidor de reagente)",
+      "teor_argila": "Baixo (<10% para evitar adsorção excessiva)",
+      "litologia": "Areias homogéneas",
+      "concentracao_tipica": "15-25 lb/bbl óleo produzido",
+      "tempo_retorno_investimento": "Elevado (reação química lenta com fluidos rocha)",
+      "recuperacao_tipica": "15%",
+      "problemas_operacionais": "Grande adsorção, separação cromatográfica, degradação temp, injeção alta salinidade"
+    },
+    "Alcalino": {
+      "profundidade_ideal": "<2500m",
+      "viscosidade_petroleo": "CRITICA: 13-35 °API (fora = inadequado)",
+      "porosidade_minima": "Boa",
+      "permeabilidade_minima": ">50 mD",
+      "litologia": "EVITAR carbonato (anidrite/gesso = consumidor excessivo)",
+      "litologia_ideal": "Arenitos",
+      "salinidade_max": "20000 ppm",
+      "ions_divalentes_max": "<500 ppm",
+      "concentracao_tipica": "35-45 lb químico/bbl óleo",
+      "recuperacao_tipica": "35-45%",
+      "problemas_operacionais": "Incrustações poços produtores, injeção difícil, estabilidade alta salinidade, retenção química"
+    },
+    "CO2 Miscível": {
+      "profundidade_ideal": ">2000m (necessário alta pressão para miscibilidade)",
+      "pressao_minima_miscivel": "1000-3500 psi (dependente composição óleo)",
+      "viscosidade_petroleo": "Leve (preferencialmente)",
+      "porosidade_minima": "Moderada",
+      "permeabilidade_minima": ">50 mD",
+      "inclinacao_reservatorio": ">20-30° DESEJAVEL (estabilização gravitacional)",
+      "temperatura_max": "Sem limite (CO2 inerte)",
+      "disponibilidade_co2": "CRITICA - fonte necessária próxima ou transporte caro",
+      "reciclagem": "Repressurização CO2 para re-injeção (custo operacional)",
+      "recuperacao_tipica": "5-15%",
+      "problemas_operacionais": "Ruptura precoce CO2, corrosão poços, custo reciclagem elevado, dedilhação viscosa, fornecimento incerto"
+    },
+    "Gás Hidrocarbonetos": {
+      "profundidade_ideal": ">1500m (pressão mínima 3000-5000 psi)",
+      "pressao_minima": "3000-5000 psi típico",
+      "viscosidade_petroleo": "Leve recomendado",
+      "porosidade_minima": "Moderada",
+      "permeabilidade_minima": ">50 mD",
+      "inclinacao_ideal": ">30° para estabilização gravitacional",
+      "composicao_importante": "Gás deve ter componentes miscíveis com óleo",
+      "custo": "MUITO ELEVADO - solvente caro e frequentemente não recuperado",
+      "quantidade_necessaria": "10 Mscf solvente/bbl óleo produzido típico",
+      "recuperacao_tipica": "5-15%",
+      "problemas_operacionais": "Custo solvente elevado, retenção solvente na rocha, dedilhação viscosa"
+    },
+    "Nitrogénio/Gás Combustão": {
+      "profundidade_ideal": ">2000m (alta pressão necessária)",
+      "pressao_minima_miscivel": "1200+ psi típico",
+      "viscosidade_petroleo": "Leve ideal (N2 tem miscibilidade limitada)",
+      "porosidade_minima": "Moderada",
+      "permeabilidade_minima": ">50 mD",
+      "inclinacao_ideal": ">20-30° para estabilização",
+      "aplicacao_geografica": "Reservatórios profundos, campos offshore",
+      "recuperacao_tipica": "5-15%",
+      "problemas_operacionais": "Dedilhação viscosa, baixa eficiência varredura vertical-horizontal, corrosão"
+    }
+  },
+  "suitability_por_tipo_oleo": {
+    "Óleo Pesado (API < 20)": {
+      "metodos_prioritarios": [
+        "Injeção Vapor",
+        "Combustão in-situ"
+      ],
+      "metodos_secundarios": [
+        "Injeção CO2 Miscível"
+      ],
+      "metodos_evitar": [
+        "Polímero",
+        "Surfactante",
+        "Alcalino com alta viscosidade"
+      ],
+      "razao": "Viscosidade muito elevada - métodos térmicos reduzem viscosidade drasticamente",
+      "recuperacao_esperada": "50-60% (Vapor) a 10-15% (Combustão)"
+    },
+    "Óleo Médio (API 20-30)": {
+      "metodos_prioritarios": [
+        "Polímero",
+        "Surfactante",
+        "Alcalino"
+      ],
+      "metodos_secundarios": [
+        "CO2 Miscível",
+        "Gás Hidrocarbonetos"
+      ],
+      "metodos_viavel": [
+        "Injeção Vapor se muito viscoso dentro faixa"
+      ],
+      "razao": "Viscosidade favorável para métodos químicos e gás miscível",
+      "recuperacao_esperada": "15-45% conforme método"
+    },
+    "Óleo Leve (API > 30)": {
+      "metodos_prioritarios": [
+        "CO2 Miscível",
+        "Gás Hidrocarbonetos",
+        "Nitrogénio Miscível"
+      ],
+      "metodos_secundarios": [
+        "Polímero com modificação",
+        "Gás imiscível"
+      ],
+      "metodos_evitar": [
+        "Combustão in-situ - produto combustão inadequado"
+      ],
+      "razao": "Componentes leves favorecem miscibilidade a alta pressão",
+      "recuperacao_esperada": "5-15% (Gás Miscível) a 15-25% (Químico modificado)"
+    }
+  },
+  "fonte": "Artigo: 'Recuperação Avançada de Petróleo: Estratégia de Planeamento de Projetos nos Campos Petrolíferos Angolanos' - Ramos & Yates (2021)",
+  "nota": "Dados extraídos das Tabelas 1-5 do artigo e das seções de triagem de EOR"
+}

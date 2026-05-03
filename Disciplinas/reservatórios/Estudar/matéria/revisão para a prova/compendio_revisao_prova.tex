@@ -1,0 +1,2633 @@
+\documentclass[11pt,a4paper]{article}
+% XeLaTeX-friendly preamble: use fontspec for Unicode fonts
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{microtype}
+\title{Revisão para a prova — Engenharia de Reservatórios I}
+\author{Compilado}
+\date{Gerado em 2026-04-22}
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+% ---- file: cap1_transcription.md
+\section{ENGENHARIA DE RESERVATÓRIOS I}
+ \textbf{3º Ano – 2º Semestre — 2025–2026}
+
+ \textbf{Docente:} Prof. Dr. Geraldo A. R. Ramos
+
+ ---
+
+\subsection{Sumário}
+\begin{itemize}
+\item 1. Sistema de Produção
+\item 2. Engenharia de Reservatórios: funções e objetivos
+\item 3. História da Engenharia de Reservatórios
+\item 4. Tipos de reservatórios (diagramas de fases)
+\item 5. Mecanismos de produção
+\item 6. Consolidação da aula (exercícios)
+\item 7. Tarefas
+\item 8. Trabalho investigativo
+\item 9. Bibliografia
+\end{itemize}
+
+ ---
+
+\subsection{Objetivo geral}
+ Analisar os princípios fundamentais da Engenharia de Reservatórios, abrangendo sistemas de produção, funções e objetivos da disciplina, evolução histórica, classificação de reservatórios segundo diagramas de fases e mecanismos de produção, visando a capacitação para integração de informações e apoio à tomada de decisão técnica em campos petrolíferos.
+
+\subsubsection{Objetivos específicos}
+\begin{itemize}
+\item Descrever os componentes e a estrutura de um sistema de produção de hidrocarbonetos.
+\item Explicar as principais funções e objetivos da Engenharia de Reservatórios na exploração e desenvolvimento de campos petrolíferos.
+\item Relatar a evolução histórica da disciplina, destacando marcos tecnológicos e metodológicos.
+\item Classificar os tipos de reservatórios com base em diagramas de fases (óleo, gás, condensado).
+\item Comparar os principais mecanismos de produção: drive por pressão, expansão de gás, influxo de água e outros processos naturais.
+\end{itemize}
+
+\subsection{Sistema de Produção}
+ O sistema de produção é o conjunto de equipamentos destinados à coleta, separação, tratamento, estocagem e escoamento dos fluidos produzidos e movimentados no campo de petróleo ou gás natural. A produção ocorre em três etapas principais:
+
+\subsubsection{Etapas}
+\begin{itemize}
+\item Recuperação: fluxo de fluidos no reservatório até o fundo do poço.
+\item Elevação: fluxo do fundo do poço até a superfície (topo do poço), que pode ser natural ou artificial.
+\item Escoamento: fluxo do topo do poço até o separador, passando por reguladores de fluxo.
+\end{itemize}
+
+\subsubsection{Elementos do sistema petrolífero}
+\begin{itemize}
+\item **Armadilha (trapa):** arranjo estrutural que permite a acumulação de hidrocarbonetos (dobras, falhas, fraturas).
+\item **Rocha geradora:** rocha rica em matéria orgânica que gera hidrocarbonetos.
+\item **Rocha selante:** rocha com baixa permeabilidade que impede a migração de hidrocarbonetos.
+\item **Migração:** processo que mobiliza os hidrocarbonetos da zona geradora para o reservatório.
+\item **Sincronismo:** coincidência temporal dos processos geológicos necessários para formar um sistema petrolífero.
+\item **Soterramento e catagênese:** processos térmicos que transformam querogênio em óleo, condensado ou gás.
+\end{itemize}
+
+ \emph{Nota:} Querogênio é a fração insolúvel da matéria orgânica; catagênese refere-se ao craqueamento térmico das moléculas maiores em moléculas menores sob aumento de temperatura e pressão.
+
+\subsection{Engenharia de Reservatórios — Definição}
+ A Engenharia de Reservatórios é o ramo da Engenharia do Petróleo que estuda o fluxo de fluidos (hidrocarbonetos) no interior das rochas porosas, visando maximizar o fator de recuperação. É uma atividade multidisciplinar que envolve física, química, geologia, engenharia, matemática e ciência da computação.
+
+\subsection{Consolidação da aula — Exercícios}
+ Responda as questões abaixo e justifique suas escolhas.
+
+\begin{enumerate}
+\item O óleo produzido em reservatórios leves caracteriza-se por:
+\begin{itemize}
+\item A) Alta viscosidade e baixa mobilidade
+\item B) Baixa densidade e alta mobilidade
+\item C) Formação de gás livre em excesso
+\item D) Saturação irreductível de água igual a zero
+\item E) Exclusivamente líquido sem variação de densidade
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item O gás produzido em reservatórios influencia a recuperação de óleo porque:
+\begin{itemize}
+\item A) Reduz a pressão do reservatório e facilita o fluxo de óleo
+\item B) Aumenta a densidade do óleo
+\item C) Impede totalmente a produção de água
+\item D) É irrelevante para a eficiência de produção
+\item E) A saturação de óleo se torna irrelevante
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Reservatórios com mecanismo de water drive caracterizam-se por:
+\begin{itemize}
+\item A) Manutenção da pressão por influxo de água do aquífero
+\item B) Elevação artificial de óleo via bombeio mecânico
+\item C) Expansão de gás dissolvido no óleo
+\item D) Produção exclusivamente de gás condensado
+\item E) Inexistência de óleo saturado
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item A viscosidade do óleo impacta diretamente:
+\begin{itemize}
+\item A) A taxa de fluxo pelo reservatório
+\item B) A pressão do aquífero
+\item C) A densidade da água
+\item D) A compressibilidade da rocha
+\item E) A saturação irreductível de gás
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Um mecanismo de produção por expansão de gás livre (gas-cap drive):
+\begin{itemize}
+\item A) Mantém pressão por expansão de gás acima do óleo
+\item B) Depende exclusivamente de água injetada
+\item C) Gera aumento da viscosidade do óleo
+\item D) Reduz a saturação irreductível de água
+\item E) Impede o fluxo de óleo
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item O condensado produzido em reservatórios ocorre quando:
+\begin{itemize}
+\item A) O líquido condensado se separa do gás à medida que a pressão diminui
+\item B) Óleo leve é produzido sem formação de gás
+\item C) A água do reservatório se transforma em gás
+\item D) A pressão está acima da pressão de saturação do gás
+\item E) Não há variação de densidade com a pressão
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Qual das seguintes características NÃO define o mecanismo solution gas drive?
+\begin{itemize}
+\item A) Expansão do gás dissolvido no óleo
+\item B) Redução gradual da pressão do reservatório
+\item C) Formação de gás livre a partir do óleo
+\item D) Dependência da pressão inicial para mobilidade
+\item E) Produção contínua de óleo
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Em um reservatório com influxo de água (water influx), a produção de óleo é sustentada porque:
+\begin{itemize}
+\item A) A água do aquífero desloca o óleo em direção aos poços
+\item B) A expansão do gás acima do óleo aumenta a viscosidade
+\item C) Poços artificiais elevam a pressão
+\item D) O óleo condensado impede a produção de água
+\item E) A saturação irreductível de óleo é zero
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item A produção de óleo em um reservatório undersaturated depende principalmente de:
+\begin{itemize}
+\item A) Pressão inicial do reservatório e mobilidade do óleo
+\item B) Expansão do gás acima do óleo
+\item C) Injeção de água ou gás
+\item D) Formação de condensado
+\item E) Elevação artificial exclusivamente
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item O que caracteriza um reservatório com gas-cap drive?
+\begin{itemize}
+\item A) Gás livre no topo do reservatório que ajuda a manter a pressão
+\item B) Água injetada artificialmente para suporte de pressão
+\item C) Óleo pesado não fluido
+\item D) Produção apenas de condensado líquido
+\item E) Reservatório totalmente saturado sem gás
+\end{itemize}
+\end{enumerate}
+
+\subsection{Tarefas}
+\begin{enumerate}
+\item Explique a diferença entre Sistema de Produção, Sistema Petrolífero e cadeia produtiva (cadeia de valor) da indústria petrolífera.
+\item Faça uma ilustração no envelope de fases com os elementos mencionados no item 2.
+\item Investigue as três principais teorias sobre a origem dos hidrocarbonetos:
+\begin{itemize}
+\item a) Qual a diferença entre as teorias?
+\item b) Qual das teorias é mais aceita?
+\item Qual é a área de atuação do Engenheiro de Reservatórios? Justifique.
+\item Complete: HIDROCARBONETOS + NÃO HIDROCARBONETOS = _____________
+\item Fundamente as respostas corretas e incorretas dos exercícios de consolidação.
+\item Explique as principais propriedades dos fluidos produzidos em reservatórios e como influenciam a produção.
+\item Descreva os mecanismos naturais de produção de um reservatório.
+\item Compare os efeitos da expansão de gás e do influxo de água sobre a recuperação de óleo.
+\item Discuta a importância de integrar informações sobre fluidos e mecanismos de produção no planejamento de campo.
+\item Preencha a tabela sobre tipos de reservatórios, mecanismos de produção, condições iniciais, comportamento com o declínio de pressão e hidrocarbonetos produzidos.
+\end{itemize}
+\end{enumerate}
+
+\subsection{Trabalho investigativo — História da Engenharia de Reservatórios}
+ Os estudantes deverão elaborar um trabalho investigativo sobre a temática “História da Engenharia de Reservatórios”. O trabalho deve:
+\begin{itemize}
+\item Ser estruturado segundo as normas de um TCC: capa, resumo, sumário, introdução, desenvolvimento, conclusão e referências bibliográficas.
+\item Ser produzido e apresentado em LaTeX, garantindo formatação acadêmica adequada.
+\item Seguir rigorosamente as normas de citação e referência bibliográfica recomendadas pelo curso.
+\end{itemize}
+
+ \textbf{Data de submissão:} 24 de março de 2026.
+
+\subsection{Definições importantes}
+\begin{itemize}
+\item **Sistema de Produção:** conjunto de instalações que permite a recuperação, elevação e escoamento dos fluidos produzidos desde o reservatório até instalações de superfície.
+\item **Armadilha (trapa):** estrutura geológica que impede a migração de hidrocarbonetos e permite sua acumulação.
+\item **Porosidade (\phi):** fração volumétrica de vazios na rocha, expressa como percentagem ou fração (por exemplo, 0.18 = 18%).
+\item **Permeabilidade (k):** medida da facilidade com que um fluido atravessa a rocha (unidade: Darcy ou m²).
+\item **Fator de volume de formação (B_o):** relação entre volume de óleo no reservatório e volume correspondente à superfície (Bo = V_reservoir_oil / V_surface_oil).
+\item **Razão de solubilidade (R_s):** quantidade de gás dissolvido por unidade de óleo (usada em m3/m3 ou scf/STB).
+\end{itemize}
+
+\subsection{Exemplo prático — cálculo rápido de OOIP (fórmula de campo)}
+Considere: Área = 100 acres; espessura neta h = 20 ft; porosidade \(\phi = 0.15\); saturação irreducível de água \(S_{wi}=0.25\); \(B_o = 1.2\) bbl/STB.
+
+Usando a fórmula prática:
+$$
+OOIP = \frac{7758\,A\,h\,\phi\,(1-S_{wi})}{B_o}
+$$
+Substituindo valores:
+$$
+OOIP = \frac{7758 \times 100 \times 20 \times 0.15 \times (1-0.25)}{1.2} \approx 1{,}455\times10^{6}\;\text{STB}
+$$
+Interpretação: aproximadamente 1.45 milhões de barris em lugar antes da produção.
+
+\subsection{Glossário de símbolos (rápido)}
+\begin{itemize}
+\item `A`: área (acres ou m²)
+\item `h`: espessura (ft ou m)
+\item `\phi`: porosidade (fração)
+\item `S_w`, `S_{wi}`: saturação de água, saturação irreducível de água
+\item `B_o`, `B_g`: fatores de volume de formação (óleo, gás)
+\item `N`: óleo originalmente em lugar (OOIP)
+\item `N_p`, `G_p`: produção acumulada de óleo e gás
+\item `R_s`: razão gás/óleo dissolvido
+\end{itemize}
+
+\subsection{Dicas rápidas de estudo}
+\begin{itemize}
+\item Extraia os símbolos das equações e mantenha uma tabela pessoal de unidades (campo vs SI).
+\item Para exercícios volumétricos, verifique unidades antes de aplicar fatores práticos (7758, 43560, etc.).
+\item Use pequenos exemplos numéricos para validar o entendimento antes de resolver casos maiores.
+\end{itemize}
+
+---
+
+Muito obrigada!
+
+
+% ---- file: cap2_transcription.md
+
+
+\section{ENGENHARIA DE RESERVATÓRIOS I}
+\textbf{3º Ano – 2º Semestre — 2025–2026}
+
+\textbf{Docente:} Prof. Dr. Geraldo A. R. Ramos
+
+---
+
+\subsection{Sumário}
+\begin{itemize}
+\item 2.1 Introdução
+\item 2.2 Misturas e soluções
+\item 2.3 Propriedades básicas dos fluidos
+\item 2.3.1 Propriedades de óleo
+\item 2.3.2 Propriedades dos gases
+\item 2.3.3 Propriedades de misturas de hidrocarbonetos
+\item 2.4 Consolidação da aula
+\item 2.5 Tarefas
+\item Bibliografia
+\end{itemize}
+
+---
+
+\subsection{Objetivo geral}
+Analisar as propriedades dos fluidos de reservatório por meio da caracterização de misturas e soluções, aplicação de equações de estado, interpretação de dados PVT e utilização de correlações empíricas, visando prever o comportamento dos fluidos e apoiar a tomada de decisão na engenharia de reservatórios.
+
+\subsubsection{Objetivos específicos}
+\begin{itemize}
+\item Identificar os tipos de misturas e soluções presentes nos fluidos.
+\item Descrever propriedades físicas e termodinâmicas relevantes (densidade, viscosidade, compressibilidade, fator de volume, etc.).
+\item Aplicar equações de estado e correlações empíricas para estimativas de propriedades.
+\item Calcular o fator volume de formação (B_o), a razão de solubilidade (R_s) e interpretar resultados PVT.
+\item Avaliar a influência da viscosidade e do grau API no escoamento.
+\end{itemize}
+
+\subsection{2.1 Introdução}
+Um fluido é uma substância que se deforma continuamente (escoa) sob ação de uma força tangencial. Para o engenheiro de reservatórios, conhecer as propriedades físico‑químicas e o comportamento de fase é essencial para estimar volumes in situ, planejar produção e definir estratégias de recuperação.
+
+\subsubsection{Amostragem e análises}
+\begin{itemize}
+\item Amostragem em superfície (separadores e frascos de amostra).
+\item Amostragem em fundo de poço (downhole sampling).
+\item Amostragem em teste de formação (formation testing).
+\end{itemize}
+
+Análises normalmente realizadas:
+\begin{itemize}
+\item Determinação da composição (frações de hidrocarbonetos C1–Cn).
+\item Análises PVT: ensaios CCE (constant composition expansion), DL (differential liberation), flash, etc.
+\item Determinação de propriedades tecnológicas: $B_o$, $R_s$, viscosidade, densidade, Z‑factor.
+\item Testes de compatibilidade de fluidos e análise de contaminantes.
+\end{itemize}
+
+\subsection{2.2 Misturas e soluções}
+\begin{itemize}
+\item Mistura: combinação física de componentes (gás + óleo + água) onde as fases podem coexistir.
+\item Solução: situação em que um componente está dissolvido (ex.: gás dissolvido no óleo). A razão gás/óleo dissolvido é expressa por $R_s$ (m³ de gás por m³ de óleo, ou SCCM/Sm³ conforme unidade).
+\item Pontos relevantes: ponto de bolha (bubble point) e ponto de orvalho (dew point) que definem o início da formação de uma fase livre.
+\end{itemize}
+
+\subsection{2.3 Propriedades básicas dos fluidos}
+
+\subsubsection{2.3.1 Propriedades de óleo}
+\begin{itemize}
+\item Densidade e gravidade API: $API = \frac{141.5}{\rho_{sp}} - 131.5$ (forma prática para converter densidade específica em grau API).
+\item Viscosidade: afeta diretamente a mobilidade e a taxa de fluxo através do meio poroso.
+\item Fator volume de formação ($B_o$): relação entre volume no reservatório e volume à superfície; importante para conversão de volumes de reservatório para superficie.
+\item Compressibilidade de óleo: influencia o declínio de pressão e estimativas volumétricas.
+\end{itemize}
+
+\subsubsection{2.3.2 Propriedades dos gases}
+\begin{itemize}
+\item Gases ideais obedecem à equação de estado $pV = nRT$ em condições de baixa pressão e alta temperatura.
+\item Leis fundamentais: Boyle ( $V\propto 1/p$ ), Charles ( $V\propto T$ ), Avogadro.
+\item Lei de Dalton (pressões parciais): a pressão total de uma mistura é a soma das pressões parciais.
+\item Gases reais: desvio do comportamento ideal é quantificado pelo fator de compressibilidade $Z$ (tabelas/curvas de correção). Equações de estado cúbicas (Peng‑Robinson, Soave‑Redlich‑Kwong) são usadas em PVT.
+\end{itemize}
+
+\subsubsection{2.3.3 Propriedades de misturas de hidrocarbonetos}
+\begin{itemize}
+\item Comportamento de fases (monofásico vs bifásico) dependente de pressão e temperatura.
+\item Razão gás‑óleo ($R_s$) e fator de formação $B_o$ em sistemas bifásicos.
+\item Uso de análises PVT (flash/diferencial) para determinar curvas de $B_o(p)$, $R_s(p)$, viscosidade vs pressão e temperatura.
+\end{itemize}
+
+\subsection{2.4 Consolidação da aula}
+Exemplos de perguntas para revisão:
+\begin{itemize}
+\item O que é $B_o$ e por que é importante para o cálculo de volumes produzidos?
+\item Como o $R_s$ varia com a pressão e o que significa atingir o ponto de bolha?
+\item Como a viscosidade do óleo influencia a mobilidade e o fator de recuperação?
+\item Quando o gás pode ser tratado como ideal e quando deve‑se usar correções (Z‑factor)?
+\end{itemize}
+
+\subsection{2.5 Tarefas}
+\begin{enumerate}
+\item Desenhar o envelope de fases para uma mistura óleo‑gás e identificar ponto de bolha e ponto de orvalho.
+\item Calcular $B_o$ e $R_s$ em um caso hipotético a partir de dados PVT simplificados (fornecerei os dados se desejar).
+\item Fazer um resumo comparativo: gases ideais vs gases reais e apresentar quando usar equações de estado cúbicas.
+\item Ler um ensaio PVT (CCE + DL) e resumir os principais resultados e curvas obtidas.
+\end{enumerate}
+
+\subsection{Definições importantes}
+\begin{itemize}
+\item **Fator de volume de formação ($B_o$):** razão entre o volume de óleo em condições de reservatório e o volume correspondente à superfície (bbl/STB ou m^3/m^3). Fórmula: $B_o = V_{res}/V_{surf}$.
+\item **Razão de solubilidade ($R_s$):** quantidade de gás dissolvido por unidade de óleo (scf/STB ou m^3/m^3). No ponto de bolha, $R_s$ corresponde ao máximo gás dissolvido antes do aparecimento de gás livre.
+\item **Fator de compressibilidade do gás ($Z$):** correção adimensional que quantifica o desvio do comportamento ideal do gás: $Z = pV/(nRT)$.
+\item **Ponto de bolha / ponto de orvalho:** pressão (a uma dada temperatura) em que surge a primeira bolha de gás no líquido ou a primeira gota de líquido no gás.
+\end{itemize}
+
+\subsection{Exemplo prático — cálculo de $B_o$ e $R_s$}
+Considere um ensaio PVT simplificado com resultados experimentais por 1 STB amostrado:
+\begin{itemize}
+\item Volume de óleo medido em condições de reservatório: $V_{res} = 1.20\;\text{bbl}$;
+\item Volume correspondente à superfície: $V_{surf} = 1.00\;\text{STB}$;
+\item Gás libertado no ensaio: $R_s = 400\;\text{scf/STB}$.
+\end{itemize}
+
+Cálculo de $B_o$:
+$$
+B_o = \frac{V_{res}}{V_{surf}} = \frac{1.20\;\text{bbl}}{1.00\;\text{STB}} = 1.20\;\text{bbl/STB}
+$$
+Interpretação: 1 STB de óleo de superfície corresponde a 1.20 bbl no reservatório.
+
+Conversão de $R_s$ para unidades SI (opcional):
+1 scf = 0.0283168 m^3; 1 STB = 0.1589873 m^3.
+$$
+R_s\,\text{(m}^3/\text{m}^3) = \frac{400\times0.0283168}{0.1589873} \approx 71.3\;\text{m}^3/\text{m}^3
+$$
+
+Observação: prefira as unidades pedidas no enunciado (scf/STB é muito comum). Converta unidades apenas quando necessário e mantenha consistência.
+
+\subsection{Notas práticas e correlações}
+\begin{itemize}
+\item Quando não existirem dados experimentais, use correlações empíricas (p.ex. Standing, Vazquez‑Beggs) ou equações de estado cúbicas (Peng‑Robinson, SRK) para estimar $B_o$, $R_s$ e viscosidade.
+\item Para gás, determine $Z(p,T)$ via charts ou equações para calcular volumes em condições padrão e avaliar expansibilidade.
+\end{itemize}
+
+\subsection{Glossário de símbolos (cap.2)}
+\begin{itemize}
+\item $B_o$: fator de volume de formação do óleo (bbl/STB ou m^3/m^3).
+\item $R_s$: razão gás/óleo dissolvido (scf/STB ou m^3/m^3).
+\item $Z$: fator de compressibilidade do gás (adimensional).
+\item $\rho$: densidade (kg/m^3).
+\item $\mu$: viscosidade (cP).
+\end{itemize}
+
+\subsection{Dicas rápidas de estudo}
+\begin{itemize}
+\item Verifique sempre as unidades antes de aplicar fórmulas; a maioria dos erros vem de conversões incorretas.
+\item Plote curvas PVT simplificadas ($B_o(p)$, $R_s(p)$, $\mu(p)$) para compreender tendências com pressão.
+\item Use exemplos numéricos pequenos (1 STB) para fixar interpretação física dos parâmetros.
+\item Ao estudar equações de estado, foque primeiro no conceito físico (equilíbrio de fases) antes da implementação numérica.
+\end{itemize}
+
+---
+
+Muito obrigado(a)!
+
+
+% ---- file: cap3_transcription.md
+
+
+
+
+of ⁨44⁩
+
+
+
+Exercícios
+\begin{enumerate}
+\item Uma amostra saturada com óleo pesa 130 gramas. Sabe-se que a mesma amostra não saturada (seca)
+pesa 105 gramas e a massa específica de óleo é de 840 kg/m3 =0,84g/cm3. O volume total de amostra
+é de 180 cm3.
+\item Determina a porosidade da amostra.\n\item Determina a porosidade a porosidade idealisada nas figuras seguintes:
+c)
+b)a)
+ENGENHARIA DE RESERVATÓRIOS - I
+GERALDO RAMOS, BSc, MSc, PhD
+35
+Exercícios
+\item Estão disponíveis os seguintes dados:
+V1 = 100cc
+V2 = 100cc
+p1 = 15,0 psi
+p2 = 60,0 psi
+\item Quando a válvula entre a Câmara 1 e a Câmara 2 é aberta, a pressão estabiliza\nem pf = 39,0 psi. Qual é o volume do grão da amostra do testemunho?
+\item Determinar a porosidade média. Estão disponíveis os seguintes dados:
+Amostra Porosidade, \%
+1 10
+2 12
+3 11
+4 13
+5 14
+6 10
+7 17
+ENGENHARIA DE RESERVATÓRIOS - I
+GERALDO RAMOS, BSc, MSc, PhD
+36
+Exercícios
+\item O peso seco de uma amostra é de 330 g, e seu peso quando saturada com água é de 360 g. O peso
+aparente desta amostra em água é registado como 225 g. Dado que a densidade da água é 1 g / cm3,
+determina a porosidade da amostra. Supondo que a amostra seja revestida com um material de peso
+desprezível.
+ENGENHARIA DE RESERVATÓRIOS - I
+GERALDO RAMOS, BSc, MSc, PhD
+\end{enumerate}
+\section{ENGENHARIA DE RESERVATÓRIOS I}
+\textbf{3º Ano – 2º Semestre — 2025–2026}
+
+\textbf{Docente:} Prof. Dr. Geraldo A. R. Ramos
+
+---
+
+\subsection{Sumário}
+\begin{itemize}
+\item 3.1 Objectivo Geral e Objectivos Específicos
+\item 3.2 Introdução
+\item 3.3 Componentes da rocha
+\item 3.4 Porosidade
+\item 3.5 Compressibilidade
+\item 3.6 Saturação de fluidos
+\item 3.7 Permeabilidade
+\item 3.8 Molhabilidade
+\item 3.9 Capilaridade e pressão capilar
+\item 3.10 Processos de embebição e drenagem
+\item 3.11 Função J de Leverett
+\item 3.12 Contacto hidrocarbonetos/água
+\item 3.13 Consolidação da aula (Exercícios)
+\item 3.14 Tarefas
+\item Bibliografia
+\end{itemize}
+
+---
+
+\subsection{3.1 Objectivo geral}
+Descrever e caracterizar as propriedades das rochas de reservatório (porosidade, permeabilidade, compressibilidade, molhabilidade, capilaridade) e as relações entre esses parâmetros e o comportamento dos fluidos em meios porosos.
+
+\subsubsection{Objectivos específicos}
+\begin{itemize}
+\item Identificar os componentes da rocha e os tipos de porosidade.
+\item Medir e interpretar porosidade e permeabilidade de testemunhos.
+\item Definir e aplicar conceitos de compressibilidade de rocha e poros.
+\item Entender molhabilidade, capilaridade, embebição e drenagem.
+\item Aplicar a função J de Leverett para correlacionar Pc entre reservatórios.
+\end{itemize}
+
+\subsection{3.2 Introdução}
+A caracterização das rochas de reservatório é essencial para estimar volumes de hidrocarbonetos, modelar o fluxo de fluidos e projetar estratégias de produção e injecção. Ensaios laboratoriais em testemunhos (cores) fornecem propriedades fundamentais para o estudo do reservatório.
+
+\subsection{3.3 Componentes da rocha}
+\begin{itemize}
+\item Matriz mineral (grãos) — determina a rigidez e a massa específica.
+\item Poros — espaços que alojam fluidos; podem ser intergranulares, moldais, fraturais.
+\item Cementos e matéria orgânica — alteram permeabilidade e porosidade.
+\end{itemize}
+
+\subsection{3.4 Porosidade}
+\begin{itemize}
+\item Porosidade total: fração volumétrica de vazios em relação ao volume total da rocha.
+\item Porosidade efectiva: poros conectados que contribuem para o fluxo.
+\item Métodos de medição: saturação/gravação de massas, porosimetria de mercúrio, tomografia, etc.
+\end{itemize}
+
+\subsection{3.5 Compressibilidade}
+As rochas sob sobrecarga sofrem redução do volume poroso. A compressibilidade de poros (compressibilidade efectiva) é dada por:
+
+$C_f = \dfrac{\Delta V_p / V_p}{\Delta p} = \dfrac{1}{V_p}\dfrac{\partial V_p}{\partial p}$
+
+onde $C_f$ é a compressibilidade efectiva (unidade: psi⁻1 ou Pa⁻1), $V_p$ é o volume poroso e $\Delta p$ a variação de pressão.
+
+Três compressibilidades relevantes:
+\begin{itemize}
+\item Compressibilidade da matriz: variação fraccional do volume sólido por variação de pressão.
+\item Compressibilidade total da rocha: variação fraccional do volume total.
+\item Compressibilidade dos poros (efectiva): variação fraccional do volume poroso.
+\end{itemize}
+
+\subsection{3.6 Saturação de fluidos}
+\begin{itemize}
+\item $S_w$: saturação de água; $S_{wc}$: saturação irreducível de água (connate). 
+\item $S_o$: saturação de óleo; $S_{or}$: saturação residual de óleo.
+\item Permeabilidades relativas dependem da saturação e do histórico de embebição/drenagem.
+\end{itemize}
+
+\subsection{3.7 Permeabilidade}
+\begin{itemize}
+\item Permeabilidade absoluta $k$ (unidade: Darcy ou m²) mede a facilidade de fluxo de um fluido.
+\item Permeabilidade relativa $k_{r}$ descreve o fluxo de uma fase na presença de outras fases.
+\end{itemize}
+
+\subsection{3.8 Molhabilidade}
+Molhabilidade é a tendência de um fluido aderir à superfície sólida na presença de outros fluidos; é caracterizada pelo ângulo de contacto $\theta$:
+
+$\cos\theta = \dfrac{\sigma_{so}-\sigma_{sw}}{\sigma_{wo}}$
+
+onde $\sigma_{so},\sigma_{sw},\sigma_{wo}$ são as tensões superficiais entre sólido‑óleo, sólido‑água e água‑óleo, respectivamente. A fase molhante tende a ocupar poros menores.
+
+\subsection{3.9 Capilaridade e pressão capilar}
+Pressão capilar: $P_c = P_{non-wetting} - P_{wetting}$. A curva $P_c(S_w)$ relaciona pressão capilar e saturação; é controlada por radio de poros effective, tensão interfacial e molhabilidade.
+
+\subsection{3.10 Embebição e drenagem}
+\begin{itemize}
+\item Embebição: processo onde a fase molhante invade a rocha, reduzindo saturação da fase não‑molhante.
+\item Drenagem: processo oposto, onde a fase não‑molhante invade a rocha.
+\item Histerese: curvas de Pc e permeabilidade relativa dependem do caminho (embebição vs drenagem).
+\end{itemize}
+
+\subsection{3.11 Função J de Leverett}
+A função de Leverett permite correlacionar curvas de pressão capilar entre rochas com propriedades diferentes:
+
+$J(S_w)=\dfrac{P_c(S_w)\sqrt{\dfrac{k}{\phi}}}{\sigma\cos\theta}$
+
+onde $k$ é a permeabilidade absoluta, $\phi$ a porosidade, $\sigma$ a tensão interfacial e $\theta$ o ângulo de contacto.
+
+\subsection{3.12 Contacto hidrocarbonetos/água}
+Em condições estáticas, as pressões nas interfaces obedecem ao equilíbrio hidrostático. Para o nível de óleo livre (FOL):
+
+$p_{Z_{FOL}} = p_g + \rho_g g (Z_{FOL}-Z_g)$
+
+e pelo lado do óleo:
+
+$p_{Z_{FOL}} = p_o - \rho_o g (Z_o - Z_{FOL})$
+
+Combinando as duas expressões obtém‑se a posição do nível em função das pressões e densidades (ver equações no material original).
+
+\subsection{3.13 Consolidação da aula — Exercícios}
+\begin{enumerate}
+\item Uma amostra saturada com óleo pesa 130 g; seca pesa 105 g. Massa específica do óleo = 0,84 g/cm³. Volume total da amostra = 180 cm³. Determine a porosidade da amostra.
+\end{enumerate}
+
+\begin{enumerate}
+\item Determine a porosidade idealizada nas figuras (a), (b) e (c). (Figuras não incluídas — desenhar/esboçar.)
+\end{enumerate}
+
+\begin{enumerate}
+\item Dados: $V_1=100\,$cc; $V_2=100\,$cc; $p_1=15{\,}\text{psi}$; $p_2=60{\,}\text{psi}$. Ao abrir a válvula, a pressão final é $p_f=39{\,}\text{psi}$. Qual é o volume do grão da amostra do testemunho?
+\end{enumerate}
+
+\begin{enumerate}
+\item Calcule a porosidade média para as amostras com porosidades: 10, 12, 11, 13, 14, 10, 17%.
+\end{enumerate}
+
+\begin{enumerate}
+\item Peso seco = 330 g; peso saturado com água = 360 g; peso aparente em água = 225 g. Densidade da água = 1 g/cm³. Determine a porosidade (assuma revestimento desprezível).
+\end{enumerate}
+
+\begin{enumerate}
+\item Complete a tabela de análises de rotina e testes complementares (porosidade, permeabilidade, saturações, litologia, permeabilidade vertical, core‑gamma, massa específica da matriz, propriedades físico‑químicas de óleo/água).
+\end{enumerate}
+
+\begin{enumerate}
+\item Análise especial de testemunho — identifique testes estáticos (compressibilidade, estudo petrográfico, molhabilidade, capilaridade, acústica, elétrica) e dinâmicos (estudo do fluxo, testes de fluxo).
+\end{enumerate}
+
+\begin{enumerate}
+\item Medição laboratorial da porosidade: descrever procedimentos para amostras medidas após 1, 2 e 3 semanas (hidratação, secagem, estabilização de massa, etc.).
+\end{enumerate}
+
+\subsection{3.14 Tarefas}
+\begin{enumerate}
+\item Explique o conceito de rocha de reservatório e sua importância.
+\item Diferencie porosidade total e efectiva.
+\item Analise os efeitos da compactação na porosidade.
+\item Descreva a influência dos processos diagenéticos.
+\item Fundamente as questões corretas e incorrectas dos exercícios de consolidação.
+\end{enumerate}
+
+\subsection{Nota sobre unidades — PSI}
+PSI: pound‑force per square inch. Duas escalas comuns:
+
+$\text{psia} = \text{psig} + 14.696$
+
+onde 14.696 psi é aproximadamente a pressão atmosférica ao nível do mar.
+
+\subsection{Definições importantes}
+\begin{itemize}
+\item **Porosidade ($\phi$):** fração volumétrica de vazios do volume total da rocha: $\phi = V_p / V_t$.
+\item **Porosidade efectiva ($\phi_e$):** porosidade conectada que contribui para o fluxo.
+\item **Permeabilidade ($k$):** facilidade de fluxo através da rocha; unidade prática: Darcy (D). É uma propriedade intrínseca da rocha.
+\item **Volume poroso ($V_p$):** volume ocupado por fluidos nos poros; $V_p=\phi\,V_t$.
+\item **Compressibilidade dos poros ($C_f$):** variação fraccional do volume poroso por variação de pressão: $C_f=\dfrac{1}{V_p}\dfrac{\partial V_p}{\partial p}$.
+\end{itemize}
+
+\subsection{Exemplos práticos — resolução (passo a passo)}
+
+\subsubsection{Exemplo 1 — (Exercício 1)}
+Dados: amostra saturada com óleo pesa $130\,$g; amostra seca pesa $105\,$g; massa específica do óleo $\rho_o=0{,}84\,$g/cm$^3$; volume total da amostra $V_t=180\,$cm$^3$.
+
+\begin{enumerate}
+\item Volume de fluido nos poros:
+$$
+V_f = \dfrac{m_{sat}-m_{dry}}{\rho_f} = \dfrac{130-105}{0{,}84} \approx 29{,}76\;\text{cm}^3.
+$$
+\item Porosidade:
+$$
+\phi = \dfrac{V_p}{V_t} = \dfrac{29{,}76}{180} \approx 0{,}165 \approx 16{,}5\%.
+$$
+\end{enumerate}
+
+Conclusão: a porosidade da amostra é aproximadamente $16{,}5\%$.
+
+\subsubsection{Exemplo 2 — (Exercício 5, método de Arquímedes)}
+Dados: peso seco $m_{dry}=330\,$g; peso saturado $m_{sat}=360\,$g; peso aparente em água $m_{ap\_agua}=225\,$g; densidade da água $\rho_{agua}=1\,$g/cm$^3$.
+
+\begin{enumerate}
+\item Volume total da amostra via empuxo (diferença entre peso em ar e peso aparente em água):
+$$
+V_t = \dfrac{m_{sat}-m_{ap\_agua}}{\rho_{agua}} = \dfrac{360-225}{1} = 135\;\text{cm}^3.
+$$
+\item Volume poroso (água/fluido preenchendo os poros):
+$$
+V_p = m_{sat}-m_{dry} = 360-330 = 30\;\text{cm}^3.
+$$
+\item Porosidade:
+$$
+\phi = \dfrac{V_p}{V_t} = \dfrac{30}{135} \approx 0{,}222 = 22{,}2\%.
+$$
+\end{enumerate}
+
+Interpretação: o método de Arquímedes é útil quando o volume total não é fornecido diretamente.
+
+\subsection{Exemplo rápido — compressibilidade de poros}
+Se um volume poroso $V_p=100\,$cm$^3$ diminui $0{,}2\,$cm$^3$ quando a pressão aumenta $\Delta p=100\,$psi, então a compressibilidade efectiva vale:
+$$
+C_f = \dfrac{\Delta V_p/V_p}{\Delta p} = \dfrac{0{,}2/100}{100} = 2\times10^{-5}\;\text{psi}^{-1}
+$$
+(apresente o valor em módulo como magnitude positiva quando reportar resultados).
+
+\subsection{Medidas e técnicas comuns}
+\begin{itemize}
+\item Análise de testemunhos (core): porosidade por pesagem, porosimetria de mercúrio, perméabilímetro de bancada.
+\item Técnicas não destrutivas: NMR, micro‑CT, imageamento 3D para distribuição de poros.
+\item Medição de pressão capilar: centrífuga e porosimetria; integrar com curvas de permeabilidade relativa.
+\item Integração: comparar core, registos de poço (neutron/densidade) e NMR para validação.
+\end{itemize}
+
+\subsection{Glossário de símbolos (cap.3)}
+\begin{itemize}
+\item $\phi$ — porosidade total (fração).
+\item $\phi_e$ — porosidade efectiva (fração).
+\item $V_p$ — volume poroso (cm$^3$ ou m$^3$).
+\item $V_t$ — volume total da amostra/elemento (cm$^3$ ou m$^3$).
+\item $S_w, S_o$ — saturações de água e óleo (frações adimensionais).
+\item $k$ — permeabilidade absoluta (Darcy, m$^2$).
+\item $k_r$ — permeabilidade relativa (adimensional).
+\item $P_c$ — pressão capilar (Pa ou psi).
+\item $C_f$ — compressibilidade efectiva dos poros (Pa$^{-1}$ ou psi$^{-1}$).
+\end{itemize}
+
+\subsection{Dicas rápidas de estudo}
+\begin{itemize}
+\item Anote sempre as unidades e converta antes de aplicar fórmulas (campo vs SI).
+\item Modele pequenos exemplos numéricos (1 amostra; 1 STB) para fixar conceitos.
+\item Compare resultados laboratoriais com registos de poço; investigue discrepâncias.
+\item Para curvas $P_c(S_w)$, utilize a função de Leverett $J(S_w)$ para correlacionar entre rochas.
+\end{itemize}
+
+---
+
+Muito obrigado(a)!
+
+% ---- file: cap4_transcription.md
+
+
+
+1
+
+
+
+ENGENHARIA DE RESERVATÓRIOS I
+3º ANO – 2º SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+1Engenharia de Reservatórios I
+Geraldo Ramos, BSc, MSc, PhD
+Capítulo 4 - Integração de dados e Cálculo Volumétrico de Hidrocarbonetos
+\section{ENGENHARIA DE RESERVATÓRIOS I}
+ \textbf{3º Ano – 2º Semestre — 2025–2026}
+
+ \textbf{Docente:} Prof. Dr. Geraldo A. R. Ramos
+
+ ---
+
+\subsection{Capítulo 4 — Integração de dados e Cálculo Volumétrico de Hidrocarbonetos}
+
+\subsubsection{Sumário}
+\begin{itemize}
+\item 4.1 Objectivo Geral e Objectivos Específicos
+\item 4.2 Prefixos
+\item 4.3 Introdução
+\item 4.4 Definições
+\item 4.5 Métodos de cálculo de volumes originalmente existentes
+\item 4.6 Método volumétrico (parâmetros e fórmulas)
+\item 4.7 Integração de dados e incertezas
+\item 4.8 Consolidação da aula (exercícios)
+\item 4.9 Tarefas
+\item Bibliografia
+\end{itemize}
+
+ ---
+
+\subsection{4.1 Objetivo geral}
+Aplicar integração de dados geológicos, petrofísicos e de engenharia para estimar volumes originais de hidrocarbonetos (OOIP / OGIP) e volumes recuperáveis, considerando incertezas e apresentando resultados úteis para tomada de decisão.
+
+\subsubsection{Objetivos específicos}
+\begin{itemize}
+\item Definir conceitos fundamentais relacionados a volumes em reservatórios.
+\item Explicar métodos de cálculo (volumétrico, material balance, decline, probabilístico).
+\item Descrever parâmetros essenciais do método volumétrico e suas fontes de incerteza.
+\item Demonstrar integração de dados (mapas de espessura, Net‑to‑Gross, phi, Sw, Bo, Bg).
+\end{itemize}
+
+\subsection{4.2 Prefixos e unidades (resumo)}
+| Prefixo | Símbolo | Fator |
+|---|---:|---:|
+| Kilo | k | 10^3 |
+| Mega | M | 10^6 |
+| Giga | G | 10^9 |
+| Milli | m | 10^-3 |
+| Micro | µ | 10^-6 |
+
+> Nota: escolha unidades consistentes (SI ou campo — acres/ft/bbl). Ao usar fórmulas práticas, aplique os fatores de conversão corretos.
+
+\subsection{4.3 Introdução}
+O método volumétrico estima o volume de fluido originalmente existente no reservatório a partir de propriedades petrofísicas e geométricas: área, espessura neta, porosidade, saturação, e fatores de volume de formação. É a primeira estimativa após descoberta e serve de base para cálculos de reservas.
+
+\subsection{4.4 Definições essenciais}
+\begin{itemize}
+\item $V_r$: volume de rocha do reservatório (m³ ou ft³);
+\item $\phi$: porosidade (fração);
+\item $S_w$: saturação de água (fração); $S_o=1-S_w$ saturação de óleo;
+\item $B_o, B_g$: fatores de volume de formação (reservatório → superfície);
+\item $N$: número de barris padrão (STB) ou volume de gás em condições padrão.
+\end{itemize}
+
+\subsection{4.5 Métodos de cálculo de volumes originalmente existentes}
+\begin{itemize}
+\item Método volumétrico (petrofísico/geométrico).
+\item Material balance (balanço de material) — requer dados de produção e pressão.
+\item Métodos empíricos e baseados em declínio — para reservas quando há produção.
+\item Abordagens probabilísticas (Monte Carlo) — para quantificar incerteza.
+\end{itemize}
+
+\subsection{4.6 Método volumétrico}
+\subsubsection{4.6.1 Forma geral (reservoir conditions)}
+O volume de hidrocarboneto no reservatório (volume de fluido em reservatório):
+$$
+V_{fluid,res} = V_r\,\phi\,(1-S_w)
+$$
+
+Para converter para unidades de superfície usa‑se o fator de volume de formação $B$:
+$$
+N_{surface} = \frac{V_{fluid,res}}{B}
+$$
+
+\subsubsection{4.6.2 Fórmulas práticas (exemplos)}
+\begin{itemize}
+\item OOIP (stock tank barrels, usando unidades campo):
+$$
+OOIP = \frac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}
+$$
+onde $A$ em acres, $h$ em ft, $\phi$ fração, $B_o$ em bbl/STB.
+\end{itemize}
+
+\begin{itemize}
+\item OGIP (scf ou Sm^3 dependendo da convenção):
+$$
+OGIP = \frac{43560\,A\,h\,\phi\,(1-S_w)}{B_g}
+$$
+\end{itemize}
+
+> Observação: ao usar SI, converta $A$ (m²), $h$ (m) e fatores de conversão adequados.
+
+\subsubsection{4.6.3 Estimativa de volume recuperável (reservas)}
+Reservas (recuperáveis) podem ser expressas como função das condições iniciais e finais:
+
+Para gás (exemplo conceitual):
+$$
+N_R = V_r\,\phi\,(1-S_{w_i})\left(\frac{1}{B_{g_i}} - \frac{1}{B_{g_a}}\right)
+$$
+
+Para óleo (contando saturações iniciais e residuais):
+$$
+N_R = V_r\,\phi\,(1-S_{w_i})\left(\frac{S_{o_i}}{B_{o_i}} - \frac{S_{o_r}}{B_{o_r}}\right)
+$$
+
+Onde índices $i$ e $a$ referem‑se às condições iniciais e de abandono; $S_{o_r}$ e $B_{o_r}$ são saturação de óleo residual e fator de volume no estado residual.
+
+\subsubsection{4.6.4 Reserva por fator de recuperação}
+Reservas também podem ser estimadas por:
+$$
+N_R = N \times F_R
+$$
+onde $N$ é o volume originalmente em lugar e $F_R$ o fator de recuperação (fração).
+
+\subsection{4.7 Integração de dados e incertezas}
+Passos práticos:
+\begin{itemize}
+\item QA/QC das fontes: mapas de batimetria, logs, cores, testes de poço, análises PVT.
+\item Construir mapas de Net‑to‑Gross, porosidade média, Sw média por setor.
+\item Calcular sensibilidade dos parâmetros-chave (A, h, φ, Sw, Bo) — análise P10/P50/P90.
+\item Usar Monte Carlo para propagar incertezas e gerar distribuições de OOIP/OGIP e reservas.
+\end{itemize}
+
+Principais fontes de incerteza: interpretação de limites (cut‑offs), heterogeneidade vertical e lateral, erros de core/log, variabilidade PVT.
+
+\subsection{4.8 Consolidação da aula — Exercícios}
+\begin{enumerate}
+\item Dado: Área = 200 acres; h_net = 30 ft; φ = 0.18; Swi = 0.25; Bo = 1.2 bbl/STB. Calcule OOIP (use fórmula prática).
+\item Faça uma análise de sensibilidade variando φ entre 0.15–0.22 e interprete o impacto no OOIP.
+\item Explique como Net‑to‑Gross e cut‑offs alteram a estimativa volumétrica.
+\end{enumerate}
+
+\subsection{4.9 Tarefas}
+\begin{enumerate}
+\item Reunir os dados petrofísicos e montar uma planilha de cálculo volumétrico para um caso hipotético.
+\item Rodar uma simulação Monte Carlo simples (50–100 iterações) variando φ, Sw e Bo e apresentar P10/P50/P90.
+\item Elaborar um pequeno relatório discutindo fontes de incerteza e medidas para redução de risco.
+\end{enumerate}
+
+\subsection{Definições importantes}
+\begin{itemize}
+\item **Net‑to‑Gross (N/G):** fração da coluna que é considerada 'net pay' (contribui para produção).
+\item **Cut‑off:** valor mínimo de porosidade/permeabilidade/saturação usado para definir zonas produtivas.
+\item **Fator de recuperação (F_R):** fração do volume originalmente em lugar que se espera recuperar.
+\item **Área efetiva (A_eff):** área do reservatório considerada produtiva após aplicar cut‑offs e mapas de net.
+\end{itemize}
+
+\subsection{Exemplo prático — cálculo de OOIP (exercício 4.8)}
+Dados: Área $A=200\,$acres; $h_{net}=30\,$ft; $\phi=0.18$; $S_{wi}=0.25$; $B_o=1.2\,$bbl/STB.
+
+Usando a fórmula prática:
+$$
+OOIP = \frac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}
+$$
+Substituindo os valores:
+$$
+OOIP = \frac{7758 \times 200 \times 30 \times 0.18 \times (1-0.25)}{1.2}
+$$
+Calculando passo a passo:
+$$
+7758\times200 = 1\,551\,600\\
+1\,551\,600\times30 = 46\,548\,000\\
+46\,548\,000\times0.18 = 8\,378\,640\\
+8\,378\,640\times0.75 = 6\,283\,980\\
+	ext{OOIP} = \dfrac{6\,283\,980}{1.2} \approx 5\,236\,650\;\text{STB}
+$$
+Interpretação: aproximadamente $5.24\times10^6$ STB (5,24 milhões de barris originalmente em lugar).
+
+\subsection{Observações sobre unidades}
+\begin{itemize}
+\item Fórmulas práticas usam unidades de campo (acres, ft, bbl). Para SI, converta área e espessura e aplique os fatores apropriados.
+\item Sempre verifique se $B_o$ e $B_g$ estão no mesmo sistema de unidades antes de dividir.
+\end{itemize}
+
+\subsection{Glossário de símbolos (cap.4)}
+\begin{itemize}
+\item `A` — área (acres ou m²).
+\item `h` — espessura neta (ft ou m).
+\item `\phi` — porosidade (fração).
+\item `S_w` — saturação de água (fração); `S_o = 1-S_w`.
+\item `B_o`, `B_g` — fatores de volume de formação do óleo e do gás.
+\item `N`, `OGIP` — volumes originalmente em lugar (STB para óleo; scf ou Sm³ para gás).
+\item `F_R` — fator de recuperação (fração).
+\end{itemize}
+
+\subsection{Dicas rápidas de estudo}
+\begin{itemize}
+\item Monte uma planilha com a fórmula prática e permita variação de parâmetros (sensibilidade).
+\item Construa mapas de A_eff e h_net para setores diferentes e compare OOIP setorial.
+\item Use Monte Carlo para obter P10/P50/P90 e comunicar risco na estimativa.
+\end{itemize}
+
+---
+
+Muito obrigado(a)!
+
+% ---- file: cap5_transcription.md
+
+
+
+1
+
+
+
+ENGENHARIA DE RESERVATÓRIOS I
+3º ANO – 2º SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+1Engenharia de Reservatórios I
+Geraldo Ramos, BSc, MSc, PhD
+Capítulo 5 – Equação de Balanço de Materiais
+▪ 5.1. Objectivo Geral e Objectivos Específicos
+▪ 5.2. Introdução à Equação de Balanço de Materiais
+▪ 5.3. Equação de balanço de materiais Generalizada;
+▪ 5.4. Equação de Balanço de Materiais em reservatórios de óleo;
+▪ 5.5. Equação de Balanço de Materiais em reservatórios de gás;
+▪ 5.6. Técnicas de análise das Equações de Balanço de Materiais
+▪ 5.7. Vantagens e desvantagens das equações de balanço de materiais;
+▪ .5.8. Consolidação da Aula
+▪ 5.9. Tarefas
+\section{ENGENHARIA DE RESERVATÓRIOS I}
+ \textbf{3º Ano – 2º Semestre — 2025–2026}
+
+ \textbf{Docente:} Prof. Dr. Geraldo A. R. Ramos
+
+ ---
+
+\subsection{Capítulo 5 — Equação de Balanço de Materiais}
+
+\subsubsection{Sumário}
+\begin{itemize}
+\item 5.1 Objetivo geral e objetivos específicos
+\item 5.2 Introdução à EBM
+\item 5.3 Equação de Balanço de Materiais (forma geral)
+\item 5.4 EBM para reservatórios de óleo (linearização)
+\item 5.5 EBM para reservatórios de gás
+\item 5.6 Técnicas de análise (gráficos e métodos)
+\item 5.7 Vantagens e limitações
+\item 5.8 Consolidação da aula (exercícios)
+\item 5.9 Tarefas
+\item Bibliografia
+\end{itemize}
+
+---
+
+\subsection{5.1 Objetivo geral}
+Aplicar a equação de balanço de materiais (EBM) para quantificar volumes em reservatórios de óleo e gás, integrando dados de produção, PVT e propriedades do reservatório, e avaliando a incerteza das estimativas.
+
+\subsubsection{Objetivos específicos}
+\begin{itemize}
+\item Explicar os fundamentos e hipóteses da EBM.
+\item Interpretar os termos da EBM generalizada.
+\item Aplicar a linearização (Havlena & Odeh) para estimar volumes e parâmetros desconhecidos.
+\item Comparar técnicas de análise e discutir vantagens/limitações.
+\end{itemize}
+
+\subsection{5.2 Introdução}
+A EBM baseia‑se no balanço de massa dos fluidos presentes nos poros do reservatório. Em termos práticos, relaciona o fluido produzido e injetado com a variação do estoque no reservatório, permitindo estimar o volume originalmente em lugar (N) ou parâmetros como o fator de recuperação.
+
+A técnica situa‑se entre a estimativa volumétrica e a simulação: usa dados de produção (e PVT) para inferir o estoque sem exigir dimensões detalhadas do reservatório.
+
+\subsection{5.3 Equação de Balanço de Materiais — forma geral}
+Em termos gerais, a EBM pode ser escrita como uma relação entre os termos de produção/injeção/influxo e as variações volumétricas e compressibilidades. Uma forma útil para análise prática é escrever a equação como:
+
+$$
+F = N E_o + m E_g + (1+m) E_{f,w} + W_e
+$$
+
+onde os termos são definidos abaixo (Havlena \& Odeh, 1963) e $F$ representa o lado conhecido (produções e injecções).
+
+\subsection{5.4 EBM para reservatórios de óleo — linearização (Havlena & Odeh)}
+Para facilitar a estimação dos parâmetros desconhecidos, a EBM é linearizada agrupando termos de variação de volume, compressibilidade e contribuição do gas‑cap. As definições práticas são:
+
+$$E_o = B_o - B_{o,i} + (R_{s,i} - R_s)\,B_g$$
+
+$$E_g = B_{o,i}\left(\frac{B_g}{B_{g,i}} - 1\right)$$
+
+$$E_{f,w} = B_{o,i}\left(S_{w,i}c_w + \frac{c_f}{1-S_{w,i}}\Delta p\right)$$
+
+e o termo conhecido (lado esquerdo) é, por exemplo:
+
+$$F = N_p B_o + G_p - R_s B_g + W_p B_w - W_{inj} B_w - G_{inj} B_{g,inj}$$
+
+Assim, a equação linear para regressão fica:
+
+$$F = N E_o + m E_g + (1+m) E_{f,w} + W_e$$
+
+onde $N$ (estoque original), $m$ (razão do gas‑cap/óleo) e outros parâmetros podem ser estimados por ajuste linear de $F$ versus os termos $E_o, E_g, E_{f,w}$.
+
+\subsection{5.5 EBM para reservatórios de gás}
+Para reservatórios dominados por gás a formulação é adaptada; utiliza‑se o fator de volume do gás $B_g$ e considera‑se o comportamento PVT do gás. Técnicas similares de linearização e plotagem (ex.: material balance gas plots) são usadas para estimar OGIP e responder por influxos.
+
+\subsection{5.6 Técnicas de análise}
+\begin{itemize}
+\item Plotagens clássicas de material balance (ex.: $F$ vs $E_o$, $F$ vs combinação linear) para estimar $N$ e $m$.
+\item Uso de regressão linear múltipla (Havlena & Odeh) para separar contribuições de compressibilidade e gas‑cap.
+\item Análise de sensibilidade e propagação de incerteza (p.ex. Monte Carlo) para obter P10/P50/P90.
+\end{itemize}
+
+\subsection{5.7 Vantagens e limitações}
+\begin{itemize}
+\item Vantagens: não requer geometria detalhada; integra dados de produção; fornece estimativas robustas quando dados de produção e PVT são confiáveis.
+\item Limitações: sensível a erros de PVT, incertezas em volumes injetados, e viés por heterogeneidade ou comunicação entre zonas; exige QA/QC rigoroso dos dados.
+\end{itemize}
+
+\subsection{5.8 Consolidação da aula — Exercícios}
+\begin{enumerate}
+\item Explique a lógica da linearização de Havlena & Odeh.
+\item Dado um conjunto de dados de produção e PVT, descreva os passos para construir o termo $F$ e os termos $E_o,E_g,E_{f,w}$.
+\item Discuta como incluir influxo de aquífero e injeção de água na formulação.
+\end{enumerate}
+
+\subsection{5.9 Tarefas}
+\begin{enumerate}
+\item Aplicar a linearização Havlena & Odeh a um conjunto de dados hipotético (fornecerei os dados se desejar).
+\item Fazer uma análise de sensibilidade para $B_o$, $\phi$ e $S_{w,i}$ e discutir o impacto nas reservas estimadas.
+\item Preparar um pequeno relatório comparando EBM e método volumétrico para um mesmo caso.
+\end{enumerate}
+
+\subsection{Definições importantes}
+\begin{itemize}
+\item **Termo $F$ (lado conhecido):** representa as quantidades medidas de produção/injeção devidamente convertidas para volumes de superfície usados na EBM.
+\item **$N$ (estoque original):** volume originalmente em lugar de óleo (STB) ou gás (scf/Sm3).
+\item **$m$ (razão gas‑cap/óleo):** relação entre volumes de gás livre no gas‑cap e volume de óleo no reservatório.
+\item **$E_o, E_g, E_{f,w}$:** termos de variação volumétrica do óleo, do gás e do fluido de formação/água respectivamente (definidos na linearização Havlena & Odeh).
+\end{itemize}
+
+\subsection{Exemplo prático — aplicação simplificada da linearização Havlena & Odeh}
+Considere um caso hipotético com os seguintes dados simplificados por período acumulado (valores ilustrativos):
+\begin{itemize}
+\item Produção acumulada de óleo $N_p = 100{,}000\,$STB;
+\item Produção acumulada de gás $G_p = 50{,}000\,$scf (convertido para as mesmas unidades apropriadas);
+\item $B_{o,i}=1.1$, $B_o$ atual = 1.15; $R_{s,i}=200\,$scf/STB, $R_s=180\,$scf/STB; $B_g=0.005$ respec.
+\end{itemize}
+
+Calcule um termo $E_o$ simplificado:
+$$
+E_o = B_o - B_{o,i} + (R_{s,i} - R_s)B_g
+$$
+Substituindo valores (exemplo):
+$$
+E_o = 1.15 - 1.10 + (200-180)\times0.005 = 0.05 + 20\times0.005 = 0.05 + 0.10 = 0.15
+$$
+Se repetirmos esse cálculo para várias datas e obtivermos $F$ correspondente, um ajuste linear de $F$ versus $E_o$ (junto com $E_g$ e $E_{f,w}$) permite estimar $N$ (coeficiente angular/intercepto dependendo da formulação).
+
+\subsection{Observações práticas}
+\begin{itemize}
+\item Garantir que todos os volumes e fatores $B$ estejam convertidos para o mesmo sistema de unidades antes de montar $F$.
+\item Corrigir por volumes injetados ($W_{inj},G_{inj}$) e por perdas/erros de medição.
+\item Em presença de aquífero, incluir o termo $W_e$ de forma explícita e considerar modelos simplificados de influxo para estimativa.
+\end{itemize}
+
+\subsection{Glossário de símbolos (cap.5)}
+\begin{itemize}
+\item `F` — termo conhecido (volume produzido/injetado convertido para superfície).
+\item `N` — estoque original de óleo (STB).
+\item `m` — razão gas‑cap/óleo (adimensional).
+\item `E_o, E_g, E_{f,w}` — termos de variação na linearização da EBM.
+\item `B_o, B_g` — fatores de volume de formação do óleo e do gás.
+\item `N_p, G_p` — produção acumulada de óleo e gás.
+\item `W_e` — contribuição do influxo de água (aquífero).
+\end{itemize}
+
+\subsection{Dicas rápidas de estudo}
+\begin{itemize}
+\item Organize os dados de produção e PVT em uma planilha com colunas para $N_p,G_p,B_o,B_g,R_s$ e calcule $F,E_o,E_g,E_{f,w}$ periodicamente.
+\item Plote pares $(F,E_o)$ e $(F,E_g)$ para observar linearidade e influências dominantes.
+\item Teste sensibilidade a erros de PVT (p.ex. variação de $B_o$) para entender impacto nas estimativas de $N$.
+\end{itemize}
+
+---
+
+Muito obrigado(a)!
+
+% ---- file: exercícios_transcription.md
+
+
+
+1
+
+
+
+Engenharia de Reservatórios - I
+Problemas e Soluções
+Ano Lectivo 2023/2024
+Docente
+Geraldo Ramos, Bsc, Msc, PhD
+Instituto Superior Politécnico de Tecnologias e Ciências - ISPTEC
+18 de maio de 2024
+COPYRIGHT: © 2024 by Geraldo Ramos. All rights reserved.
+Nenhuma parte deste material pode ser produzido, armazenado, ou transmitido por qualquer meio electrô-
+nico, mecânico, ou por fotocópia, gravação, digitalização, ou outros, sem prévia permissão por escrito do
+autor.
+Introdução
+O objectivo deste documento é apresentar as soluções dos exercícios/problemas de cada aula da disciplina de
+Engenharia de Reservatórios I, do 2◦ semestre, do 3◦ ano do curso de Engenharia de Petróleos do ISPTEC.
+As respostas com a cor vermelha, ainda estão em desenvolvimento, excepto nas 
+guras onde foi utilizada
+para realçar informações ao passo que as de cor azul ou outra cor que não seja cor vermelha são consideradas
+concluidas e veri
+cadas.
+Os estudantes são obrigados em resolver os exercícios antes de consultarem as respostas para o sucesso na
+cadeira de Engenharia de Reservatórios I. Qualquer erro na solução agradecia noti
+car o professor.
+Os problemas deste documento estão relacionados com:
+ Capítulo 1  Introdução à Engenharia de Reservatórios;
+ Capítulo 2  Propriedades dos 
+uidos;
+ Capítulo 3  Propriedade das rochas;
+ Capítulo 4  Integração de dados e Cálculo Volumétrico
+ Capítulo 5  Equação de balanço de materiais;
+ Capítulo 6 - Fluxo de Fluidos em Meios Porosos;
+ Capítulo 7 - Análise de Teste de Pressão Transiente em poços
+ Capítulo 8  In
+uxo Natural de água;
+ Capítulo 9 - Análise de curvas de declínio e ajuste do histórico
+O documento está dividido em três partes:
+ Parte - I: O questionário dos problemas
+ Parte - II: As soluções dos problemas
+ Bibliogra
+a consultada
+Espero que venha auxiliar para o seu sucesso nesta disciplina.
+Geraldo Ramos, PhD
+i
+
+% ---- file: resumo_capitulos.md
+
+\section{Resumo por Capítulo — Engenharia de Reservatórios I (Versão EXTREMAMENTE Detalhada)}
+
+Este documento contém um resumo aprofundado dos capítulos 1–5, com fórmulas, definições, unidades, notas de interpretação e exemplos numéricos passo‑a‑passo. Use como referência de estudo e para gerar fichas de revisão.
+
+Índice
+\begin{itemize}
+\item Capítulo 1 — Conceitos e sistema petrolífero
+\item Capítulo 2 — Propriedades dos fluidos (PVT): teorias, fórmulas e correlações
+\item Capítulo 3 — Propriedades das rochas: porosidade, permeabilidade, capilaridade e equações aplicadas
+\item Capítulo 4 — Cálculo volumétrico (OOIP / OGIP): fórmulas de campo e SI, sensibilidade e Monte Carlo
+\item Capítulo 5 — Equação de Balanço de Materiais (EBM): formulação, linearização e exemplos
+\item Anexos: constantes, fatores de conversão, lista de fórmulas essenciais
+\end{itemize}
+
+---
+
+\textbf{Nota de unidades:} Sempre indique o sistema: UNIDADES DE CAMPO (acres, ft, bbl, scf) ou SI (m, m³, Pa). Muitos fatores práticos (ex.: 7758) convertem acres·ft → bbl.
+
+---
+
+\subsection{Capítulo 1 — Conceitos e sistema petrolífero}
+
+1.1 Principais definições
+\begin{itemize}
+\item Sistema petrolífero: conjunto de elementos necessários para geração, migração, armadilhamento e acumulação de hidrocarbonetos.
+\item Sistema de produção: instalações e equipamentos para recuperação, elevação e tratamento dos fluidos do reservatório até a superfície.
+\end{itemize}
+
+1.2 Equações e relações fundamentais (úteis para este capítulo)
+\begin{itemize}
+\item Equilíbrio hidrostático (coluna incompressível ideal):
+$$p(z)=p_{ref}+\rho g (Z_{ref}-Z)$$
+onde $p$ em Pa (ou psi), $\rho$ densidade (kg/m³), $g$ = 9.80665 m/s², $Z$ profundidade.
+\item Soma de saturações (misto trifásico):
+$$S_w + S_o + S_g = 1$$
+onde cada $S_\bullet$ é fração volumétrica adimensional.
+\end{itemize}
+
+1.3 Conceitos qualitativos importantes
+\begin{itemize}
+\item Armadilha (structural/estratigráfica/fraturada), rocha geradora/selante, migração; sincronismo e janela térmica (catagênese) — sem equações mas essenciais para interpretação geológica.
+\end{itemize}
+
+---
+
+\subsection{Capítulo 2 — Propriedades dos fluidos (PVT)}
+
+2.1 Variáveis termodinâmicas fundamentais
+\begin{itemize}
+\item Equação dos gases ideais (mol):
+$$pV=nRT$$
+onde $p$ (Pa), $V$ (m³), $n$ (mol), $R$ (8.314462618 J/(mol·K)), $T$ (K).
+\item Fator de compressibilidade (Z):
+$$Z=\dfrac{pV}{nRT}=\dfrac{p\,\overline{v}}{RT}$$
+Z corrige o comportamento real do gás.
+\end{itemize}
+
+2.2 Definições PVT essenciais
+\begin{itemize}
+\item Fator de volume de formação do óleo ($B_o$):
+$$B_o=\dfrac{V_{res\_oil}}{V_{surf\_oil}}\quad(\text{unidades: m}^3/\text{m}^3\;\text{ou bbl/STB})$$
+\item Fator de volume do gás ($B_g$): volume de gás no reservatório por unidade de gás padrão (ft³/SCF ou m³/Sm³):
+$$B_g=\dfrac{V_{res\_gas}}{V_{std\_gas}}$$
+\item Razão gás/óleo dissolvido ($R_s$): normalmente em scf/STB (campo) ou m³/m³ (SI):
+$$R_s=\dfrac{\text{volume de gás dissolvido no óleo (std)}}{\text{volume de óleo (superfície)}}$$
+\end{itemize}
+
+2.3 Compressibilidades e variações com pressão
+\begin{itemize}
+\item Compressibilidade do óleo (bo):
+$$c_o = -\dfrac{1}{V_o}\dfrac{\mathrm{d}V_o}{\mathrm{d}p} = \dfrac{\mathrm{d}(\ln V_o)}{\mathrm{d}p}$$
+\item Compressibilidade do gás (aproximação):
+$$c_g \approx \dfrac{1}{p} \left(1 - \dfrac{\mathrm{d}\ln Z}{\mathrm{d}\ln p}\right)$$
+Usar tabelas/curvas Z para cálculo prático.
+\end{itemize}
+
+2.4 Correlações e estimativas empíricas (nomes e uso)
+\begin{itemize}
+\item Correlações de $B_o$, $\mu_o$, $R_s$ (Standing, Vazquez‑Beggs, Beggs & Robinson para viscosidade). Estas fornecem estimativas quando não existem ensaios PVT.
+\end{itemize}
+
+2.5 Conversões úteis (campo ↔ SI)
+\begin{itemize}
+\item $1\,\text{scf}=0.0283168\,\text{m}^3$;
+\item $1\,\text{STB}=0.1589873\,\text{m}^3$;
+\item $1\,\text{bbl}=0.1589873\,\text{m}^3$.
+\end{itemize}
+
+2.6 Exemplo prático (passo a passo)
+\begin{itemize}
+\item Dados: $V_{res}=1.20\,$bbl, $V_{surf}=1.00\,$STB, $R_s=400\,$scf/STB.
+\item $B_o = 1.20/1.00 = 1.20\,$bbl/STB.
+\item $R_s$ em SI:
+$$R_s(\text{m}^3/\text{m}^3)=\dfrac{400\times0.0283168}{0.1589873}\approx71.3\;\text{m}^3/\text{m}^3$$
+\end{itemize}
+
+---
+
+\subsection{Capítulo 3 — Propriedades das rochas}
+
+3.1 Porosidade e volumes
+\begin{itemize}
+\item Porosidade total:
+$$\phi=\dfrac{V_p}{V_t}$$
+onde $V_p$ é o volume de poros e $V_t$ o volume total.
+\item Porosidade a partir de massa (método gravimétrico):
+$$V_p=\dfrac{m_{sat}-m_{dry}}{\rho_f},\qquad \phi=\dfrac{V_p}{V_t}$$
+\end{itemize}
+
+3.2 Densidades e densidade aparente (logs)
+\begin{itemize}
+\item Massa específica/aparente: para rocha saturada
+$$\rho_b=(1-\phi)\rho_{s}+\phi(S_w\rho_w+S_o\rho_o+S_g\rho_g)$$
+onde $\rho_s$ é a densidade da matriz.
+\end{itemize}
+
+3.3 Permeabilidade (Lei de Darcy)
+\begin{itemize}
+\item Forma diferencial (unidimensional):
+$$q=-\dfrac{kA}{\mu}\dfrac{\mathrm{d}p}{\mathrm{d}x}$$
+onde $q$ é vazão volumétrica (m³/s), $k$ permeabilidade (m²), $A$ área (m²), $\mu$ viscosidade (Pa·s).
+\item Fluxo radial estacionário (poço produtor, conduto linearizado):
+$$q=\dfrac{2\pi k h (p_e-p_{wf})}{\mu\ln\left(\dfrac{r_e}{r_w}\right)}$$
+onde $h$ é espessura produtiva, $r_e$ raio de drenagem, $r_w$ raio do poço.
+\end{itemize}
+
+3.4 Difusividade (equação do fluxo transiente)
+\begin{itemize}
+\item Para fluido ligeiramente compressível:
+$$\dfrac{\partial p}{\partial t}=\dfrac{k}{\phi\mu c_t}\nabla^2 p$$
+onde $c_t$ é compressibilidade total (soma das compressibilidades relevantes).
+\end{itemize}
+
+3.5 Capilaridade e função de Leverett
+\begin{itemize}
+\item Pressão capilar (tubo capilar simplificado):
+$$P_c = \dfrac{2\sigma\cos\theta}{r}$$
+\item Função de Leverett:
+$$J(S_w)=\dfrac{P_c(S_w)\sqrt{k/\phi}}{\sigma\cos\theta}$$
+\end{itemize}
+
+3.6 Saturações e permeabilidades relativas
+\begin{itemize}
+\item $S_w+S_o+S_g=1$;
+\item Permeabilidade relativa: $k_{r\alpha}=f(S_\alpha)$ (curvas experimentais).
+\end{itemize}
+
+3.7 Resistividade e saturação — Equação de Archie
+\begin{itemize}
+\item Forma usual (zona limpa, rocha não condutiva):
+$$R_t = a\,R_w\,\phi^{-m}\,S_w^{-n}$$
+ou invertendo para saturação:
+$$S_w = \left(\dfrac{a\,R_w}{R_t\,\phi^{m}}\right)^{1/n}$$
+com parâmetros empíricos $a,m,n$.
+\end{itemize}
+
+3.8 Exemplos resolvidos (porosidade por massa; Arquímedes)
+\begin{itemize}
+\item Ver exemplos do capítulo 3 (por ex., $\phi\approx16{,}5\%$ e $22{,}2\%$ em exercícios práticos — seguir passos mostrados).
+\end{itemize}
+
+---
+
+\subsection{Capítulo 4 — Integração de Dados e Cálculo Volumétrico}
+
+4.1 Forma geral (reservoir and surface)
+\begin{itemize}
+\item Volume de fluido em reservatório (m³):
+$$V_{fluid,res}=V_r\,\phi\,(1-S_w)$$
+\item Conversão para superfície usando fator de volume $B$ (m³/m³):
+$$N_{surface}=\dfrac{V_{fluid,res}}{B}$$
+\end{itemize}
+
+4.2 Fórmulas práticas (unidades de campo)
+\begin{itemize}
+\item OOIP (STB):
+$$OOIP=\dfrac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}$$
+onde $A$ em acres, $h$ em ft, $\phi$ fração, $B_o$ em bbl/STB.\
+Derivação rápida do fator 7758:
+1 acre = 43560 ft^2; 1 acre·ft = 43560 ft^3; 1 bbl = 5.614583 ft^3 → 43560/5.614583 \approx 7758 bbl/acre·ft.
+\end{itemize}
+
+\begin{itemize}
+\item OGIP (SCF):
+$$OGIP=\dfrac{43560\,A\,h\,\phi\,(1-S_w)}{B_g}$$
+onde $B_g$ é o fator volume do gás (ft^3/SCF).
+\end{itemize}
+
+4.3 Estimativa de reservas recuperáveis
+\begin{itemize}
+\item Reservas volumétricas (por fator de recuperação $F_R$):
+$$N_R = OOIP\times F_R$$
+ou pontualmente (contando saturações residuais):
+$$N_R = V_r\,\phi\,(1-S_{w,i})\left(\dfrac{S_{o,i}}{B_{o,i}} - \dfrac{S_{o,r}}{B_{o,r}}\right)$$
+\end{itemize}
+
+4.4 Análise de sensibilidade e incerteza
+\begin{itemize}
+\item Derivada parcial (sensibilidade de OOIP a $\phi$):
+$$\dfrac{\partial OOIP}{\partial\phi}=\dfrac{7758\,A\,h\,(1-S_w)}{B_o}$$
+\item Monte Carlo: descreva distribuições para $A,h,\phi,S_w,B_o$ (p.ex. triangular, normal truncada, lognormal), gere N amostras e calcule percentis P10/P50/P90 da distribuição resultante de OOIP.
+\end{itemize}
+
+4.5 Boas práticas de integração
+\begin{itemize}
+\item QA/QC em dados de core, logs e PVT; uso de mapas de net pay e cut‑offs; segmentação setorial (zonas) — calcular OOIP por setor e somar.
+\end{itemize}
+
+---
+
+\subsection{Capítulo 5 — Equação de Balanço de Materiais (EBM)}
+
+5.1 Conceito geral
+\begin{itemize}
+\item A EBM relaciona as quantidades produzidas/injetadas com a variação de estoque no reservatório; é uma equação de conservação de massa para os poros.
+\end{itemize}
+
+5.2 Forma linearizada (Havlena \& Odeh)
+\begin{itemize}
+\item Variável conhecida (lado esquerdo), $F$, é construída a partir de dados de produção e injeção convertidos para volumes de superfície. A forma linearizada usada comumente é:
+$$F = N\,E_o + m\,E_g + (1+m)\,E_{f,w} + W_e$$
+onde:
+\item $E_o = B_o - B_{o,i} + (R_{s,i}-R_s)\,B_g$;
+\item $E_g = B_{o,i}\left(\dfrac{B_g}{B_{g,i}} - 1\right)$;
+\item $E_{f,w} = B_{o,i}\left(S_{w,i}c_w + \dfrac{c_f}{1-S_{w,i}}\Delta p\right)$;
+\item $N$ é OOIP (a estimar), $m$ razão gas‑cap/óleo (a estimar), $W_e$ contribuição líquida do aquífero.
+\end{itemize}
+
+5.3 Construção prática de $F$ (exemplo simplificado)
+\begin{itemize}
+\item Exemplo (formas ilustrativas): calcular $F$ acumulado por intervalo como combinação de termos de produção $N_p B_o$, $G_p$ e correções por $R_s$, volumes injetados, etc. (ver exercícios e ficheiro cap5 para forma usada no curso).
+\end{itemize}
+
+5.4 Estimação por regressão
+\begin{itemize}
+\item Monte as colunas $F, E_o, E_g, E_{f,w}$ para vários instantes. Execute regressão linear múltipla:
+$$F = \beta_1 E_o + \beta_2 E_g + \beta_3 E_{f,w} + \varepsilon$$
+onde idealmente $\beta_1=N$, $\beta_2=m$, $\beta_3=(1+m)$ e $\varepsilon$ residuais (ou ajustar conforme convenção usada).
+\end{itemize}
+
+5.5 Notas sobre gás e p/z
+\begin{itemize}
+\item Para reservatórios gas‑dominados, a análise p/z (plot de $p/z$ vs $G_p$) permite estimar OGIP por extrapolação; p/z é inversamente proporcional ao volume remanescente quando as condições são adequadas. (Implementação numérica e tratamentos de retroinjeção exigem cuidados de unidades e correções).
+\end{itemize}
+
+---
+
+\subsection{Anexos — Fórmulas essenciais e constantes}
+
+Constantes e conversões rápidas
+\begin{itemize}
+\item $1\,\text{acre}=43560\,\text{ft}^2$.
+\item $1\,\text{acre·ft}=43560\,\text{ft}^3\approx7758\,\text{bbl}$.
+\item $1\,\text{bbl}=0.1589873\,\text{m}^3$.
+\item $1\,\text{scf}=0.0283168\,\text{m}^3$.
+\item $1\,\text{D}=9.869233\times10^{-13}\,\text{m}^2$.
+\item $1\,\text{psi}=6894.757\,\text{Pa}$.
+\end{itemize}
+
+Lista condensada de fórmulas (referência rápida)
+\begin{itemize}
+\item Somatório das saturações: $S_w+S_o+S_g=1$.
+\item API gravity: $API=\dfrac{141.5}{SG}-131.5$.
+\item Darcy (unidimensional): $q=-\dfrac{kA}{\mu}\dfrac{\mathrm{d}p}{\mathrm{d}x}$.
+\item Radial steady flow to well: $q=\dfrac{2\pi k h (p_e-p_{wf})}{\mu\ln(r_e/r_w)}$.
+\item OOIP (campo): $OOIP=\dfrac{7758Ah\phi(1-S_w)}{B_o}$.
+\item OGIP (campo): $OGIP=\dfrac{43560Ah\phi(1-S_w)}{B_g}$.
+\item Porosidade: $\phi=V_p/V_t$.
+\item Compressibilidade: $c= -\dfrac{1}{V}\dfrac{\mathrm{d}V}{\mathrm{d}p}$.
+\item Archie: $R_t=aR_w\phi^{-m}S_w^{-n}$.
+\item Capilaridade (tubo): $P_c=\dfrac{2\sigma\cos\theta}{r}$.
+\item Leverett: $J(S_w)=\dfrac{P_c(S_w)\sqrt{k/\phi}}{\sigma\cos\theta}$.
+\end{itemize}
+
+---
+
+\subsection{Sugestões de estudo e uso deste ficheiro}
+\begin{itemize}
+\item Transforme cada subseção num cartão de revisão (Anki) — fórmulas, definições e exemplos numéricos.
+\item Implemente as fórmulas essenciais numa planilha (OOIP/OGIP/Monte Carlo) para treino prático.
+\item Para a prova: foque em interpretar o significado físico das fórmulas (o que altera OOIP, por que $B_o$ varia com pressão, como $R_s$ altera mobilidade, etc.).
+\end{itemize}
+
+---
+
+Arquivo gerado automaticamente pelo assistente — versão detalhada criada a pedido do utilizador.
+
+% ---- file: resumo_capitulos_ultra_detalhado.md
+\section{Resumo por Capítulo — Engenharia de Reservatórios I (VERSÃO ULTRA‑DETALHADA)}
+
+Este ficheiro contém uma compilação exaustiva de fórmulas, definições, derivações e exemplos numéricos para os capítulos 1–5. Use como referência técnica aprofundada durante a preparação.
+
+Índice
+\begin{itemize}
+\item Capítulo 1 — Sistema petrolífero e conceitos fundamentais
+\item Capítulo 2 — Propriedades dos fluidos (PVT): equações, correlações e cálculos
+\item Capítulo 3 — Propriedades de rochas: porosidade, permeabilidade, capilaridade, testes
+\item Capítulo 4 — Cálculo volumétrico (OOIP / OGIP): fórmulas de campo e SI, sensibilidade, Monte Carlo
+\item Capítulo 5 — Equação de Balanço de Materiais (EBM): formulação, linearização, p/z e exemplos
+\item Anexos: constantes, fatores de conversão, valores típicos, checklist de passos práticos
+\end{itemize}
+
+---
+
+\textbf{Observação sobre unidades}
+\begin{itemize}
+\item Indique sempre o sistema: CAMPO (acres, ft, bbl, scf, psi) ou SI (m, m³, Pa). Mantenha consistência.
+\item Fatores de conversão essenciais estão no Anexo.
+\end{itemize}
+
+---
+
+\subsection{Capítulo 1 — Sistema petrolífero e conceitos fundamentais}
+
+\begin{enumerate}
+\item Definições essenciais
+\begin{itemize}
+\item Sistema petrolífero: rocha geradora + rocha selante + armadilha + migração + sincronismo. 
+\item Sistema de produção: conjunto de poços, tubulações, elevação artificial, separadores, tratamento e escoamento.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item Relações e equações úteis
+\begin{itemize}
+\item Equilíbrio hidrostático (coluna vertical):
+$$p(Z)=p_{ref}+\int_{Z_{ref}}^{Z}\rho(z') g\,dz'\approx p_{ref}+\rho g (Z_{ref}-Z)$$
+(usar densidade local em cada camada quando heterogênea)
+\end{itemize}
+\end{enumerate}
+
+\begin{itemize}
+\item Soma das saturações (para mistura trifásica):
+$$S_w+S_o+S_g=1$$
+\end{itemize}
+
+\begin{enumerate}
+\item Notas interpretativas
+\begin{itemize}
+\item Identificação do tipo de reservatório (oil‑drive, gas‑cap, water‑drive, solution gas drive) depende de presença de gas cap, aquífero e relação GOR/Rs.
+\end{itemize}
+\end{enumerate}
+
+---
+
+\subsection{Capítulo 2 — Propriedades dos fluidos (PVT)}
+
+2.1. Grandezas fundamentais
+\begin{itemize}
+\item Equação dos gases (mol):
+$$pV=nRT$$
+\item Fator de compressibilidade (Z):
+$$Z=\dfrac{pV}{nRT}$$
+\end{itemize}
+
+2.2. Fatores de volume e razões
+\begin{itemize}
+\item Fator de volume de formação do óleo (óleo: reservatório → superfície):
+$$B_o=\dfrac{V_{res\_oil}}{V_{surf\_oil}}\quad(\text{m}^3/\text{m}^3\;\text{ou bbl/STB})$$
+\item Relação densidade ↔ B_o: massa invariável entre estados
+$$\rho_{res} = \dfrac{m}{V_{res}},\qquad \rho_{surf}=\dfrac{m}{V_{surf}}\Rightarrow B_o=\dfrac{V_{res}}{V_{surf}}=\dfrac{\rho_{surf}}{\rho_{res}}$$
+\end{itemize}
+
+\begin{itemize}
+\item Razão gás/óleo dissolvido:
+$$R_s=\dfrac{\text{vol. gás liberado (condições padrão)}}{\text{vol. óleo (superfície)}}\quad(\text{scf/STB ou m}^3/\text{m}^3)$$
+\end{itemize}
+
+2.3. Compressibilidade de fluidos
+\begin{itemize}
+\item Compressibilidade do óleo (adimensional, psi⁻1 ou Pa⁻1):
+$$c_o = -\dfrac{1}{V_o}\dfrac{\mathrm{d}V_o}{\mathrm{d}p}=\dfrac{\mathrm{d}(\ln V_o)}{\mathrm{d}p}$$
+\item Compressibilidade do gás (aprox.):
+$$c_g \approx \dfrac{1}{p}\left(1-\dfrac{\partial\ln Z}{\partial\ln p}\right)$$
+(obter Z(p,T) de charts ou EoS)
+\end{itemize}
+
+2.4. Equações de estado cúbicas (uso em PVT)
+\begin{itemize}
+\item Definições gerais (PR e SRK usadas com frequência):
+\item Definir constantes críticas de cada componente: $T_c, p_c, \omega$ (fator acêntrico).
+\end{itemize}
+
+\begin{itemize}
+\item Peng‑Robinson (PR):
+\item Parâmetros puros:
+  $$a = 0.45724\dfrac{R^2 T_c^2}{p_c},\qquad b = 0.07780\dfrac{R T_c}{p_c}$$
+\item Fator de temperatura:
+  $$\alpha(T)=\left[1+\kappa (1-\sqrt{T_r})\right]^2,\quad T_r=\dfrac{T}{T_c}$$
+  com
+  $$\kappa = 0.37464 + 1.54226\omega - 0.26992\omega^2.$$
+\item EoS:
+  $$p=\dfrac{RT}{V-b}-\dfrac{a\alpha(T)}{V(V+b)+b(V-b)}$$
+\end{itemize}
+
+\begin{itemize}
+\item Soave‑Redlich‑Kwong (SRK):
+\item Parâmetros:
+  $$a = 0.42748\dfrac{R^2T_c^2}{p_c},\qquad b=0.08664\dfrac{RT_c}{p_c}$$
+\item EoS (forma):
+  $$p=\dfrac{RT}{V-b}-\dfrac{a\alpha(T)}{V(V+b)}$$
+\item Kappa (SRK): parâmetro dependente de $\omega$ (ver formulação SRK).
+\end{itemize}
+
+\begin{itemize}
+\item Mistura (regra de mistura van der Waals tipo):
+  $$a_{mix}=\sum_i\sum_j x_i x_j \sqrt{a_i a_j}(1-k_{ij}),\qquad b_{mix}=\sum_i x_i b_i$$
+  onde $k_{ij}$ são parâmetros de interação binária.
+\end{itemize}
+
+\begin{itemize}
+\item Redução a polinomial em Z (cúbica): em geral obtem‑se um polinómio cúbico em $Z$ (derivado do EoS multiplicado por $V$ e normalizado) do tipo:
+  $$Z^3 + c_2 Z^2 + c_1 Z + c_0 = 0$$
+  com coeficientes que dependem de $A$ e $B$:
+  $$A=\dfrac{a p}{(R T)^2},\qquad B=\dfrac{b p}{R T}$$
+  e um polinómio padrão (usado tanto para PR como SRK após definição apropriada de $A,B$):
+  $$Z^3-(1-B)Z^2+(A-3B^2-2B)Z-(AB-B^2-B^3)=0$$
+  (resolver numericamente para raízes reais; raízes correspondem a fases gasosa/líquida onde aplicável).
+\end{itemize}
+
+2.5. Cálculo de fatores de volume com Z
+\begin{itemize}
+\item Formação volume factor do gás (por molar/molar base):
+  $$B_g = \dfrac{Z R T}{p}\cdot\dfrac{V_{ref\_units}}{n_{ref}}$$
+  (usar forma prática/constantes de conversão ao trabalhar em scf/ft³ ou SI).
+\end{itemize}
+
+2.6. Correlações empíricas e conversões úteis
+\begin{itemize}
+\item Conversões:
+  $$1\,\text{scf}=0.0283168\,\text{m}^3,\quad1\,\text{STB}=0.1589873\,\text{m}^3$$
+\item API gravity (relativa à água a 60°F):
+  $$API=\dfrac{141.5}{SG_{60°F}} -131.5,\quad SG=\dfrac{\rho_{oil}}{\rho_{water}}$$
+\end{itemize}
+
+2.7. Exemplo prático PVT (completo)
+\begin{itemize}
+\item Dados: $V_{res}=1.20\,$bbl; $V_{surf}=1.00\,$STB; $R_s=400\,$scf/STB.
+\begin{enumerate}
+\item $B_o=1.20/1.00=1.20\,$bbl/STB.
+\item $R_s(\text{SI})=400\times0.0283168/0.1589873\approx71.3\,\text{m}^3/\text{m}^3$.
+\item Densidade de reservatório: $\rho_{res}=\rho_{surf}/B_o$.
+\end{itemize}
+\end{enumerate}
+
+---
+
+\subsection{Capítulo 3 — Propriedades das rochas (detalhado)}
+
+3.1. Porosidade (definições e métodos)
+\begin{itemize}
+\item Porosidade total: $\phi=V_p/V_t$.
+\item Métodos medição: gravimétricos (pesagem seca/saturada), porosimetria de mercúrio, NMR, micro‑CT.
+\item Porosidade efetiva (conectada) e irreducível (connate water) — distinguir para flow modelling.
+\end{itemize}
+
+3.2. Densidade de rocha saturada (mixing law)
+$$\rho_b = (1-\phi)\rho_s + \phi (S_w \rho_w + S_o \rho_o + S_g \rho_g)$$
+onde $\rho_s$ densidade da matriz.
+
+3.3. Permeabilidade e Lei de Darcy
+\begin{itemize}
+\item Forma integral (unidimensional):
+$$q = -\dfrac{k A}{\mu}\dfrac{\Delta p}{L}$$
+\item Para fluxo radial permanente para poço produtor (campo/ft):
+$$q=\dfrac{2\pi k h (p_e-p_{wf})}{\mu \ln(r_e/r_w)}$$
+(usar conversões quando q em STB/d, µ em cP, k em mD — ver fórmulas de campo no anexo)
+\end{itemize}
+
+3.4. Equação de difusividade (transiente, ligeiramente compressível)
+\begin{itemize}
+\item Forma geral:
+$$\dfrac{\partial p}{\partial t}=\dfrac{k}{\mu S} \nabla^2 p$$
+onde $S$ (coeficiente de armazenamento) geralmente
+$$S=\phi c_f + (1-\phi)c_s$$
+com $c_f$ compressibilidade do fluido e $c_s$ compressibilidade da matriz sólida.
+\end{itemize}
+
+3.5. Solução transiente radial (analítica aproximada — semilog)
+\begin{itemize}
+\item Para regime semilog (pseudosteady), pressão medida no poço varia com tempo t:
+$$p(r_w,t)=p_i - \dfrac{q B \mu}{4\pi k h}\left[\ln\left(\dfrac{4 k t}{\phi \mu c_t r_w^2}\right)-0.80907\right]$$
+\item Em base‑10 logs (análise semilog): a declividade $m$ (psi por ciclo log10) é
+$$m=\dfrac{2.303\,q B \mu}{4\pi k h} = \dfrac{0.183 q B \mu}{k h}$$
+  e, isolando $k$ (unidades de campo com $q$ em STB/d, $\mu$ cP, $h$ ft, $m$ psi/log10):
+$$k(\text{mD}) = \dfrac{162.6\,q\,B\,\mu}{h\,m}$$
+(162.6 é constante empírica para conversões entre unidades; verificar convenções de unidades)
+\end{itemize}
+
+3.6. Função de Leverett e pressão capilar
+\begin{itemize}
+\item Tensão interfacial e rádio capilar simplificado (tubo):
+$$P_c=\dfrac{2\sigma \cos\theta}{r}$$
+\item Função J de Leverett:
+$$J(S_w)=\dfrac{P_c(S_w)\sqrt{k/\phi}}{\sigma\cos\theta}$$
+(usar J(S) para escalonar curvas Pc entre rochas com diferentes k e φ)
+\end{itemize}
+
+3.7. Permeabilidade relativa \& modelos
+\begin{itemize}
+\item Modelo de Corey (exemplo):
+$$S_{we}=\dfrac{S_w-S_{wr}}{1-S_{or}-S_{wr}}$$
+$$k_{rw}=k_{rw0} S_{we}^{n_w},\quad k_{ro}=k_{ro0}(1-S_{we})^{n_o}$$
+\item Parâmetros típicos: $n_w, n_o$ entre 2–4 dependendo de rocha/molhabilidade.
+\end{itemize}
+
+3.8. Resistividade e Archie
+\begin{itemize}
+\item Equação de Archie:
+$$R_t = a R_w \phi^{-m} S_w^{-n}$$
+\item Parâmetros empíricos: $a\approx1$, $m\approx1.8-2.2$, $n\approx2$ (variam com litologia)
+\end{itemize}
+
+---
+
+\subsection{Capítulo 4 — Cálculo volumétrico (OOIP / OGIP) — detalhe completo}
+
+4.1. Fórmula fundamental (reservoir → superfície)
+\begin{itemize}
+\item Volume de fluido em reservatório (m³):
+$$V_{fluid,res}=V_r\,\phi\,(1-S_w)$$
+\item Volume de superfície:
+$$N_{surface}=\dfrac{V_{fluid,res}}{B}\quad(\text{B = fator de volume de formação})$$
+\end{itemize}
+
+4.2. Fórmulas práticas de campo
+\begin{itemize}
+\item OOIP (barris stock‑tank):
+$$OOIP=\dfrac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}$$
+\item Derivação do factor 7758:
+\item 1 acre = 43,560 ft²; 1 ft³ = 0.178107... bbl? (usar conversões exatas). A relação completa é: 43560 ft² × 1 ft = 43560 ft³ por acre·ft; 1 bbl = 5.614583 ft³; 43560/5.614583 ≈ 7758 bbl/acre·ft.
+\end{itemize}
+
+\begin{itemize}
+\item OGIP (scf):
+$$OGIP=\dfrac{43560\,A\,h\,\phi\,(1-S_w)}{B_g}$$
+(43560 = ft³/acre coeficient)
+\end{itemize}
+
+4.3. Sensibilidade analítica (derivadas parciais)
+\begin{itemize}
+\item Sensibilidade de OOIP a φ:
+$$\dfrac{\partial OOIP}{\partial\phi}=\dfrac{7758 A h (1-S_w)}{B_o}$$
+\item Sensibilidade fraccional relativa: usar variáveis aleatórias e Monte Carlo para propagar incertezas.
+\end{itemize}
+
+4.4. Monte Carlo (passos práticos)
+\begin{enumerate}
+\item Definir distribuições para cada variável incerta (A,h,φ,S_w,B_o): triangular, normal truncada ou lognormal conforme justificativa.
+\item Amostrar N vezes (p.ex. 10k‑100k iterações para robustez) e calcular OOIP para cada amostra.
+\item Ordenar resultados e extrair percentis P10/P50/P90.
+\item Reportar média, mediana (P50), intervalo de confiança e curvas CDF/PDF.
+\end{enumerate}
+
+4.5. Estimativa setorial
+\begin{itemize}
+\item Dividir reservatório em setores i com A_i,h_i,φ_i,S_{w,i} e somar:
+$$OOIP_{total}=\sum_i \dfrac{7758 A_i h_i \phi_i (1-S_{w,i})}{B_{o,i}}$$
+\end{itemize}
+
+---
+
+\subsection{Capítulo 5 — Equação de Balanço de Materiais (EBM) — completo}
+
+5.1. Conceito (conservação de massa)
+\begin{itemize}
+\item A EBM parte do princípio: estoque inicial = estoque atual + produção acumulada - injeções + influxo. Convertendo volumes e considerando compressibilidade resulta em equações relacionando variação de pressão com quantidades produzidas/injetadas.
+\end{itemize}
+
+5.2. Forma linearizada (Havlena \& Odeh, 1963)
+\begin{itemize}
+\item Expressão usada em análise prática:
+$$F = N E_o + m E_g + (1+m) E_{f,w} + W_e$$
+onde:
+\item $F$ termo conhecido (construído a partir de produção/injeção e PVT);
+\item $N$ estoque original de óleo (OOIP);
+\item $m$ razão gas‑cap/óleo (adimensional);
+\item $E_o,E_g,E_{f,w}$ termos calculáveis a partir de PVT/pressão;
+\item $W_e$ termo de influxo do aquífero.
+\end{itemize}
+
+5.3. Definições práticas (forma operacional)
+\begin{itemize}
+\item Termos (formas comumente usadas em regressão):
+$$E_o = B_o - B_{o,i} + (R_{s,i}-R_s)B_g$$
+$$E_g = B_{o,i}\left(\dfrac{B_g}{B_{g,i}} - 1\right)$$
+$$E_{f,w}=B_{o,i}\left(S_{w,i}c_w + \dfrac{c_f}{1-S_{w,i}}\Delta p\right)$$
+\item Lado conhecido $F$ (exemplo):
+$$F = N_p B_o + G_p - R_s B_g + W_p B_w - W_{inj} B_w - G_{inj} B_{g,inj}$$
+(ajustar sinais e convenções conforme o conjunto de dados — ver notas do curso)
+\end{itemize}
+
+5.4. Procedimento prático
+\begin{enumerate}
+\item Organizar série temporal: p(t), N_p(t), G_p(t), volumes injetados W_{inj},G_{inj}.
+\item Calcular $B_o(p),B_g(p),R_s(p)$ a partir de PVT ou correlações.
+\item Calcular colunas $E_o,E_g,E_{f,w}$ para cada instante.
+\item Calcular $F$ para cada instante.
+\item Executar regressão linear múltipla: ajustar $F$ por combinação linear dos termos para obter $N$ e $m$ (coeficientes de regressão) e estimar $W_e$.
+\end{enumerate}
+
+5.5. Método p/z (para gás)
+\begin{itemize}
+\item Plot de $p/z$ vs $G_p$: em reservatórios gas‑dominados volumétricos sem influxo, a extrapolação linear pode fornecer OGIP. Interpretação: declive e intercepto do plot relacionam OGIP e condições iniciais; trate com cuidado correções de temperatura e compressibilidade.
+\end{itemize}
+
+5.6. Exemplo simplificado (numérico)
+\begin{itemize}
+\item Construir tabela com p, N_p, G_p, B_o(p),B_g(p),R_s(p), calcular $E$'s e ajustar. (ver tarefas do capítulo 5 para exemplo completo do curso).
+\end{itemize}
+
+---
+
+\subsection{Anexos — constantes, fatores de conversão e valores típicos}
+
+Constantes importantes:
+\begin{itemize}
+\item $R_{universal}=8.314462618\;\text{J/(mol·K)}$ (usar unidades coerentes)
+\item $g=9.80665\;\text{m/s}^2$
+\end{itemize}
+
+Conversões úteis:
+\begin{itemize}
+\item $1\,\text{acre}=43560\,\text{ft}^2$
+\item $1\,\text{acre·ft}=43560\,\text{ft}^3$
+\item $1\,\text{bbl}=0.1589873\,\text{m}^3$
+\item $1\,\text{scf}=0.0283168\,\text{m}^3$
+\item $1\,\text{D}=9.869233\times10^{-13}\,\text{m}^2$
+\item $1\,\text{psi}=6894.757\,\text{Pa}$
+\end{itemize}
+
+Valores típicos (ordem de grandeza)
+\begin{itemize}
+\item Porosidade: 5%–30% para rochas reservatório; médias úteis 10%–25%.
+\item Permeabilidade: mD–D (argiloso <1 mD, arenito bom 100–1000 mD, carbonatos variam muito).
+\item Exponentes de Archie: $m\approx1.8-2.2$, $n\approx2$.
+\end{itemize}
+
+Checklist prático para cada capítulo (sintético)
+\begin{itemize}
+\item Cap.1: listar elementos do sistema petrolífero; identificar tipo de armadilha e presença de gas‑cap/aqüífero.
+\item Cap.2: ter curvas B_o(p), R_s(p), µ_o(p) e tabela PVT; conhecer EoS e quando aplicá‑las.
+\item Cap.3: consolidar porosidade/permeabilidade por core e logs; obter curvas Pc(S) e kr(S).
+\item Cap.4: montar planilha volumétrica setorial; rodar sensibilidade e Monte Carlo.
+\item Cap.5: organizar séries de produção; calcular colunas E; aplicar regressão e interpretar resultados.
+\end{itemize}
+
+---
+
+FIM — ficheiro gerado como versão ULTRA‑DETALHADA. Se desejar, posso:
+\begin{itemize}
+\item (A) sobrepor `resumo_capitulos.md` com esta versão;
+\item (B) gerar PDF/LaTeX desta versão; ou
+\item (C) extrair cartões Anki (Q/A) automaticamente a partir das definições e fórmulas.
+\end{itemize}
+
+\subsection{Exercícios resolvidos (seleção representativa)}
+
+Esta secção apresenta soluções passo‑a‑passo para exercícios-chave dos capítulos 1–5. Use estes exemplos como modelo para resolver problemas semelhantes.
+
+\subsubsection{Capítulo 1 — Verdadeiro/Falso (respostas e justificativas breves)}
+\begin{enumerate}
+\item V — Armadilha geológica (structural/estratigráfica) impede migração e acumula hidrocarbonetos.
+\item F — Rocha geradora é rica em matéria orgânica (não baixa).
+\item F — Rocha selante tem **baixa** permeabilidade e impede fluxo.
+\item V — Migração ocorre por meios porosos e fraturados, favorável a caminhos permeáveis.
+\item F — Sincronismo é relevante: geração, migração e armadilhamento devem coincidir temporalmente.
+\item V — Catagênese = craqueamento térmico do querogénio em hidrocarbonetos.
+\item V — Sistema de produção inclui coleta, elevação e separação até a superfície.
+\item V — Em gas‑cap drive o gás livre expande e ajuda a manter pressão.
+\item F — Porosidade e permeabilidade são propriedades distintas (volume de poros vs facilidade de fluxo).
+\item V — $B_o$ relaciona volumes em reservatório e superfície (reservoir → surface).
+\end{enumerate}
+
+\subsubsection{Capítulo 2 — PVT: exemplo resolvido (cálculo de $B_o$ e conversão de $R_s$)}
+Enunciado: Num ensaio PVT por 1 STB de óleo obteve‑se $V_{res}=1.20\,$bbl e $V_{surf}=1.00\,$STB; gás libertado $R_s=400\,$scf/STB.
+
+\begin{enumerate}[label=\Alph*)]
+\item Cálculo de $B_o$:\n$$B_o=\dfrac{V_{res}}{V_{surf}}=\dfrac{1.20}{1.00}=1.20\;\text{bbl/STB}.$$ 
+\end{enumerate}
+
+\begin{enumerate}[label=\Alph*)]
+\item Conversão de $R_s$ para m³/m³:\n1 scf = 0.0283168 m³; 1 STB = 0.1589873 m³.
+$$R_s(\text{m}^3/\text{m}^3)=\dfrac{400\times0.0283168}{0.1589873}\approx\dfrac{11.32672}{0.1589873}\approx71.3\;\text{m}^3/\text{m}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}[label=\Alph*)]
+\item Interpretação breve: $B_o>1$ indica que o volume no reservatório é maior que o volume final de superfície por unidade (efeitos de compressibilidade e gás dissolvido). $R_s$ alto implica presença significativa de gás dissolvido — ao atingir o ponto de bolha o gás liberta‑se, alterando mobilidade.\n\end{enumerate}
+
+\subsubsection{Capítulo 3 — Rochas: exercícios resolvidos (porosidade por massa e método de Arquímedes)}
+
+**Exemplo (Exercício 1)** — Dados: $m_{sat}=130\,$g; $m_{dry}=105\,$g; $\rho_o=0.84\,$g/cm^3; $V_t=180\,$cm^3.
+
+\begin{enumerate}
+\item Volume de fluido nos poros:
+$$V_f=\dfrac{m_{sat}-m_{dry}}{\rho_o}=\dfrac{130-105}{0.84}=\dfrac{25}{0.84}\approx29.7619\;\text{cm}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Porosidade:
+$$\phi=\dfrac{V_p}{V_t}=\dfrac{29.7619}{180}\approx0.16534\approx16.53\%.$$ 
+\end{enumerate}
+
+**Exemplo (Exercício 5 — método de Arquímedes)** — Dados: $m_{dry}=330\,$g; $m_{sat}=360\,$g; $m_{ap\_agua}=225\,$g; $\rho_{agua}=1\,$g/cm^3.
+
+\begin{enumerate}
+\item Volume total da amostra via empuxo (diferença entre peso em ar e peso aparente em água):
+$$V_t=\dfrac{m_{sat}-m_{ap\_agua}}{\rho_{agua}}=\dfrac{360-225}{1}=135\;\text{cm}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Volume poroso (volume de fluido nos poros):
+$$V_p=m_{sat}-m_{dry}=360-330=30\;\text{cm}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Porosidade:
+$$\phi=\dfrac{V_p}{V_t}=\dfrac{30}{135}\approx0.22222\approx22.22\%. $$
+\end{enumerate}
+
+Observação: nos relatórios, apresente as unidades, arredondamento e possíveis fontes de erro experimental.
+
+\subsubsection{Capítulo 4 — Cálculo volumétrico: exemplo resolvido (OOIP)}
+
+Dados (exercício 4.8): $A=200\,$acres; $h_{net}=30\,$ft; $\phi=0.18$; $S_{wi}=0.25$; $B_o=1.2\,$bbl/STB.
+
+Fórmula prática:
+$$OOIP=\dfrac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}.$$ 
+
+Substituindo os valores e calculando passo a passo:
+\begin{align*}
+7758\times200&=1\,551\,600\\
+1\,551\,600\times30&=46\,548\,000\\
+46\,548\,000\times0.18&=8\,378\,640\\
+8\,378\,640\times0.75&=6\,283\,980\\
+OOIP&=\dfrac{6\,283\,980}{1.2}\approx5\,236\,650\;\text{STB}.
+\end{align*}
+
+Interpretação: aproximadamente 5.24×10^6 STB originalmente em lugar.
+
+\subsubsection{Capítulo 5 — EBM: exemplo prático (cálculo de $E_o$ e montagem de colunas)}
+
+Dados ilustrativos (simplificados): $B_{o,i}=1.10$, $B_o=1.15$, $R_{s,i}=200\,$scf/STB, $R_s=180\,$scf/STB, $B_g=0.005$ (unidades consistentes com a formulação do curso).
+
+Cálculo do termo $E_o$ (Havlena \& Odeh):
+$$E_o = B_o - B_{o,i} + (R_{s,i}-R_s)B_g$$
+Substituindo:
+$$E_o = 1.15 - 1.10 + (200-180)\times0.005 = 0.05 + 20\times0.005 = 0.05 + 0.10 = 0.15.$$ 
+
+Notas práticas para montar a tabela de análise EBM:
+\begin{itemize}
+\item Para cada instante (data) calcule: $p$, $N_p$, $G_p$, $B_o(p)$, $B_g(p)$, $R_s(p)$.
+\item Calcule colunas $E_o,E_g,E_{f,w}$ por fórmulas definidas; calcule $F$ (lado conhecido) usando volumes produzidos/injetados convertidos para unidades compatíveis;
+\item Execute regressão linear múltipla de $F$ versus colunas $E_o,E_g,E_{f,w}$ para obter estimativas de $N$ (coeficiente associado a $E_o$) e $m$ (coeficiente associado a $E_g$).
+\end{itemize}
+
+Exemplo de output parcial (apenas ilustrativo):
+| t | p (psi) | N_p (STB) | G_p (scf) | B_o | B_g | R_s | E_o | E_g | E_{f,w} | F |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| t_1 | 3000 | 100000 | 50000 | 1.10 | 0.0050 | 200 | 0.00 | 0.00 | 0.00 | F_1 |
+| t_2 | 2900 | 120000 | 60000 | 1.12 | 0.0051 | 195 | 0.02 | 0.01 | 0.002 | F_2 |
+
+Onde $F_i$ é montado conforme convensão adotada no curso; preste atenção às unidades (STB vs scf) e às conversões necessárias.
+
+---
+
+Se desejar, posso expandir esta secção com soluções de todos os exercícios presentes em \texttt{exercícios_transcription.md} (isto exigirá mais tempo e poderei criar um ficheiro separado \texttt{exercicios_resolvidos.md}).
+
+Arquivo criado automaticamente pelo assistente.
+
+% ---- file: compressibilidade_Z_cheatsheet.md
+\section{Compressibilidade (fator) Z — Cheatsheet extremo}
+
+Objetivo: referência completa e passo‑a‑passo para entender, calcular e aplicar o fator de compressibilidade $Z$ (gás real), com métodos práticos (Standing–Katz, EoS), derivadas úteis e um exemplo numérico com código Python.
+
+---
+
+\textbf{Resumo rápido}
+\begin{itemize}
+\item **Definição:** $Z = \dfrac{p V_m}{R T}$, mede o desvio do gás em relação ao gás ideal ($Z=1$ ideal).
+\item **Usos:** converter entre densidade e pressão/temperatura reais; calcular o fator de volume $B_g$; avaliar compressibilidade isotérmica do gás; PVT e balanço de massas.
+\end{itemize}
+
+---
+
+\textbf{1) Formulação e relações básicas}
+
+\begin{itemize}
+\item Molar volume: $V_m = \dfrac{Z R T}{p}$.  
+\item Densidade (massa): $\rho = \dfrac{M p}{Z R T}$, onde $M$ é massa molar (kg·mol^{-1}).
+\item Fator de volume do gás (molar): $B_{m} = V_m = \dfrac{Z R T}{p}$. (Em reservatórios usa‑se versões por massa/por scf — adaptar unidades.)
+\end{itemize}
+
+\textbf{2) Relação com compressibilidade isotérmica do gás $c_g$}
+
+Partindo de $V_m = Z R T / p$ e definindo $c_g = -\dfrac{1}{V_m} \left( \dfrac{\partial V_m}{\partial p} \right)_T$ obtém‑se:
+
+$$
+c_g \,=\, \frac{1}{p} \, - \, \frac{1}{Z} \left(\frac{\partial Z}{\partial p}\right)_T \,=\, \frac{1}{p} \, - \, \frac{\partial \ln Z}{\partial p} .
+$$
+
+Interpretação prática: para gás quase ideal $\partial Z/\partial p \approx 0$ e $c_g\approx 1/p$. O termo com $\partial Z/\partial p$ corrige o comportamento real; portanto é importante para pressões altas / não‑ideais.
+
+\textbf{3) Métodos para obter $Z$ (ordem de complexidade e precisão)}
+
+\begin{itemize}
+\item Leitura direta no gráfico Standing–Katz (rápido; precisa dos pseudo‑críticos do gás).  
+\item Correlações empíricas e semi‑empíricas (ex.: Dranchuk–Abou‑Kassem) — boas para implementação numérica.  
+\item Equações de estado cúbicas (Peng–Robinson, Soave–Redlich–Kwong) — recomendadas quando se tem composição e se precisa de consistência em fase líquida/vapor; permitem calcular Z e derivadas termodinâmicas.
+\end{itemize}
+
+\textbf{4) Pseudocríticos e preparação (how‑to)}
+
+Para usar chart ou correlações reduzidas, calcule $T_{pc}$ e $P_{pc}$ da mistura. Duas rotas:
+
+\begin{itemize}
+\item Regra de Kay (mistura):  
+\item para cada componente i obtenha $T_{c,i}$ e $P_{c,i}$ (temperaturas Kelvin, pressão em Pa).  
+\item calcule $T_{pc} = \sum_i y_i \, T_{c,i}$ e $P_{pc} = \sum_i y_i \, P_{c,i}$ (mole fractions $y_i$).  
+\item então $T_r = T / T_{pc}$ e $P_r = p / P_{pc}$.  
+\end{itemize}
+
+\begin{itemize}
+\item Correções para gás ácido / CO2/H2S (Wichert–Aziz): existem procedimentos para reduzir $T_{pc}$ e $P_{pc}$ quando frações significativas de CO2/H2S estiverem presentes — aplicar se $\mathrm{CO_2}+\mathrm{H_2S}$ > ~2–5\% mole.
+\end{itemize}
+
+Com $T_r$ e $P_r$ você lê $Z$ no gráfico de Standing–Katz (curvas $Z$ vs $P_r$ para cada $T_r$). Para automação prefira correlações numéricas (Dranchuk–Abou‑Kassem) ou uma EoS.
+
+\textbf{5) Método robusto: Peng–Robinson (PR) — passo a passo (Padrão industrial)}
+
+Parâmetros do PR (unidades SI):
+
+$$
+a = 0.45724 \frac{R^2 T_c^2}{P_c},\qquad b = 0.07780 \frac{R T_c}{P_c}
+$$
+
+onde $R=8.314462618$ J·mol^{-1}·K^{-1}, $T_c$ (K), $P_c$ (Pa). O fator $\alpha$ descreve dependência com $T$:
+
+$$
+\kappa = 0.37464 + 1.54226\,\omega - 0.26992\,\omega^2,\qquad
+\alpha(T) = \left(1 + \kappa \left(1-\sqrt{\dfrac{T}{T_c}}\right)\right)^2
+$$
+
+Defina então:
+
+$$
+A = \dfrac{a\,\alpha(T)\,p}{R^2 T^2},\qquad B = \dfrac{b p}{R T}.
+$$
+
+O polinômio cúbico em $Z$ (forma padrão PR):
+
+$$
+Z^3 - (1 - B) Z^2 + (A - 3B^2 - 2B) Z - (A B - B^2 - B^3) = 0.
+$$
+
+Solução: encontre as raízes reais; para fase gasosa escolha a maior raiz real (maior $Z$).
+
+\textbf{6) Exemplo numérico completo (CH4 puro)}
+
+Dados (SI):
+\begin{itemize}
+\item $T = 350\ \mathrm{K}$ (exemplo)
+\item $p = 5\ \mathrm{MPa} = 5\times10^6\ \mathrm{Pa}$
+\item Metano: $T_c = 190.564\ \mathrm{K}$, $P_c = 4.5992\times10^6\ \mathrm{Pa}$, $\omega\approx0.011$.
+\end{itemize}
+
+\begin{enumerate}
+\item Calcule $a,b$:
+\end{enumerate}
+
+$$
+a \approx 0.45724\dfrac{R^2 T_c^2}{P_c} \approx 0.2498\quad(\mathrm{SI})
+$$
+$$
+b \approx 0.07780\dfrac{R T_c}{P_c} \approx 2.68\times10^{-5}\ \mathrm{m^3\,mol^{-1}}
+$$
+
+\begin{enumerate}
+\item $\kappa\approx 0.3916$, $\alpha\approx 0.7396$ (usar fórmula acima).
+\end{enumerate}
+
+\begin{enumerate}
+\item $A\approx 0.1089$, $B\approx 0.0460$ (ver cálculos no script abaixo).
+\end{enumerate}
+
+\begin{enumerate}
+\item Monta o cúbico e resolve: obtém $Z\approx 0.948$ (raiz gasosa principal).
+\end{enumerate}
+
+Interpretação: $Z<1$ porém próximo de 1 — desvio moderado para estas condições.
+
+\textbf{7) Compressibilidade isotérmica calculada numericamente (exemplo)}
+
+Procedimento prático (numérico):
+\begin{enumerate}
+\item Calcule $Z(p)$ com o método EoS (PR) no ponto $p$ (aqui 5 MPa).
+\item Calcule $Z(p+\Delta p)$ com $\,\Delta p$ pequeno (ex.: $10^4$–$10^5\ \mathrm{Pa}$).  
+\item Estime $\partial Z/\partial p \approx (Z(p+\Delta p)-Z(p))/\Delta p$.  
+\item Use $c_g = 1/p - (1/Z) (\partial Z/\partial p)$.
+\end{enumerate}
+
+Usando o exemplo numérico (valores aproximados do passo anterior e $\Delta p=10^5\ \mathrm{Pa}$) obtemos $c_g\approx 2.19\times10^{-7}\ \mathrm{Pa^{-1}}$ que corresponde a $0.219\ \mathrm{MPa^{-1}}$ ou aproximadamente $1.51\times10^{-3}\ \mathrm{psi^{-1}}$ (conversões mostradas no script).
+
+\textbf{8) Código Python (PR EoS) — cálculo de Z e compressibilidade por diferença finita}
+
+Instalar dependência mínima: \texttt{pip install numpy}
+
+\begin{verbatim}
+import numpy as np
+
+R = 8.314462618
+
+def Z_PR(p, T, Tc, Pc, omega):
+    # p in Pa, T in K, Tc in K, Pc in Pa
+    a = 0.45724 * R**2 * Tc**2 / Pc
+    b = 0.07780 * R * Tc / Pc
+    kappa = 0.37464 + 1.54226*omega - 0.26992*omega**2
+    alpha = (1 + kappa*(1 - np.sqrt(T/Tc)))**2
+    A = a * alpha * p / (R**2 * T**2)
+    B = b * p / (R * T)
+    # Coeffs cubic: Z^3 - (1-B) Z^2 + (A - 3B^2 - 2B) Z - (A B - B^2 - B^3) = 0
+    coeffs = [1.0, -(1 - B), (A - 3*B*B - 2*B), -(A*B - B*B - B*B*B)]
+    roots = np.roots(coeffs)
+    real_roots = np.real(roots[np.isclose(roots.imag, 0, atol=1e-8)])
+    if len(real_roots) == 0:
+        raise RuntimeError('No real root found for Z')
+    # gas root = largest real root
+    Z = np.max(real_roots)
+    return float(Z)
+
+def gas_compressibility(p, T, Tc, Pc, omega, dp=1e5):
+    Z1 = Z_PR(p, T, Tc, Pc, omega)
+    Z2 = Z_PR(p + dp, T, Tc, Pc, omega)
+    dZdp = (Z2 - Z1) / dp
+    c_g = 1.0/p - (1.0/Z1)*dZdp
+    return Z1, dZdp, c_g
+
+if __name__ == '__main__':
+    # Example: methane at p=5 MPa, T=350 K
+    Tc = 190.564
+    Pc = 4.5992e6
+    omega = 0.011
+    p = 5e6
+    T = 350.0
+    Z, dZdp, cg = gas_compressibility(p, T, Tc, Pc, omega, dp=1e5)
+    print('Z =', Z)
+    print('dZ/dp =', dZdp, 'Pa^-1')
+    print('c_g =', cg, 'Pa^-1 (', cg*1e6, 'MPa^-1 )')
+\end{verbatim}
+
+Saída esperada aproximada (exemplo que usamos manualmente): \texttt{Z ≈ 0.948}, \texttt{c_g ≈ 2.19e-7 Pa^-1}.
+
+\textbf{9) Recomendações práticas e atenção a unidades}
+
+\begin{itemize}
+\item Sempre usar unidades consistentes (SI: Pa, K, J/(mol·K)). Para conversões (psi, °R) ajuste constantes do gás.  
+\item Para misturas use regras de mistura apropriadas (EoS: combinações de `a_{ij}`/fatores de interação). Se não conhecer os coeficientes binários use $k_{ij}=0$ como primeira aproximação (pode introduzir erro).  
+\item Para trabalho de campo rápido: calculadoras com Standing–Katz (chart) ou correlação DAK. Para simulação/reconhecimento e prognóstico, prefira EoS com mistura.
+\end{itemize}
+
+\textbf{10) Referências rápidas}
+
+\begin{itemize}
+\item Standing, M. B., Katz, D. L. — gráfico Standing–Katz para $Z$ (uso clássico).  
+\item Dranchuk, P. M. & Abou‑Kassem, J. H. (1975) — correlação numérica para $Z$ (boa para automação).  
+\item Peng, D.-Y. & Robinson, D. B. (1976) — Peng–Robinson EoS (cúbica), uso industrial.  
+\item Wichert, D. & Aziz, K. (1972) — correção pseudo‑crítica para CO2/H2S (gases ácidos).
+\end{itemize}
+
+---
+
+Se quiser, eu:
+\begin{itemize}
+\item gero uma versão com figuras (Standing–Katz) e tabela de propriedades críticas;  
+\item adiciono uma implementação DAK (Dranchuk–Abou‑Kassem) completa em Python;  
+\item aplico o cálculo a uma mistura real (envie composição molar) e salvo o resultado.
+\end{itemize}
+
+% ---- file: exercicios_resolvidos.md
+\section{Exercícios Resolvidos — Engenharia de Reservatórios I}
+
+Compilação de soluções passo‑a‑passo extraídas dos ficheiros em \texttt{Estudar/matéria} (cap1–cap5). Use como referência rápida para estudo; ver ficheiros de origem para enunciados completos.
+
+---
+
+\subsection{Capítulo 1 — Exemplo rápido (OOIP)}
+Dados: Área = 100 acres; $h=20\,$ft; $\phi=0.15$; $S_{wi}=0.25$; $B_o=1.2\,$bbl/STB.
+
+Fórmula prática:
+$$OOIP=\dfrac{7758\,A\,h\,\phi\,(1-S_{wi})}{B_o}$$
+
+Cálculo passo a passo:
+\begin{align*}
+7758\times100&=775\,800\\
+775\,800\times20&=15\,516\,000\\
+15\,516\,000\times0.15&=2\,327\,400\\
+2\,327\,400\times0.75&=1\,745\,550\\
+OOIP&=\dfrac{1\,745\,550}{1.2}\approx1\,454\,625\;\text{STB}
+\end{align*}
+
+Resultado: ≈1.455×10^6 STB.
+
+---
+
+\subsection{Capítulo 2 — PVT: cálculo de $B_o$ e conversão de $R_s$}
+Enunciado (exemplo): 1 STB amostrado dá $V_{res}=1.20\,$bbl, $V_{surf}=1.00\,$STB; $R_s=400\,$scf/STB.
+
+\begin{enumerate}
+\item $B_o$:
+$$B_o=\dfrac{V_{res}}{V_{surf}}=\dfrac{1.20}{1.00}=1.20\;\text{bbl/STB}.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Conversão de $R_s$ para m^3/m^3 (opcional):
+1 scf = 0.0283168 m^3; 1 STB = 0.1589873 m^3.
+$$R_s(\mathrm{m}^3/\mathrm{m}^3)=\dfrac{400\times0.0283168}{0.1589873}\approx71.3\;\mathrm{m}^3/\mathrm{m}^3.$$ 
+\end{enumerate}
+
+Interpretação: $B_o>1$ indica expansão/volume maior em reservatório por unidade de superfície; $R_s$ alto = muito gás dissolvido.
+
+---
+
+\subsection{Capítulo 3 — Rochas: porosidade (massa e Arquímedes)}
+
+\subsubsection{Exemplo 1 (Exercício 1)}
+Dados: $m_{sat}=130\,$g; $m_{dry}=105\,$g; $\rho_o=0.84\,$g/cm^3; $V_t=180\,$cm^3.
+
+\begin{enumerate}
+\item Volume de fluido nos poros:
+$$V_f=\dfrac{m_{sat}-m_{dry}}{\rho_o}=\dfrac{130-105}{0.84}=\dfrac{25}{0.84}\approx29.7619\;\text{cm}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Porosidade:
+$$\phi=\dfrac{V_p}{V_t}=\dfrac{29.7619}{180}\approx0.16534\approx16.53\%.$$ 
+\end{enumerate}
+
+\subsubsection{Exemplo 2 (método de Arquímedes — Exercício 5)}
+Dados: $m_{dry}=330\,$g; $m_{sat}=360\,$g; $m_{ap\_agua}=225\,$g; $\rho_{agua}=1\,$g/cm^3.
+
+\begin{enumerate}
+\item Volume total via empuxo:
+$$V_t=\dfrac{m_{sat}-m_{ap\_agua}}{\rho_{agua}}=\dfrac{360-225}{1}=135\;\text{cm}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Volume poroso:
+$$V_p=m_{sat}-m_{dry}=360-330=30\;\text{cm}^3.$$ 
+\end{enumerate}
+
+\begin{enumerate}
+\item Porosidade:
+$$\phi=\dfrac{V_p}{V_t}=\dfrac{30}{135}\approx0.22222\approx22.22\%.$$
+\end{enumerate}
+
+Observação: indicar unidades e arredondamentos no relatório final.
+
+---
+
+\subsection{Capítulo 4 — Cálculo volumétrico (Exercício 4.8 — OOIP)}
+Dados: $A=200\,$acres; $h_{net}=30\,$ft; $\phi=0.18$; $S_{wi}=0.25$; $B_o=1.2\,$bbl/STB.
+
+Fórmula:
+$$OOIP=\dfrac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}.$$ 
+
+Cálculo:
+\begin{align*}
+7758\times200&=1\,551\,600\\
+1\,551\,600\times30&=46\,548\,000\\
+46\,548\,000\times0.18&=8\,378\,640\\
+8\,378\,640\times0.75&=6\,283\,980\\
+OOIP&=\dfrac{6\,283\,980}{1.2}\approx5\,236\,650\;\text{STB}.
+\end{align*}
+
+Resultado: ≈5.24×10^6 STB.
+
+---
+
+\subsection{Capítulo 5 — Equação de Balanço de Materiais (Havlena & Odeh)}
+
+\subsubsection{Exemplo (cálculo do termo $E_o$)}
+Dados ilustrativos: $B_{o,i}=1.10$, $B_o=1.15$, $R_{s,i}=200\,$scf/STB, $R_s=180\,$scf/STB, $B_g=0.005$.
+
+Fórmula:
+$$E_o = B_o - B_{o,i} + (R_{s,i}-R_s)B_g$$
+
+Cálculo:
+$$E_o = 1.15 - 1.10 + (200-180)\times0.005 = 0.05 + 20\times0.005 = 0.05 + 0.10 = 0.15.$$ 
+
+Uso: repita para cada data (pressão) e monte a regressão linear $F= N E_o + m E_g + (1+m)E_{f,w} + W_e$ para estimar $N$ e $m$.
+
+---
+
+\subsection{Observações finais}
+\begin{itemize}
+\item Este ficheiro agrupa exemplos resolvidos presentes nas notas (cap1–cap5). Para exercícios completos e figuras, consulte os ficheiros originais em `Estudar/matéria`.
+\item Se quiser, posso:
+\item adicionar soluções passo‑a‑passo para TODOS os exercícios listados nos capítulos (criando uma secção por número de exercício), ou
+\item gerar um PDF/LaTeX com este compêndio.
+\end{itemize}
+
+---
+
+\emph{Ficheiro gerado automaticamente pelo assistente.}
+
+---
+
+\subsection{Soluções adicionais completas — Capítulos 1–5}
+
+A seguir estão as soluções passo‑a‑passo para as perguntas listadas nas secções de consolidação e tarefas dos Capítulos 1 a 5. Para problemas descritivos forneço uma resposta‑modelo; para exercícios numéricos apresento cálculos explícitos e resultados.
+
+\subsubsection{Capítulo 1 — Respostas e justificações (Consolidação)}
+\begin{enumerate}
+\item **B** — Baixa densidade e alta mobilidade.
+\begin{itemize}
+\item Justificação: óleo leve tem menor densidade e viscosidade, o que aumenta a mobilidade relativa e facilita o escoamento.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — Reduz a pressão do reservatório e facilita o fluxo de óleo.
+\begin{itemize}
+\item Justificação: a presença de gás (dissolvido ou livre) altera o comportamento volumétrico e pode gerar mecanismos de drive (solution gas, gas‑cap) que afetam a pressão e a mobilidade do óleo.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — Manutenção da pressão por influxo de água do aquífero.
+\begin{itemize}
+\item Justificação: water drive é caracterizado pelo suporte de pressão fornecido pelo aquífero que desloca óleo para os poços.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — A taxa de fluxo pelo reservatório.
+\begin{itemize}
+\item Justificação: a mobilidade é proporcional a $1/\mu$; aumentos de viscosidade reduzem caudal para a mesma diferença de pressão.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — Mantém pressão por expansão de gás acima do óleo.
+\begin{itemize}
+\item Justificação: gas‑cap drive usa a expansão do gás livre para suportar pressão de reservatório.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — O condensado separa‑se do gás à medida que a pressão diminui.
+\begin{itemize}
+\item Justificação: condensado aparece quando a condição de orvalho é atingida e parte do gás condensa em fase líquida.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **E** — (não define).  
+\begin{itemize}
+\item Explicação: as características A–D são diretamente associadas ao solution‑gas drive; a expressão "produção contínua de óleo" não é uma definição intrínseca do mecanismo (a produção pode declinar com a queda de pressão), portanto é a alternativa que NÃO define o mecanismo.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — A água do aquífero desloca o óleo em direção aos poços.
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — Pressão inicial do reservatório e mobilidade do óleo.
+\begin{itemize}
+\item Justificação: em reservatórios undersaturated a produção depende da pressão acima do ponto de bolha e da mobilidade do óleo.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item **A** — Gás livre no topo do reservatório que ajuda a manter a pressão.
+\end{enumerate}
+
+---
+
+\subsubsection{Capítulo 2 — Propriedades dos fluidos (respostas‑modelo)}
+\begin{itemize}
+\item O que é $B_o$ e por que é importante:
+\item $B_o$ é o fator de volume de formação do óleo: $B_o=V_{res}/V_{surf}$. É usado para converter volumes no reservatório para volumes de superfície (STB) e é essencial em balanços de massa e estimativas de reservas.
+\end{itemize}
+
+\begin{itemize}
+\item Como $R_s$ varia com pressão e significado do ponto de bolha:
+\item Geralmente $R_s$ diminui com a redução de pressão; ao atingir o ponto de bolha surge gás livre e $R_s$ passa a ser o valor máximo de gás dissolvido na condição dada.
+\end{itemize}
+
+\begin{itemize}
+\item Efeito da viscosidade do óleo na mobilidade:
+\item Mobilidade dinâmica $\\lambda = k/\\mu$; viscosidade maior reduz mobilidade e diminui vazões para um mesmo gradiente de pressão.
+\end{itemize}
+
+\begin{itemize}
+\item Quando tratar o gás como ideal vs real:
+\item Use o modelo ideal quando as condições estiverem longe do crítico (pressões relativamente baixas e temperaturas altas); para pressões elevadas/temperaturas baixas use fator $Z$ (gráficos de Standing & Katz) ou equações de estado cúbicas (Peng‑Robinson, SRK).
+\end{itemize}
+
+---
+
+\subsubsection{Capítulo 3 — Rochas (soluções numéricas e procedimentos)}
+
+\begin{enumerate}
+\item (já incluído) — Porosidade por pesagem: exemplo resolvido no ficheiro acima (Exemplo 1).
+\end{enumerate}
+
+\begin{enumerate}
+\item (figuras) — Porosidade idealizada: desenhe o volume total $V_t$, identifique $V_p$ (vazios) e calcule $\phi=V_p/V_t$. Em figuras, calcule áreas/volumes preferenciais e aplique fórmula.
+\end{enumerate}
+
+\begin{enumerate}
+\item **Exercício (válvula e pressões)** — Dados: $V_1=100\,$cc; $V_2=100\,$cc; $p_1=15\,$psi; $p_2=60\,$psi; $p_f=39\,$psi. Calcular volume do grão $V_g$.
+\end{enumerate}
+
+Derivação (conservação do número de moles a temperatura constante — Lei de Boyle):
+$$p_1(V_1-V_g)+p_2V_2=p_f\,(V_1-V_g+V_2).$$
+Resolvendo para $V_g$:
+$$V_g=\dfrac{p_f(V_1+V_2)-p_1V_1-p_2V_2}{p_f-p_1}.$$ 
+Substituindo valores:
+$$V_g=\dfrac{39(100+100)-15\times100-60\times100}{39-15}=\dfrac{7800-1500-6000}{24}=\dfrac{300}{24}=12{,}5\;\text{cm}^3.$$
+
+Resposta: $V_g=12{,}5\,$cc.
+
+\begin{enumerate}
+\item **Porosidade média (Exercício 4)** — dados: 10, 12, 11, 13, 14, 10, 17 (%).
+\begin{itemize}
+\item Soma = 77; média = $77/7 = 11.0\%$.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}
+\item (já incluído) — Método de Arquímedes: exemplo resolvido no ficheiro (Exemplo 2).
+\end{enumerate}
+
+\begin{enumerate}
+\item **Compressibilidade de poros (exemplo)** — Dados: $V_p=18\,$cm^3$; \Delta V_p=0{,}15\,$cm^3 para $\Delta p=900\,$psi.
+$$C_f=\dfrac{\Delta V_p/V_p}{\Delta p}=\dfrac{0{,}15/18}{900}\approx9{,}26\times10^{-6}\;\text{psi}^{-1}.$$ 
+\end{enumerate}
+
+---
+
+\subsubsection{Capítulo 4 — Cálculo volumétrico (sensibilidade e procedimentos)}
+
+**Exercício 4.8 (já incluído)** — OOIP calculado: aproximadamente $5{,}236{,}650\,$STB para $A=200\,$acres, $h=30\,$ft, $\phi=0.18$, $S_{wi}=0.25$, $B_o=1.2$.
+
+**Análise de sensibilidade (variação de $\phi$ de 0{,}15 a 0{,}22)** — usando a mesma fórmula prática:
+\begin{itemize}
+\item Para $\phi=0{,}15$:
+$$OOIP\approx4{,}363{,}875\;\text{STB}.$$ 
+\item Para $\phi=0{,}22$:
+$$OOIP\approx6{,}400{,}350\;\text{STB}.$$ 
+\end{itemize}
+
+Interpretação: OOIP cresce aproximadamente linearmente com $\phi$ (mesmo A,h,Swi e Bo), mostrando elevada sensibilidade à porosidade; variação relativa de $\phi$ traduz‑se diretamente numa variação proporcional do OOIP.
+
+\textbf{Procedimento Monte Carlo (resumo prático):}
+\begin{itemize}
+\item Escolher distribuições (ex.: normal/triangular) para $\phi$, $S_w$, $B_o$, $h$.
+\item Gerar N iterações (p.ex. 1.000–10.000), calcular OOIP por iteração e recolher estatísticas P10/P50/P90.
+\item Reportar média, desvios e percentis; preparar gráficos de dispersão e histogramas.
+\end{itemize}
+
+---
+
+\subsubsection{Capítulo 5 — Equação de Balanço de Materiais (EBM) — passos e exemplo}
+
+\textbf{Passos para aplicar a linearização (Havlena \& Odeh):}
+\begin{enumerate}
+\item Reunir por data: $p$, $N_p$, $G_p$, $W_p$ (produções), $B_o(p)$, $B_g(p)$, $R_s(p)$ a partir de PVT.
+\item Calcular colunas por data: $E_o,E_g,E_{f,w}$ usando as fórmulas:
+$$E_o = B_o - B_{o,i} + (R_{s,i}-R_s)B_g$$
+$$E_g = B_{o,i}\left(\dfrac{B_g}{B_{g,i}} - 1\right)$$
+$$E_{f,w} = B_{o,i}\left(S_{w,i}c_w + \dfrac{c_f}{1-S_{w,i}}\Delta p\right)$$
+\item Montar $F$ (lado conhecido) por data (converter unidades):
+$$F = N_p B_o + G_p - R_s B_g + W_p B_w - W_{inj} B_w - G_{inj} B_{g,inj}.$$ 
+\item Fazer regressão linear múltipla: $F = N E_o + m E_g + (1+m) E_{f,w} + W_e$ para estimar $N$ (estoque original) e $m$ (razão gas‑cap/óleo). Use regressão com todas as linhas de dados (mínimo 3–4 pontos; quanto mais, melhor).
+\end{enumerate}
+
+\textbf{Exemplo (termo $E_o$ já calculado no ficheiro):}
+\begin{itemize}
+\item Valores ilustrativos: $B_{o,i}=1{,}10$, $B_o=1{,}15$, $R_{s,i}=200\,$scf/STB, $R_s=180\,$scf/STB, $B_g=0{,}005$.
+\item Calculámos:
+$$E_o=1{,}15-1{,}10+(200-180)\times0{,}005=0{,}15.$$ 
+\end{itemize}
+
+Para obter $N$ proceda assim (resumo): construa a tabela com colunas $F,E_o,E_g,E_{f,w}$ e execute uma regressão linear múltipla (p.ex. em Excel: Análise de Regressão → regressão múltipla; em Python: numpy.linalg.lstsq ou statsmodels.OLS). O coeficiente associado a $E_o$ será a estimativa de $N$ (ou, dependendo da forma, a sua relação direta — ver convenção de montagem das colunas).
+
+---
+
+Se desejar, posso agora:
+\begin{itemize}
+\item (A) inserir soluções detalhadas (passo‑a‑passo) para cada exercício numerado nos ficheiros originais (por exemplo, 1–N de `exercícios_transcription.md`), incluindo os cálculos intermédios e tabelas; ou
+\item (B) gerar um PDF/LaTeX do compêndio completo `exercicios_resolvidos.md` com formatação académica.
+\end{itemize}
+
+Ficarei aguardando a sua preferência para a etapa seguinte.
+
+% ---- file: exame_gabarito.md
+\section{Revisão para a prova — Gabarito e Rubricas}
+
+Este ficheiro reúne as 4 questões propostas para a prova, as respostas‑gabarito e as rubricas de correção.
+
+---
+
+\subsection{Questão 1 — Verdadeiro ou Falso (Capítulo 1)}
+
+Enunciado (10 itens, 1 pt cada):
+\begin{enumerate}
+\item A armadilha geológica impede a migração de hidrocarbonetos e permite sua acumulação.
+\item Rocha geradora é caracterizada por baixa matéria orgânica.
+\item Rocha selante tem alta permeabilidade e facilita o fluxo de fluidos.
+\item Migração de hidrocarbonetos ocorre preferencialmente por meios porosos e fraturados.
+\item Sincronismo (coincidência temporal de processos) é irrelevante para a formação de um sistema petrolífero.
+\item Catagênese refere‑se ao craqueamento térmico do querogênio em hidrocarbonetos.
+\item O sistema de produção inclui instalações de coleta, elevação e separação até a superfície.
+\item Em um gas‑cap drive, o gás livre contribui para manter a pressão do reservatório.
+\item Porosidade e permeabilidade são a mesma propriedade física.
+\item O fator de volume de formação `B_o` relaciona volumes em reservatório ao volume na superfície.
+\end{enumerate}
+
+\subsubsection{Gabarito Q1}
+\begin{enumerate}
+\item V
+\item F
+\item F
+\item V
+\item F
+\item V
+\item V
+\item V
+\item F
+\item V
+\end{enumerate}
+
+\subsubsection{Rubrica Q1 (10 pts)}
+\begin{itemize}
+\item 1 ponto por resposta correta.
+\item Se for solicitada justificativa: aceitar 1–2 frases; atribuir 0.5 pt para justificativa parcial.
+\end{itemize}
+
+---
+
+\subsection{Questão 2 — Dissertação (Capítulo 4)}
+
+Enunciado:
+Redija uma dissertação (≈ 400–600 palavras) que responda e discuta:
+\begin{itemize}
+\item Descreva o método volumétrico para estimativa de OOIP/OGIP e os principais parâmetros envolvidos (`A`, `h`, `\phi`, `S_w`, `B_o`, `B_g`).
+\item Explique as principais fontes de incerteza (cut‑offs, N/G, heterogeneidade, PVT) e como afetam a estimativa.
+\item Proponha um fluxo de trabalho prático para integrar mapas de net, dados de core, logs e PVT para obter uma estimativa com P10/P50/P90 (mencione Monte Carlo).
+\item Conclua com recomendações para comunicar risco e medidas para reduzir incerteza (QA/QC, aquisição de dados adicionais, sensibilidade).
+\end{itemize}
+
+\subsubsection{Rubrica Q2 (30 pts)}
+\begin{itemize}
+\item Método volumétrico e parâmetros (12 pts): fórmula prática (ex.: $$OOIP=\dfrac{7758\,A\,h\,\phi\,(1-S_w)}{B_o}$$), explicação de cada termo, menção a unidades campo vs SI. (12 pts)
+\item Fontes de incerteza (8 pts): identificação e explicação do impacto de cut‑offs, N/G, heterogeneidade, erros PVT. (8 pts)
+\item Fluxo de trabalho prático (6 pts): integração cores/logs/PVT, construção de mapas, cálculo setorial, sensibilidade e Monte Carlo para P10/P50/P90. (6 pts)
+\item Comunicação de risco e recomendações (4 pts): QA/QC, aquisição adicional, apresentação de Pxx e mitigação. (4 pts)
+\end{itemize}
+
+Critérios de avaliação:
+\begin{itemize}
+\item Conteúdo técnico: 60% dos pontos.
+\item Metodologia/prática: 20%.
+\item Comunicação/clareza e recomendações: 20%.
+\end{itemize}
+
+---
+
+\subsection{Questão 3 — Cálculo / Prático (Capítulo 2 — PVT)}
+
+Enunciado:
+Um ensaio PVT fornece os seguintes resultados para 1 STB de óleo amostrado: volume no estado de reservatório $V_{res}=1.20\,$bbl; volume correspondente à superfície $V_{surf}=1.00\,$STB; gás libertado no ensaio $R_s=400\,$scf/STB.
+
+\begin{enumerate}[label=\Alph*)]
+\item Calcule o fator de volume de formação `B_o` (bbl/STB) usando $B_o=V_{res}/V_{surf}$.\n\end{enumerate}
+
+\begin{enumerate}[label=\Alph*)]
+\item Expresse `R_s` em m³/m³ usando $1\,\text{scf}=0.0283168\,\text{m}^3$ e $1\,\text{STB}=0.1589873\,\text{m}^3$.\n\end{enumerate}
+
+\begin{enumerate}[label=\Alph*)]
+\item Interprete fisicamente um $B_o>1$ e discuta brevemente como $R_s$ influencia o comportamento de produção.\n\end{enumerate}
+
+\subsubsection{Gabarito Q3 (30 pts — 10/10/10)}
+(a) $$B_o=\dfrac{V_{res}}{V_{surf}}=\dfrac{1.20}{1.00}=1.20\;\text{bbl/STB}.$$ (10 pts)
+
+(b) Conversão: $$R_s\,\text{(m}^3/\text{m}^3)=\dfrac{400\times0.0283168}{0.1589873}\approx71.3\;\text{m}^3/\text{m}^3.$$ (10 pts)
+
+(c) Interpretação: (10 pts)
+\begin{itemize}
+\item $B_o>1$ indica que 1 STB à superfície corresponde a mais de 1 bbl nas condições de reservatório (efeito de compressibilidade e/ou gás dissolvido); volumes no reservatório são maiores que o volume final surfacel.
+\item $R_s$ alto implica presença significativa de gás dissolvido; durante declínio de pressão, se atingir o ponto de bolha, o gás é liberado, alterando mobilidade do fluido, afetando recuperação e mecanismo de produção. Pontos por clareza e ligação a efeitos operacionais.
+\end{itemize}
+
+---
+
+\subsection{Questão 4 — Cálculo / Prático (Capítulo 3 — Rocha)}
+
+Enunciado:
+\begin{enumerate}[label=\Alph*)]
+\item Porosidade por método de massa: uma amostra tem massa seca $m_{dry}=250\,$g e massa saturada $m_{sat}=290\,$g; densidade do fluido $\rho_f=0.90\,$g/cm³; volume total da amostra $V_t=320\,$cm³. Calcule a porosidade $\phi$ (use $V_p=(m_{sat}-m_{dry})/\rho_f$ e $\phi=V_p/V_t$).\n\end{enumerate}
+
+\begin{enumerate}[label=\Alph*)]
+\item Permeabilidade (Darcy): num ensaio de bancada obteve‑se vazão volumétrica $q=1.0\times10^{-6}\,\text{m}^3/s$, área da amostra $A=10\,\text{cm}^2=1.0\times10^{-3}\,\text{m}^2$, comprimento $L=5\,\text{cm}=0.05\,\text{m}$, viscosidade $\mu=1.0\,\text{cP}=0.001\,\text{Pa·s}$ e queda de pressão $\Delta p=10{,}000\,$Pa. Calcule `k` em m² e converta para Darcy (1 D = 9.869233×10⁻¹³ m²) usando a relação:\n$$k=\dfrac{q\,\mu\,L}{A\,\Delta p}$$
+\end{enumerate}
+
+\subsubsection{Gabarito Q4 (30 pts — 15/15)}
+(a) Porosidade (15 pts):
+\begin{itemize}
+\item $$V_p=\dfrac{m_{sat}-m_{dry}}{\rho_f}=\dfrac{290-250}{0.90}=\dfrac{40}{0.90}=44.444\;\text{cm}^3.$$ 
+\item $$\phi=\dfrac{V_p}{V_t}=\dfrac{44.444}{320}\approx0.1389\approx13.9\%. $$
+(atribuir parcial se passos corretos; tolerância ±0.2–0.5\% absoluta)
+\end{itemize}
+
+(b) Permeabilidade (15 pts):
+\begin{itemize}
+\item Aplicando Darcy:
+  $$k=\dfrac{1\times10^{-6}\times0.001\times0.05}{1\times10^{-3}\times10{,}000}=5\times10^{-12}\;\text{m}^2.$$ 
+\item Converter para Darcy:
+  $$k_{D}=\dfrac{5\times10^{-12}}{9.869233\times10^{-13}}\approx5.07\;\text{D}=5\,070\;\text{mD}.$$ 
+(Aceitar pequenas variações por arredondamento; exigir todas as conversões)
+\end{itemize}
+
+---
+
+\subsection{Pontuação total sugerida}
+\begin{itemize}
+\item Q1: 10 pts
+\item Q2: 30 pts
+\item Q3: 30 pts
+\item Q4: 30 pts
+\end{itemize}
+
+Total: 100 pts.
+
+\subsection{Observações finais sobre correção}
+\begin{itemize}
+\item Para cálculos, exigir passos e unidades; penalizar falta de conversões ou unidades incoerentes.
+\item Para dissertação, pontuar conteúdo técnico, metodologia e clareza.
+\item Para todos os itens, aceitar pequenas variações numéricas quando justificadas por arredondamento.
+\end{itemize}
+
+---
+
+\emph{Arquivo gerado automaticamente pelo assistente.}
+\end{document}\n

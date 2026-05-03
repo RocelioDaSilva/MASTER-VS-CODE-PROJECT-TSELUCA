@@ -1,0 +1,1673 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+INTERFACE GRÁFICA PARA CÁLCULOS TÉRMICOS EM LINHAS DE PRODUÇÃO
+Autor: Engenharia de Petróleo - ISPTEC
+Data: 2024
+"""
+
+import customtkinter as ctk
+import tkinter as tk
+from tkinter import ttk, messagebox, filedialog
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import pandas as pd
+import json
+import os
+from datetime import datetime
+
+# Configurar aparência do CustomTkinter
+ctk.set_appearance_mode("dark")  # Modos: "dark", "light", "system"
+ctk.set_default_color_theme("green")  # Temas: "blue", "green", "dark-blue"
+
+class CalculoTermicoPetroleo:
+    """Classe para cálculos térmicos em linhas de produção de petróleo"""
+    
+    def __init__(self):
+        """Inicializa a classe com constantes físicas"""
+        # Constantes físicas
+        self.g = 9.81  # m/s²
+        self.pi = np.pi
+    
+    # ========================================================================
+    # MÉTODOS DE CÁLCULO
+    # ========================================================================
+    
+    def calcular_poço(self, params):
+        """Calcula a temperatura no wellhead"""
+        
+        # Extrair parâmetros
+        T_fbh = float(params['T_fbh'])
+        TVD = float(params['TVD'])
+        grad_geo = float(params['grad_geo'])
+        T_sea_bottom = float(params['T_sea_bottom'])
+        m_dot = float(params['m_dot'])
+        Cp = float(params['Cp'])
+        
+        # Geometria do poço
+        r_ti = float(params['r_ti'])
+        r_to = float(params['r_to'])
+        r_ci = float(params['r_ci'])
+        r_co = float(params['r_co'])
+        r_bh = float(params['r_bh'])
+        
+        # Condutividades térmicas
+        k_steel = float(params['k_steel'])
+        k_water = float(params['k_water'])
+        k_cement = float(params['k_cement'])
+        k_formation = float(params['k_formation'])
+        
+        # Coeficientes de convecção
+        h_i = float(params['h_i'])
+        
+        # 1. Temperatura média da formação
+        T_formation_avg = T_sea_bottom + grad_geo * (TVD / 2)
+        
+        # 2. Cálculo das resistências térmicas
+        R_conv_i = 1 / (h_i * 2 * self.pi * r_ti)
+        R_cond_tubing = np.log(r_to / r_ti) / (2 * self.pi * k_steel)
+        R_cond_annulus = np.log(r_ci / r_to) / (2 * self.pi * k_water)
+        R_cond_casing = np.log(r_co / r_ci) / (2 * self.pi * k_steel)
+        R_cond_cement = np.log(r_bh / r_co) / (2 * self.pi * k_cement)
+        R_formation = 1 / (2 * self.pi * k_formation) * np.log(2 * np.sqrt(0.0001 * 30 * 86400) / r_bh)
+        
+        # 3. Resistência total
+        R_total = (R_conv_i + R_cond_tubing + R_cond_annulus + 
+                  R_cond_casing + R_cond_cement + R_formation)
+        
+        # 4. Coeficiente global U
+        A_o = 2 * self.pi * r_to
+        U = 1 / (R_total * A_o)
+        
+        # 5. Parâmetro A
+        A_param = (m_dot * Cp) / (2 * self.pi * r_to * U)
+        
+        # 6. Temperatura no wellhead
+        T_wh = T_formation_avg + (T_fbh - T_formation_avg) * np.exp(-TVD / A_param)
+        delta_T_well = T_fbh - T_wh
+        
+        # Resultados
+        results = {
+            'T_wh': round(T_wh, 2),
+            'T_formation_avg': round(T_formation_avg, 2),
+            'R_total': round(R_total, 4),
+            'U': round(U, 2),
+            'A_param': round(A_param, 0),
+            'delta_T_well': round(delta_T_well, 2),
+            'resistências': {
+                'R_conv_i': round(R_conv_i, 6),
+                'R_cond_tubing': round(R_cond_tubing, 6),
+                'R_cond_annulus': round(R_cond_annulus, 4),
+                'R_cond_casing': round(R_cond_casing, 6),
+                'R_cond_cement': round(R_cond_cement, 4),
+                'R_formation': round(R_formation, 4)
+            }
+        }
+        
+        return results
+    
+    def calcular_flowline(self, params, T_inlet):
+        """Calcula a perda térmica na flowline"""
+        
+        # Extrair parâmetros
+        L = float(params['L'])
+        T_sea = float(params['T_sea'])
+        m_dot = float(params['m_dot'])
+        Cp = float(params['Cp'])
+        
+        # Geometria
+        r_i = float(params['r_i'])
+        r_1 = float(params['r_1'])
+        
+        # Verificar se há isolamento
+        if params.get('com_isolamento', True):
+            r_2 = float(params.get('r_2', r_1))
+            k_insulation = float(params.get('k_insulation', 0.04))
+        else:
+            r_2 = r_1
+            k_insulation = 0
+            
+        # Verificar se há jacket
+        if params.get('com_jacket', False):
+            r_3 = float(params.get('r_3', r_2))
+            k_jacket = float(params.get('k_jacket', 0.5))
+        else:
+            r_3 = r_2
+            k_jacket = 0
+            
+        # Condutividades
+        k_steel = float(params['k_steel'])
+        h_i = float(params['h_i'])
+        h_ext = float(params['h_ext'])
+        
+        # 1. Cálculo das resistências
+        resistances = {}
+        resistances['R_conv_i'] = 1 / (h_i * 2 * self.pi * r_i)
+        resistances['R_cond_pipe'] = np.log(r_1 / r_i) / (2 * self.pi * k_steel)
+        
+        if k_insulation > 0 and r_2 > r_1:
+            resistances['R_cond_insulation'] = np.log(r_2 / r_1) / (2 * self.pi * k_insulation)
+        else:
+            resistances['R_cond_insulation'] = 0.0
+            
+        if k_jacket > 0 and r_3 > r_2:
+            resistances['R_cond_jacket'] = np.log(r_3 / r_2) / (2 * self.pi * k_jacket)
+        else:
+            resistances['R_cond_jacket'] = 0.0
+            
+        resistances['R_conv_ext'] = 1 / (h_ext * 2 * self.pi * r_3)
+        
+        # 2. Resistência total
+        R_total = sum(resistances.values())
+        
+        # 3. Perda térmica específica
+        q_prime = (T_inlet - T_sea) / R_total
+        
+        # 4. Queda de temperatura
+        delta_T_flowline = (q_prime * L) / (m_dot * Cp)
+        
+        # 5. Temperatura na saída
+        T_outlet = T_inlet - delta_T_flowline
+        
+        # 6. Potência total perdida
+        Q_total = q_prime * L / 1000
+        
+        # Resultados
+        results = {
+            'T_inlet': round(T_inlet, 2),
+            'T_outlet': round(T_outlet, 2),
+            'T_sea': round(T_sea, 2),
+            'q_prime': round(q_prime, 1),
+            'R_total': round(R_total, 4),
+            'delta_T_flowline': round(delta_T_flowline, 2),
+            'Q_total': round(Q_total, 1),
+            'resistances': {k: round(v, 6) for k, v in resistances.items() if v > 0}
+        }
+        
+        return results
+    
+    def calcular_sistema_completo(self, well_params, flowline_params):
+        """Calcula o sistema completo: poço + flowline"""
+        
+        # 1. Cálculo do poço
+        well_results = self.calcular_poço(well_params)
+        
+        # 2. Cálculo da flowline
+        flowline_results = self.calcular_flowline(flowline_params, well_results['T_wh'])
+        
+        # 3. Resultados consolidados
+        complete_results = {
+            'well': well_results,
+            'flowline': flowline_results,
+            'system': {
+                'T_fbh': float(well_params['T_fbh']),
+                'T_wh': well_results['T_wh'],
+                'T_fpso': flowline_results['T_outlet'],
+                'delta_T_total': round(float(well_params['T_fbh']) - flowline_results['T_outlet'], 2),
+                'delta_T_well': well_results['delta_T_well'],
+                'delta_T_flowline': flowline_results['delta_T_flowline']
+            }
+        }
+        
+        return complete_results
+
+class AppTérmica(ctk.CTk):
+    """Classe principal da aplicação"""
+    
+    def __init__(self):
+        super().__init__()
+        
+        # Configurar janela principal
+        self.title("Calculadora Térmica - Engenharia de Petróleo")
+        self.geometry("1400x800")
+        
+        # Inicializar calculadora
+        self.calc = CalculoTermicoPetroleo()
+        
+        # Dados padrão
+        self.dados_padrao = self.carregar_dados_padrao()
+        
+        # Resultados atuais
+        self.resultados = None
+        
+        # Configurar layout
+        self.configurar_layout()
+        
+        # Carregar dados padrão
+        self.carregar_dados_interface()
+        
+    def carregar_dados_padrao(self):
+        """Carrega dados padrão para a aplicação"""
+        dados = {
+            'poço': {
+                'T_fbh': 95.0,
+                'TVD': 2500.0,
+                'grad_geo': 0.03,
+                'T_sea_bottom': 4.0,
+                'm_dot': 85.0,
+                'Cp': 2400.0,
+                'r_ti': 0.077,
+                'r_to': 0.089,
+                'r_ci': 0.112,
+                'r_co': 0.122,
+                'r_bh': 0.244,
+                'k_steel': 45.0,
+                'k_water': 0.6,
+                'k_cement': 0.8,
+                'k_formation': 2.0,
+                'h_i': 1000.0
+            },
+            'flowline': {
+                'L': 7000.0,
+                'T_sea': 4.0,
+                'm_dot': 85.0,
+                'Cp': 2400.0,
+                'r_i': 0.127,
+                'r_1': 0.142,
+                'r_2': 0.192,
+                'r_3': 0.195,
+                'k_steel': 45.0,
+                'k_insulation': 0.04,
+                'k_jacket': 0.5,
+                'h_i': 1000.0,
+                'h_ext': 500.0,
+                'com_isolamento': True,
+                'com_jacket': True
+            },
+            'condições': {
+                'tipo_poço': 'offshore',
+                'região': 'tropical',
+                'tipo_fluido': 'multifásico',
+                'profundidade_água': 1500.0
+            }
+        }
+        return dados
+    
+    def configurar_layout(self):
+        """Configura o layout da interface"""
+        # Criar frames principais
+        self.frame_entrada = ctk.CTkFrame(self, width=400)
+        self.frame_entrada.pack(side="left", fill="both", expand=False, padx=10, pady=10)
+        
+        self.frame_resultados = ctk.CTkFrame(self)
+        self.frame_resultados.pack(side="right", fill="both", expand=True, padx=10, pady=10)
+        
+        # Configurar frame de entrada
+        self.configurar_frame_entrada()
+        
+        # Configurar frame de resultados
+        self.configurar_frame_resultados()
+    
+    def configurar_frame_entrada(self):
+        """Configura o frame de entrada de dados"""
+        # Título
+        titulo = ctk.CTkLabel(self.frame_entrada, text="PARÂMETROS DE ENTRADA", 
+                             font=("Helvetica", 16, "bold"))
+        titulo.pack(pady=(10, 20))
+        
+        # Notebook para abas
+        self.notebook_entrada = ctk.CTkTabview(self.frame_entrada)
+        self.notebook_entrada.pack(fill="both", expand=True, padx=10, pady=(0, 10))
+        
+        # Adicionar abas
+        self.notebook_entrada.add("Poço")
+        self.notebook_entrada.add("Flowline")
+        self.notebook_entrada.add("Condições")
+        self.notebook_entrada.add("Cenários")
+        
+        # Configurar abas
+        self.configurar_aba_poço()
+        self.configurar_aba_flowline()
+        self.configurar_aba_condições()
+        self.configurar_aba_cenários()
+        
+        # Botões de controle
+        self.criar_botoes_controle()
+    
+    def configurar_aba_poço(self):
+        """Configura a aba de parâmetros do poço"""
+        aba = self.notebook_entrada.tab("Poço")
+        
+        # Frame com scroll
+        scroll_frame = ctk.CTkScrollableFrame(aba)
+        scroll_frame.pack(fill="both", expand=True)
+        
+        # Variáveis de controle
+        self.var_poço = {}
+        
+        # Seções
+        secoes = [
+            ("Temperaturas", ['T_fbh', 'TVD', 'grad_geo', 'T_sea_bottom']),
+            ("Vazão e Calor Específico", ['m_dot', 'Cp']),
+            ("Geometria (m)", ['r_ti', 'r_to', 'r_ci', 'r_co', 'r_bh']),
+            ("Condutividades Térmicas (W/m·K)", ['k_steel', 'k_water', 'k_cement', 'k_formation']),
+            ("Coeficiente de Convecção", ['h_i'])
+        ]
+        
+        for secao_nome, parametros in secoes:
+            # Frame da seção
+            frame_secao = ctk.CTkFrame(scroll_frame)
+            frame_secao.pack(fill="x", padx=5, pady=5)
+            
+            # Título da seção
+            label_secao = ctk.CTkLabel(frame_secao, text=secao_nome, 
+                                      font=("Helvetica", 12, "bold"))
+            label_secao.pack(anchor="w", padx=10, pady=(10, 5))
+            
+            # Parâmetros
+            for param in parametros:
+                frame_param = ctk.CTkFrame(frame_secao)
+                frame_param.pack(fill="x", padx=10, pady=2)
+                
+                label = ctk.CTkLabel(frame_param, text=self.nome_parametro(param), 
+                                    width=150, anchor="w")
+                label.pack(side="left", padx=(0, 10))
+                
+                # Criar variável
+                self.var_poço[param] = ctk.StringVar(value=str(self.dados_padrao['poço'][param]))
+                
+                entry = ctk.CTkEntry(frame_param, textvariable=self.var_poço[param], width=100)
+                entry.pack(side="left")
+                
+                # Unidade
+                unidade = self.unidade_parametro(param)
+                label_unidade = ctk.CTkLabel(frame_param, text=unidade)
+                label_unidade.pack(side="left", padx=(5, 0))
+    
+    def configurar_aba_flowline(self):
+        """Configura a aba de parâmetros da flowline"""
+        aba = self.notebook_entrada.tab("Flowline")
+        
+        # Frame com scroll
+        scroll_frame = ctk.CTkScrollableFrame(aba)
+        scroll_frame.pack(fill="both", expand=True)
+        
+        # Variáveis de controle
+        self.var_flowline = {}
+        
+        # Checkboxes para opções
+        frame_opcoes = ctk.CTkFrame(scroll_frame)
+        frame_opcoes.pack(fill="x", padx=5, pady=5)
+        
+        self.var_com_isolamento = ctk.BooleanVar(value=True)
+        checkbox_isolamento = ctk.CTkCheckBox(frame_opcoes, text="Com isolamento térmico",
+                                            variable=self.var_com_isolamento,
+                                            command=self.atualizar_estado_isolamento)
+        checkbox_isolamento.pack(anchor="w", padx=10, pady=5)
+        
+        self.var_com_jacket = ctk.BooleanVar(value=True)
+        checkbox_jacket = ctk.CTkCheckBox(frame_opcoes, text="Com jacket de proteção",
+                                         variable=self.var_com_jacket)
+        checkbox_jacket.pack(anchor="w", padx=10, pady=5)
+        
+        # Seções
+        secoes = [
+            ("Dimensões Gerais", ['L', 'T_sea']),
+            ("Vazão e Calor Específico", ['m_dot', 'Cp']),
+            ("Geometria (m)", ['r_i', 'r_1', 'r_2', 'r_3']),
+            ("Condutividades Térmicas (W/m·K)", ['k_steel', 'k_insulation', 'k_jacket']),
+            ("Coeficientes de Convecção (W/m²·K)", ['h_i', 'h_ext'])
+        ]
+        
+        for secao_nome, parametros in secoes:
+            # Frame da seção
+            frame_secao = ctk.CTkFrame(scroll_frame)
+            frame_secao.pack(fill="x", padx=5, pady=5)
+            
+            # Título da seção
+            label_secao = ctk.CTkLabel(frame_secao, text=secao_nome, 
+                                      font=("Helvetica", 12, "bold"))
+            label_secao.pack(anchor="w", padx=10, pady=(10, 5))
+            
+            # Parâmetros
+            for param in parametros:
+                frame_param = ctk.CTkFrame(frame_secao)
+                frame_param.pack(fill="x", padx=10, pady=2)
+                
+                label = ctk.CTkLabel(frame_param, text=self.nome_parametro(param), 
+                                    width=150, anchor="w")
+                label.pack(side="left", padx=(0, 10))
+                
+                # Criar variável
+                if param in self.dados_padrao['flowline']:
+                    self.var_flowline[param] = ctk.StringVar(
+                        value=str(self.dados_padrao['flowline'][param]))
+                    
+                    entry = ctk.CTkEntry(frame_param, textvariable=self.var_flowline[param], width=100)
+                    entry.pack(side="left")
+                    
+                    # Unidade
+                    unidade = self.unidade_parametro(param)
+                    label_unidade = ctk.CTkLabel(frame_param, text=unidade)
+                    label_unidade.pack(side="left", padx=(5, 0))
+    
+    def configurar_aba_condições(self):
+        """Configura a aba de condições operacionais"""
+        aba = self.notebook_entrada.tab("Condições")
+        
+        # Variáveis de controle
+        self.var_condições = {}
+        
+        # Tipo de poço
+        frame_tipo = ctk.CTkFrame(aba)
+        frame_tipo.pack(fill="x", padx=20, pady=10)
+        
+        label_tipo = ctk.CTkLabel(frame_tipo, text="Tipo de Poço:", font=("Helvetica", 12, "bold"))
+        label_tipo.pack(anchor="w", pady=(0, 5))
+        
+        self.var_tipo_poço = ctk.StringVar(value="offshore")
+        
+        opcoes_tipo = [("Offshore", "offshore"), ("Onshore", "onshore")]
+        for texto, valor in opcoes_tipo:
+            radio = ctk.CTkRadioButton(frame_tipo, text=texto, variable=self.var_tipo_poço, value=valor)
+            radio.pack(anchor="w", padx=20)
+        
+        # Região
+        frame_regiao = ctk.CTkFrame(aba)
+        frame_regiao.pack(fill="x", padx=20, pady=10)
+        
+        label_regiao = ctk.CTkLabel(frame_regiao, text="Região Climática:", font=("Helvetica", 12, "bold"))
+        label_regiao.pack(anchor="w", pady=(0, 5))
+        
+        self.var_regiao = ctk.StringVar(value="tropical")
+        
+        opcoes_regiao = [("Tropical", "tropical"), ("Temperada", "temperada"), ("Ártica", "artica")]
+        for texto, valor in opcoes_regiao:
+            radio = ctk.CTkRadioButton(frame_regiao, text=texto, variable=self.var_regiao, value=valor)
+            radio.pack(anchor="w", padx=20)
+        
+        # Tipo de fluido
+        frame_fluido = ctk.CTkFrame(aba)
+        frame_fluido.pack(fill="x", padx=20, pady=10)
+        
+        label_fluido = ctk.CTkLabel(frame_fluido, text="Tipo de Fluido:", font=("Helvetica", 12, "bold"))
+        label_fluido.pack(anchor="w", pady=(0, 5))
+        
+        self.var_tipo_fluido = ctk.StringVar(value="multifásico")
+        
+        opcoes_fluido = [("Multifásico", "multifásico"), ("Óleo", "oleo"), ("Gás", "gas")]
+        for texto, valor in opcoes_fluido:
+            radio = ctk.CTkRadioButton(frame_fluido, text=texto, variable=self.var_tipo_fluido, value=valor)
+            radio.pack(anchor="w", padx=20)
+        
+        # Profundidade da água
+        frame_profundidade = ctk.CTkFrame(aba)
+        frame_profundidade.pack(fill="x", padx=20, pady=10)
+        
+        label_profundidade = ctk.CTkLabel(frame_profundidade, text="Profundidade da Água (m):", 
+                                         font=("Helvetica", 12, "bold"))
+        label_profundidade.pack(anchor="w", pady=(0, 5))
+        
+        self.var_profundidade_agua = ctk.StringVar(value="1500")
+        entry_profundidade = ctk.CTkEntry(frame_profundidade, textvariable=self.var_profundidade_agua)
+        entry_profundidade.pack(anchor="w", padx=20)
+    
+    def configurar_aba_cenários(self):
+        """Configura a aba de cenários pré-definidos"""
+        aba = self.notebook_entrada.tab("Cenários")
+        
+        # Título
+        label_titulo = ctk.CTkLabel(aba, text="Cenários Pré-Definidos", 
+                                   font=("Helvetica", 14, "bold"))
+        label_titulo.pack(pady=20)
+        
+        # Frame para botões
+        frame_botoes = ctk.CTkFrame(aba)
+        frame_botoes.pack(pady=20, padx=40, fill="both", expand=True)
+        
+        # Cenários
+        cenarios = [
+            ("Caso Base\n(Tropical, Com Isolamento)", self.carregar_cenario_base),
+            ("Sem Isolamento", self.carregar_cenario_sem_isolamento),
+            ("Vazão Reduzida", self.carregar_cenario_vazao_reduzida),
+            ("Região Ártica", self.carregar_cenario_artico),
+            ("Poço Raso", self.carregar_cenario_poco_raso),
+            ("Linha Longa", self.carregar_cenario_linha_longa)
+        ]
+        
+        # Criar botões em grid 2x3
+        for i, (texto, comando) in enumerate(cenarios):
+            row = i // 3
+            col = i % 3
+            
+            btn = ctk.CTkButton(frame_botoes, text=texto, command=comando,
+                               height=80, width=150, corner_radius=10,
+                               font=("Helvetica", 11))
+            btn.grid(row=row, column=col, padx=10, pady=10, sticky="nsew")
+        
+        # Configurar grid
+        for i in range(3):
+            frame_botoes.grid_columnconfigure(i, weight=1)
+        for i in range(2):
+            frame_botoes.grid_rowconfigure(i, weight=1)
+    
+    def criar_botoes_controle(self):
+        """Cria os botões de controle na parte inferior"""
+        frame_botoes = ctk.CTkFrame(self.frame_entrada)
+        frame_botoes.pack(fill="x", padx=10, pady=10)
+        
+        # Botões
+        btn_calcular = ctk.CTkButton(frame_botoes, text="CALCULAR", 
+                                    command=self.calcular_sistema,
+                                    height=40, font=("Helvetica", 14, "bold"))
+        btn_calcular.pack(side="left", padx=5, fill="x", expand=True)
+        
+        btn_limpar = ctk.CTkButton(frame_botoes, text="LIMPAR", 
+                                  command=self.limpar_dados,
+                                  height=40, fg_color="gray")
+        btn_limpar.pack(side="left", padx=5, fill="x", expand=True)
+        
+        btn_salvar = ctk.CTkButton(frame_botoes, text="SALVAR", 
+                                  command=self.salvar_dados,
+                                  height=40, fg_color="blue")
+        btn_salvar.pack(side="left", padx=5, fill="x", expand=True)
+        
+        btn_exportar = ctk.CTkButton(frame_botoes, text="EXPORTAR", 
+                                    command=self.exportar_resultados,
+                                    height=40, fg_color="green")
+        btn_exportar.pack(side="left", padx=5, fill="x", expand=True)
+    
+    def configurar_frame_resultados(self):
+        """Configura o frame de resultados"""
+        # Notebook para abas de resultados
+        self.notebook_resultados = ctk.CTkTabview(self.frame_resultados)
+        self.notebook_resultados.pack(fill="both", expand=True)
+        
+        # Adicionar abas
+        self.notebook_resultados.add("Resultados")
+        self.notebook_resultados.add("Gráficos")
+        self.notebook_resultados.add("Tabelas")
+        self.notebook_resultados.add("Relatório")
+        
+        # Configurar abas
+        self.configurar_aba_resultados()
+        self.configurar_aba_graficos()
+        self.configurar_aba_tabelas()
+        self.configurar_aba_relatorio()
+    
+    def configurar_aba_resultados(self):
+        """Configura a aba de resultados"""
+        aba = self.notebook_resultados.tab("Resultados")
+        
+        # Frame com scroll
+        self.scroll_resultados = ctk.CTkScrollableFrame(aba)
+        self.scroll_resultados.pack(fill="both", expand=True)
+        
+        # Inicialmente vazio
+        label_vazio = ctk.CTkLabel(self.scroll_resultados, 
+                                  text="Execute o cálculo para ver os resultados",
+                                  font=("Helvetica", 14))
+        label_vazio.pack(pady=50)
+    
+    def configurar_aba_graficos(self):
+        """Configura a aba de gráficos"""
+        aba = self.notebook_resultados.tab("Gráficos")
+        
+        # Frame para gráficos
+        self.frame_graficos = ctk.CTkFrame(aba)
+        self.frame_graficos.pack(fill="both", expand=True)
+        
+        # Inicialmente vazio
+        label_vazio = ctk.CTkLabel(self.frame_graficos, 
+                                  text="Execute o cálculo para gerar gráficos",
+                                  font=("Helvetica", 14))
+        label_vazio.pack(pady=50)
+    
+    def configurar_aba_tabelas(self):
+        """Configura a aba de tabelas"""
+        aba = self.notebook_resultados.tab("Tabelas")
+        
+        # Frame com scroll
+        self.scroll_tabelas = ctk.CTkScrollableFrame(aba)
+        self.scroll_tabelas.pack(fill="both", expand=True)
+        
+        # Inicialmente vazio
+        label_vazio = ctk.CTkLabel(self.scroll_tabelas, 
+                                  text="Execute o cálculo para ver as tabelas",
+                                  font=("Helvetica", 14))
+        label_vazio.pack(pady=50)
+    
+    def configurar_aba_relatorio(self):
+        """Configura a aba de relatório"""
+        aba = self.notebook_resultados.tab("Relatório")
+        
+        # Frame com scroll
+        self.scroll_relatorio = ctk.CTkScrollableFrame(aba)
+        self.scroll_relatorio.pack(fill="both", expand=True)
+        
+        # Inicialmente vazio
+        label_vazio = ctk.CTkLabel(self.scroll_relatorio, 
+                                  text="Execute o cálculo para gerar o relatório",
+                                  font=("Helvetica", 14))
+        label_vazio.pack(pady=50)
+    
+    # ========================================================================
+    # MÉTODOS AUXILIARES
+    # ========================================================================
+    
+    def nome_parametro(self, param):
+        """Retorna o nome amigável do parâmetro"""
+        nomes = {
+            'T_fbh': 'Temperatura FBH',
+            'TVD': 'Profundidade Vertical',
+            'grad_geo': 'Gradiente Geotérmico',
+            'T_sea_bottom': 'Temp. Fundo do Mar',
+            'm_dot': 'Vazão Mássica',
+            'Cp': 'Calor Específico',
+            'r_ti': 'Raio Interno Tubing',
+            'r_to': 'Raio Externo Tubing',
+            'r_ci': 'Raio Interno Casing',
+            'r_co': 'Raio Externo Casing',
+            'r_bh': 'Raio do Furo',
+            'k_steel': 'Condut. Aço',
+            'k_water': 'Condut. Água',
+            'k_cement': 'Condut. Cimento',
+            'k_formation': 'Condut. Formação',
+            'h_i': 'Coef. Conv. Interno',
+            'L': 'Comprimento Flowline',
+            'T_sea': 'Temp. Água do Mar',
+            'r_i': 'Raio Interno Flowline',
+            'r_1': 'Raio Externo Flowline',
+            'r_2': 'Raio com Isolamento',
+            'r_3': 'Raio com Jacket',
+            'k_insulation': 'Condut. Isolamento',
+            'k_jacket': 'Condut. Jacket',
+            'h_ext': 'Coef. Conv. Externo'
+        }
+        return nomes.get(param, param)
+    
+    def unidade_parametro(self, param):
+        """Retorna a unidade do parâmetro"""
+        unidades = {
+            'T_fbh': '°C',
+            'TVD': 'm',
+            'grad_geo': '°C/m',
+            'T_sea_bottom': '°C',
+            'T_sea': '°C',
+            'm_dot': 'kg/s',
+            'Cp': 'J/(kg·K)',
+            'r_ti': 'm',
+            'r_to': 'm',
+            'r_ci': 'm',
+            'r_co': 'm',
+            'r_bh': 'm',
+            'k_steel': 'W/(m·K)',
+            'k_water': 'W/(m·K)',
+            'k_cement': 'W/(m·K)',
+            'k_formation': 'W/(m·K)',
+            'h_i': 'W/(m²·K)',
+            'L': 'm',
+            'r_i': 'm',
+            'r_1': 'm',
+            'r_2': 'm',
+            'r_3': 'm',
+            'k_insulation': 'W/(m·K)',
+            'k_jacket': 'W/(m·K)',
+            'h_ext': 'W/(m²·K)'
+        }
+        return unidades.get(param, '')
+    
+    def atualizar_estado_isolamento(self):
+        """Atualiza o estado dos campos de isolamento"""
+        com_isolamento = self.var_com_isolamento.get()
+        
+        # Atualizar campos na aba flowline
+        # (Esta função seria mais complexa em uma implementação completa)
+        pass
+    
+    def carregar_dados_interface(self):
+        """Carrega os dados padrão na interface"""
+        # Poço
+        for param, valor in self.dados_padrao['poço'].items():
+            if param in self.var_poço:
+                self.var_poço[param].set(str(valor))
+        
+        # Flowline
+        for param, valor in self.dados_padrao['flowline'].items():
+            if param in self.var_flowline:
+                self.var_flowline[param].set(str(valor))
+        
+        # Condições
+        self.var_tipo_poço.set(self.dados_padrao['condições']['tipo_poço'])
+        self.var_regiao.set(self.dados_padrao['condições']['região'])
+        self.var_tipo_fluido.set(self.dados_padrao['condições']['tipo_fluido'])
+        self.var_profundidade_agua.set(str(self.dados_padrao['condições']['profundidade_água']))
+    
+    # ========================================================================
+    # MÉTODOS DE CENÁRIOS
+    # ========================================================================
+    
+    def carregar_cenario_base(self):
+        """Carrega o cenário base"""
+        self.carregar_dados_interface()
+        messagebox.showinfo("Cenário", "Cenário base carregado!")
+    
+    def carregar_cenario_sem_isolamento(self):
+        """Carrega cenário sem isolamento"""
+        self.carregar_dados_interface()
+        self.var_com_isolamento.set(False)
+        self.var_com_jacket.set(False)
+        messagebox.showinfo("Cenário", "Cenário sem isolamento carregado!")
+    
+    def carregar_cenario_vazao_reduzida(self):
+        """Carrega cenário com vazão reduzida"""
+        self.carregar_dados_interface()
+        self.var_poço['m_dot'].set("25")
+        self.var_flowline['m_dot'].set("25")
+        messagebox.showinfo("Cenário", "Cenário com vazão reduzida carregado!")
+    
+    def carregar_cenario_artico(self):
+        """Carrega cenário ártico"""
+        self.carregar_dados_interface()
+        self.var_regiao.set("artica")
+        self.var_poço['T_sea_bottom'].set("-2")
+        self.var_flowline['T_sea'].set("-2")
+        messagebox.showinfo("Cenário", "Cenário ártico carregado!")
+    
+    def carregar_cenario_poco_raso(self):
+        """Carrega cenário com poço raso"""
+        self.carregar_dados_interface()
+        self.var_poço['TVD'].set("1000")
+        self.var_poço['T_fbh'].set("60")
+        messagebox.showinfo("Cenário", "Cenário com poço raso carregado!")
+    
+    def carregar_cenario_linha_longa(self):
+        """Carrega cenário com linha longa"""
+        self.carregar_dados_interface()
+        self.var_flowline['L'].set("15000")
+        messagebox.showinfo("Cenário", "Cenário com linha longa carregado!")
+    
+    # ========================================================================
+    # MÉTODOS PRINCIPAIS
+    # ========================================================================
+    
+    def coletar_dados(self):
+        """Coleta os dados da interface"""
+        dados = {
+            'poço': {},
+            'flowline': {},
+            'condições': {}
+        }
+        
+        # Coletar dados do poço
+        for param, var in self.var_poço.items():
+            try:
+                dados['poço'][param] = float(var.get())
+            except:
+                dados['poço'][param] = 0.0
+        
+        # Coletar dados da flowline
+        for param, var in self.var_flowline.items():
+            try:
+                dados['flowline'][param] = float(var.get())
+            except:
+                dados['flowline'][param] = 0.0
+        
+        # Adicionar flags de isolamento
+        dados['flowline']['com_isolamento'] = self.var_com_isolamento.get()
+        dados['flowline']['com_jacket'] = self.var_com_jacket.get()
+        
+        # Coletar condições
+        dados['condições']['tipo_poço'] = self.var_tipo_poço.get()
+        dados['condições']['região'] = self.var_regiao.get()
+        dados['condições']['tipo_fluido'] = self.var_tipo_fluido.get()
+        try:
+            dados['condições']['profundidade_água'] = float(self.var_profundidade_agua.get())
+        except:
+            dados['condições']['profundidade_água'] = 1500.0
+        
+        return dados
+    
+    def calcular_sistema(self):
+        """Executa o cálculo do sistema"""
+        try:
+            # Coletar dados
+            dados = self.coletar_dados()
+            
+            # Executar cálculo
+            self.resultados = self.calc.calcular_sistema_completo(dados['poço'], dados['flowline'])
+            
+            # Adicionar condições aos resultados
+            self.resultados['condições'] = dados['condições']
+            
+            # Atualizar interface
+            self.atualizar_resultados()
+            self.atualizar_graficos()
+            self.atualizar_tabelas()
+            self.atualizar_relatorio()
+            
+            # Mudar para aba de resultados
+            self.notebook_resultados.set("Resultados")
+            
+            messagebox.showinfo("Sucesso", "Cálculo realizado com sucesso!")
+            
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro no cálculo:\n{str(e)}")
+    
+    def atualizar_resultados(self):
+        """Atualiza a aba de resultados"""
+        # Limpar frame
+        for widget in self.scroll_resultados.winfo_children():
+            widget.destroy()
+        
+        # Título
+        titulo = ctk.CTkLabel(self.scroll_resultados, 
+                             text="RESULTADOS DO CÁLCULO TÉRMICO", 
+                             font=("Helvetica", 16, "bold"))
+        titulo.pack(pady=(10, 20))
+        
+        # Frame principal
+        frame_principal = ctk.CTkFrame(self.scroll_resultados)
+        frame_principal.pack(fill="x", padx=20, pady=10)
+        
+        # Condições operacionais
+        frame_condicoes = ctk.CTkFrame(frame_principal)
+        frame_condicoes.pack(fill="x", padx=10, pady=10)
+        
+        label_cond = ctk.CTkLabel(frame_condicoes, text="CONDIÇÕES OPERACIONAIS",
+                                 font=("Helvetica", 14, "bold"))
+        label_cond.pack(anchor="w", pady=(0, 10))
+        
+        # Informações das condições
+        cond_text = f"""
+        • Tipo de Poço: {self.resultados['condições']['tipo_poço'].capitalize()}
+        • Região: {self.resultados['condições']['região'].capitalize()}
+        • Tipo de Fluido: {self.resultados['condições']['tipo_fluido'].capitalize()}
+        • Profundidade da Água: {self.resultados['condições']['profundidade_água']} m
+        """
+        
+        label_cond_info = ctk.CTkLabel(frame_condicoes, text=cond_text,
+                                      justify="left")
+        label_cond_info.pack(anchor="w", padx=20)
+        
+        # Resultados principais
+        frame_res_principais = ctk.CTkFrame(frame_principal)
+        frame_res_principais.pack(fill="x", padx=10, pady=10)
+        
+        label_res = ctk.CTkLabel(frame_res_principais, text="RESULTADOS PRINCIPAIS",
+                                font=("Helvetica", 14, "bold"))
+        label_res.pack(anchor="w", pady=(0, 10))
+        
+        # Grid de resultados
+        resultados_grid = [
+            ("Temperatura no Fundo do Poço (FBHT)", f"{self.resultados['system']['T_fbh']} °C"),
+            ("Temperatura no Wellhead (WHT)", f"{self.resultados['system']['T_wh']} °C"),
+            ("Temperatura na FPSO", f"{self.resultados['system']['T_fpso']} °C"),
+            ("Queda Total de Temperatura", f"{self.resultados['system']['delta_T_total']} °C"),
+            ("Queda no Poço", f"{self.resultados['system']['delta_T_well']} °C"),
+            ("Queda na Flowline", f"{self.resultados['system']['delta_T_flowline']} °C"),
+            ("Perda Térmica Específica", f"{self.resultados['flowline']['q_prime']} W/m"),
+            ("Potência Total Perdida", f"{self.resultados['flowline']['Q_total']} kW"),
+        ]
+        
+        for i, (label, valor) in enumerate(resultados_grid):
+            frame_item = ctk.CTkFrame(frame_res_principais)
+            frame_item.pack(fill="x", padx=20, pady=2)
+            
+            label_widget = ctk.CTkLabel(frame_item, text=label, width=250, anchor="w")
+            label_widget.pack(side="left", padx=(0, 10))
+            
+            valor_widget = ctk.CTkLabel(frame_item, text=valor, 
+                                       font=("Helvetica", 12, "bold"))
+            valor_widget.pack(side="left")
+        
+        # Verificação de riscos
+        frame_riscos = ctk.CTkFrame(frame_principal)
+        frame_riscos.pack(fill="x", padx=10, pady=10)
+        
+        label_riscos = ctk.CTkLabel(frame_riscos, text="VERIFICAÇÃO DE RISCOS",
+                                   font=("Helvetica", 14, "bold"))
+        label_riscos.pack(anchor="w", pady=(0, 10))
+        
+        # Calcular margens de segurança
+        T_wax = 45.0  # Temperatura de aparecimento de parafina
+        T_hydrate = 20.0  # Temperatura de formação de hidratos
+        
+        margem_wax = self.resultados['system']['T_fpso'] - T_wax
+        margem_hydrate = self.resultados['system']['T_fpso'] - T_hydrate
+        
+        # Determinar status
+        if margem_wax > 15:
+            status_wax = "✓ MUITO SEGURO"
+            cor_wax = "green"
+        elif margem_wax > 5:
+            status_wax = "✓ SEGURO"
+            cor_wax = "yellowgreen"
+        elif margem_wax > 0:
+            status_wax = "⚠ ATENÇÃO"
+            cor_wax = "orange"
+        else:
+            status_wax = "✗ CRÍTICO"
+            cor_wax = "red"
+        
+        # Texto de verificação
+        risco_text = f"""
+        • Temperatura mínima para hidratos: {T_hydrate} °C
+        • Temperatura de aparecimento de parafina (WAT): {T_wax} °C
+        • Margem sobre WAT: {margem_wax:.1f} °C → {status_wax}
+        • Margem sobre hidratos: {margem_hydrate:.1f} °C
+        """
+        
+        label_risco_info = ctk.CTkLabel(frame_riscos, text=risco_text,
+                                       justify="left")
+        label_risco_info.pack(anchor="w", padx=20)
+        
+        # Recomendações
+        frame_recom = ctk.CTkFrame(frame_principal)
+        frame_recom.pack(fill="x", padx=10, pady=10)
+        
+        label_recom = ctk.CTkLabel(frame_recom, text="RECOMENDAÇÕES",
+                                  font=("Helvetica", 14, "bold"))
+        label_recom.pack(anchor="w", pady=(0, 10))
+        
+        # Gerar recomendações baseadas nos resultados
+        if margem_wax > 15:
+            recom_text = "• Sistema térmico adequado\n• Isolamento atual é suficiente\n• Não é necessário aquecimento ativo"
+        elif margem_wax > 5:
+            recom_text = "• Sistema marginalmente adequado\n• Monitorar temperatura regularmente\n• Considerar aumentar espessura do isolamento"
+        else:
+            recom_text = "• Sistema INADEQUADO\n• Implementar traçagem térmica\n• Revisar especificação do isolamento\n• Considerar aquecimento ativo"
+        
+        label_recom_info = ctk.CTkLabel(frame_recom, text=recom_text,
+                                       justify="left")
+        label_recom_info.pack(anchor="w", padx=20)
+    
+    def atualizar_graficos(self):
+        """Atualiza a aba de gráficos"""
+        # Limpar frame
+        for widget in self.frame_graficos.winfo_children():
+            widget.destroy()
+        
+        # Criar figura
+        fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+        fig.suptitle('Análise Térmica - Resultados', fontsize=14, fontweight='bold')
+        
+        # 1. Perfil de temperatura
+        ax1 = axes[0, 0]
+        positions = ['FBH', 'Wellhead', 'FPSO']
+        temperatures = [self.resultados['system']['T_fbh'], 
+                       self.resultados['system']['T_wh'], 
+                       self.resultados['system']['T_fpso']]
+        
+        bars1 = ax1.bar(positions, temperatures, color=['red', 'orange', 'green'])
+        ax1.set_ylabel('Temperatura (°C)')
+        ax1.set_title('Perfil de Temperatura')
+        ax1.axhline(y=45, color='orange', linestyle='--', alpha=0.5, label='WAT (45°C)')
+        ax1.axhline(y=20, color='red', linestyle='--', alpha=0.5, label='Hidratos (20°C)')
+        ax1.legend()
+        ax1.grid(True, alpha=0.3)
+        
+        # Adicionar valores
+        for bar, temp in zip(bars1, temperatures):
+            height = bar.get_height()
+            ax1.text(bar.get_x() + bar.get_width()/2., height + 1,
+                    f'{temp}°C', ha='center', va='bottom', fontweight='bold')
+        
+        # 2. Queda de temperatura
+        ax2 = axes[0, 1]
+        labels = ['Poço', 'Flowline', 'Total']
+        values = [self.resultados['system']['delta_T_well'], 
+                 self.resultados['system']['delta_T_flowline'], 
+                 self.resultados['system']['delta_T_total']]
+        
+        bars2 = ax2.bar(labels, values, color=['blue', 'purple', 'darkred'])
+        ax2.set_ylabel('Queda de Temperatura (°C)')
+        ax2.set_title('Análise de Perdas Térmicas')
+        ax2.grid(True, alpha=0.3)
+        
+        # Adicionar valores
+        for bar, val in zip(bars2, values):
+            height = bar.get_height()
+            ax2.text(bar.get_x() + bar.get_width()/2., height + 0.1,
+                    f'{val}°C', ha='center', va='bottom', fontweight='bold')
+        
+        # 3. Distribuição de perdas
+        ax3 = axes[1, 0]
+        labels_pie = ['Poço', 'Flowline']
+        sizes = [self.resultados['system']['delta_T_well'], 
+                self.resultados['system']['delta_T_flowline']]
+        
+        ax3.pie(sizes, labels=labels_pie, autopct='%1.1f%%', startangle=90)
+        ax3.set_title('Distribuição das Perdas Térmicas')
+        
+        # 4. Verificação de segurança
+        ax4 = axes[1, 1]
+        temp_atual = self.resultados['system']['T_fpso']
+        temp_wax = 45
+        temp_hydrate = 20
+        
+        categories = ['Temperatura Atual', 'WAT', 'Hidratos']
+        temps = [temp_atual, temp_wax, temp_hydrate]
+        colors = ['green', 'orange', 'red']
+        
+        bars4 = ax4.bar(categories, temps, color=colors)
+        ax4.set_ylabel('Temperatura (°C)')
+        ax4.set_title('Verificação de Segurança')
+        ax4.grid(True, alpha=0.3)
+        
+        # Adicionar valores
+        for bar, temp in zip(bars4, temps):
+            height = bar.get_height()
+            ax4.text(bar.get_x() + bar.get_width()/2., height + 1,
+                    f'{temp}°C', ha='center', va='bottom', fontweight='bold')
+        
+        # Ajustar layout
+        plt.tight_layout()
+        
+        # Embed no tkinter
+        canvas = FigureCanvasTkAgg(fig, self.frame_graficos)
+        canvas.draw()
+        canvas.get_tk_widget().pack(fill="both", expand=True)
+        
+        # Botão para salvar
+        btn_salvar_grafico = ctk.CTkButton(self.frame_graficos, text="Salvar Gráfico",
+                                          command=lambda: self.salvar_grafico(fig))
+        btn_salvar_grafico.pack(pady=10)
+    
+    def atualizar_tabelas(self):
+        """Atualiza a aba de tabelas"""
+        # Limpar frame
+        for widget in self.scroll_tabelas.winfo_children():
+            widget.destroy()
+        
+        # Título
+        titulo = ctk.CTkLabel(self.scroll_tabelas, 
+                             text="TABELAS DE RESULTADOS", 
+                             font=("Helvetica", 16, "bold"))
+        titulo.pack(pady=(10, 20))
+        
+        # 1. Tabela de resultados principais
+        frame_tabela1 = ctk.CTkFrame(self.scroll_tabelas)
+        frame_tabela1.pack(fill="x", padx=20, pady=10)
+        
+        label_tabela1 = ctk.CTkLabel(frame_tabela1, text="Resultados Principais",
+                                    font=("Helvetica", 14, "bold"))
+        label_tabela1.pack(pady=(0, 10))
+        
+        # Criar treeview para tabela
+        columns = ("Parâmetro", "Valor", "Unidade")
+        tree1 = ttk.Treeview(frame_tabela1, columns=columns, show="headings", height=10)
+        
+        # Configurar colunas
+        tree1.heading("Parâmetro", text="Parâmetro")
+        tree1.heading("Valor", text="Valor")
+        tree1.heading("Unidade", text="Unidade")
+        
+        tree1.column("Parâmetro", width=250)
+        tree1.column("Valor", width=150)
+        tree1.column("Unidade", width=100)
+        
+        # Adicionar dados
+        dados_tabela1 = [
+            ("Temperatura FBH", self.resultados['system']['T_fbh'], "°C"),
+            ("Temperatura Wellhead", self.resultados['system']['T_wh'], "°C"),
+            ("Temperatura FPSO", self.resultados['system']['T_fpso'], "°C"),
+            ("Queda Total", self.resultados['system']['delta_T_total'], "°C"),
+            ("Queda no Poço", self.resultados['system']['delta_T_well'], "°C"),
+            ("Queda na Flowline", self.resultados['system']['delta_T_flowline'], "°C"),
+            ("Perda Específica", self.resultados['flowline']['q_prime'], "W/m"),
+            ("Potência Perdida", self.resultados['flowline']['Q_total'], "kW"),
+            ("Resistência Total Flowline", self.resultados['flowline']['R_total'], "m·K/W"),
+        ]
+        
+        for dado in dados_tabela1:
+            tree1.insert("", "end", values=dado)
+        
+        # Adicionar scrollbar
+        scrollbar1 = ttk.Scrollbar(frame_tabela1, orient="vertical", command=tree1.yview)
+        tree1.configure(yscrollcommand=scrollbar1.set)
+        
+        tree1.pack(side="left", fill="both", expand=True)
+        scrollbar1.pack(side="right", fill="y")
+        
+        # 2. Tabela de resistências do poço
+        frame_tabela2 = ctk.CTkFrame(self.scroll_tabelas)
+        frame_tabela2.pack(fill="x", padx=20, pady=10)
+        
+        label_tabela2 = ctk.CTkLabel(frame_tabela2, text="Resistências Térmicas - Poço",
+                                    font=("Helvetica", 14, "bold"))
+        label_tabela2.pack(pady=(0, 10))
+        
+        # Criar treeview
+        columns2 = ("Componente", "Resistência (m·K/W)", "Percentual")
+        tree2 = ttk.Treeview(frame_tabela2, columns=columns2, show="headings", height=6)
+        
+        # Configurar colunas
+        for col in columns2:
+            tree2.heading(col, text=col)
+            tree2.column(col, width=150)
+        
+        # Adicionar dados
+        total_res = self.resultados['well']['R_total']
+        resistencias = self.resultados['well']['resistências']
+        
+        for nome, valor in resistencias.items():
+            percentual = (valor / total_res * 100) if total_res > 0 else 0
+            tree2.insert("", "end", values=(nome, f"{valor:.6f}", f"{percentual:.1f}%"))
+        
+        tree2.insert("", "end", values=("TOTAL", f"{total_res:.6f}", "100%"))
+        
+        # Scrollbar
+        scrollbar2 = ttk.Scrollbar(frame_tabela2, orient="vertical", command=tree2.yview)
+        tree2.configure(yscrollcommand=scrollbar2.set)
+        
+        tree2.pack(side="left", fill="both", expand=True)
+        scrollbar2.pack(side="right", fill="y")
+        
+        # 3. Tabela de resistências da flowline
+        frame_tabela3 = ctk.CTkFrame(self.scroll_tabelas)
+        frame_tabela3.pack(fill="x", padx=20, pady=10)
+        
+        label_tabela3 = ctk.CTkLabel(frame_tabela3, text="Resistências Térmicas - Flowline",
+                                    font=("Helvetica", 14, "bold"))
+        label_tabela3.pack(pady=(0, 10))
+        
+        # Criar treeview
+        columns3 = ("Componente", "Resistência (m·K/W)", "Percentual")
+        tree3 = ttk.Treeview(frame_tabela3, columns=columns3, show="headings", height=6)
+        
+        # Configurar colunas
+        for col in columns3:
+            tree3.heading(col, text=col)
+            tree3.column(col, width=150)
+        
+        # Adicionar dados
+        total_res_flow = self.resultados['flowline']['R_total']
+        resistencias_flow = self.resultados['flowline']['resistances']
+        
+        for nome, valor in resistencias_flow.items():
+            if valor > 0:
+                percentual = (valor / total_res_flow * 100) if total_res_flow > 0 else 0
+                tree3.insert("", "end", values=(nome, f"{valor:.6f}", f"{percentual:.1f}%"))
+        
+        tree3.insert("", "end", values=("TOTAL", f"{total_res_flow:.6f}", "100%"))
+        
+        # Scrollbar
+        scrollbar3 = ttk.Scrollbar(frame_tabela3, orient="vertical", command=tree3.yview)
+        tree3.configure(yscrollcommand=scrollbar3.set)
+        
+        tree3.pack(side="left", fill="both", expand=True)
+        scrollbar3.pack(side="right", fill="y")
+    
+    def atualizar_relatorio(self):
+        """Atualiza a aba de relatório"""
+        # Limpar frame
+        for widget in self.scroll_relatorio.winfo_children():
+            widget.destroy()
+        
+        # Título
+        titulo = ctk.CTkLabel(self.scroll_relatorio, 
+                             text="RELATÓRIO TÉCNICO COMPLETO", 
+                             font=("Helvetica", 16, "bold"))
+        titulo.pack(pady=(10, 20))
+        
+        # Frame principal
+        frame_principal = ctk.CTkFrame(self.scroll_relatorio)
+        frame_principal.pack(fill="both", expand=True, padx=20, pady=10)
+        
+        # Texto do relatório
+        relatorio_texto = f"""
+        RELATÓRIO DE CÁLCULO TÉRMICO
+        =============================
+        
+        Data: {datetime.now().strftime('%d/%m/%Y %H:%M')}
+        
+        1. INFORMAÇÕES GERAIS
+        --------------------
+        • Tipo de Poço: {self.resultados['condições']['tipo_poço'].upper()}
+        • Região: {self.resultados['condições']['região'].upper()}
+        • Tipo de Fluido: {self.resultados['condições']['tipo_fluido'].upper()}
+        • Profundidade da Água: {self.resultados['condições']['profundidade_água']} m
+        
+        2. RESULTADOS PRINCIPAIS
+        -----------------------
+        • Temperatura no Fundo do Poço (FBHT): {self.resultados['system']['T_fbh']} °C
+        • Temperatura no Wellhead (WHT): {self.resultados['system']['T_wh']} °C
+        • Temperatura na Entrada da FPSO: {self.resultados['system']['T_fpso']} °C
+        
+        • Queda Total de Temperatura: {self.resultados['system']['delta_T_total']} °C
+          - Queda no Poço: {self.resultados['system']['delta_T_well']} °C
+          - Queda na Flowline: {self.resultados['system']['delta_T_flowline']} °C
+        
+        • Perda Térmica Específica (q'): {self.resultados['flowline']['q_prime']} W/m
+        • Potência Total Perdida: {self.resultados['flowline']['Q_total']} kW
+        
+        3. ANÁLISE DO POÇO
+        -----------------
+        • Temperatura Média da Formação: {self.resultados['well']['T_formation_avg']} °C
+        • Coeficiente Global (U): {self.resultados['well']['U']} W/(m²·K)
+        • Parâmetro A do Sistema: {self.resultados['well']['A_param']} m
+        • Resistência Térmica Total: {self.resultados['well']['R_total']} m·K/W
+        
+        4. ANÁLISE DA FLOWLINE
+        ---------------------
+        • Comprimento: {self.coletar_dados()['flowline']['L']} m
+        • Temperatura da Água do Mar: {self.resultados['flowline']['T_sea']} °C
+        • Resistência Térmica Total: {self.resultados['flowline']['R_total']} m·K/W
+        
+        5. VERIFICAÇÃO DE RISCOS
+        -----------------------
+        • Temperatura de Hidratos: 20 °C
+        • Temperatura de Parafina (WAT): 45 °C
+        
+        • Margem de Segurança sobre WAT: {self.resultados['system']['T_fpso'] - 45:.1f} °C
+        • Status: {'ADEQUADO' if self.resultados['system']['T_fpso'] > 50 else 'INADEQUADO'}
+        
+        6. CONCLUSÕES E RECOMENDAÇÕES
+        ----------------------------
+        """
+        
+        # Adicionar recomendações
+        margem = self.resultados['system']['T_fpso'] - 45
+        
+        if margem > 15:
+            conclusao = """
+        O sistema térmico está ADEQUADO para as condições operacionais.
+        O isolamento atual é suficiente e não há necessidade de aquecimento ativo.
+        
+        RECOMENDAÇÕES:
+        • Manter configuração atual do isolamento
+        • Monitoramento regular da temperatura
+        • Manutenção preventiva do sistema de isolamento
+            """
+        elif margem > 5:
+            conclusao = """
+        O sistema térmico está MARGINALMENTE ADEQUADO.
+        A temperatura está próxima do limite de segurança.
+        
+        RECOMENDAÇÕES:
+        • Monitorar temperatura continuamente
+        • Considerar aumento da espessura do isolamento
+        • Preparar plano de contingência para startups
+            """
+        else:
+            conclusao = """
+        O sistema térmico está INADEQUADO.
+        Risco de formação de hidratos e parafina.
+        
+        RECOMENDAÇÕES URGENTES:
+        • Implementar sistema de traçagem térmica
+        • Redimensionar isolamento térmico
+        • Considerar aquecimento ativo (hot-oil)
+        • Revisar procedimentos operacionais
+            """
+        
+        relatorio_texto += conclusao
+        
+        # Criar widget de texto
+        text_widget = tk.Text(frame_principal, wrap="word", font=("Courier", 10),
+                            bg="#2b2b2b", fg="white", relief="flat")
+        text_widget.insert("1.0", relatorio_texto)
+        text_widget.configure(state="disabled")
+        
+        # Scrollbar
+        scrollbar = ttk.Scrollbar(frame_principal, command=text_widget.yview)
+        text_widget.configure(yscrollcommand=scrollbar.set)
+        
+        text_widget.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        # Botões
+        frame_botoes = ctk.CTkFrame(self.scroll_relatorio)
+        frame_botoes.pack(pady=10)
+        
+        btn_salvar_rel = ctk.CTkButton(frame_botoes, text="Salvar Relatório (TXT)",
+                                      command=self.salvar_relatorio_txt)
+        btn_salvar_rel.pack(side="left", padx=5)
+        
+        btn_salvar_pdf = ctk.CTkButton(frame_botoes, text="Salvar Relatório (PDF)",
+                                      command=self.salvar_relatorio_pdf)
+        btn_salvar_pdf.pack(side="left", padx=5)
+    
+    # ========================================================================
+    # MÉTODOS DE ARQUIVOS
+    # ========================================================================
+    
+    def salvar_dados(self):
+        """Salva os dados atuais em um arquivo JSON"""
+        try:
+            dados = self.coletar_dados()
+            
+            # Abrir diálogo para salvar
+            arquivo = filedialog.asksaveasfilename(
+                defaultextension=".json",
+                filetypes=[("JSON files", "*.json"), ("All files", "*.*")],
+                initialfile="dados_termicos.json"
+            )
+            
+            if arquivo:
+                with open(arquivo, 'w') as f:
+                    json.dump(dados, f, indent=4)
+                
+                messagebox.showinfo("Sucesso", f"Dados salvos em:\n{arquivo}")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao salvar dados:\n{str(e)}")
+    
+    def salvar_relatorio_txt(self):
+        """Salva o relatório em formato TXT"""
+        try:
+            if not self.resultados:
+                messagebox.showwarning("Aviso", "Execute um cálculo primeiro!")
+                return
+            
+            # Gerar conteúdo do relatório
+            conteudo = f"""
+            RELATÓRIO DE CÁLCULO TÉRMICO
+            =============================
+            
+            Data: {datetime.now().strftime('%d/%m/%Y %H:%M')}
+            
+            1. INFORMAÇÕES GERAIS
+            --------------------
+            • Tipo de Poço: {self.resultados['condições']['tipo_poço'].upper()}
+            • Região: {self.resultados['condições']['região'].upper()}
+            • Tipo de Fluido: {self.resultados['condições']['tipo_fluido'].upper()}
+            • Profundidade da Água: {self.resultados['condições']['profundidade_água']} m
+            
+            2. RESULTADOS PRINCIPAIS
+            -----------------------
+            • Temperatura FBH: {self.resultados['system']['T_fbh']} °C
+            • Temperatura Wellhead: {self.resultados['system']['T_wh']} °C
+            • Temperatura FPSO: {self.resultados['system']['T_fpso']} °C
+            • Queda Total: {self.resultados['system']['delta_T_total']} °C
+            • Perda Específica: {self.resultados['flowline']['q_prime']} W/m
+            • Potência Perdida: {self.resultados['flowline']['Q_total']} kW
+            
+            3. VERIFICAÇÃO DE RISCOS
+            -----------------------
+            • Temperatura de Hidratos: 20 °C
+            • Temperatura de Parafina (WAT): 45 °C
+            • Margem sobre WAT: {self.resultados['system']['T_fpso'] - 45:.1f} °C
+            • Status: {'ADEQUADO' if self.resultados['system']['T_fpso'] > 50 else 'INADEQUADO'}
+            """
+            
+            # Abrir diálogo para salvar
+            arquivo = filedialog.asksaveasfilename(
+                defaultextension=".txt",
+                filetypes=[("Text files", "*.txt"), ("All files", "*.*")],
+                initialfile=f"relatorio_termico_{datetime.now().strftime('%Y%m%d_%H%M')}.txt"
+            )
+            
+            if arquivo:
+                with open(arquivo, 'w', encoding='utf-8') as f:
+                    f.write(conteudo)
+                
+                messagebox.showinfo("Sucesso", f"Relatório salvo em:\n{arquivo}")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao salvar relatório:\n{str(e)}")
+    
+    def salvar_relatorio_pdf(self):
+        """Salva o relatório em formato PDF (simulado)"""
+        try:
+            messagebox.showinfo("PDF", "Funcionalidade de PDF será implementada em breve!")
+            # Em uma versão completa, aqui você usaria uma biblioteca como reportlab
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao gerar PDF:\n{str(e)}")
+    
+    def salvar_grafico(self, fig):
+        """Salva o gráfico atual como imagem"""
+        try:
+            arquivo = filedialog.asksaveasfilename(
+                defaultextension=".png",
+                filetypes=[("PNG files", "*.png"), ("PDF files", "*.pdf"), ("All files", "*.*")],
+                initialfile=f"grafico_termico_{datetime.now().strftime('%Y%m%d_%H%M')}.png"
+            )
+            
+            if arquivo:
+                fig.savefig(arquivo, dpi=300, bbox_inches='tight')
+                messagebox.showinfo("Sucesso", f"Gráfico salvo em:\n{arquivo}")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao salvar gráfico:\n{str(e)}")
+    
+    def exportar_resultados(self):
+        """Exporta todos os resultados"""
+        if not self.resultados:
+            messagebox.showwarning("Aviso", "Execute um cálculo primeiro!")
+            return
+        
+        # Criar diretório para exportação
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        diretorio = f"exportacao_termica_{timestamp}"
+        
+        try:
+            os.makedirs(diretorio, exist_ok=True)
+            
+            # 1. Salvar dados em JSON
+            dados = self.coletar_dados()
+            with open(f"{diretorio}/dados_entrada.json", 'w') as f:
+                json.dump(dados, f, indent=4)
+            
+            # 2. Salvar resultados em JSON
+            with open(f"{diretorio}/resultados.json", 'w') as f:
+                json.dump(self.resultados, f, indent=4, default=str)
+            
+            # 3. Salvar relatório em TXT
+            relatorio = self.gerar_relatorio_completo()
+            with open(f"{diretorio}/relatorio.txt", 'w', encoding='utf-8') as f:
+                f.write(relatorio)
+            
+            # 4. Salvar gráfico
+            fig, _ = plt.subplots(figsize=(10, 6))
+            self.criar_grafico_principal(fig)
+            fig.savefig(f"{diretorio}/grafico_principal.png", dpi=300, bbox_inches='tight')
+            plt.close(fig)
+            
+            messagebox.showinfo("Sucesso", f"Exportação completa!\nArquivos salvos em: {diretorio}")
+            
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro na exportação:\n{str(e)}")
+    
+    def gerar_relatorio_completo(self):
+        """Gera um relatório completo em texto"""
+        relatorio = f"""
+        RELATÓRIO COMPLETO - CÁLCULO TÉRMICO
+        ====================================
+        
+        Data: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}
+        
+        {self.gerar_secao_condicoes()}
+        
+        {self.gerar_secao_resultados()}
+        
+        {self.gerar_secao_analise()}
+        
+        {self.gerar_secao_conclusoes()}
+        """
+        return relatorio
+    
+    def gerar_secao_condicoes(self):
+        """Gera seção de condições do relatório"""
+        return """
+        1. CONDIÇÕES OPERACIONAIS
+        -------------------------
+        Tipo de Poço: {}
+        Região: {}
+        Tipo de Fluido: {}
+        Profundidade da Água: {} m
+        """.format(
+            self.resultados['condições']['tipo_poço'].upper(),
+            self.resultados['condições']['região'].upper(),
+            self.resultados['condições']['tipo_fluido'].upper(),
+            self.resultados['condições']['profundidade_água']
+        )
+    
+    def gerar_secao_resultados(self):
+        """Gera seção de resultados do relatório"""
+        return """
+        2. RESULTADOS
+        -------------
+        Temperatura FBH: {} °C
+        Temperatura Wellhead: {} °C
+        Temperatura FPSO: {} °C
+        Queda Total: {} °C
+          - Queda no Poço: {} °C
+          - Queda na Flowline: {} °C
+        
+        Perda Térmica Específica: {} W/m
+        Potência Total Perdida: {} kW
+        """.format(
+            self.resultados['system']['T_fbh'],
+            self.resultados['system']['T_wh'],
+            self.resultados['system']['T_fpso'],
+            self.resultados['system']['delta_T_total'],
+            self.resultados['system']['delta_T_well'],
+            self.resultados['system']['delta_T_flowline'],
+            self.resultados['flowline']['q_prime'],
+            self.resultados['flowline']['Q_total']
+        )
+    
+    def gerar_secao_analise(self):
+        """Gera seção de análise do relatório"""
+        margem = self.resultados['system']['T_fpso'] - 45
+        
+        if margem > 15:
+            status = "ADEQUADO"
+            risco = "BAIXO"
+        elif margem > 5:
+            status = "MARGINAL"
+            risco = "MODERADO"
+        else:
+            status = "INADEQUADO"
+            risco = "ALTO"
+        
+        return """
+        3. ANÁLISE DE RISCOS
+        -------------------
+        Temperatura de Referência:
+        • Hidratos: 20 °C
+        • Parafina (WAT): 45 °C
+        
+        Margens de Segurança:
+        • Sobre WAT: {:.1f} °C
+        • Sobre Hidratos: {:.1f} °C
+        
+        Status do Sistema: {}
+        Nível de Risco: {}
+        """.format(
+            margem,
+            self.resultados['system']['T_fpso'] - 20,
+            status,
+            risco
+        )
+    
+    def gerar_secao_conclusoes(self):
+        """Gera seção de conclusões do relatório"""
+        margem = self.resultados['system']['T_fpso'] - 45
+        
+        if margem > 15:
+            return """
+        4. CONCLUSÕES E RECOMENDAÇÕES
+        -----------------------------
+        CONCLUSÃO:
+        O sistema térmico está adequadamente dimensionado e opera com
+        margem de segurança suficiente.
+        
+        RECOMENDAÇÕES:
+        1. Manter configuração atual do isolamento
+        2. Continuar monitoramento padrão da temperatura
+        3. Realizar manutenção preventiva conforme programação
+        """
+        elif margem > 5:
+            return """
+        4. CONCLUSÕES E RECOMENDAÇÕES
+        -----------------------------
+        CONCLUSÃO:
+        O sistema opera próximo aos limites de segurança.
+        Requer atenção especial durante condições operacionais críticas.
+        
+        RECOMENDAÇÕES:
+        1. Aumentar frequência de monitoramento da temperatura
+        2. Considerar aumento da espessura do isolamento em 25%
+        3. Desenvolver procedimento para startups após longas paradas
+        4. Avaliar economicamente sistema de traçagem térmica
+        """
+        else:
+            return """
+        4. CONCLUSÕES E RECOMENDAÇÕES
+        -----------------------------
+        CONCLUSÃO:
+        O sistema térmico é INADEQUADO para as condições operacionais.
+        Risco significativo de formação de hidratos e parafina.
+        
+        RECOMENDAÇÕES IMEDIATAS:
+        1. IMPLEMENTAR SISTEMA DE TRAÇAGEM TÉRMICA
+        2. Redimensionar isolamento (aumentar espessura mínimo 50%)
+        3. Avaliar viabilidade de aquecimento ativo (hot-oil)
+        4. Revisar procedimentos operacionais críticos
+        5. Implementar monitoramento contínuo e alarmes
+        """
+    
+    def criar_grafico_principal(self, fig):
+        """Cria gráfico principal para exportação"""
+        ax = fig.add_subplot(111)
+        
+        # Dados
+        labels = ['FBH', 'Wellhead', 'FPSO']
+        temps = [self.resultados['system']['T_fbh'], 
+                self.resultados['system']['T_wh'], 
+                self.resultados['system']['T_fpso']]
+        
+        bars = ax.bar(labels, temps, color=['red', 'orange', 'green'])
+        ax.set_ylabel('Temperatura (°C)', fontweight='bold')
+        ax.set_title('Perfil de Temperatura - Sistema Completo', fontweight='bold')
+        ax.axhline(y=45, color='orange', linestyle='--', label='WAT (45°C)')
+        ax.axhline(y=20, color='red', linestyle='--', label='Hidratos (20°C)')
+        ax.legend()
+        ax.grid(True, alpha=0.3)
+        
+        # Valores nas barras
+        for bar, temp in zip(bars, temps):
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height + 1,
+                   f'{temp}°C', ha='center', va='bottom', fontweight='bold')
+    
+    def limpar_dados(self):
+        """Limpa todos os dados da interface"""
+        resposta = messagebox.askyesno("Confirmar", "Deseja realmente limpar todos os dados?")
+        
+        if resposta:
+            # Limpar variáveis do poço
+            for var in self.var_poço.values():
+                var.set("0.0")
+            
+            # Limpar variáveis da flowline
+            for var in self.var_flowline.values():
+                var.set("0.0")
+            
+            # Resetar checkboxes
+            self.var_com_isolamento.set(True)
+            self.var_com_jacket.set(True)
+            
+            # Resetar condições
+            self.var_tipo_poço.set("offshore")
+            self.var_regiao.set("tropical")
+            self.var_tipo_fluido.set("multifásico")
+            self.var_profundidade_agua.set("1500")
+            
+            # Limpar resultados
+            for widget in self.scroll_resultados.winfo_children():
+                widget.destroy()
+            
+            for widget in self.frame_graficos.winfo_children():
+                widget.destroy()
+            
+            for widget in self.scroll_tabelas.winfo_children():
+                widget.destroy()
+            
+            for widget in self.scroll_relatorio.winfo_children():
+                widget.destroy()
+            
+            messagebox.showinfo("Limpeza", "Todos os dados foram limpos!")
+
+# ============================================================================
+# EXECUÇÃO PRINCIPAL
+# ============================================================================
+
+def main():
+    """Função principal da aplicação"""
+    app = AppTérmica()
+    app.mainloop()
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,616 @@
+---
+# ============================================================================
+# GEESP Application Deployment Configuration
+# Manifest for deploying GEESP-Angola to Kubernetes with auto-scaling
+# ============================================================================
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: geesp-angola
+  labels:
+    app.kubernetes.io/name: geesp
+    app.kubernetes.io/component: platform
+
+---
+# ============================================================================
+# ConfigMap: Application Configuration
+# ============================================================================
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: geesp-config
+  namespace: geesp-angola
+data:
+  MAP_RESOLUTION: "30"
+  CACHE_TTL_SECONDS: "3600"
+  GEE_TIMEOUT_SECONDS: "300"
+  LOG_LEVEL: "INFO"
+  DATABASE_POOL_SIZE: "10"
+  API_MAX_WORKERS: "4"
+
+---
+# ============================================================================
+# Secret: Database Credentials
+# ============================================================================
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: geesp-db-secret
+  namespace: geesp-angola
+type: Opaque
+data:
+  # Note: These are base64 encoded placeholders. Replace with actual values.
+  # To encode: echo -n "value" | base64
+  db_host: Z2Vlc3AtcG9zdGdyZXM= # geesp-postgres
+  db_port: NTQzMg== # 5432
+  db_name: Z2Vlc3BfaW1vbg== # geesp_imon
+  db_user: Z2Vlc3BfYWRtaW4= # geesp_admin
+  db_password: Y2hhbmdlLW1lLXNlY3VyZQ== # change-me-secure
+
+---
+# ============================================================================
+# Service Account
+# ============================================================================
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: geesp-app
+  namespace: geesp-angola
+  labels:
+    app: geesp
+
+---
+# ============================================================================
+# ClusterRole: Metrics reading for HPA
+# ============================================================================
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: geesp-metrics-reader
+rules:
+- apiGroups:
+  - custom.metrics.k8s.io
+  resources: ["*"]
+  verbs: ["*"]
+- apiGroups:
+  - external.metrics.k8s.io
+  resources: ["*"]
+  verbs: ["*"]
+
+---
+# ============================================================================
+# ClusterRoleBinding
+# ============================================================================
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: geesp-metrics-reader
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: geesp-metrics-reader
+subjects:
+- kind: ServiceAccount
+  name: geesp-app
+  namespace: geesp-angola
+
+---
+# ============================================================================
+# Deployment: GEESP API Server
+# ============================================================================
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geesp-api
+  namespace: geesp-angola
+  labels:
+    app: geesp
+    component: api
+    version: v1.0
+spec:
+  replicas: 2  # Initial replicas (will scale via HPA)
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: geesp
+      component: api
+  template:
+    metadata:
+      labels:
+        app: geesp
+        component: api
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: geesp-app
+      
+      # Pod disruption budget for safety
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - geesp
+                - key: component
+                  operator: In
+                  values:
+                  - api
+              topologyKey: kubernetes.io/hostname
+      
+      containers:
+      - name: geesp-api
+        image: geesp-angola:v1.0
+        imagePullPolicy: IfNotPresent
+        
+        # Port configuration
+        ports:
+        - name: http
+          containerPort: 8000
+          protocol: TCP
+        - name: metrics
+          containerPort: 8001
+          protocol: TCP
+        
+        # Environment Variables
+        env:
+        - name: APP_ENV
+          value: "production"
+        - name: LOG_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: geesp-config
+              key: LOG_LEVEL
+        - name: DATABASE_HOST
+          valueFrom:
+            secretKeyRef:
+              name: geesp-db-secret
+              key: db_host
+        - name: DATABASE_PORT
+          valueFrom:
+            secretKeyRef:
+              name: geesp-db-secret
+              key: db_port
+        - name: DATABASE_NAME
+          valueFrom:
+            secretKeyRef:
+              name: geesp-db-secret
+              key: db_name
+        - name: DATABASE_USER
+          valueFrom:
+            secretKeyRef:
+              name: geesp-db-secret
+              key: db_user
+        - name: DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: geesp-db-secret
+              key: db_password
+        - name: API_WORKERS
+          valueFrom:
+            configMapKeyRef:
+              name: geesp-config
+              key: API_MAX_WORKERS
+        
+        # Resource requests and limits
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+        
+        # Liveness probe
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: http
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        
+        # Readiness probe
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: http
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 2
+        
+        # Volume mounts
+        volumeMounts:
+        - name: config
+          mountPath: /app/config
+          readOnly: true
+        - name: logs
+          mountPath: /app/logs
+        - name: data
+          mountPath: /app/data
+      
+      # Volumes
+      volumes:
+      - name: config
+        configMap:
+          name: geesp-config
+      - name: logs
+        emptyDir: {}
+      - name: data
+        emptyDir: {}
+      
+      # Termination grace period for graceful shutdown
+      terminationGracePeriodSeconds: 30
+
+---
+# ============================================================================
+# Service: API Service
+# ============================================================================
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: geesp-api
+  namespace: geesp-angola
+  labels:
+    app: geesp
+    component: api
+spec:
+  type: ClusterIP
+  selector:
+    app: geesp
+    component: api
+  ports:
+  - name: http
+    port: 80
+    targetPort: http
+    protocol: TCP
+  - name: metrics
+    port: 8001
+    targetPort: metrics
+    protocol: TCP
+  sessionAffinity: None
+
+---
+# ============================================================================
+# Horizontal Pod Autoscaler: CPU-based Scaling
+# ============================================================================
+
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: geesp-api-hpa-cpu
+  namespace: geesp-angola
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: geesp-api
+  
+  # Scaling range
+  minReplicas: 2
+  maxReplicas: 10
+  
+  # CPU-based scaling
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  
+  # Memory-based scaling (secondary)
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  
+  # Scaling behavior
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 50
+        periodSeconds: 60
+      - type: Pods
+        value: 1
+        periodSeconds: 60
+      selectPolicy: Min
+    scaleUp:
+      stabilizationWindowSeconds: 0
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 15
+      - type: Pods
+        value: 2
+        periodSeconds: 15
+      selectPolicy: Max
+
+---
+# ============================================================================
+# Horizontal Pod Autoscaler: Request-based Scaling (Custom Metrics)
+# ============================================================================
+
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: geesp-api-hpa-requests
+  namespace: geesp-angola
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: geesp-api
+  
+  # Scaling range
+  minReplicas: 2
+  maxReplicas: 10
+  
+  # Request rate-based scaling (requires Prometheus)
+  metrics:
+  - type: Pods
+    pods:
+      metric:
+        name: http_requests_per_second
+      target:
+        type: AverageValue
+        averageValue: "100"  # 100 requests/sec per pod
+  
+  # Scaling behavior
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 50
+        periodSeconds: 60
+    scaleUp:
+      stabilizationWindowSeconds: 30
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 30
+
+---
+# ============================================================================
+# Vertical Pod Autoscaler (optional - for resource recommendations)
+# ============================================================================
+
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: geesp-api-vpa
+  namespace: geesp-angola
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: geesp-api
+  updatePolicy:
+    updateMode: "Auto"  # Can be "Off", "Initial", "Recreate", or "Auto"
+  resourcePolicy:
+    containerPolicies:
+    - containerName: geesp-api
+      minAllowed:
+        cpu: 200m
+        memory: 256Mi
+      maxAllowed:
+        cpu: 2
+        memory: 2Gi
+
+---
+# ============================================================================
+# PodDisruptionBudget: Availability guarantee
+# ============================================================================
+
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: geesp-api-pdb
+  namespace: geesp-angola
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: geesp
+      component: api
+
+---
+# ============================================================================
+# Ingress: External access configuration
+# ============================================================================
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: geesp-ingress
+  namespace: geesp-angola
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  tls:
+  - hosts:
+    - geesp-angola.example.com
+    secretName: geesp-tls-cert
+  rules:
+  - host: geesp-angola.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: geesp-api
+            port:
+              name: http
+
+---
+# ============================================================================
+# NetworkPolicy: Security - restrict traffic
+# ============================================================================
+
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: geesp-api-network-policy
+  namespace: geesp-angola
+spec:
+  podSelector:
+    matchLabels:
+      app: geesp
+      component: api
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: ingress-nginx
+    ports:
+    - protocol: TCP
+      port: 8000
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+    ports:
+    - protocol: TCP
+      port: 8001
+  egress:
+  - to:
+    - namespaceSelector: {}
+    ports:
+    - protocol: TCP
+      port: 5432  # Database
+    - protocol: TCP
+      port: 443   # HTTPS outbound
+    - protocol: UDP
+      port: 53    # DNS
+
+---
+# ============================================================================
+# ServiceMonitor: Prometheus metrics scraping
+# ============================================================================
+
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: geesp-api
+  namespace: geesp-angola
+  labels:
+    app: geesp
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: geesp
+      component: api
+  endpoints:
+  - port: metrics
+    interval: 30s
+    path: /metrics
+
+---
+# ============================================================================
+# PrometheusRule: Alerting rules
+# ============================================================================
+
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: geesp-api-alerts
+  namespace: geesp-angola
+spec:
+  groups:
+  - name: geesp.rules
+    interval: 30s
+    rules:
+    - alert: GEESPHighErrorRate
+      expr: |
+        (sum(rate(http_requests_total{job="geesp-api",status=~"5.."}[5m])) /
+         sum(rate(http_requests_total{job="geesp-api"}[5m]))) > 0.05
+      for: 5m
+      annotations:
+        summary: "High error rate detected in GEESP API"
+        description: "Error rate is above 5% for the last 5 minutes"
+    
+    - alert: GEESPHighResponseTime
+      expr: |
+        histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job="geesp-api"}[5m])) > 1.0
+      for: 5m
+      annotations:
+        summary: "High p95 response time in GEESP API"
+        description: "95th percentile response time is above 1 second"
+    
+    - alert: GEESPPodCrashing
+      expr: |
+        increase(kube_pod_container_status_restarts_total{pod=~"geesp-api-.*"}[15m]) > 3
+      annotations:
+        summary: "GEESP API pod is crashing"
+        description: "Pod has restarted more than 3 times in 15 minutes"
+
+---
+# ============================================================================
+# DEPLOYMENT INSTRUCTIONS
+# ============================================================================
+# 
+# 1. Prerequisites:
+#    - Kubernetes cluster (v1.19+)
+#    - Metrics Server installed: kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest
+#    - Prometheus (for custom metrics and alerting)
+#    - Ingress controller (nginx recommended)
+#    - Cert-manager (for TLS certificates)
+#
+# 2. Deploy:
+#    kubectl apply -f geesp-deployment.yaml
+#
+# 3. Verify:
+#    kubectl get all -n geesp-angola
+#    kubectl describe hpa geesp-api-hpa-cpu -n geesp-angola
+#    kubectl logs -f deployment/geesp-api -n geesp-angola
+#
+# 4. Monitor scaling:
+#    kubectl get hpa -n geesp-angola -w
+#    kubectl describe nodes  # Check resource allocation
+#
+# 5. Update database credentials:
+#    kubectl create secret generic geesp-db-secret \
+#      --from-literal=db_host=... \
+#      --from-literal=db_port=5432 \
+#      --from-literal=db_name=... \
+#      --from-literal=db_user=... \
+#      --from-literal=db_password=... \
+#      -n geesp-angola
+#
+# 6. Generate TLS certificate:
+#    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.1/cert-manager.yaml
+#
+# ============================================================================

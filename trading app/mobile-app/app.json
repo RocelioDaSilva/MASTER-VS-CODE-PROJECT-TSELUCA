@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Buscador de Ofertas",
+    "slug": "buscador-ofertas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true
+    },
+    "android": {
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "package": "com.tradingapp.buscador"
+    },
+    "web": {
+    },
+    "cli": {
+      "appVersionSource": "dynamic"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2b766066-8121-4f5e-9988-d6b11d1c0c9e"
+      }
+    }
+  }
+}
