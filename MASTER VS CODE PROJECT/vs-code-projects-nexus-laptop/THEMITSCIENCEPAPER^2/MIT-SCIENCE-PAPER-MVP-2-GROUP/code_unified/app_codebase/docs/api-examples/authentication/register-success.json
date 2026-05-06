@@ -1,0 +1,57 @@
+{
+  "endpoint": "POST /api/auth/register",
+  "description": "Register a new user account",
+  "method": "POST",
+  "url": "http://localhost:3000/api/auth/register",
+  "summary": "Create new user with email and password",
+  
+  "request": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "email": "newuser@example.com",
+      "password": "SecurePass123!",
+      "confirmPassword": "SecurePass123!"
+    }
+  },
+  
+  "response": {
+    "status": 201,
+    "statusText": "Created",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": true,
+      "message": "User registered successfully",
+      "data": {
+        "user": {
+          "id": "550e8400-e29b-41d4-a716-446655440000",
+          "email": "newuser@example.com",
+          "created_at": "2026-03-06T10:30:00Z"
+        },
+        "tokens": {
+          "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImVtYWlsIjoibmV3dXNlckBleGFtcGxlLmNvbSIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjQ2NTQxNTAwfQ.signature",
+          "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjUxMzI0NjAwfQ.signature",
+          "accessTokenExpiry": 900,
+          "refreshTokenExpiry": 604800
+        }
+      }
+    }
+  },
+  
+  "notes": [
+    "Password must be at least 8 characters",
+    "Password must include: uppercase, lowercase, number, special character",
+    "Email must be unique (no duplicates)",
+    "Access token valid for 15 minutes",
+    "Refresh token valid for 7 days",
+    "Use accessToken in Authorization header: Bearer <token>"
+  ],
+  
+  "examples": {
+    "request": "curl -X POST http://localhost:3000/api/auth/register -H 'Content-Type: application/json' -d '{\"email\":\"newuser@example.com\",\"password\":\"SecurePass123!\",\"confirmPassword\":\"SecurePass123!\"}'",
+    "javascript": "fetch('http://localhost:3000/api/auth/register', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({email: 'newuser@example.com', password: 'SecurePass123!', confirmPassword: 'SecurePass123!'}) }).then(r => r.json()).then(console.log)"
+  }
+}

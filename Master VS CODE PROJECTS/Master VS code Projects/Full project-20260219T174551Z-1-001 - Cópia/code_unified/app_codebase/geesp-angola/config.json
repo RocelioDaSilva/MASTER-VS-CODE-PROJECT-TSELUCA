@@ -1,0 +1,329 @@
+{
+  "project_name": "GEESP-Angola",
+  "description": "Geospatial Energy for Equity and Solar Planning - Angola",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Rocélio Da Silva",
+      "institution": "ISPTEC",
+      "role": "Project Lead"
+    },
+    {
+      "name": "Alexandre Dos Santos",
+      "institution": "ISPTEC",
+      "role": "GEE & Backend Development"
+    },
+    {
+      "name": "Delfina Mpanka",
+      "institution": "ISPTEC",
+      "role": "Data & Validation"
+    }
+  ],
+  "study_area": {
+    "name": "Huíla Province",
+    "country": "Angola",
+    "bounds": [14.0, -18.5, 15.5, -17.0],
+    "area_km2": 34000,
+    "population": 270000,
+    "crs": "EPSG:32733"
+  },
+  "data_sources": {
+    "solar_radiation": {
+      "name": "NASA POWER",
+      "bands": ["ALLSKY_KT", "ALLSKY_SFC_SW_DWN"],
+      "resolution": "0.5 degrees",
+      "data_type": "daily_averages"
+    },
+    "vegetation": {
+      "name": "Sentinel-2",
+      "bands": ["B2", "B3", "B4", "B8"],
+      "indices": ["NDVI", "EVI"],
+      "resolution": "10 meters",
+      "cloud_threshold": 20
+    },
+    "nighttime_lights": {
+      "name": "VIIRS Nighttime Lights",
+      "band": "avg_rad",
+      "resolution": "375 meters",
+      "temporal_coverage": "2012-present"
+    },
+    "elevation": {
+      "name": "SRTM 30m",
+      "derived": ["slope", "aspect"],
+      "resolution": "30 meters"
+    },
+    "landcover": {
+      "name": "ESA WorldCover 10m",
+      "resolution": "10 meters",
+      "classes": [10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100]
+    },
+    "census": {
+      "name": "INE Angola",
+      "year": 2014,
+      "note": "Outdated - needs 2024 update"
+    }
+  },
+  "mcda_criteria": {
+    "solar_radiation": {
+      "name": "Irradiação Solar",
+      "weight": 25,
+      "unit": "kWh/m²/dia",
+      "direction": "higher_is_better",
+      "normalization": "min_max"
+    },
+    "demand_lights": {
+      "name": "Demanda (Luzes Noturnas)",
+      "weight": 25,
+      "unit": "nanoWatts/cm²/sr",
+      "direction": "higher_is_better",
+      "normalization": "min_max"
+    },
+    "distance_grid": {
+      "name": "Acesso (Distância à Rede)",
+      "weight": 20,
+      "unit": "km",
+      "direction": "lower_is_better",
+      "normalization": "min_max_inverted"
+    },
+    "infrastructure": {
+      "name": "Infraestrutura",
+      "weight": 15,
+      "unit": "proximity_index",
+      "direction": "higher_is_better",
+      "normalization": "min_max"
+    },
+    "landcover": {
+      "name": "Uso do Solo",
+      "weight": 15,
+      "unit": "suitability_index",
+      "direction": "higher_is_better",
+      "normalization": "min_max"
+    }
+  },
+  "map_generation": {
+    "output_shape": [280, 300],
+    "output_shape_description": "[height_pixels, width_pixels]",
+    "map_formats": ["npy", "geotiff", "asc"],
+    "default_format": "npy",
+    "output_directory": "data/generated_maps",
+    "crs": "EPSG:32633"
+  },
+  "mcda": {
+    "default_weights": {
+      "solar_irradiance": 0.25,
+      "population_density": 0.25,
+      "grid_distance": 0.20,
+      "slope": 0.15,
+      "vegetation_ndvi": 0.15
+    },
+    "weights_sum_tolerance": 0.01,
+    "normalization_method": "minmax",
+    "classification_thresholds": {
+      "high_threshold": 0.70,
+      "medium_threshold": 0.40,
+      "low_threshold": 0.0
+    }
+  },
+  "solar_data_ranges": {
+    "irradiance": {
+      "unit": "kWh/m²/day",
+      "min": 0,
+      "max": 10,
+      "expected_range": [4.5, 7.5],
+      "warning_threshold": 3.0
+    },
+    "population_density": {
+      "unit": "people/km²",
+      "min": 0,
+      "max": 10000,
+      "expected_range": [50, 5000],
+      "warning_threshold": 0
+    },
+    "ndvi_vegetation": {
+      "unit": "dimensionless",
+      "min": -1.0,
+      "max": 1.0,
+      "expected_range": [-0.3, 0.7],
+      "description": "Normalized Difference Vegetation Index"
+    },
+    "distance_to_grid": {
+      "unit": "km",
+      "min": 0,
+      "max": 500,
+      "expected_range": [0, 50],
+      "warning_threshold": 100
+    },
+    "terrain_slope": {
+      "unit": "degrees",
+      "min": 0,
+      "max": 90,
+      "expected_range": [0, 30],
+      "warning_threshold": 45
+    }
+  },
+  "ahp_parameters": {
+    "method": "eigenvector",
+    "consistency_threshold": 0.10,
+    "scale": "saaty_1_9",
+    "number_criteria": 5
+  },
+  "aptitude_classification": {
+    "high": {
+      "label": "Alta",
+      "range": [0.70, 1.0],
+      "priority": "Imediata"
+    },
+    "medium": {
+      "label": "Média",
+      "range": [0.40, 0.70],
+      "priority": "Curto prazo"
+    },
+    "low": {
+      "label": "Baixa",
+      "range": [0.0, 0.40],
+      "priority": "Futuro"
+    }
+  },
+  "sensitivity_analysis": {
+    "method": "one_way",
+    "weight_variation": [-0.2, -0.1, 0.0, 0.1, 0.2],
+    "threshold_for_robustness": 0.08,
+    "criteria_to_test": "all"
+  },
+  "technology_recommendations": {
+    "pv_fixed_battery": {
+      "name": "PV Fixo + Baterias (3h)",
+      "suitable_zones": ["A", "B", "C"],
+      "capex_usd_kw": 880,
+      "lcoe_usd_mwh": 180,
+      "lcoe_usd_kwh": 0.18,
+      "efficiency": 0.18,
+      "lifespan_years": 25,
+      "warranty_years": 10
+    },
+    "pv_tracker": {
+      "name": "PV com Rastreador de Eixo Único",
+      "suitable_zones": ["B"],
+      "capex_usd_kw": 920,
+      "lcoe_usd_mwh": 250,
+      "lcoe_usd_kwh": 0.25,
+      "efficiency": 0.22,
+      "lifespan_years": 25,
+      "warranty_years": 10
+    },
+    "hybrid_solar_diesel": {
+      "name": "Híbrido Solar + Diesel + Baterias",
+      "suitable_zones": ["C"],
+      "capex_usd_kw": 1170,
+      "lcoe_usd_mwh": 300,
+      "lcoe_usd_kwh": 0.30,
+      "efficiency": 0.20,
+      "lifespan_years": 20,
+      "warranty_years": 5
+    }
+  },
+  "priority_zones": [
+    {
+      "id": "A",
+      "name": "Cacula",
+      "area_km2": 850,
+      "population": 45000,
+      "aptitude_mean": 0.83,
+      "irradiance_moy": 6.1,
+      "priority": "Crítica",
+      "reason": "Isolamento da rede + alta aptidão"
+    },
+    {
+      "id": "B",
+      "name": "Humpata",
+      "area_km2": 620,
+      "population": 52000,
+      "aptitude_mean": 0.79,
+      "irradiance_moy": 6.3,
+      "priority": "Alta",
+      "reason": "Irradiação máxima + acesso rodoviário"
+    },
+    {
+      "id": "C",
+      "name": "Quilengues",
+      "area_km2": 720,
+      "population": 38000,
+      "aptitude_mean": 0.76,
+      "irradiance_moy": 5.9,
+      "priority": "Média",
+      "reason": "Alta densidade populacional"
+    }
+  ],
+  "financial_parameters": {
+    "discount_rate_percent": 8,
+    "project_lifetime_years": 25,
+    "inflation_rate_percent": 2.5,
+    "financing_structure": {
+      "public_subsidy_percent": 40,
+      "private_investment_percent": 35,
+      "community_contribution_percent": 25
+    },
+    "currency": "USD"
+  },
+  "lcoe": {
+    "standard_parameters": {
+      "default_capacity_mw": 1.0,
+      "default_discount_rate_percent": 8.0,
+      "default_project_lifetime_years": 25,
+      "default_warranty_years": 10
+    },
+    "financial_assumptions": {
+      "wacc_percent": 8.0,
+      "inflation_rate_percent": 3.5,
+      "country_risk_premium_percent": 4.5,
+      "currency": "USD"
+    },
+    "technologies": {
+      "Solar_PV": {
+        "full_name": "Photovoltaic Solar",
+        "capex_per_mw": 1200000,
+        "opex_fixed_per_mw": 14000,
+        "opex_variable_per_mwh": 3,
+        "efficiency": 0.18,
+        "degradation_rate": 0.005
+      },
+      "Solar_CSP": {
+        "full_name": "Concentrated Solar Power",
+        "capex_per_mw": 4500000,
+        "opex_fixed_per_mw": 68000,
+        "opex_variable_per_mwh": 15,
+        "efficiency": 0.25
+      },
+      "Solar_Diesel_Hybrid": {
+        "full_name": "Hybrid Solar-Diesel",
+        "capex_per_mw": 1800000,
+        "opex_fixed_per_mw": 25000,
+        "opex_variable_per_mwh": 80,
+        "efficiency": 0.35
+      }
+    }
+  },
+  "output_settings": {
+    "export_format": ["GeoTIFF", "Shapefile", "PDF", "CSV"],
+    "map_resolution_meters": 30,
+    "precision_decimals": 2,
+    "crs_output": "EPSG:32733"
+  },
+  "validation": {
+    "field_campaigns": {
+      "zone_a_dates": "2024-Q3",
+      "zone_b_dates": "2024-Q4",
+      "zone_c_dates": "2025-Q1"
+    },
+    "accuracy_target_percent": 85,
+    "cross_validation_method": "k_fold",
+    "k_folds": 5
+  },
+  "documentation": {
+    "methodology": "docs/METODOLOGIA.md",
+    "installation": "docs/INSTALL.md",
+    "usage": "docs/USAGE.md",
+    "api_reference": "docs/API.md",
+    "paper_reference": "../writing/SOL.tex"
+  }
+}

@@ -1,0 +1,36 @@
+[01:25:18] 
+[01:25:18] ═══════════════════════════════════════════════════════
+[01:25:18] 🎯 ANPG - EXTRAÇÃO DENTRO DO IFRAME (Power BI)
+[01:25:18] ═══════════════════════════════════════════════════════
+[01:25:18] 
+[01:25:18] [1/6] 🚀 Iniciando navegador...
+[01:25:20] ✅ Navegador pronto
+[01:25:20] [2/6] 📍 Abrindo https://anpg.co.ao/conteudo-local/...
+[01:25:53] ✅ Página carregada (Status: 200)
+[01:25:53] [3/6] 🔍 Procurando iframe do Power BI...
+[01:25:53] ✅ Iframe detectado
+[01:25:53]    Total de frames na página: 4
+[01:25:53]    Frame 0: https://anpg.co.ao/conteudo-local/
+[01:25:53]    Frame 1: https://app.powerbi.com/view?r=eyJrIjoiYjQ1ZmUyNjQtZDJhYy00MDM4LTk1OTctZmYzN2M1MzEzY2U0IiwidCI6Ijc4YTBlMjI5LTQ0NjMtNDBjOC04NzJhLWI0OTQyYzNjMzEwZCIsImMiOjl9
+[01:25:53]    Frame 2: https://forms.zohopublic.com/anpg/form/CLRegistoFornecedor/formperma/PaYLej_d7dGFaxmudrISHac0UX2LAkar2h7BOarl7J0
+[01:25:53]    Frame 3: https://www.youtube.com/embed/3MGgZKoeKkI?controls=1&rel=0&playsinline=0&cc_load_policy=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fanpg.co.ao&widgetid=1&forigin=https%3A%2F%2Fanpg.co.ao%2Fconteudo-local%2F&aoriginsup=1&vf=3&google_abuse=GOOGLE_ABUSE_EXEMPTION%3DID%3D07ba8f455c239301:TM%3D1771979138:C%3D%3E:IP%3D102.203.241.23-:S%3DITXQ-UYGU82io17VSb3AlA%3B+path%3D/%3B+domain%3Dgoogle.com%3B+expires%3DWed,+25-Feb-2026+03:25:38+GMT
+[01:25:53] ✅ Frame do Power BI encontrado: https://app.powerbi.com/view?r=eyJrIjoiYjQ1ZmUyNjQtZDJhYy00MDM4LTk1OTctZmYzN2M1MzEzY2U0IiwidCI6Ijc4Y
+[01:25:53] ✅ Conteúdo do iframe: 1203 caracteres
+[01:25:53] [4/6] ⏳ Aguardando conteúdo dentro do iframe...
+[01:25:53] ✅ Conteúdo do Power BI detectado
+[01:25:53]    Aguardando 5 segundos para renderização completa...
+[01:25:58] [5/6] 🔄 Expandindo categorias NO IFRAME...
+[01:25:58]    Tentativa 1/3...
+[01:25:58]    ✓ 1 clicks executados
+[01:26:01]    • Itens ainda colapsados: 0
+[01:26:01] ✅ Todas as categorias expandidas!
+[01:26:01] ✅ Expansão concluída (1 clicks total)
+[01:26:01] [5.2/6] 👆 Right-clicks DENTRO do iframe...
+[01:26:02] ✅ 4 right-clicks executados
+[01:26:04] [5.3/6] 📜 Scrollando para carregar mais itens...
+[01:26:09] ✅ Scroll concluído
+[01:26:09] [5.5/6] 📥 Extraindo nomes do IFRAME...
+[01:26:09] ✅ 2 itens extraídos do iframe
+[01:26:09] [6/6] 💾 Salvando resultados...
+[01:26:09] ✅ CSV: ANPG_IFRAME_EXTRACTED_2026-02-25_2.csv (2 empresas)
+[01:26:09] ✅ JSON: ANPG_IFRAME_EXTRACTED_2026-02-25_2.json

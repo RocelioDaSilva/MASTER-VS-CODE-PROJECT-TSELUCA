@@ -1,0 +1,16 @@
+SOL.TEX REORGANIZATION ANALYSIS
+================================================================================
+Timestamp: 2026-03-05T23:35:11.331048
+
+Total file lines: 5848
+
+Sections Found:
+  Introdução           at line    89
+  GEESP                at line   107
+  Tipos                at line   166
+  Metodologia          at line   489
+  Resultados           at line   652
+  Discussão            at line   776
+  Padrões              at line  1068
+  Logística            at line  1169
+  Conclusão            at line  2743

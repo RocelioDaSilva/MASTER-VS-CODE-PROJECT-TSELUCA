@@ -1,0 +1,421 @@
+# Detailed File-by-File Audit
+
+- Repository root: `C:\Users\PCGAME\Desktop\story&universes\chain-weapon-story`
+- Total files scanned: 5883
+
+## Summary by category
+
+- **other**: 4227 files
+- **smart-env**: 965 files
+- **story**: 374 files
+- **characters**: 121 files
+- **world**: 78 files
+- **writingtutorials**: 46 files
+- **obsidian**: 44 files
+- **arcs**: 19 files
+- **assets**: 9 files
+
+## High-priority findings
+
+- **Filename duplicates**: 1200 basenames found in multiple locations. Examples:
+  - `.gitignore` -> 3 files
+    - .gitignore
+    - .venv/.gitignore
+    - finished-manuscript/.venv/.gitignore
+  - `manuscript-review.md` -> 2 files
+    - manuscript-review.md
+    - friend-review-package/manuscript-review.md
+  - `manuscript-review.txt` -> 2 files
+    - manuscript-review.txt
+    - friend-review-package/manuscript-review.txt
+  - `readme.md` -> 21 files
+    - README.md
+    - assets/README.md
+    - assets/svg/headers/README.md
+    - documentation/README.md
+    - documentation/archive/analysis/README.md
+    - documentation/archive/historical/README.md
+  - `main.js` -> 10 files
+    - .obsidian/plugins/buttons/main.js
+    - .obsidian/plugins/custom-classes/main.js
+    - .obsidian/plugins/dataview/main.js
+    - .obsidian/plugins/githobs/main.js
+    - .obsidian/plugins/image-converter/main.js
+    - .obsidian/plugins/novel-word-count/main.js
+  - `manifest.json` -> 10 files
+    - .obsidian/plugins/buttons/manifest.json
+    - .obsidian/plugins/custom-classes/manifest.json
+    - .obsidian/plugins/dataview/manifest.json
+    - .obsidian/plugins/githobs/manifest.json
+    - .obsidian/plugins/image-converter/manifest.json
+    - .obsidian/plugins/novel-word-count/manifest.json
+  - `styles.css` -> 10 files
+    - .obsidian/plugins/buttons/styles.css
+    - .obsidian/plugins/custom-classes/styles.css
+    - .obsidian/plugins/dataview/styles.css
+    - .obsidian/plugins/githobs/styles.css
+    - .obsidian/plugins/image-converter/styles.css
+    - .obsidian/plugins/novel-word-count/styles.css
+  - `data.json` -> 5 files
+    - .obsidian/plugins/githobs/data.json
+    - .obsidian/plugins/novel-word-count/data.json
+    - .obsidian/plugins/obsidian-excalidraw-plugin/data.json
+    - .obsidian/plugins/smart-connections/data.json
+    - .obsidian/plugins/table-editor-obsidian/data.json
+  - `pyvenv.cfg` -> 2 files
+    - .venv/pyvenv.cfg
+    - finished-manuscript/.venv/pyvenv.cfg
+  - `_cffi_backend.cp314-win_amd64.pyd` -> 2 files
+    - .venv/Lib/site-packages/_cffi_backend.cp314-win_amd64.pyd
+    - finished-manuscript/.venv/Lib/site-packages/_cffi_backend.cp314-win_amd64.pyd
+  - `constants.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/constants.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/constants.py
+  - `context.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/context.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/context.py
+  - `ffi.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/ffi.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/ffi.py
+  - `fonts.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/fonts.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/fonts.py
+  - `matrix.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/matrix.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/matrix.py
+  - `patterns.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/patterns.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/patterns.py
+  - `pixbuf.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/pixbuf.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/pixbuf.py
+  - `surfaces.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/surfaces.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/surfaces.py
+  - `test_cairo.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/test_cairo.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/test_cairo.py
+  - `test_numpy.py` -> 2 files
+    - .venv/Lib/site-packages/cairocffi/test_numpy.py
+    - finished-manuscript/.venv/Lib/site-packages/cairocffi/test_numpy.py
+
+- **Character name collisions**: 27 names with multiple profile files. Examples:
+  - `aisen` -> 6 files
+    - manuscript/characters/AISEN-EXPANDED.md
+    - manuscript/characters/AISEN-TAVERN-LORE-EXPANSION.md
+    - manuscript/characters/duplicates-archive/main/AISEN-CHARACTER-ENHANCEMENT.md
+    - manuscript/characters/duplicates-archive/main/AISEN.md
+    - manuscript/characters/main/aisen-korv.md
+    - manuscript/characters/TIER-PRIMARY/AISEN-profile.md
+  - `amara` -> 4 files
+    - manuscript/characters/AMARA-PROFILE-EXPANDED.md
+    - manuscript/characters/allies/amara-okafor.md
+    - manuscript/characters/main/AMARA.md
+    - manuscript/characters/TIER-SECONDARY/AMARA-OKAFOR-profile.md
+  - `artificer` -> 2 files
+    - manuscript/characters/ARTIFICER.md
+    - manuscript/characters/TIER-ENSEMBLE/ARTIFICER-profile.md
+  - `bloodheart` -> 2 files
+    - manuscript/characters/BLOODHEART.md
+    - manuscript/characters/TIER-ENSEMBLE/BLOODHEART-profile.md
+  - `caspian` -> 4 files
+    - manuscript/characters/CASPIAN-INTEGRATION-GUIDE.md
+    - manuscript/characters/CASPIAN-VANE-THE-ERASURE.md
+    - manuscript/characters/antagonists/CASPIAN-VANE.md
+    - manuscript/characters/TIER-PRIMARY/CASPIAN-VANE-profile.md
+  - `character` -> 8 files
+    - manuscript/characters/CHARACTER-BIBLE.md
+    - manuscript/characters/CHARACTER-DYNAMICS.md
+    - manuscript/characters/Character-Example.md
+    - manuscript/characters/CHARACTER-INDEX.md
+    - manuscript/characters/CHARACTER-MASTER-INDEX.md
+    - manuscript/characters/CHARACTER-VOICE-BANK.md
+  - `clone` -> 2 files
+    - manuscript/characters/CLONE-MASTER.md
+    - manuscript/characters/TIER-ENSEMBLE/CLONE-MASTER-profile.md
+  - `corvin` -> 4 files
+    - manuscript/characters/CORVIN-INTEGRATION-GUIDE.md
+    - manuscript/characters/CORVIN-THE-HOLLOW-KNIGHT.md
+    - manuscript/characters/antagonists/CORVIN-ASHFORD.md
+    - manuscript/characters/TIER-PRIMARY/CORVIN-ASHFORD-profile.md
+  - `elara` -> 4 files
+    - manuscript/characters/ELARA-PROFILE-POLITICAL-LEADER.md
+    - manuscript/characters/allies/elara-valorin.md
+    - manuscript/characters/supporting-cast/elara-father-crown-prince.md
+    - manuscript/characters/TIER-SECONDARY/ELARA-VALORIN-profile.md
+  - `hydromancer` -> 2 files
+    - manuscript/characters/HYDROMANCER.md
+    - manuscript/characters/TIER-ENSEMBLE/HYDROMANCER-profile.md
+  - `kael` -> 3 files
+    - manuscript/characters/KAEL-INTEGRATION-GUIDE.md
+    - manuscript/characters/KAEL-THE-BEAST-MASTER.md
+    - manuscript/characters/TIER-ENSEMBLE/KAEL-THE-BEAST-MASTER-profile.md
+  - `kaelen` -> 4 files
+    - manuscript/characters/KAELEN-PROFILE-EXPANDED.md
+    - manuscript/characters/allies/kaelen-blackwood.md
+    - manuscript/characters/allies/KAELEN-THORNWOOD.md
+    - manuscript/characters/TIER-SECONDARY/KAELEN-BLACKWOOD-profile.md
+  - `kairos` -> 3 files
+    - manuscript/characters/KAIROS-INTEGRATION-GUIDE.md
+    - manuscript/characters/KAIROS-QUANTUM-ANOMALY.md
+    - manuscript/characters/TIER-ENSEMBLE/KAIROS-QUANTUM-ANOMALY-profile.md
+  - `rin` -> 4 files
+    - manuscript/characters/RIN-PROFILE-EXPANDED.md
+    - manuscript/characters/allies/rin-celestara.md
+    - manuscript/characters/allies/RIN-SHIRAKAWA.md
+    - manuscript/characters/TIER-SECONDARY/RIN-CELESTARA-profile.md
+  - `ryo` -> 3 files
+    - manuscript/characters/RYO-CHARACTER-SYSTEM.md
+    - manuscript/characters/RYO-VISION-SEQUENCE.md
+    - manuscript/characters/RULE-BREAKER-GUIDES/ryo-transmigrator.md
+  - `seraphine` -> 3 files
+    - manuscript/characters/SERAPHINE-CASPIAN-PROFILES-ANTAGONISTS.md
+    - manuscript/characters/antagonists/SERAPHINE-MOROZ.md
+    - manuscript/characters/TIER-PRIMARY/SERAPHINE-MOROZ-profile.md
+  - `serath` -> 2 files
+    - manuscript/characters/SERATH-PROFILE-EXPANDED.md
+    - manuscript/characters/TIER-SECONDARY/SERATH-profile.md
+  - `warlock` -> 2 files
+    - manuscript/characters/WARLOCK.md
+    - manuscript/characters/TIER-ENSEMBLE/WARLOCK-profile.md
+  - `lysandra` -> 3 files
+    - manuscript/characters/allies/lysandra-windbreaker.md
+    - manuscript/characters/antagonists/LYSANDRA.md
+    - manuscript/characters/TIER-SECONDARY/LYSANDRA-WINDBREAKER-profile.md
+  - `lucius` -> 2 files
+    - manuscript/characters/antagonists/lucius-varro.md
+    - manuscript/characters/TIER-PRIMARY/LUCIUS-VARRO-profile.md
+  - `ser` -> 2 files
+    - manuscript/characters/antagonists/SER-CORVIN-ASHFORD.md
+    - manuscript/characters/supporting-cast/SER-LEON.md
+  - `mira` -> 3 files
+    - manuscript/characters/family/MIRA.md
+    - manuscript/characters/supporting-cast/MIRA-VOSS.md
+    - manuscript/characters/TIER-SECONDARY/MIRA-profile.md
+  - `harald` -> 2 files
+    - manuscript/characters/mentors/harald-greyson.md
+    - manuscript/characters/TIER-SECONDARY/HARALD-GREYSON-profile.md
+  - `tarovin` -> 3 files
+    - manuscript/characters/mentors/tarovin-blacksun.md
+    - manuscript/characters/mentors/TAROVIN.md
+    - manuscript/characters/TIER-SECONDARY/TAROVIN-profile.md
+  - `lira` -> 2 files
+    - manuscript/characters/side/LIRA.md
+    - manuscript/characters/TIER-ENSEMBLE/LIRA-profile.md
+  - `supporting` -> 2 files
+    - manuscript/characters/supporting-cast/SUPPORTING-CAST-MANIFEST.md
+    - manuscript/characters/supporting-cast/SUPPORTING-CAST-README.md
+  - `tier` -> 4 files
+    - manuscript/characters/supporting-cast/tier2-academy-figures.md
+    - manuscript/characters/supporting-cast/tier2-alliance-contacts.md
+    - manuscript/characters/supporting-cast/tier2-covenant-operatives.md
+    - manuscript/characters/supporting-cast/tier3-template-and-examples.md
+
+- No story front-matter age mismatches detected (where data available).
+
+## Files missing front-matter (story files)
+
+- 0 story files without YAML front-matter. Example list (first 50):
+
+## Per-file sample (first 200 characters)
+
+- .gitignore — other — 63 lines — fm:False — preview: `# Virtual environments\n.venv/\nvenv/\n\n# Python\n__pycache__/\n*.pyc\n\n# Editor dirs\n.vscode/\n.idea/\n\n# macOS\n.DS_Store\n\n# Node\nnode_modules/\n\n# Obsidian plugin build artifacts\n.obsidian/plugins/*/dist/\n.o`
+- BUILD-MANUSCRIPT-FOR-REVIEW.py — other — 247 lines — fm:False — preview: `#!/usr/bin/env python3\n"""\nBuild complete manuscript for friends' review.\nCombines all chapters in order into a single formatted document.\nOutputs as:\n  1. manuscript-review.txt (plain text, easy to s`
+- CHARACTER-APPEARANCE-INDEX.md — other — 259 lines — fm:True — preview: `---\ntitle: Character-Appearance Index\ndate: 2026-04-09\npurpose: Map each character to their first appearance, key scenes, and chapter presence\nstatus: Cross-Reference Guide\n---\n\n# Character-Appearance`
+- CONTRIBUTING.md — other — 233 lines — fm:False — preview: `# CONTRIBUTING – Standards & Workflow\n\nThis document establishes standards for creating, organizing, and editing files in the Chain Weapon Story project.\n\n---\n\n## File Organization\n\n### Story Files (P`
+- CROSS-REFERENCE-HUB.md — other — 303 lines — fm:True — preview: `---\ntitle: Cross-Reference Hub — Chain Weapon Story\ndate: 2026-04-09\npurpose: Central navigation for all interconnected documentation\nstatus: Master Index\n---\n\n# Cross-Reference Hub\n\n**Master navigati`
+- manuscript-review.md — other — 8317 lines — fm:False — preview: `# Chain Weapon Story — Complete Manuscript\n## For Friend Review\n\n**Built:** April 15, 2026 at 12:10  \n**Status:** 66 Chapters, Revised Draft (April 2026)  \n**Word Count:** ~195,000 words  \n**Revision:`
+- manuscript-review.txt — other — 8317 lines — fm:False — preview: `Chain Weapon Story — Complete Manuscript\n#For Friend Review\n\nBuilt: April 15, 2026 at 12:10  \nStatus: 66 Chapters, Revised Draft (April 2026)  \nWord Count: ~195,000 words  \nRevision: Repository-wide a`
+- MERGE-LOG.md — other — 108 lines — fm:False — preview: `﻿MERGE LOG - 04/13/2026 19:59:09\n\nMoving finished-manuscript\manuscriptbaseforchapters -> manuscript\Chapters\finals\nMoved: C:\Users\PCGAME\Desktop\story&universes\chain-weapon-story\finished-manuscr`
+- README.md — other — 138 lines — fm:False — preview: `# Chain Weapon Story – Project Hub\n\nWelcome to the Chain Weapon Story project workspace. This contains the complete manuscript and all supporting materials for **Aisen**, an ordinary tavern-keeper's s`
+- REORG-LOG.md — other — 13 lines — fm:False — preview: `# REORG LOG — 2026-04-13\n\nPerformed conservative repository reorganization:\n\n- Moved Chapters/ → manuscript/Chapters/\n- Moved Arcs/ → manuscript/Arcs/\n- Moved characters/ → manuscript/characters/\n- Mo`
+- story-overview.md — other — 647 lines — fm:False — preview: `﻿# Chain Weapon Story – Complete Overview\n\n## Core Concept\nA fantasy story about an ordinary protagonist who uses a versatile chain spear and strategic telekinesis to survive in a world filled with pr`
+- SYSTEMS-TO-DOCUMENTATION-INDEX.md — other — 352 lines — fm:True — preview: `---\ntitle: Systems-to-Documentation Index\ndate: 2026-04-09\npurpose: Map all magic systems, combat techniques, and power mechanics to documentation and example scenes\nstatus: Technical Cross-Reference\n`
+- Verify-Setup.md — other — 10 lines — fm:False — preview: `# Verify Vault Setup\n\n- [ ] Open vault in Obsidian\n- [ ] Enable Templates (core)\n- [ ] Install Dataview, Kanban, Excalidraw (if desired)\n- [ ] Enable CSS snippet `folder-colors.css` (Appearance → CSS `
+- .github/PULL_REQUEST_TEMPLATE.md — other — 74 lines — fm:True — preview: `---\nname: Chapter / Story PR Template\nabout: Use for any new or expanded chapter, B-chapter, or scene draft\ntitle: "WRITE: Ch [number] [title] — [POV] — Draft"\nlabels: ["draft", "chapter"]\n---\n\n## Sum`
+- .github/workflows/manuscript-ci.yml — other — 29 lines — fm:False — preview: `name: Manuscript CI\n\non:\n  pull_request:\n  push:\n\njobs:\n  validate:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Set up Python\n        uses: actions/setup-pyth`
+- .obsidian/app.json — obsidian — 1 lines — fm:False — preview: `{}`
+- .obsidian/appearance.json — obsidian — 6 lines — fm:False — preview: `{\n  "theme": "obsidian",\n  "enabledCssSnippets": [\n    "folder-colors"\n  ]\n}`
+- .obsidian/community-plugins.json — obsidian — 12 lines — fm:False — preview: `[\n  "obsidian-kanban",\n  "dataview",\n  "image-converter",\n  "table-editor-obsidian",\n  "novel-word-count",\n  "buttons",\n  "custom-classes",\n  "obsidian-excalidraw-plugin",\n  "smart-connections",\n  "gi`
+- .obsidian/core-plugins.json — obsidian — 33 lines — fm:False — preview: `{\n  "file-explorer": true,\n  "global-search": true,\n  "switcher": true,\n  "graph": true,\n  "backlink": true,\n  "canvas": true,\n  "outgoing-link": true,\n  "tag-pane": true,\n  "footnotes": false,\n  "pro`
+- .obsidian/graph.json — obsidian — 22 lines — fm:False — preview: `{\n  "collapse-filter": true,\n  "search": "",\n  "showTags": false,\n  "showAttachments": false,\n  "hideUnresolved": false,\n  "showOrphans": true,\n  "collapse-color-groups": true,\n  "colorGroups": [],\n  `
+- .obsidian/image-converter-image-alignments.json — obsidian — 1 lines — fm:False — preview: `{}`
+- .obsidian/templates.json — obsidian — 3 lines — fm:False — preview: `{\n  "folder": "Templates"\n}`
+- .obsidian/workspace.json — obsidian — 277 lines — fm:False — preview: `{\n  "main": {\n    "id": "9918dc9fc684d74c",\n    "type": "split",\n    "children": [\n      {\n        "id": "8dfe539ebcef00fd",\n        "type": "tabs",\n        "children": [\n          {\n            "id":`
+- .obsidian/plugins/buttons/main.js — obsidian — 5186 lines — fm:False — preview: `/*\nTHIS IS A GENERATED/BUNDLED FILE BY ESBUILD\nif you want to view the source, please visit the github repository of this plugin\n*/\n\nvar __create = Object.create;\nvar __defProp = Object.defineProperty`
+- .obsidian/plugins/buttons/manifest.json — obsidian — 10 lines — fm:False — preview: `{\n  "id": "buttons",\n  "name": "Buttons",\n  "description": "Create Buttons in your Obsidian notes to run commands, open links, and insert templates",\n  "version": "0.9.13",\n  "author": "shabegom",\n  "`
+- .obsidian/plugins/buttons/styles.css — obsidian — 624 lines — fm:False — preview: `/* @settings\n\nname: Buttons\nid: buttons-styles\nsettings:\n    - \n        id: button-background\n        title: Background\n        type: variable-themed-color\n        format: hex\n        opacity: false\n `
+- .obsidian/plugins/custom-classes/main.js — obsidian — 441 lines — fm:False — preview: `/*\nTHIS FILE IS AUTOMATICALLY GENERATED BY ESBUILD\nTo browse sources, please visit the repository of this plugin : https://github.com/LilaRest/obsidian-custom-classes\n*/\n\nvar __defProp = Object.define`
+- .obsidian/plugins/custom-classes/manifest.json — obsidian — 11 lines — fm:False — preview: `{\n	"id": "custom-classes",\n	"name": "Custom Classes",\n	"version": "2.6.1",\n	"minAppVersion": "0.15.0",\n	"description": "Custom Classes is a minimalist plugin that allows you to add custom HTML classes`
+- .obsidian/plugins/custom-classes/styles.css — obsidian — 25 lines — fm:False — preview: `/* src/styles.css */\nh2.settings-header {\n  font-size: 18px;\n  margin-left: -10px;\n  font-weight: 900;\n  margin-top: 60px;\n}\nh2.settings-header:nth-of-type(2) {\n  margin-top: 71.25px;\n}\n.cc-container `
+- .obsidian/plugins/dataview/main.js — obsidian — 20876 lines — fm:False — preview: `'use strict';\n\nvar obsidian = require('obsidian');\nvar state = require('@codemirror/state');\nvar view = require('@codemirror/view');\nvar language = require('@codemirror/language');\n\n// these aren't re`
+- .obsidian/plugins/dataview/manifest.json — obsidian — 11 lines — fm:False — preview: `{\n  "id": "dataview",\n  "name": "Dataview",\n  "version": "0.5.68",\n  "minAppVersion": "0.13.11",\n  "description": "Complex data views for the data-obsessed.",\n  "author": "Michael Brenan <blacksmithgu`
+- .obsidian/plugins/dataview/styles.css — obsidian — 141 lines — fm:False — preview: `.block-language-dataview {\n    overflow-y: auto;\n}\n\n/*****************/\n/** Table Views **/\n/*****************/\n\n/* List View Default Styling; rendered internally as a table. */\n.table-view-table {\n  `
+- .obsidian/plugins/githobs/data.json — obsidian — 5 lines — fm:False — preview: `{\n  "version": 1,\n  "token": "",\n  "repos": []\n}`
+- .obsidian/plugins/githobs/main.js — obsidian — 689 lines — fm:False — preview: `/*\nTHIS IS A GENERATED/BUNDLED FILE BY ESBUILD\nif you want to view the source, please visit the github repository of this plugin\n*/\n\nvar __defProp = Object.defineProperty;\nvar __getOwnPropDesc = Objec`
+- .obsidian/plugins/githobs/manifest.json — obsidian — 11 lines — fm:False — preview: `{\n	"id": "githobs",\n	"name": "GitHobs",\n	"version": "1.1.1",\n	"minAppVersion": "0.15.0",\n	"description": "Use Obsidian as Github issue editor!",\n	"author": "GabAlpha and MarcoG",\n	"authorUrl": "https:`
+- .obsidian/plugins/githobs/styles.css — obsidian — 8 lines — fm:False — preview: `.githobs-input {\n	width: 3.5rem;\n}\n\n.githobs-delete-repo-btn {\n	margin-bottom: 10px;\n	margin-left: auto;\n}\n`
+- .obsidian/plugins/image-converter/main.js — obsidian — 7 lines — fm:False — preview: `var Et,It,bf=Object.create,yt=Object.defineProperty,vf=Object.getOwnPropertyDescriptor,wf=Object.getOwnPropertyNames,_f=Object.getPrototypeOf,Cf=Object.prototype.hasOwnProperty,qr=(e,i)=>()=>(e&&(i=e(`
+- .obsidian/plugins/image-converter/manifest.json — obsidian — 11 lines — fm:False — preview: `{\n  "id": "image-converter",\n  "name": "Image Converter",\n  "version": "1.4.2",\n  "minAppVersion": "0.15.0",\n  "description": "Convert, compress, resize, annotate, markup, draw, crop, rotate, flip, al`
+- .obsidian/plugins/image-converter/styles.css — obsidian — 3820 lines — fm:False — preview: `/* go beyond the line width */\n/* .markdown-reading-view img,\n.markdown-source-view img,\n.internal-embed.image-embed {\n    max-width: 100%;\n    height: auto;\n} */\n\n/* Preserve image dimensions - with `
+- .obsidian/plugins/novel-word-count/data.json — obsidian — 28125 lines — fm:False — preview: `{\n  "settings": {\n    "useAdvancedFormatting": false,\n    "countType": "word",\n    "countConfig": {\n      "customSuffix": "w",\n      "$sessionCountType": "word"\n    },\n    "countType2": "none",\n    "c`
+- .obsidian/plugins/novel-word-count/main.js — obsidian — 2079 lines — fm:False — preview: `/*\nTHIS IS A GENERATED/BUNDLED FILE BY ESBUILD\nif you want to view the source, please visit the github repository of this plugin\n*/\n\nvar __defProp = Object.defineProperty;\nvar __getOwnPropDesc = Objec`
+- .obsidian/plugins/novel-word-count/manifest.json — obsidian — 11 lines — fm:False — preview: `{\n	"id": "novel-word-count",\n	"name": "Novel word count",\n	"version": "4.6.1",\n	"minAppVersion": "0.13.31",\n	"description": "Displays a word count (and more!) for each file, folder and vault in the Fi`
+- .obsidian/plugins/novel-word-count/styles.css — obsidian — 118 lines — fm:False — preview: `.novel-word-count--active .workspace-drawer-header-info div[data-novel-word-count-plugin]::after {\n  content: attr(data-novel-word-count-plugin);\n  display: block;\n  font-size: 0.8em;\n  min-width: 0;\n`
+- .obsidian/plugins/obsidian-excalidraw-plugin/data.json — obsidian — 820 lines — fm:False — preview: `{\n  "copyLinkToElemenetAnchorTo100": false,\n  "copyFrameLinkByName": false,\n  "disableDoubleClickTextEditing": false,\n  "folder": "Excalidraw",\n  "cropFolder": "",\n  "annotateFolder": "",\n  "embedUseE`
+- .obsidian/plugins/obsidian-excalidraw-plugin/main.js — obsidian — 11 lines — fm:False — preview: `"use strict";var obsidian_module=require("obsidian"),view=require("@codemirror/view"),commands=require("@codemirror/commands"),lr=require("@lezer/lr"),language=require("@codemirror/language"),state=re`
+- .obsidian/plugins/obsidian-excalidraw-plugin/manifest.json — obsidian — 12 lines — fm:False — preview: `{\n  "id": "obsidian-excalidraw-plugin",\n  "name": "Excalidraw",\n  "version": "2.22.0",\n  "minAppVersion": "1.5.7",\n  "description": "Sketch Your Mind. An Obsidian plugin to edit and view Excalidraw dr`
+- .obsidian/plugins/obsidian-excalidraw-plugin/styles.css — obsidian — 1 lines — fm:False — preview: `@font-face{font-family:Assistant;font-weight:400;src:url(https://unpkg.com/@zsviczian/excalidraw@0.17.6-2/dist/excalidraw-assets/Assistant-Regular.woff2) format("woff2");style:normal;display:swap}@fon`
+- .obsidian/plugins/obsidian-kanban/main.js — obsidian — 153 lines — fm:False — preview: `var sF=Object.create;var Vs=Object.defineProperty;var lF=Object.getOwnPropertyDescriptor;var uF=Object.getOwnPropertyNames;var cF=Object.getPrototypeOf,dF=Object.prototype.hasOwnProperty;var fF=(e,t,r`
+- .obsidian/plugins/obsidian-kanban/manifest.json — obsidian — 11 lines — fm:False — preview: `{\n	"id": "obsidian-kanban",\n	"name": "Kanban",\n	"version": "2.0.51",\n	"minAppVersion": "1.0.0",\n	"description": "Create markdown-backed Kanban boards in Obsidian.",\n	"author": "mgmeyers",\n	"authorUrl"`
+- .obsidian/plugins/obsidian-kanban/styles.css — obsidian — 1 lines — fm:False — preview: `.choices{position:relative;margin-bottom:24px;font-size:16px}.choices:focus{outline:none}.choices:last-child{margin-bottom:0}.choices.is-disabled .choices__inner,.choices.is-disabled .choices__input{b`
+- .obsidian/plugins/smart-connections/data.json — obsidian — 4 lines — fm:False — preview: `{\n  "installed_at": 1775257914494,\n  "last_version": "4.3.0"\n}`
+- .obsidian/plugins/smart-connections/main.js — obsidian — 33284 lines — fm:False — preview: `/*! smart-connections-obsidian v4.3.0 | (c) 2026 🌴 Brian (Brian Petro) */\nvar __create = Object.create;\nvar __defProp = Object.defineProperty;\nvar __getOwnPropDesc = Object.getOwnPropertyDescriptor;\nv`
+- .obsidian/plugins/smart-connections/manifest.json — obsidian — 10 lines — fm:False — preview: `{\n  "id": "smart-connections",\n  "name": "Smart Connections",\n  "author": "Brian Petro",\n  "description": "Chat with your notes & see links to related content with Local or Remote models.",\n  "minAppV`
+- .obsidian/plugins/smart-connections/styles.css — obsidian — 907 lines — fm:False — preview: `/* deprecated positioning, use bottom bar instead */\n.view-content > .sc-brand {\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  background-color: var(--titlebar-background);\n}\n\n.sc-brand {\n  > svg,\n  >`
+- .obsidian/plugins/table-editor-obsidian/data.json — obsidian — 6 lines — fm:False — preview: `{\n  "formatType": "normal",\n  "showRibbonIcon": true,\n  "bindEnter": true,\n  "bindTab": true\n}`
+- .obsidian/plugins/table-editor-obsidian/main.js — obsidian — 236 lines — fm:False — preview: `/*\nTHIS IS A GENERATED/BUNDLED FILE BY ESBUILD\nif you want to view the source, please visit the github repository of this plugin\n*/\n\nvar c9=Object.create;var x1=Object.defineProperty;var f9=Object.get`
+- .obsidian/plugins/table-editor-obsidian/manifest.json — obsidian — 17 lines — fm:False — preview: `{\n  "id": "table-editor-obsidian",\n  "name": "Advanced Tables",\n  "author": "Tony Grosinger",\n  "authorUrl": "https://grosinger.net",\n  "description": "Improved table navigation, formatting, manipulat`
+- .obsidian/plugins/table-editor-obsidian/styles.css — obsidian — 78 lines — fm:False — preview: `:root {\n  --advanced-tables-helper-size: 28px;\n}\n\n.HyperMD-table-row span.cm-inline-code {\n  font-size: 100%;\n  padding: 0px;\n}\n\n.advanced-tables-buttons>div>.title {\n  font-weight: var(--font-medium)`
+- .obsidian/snippets/folder-colors.css — obsidian — 4 lines — fm:False — preview: `/* Example folder color snippet — enable in Appearance → CSS snippets */\n.nav-folder-title {\n  color: #2e8b57;\n}\n`
+- .smart-env/smart_env.json — smart-env — 85 lines — fm:False — preview: `{\n  "is_obsidian_vault": true,\n  "smart_blocks": {\n    "embed_blocks": true,\n    "min_chars": 200\n  },\n  "smart_sources": {\n    "min_chars": 200,\n    "embed_model": {\n      "adapter": "transformers",\n`
+- .smart-env/embedding_models/embedding_models.ajson — smart-env — 2 lines — fm:False — preview: `\n"embedding_models:transformers#1775257917639": {"api_key":"","provider_key":"transformers","model_key":"TaylorAI/bge-micro-v2","dims":384,"max_tokens":512,"class_name":"EmbeddingModel","created_at":1`
+- .smart-env/event_logs/event_logs.ajson — smart-env — 51 lines — fm:False — preview: `"event_logs:source:initial_scan_started": {"key":"source:initial_scan_started","ct":1,"first_at":1775946417276,"last_at":1775946417276,"class_name":"EventLog","event_sources":{"init_items":1}},\n"event`
+- .smart-env/multi/AI_AI-Draft-Template_md.ajson — smart-env — 7 lines — fm:False — preview: `"smart_sources:AI/AI-Draft-Template.md": {"path":"AI/AI-Draft-Template.md","last_embed":{"hash":"1ox5i6b","at":1775257984979},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07799546,-0.02955009,-0.0`
+- .smart-env/multi/AI_reference_BEASTS_md.ajson — smart-env — 43 lines — fm:False — preview: `"smart_sources:AI/reference/BEASTS.md": {"path":"AI/reference/BEASTS.md","last_embed":{"hash":"14jic7e","at":1775710413634},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.01484288,-0.0936116,0.00756`
+- .smart-env/multi/AI_reference_COPILOT-CONVERSATION-TRANSCRIPT_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:AI/reference/COPILOT-CONVERSATION-TRANSCRIPT.md": {"path":"AI/reference/COPILOT-CONVERSATION-TRANSCRIPT.md","last_embed":{"hash":"1ff35uk","at":1775710413374},"embeddings":{"TaylorAI/bg`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-1_md.ajson — smart-env — 30 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-1.md": {"path":"AI/reference/DEEPSEEK-BATCH-1.md","last_embed":{"hash":"1dwlf0t","at":1775710415421},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0865170`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-2_md.ajson — smart-env — 2 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-2.md": {"path":"AI/reference/DEEPSEEK-BATCH-2.md","last_embed":{"hash":"1fh3hxe","at":1775710413534},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0828943`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-3_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-3.md": {"path":"AI/reference/DEEPSEEK-BATCH-3.md","last_embed":{"hash":"d14g73","at":1775710416247},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06344255`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-4_md.ajson — smart-env — 2 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-4.md": {"path":"AI/reference/DEEPSEEK-BATCH-4.md","last_embed":{"hash":"1u6r1qn","at":1775710416396},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0970674`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-5_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-5.md": {"path":"AI/reference/DEEPSEEK-BATCH-5.md","last_embed":{"hash":"o8emdl","at":1775710415273},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.05661514`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-6_md.ajson — smart-env — 19 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-6.md": {"path":"AI/reference/DEEPSEEK-BATCH-6.md","last_embed":{"hash":"1cu04qt","at":1775710416650},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0691461`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-7_md.ajson — smart-env — 2 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-7.md": {"path":"AI/reference/DEEPSEEK-BATCH-7.md","last_embed":{"hash":"m2upzp","at":1775710416874},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.10694325`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-8_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-8.md": {"path":"AI/reference/DEEPSEEK-BATCH-8.md","last_embed":{"hash":"1lipzem","at":1775710416500},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1383248`
+- .smart-env/multi/AI_reference_DEEPSEEK-BATCH-9_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-BATCH-9.md": {"path":"AI/reference/DEEPSEEK-BATCH-9.md","last_embed":{"hash":"1930ctb","at":1775710416983},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1211629`
+- .smart-env/multi/AI_reference_DEEPSEEK-COMPENDIUM-FULL_md.ajson — smart-env — 2 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-COMPENDIUM-FULL.md": {"path":"AI/reference/DEEPSEEK-COMPENDIUM-FULL.md","last_embed":{"hash":"1hvpv6z","at":1775710419115},"embeddings":{"TaylorAI/bge-micro-v2":{"`
+- .smart-env/multi/AI_reference_DEEPSEEK-COMPENDIUM-INDEX_md.ajson — smart-env — 36 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-COMPENDIUM-INDEX.md": {"path":"AI/reference/DEEPSEEK-COMPENDIUM-INDEX.md","last_embed":{"hash":"1xhtyyx","at":1775710419230},"embeddings":{"TaylorAI/bge-micro-v2":`
+- .smart-env/multi/AI_reference_DEEPSEEK-TALKS-SYNTHESIS_md.ajson — smart-env — 92 lines — fm:False — preview: `"smart_sources:AI/reference/DEEPSEEK-TALKS-SYNTHESIS.md": {"path":"AI/reference/DEEPSEEK-TALKS-SYNTHESIS.md","last_embed":{"hash":"1wv5d8p","at":1775710417140},"embeddings":{"TaylorAI/bge-micro-v2":{"`
+- .smart-env/multi/AI_WRITING-EXPANSIONS_md.ajson — smart-env — 2 lines — fm:False — preview: `\n"smart_sources:AI/WRITING-EXPANSIONS.md": {"path":"AI/WRITING-EXPANSIONS.md","last_embed":{"hash":"1l4m4e4","at":1775710375985},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.11689375,0.01578891,0.`
+- .smart-env/multi/Arcs_ACT-I-OUTLINE_md.ajson — smart-env — 164 lines — fm:False — preview: `"smart_sources:Arcs/ACT-I-OUTLINE.md": {"path":"Arcs/ACT-I-OUTLINE.md","last_embed":{"hash":"1ilir0y","at":1775714689916},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.04529406,-0.04872651,0.059569`
+- .smart-env/multi/Arcs_ACT-II-OUTLINE_md.ajson — smart-env — 115 lines — fm:False — preview: `"smart_sources:Arcs/ACT-II-OUTLINE.md": {"path":"Arcs/ACT-II-OUTLINE.md","last_embed":{"hash":"eqp9no","at":1775714689961},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.08179435,-0.01850579,0.02803`
+- .smart-env/multi/Arcs_ACT-III-OUTLINE_md.ajson — smart-env — 177 lines — fm:False — preview: `"smart_sources:Arcs/ACT-III-OUTLINE.md": {"path":"Arcs/ACT-III-OUTLINE.md","last_embed":{"hash":"sffq5z","at":1775714690005},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07389686,0.01342188,0.0403`
+- .smart-env/multi/Arcs_ARC-TO-SCENES-INDEX_md.ajson — smart-env — 58 lines — fm:False — preview: `"smart_sources:Arcs/ARC-TO-SCENES-INDEX.md": {"path":"Arcs/ARC-TO-SCENES-INDEX.md","last_embed":{"hash":"dvzoim","at":1775714689557},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.05461274,-0.032225`
+- .smart-env/multi/Arcs_Character-Arcs_Aisen_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Aisen/NOTES.md": {"path":"Arcs/Character-Arcs/Aisen/NOTES.md","last_embed":{"hash":"14o0618","at":1775403068706},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.070`
+- .smart-env/multi/Arcs_Character-Arcs_Amara_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Amara/NOTES.md": {"path":"Arcs/Character-Arcs/Amara/NOTES.md","last_embed":{"hash":"5ntavv","at":1775403069222},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0333`
+- .smart-env/multi/Arcs_Character-Arcs_Caspian_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Caspian/NOTES.md": {"path":"Arcs/Character-Arcs/Caspian/NOTES.md","last_embed":{"hash":"xro0q4","at":1775403069284},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.`
+- .smart-env/multi/Arcs_Character-Arcs_Corvin_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Corvin/NOTES.md": {"path":"Arcs/Character-Arcs/Corvin/NOTES.md","last_embed":{"hash":"1el32nq","at":1775403069338},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1`
+- .smart-env/multi/Arcs_Character-Arcs_Elara_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Elara/NOTES.md": {"path":"Arcs/Character-Arcs/Elara/NOTES.md","last_embed":{"hash":"so6gzk","at":1775403069204},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0926`
+- .smart-env/multi/Arcs_Character-Arcs_Harald_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Harald/NOTES.md": {"path":"Arcs/Character-Arcs/Harald/NOTES.md","last_embed":{"hash":"1e4wr1u","at":1775403069181},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0`
+- .smart-env/multi/Arcs_Character-Arcs_Kaelen_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Kaelen/NOTES.md": {"path":"Arcs/Character-Arcs/Kaelen/NOTES.md","last_embed":{"hash":"1ylsnzb","at":1775403069241},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0`
+- .smart-env/multi/Arcs_Character-Arcs_Lysandra_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Lysandra/NOTES.md": {"path":"Arcs/Character-Arcs/Lysandra/NOTES.md","last_embed":{"hash":"1l2l53h","at":1775403069417},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[`
+- .smart-env/multi/Arcs_Character-Arcs_Naia_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Naia/NOTES.md": {"path":"Arcs/Character-Arcs/Naia/NOTES.md","last_embed":{"hash":"1jxxiwa","at":1775403069460},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07092`
+- .smart-env/multi/Arcs_Character-Arcs_Rin_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Rin/NOTES.md": {"path":"Arcs/Character-Arcs/Rin/NOTES.md","last_embed":{"hash":"7euy4a","at":1775403069263},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.08874498`
+- .smart-env/multi/Arcs_Character-Arcs_Ryo_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Ryo/NOTES.md": {"path":"Arcs/Character-Arcs/Ryo/NOTES.md","last_embed":{"hash":"1088iwa","at":1775403069364},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0845248`
+- .smart-env/multi/Arcs_Character-Arcs_Seraphine_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Seraphine/NOTES.md": {"path":"Arcs/Character-Arcs/Seraphine/NOTES.md","last_embed":{"hash":"1l87ndk","at":1775403069390},"embeddings":{"TaylorAI/bge-micro-v2":{"vec"`
+- .smart-env/multi/Arcs_Character-Arcs_Tarovin_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Tarovin/NOTES.md": {"path":"Arcs/Character-Arcs/Tarovin/NOTES.md","last_embed":{"hash":"5pblg0","at":1775403069162},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.`
+- .smart-env/multi/Arcs_Character-Arcs_Tholen_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Tholen/NOTES.md": {"path":"Arcs/Character-Arcs/Tholen/NOTES.md","last_embed":{"hash":"a3pwmd","at":1775403069437},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07`
+- .smart-env/multi/Arcs_Character-Arcs_Varro_NOTES_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Arcs/Character-Arcs/Varro/NOTES.md": {"path":"Arcs/Character-Arcs/Varro/NOTES.md","last_embed":{"hash":"1tvc9i8","at":1775406753240},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.052`
+- .smart-env/multi/assets_README_md.ajson — smart-env — 14 lines — fm:False — preview: `"smart_sources:assets/README.md": {"path":"assets/README.md","last_embed":{"hash":"x4k5qh","at":1775717547092},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.00056726,-0.02758702,0.04017458,-0.03060`
+- .smart-env/multi/AUDIT-RESPONSE-SUMMARY_md.ajson — smart-env — 51 lines — fm:False — preview: `"smart_sources:AUDIT-RESPONSE-SUMMARY.md": {"path":"AUDIT-RESPONSE-SUMMARY.md","last_embed":{"hash":"6hidxd","at":1775268030718},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.05288554,0.0103691,0.0`
+- .smart-env/multi/audits_ACT1-001-tavern-opening-audit_md.ajson — smart-env — 9 lines — fm:False — preview: `"smart_sources:audits/ACT1-001-tavern-opening-audit.md": {"path":"audits/ACT1-001-tavern-opening-audit.md","last_embed":{"hash":"6l3evt","at":1775257985050},"embeddings":{"TaylorAI/bge-micro-v2":{"vec`
+- .smart-env/multi/audits_ACT1-003-the-robbery-audit_md.ajson — smart-env — 9 lines — fm:False — preview: `"smart_sources:audits/ACT1-003-the-robbery-audit.md": {"path":"audits/ACT1-003-the-robbery-audit.md","last_embed":{"hash":"1hipfn9","at":1775257984988},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0`
+- .smart-env/multi/audits_ACT1-004-harald-arrives-audit_md.ajson — smart-env — 9 lines — fm:False — preview: `"smart_sources:audits/ACT1-004-harald-arrives-audit.md": {"path":"audits/ACT1-004-harald-arrives-audit.md","last_embed":{"hash":"t6kecz","at":1775257985022},"embeddings":{"TaylorAI/bge-micro-v2":{"vec`
+- .smart-env/multi/audits_DETAILED-FILE-BY-FILE-AUDIT_md.ajson — smart-env — 11 lines — fm:False — preview: `\n"smart_sources:audits/DETAILED-FILE-BY-FILE-AUDIT.md": {"path":"audits/DETAILED-FILE-BY-FILE-AUDIT.md","last_embed":{"hash":"14riw9k","at":1775407942259},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":`
+- .smart-env/multi/audits_MANUSCRIPT-DIAGNOSTIC-TEMPLATE_md.ajson — smart-env — 152 lines — fm:False — preview: `"smart_sources:audits/MANUSCRIPT-DIAGNOSTIC-TEMPLATE.md": {"path":"audits/MANUSCRIPT-DIAGNOSTIC-TEMPLATE.md","last_embed":{"hash":"gr5cwi","at":1775257985317},"embeddings":{"TaylorAI/bge-micro-v2":{"v`
+- .smart-env/multi/audits_METADATA-SCAN-REPORT_md.ajson — smart-env — 18 lines — fm:False — preview: `"smart_sources:audits/METADATA-SCAN-REPORT.md": {"path":"audits/METADATA-SCAN-REPORT.md","last_embed":{"hash":"1pphrwv","at":1775257985083},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.03435083,-0`
+- .smart-env/multi/audits_PRE-ACADEMY-TIMELINE-audit_md.ajson — smart-env — 15 lines — fm:False — preview: `"smart_sources:audits/PRE-ACADEMY-TIMELINE-audit.md": {"path":"audits/PRE-ACADEMY-TIMELINE-audit.md","last_embed":{"hash":"izvmno","at":1775264049724},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.`
+- .smart-env/multi/audits_REPO-WIDE-CHARACTER-ARC-WORLDBUILDING-AUDIT_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:audits/REPO-WIDE-CHARACTER-ARC-WORLDBUILDING-AUDIT.md": {"path":"audits/REPO-WIDE-CHARACTER-ARC-WORLDBUILDING-AUDIT.md","last_embed":{"hash":"i661pj","at":1775407451258},"embeddings":{"`
+- .smart-env/multi/audits_SIDE-CHARACTER-MOMENTS-audit_md.ajson — smart-env — 16 lines — fm:False — preview: `"smart_sources:audits/SIDE-CHARACTER-MOMENTS-audit.md": {"path":"audits/SIDE-CHARACTER-MOMENTS-audit.md","last_embed":{"hash":"38b6ka","at":1775257986932},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":`
+- .smart-env/multi/BASTARD-MASTER-SANDERSON-INTEGRATION_md.ajson — smart-env — 101 lines — fm:False — preview: `\n"smart_sources:BASTARD-MASTER-SANDERSON-INTEGRATION.md": {"path":"BASTARD-MASTER-SANDERSON-INTEGRATION.md","last_embed":{"hash":"sxnysk","at":1775257957559},"embeddings":{"TaylorAI/bge-micro-v2":{"ve`
+- .smart-env/multi/beginning-middle-end_ACT-I-OUTLINE_md.ajson — smart-env — 156 lines — fm:False — preview: `"smart_sources:beginning-middle-end/ACT-I-OUTLINE.md": {"path":"beginning-middle-end/ACT-I-OUTLINE.md","last_embed":{"hash":"1a2adzj","at":1775257987073},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[`
+- .smart-env/multi/beginning-middle-end_ACT-II-OUTLINE_md.ajson — smart-env — 106 lines — fm:False — preview: `"smart_sources:beginning-middle-end/ACT-II-OUTLINE.md": {"path":"beginning-middle-end/ACT-II-OUTLINE.md","last_embed":{"hash":"1dpnr9","at":1775264049880},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":`
+- .smart-env/multi/beginning-middle-end_ACT-III-OUTLINE_md.ajson — smart-env — 174 lines — fm:False — preview: `"smart_sources:beginning-middle-end/ACT-III-OUTLINE.md": {"path":"beginning-middle-end/ACT-III-OUTLINE.md","last_embed":{"hash":"avs1bb","at":1775264050326},"embeddings":{"TaylorAI/bge-micro-v2":{"vec`
+- .smart-env/multi/bloodabilityguide_md.ajson — smart-env — 38 lines — fm:False — preview: `"smart_sources:bloodabilityguide.md": {"path":"bloodabilityguide.md","last_embed":{"hash":"44qfqh","at":1775257961198},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0623631,0.01916323,0.01586858,0.`
+- .smart-env/multi/chain-story_Bem-vindo_md.ajson — smart-env — 2 lines — fm:False — preview: `"smart_sources:chain-story/Bem-vindo.md": {"path":"chain-story/Bem-vindo.md","last_embed":{"hash":"650byf","at":1775257988672},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0698977,-0.01072744,0.06`
+- .smart-env/multi/Chapters_01-Tavern-Opening_md.ajson — smart-env — 6 lines — fm:False — preview: `\n"smart_sources:Chapters/01-Tavern-Opening.md": {"path":"Chapters/01-Tavern-Opening.md","last_embed":{"hash":"1gei3yg","at":1775710376090},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.01186725,-0.`
+- .smart-env/multi/Chapters_02-Training-Years-Begin_md.ajson — smart-env — 6 lines — fm:False — preview: `\n"smart_sources:Chapters/02-Training-Years-Begin.md": {"path":"Chapters/02-Training-Years-Begin.md","last_embed":{"hash":"1y71ca0","at":1775710376331},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.`
+- .smart-env/multi/Chapters_03-City-Beneath_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/03-City-Beneath.md": {"path":"Chapters/03-City-Beneath.md","last_embed":{"hash":"1oyjq9y","at":1775710376580},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[0.008181,-0.04398192`
+- .smart-env/multi/Chapters_04-First-Magic-Lesson_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/04-First-Magic-Lesson.md": {"path":"Chapters/04-First-Magic-Lesson.md","last_embed":{"hash":"uw5pde","at":1775710378227},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.040917`
+- .smart-env/multi/Chapters_04-Frostfang-Incident-Expanded_md.ajson — smart-env — 5 lines — fm:False — preview: `"smart_sources:Chapters/04-Frostfang-Incident-Expanded.md": {"path":"Chapters/04-Frostfang-Incident-Expanded.md","last_embed":{"hash":"1pmjxp6","at":1775710378419},"embeddings":{"TaylorAI/bge-micro-v2`
+- .smart-env/multi/Chapters_04-Frostfang-Incident_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Chapters/04-Frostfang-Incident.md": {"path":"Chapters/04-Frostfang-Incident.md","last_embed":{"hash":"xw0qlx","at":1775710378577},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.093377`
+- .smart-env/multi/Chapters_05-Exam-Sabotage_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Chapters/05-Exam-Sabotage.md": {"path":"Chapters/05-Exam-Sabotage.md","last_embed":{"hash":"133puzm","at":1775710378684},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.10874948,-0.015`
+- .smart-env/multi/Chapters_05-Observation-Game_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/05-Observation-Game.md": {"path":"Chapters/05-Observation-Game.md","last_embed":{"hash":"vf3o0z","at":1775710378789},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.02536268,0`
+- .smart-env/multi/Chapters_06-First-Contact_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/06-First-Contact.md": {"path":"Chapters/06-First-Contact.md","last_embed":{"hash":"15i6loe","at":1775710378972},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.02666263,0.0028`
+- .smart-env/multi/Chapters_07-Network-Test_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/07-Network-Test.md": {"path":"Chapters/07-Network-Test.md","last_embed":{"hash":"d1jtfv","at":1775710379194},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.09894654,0.0677157`
+- .smart-env/multi/Chapters_08-Covenant-Scholar_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/08-Covenant-Scholar.md": {"path":"Chapters/08-Covenant-Scholar.md","last_embed":{"hash":"8d93lw","at":1775710380776},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.09170222,0`
+- .smart-env/multi/Chapters_09-Final-Warning_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/09-Final-Warning.md": {"path":"Chapters/09-Final-Warning.md","last_embed":{"hash":"dv5dvi","at":1775710379386},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0340709,0.010805`
+- .smart-env/multi/Chapters_10-Last-Ordinary-Day_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/10-Last-Ordinary-Day.md": {"path":"Chapters/10-Last-Ordinary-Day.md","last_embed":{"hash":"rw9ucf","at":1775710379580},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0376463,`
+- .smart-env/multi/Chapters_11-Academy-Initiation_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/11-Academy-Initiation.md": {"path":"Chapters/11-Academy-Initiation.md","last_embed":{"hash":"1pbdthm","at":1775710379772},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.01224`
+- .smart-env/multi/Chapters_12-First-Operations_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/12-First-Operations.md": {"path":"Chapters/12-First-Operations.md","last_embed":{"hash":"fdp0xo","at":1775710379954},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0023889,-0`
+- .smart-env/multi/Chapters_13-The-Archive-Access_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/13-The-Archive-Access.md": {"path":"Chapters/13-The-Archive-Access.md","last_embed":{"hash":"v7k1sp","at":1775710380115},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.010538`
+- .smart-env/multi/Chapters_14-The-Competitor-Networks_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/14-The-Competitor-Networks.md": {"path":"Chapters/14-The-Competitor-Networks.md","last_embed":{"hash":"hhw22u","at":1775710380630},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":`
+- .smart-env/multi/Chapters_15-The-Heresy-Archive_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/15-The-Heresy-Archive.md": {"path":"Chapters/15-The-Heresy-Archive.md","last_embed":{"hash":"1aq82xh","at":1775710380453},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.05322`
+- .smart-env/multi/Chapters_16-The-Database-Infiltration_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/16-The-Database-Infiltration.md": {"path":"Chapters/16-The-Database-Infiltration.md","last_embed":{"hash":"6ds5v9","at":1775710380264},"embeddings":{"TaylorAI/bge-micro-v2":{"v`
+- .smart-env/multi/Chapters_17-Examination-Crisis_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/17-Examination-Crisis.md": {"path":"Chapters/17-Examination-Crisis.md","last_embed":{"hash":"1tkcyg8","at":1775710380985},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.04935`
+- .smart-env/multi/Chapters_18-The-Military-Assignment_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/18-The-Military-Assignment.md": {"path":"Chapters/18-The-Military-Assignment.md","last_embed":{"hash":"18rhvg2","at":1775710382678},"embeddings":{"TaylorAI/bge-micro-v2":{"vec"`
+- .smart-env/multi/Chapters_19-Military-Training-Initiate_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/19-Military-Training-Initiate.md": {"path":"Chapters/19-Military-Training-Initiate.md","last_embed":{"hash":"8ucd3d","at":1775710382280},"embeddings":{"TaylorAI/bge-micro-v2":{`
+- .smart-env/multi/Chapters_20-The-Threshold_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/20-The-Threshold.md": {"path":"Chapters/20-The-Threshold.md","last_embed":{"hash":"1twe2we","at":1775710382828},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.05723646,0.0050`
+- .smart-env/multi/Chapters_21-Academy-Arrival_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/21-Academy-Arrival.md": {"path":"Chapters/21-Academy-Arrival.md","last_embed":{"hash":"1jcur9r","at":1775710382433},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07577991,0.`
+- .smart-env/multi/Chapters_22-Covenant-Marking_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/22-Covenant-Marking.md": {"path":"Chapters/22-Covenant-Marking.md","last_embed":{"hash":"mea2oo","at":1775710382978},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1168893,-0`
+- .smart-env/multi/Chapters_23-Heresy-and-Power_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/23-Heresy-and-Power.md": {"path":"Chapters/23-Heresy-and-Power.md","last_embed":{"hash":"x2ztdq","at":1775710383164},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.01975745,0`
+- .smart-env/multi/Chapters_24-Chain-Spear-Mastery_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/24-Chain-Spear-Mastery.md": {"path":"Chapters/24-Chain-Spear-Mastery.md","last_embed":{"hash":"1poea6f","at":1775710383907},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.096`
+- .smart-env/multi/Chapters_25-Amara-Positioning_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/25-Amara-Positioning.md": {"path":"Chapters/25-Amara-Positioning.md","last_embed":{"hash":"wsti6b","at":1775710383604},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.04174201`
+- .smart-env/multi/Chapters_26-Network-Expands_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/26-Network-Expands.md": {"path":"Chapters/26-Network-Expands.md","last_embed":{"hash":"87tjqd","at":1775710383380},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.03961996,-0.`
+- .smart-env/multi/Chapters_27-Academy-Conflict_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/27-Academy-Conflict.md": {"path":"Chapters/27-Academy-Conflict.md","last_embed":{"hash":"cuyk1y","at":1775710384109},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06645402,0`
+- .smart-env/multi/Chapters_28-Network-Consolidation_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/28-Network-Consolidation.md": {"path":"Chapters/28-Network-Consolidation.md","last_embed":{"hash":"kioqjr","at":1775710385946},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.`
+- .smart-env/multi/Chapters_29-The-Final-Planning_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/29-The-Final-Planning.md": {"path":"Chapters/29-The-Final-Planning.md","last_embed":{"hash":"1v8n2cc","at":1775710384300},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06618`
+- .smart-env/multi/Chapters_30-Archive-Infiltration_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/30-Archive-Infiltration.md": {"path":"Chapters/30-Archive-Infiltration.md","last_embed":{"hash":"bvscl6","at":1775710384641},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.03`
+- .smart-env/multi/Chapters_30-Final-Border-Stand-Expanded_md.ajson — smart-env — 5 lines — fm:False — preview: `"smart_sources:Chapters/30-Final-Border-Stand-Expanded.md": {"path":"Chapters/30-Final-Border-Stand-Expanded.md","last_embed":{"hash":"29kacn","at":1775710384472},"embeddings":{"TaylorAI/bge-micro-v2"`
+- .smart-env/multi/Chapters_30-Final-Border-Stand_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Chapters/30-Final-Border-Stand.md": {"path":"Chapters/30-Final-Border-Stand.md","last_embed":{"hash":"1n8h1q3","at":1775710390020},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.04848`
+- .smart-env/multi/Chapters_31-Deployment-Begins_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/31-Deployment-Begins.md": {"path":"Chapters/31-Deployment-Begins.md","last_embed":{"hash":"uvwscw","at":1775710384904},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06542134`
+- .smart-env/multi/Chapters_32-Evidence-Distribution_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/32-Evidence-Distribution.md": {"path":"Chapters/32-Evidence-Distribution.md","last_embed":{"hash":"16yqgze","at":1775710385070},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0`
+- .smart-env/multi/Chapters_33-The-Investigation-Deepens_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/33-The-Investigation-Deepens.md": {"path":"Chapters/33-The-Investigation-Deepens.md","last_embed":{"hash":"1douib6","at":1775710385218},"embeddings":{"TaylorAI/bge-micro-v2":{"`
+- .smart-env/multi/Chapters_34-The-Extraction_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/34-The-Extraction.md": {"path":"Chapters/34-The-Extraction.md","last_embed":{"hash":"1sy5pig","at":1775710385534},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06352338,-0.0`
+- .smart-env/multi/Chapters_35-Military-Campaign-Escalation_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/35-Military-Campaign-Escalation.md": {"path":"Chapters/35-Military-Campaign-Escalation.md","last_embed":{"hash":"5mukd5","at":1775710385386},"embeddings":{"TaylorAI/bge-micro-v`
+- .smart-env/multi/Chapters_36-Conscription_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/36-Conscription.md": {"path":"Chapters/36-Conscription.md","last_embed":{"hash":"3ebg7n","at":1775710385689},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.04469927,-0.014400`
+- .smart-env/multi/Chapters_37-Covenant-Confrontation_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/37-Covenant-Confrontation.md": {"path":"Chapters/37-Covenant-Confrontation.md","last_embed":{"hash":"145th26","at":1775710386092},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[`
+- .smart-env/multi/Chapters_38-Deliberation_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/38-Deliberation.md": {"path":"Chapters/38-Deliberation.md","last_embed":{"hash":"1pnsvrz","at":1775710386319},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.10217783,0.025368`
+- .smart-env/multi/Chapters_39-Regional-Conflict_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/39-Regional-Conflict.md": {"path":"Chapters/39-Regional-Conflict.md","last_embed":{"hash":"1hlporq","at":1775710386671},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0482609`
+- .smart-env/multi/Chapters_40-Contact-Point_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/40-Contact-Point.md": {"path":"Chapters/40-Contact-Point.md","last_embed":{"hash":"ab2k4a","at":1775710386502},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0630239,0.011303`
+- .smart-env/multi/Chapters_41-44-War-Operations-Strategic-Escalations_md.ajson — smart-env — 10 lines — fm:False — preview: `"smart_sources:Chapters/41-44-War-Operations-Strategic-Escalations.md": {"path":"Chapters/41-44-War-Operations-Strategic-Escalations.md","last_embed":{"hash":"15wp49v","at":1775710386801},"embeddings"`
+- .smart-env/multi/Chapters_41-Transition-Decision_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/41-Transition-Decision.md": {"path":"Chapters/41-Transition-Decision.md","last_embed":{"hash":"qzihv5","at":1775710387096},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1014`
+- .smart-env/multi/Chapters_42-Institutional-Replacement_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/42-Institutional-Replacement.md": {"path":"Chapters/42-Institutional-Replacement.md","last_embed":{"hash":"1e4nzg8","at":1775710387232},"embeddings":{"TaylorAI/bge-micro-v2":{"`
+- .smart-env/multi/Chapters_43-Network-Reorganization_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/43-Network-Reorganization.md": {"path":"Chapters/43-Network-Reorganization.md","last_embed":{"hash":"108im5a","at":1775710387348},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[`
+- .smart-env/multi/Chapters_44-Convergence_md.ajson — smart-env — 4 lines — fm:False — preview: `"smart_sources:Chapters/44-Convergence.md": {"path":"Chapters/44-Convergence.md","last_embed":{"hash":"1f5qlmg","at":1775710387477},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.10007432,-0.0421088`
+- .smart-env/multi/Chapters_45-HQ-Assault_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/45-HQ-Assault.md": {"path":"Chapters/45-HQ-Assault.md","last_embed":{"hash":"xxvuc5","at":1775710387616},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07980417,-0.04163137,0`
+- .smart-env/multi/Chapters_46-Aisen-Death_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/46-Aisen-Death.md": {"path":"Chapters/46-Aisen-Death.md","last_embed":{"hash":"1rm0cht","at":1775710387850},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.10535025,-0.0083595`
+- .smart-env/multi/Chapters_47-Breaking-Point_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/47-Breaking-Point.md": {"path":"Chapters/47-Breaking-Point.md","last_embed":{"hash":"13hk8h7","at":1775710388067},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.09557471,-0.0`
+- .smart-env/multi/Chapters_48-Immediate-Aftermath_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/48-Immediate-Aftermath.md": {"path":"Chapters/48-Immediate-Aftermath.md","last_embed":{"hash":"1y010nl","at":1775710390755},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.076`
+- .smart-env/multi/Chapters_49-New-Governance_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/49-New-Governance.md": {"path":"Chapters/49-New-Governance.md","last_embed":{"hash":"164ap4h","at":1775710388582},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.10925655,-0.0`
+- .smart-env/multi/Chapters_50-Without-Center_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/50-Without-Center.md": {"path":"Chapters/50-Without-Center.md","last_embed":{"hash":"122s0fb","at":1775710388266},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07770747,-0.0`
+- .smart-env/multi/Chapters_51-Reconstruction_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/51-Reconstruction.md": {"path":"Chapters/51-Reconstruction.md","last_embed":{"hash":"1ku54ea","at":1775710388811},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.05066114,0.01`
+- .smart-env/multi/Chapters_52-Final-Epilogue_md.ajson — smart-env — 6 lines — fm:False — preview: `"smart_sources:Chapters/52-Final-Epilogue.md": {"path":"Chapters/52-Final-Epilogue.md","last_embed":{"hash":"1jmuz25","at":1775719312961},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.04161097,0.02`
+- .smart-env/multi/Chapters_Chapter-01_md.ajson — smart-env — 12 lines — fm:False — preview: `"smart_sources:Chapters/Chapter-01.md": {"path":"Chapters/Chapter-01.md","last_embed":{"hash":"tbw1ko","at":1775710389241},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.03997374,-0.0660837,0.050367`
+- .smart-env/multi/Chapters_Childhood-01-Tavern-At-Night_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:Chapters/Childhood-01-Tavern-At-Night.md": {"path":"Chapters/Childhood-01-Tavern-At-Night.md","last_embed":{"hash":"1mblh71","at":1775710389344},"embeddings":{"TaylorAI/bge-micro-v2":{"`
+- .smart-env/multi/Chapters_Childhood-02-Beast-Attack_md.ajson — smart-env — 5 lines — fm:False — preview: `"smart_sources:Chapters/Childhood-02-Beast-Attack.md": {"path":"Chapters/Childhood-02-Beast-Attack.md","last_embed":{"hash":"9slikg","at":1775710389457},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-`
+- .smart-env/multi/Chapters_Childhood-03-Harald-Gift_md.ajson — smart-env — 5 lines — fm:False — preview: `"smart_sources:Chapters/Childhood-03-Harald-Gift.md": {"path":"Chapters/Childhood-03-Harald-Gift.md","last_embed":{"hash":"7hs4zd","at":1775710389619},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.`
+- .smart-env/multi/Chapters_Childhood-04-Night-Before-Academy_md.ajson — smart-env — 5 lines — fm:False — preview: `"smart_sources:Chapters/Childhood-04-Night-Before-Academy.md": {"path":"Chapters/Childhood-04-Night-Before-Academy.md","last_embed":{"hash":"1ltuopp","at":1775710389774},"embeddings":{"TaylorAI/bge-mi`
+- .smart-env/multi/Chapters_Meta-Copilot-Archive_md.ajson — smart-env — 2 lines — fm:False — preview: `"smart_sources:Chapters/Meta-Copilot-Archive.md": {"path":"Chapters/Meta-Copilot-Archive.md","last_embed":{"hash":"1bpev49","at":1775710389938},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0652262`
+- .smart-env/multi/Chapters_Training-Drills-Master-States_md.ajson — smart-env — 17 lines — fm:False — preview: `"smart_sources:Chapters/Training-Drills-Master-States.md": {"path":"Chapters/Training-Drills-Master-States.md","last_embed":{"hash":"18v1dfs","at":1775710390930},"embeddings":{"TaylorAI/bge-micro-v2":`
+- .smart-env/multi/CHARACTER-APPEARANCE-INDEX_md.ajson — smart-env — 44 lines — fm:False — preview: `"smart_sources:CHARACTER-APPEARANCE-INDEX.md": {"path":"CHARACTER-APPEARANCE-INDEX.md","last_embed":{"hash":"1fn2pow","at":1775714689599},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.07414658,-0.0`
+- .smart-env/multi/CHARACTER-BIBLE_md.ajson — smart-env — 76 lines — fm:False — preview: `"smart_sources:CHARACTER-BIBLE.md": {"path":"CHARACTER-BIBLE.md","last_embed":{"hash":"1n6tu2q","at":1775257964263},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.08586195,0.00550552,0.00073468,-0.0`
+- .smart-env/multi/CHARACTER-VOICE-BANK_md.ajson — smart-env — 120 lines — fm:False — preview: `"smart_sources:CHARACTER-VOICE-BANK.md": {"path":"CHARACTER-VOICE-BANK.md","last_embed":{"hash":"1p6o68x","at":1775257963318},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06768346,0.00301279,-0.00`
+- .smart-env/multi/characters_AISEN-EXPANDED_md.ajson — smart-env — 157 lines — fm:False — preview: `"smart_sources:characters/AISEN-EXPANDED.md": {"path":"characters/AISEN-EXPANDED.md","last_embed":{"hash":"15ib72b","at":1775258359246},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.06687704,-0.036`
+- .smart-env/multi/characters_AISEN-RYO-CAMPFIRE-SCENE_md.ajson — smart-env — 3 lines — fm:False — preview: `"smart_sources:characters/AISEN-RYO-CAMPFIRE-SCENE.md": {"path":"characters/AISEN-RYO-CAMPFIRE-SCENE.md","last_embed":{"hash":"1qgyrkr","at":1775261863697},"embeddings":{"TaylorAI/bge-micro-v2":{"vec"`
+- .smart-env/multi/characters_AISEN-TAVERN-LORE-EXPANSION_md.ajson — smart-env — 58 lines — fm:False — preview: `"smart_sources:characters/AISEN-TAVERN-LORE-EXPANSION.md": {"path":"characters/AISEN-TAVERN-LORE-EXPANSION.md","last_embed":{"hash":"1l6aius","at":1775257989507},"embeddings":{"TaylorAI/bge-micro-v2":`
+- .smart-env/multi/characters_allies_amara-okafor_md.ajson — smart-env — 53 lines — fm:False — preview: `"smart_sources:characters/allies/amara-okafor.md": {"path":"characters/allies/amara-okafor.md","last_embed":{"hash":"xfaup4","at":1775258047958},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[0.0010814`
+- .smart-env/multi/characters_allies_elara-valorin_md.ajson — smart-env — 48 lines — fm:False — preview: `"smart_sources:characters/allies/elara-valorin.md": {"path":"characters/allies/elara-valorin.md","last_embed":{"hash":"10ergu","at":1775258048935},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1254`
+- .smart-env/multi/characters_allies_kaelen-blackwood_md.ajson — smart-env — 57 lines — fm:False — preview: `"smart_sources:characters/allies/kaelen-blackwood.md": {"path":"characters/allies/kaelen-blackwood.md","last_embed":{"hash":"ctcz2r","at":1775258051120},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-`
+- .smart-env/multi/characters_allies_KAELEN-THORNWOOD_md.ajson — smart-env — 9 lines — fm:False — preview: `"smart_sources:characters/allies/KAELEN-THORNWOOD.md": {"path":"characters/allies/KAELEN-THORNWOOD.md","last_embed":{"hash":"11a270o","at":1775415112337},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[`
+- .smart-env/multi/characters_allies_lysandra-windbreaker_md.ajson — smart-env — 57 lines — fm:False — preview: `"smart_sources:characters/allies/lysandra-windbreaker.md": {"path":"characters/allies/lysandra-windbreaker.md","last_embed":{"hash":"1ilzl1g","at":1775415112261},"embeddings":{"TaylorAI/bge-micro-v2":`
+- .smart-env/multi/characters_allies_rin-celestara_md.ajson — smart-env — 48 lines — fm:False — preview: `"smart_sources:characters/allies/rin-celestara.md": {"path":"characters/allies/rin-celestara.md","last_embed":{"hash":"tzv8u9","at":1775258050454},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0445`
+- .smart-env/multi/characters_allies_RIN-SHIRAKAWA_md.ajson — smart-env — 9 lines — fm:False — preview: `"smart_sources:characters/allies/RIN-SHIRAKAWA.md": {"path":"characters/allies/RIN-SHIRAKAWA.md","last_embed":{"hash":"734w0h","at":1775415112316},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.0655`
+- .smart-env/multi/characters_allies_thalassa-mirrorrow_md.ajson — smart-env — 48 lines — fm:False — preview: `"smart_sources:characters/allies/thalassa-mirrorrow.md": {"path":"characters/allies/thalassa-mirrorrow.md","last_embed":{"hash":"13k58v0","at":1775258052125},"embeddings":{"TaylorAI/bge-micro-v2":{"ve`
+- .smart-env/multi/characters_AMARA-PROFILE-EXPANDED_md.ajson — smart-env — 46 lines — fm:False — preview: `"smart_sources:characters/AMARA-PROFILE-EXPANDED.md": {"path":"characters/AMARA-PROFILE-EXPANDED.md","last_embed":{"hash":"1e7qmjn","at":1775710390120},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0`
+- .smart-env/multi/characters_antagonists_CASPIAN-VANE_md.ajson — smart-env — 65 lines — fm:False — preview: `"smart_sources:characters/antagonists/CASPIAN-VANE.md": {"path":"characters/antagonists/CASPIAN-VANE.md","last_embed":{"hash":"xtmbnz","at":1775258052917},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":`
+- .smart-env/multi/characters_antagonists_CORVIN-ASHFORD_md.ajson — smart-env — 57 lines — fm:False — preview: `"smart_sources:characters/antagonists/CORVIN-ASHFORD.md": {"path":"characters/antagonists/CORVIN-ASHFORD.md","last_embed":{"hash":"1t1nhby","at":1775258053691},"embeddings":{"TaylorAI/bge-micro-v2":{"`
+- .smart-env/multi/characters_antagonists_lucius-varro_md.ajson — smart-env — 60 lines — fm:False — preview: `"smart_sources:characters/antagonists/lucius-varro.md": {"path":"characters/antagonists/lucius-varro.md","last_embed":{"hash":"uabrej","at":1775258054529},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":`
+- .smart-env/multi/characters_antagonists_LYSANDRA_md.ajson — smart-env — 9 lines — fm:False — preview: `"smart_sources:characters/antagonists/LYSANDRA.md": {"path":"characters/antagonists/LYSANDRA.md","last_embed":{"hash":"ykst2l","at":1775258055361},"embeddings":{"TaylorAI/bge-micro-v2":{"vec":[-0.1035`
+- .smart-env/multi/characters_antagonists_meridian-nightwhisper_md.ajson — smart-env — 70 lines — fm:False — preview: `"smart_sources:characters/antagonists/meridian-nightwhisper.md": {"path":"characters/antagonists/meridian-nightwhisper.md","last_embed":{"hash":"kbry9r","at":1775258055386},"embeddings":{"TaylorAI/bge`
+- .smart-env/multi/characters_antagonists_SER-CORVIN-ASHFORD_md.ajson — smart-env — 7 lines — fm:False — preview: `"smart_sources:characters/antagonists/SER-CORVIN-ASHFORD.md": {"path":"characters/antagonists/SER-CORVIN-ASHFORD.md","last_embed":{"hash":"10ejw5h","at":1775258056623},"embeddings":{"TaylorAI/bge-micr`

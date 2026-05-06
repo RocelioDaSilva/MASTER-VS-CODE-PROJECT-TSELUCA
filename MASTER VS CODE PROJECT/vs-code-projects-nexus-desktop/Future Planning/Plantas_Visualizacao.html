@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planta Casa 20x40m - Sistema Solar Off-Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            background: #f5f5f5;
+        }
+        
+        .tab-btn {
+            flex: 1;
+            padding: 20px;
+            border: none;
+            background: #f5f5f5;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .tab-btn:hover {
+            background: #eeeeee;
+        }
+        
+        .tab-btn.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            margin-bottom: -2px;
+        }
+        
+        .content {
+            padding: 30px;
+            display: none;
+        }
+        
+        .content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .svg-container {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+            border: 2px solid #ddd;
+        }
+        
+        .svg-container svg {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
+        }
+        
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid #999;
+        }
+        
+        .legend-text {
+            font-size: 0.95em;
+            color: #333;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .spec-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .spec-card h4 {
+            font-size: 0.85em;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        
+        .spec-card .value {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .tabs {
+                display: none;
+            }
+            .content {
+                display: block !important;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 PLANTA MODULAR 20m × 40m</h1>
+            <p>Casa + Sistema Solar Off-Grid | Angola (Luanda)</p>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('tab1')">📐 Vista Aérea</button>
+            <button class="tab-btn" onclick="showTab('tab2')">🏠 Térreo</button>
+            <button class="tab-btn" onclick="showTab('tab3')">🏢 1º Andar</button>
+        </div>
+        
+        <!-- TAB 1: Vista Aérea -->
+        <div id="tab1" class="content active">
+            <h2>📐 Vista Aérea - Lote Inteiro (20m × 40m = 800m²)</h2>
+            
+            <div class="svg-container">
+                <svg viewBox="0 0 1000 1600" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Fundo do lote -->
+                    <rect x="50" y="50" width="900" height="1500" fill="#f5f5f5" stroke="#333" stroke-width="3"/>
+                    
+                    <!-- Rua frontal -->
+                    <rect x="50" y="0" width="900" height="50" fill="#8B7355" stroke="#333" stroke-width="2"/>
+                    <text x="500" y="30" font-size="14" font-weight="bold" text-anchor="middle" fill="#fff">RUA / VIZINHANÇA FRONTAL</text>
+                    
+                    <!-- Zona Paisagismo Frontal (10m) -->
+                    <rect x="50" y="50" width="900" height="200" fill="#90EE90" stroke="#228B22" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="500" y="100" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">PAISAGISMO FRONTAL (10m × 20m)</text>
+                    <text x="500" y="130" font-size="12" text-anchor="middle" fill="#333">Hedge 1.5–2m + Árvores (Neem/Flamboyant)</text>
+                    <text x="500" y="150" font-size="12" text-anchor="middle" fill="#333">Buffer Visual + Redução Sonora -15dB</text>
+                    
+                    <!-- Parede Lateral Esquerda -->
+                    <rect x="50" y="250" width="30" height="1200" fill="#FF6B6B" stroke="#8B0000" stroke-width="2"/>
+                    
+                    <!-- Casa Principal -->
+                    <rect x="150" y="350" width="700" height="700" fill="#D3D3D3" stroke="#333" stroke-width="3"/>
+                    <rect x="160" y="360" width="680" height="680" fill="#E8E8E8" stroke="#666" stroke-width="2"/>
+                    
+                    <!-- Painéis Solares no Telhado -->
+                    <rect x="170" y="370" width="660" height="80" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+                    <text x="500" y="405" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">☀️ PAINÉIS SOLARES (8–10 × 550W = 4.4–5.5 kW)</text>
+                    
+                    <!-- Casa Técnica Solar -->
+                    <rect x="180" y="470" width="150" height="150" fill="#87CEEB" stroke="#0047AB" stroke-width="2"/>
+                    <text x="255" y="510" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">CASA TÉCNICA</text>
+                    <text x="255" y="530" font-size="10" text-anchor="middle" fill="#000">🔋 Baterias 60kWh</text>
+                    <text x="255" y="550" font-size="10" text-anchor="middle" fill="#000">⚡ Inversor 8kW</text>
+                    
+                    <!-- Gerador Backup -->
+                    <rect x="380" y="470" width="100" height="150" fill="#FFB6C1" stroke="#8B0000" stroke-width="2"/>
+                    <text x="430" y="510" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">GERADOR</text>
+                    <text x="430" y="535" font-size="9" text-anchor="middle" fill="#333">BACKUP</text>
+                    
+                    <!-- Zona Térrea e 1º Andar -->
+                    <rect x="500" y="470" width="320" height="300" fill="#F0E68C" stroke="#DAA520" stroke-width="2"/>
+                    <text x="660" y="530" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">TÉRREO + 1º ANDAR</text>
+                    <text x="660" y="555" font-size="10" text-anchor="middle" fill="#333">20m × 20m = 400m² cada</text>
+                    
+                    <!-- Parede Lateral Direita -->
+                    <rect x="920" y="250" width="30" height="1200" fill="#FF6B6B" stroke="#8B0000" stroke-width="2"/>
+                    
+                    <!-- Zona Paisagismo Traseira -->
+                    <rect x="50" y="1050" width="900" height="200" fill="#90EE90" stroke="#228B22" stroke-width="2" stroke-dasharray="5,5"/>
+                    <text x="500" y="1100" font-size="16" font-weight="bold" text-anchor="middle" fill="#000">PAISAGISMO TRASEIRO (10m × 20m)</text>
+                    <text x="500" y="1130" font-size="12" text-anchor="middle" fill="#333">Gramado + Árvores Frutíferas | Futura Piscina</text>
+                    
+                    <!-- Fundo do lote -->
+                    <line x1="50" y1="1250" x2="950" y2="1250" stroke="#333" stroke-width="3"/>
+                    
+                    <text x="500" y="1350" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">LOTE TOTAL: 20m × 40m = 800m²</text>
+                    
+                    <!-- Legenda de cores -->
+                    <g transform="translate(50, 1400)">
+                        <rect x="0" y="0" width="15" height="15" fill="#90EE90" stroke="#228B22" stroke-width="1"/>
+                        <text x="25" y="12" font-size="11" fill="#000">Paisagismo</text>
+                        <rect x="250" y="0" width="15" height="15" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+                        <text x="275" y="12" font-size="11" fill="#000">Painéis Solares</text>
+                        <rect x="500" y="0" width="15" height="15" fill="#FF6B6B" stroke="#8B0000" stroke-width="1"/>
+                        <text x="525" y="12" font-size="11" fill="#000">Isolamento Acústico -50dB</text>
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="info-box">
+                <h3>Características Principais</h3>
+                <p>• Lote inteiro: <strong>20m (largura) × 40m (profundidade)</strong></p>
+                <p>• Casa posicionada na PARTE TRASEIRA com 10m de buffer frontal e paisagismo</p>
+                <p>• Paredes laterais com isolamento acústico 4-camadas (-50dB de redução sonora)</p>
+                <p>• Zona de paisagismo traseira reservada para futuras expansões ou piscina</p>
+                <p>• Sistema solar integrado na cobertura (telhado + varanda 1º andar)</p>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h4>Largura Útil</h4>
+                    <div class="value">20m</div>
+                </div>
+                <div class="spec-card">
+                    <h4>Profundidade</h4>
+                    <div class="value">40m</div>
+                </div>
+                <div class="spec-card">
+                    <h4>Área Total Lote</h4>
+                    <div class="value">800m²</div>
+                </div>
+                <div class="spec-card">
+                    <h4>Casa Fase 1</h4>
+                    <div class="value">400m²</div>
+                </div>
+                <div class="spec-card">
+                    <h4>Casa Máxima</h4>
+                    <div class="value">800m²</div>
+                </div>
+                <div class="spec-card">
+                    <h4>Reduç. Acústica</h4>
+                    <div class="value">-50dB</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- TAB 2: Térreo -->
+        <div id="tab2" class="content">
+            <h2>🏠 Térreo - 400m² (Fase 1)</h2>
+            
+            <div class="svg-container">
+                <svg viewBox="0 0 1200 1200" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="50" width="1100" height="1100" fill="#f9f9f9" stroke="#333" stroke-width="3"/>
+                    <text x="600" y="35" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">TÉRREO: 20m × 20m = 400m²</text>
+                    
+                    <!-- Garagem -->
+                    <rect x="60" y="80" width="220" height="280" fill="#C0C0C0" stroke="#666" stroke-width="2"/>
+                    <text x="170" y="150" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">GARAGEM DUPLA</text>
+                    <text x="170" y="175" font-size="10" text-anchor="middle" fill="#333">48 m²</text>
+                    
+                    <!-- Hall Entrada -->
+                    <rect x="290" y="80" width="140" height="280" fill="#FFE4B5" stroke="#666" stroke-width="2"/>
+                    <text x="360" y="150" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">HALL ENTRADA</text>
+                    <text x="360" y="175" font-size="9" text-anchor="middle" fill="#333">24 m²</text>
+                    
+                    <!-- Cozinha -->
+                    <rect x="440" y="80" width="150" height="100" fill="#FFD700" stroke="#666" stroke-width="1"/>
+                    <text x="515" y="120" font-size="10" font-weight="bold" text-anchor="middle" fill="#000">COZINHA | 20 m²</text>
+                    
+                    <!-- Despensa -->
+                    <rect x="440" y="190" width="150" height="80" fill="#FFFACD" stroke="#666" stroke-width="1"/>
+                    <text x="515" y="235" font-size="9" font-weight="bold" text-anchor="middle" fill="#000">DESPENSA | 6 m²</text>
+                    
+                    <!-- Sala Estar -->
+                    <rect x="600" y="80" width="320" height="280" fill="#87CEEB" stroke="#666" stroke-width="2"/>
+                    <text x="760" y="140" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">SALA DE ESTAR</text>
+                    <text x="760" y="165" font-size="10" text-anchor="middle" fill="#333">63 m² | Integrada varanda</text>
+                    
+                    <!-- Casa Técnica -->
+                    <rect x="930" y="80" width="150" height="140" fill="#FFB6C1" stroke="#FF1493" stroke-width="2"/>
+                    <text x="1005" y="115" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">CASA TÉCNICA SOLAR</text>
+                    <text x="1005" y="135" font-size="8" text-anchor="middle" fill="#000">5 m² | Baterias + Inversor</text>
+                    
+                    <!-- Gerador -->
+                    <rect x="930" y="230" width="150" height="130" fill="#FFA07A" stroke="#8B4513" stroke-width="2"/>
+                    <text x="1005" y="270" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">GERADOR BACKUP</text>
+                    <text x="1005" y="290" font-size="8" text-anchor="middle" fill="#fff">6 m²</text>
+                    
+                    <!-- Suites -->
+                    <rect x="60" y="380" width="220" height="200" fill="#DDA0DD" stroke="#666" stroke-width="2"/>
+                    <text x="170" y="430" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">SUITE PRINCIPAL</text>
+                    <text x="170" y="455" font-size="9" text-anchor="middle" fill="#333">41 m² | Cama king</text>
+                    
+                    <rect x="290" y="380" width="150" height="200" fill="#DDA0DD" stroke="#666" stroke-width="2"/>
+                    <text x="365" y="430" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">SUITE 2</text>
+                    <text x="365" y="455" font-size="9" text-anchor="middle" fill="#333">20 m²</text>
+                    
+                    <rect x="450" y="380" width="140" height="200" fill="#DDA0DD" stroke="#666" stroke-width="2"/>
+                    <text x="520" y="430" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">SUITE 3</text>
+                    <text x="520" y="455" font-size="9" text-anchor="middle" fill="#333">20 m²</text>
+                    
+                    <!-- Churrasqueira -->
+                    <rect x="60" y="600" width="290" height="350" fill="#D2B48C" stroke="#8B6914" stroke-width="2"/>
+                    <text x="205" y="680" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">ZONA CHURRASQUEIRA</text>
+                    <text x="205" y="705" font-size="9" text-anchor="middle" fill="#333">20 m² | Pátio fechado 4-lados</text>
+                    <text x="205" y="725" font-size="8" text-anchor="middle" fill="#333">Isolamento som -40dB</text>
+                    
+                    <!-- WC + Serviços -->
+                    <rect x="360" y="600" width="140" height="150" fill="#F0F8FF" stroke="#666" stroke-width="1"/>
+                    <text x="430" y="650" font-size="10" font-weight="bold" text-anchor="middle" fill="#000">WC + LAVAR</text>
+                    <text x="430" y="670" font-size="9" text-anchor="middle" fill="#333">12 m²</text>
+                    
+                    <!-- Espaço Expansão -->
+                    <rect x="510" y="600" width="410" height="150" fill="#E8E8E8" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+                    <text x="715" y="650" font-size="11" font-weight="bold" text-anchor="middle" fill="#666">ESPAÇO LIVRE - EXPANSÃO FASE 2</text>
+                    <text x="715" y="670" font-size="9" text-anchor="middle" fill="#666">+200m² lateral</text>
+                    
+                    <!-- Projeção Solar -->
+                    <rect x="360" y="760" width="560" height="130" fill="#FFF8DC" stroke="#DAA520" stroke-width="2" stroke-dasharray="3,3"/>
+                    <text x="640" y="800" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">PROJEÇÃO SISTEMA SOLAR</text>
+                    <text x="640" y="825" font-size="10" text-anchor="middle" fill="#333">Painéis 1–10 | Casa Técnica | Aterramentos</text>
+                </svg>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #C0C0C0;"></div>
+                    <div class="legend-text">Garagem Dupla</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #87CEEB;"></div>
+                    <div class="legend-text">Sala Social</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #DDA0DD;"></div>
+                    <div class="legend-text">Suites Privadas</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FFB6C1;"></div>
+                    <div class="legend-text">Sistema Solar</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #D2B48C;"></div>
+                    <div class="legend-text">Churrasqueira</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #E8E8E8;"></div>
+                    <div class="legend-text">Expansão Futura</div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h3>Distribuição do Térreo</h3>
+                <p>✓ <strong>3 Suites</strong> com WCs privados (Master 41m² + 2 Hóspedes 20m² cada)</p>
+                <p>✓ <strong>Cozinha + Despensa</strong> integradas (20 + 6 m²)</p>
+                <p>✓ <strong>Sala Estar</strong> 63m² conectada à varanda traseira</p>
+                <p>✓ <strong>Garagem Dupla</strong> com parede removível para expansão</p>
+                <p>✓ <strong>Zona Churrasqueira</strong> isolada (pátio fechado 4-lados)</p>
+                <p>✓ <strong>Casa Técnica Solar</strong> integrada (Baterias 60kWh + Inversor 8kW)</p>
+            </div>
+        </div>
+        
+        <!-- TAB 3: 1º Andar -->
+        <div id="tab3" class="content">
+            <h2>🏢 1º Andar - 400m² (Fase 1)</h2>
+            
+            <div class="svg-container">
+                <svg viewBox="0 0 1200 1200" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="50" width="1100" height="1100" fill="#f9f9f9" stroke="#333" stroke-width="3"/>
+                    <text x="600" y="35" font-size="14" font-weight="bold" text-anchor="middle" fill="#000">1º ANDAR: 20m × 20m = 400m²</text>
+                    
+                    <!-- Escadas -->
+                    <rect x="60" y="80" width="140" height="200" fill="#FFE4B5" stroke="#666" stroke-width="2"/>
+                    <text x="130" y="140" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">ESCADAS</text>
+                    <text x="130" y="160" font-size="9" text-anchor="middle" fill="#333">6 m²</text>
+                    
+                    <!-- Corredor -->
+                    <rect x="210" y="80" width="740" height="130" fill="#F5F5DC" stroke="#999" stroke-width="1"/>
+                    <text x="580" y="125" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">CORREDOR CIRCULAÇÃO | 36 m²</text>
+                    
+                    <!-- Escritórios -->
+                    <rect x="60" y="230" width="280" height="160" fill="#DEB887" stroke="#666" stroke-width="2"/>
+                    <text x="200" y="280" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">ESCRITÓRIO 1</text>
+                    <text x="200" y="300" font-size="9" text-anchor="middle" fill="#333">30 m² | Home Office</text>
+                    
+                    <rect x="360" y="230" width="210" height="160" fill="#DEB887" stroke="#666" stroke-width="2"/>
+                    <text x="465" y="280" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">ESCRITÓRIO 2</text>
+                    <text x="465" y="300" font-size="9" text-anchor="middle" fill="#333">20 m² | Flexível</text>
+                    
+                    <!-- Sala Cinema -->
+                    <rect x="590" y="80" width="360" height="310" fill="#87CEEB" stroke="#0047AB" stroke-width="2"/>
+                    <text x="770" y="160" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">SALA CINEMA/LAZER</text>
+                    <text x="770" y="185" font-size="10" text-anchor="middle" fill="#333">48 m² | Piso elevado + Acústica</text>
+                    <text x="770" y="205" font-size="8" text-anchor="middle" fill="#333">TV + Sistema áudio 5.1</text>
+                    
+                    <!-- Varanda com Painéis -->
+                    <rect x="960" y="80" width="150" height="310" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+                    <text x="1035" y="150" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">VARANDA</text>
+                    <text x="1035" y="170" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">TERRAÇO</text>
+                    <text x="1035" y="195" font-size="9" text-anchor="middle" fill="#000">☀️ PAINÉIS SOLARES</text>
+                    <text x="1035" y="215" font-size="8" text-anchor="middle" fill="#333">3–4 × 550W</text>
+                    <text x="1035" y="230" font-size="8" text-anchor="middle" fill="#333">48 m² Social</text>
+                    
+                    <!-- Quartos Hóspedes -->
+                    <rect x="60" y="410" width="280" height="200" fill="#DDA0DD" stroke="#666" stroke-width="2"/>
+                    <text x="200" y="470" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">QUARTO 3</text>
+                    <text x="200" y="495" font-size="9" text-anchor="middle" fill="#333">20 m² | Suite</text>
+                    
+                    <rect x="360" y="410" width="210" height="200" fill="#DDA0DD" stroke="#666" stroke-width="2"/>
+                    <text x="465" y="470" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">QUARTO 4</text>
+                    <text x="465" y="495" font-size="9" text-anchor="middle" fill="#333">20 m² | Suite</text>
+                    
+                    <!-- Bar/Social -->
+                    <rect x="590" y="410" width="360" height="140" fill="#F0E68C" stroke="#DAA520" stroke-width="2"/>
+                    <text x="770" y="460" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">BAR / ZONA SOCIAL</text>
+                    <text x="770" y="485" font-size="9" text-anchor="middle" fill="#333">16 m² | Minibar integrado</text>
+                    
+                    <!-- Espaço Expansão -->
+                    <rect x="590" y="560" width="520" height="190" fill="#E8E8E8" stroke="#999" stroke-width="1" stroke-dasharray="5,5"/>
+                    <text x="850" y="640" font-size="12" font-weight="bold" text-anchor="middle" fill="#666">ESPAÇO LIVRE - EXPANSÃO FASES 2–3</text>
+                    <text x="850" y="665" font-size="9" text-anchor="middle" fill="#666">+200m² | Suite master ou Estúdio</text>
+                </svg>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #DEB887;"></div>
+                    <div class="legend-text">Escritórios/Trabalho</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #87CEEB;"></div>
+                    <div class="legend-text">Entretenimento</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #FFD700;"></div>
+                    <div class="legend-text">Varanda Solar</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #DDA0DD;"></div>
+                    <div class="legend-text">Quartos Hóspedes</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #F0E68C;"></div>
+                    <div class="legend-text">Zona Social</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #E8E8E8;"></div>
+                    <div class="legend-text">Expansão Futura</div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h3>Distribuição do 1º Andar</h3>
+                <p>✓ <strong>2 Escritórios</strong> (30 + 20 m²) - Home office + Flexível</p>
+                <p>✓ <strong>Sala Cinema/Lazer</strong> 48m² - Piso elevado com acústica</p>
+                <p>✓ <strong>2 Quartos Hóspedes</strong> 20m² cada com WCs privados</p>
+                <p>✓ <strong>Bar/Zona Social</strong> 16m² - Minibar integrado</p>
+                <p>✓ <strong>Varanda/Terraço</strong> com ☀️ <strong>3–4 Painéis Solares complementares</strong> (Pérgola vidro)</p>
+                <p>✓ <strong>Espaço flexível</strong> para expansão Fases 2–3 (+200m²)</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>🌍 Local: Angola (Luanda, 8°S) | 📅 Fase 1: Agosto–Outubro 2026 | ☀️ Sistema Solar: Off-Grid 10kW máximo</p>
+        <p>💾 Arquivo: Planta_Casa_20x40m.md | 🎨 Visualização: Plantas_Visualizacao.html</p>
+    </footer>
+    
+    <script>
+        function showTab(tabId) {
+            // Hide all content
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

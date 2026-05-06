@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "23fe1c89de1fd532",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f623cdae84c63bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e6fa789a9c6d929",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tesseract/story/Main character/Powers/Impossible paradox.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Impossible paradox"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4cb00bc52ae107f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "928a9f9f82b23721",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0598ee72f3aaaa1f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "765eaf232ad8dff6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "paradox",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ece4ef540bc33a81",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 624.5
+  },
+  "right": {
+    "id": "b28b38aa52b32d02",
+    "type": "split",
+    "children": [
+      {
+        "id": "4879f5da1760e10c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47e5cacfbd9ef787",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tesseract/FUCKING RULES!!!!!!/CHECKS! CHECKS! CHECKS!!!!.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CHECKS! CHECKS! CHECKS!!!!"
+            }
+          },
+          {
+            "id": "18be8967e0959b76",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tesseract/FUCKING RULES!!!!!!/CHECKS! CHECKS! CHECKS!!!!.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CHECKS! CHECKS! CHECKS!!!!"
+            }
+          },
+          {
+            "id": "cabdbb86606afda6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3e52ca4a9a7ca070",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b01f487e36afc23c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tesseract/FUCKING RULES!!!!!!/CHECKS! CHECKS! CHECKS!!!!.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CHECKS! CHECKS! CHECKS!!!!"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0e6fa789a9c6d929",
+  "lastOpenFiles": [
+    "Tesseract/story/Main character/Powers/Multiplication.md",
+    "Tesseract/story/Main character/Powers/Portal Creation.md",
+    "Tesseract/story/Main character/Powers/Telekenesis.md",
+    "Tesseract/story/Main character/Powers/Teleportation.md",
+    "Tesseract/story/Main character/Powers/Impossible paradox.md",
+    "Tesseract/story/World mechanics/Coins.md",
+    "Tesseract/story/World mechanics/Anchor.md",
+    "Tesseract/story/Main character/C-43.md",
+    "Tesseract/FUCKING RULES!!!!!!/CHECKS! CHECKS! CHECKS!!!!.md",
+    "Tesseract/TESSERACT.md",
+    "Tesseract/story/plot twists/the story is an infinite paradox/paradox.md",
+    "Tesseract/story/plot twists/why are diferent versions of yourself- yourself/why you.md",
+    "Tesseract/story/plot twists/you are the mixture between the data of a forgotten shore and the body of a data corrupted individual/ORIGIN.md",
+    "Tesseract/Untitled.md",
+    "Tesseract/FUCKING RULES!!!!!!",
+    "Tesseract/story/World mechanics/interdimesional travel sense.md",
+    "Tesseract/story/plot twists/the ways i cant concede with universe rules/Untitled.md",
+    "Tesseract/story/plot twists/understandings of why you can travel and what would be other dimensions/m.md",
+    "Tesseract/story/plot twists/the ways i cant concede with universe rules",
+    "Tesseract/story/plot twists/you cant only just rise/n.md",
+    "Tesseract/story/plot twists/understandings of why you can travel and what would be other dimensions",
+    "Tesseract/story/plot twists/5th dimension/5D.md",
+    "Tesseract/story/plot twists/you cant only just rise",
+    "Tesseract/story/plot twists/Time does not branch fate is set/monoverse.md",
+    "Tesseract/story/plot twists/5th dimension",
+    "Tesseract/story/plot twists/Timelines only exist in 5 dimensions",
+    "Tesseract/story/plot twists/Time does not branch fate is set/Untitled",
+    "Tesseract/story/plot twists/Time does not branch fate is set",
+    "Tesseract/story/plot twists/who created the interdimensional network/creator.md",
+    "Tesseract/story/World mechanics/Reality checks.md",
+    "Tesseract/story/World mechanics/forgotten shores.md",
+    "Tesseract/story/World mechanics/tesseract.md",
+    "Tesseract/story/plot twists/who created the interdimensional network",
+    "Tesseract/story/plot twists/why are diferent versions of yourself- yourself",
+    "Welcome.md"
+  ]
+}

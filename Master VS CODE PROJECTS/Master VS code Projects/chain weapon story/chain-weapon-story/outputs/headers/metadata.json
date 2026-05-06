@@ -1,0 +1,482 @@
+[
+  {
+    "id": "01",
+    "title": "Vector-flat 1",
+    "style_group": "A",
+    "palette": [
+      "#7A5A44",
+      "#9B8268",
+      "#EDE6D9"
+    ],
+    "short_description": "Vector-flat variant with muted tones and layered ridges.",
+    "reproduction_prompt": "01-A: Rustic crossroads tavern at dusk, stag-antler sign silhouette, warm golden window light spilling onto wet cobbles, layered low hills behind, painterly brushwork, soft film grain \u2014 denoise 0.22, steps 28, cfg 7.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10001
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "01_preview.png",
+    "final_image": "01.png",
+    "tags": [
+      "vector-flat",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "02",
+    "title": "Vector-flat 2",
+    "style_group": "A",
+    "palette": [
+      "#6B4F3E",
+      "#A07F6D",
+      "#DDCFC1"
+    ],
+    "short_description": "Vector-flat variant with muted tones and layered ridges.",
+    "reproduction_prompt": "01-B: Rustic crossroads tavern, rainy evening with reflective puddles and amber glows, subtle mist, cinematic low light \u2014 denoise 0.26, steps 30, cfg 7.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10002
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "02_preview.png",
+    "final_image": "02.png",
+    "tags": [
+      "vector-flat",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "03",
+    "title": "Vector-flat 3",
+    "style_group": "A",
+    "palette": [
+      "#5A3E2F",
+      "#8A6B5A",
+      "#CFC0B6"
+    ],
+    "short_description": "Vector-flat variant with muted tones and layered ridges.",
+    "reproduction_prompt": "01-C: Flat vector tavern header: clean shapes, warm gradient sky, minimal texture, crisp silhouettes \u2014 denoise 0.12, steps 22, cfg 6.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10003
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "03_preview.png",
+    "final_image": "03.png",
+    "tags": [
+      "vector-flat",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Vector-flat 4",
+    "style_group": "A",
+    "palette": [
+      "#3E2A21",
+      "#6E5449",
+      "#BFAFA2"
+    ],
+    "short_description": "Vector-flat variant with muted tones and layered ridges.",
+    "reproduction_prompt": "02-A: Layered forest ridges with flowering grove foreground, warm shafts of light and soft painterly bloom, gentle haze \u2014 denoise 0.24, steps 28, cfg 7.0",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10004
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "04_preview.png",
+    "final_image": "04.png",
+    "tags": [
+      "vector-flat",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "05",
+    "title": "Painterly 1",
+    "style_group": "B",
+    "palette": [
+      "#8F6B4B",
+      "#B39174",
+      "#E6D9CC"
+    ],
+    "short_description": "Painterly variant with muted tones and layered ridges.",
+    "reproduction_prompt": "02-B: Same grove at golden hour with stronger backlight and petal dust in air, more saturated greens \u2014 denoise 0.26, steps 30, cfg 7.0",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10005
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "05_preview.png",
+    "final_image": "05.png",
+    "tags": [
+      "painterly",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "06",
+    "title": "Painterly 2",
+    "style_group": "B",
+    "palette": [
+      "#4B6B8F",
+      "#7693B3",
+      "#D9E6F0"
+    ],
+    "short_description": "Painterly variant with muted tones and layered ridges.",
+    "reproduction_prompt": "02-C: Stylized flat-graphic flower grove: simplified shapes, high-clarity silhouettes, harmonious greens \u2014 denoise 0.14, steps 22, cfg 6.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10006
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "06_preview.png",
+    "final_image": "06.png",
+    "tags": [
+      "painterly",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "07",
+    "title": "Painterly 3",
+    "style_group": "B",
+    "palette": [
+      "#7D9A72",
+      "#B7D3B0",
+      "#EAF6E7"
+    ],
+    "short_description": "Painterly variant with muted tones and layered ridges.",
+    "reproduction_prompt": "03-A: Academy training yard panorama with rows of spears and wooden dummies, stone halls in background, crisp mid-day light, semi-realistic detail \u2014 denoise 0.22, steps 28, cfg 7.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10007
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "07_preview.png",
+    "final_image": "07.png",
+    "tags": [
+      "painterly",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "08",
+    "title": "Painterly 4",
+    "style_group": "B",
+    "palette": [
+      "#6B4B8F",
+      "#9A74B3",
+      "#E6D9F0"
+    ],
+    "short_description": "Painterly variant with muted tones and layered ridges.",
+    "reproduction_prompt": "03-B: Same yard at overcast dawn with cool desaturated tones and soft shadows, more atmospheric haze \u2014 denoise 0.26, steps 30, cfg 7.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10008
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "08_preview.png",
+    "final_image": "08.png",
+    "tags": [
+      "painterly",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "09",
+    "title": "Atmospheric 1",
+    "style_group": "C",
+    "palette": [
+      "#4B6B6B",
+      "#7AA1A1",
+      "#D9EFEF"
+    ],
+    "short_description": "Atmospheric variant with muted tones and layered ridges.",
+    "reproduction_prompt": "03-C: Minimal vector training yard: clean repeating spear silhouettes, muted palette, geometric clarity \u2014 denoise 0.12, steps 20, cfg 6.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10009
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "09_preview.png",
+    "final_image": "09.png",
+    "tags": [
+      "atmospheric",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Atmospheric 2",
+    "style_group": "C",
+    "palette": [
+      "#2B2B3B",
+      "#6B6B8F",
+      "#D9D9F0"
+    ],
+    "short_description": "Atmospheric variant with muted tones and layered ridges.",
+    "reproduction_prompt": "04-A: Aldric\u2019s Crossing skyline, layered towers and bridges with warm window glows and soft atmospheric haze, cinematic composition \u2014 denoise 0.24, steps 28, cfg 7.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10010
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "10_preview.png",
+    "final_image": "10.png",
+    "tags": [
+      "atmospheric",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Atmospheric 3",
+    "style_group": "C",
+    "palette": [
+      "#7A5A44",
+      "#9B8268",
+      "#EDE6D9"
+    ],
+    "short_description": "Atmospheric variant with muted tones and layered ridges.",
+    "reproduction_prompt": "04-B: City skyline at dusk with stronger rim light and cool-blue upper sky, subtle fog in valleys \u2014 denoise 0.26, steps 30, cfg 7.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10011
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "11_preview.png",
+    "final_image": "11.png",
+    "tags": [
+      "atmospheric",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Atmospheric 4",
+    "style_group": "C",
+    "palette": [
+      "#17202A",
+      "#2B4150",
+      "#9ABFD0"
+    ],
+    "short_description": "Atmospheric variant with muted tones and layered ridges.",
+    "reproduction_prompt": "04-C: Stylized skyline vector with flat color blocks and gentle gradient sky, clear silhouettes \u2014 denoise 0.14, steps 22, cfg 6.5",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10012
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "12_preview.png",
+    "final_image": "12.png",
+    "tags": [
+      "atmospheric",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Textured 1",
+    "style_group": "D",
+    "palette": [
+      "#6B5B4B",
+      "#9F8F7F",
+      "#E6DED4"
+    ],
+    "short_description": "Textured variant with muted tones and layered ridges.",
+    "reproduction_prompt": "05-A: Frostfang ridge panoramic: jagged cold peaks, thin snow dust, low sun casting long blue shadows, dramatic atmosphere \u2014 denoise 0.26, steps 30, cfg 8.0",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10013
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "13_preview.png",
+    "final_image": "13.png",
+    "tags": [
+      "textured",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Textured 2",
+    "style_group": "D",
+    "palette": [
+      "#5B6B5B",
+      "#8F9F8F",
+      "#E6EFE6"
+    ],
+    "short_description": "Textured variant with muted tones and layered ridges.",
+    "reproduction_prompt": "05-B: Frostfang at pale dawn with pink-cold horizon and drifting flurries, high contrast but soft edges \u2014 denoise 0.28, steps 32, cfg 8.0",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10014
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "14_preview.png",
+    "final_image": "14.png",
+    "tags": [
+      "textured",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Textured 3",
+    "style_group": "D",
+    "palette": [
+      "#4B3B2B",
+      "#7B6755",
+      "#D4C8BD"
+    ],
+    "short_description": "Textured variant with muted tones and layered ridges.",
+    "reproduction_prompt": "05-C: Clean geometric cold-peak variant: simple layered peaks, minimal texture, cool desaturated palette \u2014 denoise 0.14, steps 22, cfg 6.8",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10015
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "15_preview.png",
+    "final_image": "15.png",
+    "tags": [
+      "textured",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Textured 4",
+    "style_group": "D",
+    "palette": [
+      "#3B3B3B",
+      "#6B6B6B",
+      "#CFCFCF"
+    ],
+    "short_description": "Textured variant with muted tones and layered ridges.",
+    "reproduction_prompt": "06-A: Narrow mountain pass with rope bridge silhouettes and wind-blown banners, rim-lighting, cinematic tension \u2014 denoise 0.24, steps 28, cfg 7.8",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10016
+    },
+    "upscaler_recommendation": "Real-ESRGAN x2",
+    "thumbnail": "16_preview.png",
+    "final_image": "16.png",
+    "tags": [
+      "textured",
+      "minimal",
+      "silhouette",
+      "horizon"
+    ]
+  }
+]

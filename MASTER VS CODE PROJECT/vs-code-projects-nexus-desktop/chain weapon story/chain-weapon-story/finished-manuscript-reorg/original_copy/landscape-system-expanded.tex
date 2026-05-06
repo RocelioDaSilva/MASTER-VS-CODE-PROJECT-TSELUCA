@@ -1,0 +1,506 @@
+% ═══════════════════════════════════════════════════════════════════════════
+%  EXPANDED LANDSCAPE SYSTEM: 6 Base + 6 New Landscapes × 7 Times of Day
+%  Plus colour tints for each time period
+% ═══════════════════════════════════════════════════════════════════════════
+
+% ── TIME OF DAY COLOUR PALETTES ──────────────────────────────────────
+%  Each time shifts the landscape palette while preserving contrast.
+%  These overlay or blend with the Stone base colours.
+
+% Dawn: warm gold, cold shadows, purple-grey
+\definecolor{DawnKey}       {HTML}{F5E6B3}  % warm pale gold
+\definecolor{DawnMid}       {HTML}{D4A574}  % golden tan
+\definecolor{DawnShade}     {HTML}{6B5B4F}  % purple-grey
+
+% Morning: bright, warm, clear
+\definecolor{MorningKey}    {HTML}{F0F4E0}  % pale cream
+\definecolor{MorningMid}    {HTML}{C4B895}  % warm beige
+\definecolor{MorningShade}  {HTML}{5A4A3A}  % warm grey-brown
+
+% Noon: bright, neutral, high contrast
+\definecolor{NoonKey}       {HTML}{FFFEF5}  % near-white
+\definecolor{NoonMid}       {HTML}{D8C8A8}  % light tan
+\definecolor{NoonShade}     {HTML}{3A2A1A}  % deep brown (high contrast)
+
+% Afternoon: warm, mellow, golden
+\definecolor{AfternoonKey}  {HTML}{FFF4D8}  % pale cream-gold
+\definecolor{AfternoonMid}  {HTML}{E0B878}  % golden honey
+\definecolor{AfternoonShade}{HTML}{6B5535}  % warm dark brown
+
+% Sunset: warm red-orange, deep shadows
+\definecolor{SunsetKey}     {HTML}{FFD9A8}  % peachy orange
+\definecolor{SunsetMid}     {HTML}{E07850}  % rusty orange
+\definecolor{SunsetShade}   {HTML}{4A3535}  % deep rust-brown
+
+% Dusk: cool purple, deep blues, fading light
+\definecolor{DuskKey}       {HTML}{C8B8D0}  % pale purple-grey
+\definecolor{DuskMid}       {HTML}{8B7A9A}  % deep purple
+\definecolor{DuskShade}     {HTML}{3A2A4A}  % deep blue-purple
+
+% Night: cool blue-black, minimal light
+\definecolor{NightKey}      {HTML}{8A9AA8}  % slate blue
+\definecolor{NightMid}      {HTML}{4A5A7A}  % deep slate
+\definecolor{NightShade}    {HTML}{1A2A3A}  % near-black blue
+
+% ═══════════════════════════════════════════════════════════════════════════
+%  EXTENDED LANDSCAPE SYSTEM (12 total landscapes × 7 times = 84 variations)
+%
+%  Original 6:
+%    1. Mountains
+%    2. City
+%    3. Dungeon
+%    4. Wasteland
+%    5. Forest
+%    6. Coast
+%
+%  New 6:
+%    7. Ruins (broken architecture, decay)
+%    8. Valley (rolling, sheltered, peaceful)
+%    9. Plains (open, endless, wind)
+%   10. Cavern (smooth stone, echoing, underground)
+%   11. Desert (sand dunes, sharp rocks, vast)
+%   12. Swamp (dense water, twisted trees, murky)
+%
+% Each landscape is drawn in 3 tonal layers that respond to time of day.
+% Implementation: Create separate commands for each landscape+time combo,
+% or create parameterized landscape that accepts time as input.
+%
+% For now, showing parameterized approach:
+% Usage: \LandscapeBody{MountainsDawn} or \LandscapeBody{RuinsSunset}
+%
+% ═══════════════════════════════════════════════════════════════════════════
+
+% ── ORIGINAL 6 LANDSCAPES (with time-of-day variants) ──
+
+% ── 1. MOUNTAINS (7 time variants) ──
+%   Dawn version: gold tints, cool shadows
+\newcommand{\LandscapeBodyMountainsDawn}{%
+  \fill[DawnKey!80] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[DawnMid!70]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[DawnShade!85]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+%   Noon version: bright, high contrast
+\newcommand{\LandscapeBodyMountainsNoon}{%
+  \fill[NoonKey] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[NoonMid!75]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[NoonShade!95]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+%   Sunset version: warm reds and oranges
+\newcommand{\LandscapeBodyMountainsSunset}{%
+  \fill[SunsetKey!75] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[SunsetMid!65]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[SunsetShade!90]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+%   Morning version: bright, clear, warm
+\newcommand{\LandscapeBodyMountainsMorning}{%
+  \fill[MorningKey!85] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[MorningMid!72]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[MorningShade!80]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+%   Afternoon version: warm, mellow, golden
+\newcommand{\LandscapeBodyMountainsAfternoon}{%
+  \fill[AfternoonKey!78] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[AfternoonMid!68]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[AfternoonShade!85]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+%   Dusk version: cool purple, fading
+\newcommand{\LandscapeBodyMountainsDusk}{%
+  \fill[DuskKey!70] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[DuskMid!50]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[DuskShade!80]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+%   Night version: cool deep blues
+\newcommand{\LandscapeBodyMountainsNight}{%
+  \fill[NightMid!60] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[NightShade!40]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[NightShade!95]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+% ── 7. RUINS (broken architecture) ──
+%   Decay, overgrowth, history visible
+
+%   Dawn version: soft, hopeful light on ruins
+\newcommand{\LandscapeBodyRuinsDawn}{%
+  \fill[DawnKey!70] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  % Broken walls, left side
+  \fill[DawnMid!60]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  % Central ruin mound
+  \fill[DawnShade!65]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  % Right side ruin blocks
+  \fill[DawnMid!55]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+%   Noon version: harsh shadows, clear decay
+\newcommand{\LandscapeBodyRuinsNoon}{%
+  \fill[NoonKey!90] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[NoonMid!70]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  \fill[NoonShade!85]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  \fill[NoonMid!80]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+%   Sunset version: burned, golden decay
+\newcommand{\LandscapeBodyRuinsSunset}{%
+  \fill[SunsetKey!65] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[SunsetMid!55]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  \fill[SunsetShade!80]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  \fill[SunsetMid!60]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+%   Night version: mysterious, haunted
+\newcommand{\LandscapeBodyRuinsNight}{%
+  \fill[NightMid!50] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[NightShade!35]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  \fill[NightShade!90]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  \fill[NightShade!40]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+%   Morning version: fresh, clear
+\newcommand{\LandscapeBodyRuinsMorning}{%
+  \fill[MorningKey!80] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[MorningMid!70]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  \fill[MorningShade!75]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  \fill[MorningMid!65]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+%   Afternoon version: warm stone, mellow
+\newcommand{\LandscapeBodyRuinsAfternoon}{%
+  \fill[AfternoonKey!75] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[AfternoonMid!65]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  \fill[AfternoonShade!82]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  \fill[AfternoonMid!60]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+%   Dusk version: purple fading, haunted
+\newcommand{\LandscapeBodyRuinsDusk}{%
+  \fill[DuskKey!68] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[DuskMid!48]
+    (TL)--($(TL)!.15!(TR)-(0,\SH cm*.15)$)--($(TL)!.20!(TR)-(0,\SH cm*.50)$)
+    --($(TL)!.15!(TR)-(0,\SH cm*.45)$)--($(TL)!.10!(TR)-(0,\SH cm*.25)$)--cycle;
+  \fill[DuskShade!78]
+    ($(TL)!.35!(TR)-(0,\SH cm*.25)$) .. controls ($(TL)!.40!(TR)-(0,\SH cm*.05)$) 
+       and ($(TL)!.60!(TR)-(0,\SH cm*.05)$) ..
+    ($(TL)!.65!(TR)-(0,\SH cm*.25)$) -- ($(TL)!.65!(TR)-(0,\SH cm)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm)$) -- cycle;
+  \fill[DuskMid!52]
+    ($(TL)!.80!(TR)-(0,\SH cm*.20)$)--($(TL)!.92!(TR)-(0,\SH cm*.10)$)
+    --($(TL)!.98!(TR)-(0,\SH cm*.35)$)--($(TL)!.85!(TR)-(0,\SH cm*.40)$)--cycle;
+}
+
+% ── 8. VALLEY (rolling, sheltered) ──
+%   Safe haven, pastoral, protection
+
+%   Dawn version: misty, cool, peaceful
+\newcommand{\LandscapeBodyValleyDawn}{%
+  \fill[DawnKey!85] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  % Left slope
+  \fill[DawnMid!70]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  % Right slope
+  \fill[DawnMid!65]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  % Valley floor
+  \fill[DawnShade!70]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+%   Noon version: bright, cheerful, open
+\newcommand{\LandscapeBodyValleyNoon}{%
+  \fill[NoonKey!95] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[NoonMid!75]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  \fill[NoonMid!70]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  \fill[NoonShade!80]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+%   Sunset version: golden, warm, homecoming
+\newcommand{\LandscapeBodyValleySunset}{%
+  \fill[SunsetKey!70] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[SunsetMid!60]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  \fill[SunsetMid!55]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  \fill[SunsetShade!75]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+%   Night version: dark, cool, secret
+\newcommand{\LandscapeBodyValleyNight}{%
+  \fill[NightMid!55] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[NightShade!30]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  \fill[NightShade!25]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  \fill[NightShade!95]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+%   Morning version: fresh, clear, hope
+\newcommand{\LandscapeBodyValleyMorning}{%
+  \fill[MorningKey!85] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[MorningMid!72]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  \fill[MorningMid!68]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  \fill[MorningShade!75]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+%   Afternoon version: warm, golden, safety
+\newcommand{\LandscapeBodyValleyAfternoon}{%
+  \fill[AfternoonKey!78] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[AfternoonMid!68]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  \fill[AfternoonMid!63]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  \fill[AfternoonShade!80]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+%   Dusk version: purple cooling, twilight peace
+\newcommand{\LandscapeBodyValleyDusk}{%
+  \fill[DuskKey!70] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[DuskMid!50]
+    (TL) .. controls ($(TL)!.10!(TR)+(0,-.3cm)$) and ($(TL)!.15!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) -- (TL-(0,\SH cm)) -- cycle;
+  \fill[DuskMid!45]
+    (TR) .. controls ($(TL)!.90!(TR)+(0,-.3cm)$) and ($(TL)!.85!(TR)+(0,-.5cm)$) ..
+    ($(TL)!.75!(TR)-(0,\SH cm*.60)$) -- (TR-(0,\SH cm)) -- cycle;
+  \fill[DuskShade!78]
+    ($(TL)!.25!(TR)-(0,\SH cm*.60)$) 
+    -- ($(TL)!.35!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.65!(TR)-(0,\SH cm*.70)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm*.60)$)
+    -- ($(TL)!.75!(TR)-(0,\SH cm)$)
+    -- ($(TL)!.25!(TR)-(0,\SH cm)$) -- cycle;
+}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  DISPATCHER: Select landscape+time combination
+% ══════════════════════════════════════════════════════════════════════════════
+
+\newcommand{\ActiveLandscapeBody}{%
+  % Mountains times
+  \ifstrequal{\ActiveLandscape}{MountainsDawn}      {\LandscapeBodyMountainsDawn}{}%
+  \ifstrequal{\ActiveLandscape}{MountainsMorning}   {\LandscapeBodyMountainsMorning}{}%
+  \ifstrequal{\ActiveLandscape}{MountainsNoon}      {\LandscapeBodyMountainsNoon}{}%
+  \ifstrequal{\ActiveLandscape}{MountainsAfternoon}{\LandscapeBodyMountainsAfternoon}{}%
+  \ifstrequal{\ActiveLandscape}{MountainsSunset}    {\LandscapeBodyMountainsSunset}{}%
+  \ifstrequal{\ActiveLandscape}{MountainsDusk}      {\LandscapeBodyMountainsDusk}{}%
+  \ifstrequal{\ActiveLandscape}{MountainsNight}     {\LandscapeBodyMountainsNight}{}%
+  
+  % Ruins times
+  \ifstrequal{\ActiveLandscape}{RuinsDawn}         {\LandscapeBodyRuinsDawn}{}%
+  \ifstrequal{\ActiveLandscape}{RuinsMorning}      {\LandscapeBodyRuinsMorning}{}%
+  \ifstrequal{\ActiveLandscape}{RuinsNoon}         {\LandscapeBodyRuinsNoon}{}%
+  \ifstrequal{\ActiveLandscape}{RuinsAfternoon}   {\LandscapeBodyRuinsAfternoon}{}%
+  \ifstrequal{\ActiveLandscape}{RuinsSunset}       {\LandscapeBodyRuinsSunset}{}%
+  \ifstrequal{\ActiveLandscape}{RuinsDusk}         {\LandscapeBodyRuinsDusk}{}%
+  \ifstrequal{\ActiveLandscape}{RuinsNight}        {\LandscapeBodyRuinsNight}{}%
+  
+  % Valley times
+  \ifstrequal{\ActiveLandscape}{ValleyDawn}        {\LandscapeBodyValleyDawn}{}%
+  \ifstrequal{\ActiveLandscape}{ValleyMorning}     {\LandscapeBodyValleyMorning}{}%
+  \ifstrequal{\ActiveLandscape}{ValleyNoon}        {\LandscapeBodyValleyNoon}{}%
+  \ifstrequal{\ActiveLandscape}{ValleyAfternoon}  {\LandscapeBodyValleyAfternoon}{}%
+  \ifstrequal{\ActiveLandscape}{ValleySunset}      {\LandscapeBodyValleySunset}{}%
+  \ifstrequal{\ActiveLandscape}{ValleyDusk}        {\LandscapeBodyValleyDusk}{}%
+  \ifstrequal{\ActiveLandscape}{ValleyNight}       {\LandscapeBodyValleyNight}{}%
+  
+  % Future: Add City, Dungeon, Wasteland, Forest, Coast, Plains, Cavern, Desert, Swamp times
+}

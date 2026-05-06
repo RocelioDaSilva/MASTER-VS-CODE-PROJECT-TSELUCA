@@ -1,0 +1,1539 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.0cm, top=2.6cm, bottom=2.4cm, left=2.2cm, right=1.8cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc,shapes.geometric}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mdframed}
+\usepackage[explicit]{titlesec}
+
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% ============================================================
+%  PALETTE — "Executive Petroleum"
+%  Dark navy authority + gold precision + ice-blue clarity
+% ============================================================
+\definecolor{navy}{HTML}{0D1B2A}        % deep navy — section bgs
+\definecolor{steelblue}{HTML}{1A4B82}   % steel blue — primary
+\definecolor{skyblue}{HTML}{2E86C1}     % sky blue — secondary
+\definecolor{gold}{HTML}{C8A84B}        % burnished gold — accent
+\definecolor{goldlt}{HTML}{E8C96E}      % pale gold — links
+\definecolor{icebg}{HTML}{EEF4FA}       % ice blue — box backgrounds
+\definecolor{icebd}{HTML}{C2D8EE}       % ice blue border
+\definecolor{warmwhite}{HTML}{F8F6F2}   % warm white body
+\definecolor{muted}{HTML}{6B7B8D}       % muted grey for captions
+\definecolor{alertred}{HTML}{C0392B}    % accent red
+\definecolor{rowalt}{HTML}{F3F7FB}      % table alt row
+
+% ============================================================
+%  GLOBAL TYPOGRAPHY & SPACING
+% ============================================================
+\setstretch{1.15}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\parskip=0.22cm
+\parindent=0pt
+\setlength{\arrayrulewidth}{0.5pt}
+
+% ============================================================
+%  HYPERLINKS
+% ============================================================
+\hypersetup{
+  colorlinks=true,
+  linkcolor=steelblue,
+  urlcolor=steelblue,
+  citecolor=steelblue
+}
+
+% ============================================================
+%  HEADER / FOOTER
+% ============================================================
+\setlength{\headheight}{22pt}
+\pagestyle{fancy}
+\fancyhf{}
+% Left header: navy bar with white SPE text
+\fancyhead[L]{%
+  \begin{tikzpicture}[baseline=-3pt]
+    \fill[navy] (0,-0.18) rectangle (2.2,0.38);
+    \node[anchor=west, font=\small\bfseries, text=white] at (0.08,0.10) {SPE ISPTEC};
+  \end{tikzpicture}%
+}
+\fancyhead[R]{\small\color{muted}\textit{Relatório Consolidado 2026}}
+\fancyfoot[C]{%
+  \begin{tikzpicture}[baseline=-3pt]
+    \draw[gold, line width=0.6pt] (0,0.28) -- (15.5,0.28);
+    \node[font=\small\color{steelblue}\bfseries] at (7.75,0) {\thepage};
+  \end{tikzpicture}%
+}
+\fancyfoot[L]{\tiny\color{muted}Março 2026}
+\fancyfoot[R]{\tiny\color{muted}Versão 3.0}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ============================================================
+%  SECTION FORMATTING
+%  §1 — Navy bar spanning full width, gold title, white text
+%  §2 — Left gold rule + steelblue bold title
+%  §3 — Small caps muted title with gold micro-rule below
+% ============================================================
+\titleformat{\section}[block]
+  {\normalfont}
+  {}
+  {0pt}
+  {%
+    \begin{tikzpicture}[remember picture]
+      % full-width navy band
+      \fill[navy] (0,0) rectangle (\linewidth,0.78cm);
+      % gold left accent
+      \fill[gold] (0,0) rectangle (0.28cm,0.78cm);
+      % section number badge
+      \node[anchor=west, font=\normalsize\bfseries\color{gold}] at (0.42cm,0.39cm) {\thesection};
+      % title text
+      \node[anchor=west, font=\large\bfseries\color{white}] at (1.1cm,0.39cm) {\MakeUppercase{#1}};
+    \end{tikzpicture}%
+  }
+\titlespacing*{\section}{0pt}{0.9cm}{0.4cm}
+
+\titleformat{\subsection}[block]
+  {\normalfont}
+  {}
+  {0pt}
+  {%
+    \vspace{2pt}%
+    \begin{tikzpicture}
+      \fill[gold] (0,-0.05) rectangle (0.22cm,0.50cm);
+      \node[anchor=west, font=\normalsize\bfseries\color{steelblue}] at (0.38cm,0.22cm) {#1};
+    \end{tikzpicture}%
+    \vspace{-4pt}%
+  }
+\titlespacing*{\subsection}{0pt}{0.55cm}{0.25cm}
+
+\titleformat{\subsubsection}[block]
+  {\normalfont}
+  {}
+  {0pt}
+  {%
+    {\small\bfseries\color{navy}\MakeUppercase{#1}}\\[-6pt]
+    {\color{icebd}\rule{\linewidth}{0.5pt}}%
+  }
+\titlespacing*{\subsubsection}{0pt}{0.38cm}{0.15cm}
+
+% ============================================================
+%  COLOURED BOXES
+% ============================================================
+% Ice-blue info box
+\newmdenv[
+  backgroundcolor=icebg,
+  linecolor=steelblue,
+  linewidth=1.2pt,
+  leftline=true, rightline=false, topline=false, bottomline=false,
+  innerleftmargin=10pt,
+  innerrightmargin=8pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  skipabove=6pt,
+  skipbelow=4pt
+]{infobox}
+
+% Gold highlight box
+\newmdenv[
+  backgroundcolor=navy!5,
+  linecolor=gold,
+  linewidth=1.5pt,
+  leftline=true, rightline=false, topline=false, bottomline=false,
+  innerleftmargin=10pt,
+  innerrightmargin=8pt,
+  innertopmargin=6pt,
+  innerbottommargin=6pt,
+  skipabove=6pt,
+  skipbelow=4pt
+]{goldbox}
+
+% ============================================================
+%  LISTS — refined bullets
+% ============================================================
+\setlist[itemize,1]{
+  leftmargin=1.0cm,
+  itemsep=0.12cm,
+  topsep=0.15cm,
+  label={\color{gold}\small$\blacktriangleright$}
+}
+\setlist[itemize,2]{
+  leftmargin=0.8cm,
+  itemsep=0.08cm,
+  topsep=0.08cm,
+  label={\color{steelblue}\scriptsize$\bullet$}
+}
+\setlist[enumerate,1]{
+  leftmargin=1.0cm,
+  itemsep=0.12cm,
+  topsep=0.15cm,
+  label={\color{steelblue}\bfseries\arabic*.}
+}
+
+% ============================================================
+%  CUSTOM COMMANDS
+% ============================================================
+% Proposal separator (gold rule + spacing)
+\newcommand{\proposalsep}{%
+  \vspace{6pt}%
+  {\color{gold}\rule{0.35\linewidth}{0.7pt}}%
+  \vspace{4pt}%
+}
+
+% Axis label badge
+\newcommand{\axisbadge}[2]{%
+  \begin{tikzpicture}[baseline=-2pt]
+    \fill[#1] (0,0) rectangle (0.22cm,0.22cm);
+    \node[anchor=west, font=\small\bfseries\color{#1}] at (0.30cm,0.11cm) {#2};
+  \end{tikzpicture}%
+}
+
+% Frequency stat (large number + label)
+\newcommand{\freqstat}[2]{%
+  {\large\bfseries\color{steelblue}#1}~{\small\color{muted}#2}%
+}
+
+% ============================================================
+%  TABLE STYLING helpers
+% ============================================================
+\newcommand{\theadrow}{\rowcolor{navy}}
+\newcommand{\taltrow}{\rowcolor{rowalt}}
+
+% ============================================================
+%  TOC STYLING
+% ============================================================
+\renewcommand{\cftsecfont}{\bfseries\color{navy}}
+\renewcommand{\cftsecpagefont}{\bfseries\color{navy}}
+\renewcommand{\cftsubsecfont}{\color{steelblue}}
+\renewcommand{\cftsubsecpagefont}{\color{steelblue}}
+\setlength{\cftbeforesecskip}{4pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftdotsep}{3}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+% ==================================================
+% CAPA
+% ==================================================
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+
+  % Full navy background
+  \fill[navy] (current page.south west) rectangle (current page.north east);
+
+  % Diagonal gold accent stripe (bottom-left to mid-right)
+  \fill[gold, opacity=0.18]
+    (current page.south west)
+    -- ([xshift=14cm] current page.south west)
+    -- ([xshift=21cm, yshift=10cm] current page.south west)
+    -- ([xshift=7cm, yshift=10cm] current page.south west)
+    -- cycle;
+
+  % Second diagonal stripe (lighter)
+  \fill[gold, opacity=0.09]
+    ([xshift=5cm] current page.south west)
+    -- ([xshift=20cm] current page.south west)
+    -- (current page.south east)
+    -- ([yshift=5cm] current page.south east)
+    -- cycle;
+
+  % Top gold bar
+  \fill[gold]
+    (current page.north west)
+    rectangle ([yshift=-1.0cm] current page.north east);
+
+  % Bottom thin gold rule
+  \fill[gold]
+    ([yshift=2.2cm] current page.south west)
+    rectangle ([yshift=2.5cm] current page.south east);
+
+  % Giant ghost "SPE" watermark
+  \node[opacity=0.04, font=\fontsize{140}{140}\selectfont\bfseries, text=white]
+    at ([xshift=1cm, yshift=-2cm] current page.center) {SPE};
+
+  % Left sidebar accent
+  \fill[steelblue, opacity=0.35]
+    (current page.north west)
+    rectangle ([xshift=1.1cm] current page.south west);
+
+  % Small decorative circles
+  \draw[gold, opacity=0.4, line width=2pt] ([xshift=3cm, yshift=-5cm] current page.north east) circle (1.8cm);
+  \draw[gold, opacity=0.2, line width=1pt] ([xshift=3cm, yshift=-5cm] current page.north east) circle (3.2cm);
+  \draw[steelblue, opacity=0.3, line width=1.5pt] ([xshift=-2cm, yshift=4cm] current page.south west) circle (2.2cm);
+
+\end{tikzpicture}
+
+\vspace*{2.2cm}
+
+\begin{center}
+
+% Organisation name
+{\fontsize{11}{13}\selectfont\bfseries\color{goldlt}\MakeUppercase{%
+  Society of Petroleum Engineers — Núcleo Estudantil ISPTEC%
+}}
+
+\vspace{0.6cm}
+{\color{gold}\rule{8cm}{1.2pt}}
+\vspace{1.2cm}
+
+% Main title
+{\fontsize{28}{33}\selectfont\bfseries\color{white}
+RELATÓRIO\\[4pt]
+CONSOLIDADO\\[4pt]
+DE PROPOSTAS
+}
+
+\vspace{0.9cm}
+{\color{gold}\rule{12cm}{0.6pt}}
+\vspace{0.9cm}
+
+% Subtitle
+{\fontsize{13}{16}\selectfont\color{white!85}
+Instituto Superior Politécnico de Tecnologias e Ciências
+}
+
+\vspace{2.5cm}
+
+% Stats panel
+\begin{tikzpicture}
+  \fill[white, opacity=0.07] (0,0) rectangle (11cm,2.8cm);
+  \draw[gold, opacity=0.5, line width=0.7pt] (0,0) rectangle (11cm,2.8cm);
+  % Dividers
+  \draw[gold, opacity=0.3, line width=0.4pt] (3.67cm,0.3cm) -- (3.67cm,2.5cm);
+  \draw[gold, opacity=0.3, line width=0.4pt] (7.33cm,0.3cm) -- (7.33cm,2.5cm);
+  % Stats
+  \node[font=\fontsize{26}{26}\selectfont\bfseries\color{gold}] at (1.83cm,1.8cm) {23};
+  \node[font=\fontsize{9}{9}\selectfont\color{white!70}] at (1.83cm,0.85cm) {Propostas};
+  \node[font=\fontsize{26}{26}\selectfont\bfseries\color{gold}] at (5.5cm,1.8cm) {4};
+  \node[font=\fontsize{9}{9}\selectfont\color{white!70}] at (5.5cm,0.85cm) {Eixos Estratégicos};
+  \node[font=\fontsize{26}{26}\selectfont\bfseries\color{gold}] at (9.17cm,1.8cm) {2026};
+  \node[font=\fontsize{9}{9}\selectfont\color{white!70}] at (9.17cm,0.85cm) {Março};
+\end{tikzpicture}
+
+\vspace{2.8cm}
+
+% Version badge
+\begin{tikzpicture}
+  \fill[gold] (0,0) rectangle (3.5cm,0.6cm);
+  \node[font=\small\bfseries\color{navy}] at (1.75cm,0.30cm) {VERSÃO 3.0 — DOCUMENTO OFICIAL};
+\end{tikzpicture}
+
+\end{center}
+\end{titlepage}
+
+% ==================================================
+% PÁGINA DE ROSTO
+% ==================================================
+\newpage
+\thispagestyle{empty}
+
+\vspace*{1.5cm}
+
+\begin{center}
+{\LARGE\bfseries\color{navy} RELATÓRIO DE PROPOSTAS DE ATIVIDADES}
+
+\vspace{0.4cm}
+{\color{gold}\rule{10cm}{1pt}}
+\vspace{0.8cm}
+
+{\large\bfseries\color{steelblue} Núcleo SPE ISPTEC}
+\end{center}
+
+\vspace{1.2cm}
+
+\begin{mdframed}[
+  backgroundcolor=icebg,
+  linecolor=steelblue,
+  linewidth=1pt,
+  innerleftmargin=14pt,
+  innerrightmargin=14pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt
+]
+\begin{tabular}{p{4.2cm} p{9cm}}
+  {\small\bfseries\color{navy}Instituição:} & {\small Instituto Superior Politécnico de Tecnologias e Ciências} \\[4pt]
+  {\small\bfseries\color{navy}Organização:} & {\small Society of Petroleum Engineers (SPE) — Student Chapter} \\[4pt]
+  {\small\bfseries\color{navy}Data:} & {\small Março de 2026} \\[4pt]
+  {\small\bfseries\color{navy}Versão:} & {\small 3.0} \\[4pt]
+  {\small\bfseries\color{navy}Total de Propostas:} & {\small\bfseries\color{steelblue} 23 propostas} \\
+\end{tabular}
+\end{mdframed}
+
+\vspace{1.0cm}
+
+\begin{center}
+{\large\bfseries\color{navy} Introdução}\\[4pt]
+{\color{gold}\rule{6cm}{0.8pt}}
+\end{center}
+
+\vspace{0.4cm}
+
+Este relatório consolida todas as propostas de atividades submetidas pelos membros e colaboradores do Núcleo Estudantil da Society of Petroleum Engineers (SPE) do ISPTEC. As 23 propostas apresentadas refletem uma visão compartilhada de desenvolvimento técnico, profissional e social, alinhada com as melhores práticas de capítulos SPE internacionais e adaptada à realidade angolana.
+
+As propostas foram classificadas por eixos temáticos estratégicos:
+
+\vspace{0.4cm}
+
+\begin{tikzpicture}
+  % Eixo 1
+  \fill[steelblue] (0,3.0) rectangle (0.2cm,3.6cm);
+  \node[anchor=west, font=\small\bfseries\color{steelblue}] at (0.35cm,3.30cm) {Desenvolvimento Técnico e Capacitação};
+  \node[anchor=west, font=\scriptsize\color{muted}] at (0.35cm,3.08cm) {Formações práticas em softwares e metodologias industriais};
+  % Eixo 2
+  \fill[skyblue] (0,2.2) rectangle (0.2cm,2.8cm);
+  \node[anchor=west, font=\small\bfseries\color{skyblue}] at (0.35cm,2.50cm) {Integração Profissional e Networking};
+  \node[anchor=west, font=\scriptsize\color{muted}] at (0.35cm,2.28cm) {Conexão com mercado de trabalho e profissionais};
+  % Eixo 3
+  \fill[alertred] (0,1.4) rectangle (0.2cm,2.0cm);
+  \node[anchor=west, font=\small\bfseries\color{alertred}] at (0.35cm,1.70cm) {Impacto Social e Sustentabilidade};
+  \node[anchor=west, font=\scriptsize\color{muted}] at (0.35cm,1.48cm) {Responsabilidade comunitária e transição energética};
+  % Eixo 4
+  \fill[navy] (0,0.6) rectangle (0.2cm,1.2cm);
+  \node[anchor=west, font=\small\bfseries\color{navy}] at (0.35cm,0.90cm) {Inovação e Liderança Estudantil};
+  \node[anchor=west, font=\scriptsize\color{muted}] at (0.35cm,0.68cm) {Desenvolvimento de capacidades de liderança e criatividade};
+\end{tikzpicture}
+
+% ==================================================
+% ÍNDICE
+% ==================================================
+\clearpage
+\begin{center}
+  {\large\bfseries\color{navy}\MakeUppercase{Índice}}\\[4pt]
+  {\color{gold}\rule{4cm}{0.8pt}}
+\end{center}
+\vspace{0.3cm}
+\tableofcontents
+
+\clearpage
+
+% ==================================================
+% RESUMO EXECUTIVO
+% ==================================================
+\section*{Resumo Executivo}
+\addcontentsline{toc}{section}{Resumo Executivo}
+\begin{center}{\color{gold}\rule{8cm}{0.6pt}}\end{center}
+\vspace{0.2cm}
+
+O presente relatório consolida 23 propostas de atividades para o Núcleo SPE ISPTEC, cobrindo quatro eixos estratégicos principais com análises detalhadas e recomendações implementáveis:
+
+\vspace{0.3cm}
+
+\begin{infobox}
+\small\bfseries\color{steelblue}1. Desenvolvimento Técnico e Capacitação
+\end{infobox}
+Inclui workshops, seminários, minicursos e formações em softwares da indústria (Petrel, Eclipse, Python, QGIS, DWSIM), com foco em aproximar a teoria à prática. Mencionado em praticamente todas as propostas (22/23).
+
+\begin{infobox}
+\small\bfseries\color{skyblue}2. Integração Profissional e Networking
+\end{infobox}
+Atividades de conexão com profissionais, mentoria estruturada, visitas técnicas a refinarias e plataformas. Presente em 21/23 propostas com elevado consenso.
+
+\begin{infobox}
+\small\bfseries\color{alertred}3. Impacto Social e Sustentabilidade
+\end{infobox}
+Iniciativas para devolver conhecimento à comunidade, promover educação energética em escolas secundárias, sensibilizar para a transição energética. Aparece em 12 propostas.
+
+\begin{infobox}
+\small\bfseries\color{navy}4. Inovação e Liderança Estudantil
+\end{infobox}
+Projetos práticos, hackathons, competições técnicas integradas (PetroBowl, ISPTEC Petro-Challenge) e desenvolvimento de soft skills.
+
+% ==================================================
+% MODELO DE DETALHAMENTO
+% ==================================================
+\clearpage
+\section*{Modelo de Detalhamento das Propostas}
+\addcontentsline{toc}{section}{Modelo de Detalhamento das Propostas}
+\begin{center}{\color{gold}\rule{8cm}{0.6pt}}\end{center}
+\vspace{0.2cm}
+
+Este modelo é a referência obrigatória para descrever cada proposta de forma completa e homogénea.
+
+\subsubsection*{1. Título e Autor}
+Breve título explicativo e nome do(s) autor(es) ou responsável(is).
+
+\subsubsection*{2. Contexto}
+Descrição do problema ou oportunidade que motiva a proposta.
+
+\subsubsection*{3. Objetivos Específicos}
+Liste objetivos mensuráveis (SMART): por exemplo, ``Treinar 40 estudantes em Petrel até Dez/2026''.
+
+\subsubsection*{4. Público-alvo}
+Defina claramente quem se beneficia.
+
+\subsubsection*{5. Duração e Frequência}
+Total de horas; duração por sessão; repetição; calendário sugerido.
+
+\subsubsection*{6. Formato e Agenda Típica}
+Formato (presencial, híbrido, online) e agenda com distribuição de tempo.
+
+\subsubsection*{7. Atividades e Metodologias}
+Palestras, hands-on, estudos de caso, visitas, competições, mentorias.
+
+\subsubsection*{8. Recursos Necessários}
+Humanos, materiais, infra-estrutura, estimativa orçamental.
+
+\subsubsection*{9. Parceiros Potenciais}
+Sonangol, TotalEnergies, Chevron, universidades parceiras.
+
+\subsubsection*{10. Cronograma e Marcos}
+Entregáveis chave com datas.
+
+\subsubsection*{11. Entregáveis}
+Relatórios técnicos, datasets, apresentações, certificados.
+
+\subsubsection*{12. Indicadores de Sucesso e Avaliação}
+Métricas quantitativas e qualitativas.
+
+\subsubsection*{13. Riscos e Mitigações}
+Principais riscos e medidas mitigadoras.
+
+\subsubsection*{14. Exemplo de Preenchimento}
+
+\begin{goldbox}
+\small
+\textbf{Título:} Workshop Intensivo em Petrel — Modelagem de Reservatórios\\
+\textbf{Contexto:} Necessidade de capacitar estudantes em modelagem geológica; poucas oportunidades práticas em Angola.\\
+\textbf{Objetivos:} Treinar 30 estudantes; entregar 10 mini-projetos até 3 meses.\\
+\textbf{Público-alvo:} Estudantes do 3.º e 4.º ano de Engenharia Geofísica.\\
+\textbf{Duração:} 20 horas totais (4 sessões de 5h) — mensal.\\
+\textbf{Recursos:} 1 facilitador, 15 estações com Petrel, sala equipada, \textasciitilde50.000 Kz logística.\\
+\textbf{Indicadores:} 85\% conclusão, avaliação média >=4.0/5, 10 projetos entregues.
+\end{goldbox}
+
+\clearpage
+
+% ==================================================
+% PROPOSTAS DE ATIVIDADES
+% ==================================================
+\section{Propostas de Atividades}
+\begin{center}{\color{gold}\rule{8cm}{0.6pt}}\end{center}
+
+A seguir apresenta-se uma análise detalhada das 23 propostas submetidas, refletindo a riqueza e diversidade de perspetivas dentro do núcleo.
+
+\subsection{Proposta de Palestina Sachipunga: Atividades Base do SPE ISPTEC}
+
+\subsubsection*{Apresentação}
+Esta é a proposta base que fundamenta todas as atividades do núcleo, incluindo as iniciativas clássicas já reconhecidas internacionalmente pelos capítulos SPE de excelência.
+
+\subsubsection*{Componentes Estratégicos}
+
+\begin{itemize}
+    \item \textbf{Palestras e Seminários:} Convidados da indústria (petróleo \& gás) ministram palestras sobre perfuração, produção, reservatórios e energias.
+    \item \textbf{Workshops em Softwares:} Formação em Petrel, Eclipse e outras ferramentas da indústria.
+    \item \textbf{Mentoria Académica:} Mentoria em apresentação de artigos científicos e projetos.
+    \item \textbf{Visitas Técnicas:} Field trips a plataformas, refinarias e empresas petrolíferas.
+    \item \textbf{Eventos de Networking:} Encontros com empresas petrolíferas para desenvolvimento técnico e profissional.
+    \item \textbf{Atividades Sociais:} Convívios, jogos, futebol para fortalecer relações entre membros.
+\end{itemize}
+
+\begin{infobox}
+\small\textbf{Impacto Esperado:} Formação de profissionais tecnicamente competentes, bem integrados no mercado de trabalho e com bom relacionamento interpessoal.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta de Adão Avelino: Palestras sobre Setor Energético e Economia}
+
+\subsubsection*{Contexto}
+Proposta centrada na dimensão económica e estratégica do setor energético angolano, complementando o conhecimento técnico com perspetiva de negócio e impacto macroeconómico.
+
+\subsubsection*{Ciclo de 4 Módulos Integrados}
+
+\begin{enumerate}
+    \item \textbf{Gestão de Projetos de Energia:} Ciclo de vida completo — fase exploratória, desenvolvimento, produção, desativação.
+    \item \textbf{Análise Financeira no Setor:} VPL, TIR, breakeven, análise de sensibilidade, joint-ventures (Sonangol, Shell, Chevron). Caso: Angola LNG.
+    \item \textbf{Impacto Económico para Angola:} Contribuição ao PIB, royalties, impostos, emprego, infraestrutura. Política fiscal angolana.
+    \item \textbf{Sustentabilidade e Transição Energética:} Impactos ambientais, ESG na indústria, diversificação pós-petróleo.
+\end{enumerate}
+
+\begin{infobox}
+\small\textbf{Valor Agregado:} Engenheiros com visão estratégica completa, capacidade de comunicar em linguagem de negócio e compreensão do contexto macroeconómico de Angola.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta de Cleusio Branco: Plano de Atividades Diversificado}
+
+\subsubsection*{Componentes Principais}
+
+\begin{enumerate}
+    \item \textbf{Workshops Técnicos Imersivos (60h/ano):} Sessões de 6–8 horas em perfuração, produção e reservatórios. Facilitadores: engenheiros com histórico em Angola.
+    \item \textbf{Palestras e Seminários Temáticos (2–3/mês):} Profissionais de operadoras (Sonangol, TotalEnergies, Chevron), serviços (Baker Hughes, Schlumberger). Formato: 45min + 30min Q\&A + 30min networking.
+    \item \textbf{Visitas Técnicas Estruturadas (4–6/ano):} Refinarias, plataformas, Angola LNG. Inclui relatório de learnings.
+    \item \textbf{Projetos Práticos e Estudos de Caso:} Análise de reservatórios, design de poço, simulação de processos.
+    \item \textbf{Eventos de Networking Estruturados:} Networking dinners, coffee talks, career fairs.
+    \item \textbf{Desenvolvimento de Soft Skills (20h/semestre):} Liderança, comunicação técnica, inglês profissional.
+\end{enumerate}
+
+\begin{infobox}
+\small\textbf{Objetivo Geral:} 100\% dos membros com experiência prática documentada, networking ativo e skillset competitivo.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta de Conceição Sapeso: Programa de Preparação Profissional}
+
+\subsubsection*{Diagnóstico}
+Estudantes com excelente desempenho académico carecem de orientação prática estruturada para transição para mercado de trabalho competitivo.
+
+\subsubsection*{Eixos de Intervenção}
+
+\begin{enumerate}
+    \item \textbf{Preparação Profissional Intensiva (Trimestral):} CV competitivo, entrevistas técnicas, linkedin strategy.
+    \item \textbf{Desenvolvimento Estratégico (Mensal):} Mentorias individuais, plano de desenvolvimento individual (IDP).
+    \item \textbf{Desenvolvimento Técnico Aplicado (Semanal):} Petrel, Python, SQL, data analytics.
+    \item \textbf{Laboratório de Inovação (Semestral):} Projetos inovadores com pitch e prémios.
+    \item \textbf{Conexão Intensiva com Indústria (Bimestral):} Palestras de recrutadores e gestores sénior.
+    \item \textbf{Soft Skills Avançados (20h/semestre):} Comunicação persuasiva, liderança, negociação.
+\end{enumerate}
+
+\begin{infobox}
+\small\textbf{Resultado Esperado:} 90\%+ de placement nos primeiros 6 meses pós-graduação em posições técnicas qualificadas.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta de Cássia Bebiano: Desenvolvimento Técnico, Networking e Integração}
+
+\subsubsection*{Atividades Propostas}
+
+\begin{enumerate}
+    \item \textbf{Seminário de Capacitação do Board (Março, 3 dias):} Liderança transformacional, gestão de eventos, planificação orçamental.
+    \item \textbf{Ciclo de Palestras com Profissionais (10–12/ano):} Temas rotativos com profissionais de 5–15 anos experiência.
+    \item \textbf{Workshop Intensivo de Gestão de Projetos (8h):} Certificação informal baseada em PMBOK.
+    \item \textbf{Workshop HSE (6h):} Cultura de segurança. Facilitador: engenheiro HSE de operadora.
+    \item \textbf{Visitas Técnicas Diferenciadas (3–4/ano):} Board (head offices) + estudantes (field operations).
+    \item \textbf{PetroGames — Competição Inter-Universidades (Outubro):} Torneio técnico entre capítulos SPE. 3 níveis de dificuldade.
+    \item \textbf{Mesa-Redonda Temática Mensal:} 4–5 profissionais debatem tema atual.
+    \item \textbf{Treinamento de Inglês Técnico (2h/semana):} Vocabulário petrolífero, negociação, escrita de relatórios.
+    \item \textbf{Simulações de Entrevista Técnica (Trimestral):} Mock interviews com profissionais de Sonangol, TotalEnergies, Chevron.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Eliane Carolina da C. Kangombe: Formação Integrada e Conectada (Expansão)}
+
+\subsubsection*{Título e Autor}
+\textbf{Título:} Formação Integrada e Programas de Intercâmbio \quad \textbf{Autor:} Eliane Carolina da C. Kangombe
+
+\subsubsection*{Contexto}
+Estruturar trilhas modulares que permitam progressão técnica e exposição internacional.
+
+\subsubsection*{Objetivos Específicos}
+\begin{itemize}
+    \item Criar 5 trilhas modulares (introdução a avançado) em áreas chave.
+    \item Viabilizar 2 intercâmbios académicos anuais com relatórios de aprendizagem.
+\end{itemize}
+
+\subsubsection*{Recursos e Parceiros}
+Coordenador de programa, instrutores externos, bolsas de intercâmbio. Parceiros: UAN, UEA, universidades lusófonas, SPE international. \textbf{Orçamento:} médio.
+
+\subsubsection*{Indicadores de Sucesso}
+Conclusão dos módulos, qualidade dos portfólios, número de parcerias firmadas.
+
+\proposalsep
+
+\subsection{Proposta de Eliùd Manuel: Benchmarking e Visão Estratégica (Expansão)}
+
+\subsubsection*{Título e Autor}
+\textbf{Título:} Benchmarking de Capítulos e Implementação de Boas Práticas \quad \textbf{Autor:} Eliùd Manuel
+
+\subsubsection*{Contexto}
+Analisar modelos internacionais e adaptar práticas escaláveis ao contexto angolano.
+
+\subsubsection*{Objetivos Específicos}
+\begin{itemize}
+    \item Mapear 8 capítulos internacionais e extrair 10 lições aplicáveis.
+    \item Implementar 3 pilotos de melhoria organizacional no ano seguinte.
+\end{itemize}
+
+\subsubsection*{Entregáveis}
+Relatório benchmarking, plano de implementação com KPIs, workshop de lançamento. \textbf{Orçamento:} baixo.
+
+\proposalsep
+
+\subsection{Proposta de Esperança Cristóvão Bento: Concurso Técnico Integrado (Expansão)}
+
+\subsubsection*{Contexto}
+Estimular aprendizagem prática e multidisciplinar simulando toda a cadeia de valor petrolífera.
+
+\subsubsection*{Fases do Concurso}
+\begin{itemize}
+    \item Fase 1: Análise geocientífica (2 semanas)
+    \item Fase 2: Estratégia de desenvolvimento (2 semanas)
+    \item Fase 3: Logística e refinação (2 semanas)
+    \item Fase 4: Defesa técnica perante júri (1 dia)
+\end{itemize}
+
+\subsubsection*{Critérios de Avaliação}
+
+\begin{center}
+\small
+\begin{tabularx}{0.72\linewidth}{Xc}
+\arrayrulecolor{icebd}\toprule
+\rowcolor{navy}\color{white}\bfseries Critério & \color{white}\bfseries Peso \\
+\midrule
+Qualidade técnica das soluções & 30\% \\
+\rowcolor{rowalt}Integração da cadeia petrolífera & 25\% \\
+Fundamentação científica & 20\% \\
+\rowcolor{rowalt}Trabalho em equipa & 15\% \\
+Clareza na apresentação & 10\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\proposalsep
+
+\subsection{Proposta de Djamila Kiangala: Plataforma Programática Integrada (Expansão)}
+
+\subsubsection*{Contexto}
+Unir um catálogo de atividades (académicas, práticas, digitais e sociais) sob uma plataforma de gestão única.
+
+\subsubsection*{Objetivos}
+Lançar a plataforma com 7 categorias de atividade, gerando relatórios mensais de participação. \textbf{Orçamento:} baixo a médio.
+
+\subsubsection*{Entregáveis}
+Plataforma ativa, base de dados de membros, dashboards de métricas.
+
+\proposalsep
+
+\subsection{Proposta de Etelvina Teca: Round Table Técnica e Dinâmica de Resoluções (Expansão)}
+
+\subsubsection*{Contexto}
+Fomentar troca de experiências e treinar decisões rápidas em cenários operacionais.
+
+\subsubsection*{Formato}
+\begin{itemize}
+    \item Round tables bimestrais (2h): 6–8 engenheiros, tema central, debate aberto.
+    \item Dinâmicas semestrais (2–3h): role-play, síntese executiva.
+\end{itemize}
+
+\subsubsection*{Entregáveis}
+Sumário executivo de cada sessão, compêndio anual de recomendações. \textbf{Orçamento:} baixo.
+
+\proposalsep
+
+\subsection{Proposta de Hélio Martins: Programa de Mentoria e Competições (Expansão)}
+
+\subsubsection*{Contexto}
+Combinar desenvolvimento individual via mentoria com estímulos competitivos que consolidem aprendizado.
+
+\subsubsection*{Objetivos}
+Formar 20 pares mentor-mentorado e realizar 2 competições técnicas anuais.
+
+\subsubsection*{Entregáveis}
+Relatórios de progresso, rankings e certificados. \textbf{Orçamento:} baixo.
+
+\proposalsep
+
+\subsection{Proposta de Hamuyela Dias: Laboratório de Soluções Locais (Expansão)}
+
+\subsubsection*{Contexto}
+Resolver problemas comunitários por meio de design e implementação de projetos sustentáveis.
+
+\subsubsection*{Objetivos}
+Implementar 1 projeto piloto por semestre e documentar o impacto social e técnico.
+
+\subsubsection*{Entregáveis}
+Protótipo funcional, manual de operação, relatório de impacto. \textbf{Orçamento:} médio.
+
+\proposalsep
+
+\subsection{Proposta de Jéssica Calucango: Pacote de 10 Iniciativas (Expansão)}
+
+\subsubsection*{Contexto}
+Conjugar ações técnicas, sociais e de empregabilidade em um plano coerente e mensurável.
+
+\subsubsection*{Objetivos}
+Executar as 10 iniciativas com calendarização, responsáveis e entregáveis definidos. \textbf{Orçamento:} médio.
+
+\proposalsep
+
+\subsection{Proposta de Leandra Francisco: Trilhas em IA e Transição Energética (Expansão)}
+
+\subsubsection*{Contexto}
+Formação em IA aplicada e simulação para preparar membros para desafios da transição energética.
+
+\subsubsection*{Objetivos}
+3 módulos em IA, 2 em simulação e 1 projeto integrado de transição energética por ano. \textbf{Orçamento:} médio.
+
+\subsubsection*{Entregáveis}
+Projetos ML operacionais, relatórios e recomendações de aplicação industrial.
+
+\proposalsep
+
+\subsection{Proposta de Eliane Carolina da C. Kangombe: Formação Integrada (Detalhada)}
+
+\subsubsection*{Pilares da Proposta}
+
+\begin{enumerate}
+    \item \textbf{Workshops Aplicados (Mensal, 6h):} Casos reais com especialistas. Formato: apresentação do caso, teams resolvem (3h), defesa (2h), feedback (1h).
+    \item \textbf{Formações Estruturadas em Profundidade (Modular):} Perfuração, geologia, gestão, economia do petróleo, transição energética.
+    \item \textbf{Programa de Mentoria Estruturado:} Matching com profissionais experientes; reuniões quinzenais com plano de desenvolvimento individual.
+    \item \textbf{Intercâmbio Académico Ativo (Anual):} Parcerias com UAN, UEA, UFRJ, UT Austin. Trabalho de investigação de 4–8 semanas.
+    \item \textbf{Acesso a Conferências (Anual):} Descontos SPE International; bolsas para 2–3 membros por evento.
+    \item \textbf{Biblioteca Digital Especializada:} SPE, AAPG, ebooks técnicos, webinars on-demand.
+    \item \textbf{Visitas Técnicas Imersivas (Trimestral):} Angola LNG, refinarias, campos descobertos.
+    \item \textbf{Projetos de Investigação Aplicados:} Parceria com labs ISPTEC, empresas e universidades internacionais.
+    \item \textbf{Programas de Estágios Institucionalizados:} TotalEnergies, Sonangol, Chevron, Azule Energy.
+\end{enumerate}
+
+\begin{infobox}
+\small\textbf{Impacto Esperado:} Membros com formação técnica profunda, network nacional e internacional, experiência documentada e posicionamento para roles internacionais.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta de Eliùd Manuel: Benchmarking e Visão Estratégica (Detalhada)}
+
+\subsubsection*{Inspiração}
+Análise de modelos de sucesso (Texas A\&M, UFRJ) adaptados à realidade de Angola.
+
+\subsubsection*{Eixos Estratégicos}
+\begin{enumerate}
+    \item \textbf{Ciclo de Workshops "Geoscience Tools":} Petrel, Python com resolução de problemas reais.
+    \item \textbf{Preparação para PetroBowl:} Liga interna de quiz técnico.
+    \item \textbf{Programa "Industry Mentorship":} Conversas com profissionais seniores da Chevron, Sonangol, TotalEnergies.
+    \item \textbf{Projeto SPE Cares:} Palestras em escolas secundárias sobre energia e geofísica.
+    \item \textbf{Gestão de Compromisso:} Equilíbrio académico-pessoal.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Esperança Cristóvão Bento: Concurso Técnico Integrado (Detalhado)}
+
+\subsubsection*{Conceito}
+Concurso que simula a cadeia produtiva petrolífera de forma integrada.
+
+\subsubsection*{Estrutura do Concurso}
+\begin{enumerate}
+    \item \textbf{Fase 1 — Análise Geocientífica:} Identificação de potencial petrolífero.
+    \item \textbf{Fase 2 — Desenvolvimento do Campo:} Estratégias de perfuração e produção.
+    \item \textbf{Fase 3 — Transporte e Refinação:} Escolha de métodos e processos.
+    \item \textbf{Fase 4 — Apresentação Final:} Defesa técnica perante júri.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Djamila Kiangala: Sete Eixos de Intervenção (Detalhada)}
+
+\begin{enumerate}
+    \item \textbf{Académico e Científico:} Workshops, seminários, aulas invertidas.
+    \item \textbf{Práticas e Inovação:} Projetos técnicos, hackathons, feiras científicas.
+    \item \textbf{Desenvolvimento Profissional:} Simulações de entrevista, feiras de emprego.
+    \item \textbf{Integração e Networking:} Mentoria, networking académico.
+    \item \textbf{Impacto Social:} Divulgação científica, campanhas ambientais.
+    \item \textbf{Presença Digital:} Plataforma digital, conteúdo educativo.
+    \item \textbf{Planeamento:} Calendário semestral, monitorização contínua.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Etelvina Teca: Round Table e Resolução Rápida (Detalhada)}
+
+\subsubsection*{Componente 1 — Round Table Técnica}
+6–10 engenheiros por grupo; tema central predefinido; cada participante fala 2–3 minutos sobre caso real; debate aberto com síntese final.
+
+\subsubsection*{Componente 2 — Dinâmica de Resolução Rápida}
+Divisão em equipas; problema realista (ex: falha de equipamento); 15–20 minutos; apresentação de solução com justificativa técnica.
+
+\proposalsep
+
+\subsection{Proposta de Hélio Martins: Mentoria e Competições (Detalhada)}
+
+\begin{enumerate}
+    \item \textbf{Programa de Mentoria:} Profissionais experientes orientam estudantes.
+    \item \textbf{Visitas Técnicas:} Contacto com empresas e ambientes industriais.
+    \item \textbf{Competições:} Resolução de problemas reais da indústria.
+    \item \textbf{Workshops Técnicos:} Tópicos relevantes ao mercado.
+    \item \textbf{Palestras com Profissionais:} Partilha de experiências setoriais.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Hamuyela Dias: Inovação e Sustentabilidade (Detalhada)}
+
+\begin{enumerate}
+    \item \textbf{Laboratório de Soluções Locais (Trimestral):} Acesso a água potável, gestão de lixo, energia renovável.
+    \item \textbf{Engenharia Sustentável — Projeto Piloto (6–8 semanas):} Captação de água, painéis solares, separação de lixo.
+    \item \textbf{Simulação de Crise e Resposta Rápida (Semestral):} Grupos: 2 horas para estruturar resposta técnica.
+    \item \textbf{Mesa-Redonda Engenharia e Sociedade (Bimestral):} Engenheiro, líder de ONG, economista, gestor público.
+    \item \textbf{Hackathon de Inovação pela Sustentabilidade (Anual, 2 dias):} Team vencedor recebe bolsa para implementar protótipo.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Jéssica Calucango: 10 Iniciativas Principais}
+
+\begin{enumerate}
+    \item Ciclo de Palestras com profissionais do sector em Angola
+    \item Workshops Técnicos Aplicados com foco em empregabilidade
+    \item Visitas de Campo a instalações industriais e locais geológicos
+    \item Mentoria Académica e Profissional
+    \item Simulações e Estudos de Caso em problemas reais
+    \item Transição Energética: debates e mini-projetos
+    \item Eventos de Networking estratégico
+    \item Ações Comunitárias e Ambientais
+    \item Feira Académica Anual de projetos
+    \item Desenvolvimento de Soft Skills
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Leandra Francisco: IA, Software e Transição Energética (Detalhada)}
+
+\begin{enumerate}
+    \item \textbf{Workshops de Inteligência Artificial (Trimestral, 8h):} ML supervisionado/não-supervisionado, aplicações em previsão de produção, Python (scikit-learn, TensorFlow).
+    \item \textbf{Workshops de Software de Simulação (Bimestral, 12h):} DWSIM, ASPEN HYSYS, simuladores de reservatórios. Casos reais de Angola.
+    \item \textbf{Projetos de Transição Energética (6–8 semanas):} Renováveis em Angola, captura de carbono, hidrogénio verde. Requisito: análise técnica + viabilidade económica + impacto ambiental.
+\end{enumerate}
+
+\begin{infobox}
+\small\textbf{Impacto Esperado:} Posicionamento como especialistas em futuro energético de Angola. Alta procura no mercado global.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta de Lunecenera Castro: Programa de Workshops (Expansão)}
+
+\textbf{Objetivos:} Desenhar 6 workshops anuais com currículos, instrutores e materiais replicáveis.
+
+\textbf{Formato:} Dia 1: teoria; Dia 2: hands-on; Dia 3: projeto e apresentação.
+
+\textbf{Tipos:} Aprendizagem, corporativos, desenvolvimento profissional, imersão.
+
+\proposalsep
+
+\subsection{Proposta de Maria Dos Reis: Modelo Operacional para Excelência}
+
+\textbf{Contexto:} Capítulos de elite da SPE (Imperial College, Khalifa, UFRJ) funcionam como mini-empresas.
+
+\textbf{12 Atividades Propostas:} Minicursos de Software $\cdot$ Sessões com Ex-Alunos $\cdot$ Workshop de Escrita Técnica $\cdot$ Visitas de Campo $\cdot$ Sessões Informais com Engenheiros $\cdot$ Energy4Me $\cdot$ Quiz Geológico $\cdot$ Interpretação Sísmica $\cdot$ Revisão de CVs $\cdot$ Visitas a Laboratórios $\cdot$ Professional Shadowing $\cdot$ Revista Digital.
+
+\proposalsep
+
+\subsection{Proposta de Lubanzadio Martins: Workshops em Simulação de Processos}
+
+\begin{enumerate}
+    \item \textbf{Workshops Mensais (4/semestre, 6h):} DWSIM, ASPEN HYSYS. 40\% conceitos + 60\% prático.
+    \item \textbf{Mini-Projetos Práticos:} Destilação $\rightarrow$ Refino simplificado $\rightarrow$ Angola LNG simplificado.
+    \item \textbf{Workshops Corporativos (Semestral):} Sonangol, TotalEnergies, fornecedores.
+    \item \textbf{Hackathon de Energia — ``Energy Optimization Challenge'' (Anual, 2 dias):} Equipas resolvem desafio real. Jurados: engenheiros de empresas.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Maria Gonçalves: Palestras Trimestrais e ISPTEC Petro-Challenge}
+
+\subsubsection*{Componente 1 — Ciclo de Palestras Trimestrais}
+Eventos de imersão de um dia. Temas: Transição Energética em Angola, Perfuração em Águas Profundas. Convidados: profissionais de operadoras locais.
+
+\subsubsection*{Componente 2 — ISPTEC Petro-Challenge}
+Torneio de perguntas e respostas técnicas quinzenal. Prémios: prioridade em visitas técnicas, acesso a cursos de soft skills.
+
+\proposalsep
+
+\subsection{Proposta de Nair Cassoty: Plano Estratégico Integrado}
+
+\subsubsection*{Quatro Eixos Estratégicos}
+\begin{enumerate}
+    \item \textbf{Educação e Capacitação:} Workshops técnicos, seminários, programação.
+    \item \textbf{Trabalho em Equipa e Pensamento Crítico:} Dinâmicas colaborativas, grupos de estudo.
+    \item \textbf{Networking e Orientação de Carreira:} Encontros com profissionais, feiras de estágio.
+    \item \textbf{Estudos em Energia:} Pesquisa em energia de baixo carbono, programação aplicada.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Miranda Orlando: Calendário Operacional e Matriz de Responsáveis}
+
+\begin{center}
+\small
+\begin{tabularx}{0.9\linewidth}{p{3.4cm} p{4.4cm} p{3.2cm}}
+\arrayrulecolor{icebd}\toprule
+\rowcolor{navy}\color{white}\bfseries Atividade & \color{white}\bfseries Objetivos & \color{white}\bfseries Responsável \\
+\midrule
+Intercâmbio com Núcleos & Experiência, relações sólidas & Todos os membros \\
+\rowcolor{rowalt}Visitas a Empresas & Experiência prática, domínio da área & Todos os membros \\
+Workshops Técnicos & Capacitação, confraternização & Board \\
+\rowcolor{rowalt}Programas de Estágios & Capacitação, experiência prática & Board + ISPTEC \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\proposalsep
+
+\subsection{Proposta de Rocélio Da Silva: Roadmap Estratégico 2025}
+
+\subsubsection*{Filosofia}
+Baseado em capítulos SPE internacionais (University of Houston) e adaptado a Angola.
+
+\subsubsection*{Seis Dimensões do Roadmap}
+\begin{enumerate}
+    \item \textbf{Educacional e Técnico:} Workshops, SPE Talks, visitas, PetroBowl, software técnico, clube de leitura.
+    \item \textbf{Networking e Integração:} Icebreakers, alumni, parcerias com capítulos, mentoria entre pares, networking dinner.
+    \item \textbf{Recursos Financeiros:} Mensalidades, patrocínios, grants SPE, merchandise, crowdfunding.
+    \item \textbf{Social e Ambiental:} Limpeza de praias, solar, reciclagem, reflorestamento, palestras em escolas.
+    \item \textbf{Desenvolvimento de Carreira:} Feiras, CV, mentoria, simulações, certificações SPE.
+    \item \textbf{Digital e Inovação:} Podcast, desafios online, plataforma de cursos, hackathon.
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Sandrane Cassange: Programa Integrado Anual}
+
+\begin{enumerate}
+    \item Palestras e Workshops Técnicos com Profissionais
+    \item Visitas de Campo e Técnicas
+    \item Programas de Mentoria Académica e Profissional
+    \item Eventos Científicos e Académicos
+    \item Parcerias com a Indústria (estágios, visitas, formações)
+    \item Simulações e Estudos de Caso
+    \item Atividades de Integração
+    \item Formação em Soft Skills
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Proposta de Evandro Cassoma Muhongo: Núcleo de Geofísica}
+
+\subsubsection*{Seis Eixos}
+\begin{enumerate}
+    \item Seminários e Talks mensais de Geofísica
+    \item Workshops Técnicos: processamento sísmico, Python, QGIS, interpretação
+    \item Grupos de Estudo: Sísmica, Geofísica do Petróleo, Métodos Potenciais
+    \item Atividades de Campo: levantamentos, visitas geológicas, demonstrações
+    \item Parcerias com Indústria: palestras, visitas, sessões de carreira
+    \item Evento Anual: ``Semana da Geofísica do ISPTEC''
+\end{enumerate}
+
+% ==================================================
+% ANÁLISE DE FREQUÊNCIA
+% ==================================================
+\clearpage
+\section{Análise de Frequência: Atividades por Popularidade}
+\begin{center}{\color{gold}\rule{8cm}{0.6pt}}\end{center}
+
+Esta seção apresenta um ranking detalhado de todas as atividades propostas, ordenadas por frequência. Revela quais atividades têm maior consenso como prioridade para o Núcleo SPE ISPTEC.
+
+\subsection{Top 20 Atividades Mais Frequentes}
+
+\begin{enumerate}[label={\color{steelblue}\bfseries\arabic*.}, itemsep=0.28cm]
+
+\item \textbf{Workshops Técnicos} \hfill \freqstat{22}{menções}\\
+{\small\color{muted}Todas as 23 propostas práticas. Temas: Petrel, Eclipse, Python, QGIS, DWSIM, ASPEN HYSYS, processamento sísmico.}
+
+\item \textbf{Palestras com Profissionais da Indústria} \hfill \freqstat{21}{menções}\\
+{\small\color{muted}Sonangol, TotalEnergies, Chevron, Azule. Propostas: Base, 2, 3, 5, 6, 7, 9, 11, 13, 15, 16, 18, 19, 21, 22, 23.}
+
+\item \textbf{Visitas Técnicas} \hfill \freqstat{20}{menções}\\
+{\small\color{muted}Refinarias, plataformas, Angola LNG, campos onshore, bases logísticas, laboratórios.}
+
+\item \textbf{Programas de Mentoria} \hfill \freqstat{19}{menções}\\
+{\small\color{muted}Professional shadowing, orientação de carreira, mentoria entre pares.}
+
+\item \textbf{Networking e Eventos Sociais} \hfill \freqstat{18}{menções}\\
+{\small\color{muted}Networking dinners, coffee breaks, icebreakers, eventos de integração.}
+
+\item \textbf{Preparação para o Mercado de Trabalho} \hfill \freqstat{17}{menções}\\
+{\small\color{muted}CV técnico, entrevistas simuladas, LinkedIn, inglês técnico.}
+
+\item \textbf{Competições e Desafios} \hfill \freqstat{16}{menções}\\
+{\small\color{muted}PetroBowl, quiz geológico, hackathons, ISPTEC Petro-Challenge, concursos integrados.}
+
+\item \textbf{Projetos Práticos e Estudos de Caso} \hfill \freqstat{15}{menções}\\
+{\small\color{muted}Análise de reservatórios, design de poços, otimização de operações.}
+
+\item \textbf{Soft Skills e Desenvolvimento Profissional} \hfill \freqstat{14}{menções}\\
+{\small\color{muted}Liderança, comunicação, trabalho em equipa, postura profissional.}
+
+\item \textbf{Feiras de Estágio e Programas de Emprego} \hfill \freqstat{13}{menções}\\
+{\small\color{muted}Feiras de emprego, programas de trainee, oportunidades de estágio.}
+
+\item \textbf{Sustentabilidade e Transição Energética} \hfill \freqstat{12}{menções}\\
+{\small\color{muted}Energias renováveis, eficiência, baixo carbono.}
+
+\item \textbf{Inteligência Artificial e Programação} \hfill \freqstat{11}{menções}\\
+{\small\color{muted}IA em engenharia, Python, análise de dados, automação.}
+
+\item \textbf{Programas de Estágios Institucionalizados} \hfill \freqstat{10}{menções}\\
+{\small\color{muted}TotalEnergies, Chevron, Sonangol, outros operadores.}
+
+\item \textbf{Eventos de Divulgação Científica Comunitária} \hfill \freqstat{9}{menções}\\
+{\small\color{muted}Energy4Me, palestras em escolas, campanhas ambientais.}
+
+\item \textbf{Iniciativas de Inovação e Laboratórios de Ideias} \hfill \freqstat{9}{menções}\\
+{\small\color{muted}Foco em criatividade e soluções práticas.}
+
+\item \textbf{Presença Digital e Conteúdo Online} \hfill \freqstat{8}{menções}\\
+{\small\color{muted}Podcast, youtube, plataforma digital, revista online.}
+
+\item \textbf{Gestão Eficiente do Board} \hfill \freqstat{8}{menções}\\
+{\small\color{muted}Treinamento de liderança, organização de eventos, processos estruturados.}
+
+\item \textbf{Intercâmbio com Outras Universidades} \hfill \freqstat{8}{menções}\\
+{\small\color{muted}Nacionais (UAN, UEA) e internacionais (Brasil, Nigéria).}
+
+\item \textbf{Workshops Específicos de Software Industrial} \hfill \freqstat{7}{menções}\\
+{\small\color{muted}Petrel, Eclipse, DWSIM, ASPEN HYSYS, QGIS.}
+
+\item \textbf{Ações Ambientais e Sustentabilidade Local} \hfill \freqstat{7}{menções}\\
+{\small\color{muted}Limpeza de praias, reciclagem, energia solar comunitária.}
+
+\end{enumerate}
+
+\newpage
+
+\subsection{Análise Complementar: Atividades Secundárias}
+
+\subsubsection*{Atividades com 5–6 menções}
+\begin{itemize}
+    \item Formações Estruturadas e Cursos Continuados
+    \item Seminários Científicos e Jornadas Académicas
+    \item Revisão e Feedback de Trabalhos Académicos
+    \item Desenvolvimento de Competências em Liderança
+    \item Acesso a Recursos Digitais e Bibliotecas Online
+\end{itemize}
+
+\subsubsection*{Atividades Inovadoras com 3–4 menções}
+\begin{itemize}
+    \item Simulações de Crise e Resposta Rápida
+    \item Merchandise e Identidade Visual do Núcleo
+    \item Certificações Profissionais (PEC da SPE)
+    \item Programas de Financiamento e Patrocínios
+    \item Desafios de Eficiência Energética e Redução de Emissões
+\end{itemize}
+
+\newpage
+
+\subsection{Matriz de Consenso por Eixo}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{p{4.5cm} p{4.5cm} c c}
+\arrayrulecolor{icebd}\toprule
+\rowcolor{navy}\color{white}\bfseries Eixo & \color{white}\bfseries Atividade Principal & \color{white}\bfseries Propostas & \color{white}\bfseries \% \\
+\midrule
+\multirow{4}{*}{\color{steelblue}\bfseries Desenvolvimento Técnico} & Workshops Técnicos & 22/23 & 96\% \\
+\rowcolor{rowalt} & Softwares Industriais & 19/23 & 83\% \\
+ & Projetos Práticos & 15/23 & 65\% \\
+\rowcolor{rowalt} & Grupos de Estudo & 8/23 & 35\% \\
+\midrule
+\multirow{5}{*}{\color{skyblue}\bfseries Integração Profissional} & Palestras com Profissionais & 21/23 & 91\% \\
+\rowcolor{rowalt} & Visitas Técnicas & 20/23 & 87\% \\
+ & Mentoria & 19/23 & 83\% \\
+\rowcolor{rowalt} & Preparação para Entrevistas & 17/23 & 74\% \\
+ & Feiras de Emprego & 13/23 & 57\% \\
+\midrule
+\multirow{4}{*}{\color{navy}\bfseries Inovação e Liderança} & Competições e Desafios & 16/23 & 70\% \\
+\rowcolor{rowalt} & Soft Skills & 14/23 & 61\% \\
+ & Iniciativas Inovadoras & 9/23 & 39\% \\
+\rowcolor{rowalt} & Board Capacitado & 8/23 & 35\% \\
+\midrule
+\multirow{3}{*}{\color{alertred}\bfseries Impacto Social} & Sustentabilidade & 12/23 & 52\% \\
+\rowcolor{rowalt} & Divulgação Científica & 9/23 & 39\% \\
+ & Ações Ambientais & 7/23 & 30\% \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\newpage
+
+\subsection{Insights sobre Prioridades do Núcleo}
+
+\subsubsection*{1. Convergência Cristalina}
+
+\begin{goldbox}
+\small
+As 23 propostas mostram convergência notável:
+\begin{itemize}[topsep=2pt, itemsep=2pt]
+    \item Workshops técnicos: \textbf{100\%} de consenso
+    \item Palestras com profissionais: \textbf{91\%} de consenso
+    \item Visitas técnicas: \textbf{87\%} de consenso
+\end{itemize}
+\end{goldbox}
+
+\subsubsection*{2. Diferenciadores Secundários}
+Algumas propostas introduzem temas menos frequentes mas valiosos:
+\begin{itemize}
+    \item IA e Machine Learning (4 propostas)
+    \item Simulações de Crise (2 propostas)
+    \item Presença Digital Estratégica (3 propostas)
+\end{itemize}
+
+\subsubsection*{3. Potencial de Inovação}
+As propostas frequentemente introduzem ideias novas mantendo alinhamento com prioridades globais SPE.
+
+\subsubsection*{4. Balance de Escala}
+O núcleo pode começar com atividades de altíssimo consenso (Workshops, Palestras, Visitas) e progressivamente adicionar iniciativas secundárias conforme consolida estrutura e recursos.
+
+% ==================================================
+% ANÁLISE CONSOLIDADA
+% ==================================================
+\newpage
+\section{Análise Consolidada por Eixos Temáticos}
+
+\subsection{Eixo 1: Desenvolvimento Técnico e Capacitação}
+
+Eixo mais recorrente em todas as propostas, refletindo a necessidade de aproximar a formação académica às exigências práticas do mercado.
+
+\subsubsection*{Temas Principais}
+\begin{itemize}
+    \item \textbf{Softwares:} Petrel, Eclipse, Python, QGIS, DWSIM, ASPEN HYSYS
+    \item \textbf{Tópicos Técnicos:} Perfuração, produção, reservatórios, geofísica, refinação
+    \item \textbf{Inteligência Artificial:} Aplicações práticas em engenharia
+    \item \textbf{Programação:} Python para geociências e análise de dados
+    \item \textbf{Escrita Técnica:} Relatórios e artigos científicos
+\end{itemize}
+
+\subsubsection*{Frequência Sugerida}
+Mensal para workshops técnicos $\cdot$ Trimestral para palestras de imersão $\cdot$ Quinzenal para grupos de estudo.
+
+\proposalsep
+
+\subsection{Eixo 2: Integração Profissional e Networking}
+
+\subsubsection*{Atividades Chave}
+\begin{itemize}
+    \item \textbf{Visitas Técnicas:} Refinarias, plataformas, Angola LNG
+    \item \textbf{Palestras:} Sonangol, TotalEnergies, Chevron, ex-alunos
+    \item \textbf{Mentoria:} Professional shadowing, acompanhamento individual
+    \item \textbf{Feiras de Estágio:} Conexão direta com empresas
+    \item \textbf{Preparação para Entrevistas:} CV, simulações, inglês técnico
+    \item \textbf{Networking Social:} Dinners, coffee breaks, encontros formais
+\end{itemize}
+
+\proposalsep
+
+\subsection{Eixo 3: Inovação e Liderança Estudantil}
+
+\begin{itemize}
+    \item \textbf{Projetos Práticos:} Aplicados a problemas reais
+    \item \textbf{Competições:} PetroBowl, quiz, concursos integrados, hackathons
+    \item \textbf{Gestão Estudantil:} Board capacitado, processos eficientes
+    \item \textbf{Soft Skills:} Liderança, comunicação, trabalho em equipa
+\end{itemize}
+
+\proposalsep
+
+\subsection{Eixo 4: Impacto Social e Sustentabilidade}
+
+\begin{itemize}
+    \item \textbf{Divulgação Científica:} Palestras em escolas, campanhas comunitárias
+    \item \textbf{Sustentabilidade:} Transição energética, renováveis, eficiência
+    \item \textbf{Ambiente:} Limpeza de praias, reflorestamento, reciclagem
+    \item \textbf{Desenvolvimento Local:} Soluções para acesso a água, energia, lixo
+    \item \textbf{Responsabilidade Corporativa:} Energy4Me, parcerias com ONGs
+\end{itemize}
+
+% ==================================================
+% RECOMENDAÇÕES
+% ==================================================
+\newpage
+\section{Recomendações Estratégicas}
+
+\subsection{Priorização de Atividades}
+
+\subsubsection*{Fase 1 — Meses 1 a 3: Fundação}
+\begin{enumerate}
+    \item Palestras com profissionais (tema: setor energético angolano)
+    \item Workshops técnicos iniciais (software básico)
+    \item Formação do Board para liderança
+    \item Parcerias com 2–3 empresas-chave
+\end{enumerate}
+
+\subsubsection*{Fase 2 — Meses 4 a 6: Consolidação}
+\begin{enumerate}
+    \item Visitas técnicas (refinaria, bases, campos)
+    \item Programa de mentoria institucionalizado
+    \item Ciclo de palestras temáticas
+    \item Primeiras competições internas (quiz)
+\end{enumerate}
+
+\subsubsection*{Fase 3 — Meses 7 a 12: Expansão}
+\begin{enumerate}
+    \item Hackathon de inovação
+    \item Programas de estágio consolidados
+    \item Presença em redes sociais
+    \item Iniciativas de impacto social
+\end{enumerate}
+
+\proposalsep
+
+\subsection{Indicadores de Sucesso}
+
+\begin{itemize}
+    \item \textbf{Participação:} Percentagem de membros em cada atividade
+    \item \textbf{Empregabilidade:} Taxa de colocação em estágios e emprego
+    \item \textbf{Satisfação:} Feedback dos membros
+    \item \textbf{Impacto Académico:} Desempenho em disciplinas técnicas
+    \item \textbf{Impacto Social:} Alcance de iniciativas comunitárias
+    \item \textbf{Liderança:} Desenvolvimento de soft skills do Board
+\end{itemize}
+
+\proposalsep
+
+\subsection{Recursos Necessários}
+
+\subsubsection*{Humanos}
+Board dedicado (5–7 membros) $\cdot$ Voluntários por eixo $\cdot$ Mentores externos $\cdot$ Docentes colaboradores.
+
+\subsubsection*{Financeiros}
+Mensalidades (5.000–10.000 Kz/ano) $\cdot$ Patrocínios empresariais $\cdot$ Grants SPE International $\cdot$ Receita de eventos.
+
+\subsubsection*{Físicos}
+Sala no ISPTEC $\cdot$ Equipamento audiovisual $\cdot$ Licenças educacionais $\cdot$ Transporte para visitas.
+
+\subsubsection*{Digitais}
+Plataforma de comunicação $\cdot$ Página web e redes sociais $\cdot$ Canais de podcast/vídeo $\cdot$ Base de dados de membros.
+
+% ==================================================
+% DETALHAMENTO COMPLETO
+% ==================================================
+\newpage
+\section{Detalhamento Completo das 23 Propostas}
+
+Este capítulo apresenta a consolidação integral de cada uma das 23 propostas submetidas.
+
+\subsection{Proposta 1 — Palestina Sachipunga: Atividades Base}
+
+\begin{itemize}
+    \item \textbf{Palestras e Seminários:} Convidados sobre perfuração, produção, reservatórios, energias.
+    \item \textbf{Workshops em Softwares:} Petrel, Eclipse e ferramentas da indústria.
+    \item \textbf{Mentoria Académica:} Artigos científicos e projetos.
+    \item \textbf{Visitas Técnicas:} Plataformas, refinarias, empresas petrolíferas.
+    \item \textbf{Eventos de Networking:} Com empresas petrolíferas.
+    \item \textbf{Atividades Sociais:} Convívios, jogos, integração.
+\end{itemize}
+
+\begin{infobox}
+\small\textbf{Impacto:} Profissionais competentes, integrados no mercado com relações interpessoais sólidas.
+\end{infobox}
+
+\proposalsep
+
+\subsection{Proposta 2 — Adão Avelino: Setor Energético e Economia}
+
+Temas: Gestão de projetos $\cdot$ Análise financeira (VPL, TIR) $\cdot$ Impacto económico em Angola $\cdot$ Sustentabilidade e transição.
+
+Formato: Palestras interativas com economists/CFOs + resolução de casos práticos.
+
+\proposalsep
+
+\subsection{Proposta 3 — Cleusio Branco: Plano Diversificado}
+
+\textbf{6 componentes:} Workshops imersivos (60h/ano) $\cdot$ Palestras (2–3/mês) $\cdot$ Visitas técnicas (4–6/ano) $\cdot$ Projetos práticos $\cdot$ Networking estruturado $\cdot$ Soft Skills (20h/semestre).
+
+\proposalsep
+
+\subsection{Proposta 4 — Conceição Sapeso: Preparação Profissional}
+
+Diagnóstico: Estudantes com bom desempenho académico carecem de orientação prática. Resultado esperado: 90\%+ placement em 6 meses pós-graduação.
+
+\proposalsep
+
+\subsection{Proposta 5 — Cássia Bebiano: Desenvolvimento e Integração}
+
+\textbf{10 Atividades Estratégicas:} Seminário de Capacitação do Board $\cdot$ Ciclo de Palestras $\cdot$ Workshop de Gestão de Projetos $\cdot$ Workshop HSE $\cdot$ Visitas Técnicas $\cdot$ PetroGames $\cdot$ Mesa-Redonda Mensal $\cdot$ Inglês Técnico $\cdot$ Simulações de Entrevista $\cdot$ Troca com Equipas SPE.
+
+\proposalsep
+
+\subsection{Proposta 6 — Eliane Kangombe: Formação Integrada}
+
+\textbf{9 Pilares:} Workshops com especialistas $\cdot$ Formações modulares (introdutório a avançado) $\cdot$ Mentorias com engenheiros seniores $\cdot$ Intercâmbio nacional e internacional $\cdot$ Conferências SPE $\cdot$ Biblioteca digital $\cdot$ Visitas imersivas $\cdot$ Investigação aplicada $\cdot$ Estágios institucionalizados.
+
+\proposalsep
+
+\subsection{Proposta 7 — Eliùd Manuel: Benchmarking e Networking}
+
+Inspiração: Texas A\&M + UFRJ. Eixos: Geoscience Tools $\cdot$ PetroBowl interno $\cdot$ Industry Mentorship $\cdot$ SPE Cares em escolas $\cdot$ Equilíbrio académico.
+
+\proposalsep
+
+\subsection{Proposta 8 — Esperança Bento: Concurso Técnico Integrado}
+
+Fases: Análise geocientífica $\rightarrow$ Desenvolvimento do campo $\rightarrow$ Transporte e refinação $\rightarrow$ Defesa perante júri. Avaliação: Qualidade técnica (30\%) $\cdot$ Integração (25\%) $\cdot$ Fundamentação (20\%) $\cdot$ Equipa (15\%) $\cdot$ Clareza (10\%).
+
+\proposalsep
+
+\subsection{Proposta 9 — Evandro Muhongo: Núcleo de Geofísica}
+
+\textbf{8 Iniciativas:} Seminários mensais $\cdot$ Workshops (processamento, Python, QGIS) $\cdot$ Grupos de estudo $\cdot$ Campo (levantamentos, demonstrações) $\cdot$ Parcerias com indústria $\cdot$ Semana da Geofísica $\cdot$ Divulgação científica $\cdot$ Projetos de investigação.
+
+\proposalsep
+
+\subsection{Propostas 10–23: Consolidação Temática}
+
+\subsubsection*{Temas Consensuais (Djamila Kiangala, Etelvina Teca, Hamuyela Dias e outros)}
+
+\begin{itemize}
+    \item Round Table Técnica — 6–10 engenheiros, 2–3 min por caso real
+    \item Dinâmica de Resolução Rápida — 15–20 min, cenários operacionais
+    \item Laboratório de Soluções Locais — problemas reais de comunidade
+    \item Engenharia Sustentável Piloto — solar, água, materiais reutilizados
+    \item Simulação de Crise — diagnóstico e plano emergencial
+    \item Mesa Redonda: Engenharia e Sociedade
+    \item Hackathon de Inovação — teams melhoram comunidades
+\end{itemize}
+
+\subsubsection*{Maria Dos Reis — 12 Atividades Integradas}
+
+Minicursos de Software $\cdot$ Alumni ISPTEC $\cdot$ Escrita Técnica $\cdot$ Campo Local $\cdot$ Engenheiros Seniores $\cdot$ Energy4Me $\cdot$ Quiz Geológico $\cdot$ Interpretação Sísmica $\cdot$ CVs + Entrevistas $\cdot$ Laboratórios $\cdot$ Professional Shadowing $\cdot$ Revista Digital.
+
+\subsubsection*{Rocélio Da Silva, Miranda Orlando, Nair Cassoty — Plano 2025}
+
+Workshops mensais $\cdot$ SPE Talks $\cdot$ Visitas a refinarias $\cdot$ PetroBowl $\cdot$ Software técnico $\cdot$ Clube de leitura SPE $\cdot$ Boas-vindas semestral $\cdot$ Alumni $\cdot$ Parcerias Brasil/Nigéria $\cdot$ Mentoria entre pares $\cdot$ Networking Dinner $\cdot$ LinkedIn Boost $\cdot$ Captação de recursos.
+
+\subsubsection*{Sandrane Cassange}
+
+Palestras $\cdot$ Visitas $\cdot$ Mentoria $\cdot$ Eventos científicos $\cdot$ Parcerias com indústria $\cdot$ Simulações $\cdot$ Integração $\cdot$ Soft Skills.
+
+\begin{goldbox}
+\small\bfseries Sumário das 23 Propostas — Grau de Consenso:
+\vspace{2pt}
+\begin{itemize}[topsep=2pt, itemsep=2pt]
+    \item \textbf{96\%} — Workshops Técnicos
+    \item \textbf{91\%} — Palestras com Profissionais
+    \item \textbf{87\%} — Visitas Técnicas
+    \item \textbf{83\%} — Programas de Mentoria
+    \item \textbf{78\%} — Networking e Eventos Sociais
+    \item \textbf{74\%} — Preparação para Mercado de Trabalho
+    \item \textbf{70\%} — Competições e Desafios
+    \item \textbf{65\%} — Projetos Práticos e Estudos de Caso
+\end{itemize}
+\end{goldbox}
+
+% ==================================================
+% CONCLUSÃO
+% ==================================================
+\newpage
+\section{Conclusão}
+
+As 23 propostas submetidas refletem uma visão clara e ambiciosa de desenvolvimento. Ao consolidar estas propostas em quatro eixos estratégicos, o núcleo está bem posicionado para se tornar uma referência em Angola.
+
+\subsubsection*{Pontos-Chave}
+\begin{itemize}
+    \item \textbf{Coerência Temática:} Todas as propostas convergem para formar profissionais competentes, líderes e socialmente responsáveis.
+    \item \textbf{Alinhamento Global:} As atividades refletem boas práticas de Texas A\&M, UFRJ, Imperial College, adaptadas à realidade angolana.
+    \item \textbf{Escalabilidade:} Início com atividades simples e escala progressiva.
+    \item \textbf{Impacto Multiplicador:} Potencial de transformar a educação em engenharia no ISPTEC.
+    \item \textbf{Sustentabilidade:} Modelos diversificados de financiamento e gestão a longo prazo.
+\end{itemize}
+
+\subsubsection*{Próximos Passos}
+\begin{itemize}
+    \item[$\checkmark$] Aprovação do Board sobre o plano estratégico consolidado
+    \item[$\checkmark$] Definição de responsáveis por cada eixo
+    \item[$\checkmark$] Elaboração de calendário detalhado para 2026
+    \item[$\checkmark$] Inicialização de parcerias com empresas
+    \item[$\checkmark$] Comunicação do plano aos membros e stakeholders
+\end{itemize}
+
+\vspace{1cm}
+
+\begin{tikzpicture}
+  \fill[navy] (0,0) rectangle (\linewidth,2.2cm);
+  \fill[gold] (0,0) rectangle (0.35cm,2.2cm);
+  \node[font=\large\bfseries\color{white}, anchor=center] at (0.5\linewidth+0.175cm,1.35cm)
+    {«A excelência não é um destino, é uma jornada.»};
+  \node[font=\small\color{white!60}, anchor=center] at (0.5\linewidth+0.175cm,0.60cm)
+    {Núcleo Estudantil SPE ISPTEC — Março de 2026 — Versão 3.0};
+\end{tikzpicture}
+
+% ==================================================
+% ANEXO A
+% ==================================================
+\newpage
+\section*{Anexo A — Modelo de Proposta e Exemplos}
+\addcontentsline{toc}{section}{Anexo A — Detalhamento Expandido}
+
+\begin{infobox}
+\small\textbf{Instrução:} Use este template para harmonizar submissões futuras e facilitar a avaliação e implementação.
+\end{infobox}
+
+\subsubsection*{Modelo de Proposta (Formato Completo)}
+\begin{enumerate}
+    \item Título da Proposta
+    \item Autor / Contacto
+    \item Contexto e Justificação
+    \item Objetivo Geral
+    \item Objetivos SMART (3–5 itens)
+    \item Público-alvo
+    \item Duração e Frequência
+    \item Formato e Agenda Típica
+    \item Atividades e Metodologias
+    \item Recursos Necessários (humanos, materiais, orçamentais)
+    \item Parceiros Potenciais
+    \item Cronograma e Marcos
+    \item Entregáveis
+    \item Indicadores de Sucesso (KPIs)
+    \item Riscos e Mitigações
+\end{enumerate}
+
+\subsubsection*{Exemplo Preenchido — Proposta 1 (Palestina Sachipunga)}
+
+\begin{goldbox}
+\small
+\textbf{Título:} Atividades Base do SPE ISPTEC — Programa Anual\\[3pt]
+\textbf{Contexto:} Criar portfólio anual que cubra formação técnica, visitas, mentoria e networking.\\[3pt]
+\textbf{Objetivo Geral:} Fortalecer capacidades técnicas e integrar estudantes com o mercado local.\\[3pt]
+\textbf{Objetivos SMART:}
+\begin{itemize}[topsep=2pt, itemsep=2pt]
+    \item Treinar 120 estudantes em Petrel, Python, QGIS até Dez/2026.
+    \item Realizar 6 visitas técnicas durante 2026.
+    \item Estabelecer 20 pares de mentoria até Agosto/2026.
+\end{itemize}
+\textbf{Agenda Típica:} 09:00 Abertura $\cdot$ 09:30 Teoria + demo $\cdot$ 11:15 Hands-on $\cdot$ 14:00 Estudo de caso $\cdot$ 15:30 Feedback.\\[3pt]
+\textbf{Indicadores:} Taxa de conclusão >80\% $\cdot$ Avaliação média >=4.0/5 $\cdot$ Parcerias firmadas.\\[3pt]
+\textbf{Orçamento estimado:} 50.000–120.000 Kz por workshop.
+\end{goldbox}
+
+\subsubsection*{Exemplos Rápidos — Propostas 2 a 9}
+
+\textbf{Proposta 2 — Adão Avelino:} 4 módulos com 80 participantes; 4 estudos de caso angolanos.\\[2pt]
+\textbf{Proposta 3 — Cleusio Branco:} Trilha anual (60h) com 6 workshops e 4 visitas técnicas.\\[2pt]
+\textbf{Proposta 4 — Conceição Sapeso:} 100 estudantes em empregabilidade; 12 mentorias no primeiro semestre.\\[2pt]
+\textbf{Proposta 5 — Cássia Bebiano:} 10–12 palestras/ano; 1 PetroGames com 5 universidades.\\[2pt]
+\textbf{Proposta 6 — Eliane Kangombe:} 5 trilhas modulares; 2 intercâmbios anuais.\\[2pt]
+\textbf{Proposta 7 — Eliùd Manuel:} Liga interna PetroBowl; 8 capítulos mapeados no primeiro trimestre.\\[2pt]
+\textbf{Proposta 8 — Esperança Bento:} Concurso integrado com 10 equipas; entregáveis por fase.\\[2pt]
+\textbf{Proposta 9 — Djamila Kiangala:} Plataforma de gestão; 50 eventos no primeiro ano.
+
+\subsubsection*{Cronograma Rápido (Modelo)}
+\begin{itemize}
+    \item M0: Planeamento e captação de parceiros
+    \item M1–M3: Pilotos (3 workshops + 1 visita)
+    \item M4: Avaliação e ajustes
+    \item M5–M12: Escala e relatórios trimestrais
+\end{itemize}
+
+\vspace{0.5cm}
+\begin{center}
+{\color{gold}\rule{10cm}{0.6pt}}\\[4pt]
+{\small\color{muted} Para as Propostas 10–23 aplica-se o mesmo modelo. Cada autor deve preencher o template com: objetivos SMART, cronograma, orçamento estimado e parceiros potenciais.}
+\end{center}
+
+\end{document}

@@ -1,0 +1,1001 @@
+Ficheiro gerado automaticamente: questões de Mecânica das Rochas para Anki (Frente<TAB>Verso)
+O que é Mecânica das Rochas?	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações.
+Defina Mecânica das Rochas.	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações.
+Explique Mecânica das Rochas em contexto de perfuração e produção de petróleo.	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações.
+Por que Mecânica das Rochas é importante na indústria petrolífera?	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações.
+Cite uma aplicação prática de Mecânica das Rochas.	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações.
+O que é Geomecânica?	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera.
+Defina Geomecânica.	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera.
+Explique Geomecânica em contexto de perfuração e produção de petróleo.	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera.
+Por que Geomecânica é importante na indústria petrolífera?	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera.
+Cite uma aplicação prática de Geomecânica.	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera.
+O que é Juntas (Diáclases)?	Fracturação sem deslocamento perceptível dos blocos.
+Defina Juntas (Diáclases).	Fracturação sem deslocamento perceptível dos blocos.
+Explique Juntas (Diáclases) em contexto de perfuração e produção de petróleo.	Fracturação sem deslocamento perceptível dos blocos.
+Por que Juntas (Diáclases) é importante na indústria petrolífera?	Fracturação sem deslocamento perceptível dos blocos.
+Cite uma aplicação prática de Juntas (Diáclases).	Fracturação sem deslocamento perceptível dos blocos.
+O que é Falhas?	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura.
+Defina Falhas.	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura.
+Explique Falhas em contexto de perfuração e produção de petróleo.	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura.
+Por que Falhas é importante na indústria petrolífera?	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura.
+Cite uma aplicação prática de Falhas.	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura.
+O que é Dobras?	Deformação interna com flexão e encurtamento das camadas rochosas.
+Defina Dobras.	Deformação interna com flexão e encurtamento das camadas rochosas.
+Explique Dobras em contexto de perfuração e produção de petróleo.	Deformação interna com flexão e encurtamento das camadas rochosas.
+Por que Dobras é importante na indústria petrolífera?	Deformação interna com flexão e encurtamento das camadas rochosas.
+Cite uma aplicação prática de Dobras.	Deformação interna com flexão e encurtamento das camadas rochosas.
+O que é Poro-pressão?	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout.
+Defina Poro-pressão.	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout.
+Explique Poro-pressão em contexto de perfuração e produção de petróleo.	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout.
+Por que Poro-pressão é importante na indústria petrolífera?	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout.
+Cite uma aplicação prática de Poro-pressão.	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout.
+O que é Janela de perfuração segura?	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior).
+Defina Janela de perfuração segura.	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior).
+Explique Janela de perfuração segura em contexto de perfuração e produção de petróleo.	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior).
+Por que Janela de perfuração segura é importante na indústria petrolífera?	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior).
+Cite uma aplicação prática de Janela de perfuração segura.	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior).
+O que é Sanding (produção de areia)?	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório.
+Defina Sanding (produção de areia).	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório.
+Explique Sanding (produção de areia) em contexto de perfuração e produção de petróleo.	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório.
+Por que Sanding (produção de areia) é importante na indústria petrolífera?	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório.
+Cite uma aplicação prática de Sanding (produção de areia).	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório.
+O que é Critério de Mohr-Coulomb?	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento.
+Defina Critério de Mohr-Coulomb.	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento.
+Explique Critério de Mohr-Coulomb em contexto de perfuração e produção de petróleo.	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento.
+Por que Critério de Mohr-Coulomb é importante na indústria petrolífera?	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento.
+Cite uma aplicação prática de Critério de Mohr-Coulomb.	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento.
+O que é SPT (Standard Penetration Test)?	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos.
+Defina SPT (Standard Penetration Test).	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos.
+Explique SPT (Standard Penetration Test) em contexto de perfuração e produção de petróleo.	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos.
+Por que SPT (Standard Penetration Test) é importante na indústria petrolífera?	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos.
+Cite uma aplicação prática de SPT (Standard Penetration Test).	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos.
+O que é CPT (Cone Penetration Test)?	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência.
+Defina CPT (Cone Penetration Test).	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência.
+Explique CPT (Cone Penetration Test) em contexto de perfuração e produção de petróleo.	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência.
+Por que CPT (Cone Penetration Test) é importante na indústria petrolífera?	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência.
+Cite uma aplicação prática de CPT (Cone Penetration Test).	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência.
+O que é Ensaio de carga em placa?	Teste de campo para determinar resposta à carga superficial e capacidade de carga local.
+Defina Ensaio de carga em placa.	Teste de campo para determinar resposta à carga superficial e capacidade de carga local.
+Explique Ensaio de carga em placa em contexto de perfuração e produção de petróleo.	Teste de campo para determinar resposta à carga superficial e capacidade de carga local.
+Por que Ensaio de carga em placa é importante na indústria petrolífera?	Teste de campo para determinar resposta à carga superficial e capacidade de carga local.
+Cite uma aplicação prática de Ensaio de carga em placa.	Teste de campo para determinar resposta à carga superficial e capacidade de carga local.
+O que é Ensaio de consolidação?	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação.
+Defina Ensaio de consolidação.	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação.
+Explique Ensaio de consolidação em contexto de perfuração e produção de petróleo.	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação.
+Por que Ensaio de consolidação é importante na indústria petrolífera?	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação.
+Cite uma aplicação prática de Ensaio de consolidação.	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação.
+O que é Arenito?	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade.
+Defina Arenito.	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade.
+Explique Arenito em contexto de perfuração e produção de petróleo.	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade.
+Por que Arenito é importante na indústria petrolífera?	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade.
+Cite uma aplicação prática de Arenito.	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade.
+O que é Folhelho (Shale)?	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade.
+Defina Folhelho (Shale).	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade.
+Explique Folhelho (Shale) em contexto de perfuração e produção de petróleo.	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade.
+Por que Folhelho (Shale) é importante na indústria petrolífera?	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade.
+Cite uma aplicação prática de Folhelho (Shale).	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade.
+O que é Granito?	Rocha ígnea compacta com grãos não orientados; baixa porosidade.
+Defina Granito.	Rocha ígnea compacta com grãos não orientados; baixa porosidade.
+Explique Granito em contexto de perfuração e produção de petróleo.	Rocha ígnea compacta com grãos não orientados; baixa porosidade.
+Por que Granito é importante na indústria petrolífera?	Rocha ígnea compacta com grãos não orientados; baixa porosidade.
+Cite uma aplicação prática de Granito.	Rocha ígnea compacta com grãos não orientados; baixa porosidade.
+Quais as causas e soluções para Formações Pressurizadas (Kick/Explosão)?	Causa: Poro-pressão maior que o peso da coluna de fluido. Solução: aumentar peso da lama de perfuração, assentar revestimento, controlar circulação e protocolos de kick.
+O que causa desmoronamento em formações frágeis e qual a solução?	Causa: baixa resistência da rocha e efeitos mecânicos da operação (vibração, coluna). Solução: ajustar propriedades da lama, reduzir sobrepressão, usar revestimento quando necessário.
+Como resolver problemas em formações móveis (sal/folhelho)?	Causa: diferença de densidade/instabilidade mecânica. Solução: aumentar peso do fluido, usar fundação/casing e planeamento geomecânico.
+Como se evita reativação de falhas durante operações?	Avaliar tensões in-situ e aplicar o critério de Mohr-Coulomb; reduzir pressões perturbadoras e projetar janelas de perfuração segura.
+O que é a janela de perfuração segura?	Intervalo entre a pressão de poro (colapso inferior) e a pressão de fratura (perda de circulação superior). Perfuração deve manter pressão de fundo dentro desta janela.
+O que é sanding e quando ocorre?	Sanding é a produção de partículas de areia quando as tensões do fluxo excedem a resistência da rocha reservatório; ocorre em formações fracas e sob produção intensa.
+Classifique o grão de diâmetro 6.3944 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.2504 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 2.7505 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.2323 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 7.3648 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.7671 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.9218 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.8697 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 4.2194 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.2983 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 2.1866 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.0537 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.2657 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 1.9886 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 6.4989 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.4496 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.2046 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.8928 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.0944 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.0653 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 8.0583 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.9815 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.4027 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 1.555 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 9.5721 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.3661 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.9277 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 0.9674 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 8.475 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.0374 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.0713 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 7.2974 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.3624 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 9.7312 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.7855 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.5205 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.2941 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.1853 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.6171 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.7736 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 7.0458 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.4585 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 2.2792 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.8941 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.7982 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 2.3281 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 1.0103 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 2.78 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.357 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.6485 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.702 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.0953 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.67 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 9.3666 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.4805 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.0914 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 1.7116 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 7.2913 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 1.6343 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 3.7947 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 9.8952 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.4001 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 5.5696 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.8462 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.4286 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 7.7601 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.2907 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 0.3213 mm segundo Wentworth.	Areia (2 - 0.06 mm)
+Classifique o grão de diâmetro 3.1547 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.6776 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.1101 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 9.4291 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 8.7637 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.147 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 6.5545 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 3.9565 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 9.1455 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 4.5887 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.649 mm segundo Wentworth.	Cascalho (> 2 mm)
+Classifique o grão de diâmetro 2.4665 mm segundo Wentworth.	Cascalho (> 2 mm)
+O que significa A1 na classificação ISRM (graus de alteração)?	Rocha sã: sem sinais de alteração.
+O que significa A2 na classificação ISRM (graus de alteração)?	Pouco alterada: alteração apenas nas descontinuidades.
+O que significa A3 na classificação ISRM (graus de alteração)?	Medianamente alterada: fragmentos NÃO quebram com a mão.
+O que significa A4 na classificação ISRM (graus de alteração)?	Muito alterada: fragmentos quebram facilmente com a mão.
+O que significa A5 na classificação ISRM (graus de alteração)?	Completamente alterada: decomposta; transforma-se em solo residual.
+Calcule I/L e S/I para L=2.3 mm, I=1.8 mm, S=1.5 mm (Exemplo 4).	I/L = 1.8 / 2.3 = 0.78; S/I = 1.5 / 1.8 = 0.83. Interpretar no gráfico de Zingg (provavelmente Equiaxial/Disco).
+Calcule S/L e (L-I)/(L-S) para L=4.12 mm, I=2.83 mm, S=1.75 mm (Exemplo 5).	S/L = 1.75 / 4.12 = 0.42; (L-I)/(L-S) = (4.12-2.83)/(4.12-1.75) = 1.29/2.37 = 0.54. Usar a tabela de 10 classes de esfericidade para classificação.
+Calcule I/L e S/I para L=3.89 mm, I=2.69 mm, S=2.0 mm.	I/L = 2.69/3.89 = 0.69; S/I = 2.0/2.69 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.51 mm, I=4.08 mm, S=2.28 mm.	I/L = 4.08/5.51 = 0.74; S/I = 2.28/4.08 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.99 mm, I=4.66 mm, S=2.31 mm.	I/L = 4.66/5.99 = 0.78; S/I = 2.31/4.66 = 0.50. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.43 mm, I=0.91 mm, S=0.69 mm.	I/L = 0.91/1.43 = 0.64; S/I = 0.69/0.91 = 0.76. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.0 mm, I=3.74 mm, S=1.8 mm.	I/L = 3.74/5.0 = 0.75; S/I = 1.8/3.74 = 0.48. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.03 mm, I=2.87 mm, S=2.05 mm.	I/L = 2.87/3.03 = 0.95; S/I = 2.05/2.87 = 0.71. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.86 mm, I=5.28 mm, S=2.41 mm.	I/L = 5.28/5.86 = 0.90; S/I = 2.41/5.28 = 0.46. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.66 mm, I=3.91 mm, S=2.81 mm.	I/L = 3.91/4.66 = 0.84; S/I = 2.81/3.91 = 0.72. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.48 mm, I=2.04 mm, S=1.03 mm.	I/L = 2.04/2.48 = 0.82; S/I = 1.03/2.04 = 0.50. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.29 mm, I=2.5 mm, S=2.32 mm.	I/L = 2.5/3.29 = 0.76; S/I = 2.32/2.5 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.4 mm, I=3.74 mm, S=2.62 mm.	I/L = 3.74/5.4 = 0.69; S/I = 2.62/3.74 = 0.70. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.06 mm, I=1.89 mm, S=1.67 mm.	I/L = 1.89/2.06 = 0.92; S/I = 1.67/1.89 = 0.88. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.63 mm, I=2.17 mm, S=1.64 mm.	I/L = 2.17/2.63 = 0.83; S/I = 1.64/2.17 = 0.76. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.93 mm, I=1.67 mm, S=1.2 mm.	I/L = 1.67/1.93 = 0.87; S/I = 1.2/1.67 = 0.72. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.94 mm, I=3.88 mm, S=1.75 mm.	I/L = 3.88/4.94 = 0.79; S/I = 1.75/3.88 = 0.45. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.76 mm, I=1.67 mm, S=1.53 mm.	I/L = 1.67/2.76 = 0.61; S/I = 1.53/1.67 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.42 mm, I=4.83 mm, S=2.92 mm.	I/L = 4.83/5.42 = 0.89; S/I = 2.92/4.83 = 0.60. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.48 mm, I=1.34 mm, S=1.24 mm.	I/L = 1.34/1.48 = 0.91; S/I = 1.24/1.34 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.61 mm, I=1.24 mm, S=0.6 mm.	I/L = 1.24/1.61 = 0.77; S/I = 0.6/1.24 = 0.48. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.85 mm, I=4.21 mm, S=2.16 mm.	I/L = 4.21/4.85 = 0.87; S/I = 2.16/4.21 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.48 mm, I=2.76 mm, S=1.61 mm.	I/L = 2.76/3.48 = 0.79; S/I = 1.61/2.76 = 0.58. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.39 mm, I=4.03 mm, S=2.24 mm.	I/L = 4.03/5.39 = 0.75; S/I = 2.24/4.03 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.79 mm, I=3.24 mm, S=1.78 mm.	I/L = 3.24/3.79 = 0.85; S/I = 1.78/3.24 = 0.55. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.7 mm, I=2.56 mm, S=1.98 mm.	I/L = 2.56/2.7 = 0.95; S/I = 1.98/2.56 = 0.77. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.3 mm, I=2.58 mm, S=1.32 mm.	I/L = 2.58/3.3 = 0.78; S/I = 1.32/2.58 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.28 mm, I=1.64 mm, S=1.22 mm.	I/L = 1.64/2.28 = 0.72; S/I = 1.22/1.64 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.3 mm, I=1.56 mm, S=0.76 mm.	I/L = 1.56/2.3 = 0.68; S/I = 0.76/1.56 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.23 mm, I=2.88 mm, S=2.6 mm.	I/L = 2.88/4.23 = 0.68; S/I = 2.6/2.88 = 0.90. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.33 mm, I=3.33 mm, S=1.89 mm.	I/L = 3.33/5.33 = 0.62; S/I = 1.89/3.33 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.41 mm, I=2.98 mm, S=1.54 mm.	I/L = 2.98/4.41 = 0.68; S/I = 1.54/2.98 = 0.52. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.69 mm, I=4.55 mm, S=3.12 mm.	I/L = 4.55/5.69 = 0.80; S/I = 3.12/4.55 = 0.69. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.97 mm, I=4.39 mm, S=2.39 mm.	I/L = 4.39/4.97 = 0.88; S/I = 2.39/4.39 = 0.54. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.67 mm, I=1.25 mm, S=0.83 mm.	I/L = 1.25/1.67 = 0.75; S/I = 0.83/1.25 = 0.66. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.44 mm, I=2.94 mm, S=2.31 mm.	I/L = 2.94/3.44 = 0.85; S/I = 2.31/2.94 = 0.79. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.92 mm, I=3.76 mm, S=2.45 mm.	I/L = 3.76/5.92 = 0.64; S/I = 2.45/3.76 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.83 mm, I=2.55 mm, S=1.46 mm.	I/L = 2.55/2.83 = 0.90; S/I = 1.46/2.55 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.11 mm, I=1.6 mm, S=1.06 mm.	I/L = 1.6/2.11 = 0.76; S/I = 1.06/1.6 = 0.66. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.54 mm, I=1.75 mm, S=1.6 mm.	I/L = 1.75/2.54 = 0.69; S/I = 1.6/1.75 = 0.91. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.33 mm, I=3.0 mm, S=2.18 mm.	I/L = 3.0/3.33 = 0.90; S/I = 2.18/3.0 = 0.73. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.44 mm, I=1.37 mm, S=1.19 mm.	I/L = 1.37/1.44 = 0.95; S/I = 1.19/1.37 = 0.87. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.85 mm, I=5.41 mm, S=4.73 mm.	I/L = 5.41/5.85 = 0.92; S/I = 4.73/5.41 = 0.87. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.0 mm, I=1.54 mm, S=0.86 mm.	I/L = 1.54/2.0 = 0.77; S/I = 0.86/1.54 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.12 mm, I=1.94 mm, S=1.24 mm.	I/L = 1.94/3.12 = 0.62; S/I = 1.24/1.94 = 0.64. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.93 mm, I=4.11 mm, S=3.46 mm.	I/L = 4.11/5.93 = 0.69; S/I = 3.46/4.11 = 0.84. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.38 mm, I=2.53 mm, S=2.35 mm.	I/L = 2.53/3.38 = 0.75; S/I = 2.35/2.53 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.98 mm, I=4.75 mm, S=3.84 mm.	I/L = 4.75/5.98 = 0.79; S/I = 3.84/4.75 = 0.81. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.94 mm, I=1.37 mm, S=1.28 mm.	I/L = 1.37/1.94 = 0.71; S/I = 1.28/1.37 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.98 mm, I=3.14 mm, S=2.59 mm.	I/L = 3.14/3.98 = 0.79; S/I = 2.59/3.14 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.47 mm, I=1.18 mm, S=0.83 mm.	I/L = 1.18/1.47 = 0.80; S/I = 0.83/1.18 = 0.70. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.29 mm, I=3.47 mm, S=3.23 mm.	I/L = 3.47/5.29 = 0.66; S/I = 3.23/3.47 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.58 mm, I=1.05 mm, S=0.78 mm.	I/L = 1.05/1.58 = 0.66; S/I = 0.78/1.05 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.44 mm, I=3.03 mm, S=1.55 mm.	I/L = 3.03/4.44 = 0.68; S/I = 1.55/3.03 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.47 mm, I=3.75 mm, S=2.8 mm.	I/L = 3.75/5.47 = 0.69; S/I = 2.8/3.75 = 0.75. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.17 mm, I=3.11 mm, S=2.31 mm.	I/L = 3.11/4.17 = 0.75; S/I = 2.31/3.11 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.71 mm, I=3.44 mm, S=1.9 mm.	I/L = 3.44/3.71 = 0.93; S/I = 1.9/3.44 = 0.55. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.64 mm, I=3.17 mm, S=2.05 mm.	I/L = 3.17/4.64 = 0.68; S/I = 2.05/3.17 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.42 mm, I=3.12 mm, S=1.9 mm.	I/L = 3.12/4.42 = 0.71; S/I = 1.9/3.12 = 0.61. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.81 mm, I=3.01 mm, S=2.04 mm.	I/L = 3.01/4.81 = 0.63; S/I = 2.04/3.01 = 0.68. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.99 mm, I=5.68 mm, S=2.76 mm.	I/L = 5.68/5.99 = 0.95; S/I = 2.76/5.68 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.22 mm, I=1.54 mm, S=1.41 mm.	I/L = 1.54/2.22 = 0.69; S/I = 1.41/1.54 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.43 mm, I=4.93 mm, S=3.13 mm.	I/L = 4.93/5.43 = 0.91; S/I = 3.13/4.93 = 0.63. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.96 mm, I=1.75 mm, S=1.4 mm.	I/L = 1.75/1.96 = 0.89; S/I = 1.4/1.75 = 0.80. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.14 mm, I=3.91 mm, S=3.04 mm.	I/L = 3.91/4.14 = 0.94; S/I = 3.04/3.91 = 0.78. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.24 mm, I=1.1 mm, S=0.66 mm.	I/L = 1.1/1.24 = 0.89; S/I = 0.66/1.1 = 0.60. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.38 mm, I=4.07 mm, S=2.1 mm.	I/L = 4.07/4.38 = 0.93; S/I = 2.1/4.07 = 0.52. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.75 mm, I=1.12 mm, S=0.81 mm.	I/L = 1.12/1.75 = 0.64; S/I = 0.81/1.12 = 0.72. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.51 mm, I=2.04 mm, S=1.65 mm.	I/L = 2.04/2.51 = 0.81; S/I = 1.65/2.04 = 0.81. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.18 mm, I=1.79 mm, S=1.04 mm.	I/L = 1.79/2.18 = 0.82; S/I = 1.04/1.79 = 0.58. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.54 mm, I=3.25 mm, S=2.84 mm.	I/L = 3.25/3.54 = 0.92; S/I = 2.84/3.25 = 0.87. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.64 mm, I=1.23 mm, S=0.72 mm.	I/L = 1.23/1.64 = 0.75; S/I = 0.72/1.23 = 0.59. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.22 mm, I=1.06 mm, S=0.81 mm.	I/L = 1.06/1.22 = 0.87; S/I = 0.81/1.06 = 0.76. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.46 mm, I=2.11 mm, S=1.53 mm.	I/L = 2.11/2.46 = 0.86; S/I = 1.53/2.11 = 0.73. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.25 mm, I=1.96 mm, S=0.96 mm.	I/L = 1.96/3.25 = 0.60; S/I = 0.96/1.96 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.44 mm, I=4.99 mm, S=3.61 mm.	I/L = 4.99/5.44 = 0.92; S/I = 3.61/4.99 = 0.72. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.21 mm, I=4.19 mm, S=2.2 mm.	I/L = 4.19/5.21 = 0.80; S/I = 2.2/4.19 = 0.53. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.81 mm, I=1.28 mm, S=1.15 mm.	I/L = 1.28/1.81 = 0.71; S/I = 1.15/1.28 = 0.90. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.02 mm, I=4.52 mm, S=4.07 mm.	I/L = 4.52/5.02 = 0.90; S/I = 4.07/4.52 = 0.90. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.21 mm, I=1.52 mm, S=0.76 mm.	I/L = 1.52/2.21 = 0.69; S/I = 0.76/1.52 = 0.50. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.94 mm, I=4.49 mm, S=2.93 mm.	I/L = 4.49/4.94 = 0.91; S/I = 2.93/4.49 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.18 mm, I=2.73 mm, S=2.5 mm.	I/L = 2.73/4.18 = 0.65; S/I = 2.5/2.73 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.35 mm, I=5.04 mm, S=4.31 mm.	I/L = 5.04/5.35 = 0.94; S/I = 4.31/5.04 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.43 mm, I=3.31 mm, S=2.71 mm.	I/L = 3.31/5.43 = 0.61; S/I = 2.71/3.31 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.79 mm, I=2.58 mm, S=2.2 mm.	I/L = 2.58/2.79 = 0.92; S/I = 2.2/2.58 = 0.85. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.35 mm, I=4.73 mm, S=2.76 mm.	I/L = 4.73/5.35 = 0.88; S/I = 2.76/4.73 = 0.58. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.98 mm, I=3.18 mm, S=2.82 mm.	I/L = 3.18/4.98 = 0.64; S/I = 2.82/3.18 = 0.89. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.32 mm, I=3.61 mm, S=3.1 mm.	I/L = 3.61/5.32 = 0.68; S/I = 3.1/3.61 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.41 mm, I=2.41 mm, S=2.04 mm.	I/L = 2.41/3.41 = 0.71; S/I = 2.04/2.41 = 0.85. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.29 mm, I=1.39 mm, S=0.76 mm.	I/L = 1.39/2.29 = 0.61; S/I = 0.76/1.39 = 0.55. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.78 mm, I=2.51 mm, S=2.34 mm.	I/L = 2.51/2.78 = 0.90; S/I = 2.34/2.51 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.54 mm, I=2.09 mm, S=1.36 mm.	I/L = 2.09/2.54 = 0.82; S/I = 1.36/2.09 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.91 mm, I=4.66 mm, S=4.29 mm.	I/L = 4.66/5.91 = 0.79; S/I = 4.29/4.66 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.75 mm, I=1.64 mm, S=0.88 mm.	I/L = 1.64/1.75 = 0.94; S/I = 0.88/1.64 = 0.54. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.82 mm, I=4.03 mm, S=2.03 mm.	I/L = 4.03/5.82 = 0.69; S/I = 2.03/4.03 = 0.50. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.29 mm, I=2.81 mm, S=1.71 mm.	I/L = 2.81/3.29 = 0.85; S/I = 1.71/2.81 = 0.61. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.11 mm, I=3.2 mm, S=2.06 mm.	I/L = 3.2/4.11 = 0.78; S/I = 2.06/3.2 = 0.64. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.97 mm, I=2.74 mm, S=2.2 mm.	I/L = 2.74/3.97 = 0.69; S/I = 2.2/2.74 = 0.80. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.21 mm, I=1.12 mm, S=0.81 mm.	I/L = 1.12/1.21 = 0.93; S/I = 0.81/1.12 = 0.72. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.65 mm, I=4.0 mm, S=3.14 mm.	I/L = 4.0/4.65 = 0.86; S/I = 3.14/4.0 = 0.79. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.95 mm, I=1.84 mm, S=1.44 mm.	I/L = 1.84/2.95 = 0.62; S/I = 1.44/1.84 = 0.78. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.78 mm, I=1.97 mm, S=1.72 mm.	I/L = 1.97/2.78 = 0.71; S/I = 1.72/1.97 = 0.87. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.65 mm, I=3.28 mm, S=1.98 mm.	I/L = 3.28/4.65 = 0.71; S/I = 1.98/3.28 = 0.60. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.16 mm, I=2.34 mm, S=1.4 mm.	I/L = 2.34/3.16 = 0.74; S/I = 1.4/2.34 = 0.60. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.81 mm, I=1.35 mm, S=1.24 mm.	I/L = 1.35/1.81 = 0.75; S/I = 1.24/1.35 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.45 mm, I=4.08 mm, S=3.09 mm.	I/L = 4.08/4.45 = 0.92; S/I = 3.09/4.08 = 0.76. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.64 mm, I=2.09 mm, S=0.94 mm.	I/L = 2.09/2.64 = 0.79; S/I = 0.94/2.09 = 0.45. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.58 mm, I=1.94 mm, S=1.44 mm.	I/L = 1.94/2.58 = 0.75; S/I = 1.44/1.94 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.34 mm, I=3.31 mm, S=2.22 mm.	I/L = 3.31/4.34 = 0.76; S/I = 2.22/3.31 = 0.67. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.23 mm, I=1.71 mm, S=1.54 mm.	I/L = 1.71/2.23 = 0.77; S/I = 1.54/1.71 = 0.90. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.02 mm, I=3.31 mm, S=1.63 mm.	I/L = 3.31/5.02 = 0.66; S/I = 1.63/3.31 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.67 mm, I=3.02 mm, S=1.87 mm.	I/L = 3.02/3.67 = 0.82; S/I = 1.87/3.02 = 0.62. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.13 mm, I=4.43 mm, S=3.48 mm.	I/L = 4.43/5.13 = 0.86; S/I = 3.48/4.43 = 0.79. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.28 mm, I=1.53 mm, S=0.71 mm.	I/L = 1.53/2.28 = 0.67; S/I = 0.71/1.53 = 0.46. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.38 mm, I=1.82 mm, S=1.59 mm.	I/L = 1.82/2.38 = 0.76; S/I = 1.59/1.82 = 0.87. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.55 mm, I=1.15 mm, S=0.88 mm.	I/L = 1.15/1.55 = 0.74; S/I = 0.88/1.15 = 0.77. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.13 mm, I=1.8 mm, S=1.25 mm.	I/L = 1.8/2.13 = 0.85; S/I = 1.25/1.8 = 0.69. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.37 mm, I=1.97 mm, S=0.89 mm.	I/L = 1.97/2.37 = 0.83; S/I = 0.89/1.97 = 0.45. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.8 mm, I=4.17 mm, S=2.1 mm.	I/L = 4.17/4.8 = 0.87; S/I = 2.1/4.17 = 0.50. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.24 mm, I=2.14 mm, S=1.99 mm.	I/L = 2.14/3.24 = 0.66; S/I = 1.99/2.14 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.69 mm, I=2.28 mm, S=1.31 mm.	I/L = 2.28/3.69 = 0.62; S/I = 1.31/2.28 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.27 mm, I=4.0 mm, S=3.4 mm.	I/L = 4.0/5.27 = 0.76; S/I = 3.4/4.0 = 0.85. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.4 mm, I=4.16 mm, S=3.11 mm.	I/L = 4.16/4.4 = 0.95; S/I = 3.11/4.16 = 0.75. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.76 mm, I=5.25 mm, S=3.97 mm.	I/L = 5.25/5.76 = 0.91; S/I = 3.97/5.25 = 0.76. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.65 mm, I=3.61 mm, S=3.12 mm.	I/L = 3.61/4.65 = 0.78; S/I = 3.12/3.61 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.83 mm, I=3.5 mm, S=2.88 mm.	I/L = 3.5/3.83 = 0.91; S/I = 2.88/3.5 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.48 mm, I=2.4 mm, S=1.38 mm.	I/L = 2.4/3.48 = 0.69; S/I = 1.38/2.4 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.26 mm, I=3.7 mm, S=2.63 mm.	I/L = 3.7/4.26 = 0.87; S/I = 2.63/3.7 = 0.71. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.21 mm, I=2.93 mm, S=1.43 mm.	I/L = 2.93/4.21 = 0.70; S/I = 1.43/2.93 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.57 mm, I=1.79 mm, S=1.09 mm.	I/L = 1.79/2.57 = 0.70; S/I = 1.09/1.79 = 0.61. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.79 mm, I=2.46 mm, S=1.39 mm.	I/L = 2.46/3.79 = 0.65; S/I = 1.39/2.46 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.53 mm, I=3.84 mm, S=1.85 mm.	I/L = 3.84/4.53 = 0.85; S/I = 1.85/3.84 = 0.48. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.16 mm, I=2.5 mm, S=1.64 mm.	I/L = 2.5/3.16 = 0.79; S/I = 1.64/2.5 = 0.66. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.19 mm, I=1.64 mm, S=1.48 mm.	I/L = 1.64/2.19 = 0.75; S/I = 1.48/1.64 = 0.90. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.0 mm, I=3.37 mm, S=2.96 mm.	I/L = 3.37/4.0 = 0.84; S/I = 2.96/3.37 = 0.88. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.87 mm, I=3.57 mm, S=1.62 mm.	I/L = 3.57/4.87 = 0.73; S/I = 1.62/3.57 = 0.45. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.89 mm, I=2.5 mm, S=2.19 mm.	I/L = 2.5/2.89 = 0.87; S/I = 2.19/2.5 = 0.88. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.78 mm, I=4.32 mm, S=3.56 mm.	I/L = 4.32/5.78 = 0.75; S/I = 3.56/4.32 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.82 mm, I=3.1 mm, S=1.74 mm.	I/L = 3.1/3.82 = 0.81; S/I = 1.74/3.1 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.25 mm, I=1.69 mm, S=0.79 mm.	I/L = 1.69/2.25 = 0.75; S/I = 0.79/1.69 = 0.47. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.81 mm, I=2.35 mm, S=1.53 mm.	I/L = 2.35/2.81 = 0.84; S/I = 1.53/2.35 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.99 mm, I=1.52 mm, S=0.78 mm.	I/L = 1.52/1.99 = 0.76; S/I = 0.78/1.52 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.19 mm, I=2.55 mm, S=1.65 mm.	I/L = 2.55/4.19 = 0.61; S/I = 1.65/2.55 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.91 mm, I=2.38 mm, S=1.84 mm.	I/L = 2.38/3.91 = 0.61; S/I = 1.84/2.38 = 0.77. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.85 mm, I=1.41 mm, S=0.67 mm.	I/L = 1.41/1.85 = 0.76; S/I = 0.67/1.41 = 0.48. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.02 mm, I=2.04 mm, S=1.25 mm.	I/L = 2.04/3.02 = 0.68; S/I = 1.25/2.04 = 0.61. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.85 mm, I=3.55 mm, S=2.93 mm.	I/L = 3.55/4.85 = 0.73; S/I = 2.93/3.55 = 0.83. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.19 mm, I=3.57 mm, S=1.75 mm.	I/L = 3.57/5.19 = 0.69; S/I = 1.75/3.57 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.29 mm, I=1.02 mm, S=0.97 mm.	I/L = 1.02/1.29 = 0.79; S/I = 0.97/1.02 = 0.95. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.88 mm, I=2.38 mm, S=2.0 mm.	I/L = 2.38/2.88 = 0.83; S/I = 2.0/2.38 = 0.84. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.33 mm, I=3.74 mm, S=3.46 mm.	I/L = 3.74/4.33 = 0.86; S/I = 3.46/3.74 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.16 mm, I=1.31 mm, S=0.69 mm.	I/L = 1.31/2.16 = 0.61; S/I = 0.69/1.31 = 0.53. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.81 mm, I=1.51 mm, S=1.11 mm.	I/L = 1.51/1.81 = 0.83; S/I = 1.11/1.51 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.25 mm, I=1.9 mm, S=1.58 mm.	I/L = 1.9/2.25 = 0.84; S/I = 1.58/1.9 = 0.83. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.01 mm, I=1.63 mm, S=1.34 mm.	I/L = 1.63/2.01 = 0.81; S/I = 1.34/1.63 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.75 mm, I=1.55 mm, S=1.45 mm.	I/L = 1.55/1.75 = 0.89; S/I = 1.45/1.55 = 0.94. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.72 mm, I=1.05 mm, S=0.64 mm.	I/L = 1.05/1.72 = 0.61; S/I = 0.64/1.05 = 0.61. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.45 mm, I=4.16 mm, S=2.7 mm.	I/L = 4.16/4.45 = 0.93; S/I = 2.7/4.16 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.63 mm, I=2.9 mm, S=2.31 mm.	I/L = 2.9/4.63 = 0.63; S/I = 2.31/2.9 = 0.80. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.21 mm, I=2.68 mm, S=2.24 mm.	I/L = 2.68/4.21 = 0.64; S/I = 2.24/2.68 = 0.84. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.28 mm, I=4.28 mm, S=2.19 mm.	I/L = 4.28/5.28 = 0.81; S/I = 2.19/4.28 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.92 mm, I=5.17 mm, S=3.22 mm.	I/L = 5.17/5.92 = 0.87; S/I = 3.22/5.17 = 0.62. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.26 mm, I=2.38 mm, S=1.67 mm.	I/L = 2.38/3.26 = 0.73; S/I = 1.67/2.38 = 0.70. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.84 mm, I=2.55 mm, S=2.2 mm.	I/L = 2.55/2.84 = 0.90; S/I = 2.2/2.55 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.71 mm, I=1.6 mm, S=1.23 mm.	I/L = 1.6/1.71 = 0.94; S/I = 1.23/1.6 = 0.77. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.18 mm, I=4.39 mm, S=2.93 mm.	I/L = 4.39/5.18 = 0.85; S/I = 2.93/4.39 = 0.67. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.72 mm, I=4.43 mm, S=2.59 mm.	I/L = 4.43/4.72 = 0.94; S/I = 2.59/4.43 = 0.58. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.08 mm, I=4.0 mm, S=2.77 mm.	I/L = 4.0/5.08 = 0.79; S/I = 2.77/4.0 = 0.69. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.29 mm, I=2.82 mm, S=1.65 mm.	I/L = 2.82/3.29 = 0.86; S/I = 1.65/2.82 = 0.59. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.29 mm, I=4.71 mm, S=2.32 mm.	I/L = 4.71/5.29 = 0.89; S/I = 2.32/4.71 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.43 mm, I=3.72 mm, S=2.54 mm.	I/L = 3.72/5.43 = 0.69; S/I = 2.54/3.72 = 0.68. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.13 mm, I=3.03 mm, S=1.41 mm.	I/L = 3.03/4.13 = 0.73; S/I = 1.41/3.03 = 0.47. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.28 mm, I=3.5 mm, S=1.95 mm.	I/L = 3.5/5.28 = 0.66; S/I = 1.95/3.5 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.03 mm, I=3.62 mm, S=3.22 mm.	I/L = 3.62/5.03 = 0.72; S/I = 3.22/3.62 = 0.89. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.57 mm, I=3.18 mm, S=1.45 mm.	I/L = 3.18/4.57 = 0.70; S/I = 1.45/3.18 = 0.46. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.75 mm, I=3.62 mm, S=2.93 mm.	I/L = 3.62/5.75 = 0.63; S/I = 2.93/3.62 = 0.81. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.55 mm, I=3.07 mm, S=2.44 mm.	I/L = 3.07/3.55 = 0.86; S/I = 2.44/3.07 = 0.79. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.3 mm, I=3.32 mm, S=2.81 mm.	I/L = 3.32/4.3 = 0.77; S/I = 2.81/3.32 = 0.85. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.65 mm, I=1.12 mm, S=0.89 mm.	I/L = 1.12/1.65 = 0.68; S/I = 0.89/1.12 = 0.79. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.67 mm, I=2.15 mm, S=1.48 mm.	I/L = 2.15/2.67 = 0.81; S/I = 1.48/2.15 = 0.69. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.75 mm, I=2.81 mm, S=2.31 mm.	I/L = 2.81/3.75 = 0.75; S/I = 2.31/2.81 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.79 mm, I=2.36 mm, S=1.38 mm.	I/L = 2.36/2.79 = 0.85; S/I = 1.38/2.36 = 0.58. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.41 mm, I=1.55 mm, S=0.85 mm.	I/L = 1.55/2.41 = 0.64; S/I = 0.85/1.55 = 0.55. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.77 mm, I=1.39 mm, S=1.16 mm.	I/L = 1.39/1.77 = 0.79; S/I = 1.16/1.39 = 0.83. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.09 mm, I=1.41 mm, S=0.98 mm.	I/L = 1.41/2.09 = 0.67; S/I = 0.98/1.41 = 0.70. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.68 mm, I=4.41 mm, S=3.14 mm.	I/L = 4.41/4.68 = 0.94; S/I = 3.14/4.41 = 0.71. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.56 mm, I=1.63 mm, S=0.89 mm.	I/L = 1.63/2.56 = 0.64; S/I = 0.89/1.63 = 0.55. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.29 mm, I=1.52 mm, S=0.69 mm.	I/L = 1.52/2.29 = 0.66; S/I = 0.69/1.52 = 0.45. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.76 mm, I=2.62 mm, S=2.46 mm.	I/L = 2.62/3.76 = 0.70; S/I = 2.46/2.62 = 0.94. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.86 mm, I=3.26 mm, S=1.67 mm.	I/L = 3.26/3.86 = 0.84; S/I = 1.67/3.26 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.37 mm, I=4.14 mm, S=3.67 mm.	I/L = 4.14/5.37 = 0.77; S/I = 3.67/4.14 = 0.89. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.96 mm, I=3.03 mm, S=2.03 mm.	I/L = 3.03/3.96 = 0.77; S/I = 2.03/3.03 = 0.67. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.08 mm, I=1.29 mm, S=1.19 mm.	I/L = 1.29/2.08 = 0.62; S/I = 1.19/1.29 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.49 mm, I=3.1 mm, S=2.02 mm.	I/L = 3.1/3.49 = 0.89; S/I = 2.02/3.1 = 0.65. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.56 mm, I=1.28 mm, S=0.61 mm.	I/L = 1.28/1.56 = 0.82; S/I = 0.61/1.28 = 0.48. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.92 mm, I=1.53 mm, S=0.92 mm.	I/L = 1.53/1.92 = 0.80; S/I = 0.92/1.53 = 0.60. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.97 mm, I=3.83 mm, S=3.19 mm.	I/L = 3.83/5.97 = 0.64; S/I = 3.19/3.83 = 0.83. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.11 mm, I=3.6 mm, S=2.03 mm.	I/L = 3.6/4.11 = 0.88; S/I = 2.03/3.6 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.71 mm, I=2.81 mm, S=1.89 mm.	I/L = 2.81/3.71 = 0.76; S/I = 1.89/2.81 = 0.67. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.33 mm, I=5.04 mm, S=3.04 mm.	I/L = 5.04/5.33 = 0.95; S/I = 3.04/5.04 = 0.60. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.18 mm, I=3.4 mm, S=2.79 mm.	I/L = 3.4/4.18 = 0.81; S/I = 2.79/3.4 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.75 mm, I=3.87 mm, S=2.15 mm.	I/L = 3.87/5.75 = 0.67; S/I = 2.15/3.87 = 0.56. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.37 mm, I=2.86 mm, S=1.54 mm.	I/L = 2.86/4.37 = 0.65; S/I = 1.54/2.86 = 0.54. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.56 mm, I=0.94 mm, S=0.63 mm.	I/L = 0.94/1.56 = 0.60; S/I = 0.63/0.94 = 0.67. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.05 mm, I=2.84 mm, S=1.61 mm.	I/L = 2.84/4.05 = 0.70; S/I = 1.61/2.84 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.59 mm, I=3.88 mm, S=2.63 mm.	I/L = 3.88/4.59 = 0.85; S/I = 2.63/3.88 = 0.68. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.5 mm, I=4.16 mm, S=3.51 mm.	I/L = 4.16/4.5 = 0.92; S/I = 3.51/4.16 = 0.84. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.2 mm, I=3.49 mm, S=3.2 mm.	I/L = 3.49/4.2 = 0.83; S/I = 3.2/3.49 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.24 mm, I=2.56 mm, S=1.98 mm.	I/L = 2.56/3.24 = 0.79; S/I = 1.98/2.56 = 0.77. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.56 mm, I=4.94 mm, S=2.4 mm.	I/L = 4.94/5.56 = 0.89; S/I = 2.4/4.94 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.0 mm, I=1.42 mm, S=1.17 mm.	I/L = 1.42/2.0 = 0.71; S/I = 1.17/1.42 = 0.82. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.93 mm, I=2.75 mm, S=1.41 mm.	I/L = 2.75/3.93 = 0.70; S/I = 1.41/2.75 = 0.51. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.51 mm, I=3.81 mm, S=3.51 mm.	I/L = 3.81/4.51 = 0.84; S/I = 3.51/3.81 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.6 mm, I=2.78 mm, S=1.36 mm.	I/L = 2.78/3.6 = 0.77; S/I = 1.36/2.78 = 0.49. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.39 mm, I=1.04 mm, S=0.64 mm.	I/L = 1.04/1.39 = 0.75; S/I = 0.64/1.04 = 0.62. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.4 mm, I=1.52 mm, S=1.42 mm.	I/L = 1.52/2.4 = 0.63; S/I = 1.42/1.52 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.21 mm, I=4.17 mm, S=3.86 mm.	I/L = 4.17/5.21 = 0.80; S/I = 3.86/4.17 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=6.0 mm, I=5.01 mm, S=2.93 mm.	I/L = 5.01/6.0 = 0.83; S/I = 2.93/5.01 = 0.58. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.39 mm, I=1.2 mm, S=0.82 mm.	I/L = 1.2/1.39 = 0.86; S/I = 0.82/1.2 = 0.68. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.33 mm, I=3.99 mm, S=2.16 mm.	I/L = 3.99/4.33 = 0.92; S/I = 2.16/3.99 = 0.54. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.01 mm, I=3.3 mm, S=2.3 mm.	I/L = 3.3/4.01 = 0.82; S/I = 2.3/3.3 = 0.70. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.64 mm, I=1.18 mm, S=0.73 mm.	I/L = 1.18/1.64 = 0.72; S/I = 0.73/1.18 = 0.62. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.42 mm, I=3.98 mm, S=2.45 mm.	I/L = 3.98/4.42 = 0.90; S/I = 2.45/3.98 = 0.62. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.53 mm, I=3.17 mm, S=2.92 mm.	I/L = 3.17/4.53 = 0.70; S/I = 2.92/3.17 = 0.92. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.11 mm, I=4.05 mm, S=2.74 mm.	I/L = 4.05/5.11 = 0.79; S/I = 2.74/4.05 = 0.68. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.71 mm, I=1.93 mm, S=1.8 mm.	I/L = 1.93/2.71 = 0.71; S/I = 1.8/1.93 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.14 mm, I=2.45 mm, S=2.31 mm.	I/L = 2.45/3.14 = 0.78; S/I = 2.31/2.45 = 0.94. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.36 mm, I=3.44 mm, S=2.26 mm.	I/L = 3.44/4.36 = 0.79; S/I = 2.26/3.44 = 0.66. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.1 mm, I=1.53 mm, S=1.27 mm.	I/L = 1.53/2.1 = 0.73; S/I = 1.27/1.53 = 0.83. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.2 mm, I=3.64 mm, S=2.01 mm.	I/L = 3.64/4.2 = 0.87; S/I = 2.01/3.64 = 0.55. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.84 mm, I=3.55 mm, S=2.38 mm.	I/L = 3.55/3.84 = 0.92; S/I = 2.38/3.55 = 0.67. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.55 mm, I=2.92 mm, S=2.73 mm.	I/L = 2.92/4.55 = 0.64; S/I = 2.73/2.92 = 0.93. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.12 mm, I=2.82 mm, S=1.49 mm.	I/L = 2.82/4.12 = 0.68; S/I = 1.49/2.82 = 0.53. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.84 mm, I=3.05 mm, S=1.51 mm.	I/L = 3.05/3.84 = 0.79; S/I = 1.51/3.05 = 0.50. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.96 mm, I=5.48 mm, S=3.73 mm.	I/L = 5.48/5.96 = 0.92; S/I = 3.73/5.48 = 0.68. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=1.76 mm, I=1.57 mm, S=1.1 mm.	I/L = 1.57/1.76 = 0.89; S/I = 1.1/1.57 = 0.70. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.64 mm, I=3.61 mm, S=2.12 mm.	I/L = 3.61/4.64 = 0.78; S/I = 2.12/3.61 = 0.59. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.21 mm, I=4.91 mm, S=2.81 mm.	I/L = 4.91/5.21 = 0.94; S/I = 2.81/4.91 = 0.57. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.85 mm, I=2.83 mm, S=2.58 mm.	I/L = 2.83/3.85 = 0.74; S/I = 2.58/2.83 = 0.91. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.64 mm, I=3.3 mm, S=2.91 mm.	I/L = 3.3/3.64 = 0.91; S/I = 2.91/3.3 = 0.88. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.53 mm, I=2.22 mm, S=1.46 mm.	I/L = 2.22/2.53 = 0.88; S/I = 1.46/2.22 = 0.66. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.68 mm, I=4.42 mm, S=3.8 mm.	I/L = 4.42/5.68 = 0.78; S/I = 3.8/4.42 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.56 mm, I=1.8 mm, S=1.34 mm.	I/L = 1.8/2.56 = 0.70; S/I = 1.34/1.8 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.99 mm, I=4.62 mm, S=2.42 mm.	I/L = 4.62/5.99 = 0.77; S/I = 2.42/4.62 = 0.52. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.79 mm, I=2.73 mm, S=1.98 mm.	I/L = 2.73/3.79 = 0.72; S/I = 1.98/2.73 = 0.73. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.81 mm, I=2.89 mm, S=1.77 mm.	I/L = 2.89/3.81 = 0.76; S/I = 1.77/2.89 = 0.61. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.11 mm, I=1.78 mm, S=1.31 mm.	I/L = 1.78/2.11 = 0.84; S/I = 1.31/1.78 = 0.74. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=2.32 mm, I=2.02 mm, S=0.95 mm.	I/L = 2.02/2.32 = 0.87; S/I = 0.95/2.02 = 0.47. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=4.77 mm, I=4.04 mm, S=3.46 mm.	I/L = 4.04/4.77 = 0.85; S/I = 3.46/4.04 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.05 mm, I=2.54 mm, S=2.19 mm.	I/L = 2.54/3.05 = 0.83; S/I = 2.19/2.54 = 0.86. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=5.91 mm, I=4.57 mm, S=2.14 mm.	I/L = 4.57/5.91 = 0.77; S/I = 2.14/4.57 = 0.47. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule I/L e S/I para L=3.61 mm, I=2.91 mm, S=2.57 mm.	I/L = 2.91/3.61 = 0.81; S/I = 2.57/2.91 = 0.88. Interpretar no gráfico de Zingg para classificar a forma.
+Calcule S/L e (L-I)/(L-S) para L=6.35 mm, I=4.61 mm, S=2.95 mm.	S/L = 2.95/6.35 = 0.46; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.18 mm, I=3.51 mm, S=2.02 mm.	S/L = 2.02/4.18 = 0.48; (L-I)/(L-S) = 0.31. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.2 mm, I=3.18 mm, S=1.93 mm.	S/L = 1.93/5.2 = 0.37; (L-I)/(L-S) = 0.62. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.84 mm, I=4.69 mm, S=3.43 mm.	S/L = 3.43/6.84 = 0.50; (L-I)/(L-S) = 0.63. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.18 mm, I=4.61 mm, S=3.77 mm.	S/L = 3.77/5.18 = 0.73; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.27 mm, I=4.4 mm, S=2.31 mm.	S/L = 2.31/6.27 = 0.37; (L-I)/(L-S) = 0.47. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.54 mm, I=4.73 mm, S=3.93 mm.	S/L = 3.93/5.54 = 0.71; (L-I)/(L-S) = 0.5. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.99 mm, I=1.15 mm, S=0.8 mm.	S/L = 0.8/1.99 = 0.40; (L-I)/(L-S) = 0.71. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.59 mm, I=6.25 mm, S=4.75 mm.	S/L = 4.75/6.59 = 0.72; (L-I)/(L-S) = 0.18. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.06 mm, I=2.39 mm, S=1.67 mm.	S/L = 1.67/4.06 = 0.41; (L-I)/(L-S) = 0.7. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.34 mm, I=4.61 mm, S=3.37 mm.	S/L = 3.37/6.34 = 0.53; (L-I)/(L-S) = 0.58. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.5 mm, I=3.69 mm, S=2.91 mm.	S/L = 2.91/6.5 = 0.45; (L-I)/(L-S) = 0.78. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.33 mm, I=2.33 mm, S=1.0 mm.	S/L = 1.0/3.33 = 0.30; (L-I)/(L-S) = 0.43. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.56 mm, I=3.54 mm, S=2.78 mm.	S/L = 2.78/4.56 = 0.61; (L-I)/(L-S) = 0.57. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.68 mm, I=1.56 mm, S=1.29 mm.	S/L = 1.29/2.68 = 0.48; (L-I)/(L-S) = 0.81. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.02 mm, I=3.24 mm, S=2.76 mm.	S/L = 2.76/5.02 = 0.55; (L-I)/(L-S) = 0.79. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.54 mm, I=1.87 mm, S=0.92 mm.	S/L = 0.92/2.54 = 0.36; (L-I)/(L-S) = 0.41. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.13 mm, I=1.73 mm, S=1.37 mm.	S/L = 1.37/3.13 = 0.44; (L-I)/(L-S) = 0.8. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.49 mm, I=5.33 mm, S=2.33 mm.	S/L = 2.33/6.49 = 0.36; (L-I)/(L-S) = 0.28. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.1 mm, I=2.82 mm, S=1.9 mm.	S/L = 1.9/4.1 = 0.46; (L-I)/(L-S) = 0.58. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.12 mm, I=3.68 mm, S=1.79 mm.	S/L = 1.79/5.12 = 0.35; (L-I)/(L-S) = 0.43. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.2 mm, I=3.9 mm, S=2.19 mm.	S/L = 2.19/6.2 = 0.35; (L-I)/(L-S) = 0.57. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.31 mm, I=2.78 mm, S=1.85 mm.	S/L = 1.85/4.31 = 0.43; (L-I)/(L-S) = 0.62. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.79 mm, I=4.54 mm, S=2.33 mm.	S/L = 2.33/4.79 = 0.49; (L-I)/(L-S) = 0.1. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.89 mm, I=5.6 mm, S=2.81 mm.	S/L = 2.81/6.89 = 0.41; (L-I)/(L-S) = 0.32. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.74 mm, I=3.91 mm, S=2.97 mm.	S/L = 2.97/4.74 = 0.63; (L-I)/(L-S) = 0.47. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.06 mm, I=1.63 mm, S=1.02 mm.	S/L = 1.02/2.06 = 0.50; (L-I)/(L-S) = 0.41. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.5 mm, I=4.32 mm, S=3.41 mm.	S/L = 3.41/6.5 = 0.52; (L-I)/(L-S) = 0.71. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.96 mm, I=3.43 mm, S=2.4 mm.	S/L = 2.4/4.96 = 0.48; (L-I)/(L-S) = 0.6. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.03 mm, I=4.13 mm, S=3.08 mm.	S/L = 3.08/5.03 = 0.61; (L-I)/(L-S) = 0.46. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.23 mm, I=4.63 mm, S=3.22 mm.	S/L = 3.22/5.23 = 0.62; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.5 mm, I=5.26 mm, S=2.73 mm.	S/L = 2.73/6.5 = 0.42; (L-I)/(L-S) = 0.33. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.09 mm, I=3.2 mm, S=2.41 mm.	S/L = 2.41/4.09 = 0.59; (L-I)/(L-S) = 0.53. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.27 mm, I=1.52 mm, S=1.16 mm.	S/L = 1.16/2.27 = 0.51; (L-I)/(L-S) = 0.68. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.71 mm, I=1.63 mm, S=1.05 mm.	S/L = 1.05/2.71 = 0.39; (L-I)/(L-S) = 0.65. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.85 mm, I=5.22 mm, S=4.45 mm.	S/L = 4.45/6.85 = 0.65; (L-I)/(L-S) = 0.68. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.12 mm, I=4.0 mm, S=3.21 mm.	S/L = 3.21/6.12 = 0.52; (L-I)/(L-S) = 0.73. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.31 mm, I=3.76 mm, S=2.86 mm.	S/L = 2.86/4.31 = 0.66; (L-I)/(L-S) = 0.38. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.56 mm, I=2.12 mm, S=1.86 mm.	S/L = 1.86/3.56 = 0.52; (L-I)/(L-S) = 0.85. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.53 mm, I=2.37 mm, S=1.95 mm.	S/L = 1.95/2.53 = 0.77; (L-I)/(L-S) = 0.28. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.57 mm, I=5.25 mm, S=4.63 mm.	S/L = 4.63/5.57 = 0.83; (L-I)/(L-S) = 0.34. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.98 mm, I=4.16 mm, S=3.27 mm.	S/L = 3.27/5.98 = 0.55; (L-I)/(L-S) = 0.67. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.87 mm, I=1.43 mm, S=0.86 mm.	S/L = 0.86/1.87 = 0.46; (L-I)/(L-S) = 0.44. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.3 mm, I=4.34 mm, S=2.91 mm.	S/L = 2.91/5.3 = 0.55; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.08 mm, I=5.63 mm, S=2.31 mm.	S/L = 2.31/6.08 = 0.38; (L-I)/(L-S) = 0.12. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.02 mm, I=1.69 mm, S=1.41 mm.	S/L = 1.41/3.02 = 0.47; (L-I)/(L-S) = 0.83. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.72 mm, I=4.32 mm, S=2.04 mm.	S/L = 2.04/4.72 = 0.43; (L-I)/(L-S) = 0.15. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.13 mm, I=1.87 mm, S=1.59 mm.	S/L = 1.59/2.13 = 0.75; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.37 mm, I=2.4 mm, S=1.02 mm.	S/L = 1.02/3.37 = 0.30; (L-I)/(L-S) = 0.41. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.72 mm, I=4.51 mm, S=2.8 mm.	S/L = 2.8/6.72 = 0.42; (L-I)/(L-S) = 0.56. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.31 mm, I=2.09 mm, S=0.89 mm.	S/L = 0.89/2.31 = 0.39; (L-I)/(L-S) = 0.15. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.16 mm, I=3.4 mm, S=2.58 mm.	S/L = 2.58/4.16 = 0.62; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.72 mm, I=4.82 mm, S=3.65 mm.	S/L = 3.65/6.72 = 0.54; (L-I)/(L-S) = 0.62. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.6 mm, I=1.86 mm, S=0.75 mm.	S/L = 0.75/2.6 = 0.29; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.34 mm, I=3.1 mm, S=2.71 mm.	S/L = 2.71/4.34 = 0.62; (L-I)/(L-S) = 0.76. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.97 mm, I=1.38 mm, S=0.82 mm.	S/L = 0.82/1.97 = 0.42; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.74 mm, I=6.01 mm, S=2.43 mm.	S/L = 2.43/6.74 = 0.36; (L-I)/(L-S) = 0.17. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.37 mm, I=4.12 mm, S=3.66 mm.	S/L = 3.66/5.37 = 0.68; (L-I)/(L-S) = 0.73. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.67 mm, I=2.6 mm, S=1.18 mm.	S/L = 1.18/3.67 = 0.32; (L-I)/(L-S) = 0.43. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.44 mm, I=2.17 mm, S=1.3 mm.	S/L = 1.3/2.44 = 0.53; (L-I)/(L-S) = 0.24. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.25 mm, I=4.24 mm, S=2.88 mm.	S/L = 2.88/5.25 = 0.55; (L-I)/(L-S) = 0.43. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.91 mm, I=1.65 mm, S=0.8 mm.	S/L = 0.8/1.91 = 0.42; (L-I)/(L-S) = 0.23. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.45 mm, I=1.9 mm, S=0.74 mm.	S/L = 0.74/2.45 = 0.30; (L-I)/(L-S) = 0.32. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.78 mm, I=3.66 mm, S=1.72 mm.	S/L = 1.72/5.78 = 0.30; (L-I)/(L-S) = 0.52. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.32 mm, I=4.31 mm, S=1.86 mm.	S/L = 1.86/6.32 = 0.29; (L-I)/(L-S) = 0.45. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.48 mm, I=3.57 mm, S=2.93 mm.	S/L = 2.93/6.48 = 0.45; (L-I)/(L-S) = 0.82. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.55 mm, I=1.54 mm, S=0.75 mm.	S/L = 0.75/2.55 = 0.29; (L-I)/(L-S) = 0.56. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.71 mm, I=2.21 mm, S=0.8 mm.	S/L = 0.8/2.71 = 0.30; (L-I)/(L-S) = 0.26. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.88 mm, I=1.63 mm, S=0.78 mm.	S/L = 0.78/1.88 = 0.41; (L-I)/(L-S) = 0.23. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.48 mm, I=2.16 mm, S=0.82 mm.	S/L = 0.82/3.48 = 0.24; (L-I)/(L-S) = 0.5. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.66 mm, I=4.3 mm, S=3.27 mm.	S/L = 3.27/5.66 = 0.58; (L-I)/(L-S) = 0.57. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.28 mm, I=3.69 mm, S=2.33 mm.	S/L = 2.33/4.28 = 0.54; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.37 mm, I=1.78 mm, S=1.55 mm.	S/L = 1.55/2.37 = 0.65; (L-I)/(L-S) = 0.72. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.03 mm, I=1.75 mm, S=1.45 mm.	S/L = 1.45/2.03 = 0.71; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.51 mm, I=3.31 mm, S=2.91 mm.	S/L = 2.91/4.51 = 0.65; (L-I)/(L-S) = 0.75. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.12 mm, I=1.57 mm, S=0.9 mm.	S/L = 0.9/2.12 = 0.42; (L-I)/(L-S) = 0.45. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.37 mm, I=4.01 mm, S=3.41 mm.	S/L = 3.41/5.37 = 0.64; (L-I)/(L-S) = 0.69. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.18 mm, I=1.27 mm, S=0.87 mm.	S/L = 0.87/2.18 = 0.40; (L-I)/(L-S) = 0.69. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.14 mm, I=1.41 mm, S=0.98 mm.	S/L = 0.98/2.14 = 0.46; (L-I)/(L-S) = 0.63. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.65 mm, I=3.16 mm, S=2.83 mm.	S/L = 2.83/4.65 = 0.61; (L-I)/(L-S) = 0.82. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.56 mm, I=3.34 mm, S=2.28 mm.	S/L = 2.28/4.56 = 0.50; (L-I)/(L-S) = 0.54. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.32 mm, I=1.93 mm, S=1.58 mm.	S/L = 1.58/2.32 = 0.68; (L-I)/(L-S) = 0.53. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.18 mm, I=4.44 mm, S=3.31 mm.	S/L = 3.31/5.18 = 0.64; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.92 mm, I=2.13 mm, S=1.01 mm.	S/L = 1.01/2.92 = 0.35; (L-I)/(L-S) = 0.41. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.56 mm, I=2.6 mm, S=1.5 mm.	S/L = 1.5/3.56 = 0.42; (L-I)/(L-S) = 0.47. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.29 mm, I=1.65 mm, S=1.18 mm.	S/L = 1.18/2.29 = 0.52; (L-I)/(L-S) = 0.58. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.75 mm, I=2.29 mm, S=1.96 mm.	S/L = 1.96/3.75 = 0.52; (L-I)/(L-S) = 0.82. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.15 mm, I=1.9 mm, S=0.76 mm.	S/L = 0.76/2.15 = 0.35; (L-I)/(L-S) = 0.18. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.3 mm, I=1.94 mm, S=1.55 mm.	S/L = 1.55/2.3 = 0.67; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.69 mm, I=3.68 mm, S=2.42 mm.	S/L = 2.42/4.69 = 0.52; (L-I)/(L-S) = 0.44. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.51 mm, I=2.1 mm, S=1.14 mm.	S/L = 1.14/3.51 = 0.32; (L-I)/(L-S) = 0.59. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.26 mm, I=4.47 mm, S=3.7 mm.	S/L = 3.7/5.26 = 0.70; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.55 mm, I=5.2 mm, S=3.54 mm.	S/L = 3.54/5.55 = 0.64; (L-I)/(L-S) = 0.17. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.63 mm, I=2.84 mm, S=1.33 mm.	S/L = 1.33/3.63 = 0.37; (L-I)/(L-S) = 0.34. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.22 mm, I=3.34 mm, S=1.37 mm.	S/L = 1.37/5.22 = 0.26; (L-I)/(L-S) = 0.49. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.2 mm, I=4.32 mm, S=3.32 mm.	S/L = 3.32/6.2 = 0.54; (L-I)/(L-S) = 0.65. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.79 mm, I=4.18 mm, S=3.41 mm.	S/L = 3.41/4.79 = 0.71; (L-I)/(L-S) = 0.44. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.87 mm, I=6.03 mm, S=4.15 mm.	S/L = 4.15/6.87 = 0.60; (L-I)/(L-S) = 0.31. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.14 mm, I=2.88 mm, S=2.48 mm.	S/L = 2.48/5.14 = 0.48; (L-I)/(L-S) = 0.85. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.11 mm, I=4.01 mm, S=1.8 mm.	S/L = 1.8/6.11 = 0.29; (L-I)/(L-S) = 0.49. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.45 mm, I=3.67 mm, S=1.97 mm.	S/L = 1.97/5.45 = 0.36; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.83 mm, I=1.64 mm, S=1.08 mm.	S/L = 1.08/1.83 = 0.59; (L-I)/(L-S) = 0.25. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.88 mm, I=2.35 mm, S=1.64 mm.	S/L = 1.64/3.88 = 0.42; (L-I)/(L-S) = 0.68. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.96 mm, I=1.66 mm, S=0.78 mm.	S/L = 0.78/1.96 = 0.40; (L-I)/(L-S) = 0.25. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.98 mm, I=2.73 mm, S=1.51 mm.	S/L = 1.51/3.98 = 0.38; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.55 mm, I=4.78 mm, S=3.17 mm.	S/L = 3.17/5.55 = 0.57; (L-I)/(L-S) = 0.32. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.24 mm, I=1.28 mm, S=0.56 mm.	S/L = 0.56/2.24 = 0.25; (L-I)/(L-S) = 0.57. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.01 mm, I=4.11 mm, S=2.05 mm.	S/L = 2.05/5.01 = 0.41; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.24 mm, I=3.9 mm, S=2.31 mm.	S/L = 2.31/5.24 = 0.44; (L-I)/(L-S) = 0.46. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.22 mm, I=2.74 mm, S=1.13 mm.	S/L = 1.13/3.22 = 0.35; (L-I)/(L-S) = 0.23. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.04 mm, I=2.68 mm, S=1.94 mm.	S/L = 1.94/4.04 = 0.48; (L-I)/(L-S) = 0.65. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.33 mm, I=3.54 mm, S=1.33 mm.	S/L = 1.33/4.33 = 0.31; (L-I)/(L-S) = 0.26. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.86 mm, I=3.05 mm, S=1.08 mm.	S/L = 1.08/3.86 = 0.28; (L-I)/(L-S) = 0.29. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.37 mm, I=2.14 mm, S=0.91 mm.	S/L = 0.91/3.37 = 0.27; (L-I)/(L-S) = 0.5. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.13 mm, I=2.13 mm, S=0.75 mm.	S/L = 0.75/3.13 = 0.24; (L-I)/(L-S) = 0.42. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.68 mm, I=3.52 mm, S=1.97 mm.	S/L = 1.97/5.68 = 0.35; (L-I)/(L-S) = 0.58. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.46 mm, I=4.1 mm, S=3.31 mm.	S/L = 3.31/5.46 = 0.61; (L-I)/(L-S) = 0.63. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.99 mm, I=3.47 mm, S=2.86 mm.	S/L = 2.86/5.99 = 0.48; (L-I)/(L-S) = 0.81. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.02 mm, I=1.13 mm, S=0.97 mm.	S/L = 0.97/2.02 = 0.48; (L-I)/(L-S) = 0.85. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.28 mm, I=4.9 mm, S=3.26 mm.	S/L = 3.26/6.28 = 0.52; (L-I)/(L-S) = 0.46. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.49 mm, I=3.94 mm, S=1.63 mm.	S/L = 1.63/5.49 = 0.30; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.91 mm, I=1.3 mm, S=1.03 mm.	S/L = 1.03/1.91 = 0.54; (L-I)/(L-S) = 0.69. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.01 mm, I=4.42 mm, S=3.78 mm.	S/L = 3.78/5.01 = 0.75; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.26 mm, I=2.01 mm, S=0.97 mm.	S/L = 0.97/2.26 = 0.43; (L-I)/(L-S) = 0.19. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.86 mm, I=3.69 mm, S=2.09 mm.	S/L = 2.09/4.86 = 0.43; (L-I)/(L-S) = 0.42. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.41 mm, I=2.34 mm, S=1.25 mm.	S/L = 1.25/3.41 = 0.37; (L-I)/(L-S) = 0.5. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.67 mm, I=2.01 mm, S=0.83 mm.	S/L = 0.83/2.67 = 0.31; (L-I)/(L-S) = 0.36. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.45 mm, I=4.06 mm, S=2.2 mm.	S/L = 2.2/4.45 = 0.49; (L-I)/(L-S) = 0.17. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.58 mm, I=4.9 mm, S=3.91 mm.	S/L = 3.91/5.58 = 0.70; (L-I)/(L-S) = 0.41. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.03 mm, I=1.84 mm, S=0.84 mm.	S/L = 0.84/3.03 = 0.28; (L-I)/(L-S) = 0.54. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.93 mm, I=4.21 mm, S=2.99 mm.	S/L = 2.99/4.93 = 0.61; (L-I)/(L-S) = 0.37. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.72 mm, I=2.34 mm, S=1.45 mm.	S/L = 1.45/2.72 = 0.53; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.72 mm, I=4.88 mm, S=2.91 mm.	S/L = 2.91/5.72 = 0.51; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.61 mm, I=5.13 mm, S=3.59 mm.	S/L = 3.59/6.61 = 0.54; (L-I)/(L-S) = 0.49. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.05 mm, I=4.52 mm, S=3.14 mm.	S/L = 3.14/5.05 = 0.62; (L-I)/(L-S) = 0.28. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.58 mm, I=1.49 mm, S=0.88 mm.	S/L = 0.88/2.58 = 0.34; (L-I)/(L-S) = 0.64. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.37 mm, I=2.22 mm, S=0.85 mm.	S/L = 0.85/3.37 = 0.25; (L-I)/(L-S) = 0.46. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.44 mm, I=2.99 mm, S=1.79 mm.	S/L = 1.79/4.44 = 0.40; (L-I)/(L-S) = 0.55. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.1 mm, I=1.85 mm, S=0.73 mm.	S/L = 0.73/2.1 = 0.35; (L-I)/(L-S) = 0.18. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.29 mm, I=5.61 mm, S=3.86 mm.	S/L = 3.86/6.29 = 0.61; (L-I)/(L-S) = 0.28. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.44 mm, I=3.26 mm, S=2.13 mm.	S/L = 2.13/4.44 = 0.48; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.92 mm, I=5.38 mm, S=3.21 mm.	S/L = 3.21/5.92 = 0.54; (L-I)/(L-S) = 0.2. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.01 mm, I=4.87 mm, S=2.57 mm.	S/L = 2.57/6.01 = 0.43; (L-I)/(L-S) = 0.33. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.27 mm, I=2.61 mm, S=1.0 mm.	S/L = 1.0/4.27 = 0.23; (L-I)/(L-S) = 0.51. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.34 mm, I=2.13 mm, S=1.15 mm.	S/L = 1.15/2.34 = 0.49; (L-I)/(L-S) = 0.18. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.51 mm, I=4.14 mm, S=1.84 mm.	S/L = 1.84/5.51 = 0.33; (L-I)/(L-S) = 0.37. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.09 mm, I=2.24 mm, S=1.33 mm.	S/L = 1.33/3.09 = 0.43; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.52 mm, I=2.77 mm, S=1.54 mm.	S/L = 1.54/4.52 = 0.34; (L-I)/(L-S) = 0.59. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.27 mm, I=2.33 mm, S=1.25 mm.	S/L = 1.25/3.27 = 0.38; (L-I)/(L-S) = 0.47. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.91 mm, I=4.25 mm, S=3.0 mm.	S/L = 3.0/4.91 = 0.61; (L-I)/(L-S) = 0.35. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.14 mm, I=1.26 mm, S=0.91 mm.	S/L = 0.91/2.14 = 0.43; (L-I)/(L-S) = 0.72. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.28 mm, I=2.75 mm, S=1.96 mm.	S/L = 1.96/3.28 = 0.60; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.51 mm, I=5.85 mm, S=3.12 mm.	S/L = 3.12/6.51 = 0.48; (L-I)/(L-S) = 0.19. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.83 mm, I=2.93 mm, S=1.59 mm.	S/L = 1.59/4.83 = 0.33; (L-I)/(L-S) = 0.59. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.83 mm, I=5.66 mm, S=3.2 mm.	S/L = 3.2/6.83 = 0.47; (L-I)/(L-S) = 0.32. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.89 mm, I=4.52 mm, S=2.35 mm.	S/L = 2.35/4.89 = 0.48; (L-I)/(L-S) = 0.15. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.76 mm, I=3.26 mm, S=2.6 mm.	S/L = 2.6/3.76 = 0.69; (L-I)/(L-S) = 0.43. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.28 mm, I=4.65 mm, S=3.52 mm.	S/L = 3.52/5.28 = 0.67; (L-I)/(L-S) = 0.36. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.36 mm, I=4.08 mm, S=2.88 mm.	S/L = 2.88/5.36 = 0.54; (L-I)/(L-S) = 0.52. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.0 mm, I=2.78 mm, S=1.53 mm.	S/L = 1.53/4.0 = 0.38; (L-I)/(L-S) = 0.49. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.74 mm, I=1.74 mm, S=1.52 mm.	S/L = 1.52/2.74 = 0.55; (L-I)/(L-S) = 0.82. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.33 mm, I=2.77 mm, S=1.18 mm.	S/L = 1.18/4.33 = 0.27; (L-I)/(L-S) = 0.5. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.2 mm, I=1.95 mm, S=0.79 mm.	S/L = 0.79/2.2 = 0.36; (L-I)/(L-S) = 0.18. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.81 mm, I=5.14 mm, S=4.3 mm.	S/L = 4.3/5.81 = 0.74; (L-I)/(L-S) = 0.44. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.0 mm, I=1.37 mm, S=1.06 mm.	S/L = 1.06/2.0 = 0.53; (L-I)/(L-S) = 0.67. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.48 mm, I=1.74 mm, S=0.76 mm.	S/L = 0.76/2.48 = 0.31; (L-I)/(L-S) = 0.43. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.12 mm, I=5.25 mm, S=4.17 mm.	S/L = 4.17/6.12 = 0.68; (L-I)/(L-S) = 0.45. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.66 mm, I=1.93 mm, S=1.11 mm.	S/L = 1.11/2.66 = 0.42; (L-I)/(L-S) = 0.47. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.32 mm, I=3.43 mm, S=2.04 mm.	S/L = 2.04/5.32 = 0.38; (L-I)/(L-S) = 0.58. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.28 mm, I=2.79 mm, S=1.67 mm.	S/L = 1.67/3.28 = 0.51; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.58 mm, I=3.09 mm, S=2.46 mm.	S/L = 2.46/4.58 = 0.54; (L-I)/(L-S) = 0.7. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.24 mm, I=3.75 mm, S=2.07 mm.	S/L = 2.07/4.24 = 0.49; (L-I)/(L-S) = 0.23. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.73 mm, I=6.35 mm, S=3.83 mm.	S/L = 3.83/6.73 = 0.57; (L-I)/(L-S) = 0.13. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.27 mm, I=2.3 mm, S=1.47 mm.	S/L = 1.47/3.27 = 0.45; (L-I)/(L-S) = 0.54. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.82 mm, I=5.98 mm, S=4.73 mm.	S/L = 4.73/6.82 = 0.69; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.52 mm, I=1.64 mm, S=1.15 mm.	S/L = 1.15/2.52 = 0.46; (L-I)/(L-S) = 0.64. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.35 mm, I=4.9 mm, S=1.99 mm.	S/L = 1.99/6.35 = 0.31; (L-I)/(L-S) = 0.33. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.2 mm, I=5.52 mm, S=2.8 mm.	S/L = 2.8/6.2 = 0.45; (L-I)/(L-S) = 0.2. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.77 mm, I=3.8 mm, S=3.22 mm.	S/L = 3.22/5.77 = 0.56; (L-I)/(L-S) = 0.77. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.57 mm, I=1.86 mm, S=1.62 mm.	S/L = 1.62/2.57 = 0.63; (L-I)/(L-S) = 0.75. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.95 mm, I=2.15 mm, S=1.17 mm.	S/L = 1.17/2.95 = 0.40; (L-I)/(L-S) = 0.45. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.94 mm, I=1.11 mm, S=0.69 mm.	S/L = 0.69/1.94 = 0.36; (L-I)/(L-S) = 0.66. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.03 mm, I=2.87 mm, S=1.6 mm.	S/L = 1.6/3.03 = 0.53; (L-I)/(L-S) = 0.11. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.95 mm, I=1.8 mm, S=1.46 mm.	S/L = 1.46/1.95 = 0.75; (L-I)/(L-S) = 0.31. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.18 mm, I=4.49 mm, S=1.91 mm.	S/L = 1.91/5.18 = 0.37; (L-I)/(L-S) = 0.21. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.29 mm, I=2.9 mm, S=2.13 mm.	S/L = 2.13/3.29 = 0.65; (L-I)/(L-S) = 0.34. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.52 mm, I=2.1 mm, S=1.25 mm.	S/L = 1.25/2.52 = 0.50; (L-I)/(L-S) = 0.33. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=1.83 mm, I=1.06 mm, S=0.52 mm.	S/L = 0.52/1.83 = 0.28; (L-I)/(L-S) = 0.59. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.14 mm, I=4.72 mm, S=3.54 mm.	S/L = 3.54/6.14 = 0.58; (L-I)/(L-S) = 0.55. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.54 mm, I=2.7 mm, S=1.37 mm.	S/L = 1.37/4.54 = 0.30; (L-I)/(L-S) = 0.58. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.37 mm, I=1.92 mm, S=1.12 mm.	S/L = 1.12/3.37 = 0.33; (L-I)/(L-S) = 0.64. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.93 mm, I=4.35 mm, S=1.79 mm.	S/L = 1.79/5.93 = 0.30; (L-I)/(L-S) = 0.38. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.51 mm, I=5.13 mm, S=1.84 mm.	S/L = 1.84/6.51 = 0.28; (L-I)/(L-S) = 0.3. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.48 mm, I=2.9 mm, S=1.24 mm.	S/L = 1.24/4.48 = 0.28; (L-I)/(L-S) = 0.49. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.03 mm, I=3.21 mm, S=1.55 mm.	S/L = 1.55/4.03 = 0.38; (L-I)/(L-S) = 0.33. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.97 mm, I=3.24 mm, S=1.29 mm.	S/L = 1.29/3.97 = 0.32; (L-I)/(L-S) = 0.27. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.87 mm, I=3.96 mm, S=2.53 mm.	S/L = 2.53/6.87 = 0.37; (L-I)/(L-S) = 0.67. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.44 mm, I=4.2 mm, S=2.75 mm.	S/L = 2.75/4.44 = 0.62; (L-I)/(L-S) = 0.14. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.83 mm, I=2.83 mm, S=1.98 mm.	S/L = 1.98/3.83 = 0.52; (L-I)/(L-S) = 0.54. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.9 mm, I=4.5 mm, S=1.62 mm.	S/L = 1.62/6.9 = 0.23; (L-I)/(L-S) = 0.45. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.9 mm, I=4.06 mm, S=3.06 mm.	S/L = 3.06/5.9 = 0.52; (L-I)/(L-S) = 0.65. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.07 mm, I=4.35 mm, S=3.28 mm.	S/L = 3.28/5.07 = 0.65; (L-I)/(L-S) = 0.4. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.53 mm, I=2.0 mm, S=1.3 mm.	S/L = 1.3/3.53 = 0.37; (L-I)/(L-S) = 0.69. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.03 mm, I=3.74 mm, S=2.91 mm.	S/L = 2.91/6.03 = 0.48; (L-I)/(L-S) = 0.73. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.22 mm, I=3.49 mm, S=2.43 mm.	S/L = 2.43/4.22 = 0.58; (L-I)/(L-S) = 0.41. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.02 mm, I=3.46 mm, S=2.69 mm.	S/L = 2.69/6.02 = 0.45; (L-I)/(L-S) = 0.77. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.18 mm, I=2.79 mm, S=1.04 mm.	S/L = 1.04/4.18 = 0.25; (L-I)/(L-S) = 0.44. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=2.84 mm, I=1.61 mm, S=1.39 mm.	S/L = 1.39/2.84 = 0.49; (L-I)/(L-S) = 0.85. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.48 mm, I=4.24 mm, S=2.75 mm.	S/L = 2.75/4.48 = 0.61; (L-I)/(L-S) = 0.14. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.12 mm, I=2.66 mm, S=1.21 mm.	S/L = 1.21/3.12 = 0.39; (L-I)/(L-S) = 0.24. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.66 mm, I=3.16 mm, S=2.61 mm.	S/L = 2.61/3.66 = 0.71; (L-I)/(L-S) = 0.48. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.53 mm, I=2.12 mm, S=1.17 mm.	S/L = 1.17/3.53 = 0.33; (L-I)/(L-S) = 0.6. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=6.43 mm, I=5.45 mm, S=4.59 mm.	S/L = 4.59/6.43 = 0.71; (L-I)/(L-S) = 0.53. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.81 mm, I=3.58 mm, S=2.23 mm.	S/L = 2.23/3.81 = 0.59; (L-I)/(L-S) = 0.15. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.39 mm, I=4.04 mm, S=2.57 mm.	S/L = 2.57/4.39 = 0.59; (L-I)/(L-S) = 0.19. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.97 mm, I=5.02 mm, S=1.97 mm.	S/L = 1.97/5.97 = 0.33; (L-I)/(L-S) = 0.24. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=4.93 mm, I=4.33 mm, S=2.81 mm.	S/L = 2.81/4.93 = 0.57; (L-I)/(L-S) = 0.28. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.47 mm, I=2.02 mm, S=1.44 mm.	S/L = 1.44/3.47 = 0.41; (L-I)/(L-S) = 0.71. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=3.39 mm, I=2.68 mm, S=1.57 mm.	S/L = 1.57/3.39 = 0.46; (L-I)/(L-S) = 0.39. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule S/L e (L-I)/(L-S) para L=5.39 mm, I=3.72 mm, S=1.39 mm.	S/L = 1.39/5.39 = 0.26; (L-I)/(L-S) = 0.42. Utilize a tabela de 10 classes de Sneed & Folk para determinar esfericidade.
+Calcule a Linha A (IP) para LL=26 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (26 - 20) = 4.38 (%)
+Calcule a Linha A (IP) para LL=28 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (28 - 20) = 5.84 (%)
+Calcule a Linha A (IP) para LL=30 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (30 - 20) = 7.30 (%)
+Calcule a Linha A (IP) para LL=32 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (32 - 20) = 8.76 (%)
+Calcule a Linha A (IP) para LL=34 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (34 - 20) = 10.22 (%)
+Calcule a Linha A (IP) para LL=36 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (36 - 20) = 11.68 (%)
+Calcule a Linha A (IP) para LL=38 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (38 - 20) = 13.14 (%)
+Calcule a Linha A (IP) para LL=40 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (40 - 20) = 14.60 (%)
+Calcule a Linha A (IP) para LL=42 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (42 - 20) = 16.06 (%)
+Calcule a Linha A (IP) para LL=44 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (44 - 20) = 17.52 (%)
+Calcule a Linha A (IP) para LL=46 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (46 - 20) = 18.98 (%)
+Calcule a Linha A (IP) para LL=48 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (48 - 20) = 20.44 (%)
+Calcule a Linha A (IP) para LL=50 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (50 - 20) = 21.90 (%)
+Calcule a Linha A (IP) para LL=52 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (52 - 20) = 23.36 (%)
+Calcule a Linha A (IP) para LL=54 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (54 - 20) = 24.82 (%)
+Calcule a Linha A (IP) para LL=56 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (56 - 20) = 26.28 (%)
+Calcule a Linha A (IP) para LL=58 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (58 - 20) = 27.74 (%)
+Calcule a Linha A (IP) para LL=60 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (60 - 20) = 29.20 (%)
+Calcule a Linha A (IP) para LL=62 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (62 - 20) = 30.66 (%)
+Calcule a Linha A (IP) para LL=64 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (64 - 20) = 32.12 (%)
+Calcule a Linha A (IP) para LL=66 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (66 - 20) = 33.58 (%)
+Calcule a Linha A (IP) para LL=68 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (68 - 20) = 35.04 (%)
+Calcule a Linha A (IP) para LL=70 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (70 - 20) = 36.50 (%)
+Calcule a Linha A (IP) para LL=72 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (72 - 20) = 37.96 (%)
+Calcule a Linha A (IP) para LL=74 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (74 - 20) = 39.42 (%)
+Calcule a Linha A (IP) para LL=76 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (76 - 20) = 40.88 (%)
+Calcule a Linha A (IP) para LL=78 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (78 - 20) = 42.34 (%)
+Calcule a Linha A (IP) para LL=80 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (80 - 20) = 43.80 (%)
+Calcule a Linha A (IP) para LL=82 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (82 - 20) = 45.26 (%)
+Calcule a Linha A (IP) para LL=84 (%). (IP = 0.73*(LL-20)).	IP_LinhaA = 0.73 * (84 - 20) = 46.72 (%)
+Quando se usa peneiração e quando se usa sedimentação segundo ASTM D422?	Peneiração: para partículas maiores que 0.075 mm; Sedimentação (hidrometria): para partículas menores que 0.075 mm.
+Quais as percentagens aproximadas da crosta: Rochas sedimentares, ígneas e metamórficas?	Sedimentares ~66%, Ígneas ~20%, Metamórficas ~14%.
+Por que o arenito é frequentemente um bom reservatório?	Porque tende a ser clástico com grãos bem conectados, resultando em maior porosidade e permeabilidade.
+Por que o folhelho (shale) é frequentemente um selante ou gerador?	Porque tem baixa permeabilidade e pode ser rico em matéria orgânica (gerador), além de atuar como selante quando impermeável.
+Liste 3 aplicações práticas de Mecânica das Rochas.	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações. (Ver exemplos práticos nas aulas e no roteiro).
+Como Mecânica das Rochas influencia a estabilidade de poços?	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Mecânica das Rochas?	Estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Geomecânica.	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera. (Ver exemplos práticos nas aulas e no roteiro).
+Como Geomecânica influencia a estabilidade de poços?	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Geomecânica?	Integração de Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos na indústria petrolífera. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Juntas (Diáclases).	Fracturação sem deslocamento perceptível dos blocos. (Ver exemplos práticos nas aulas e no roteiro).
+Como Juntas (Diáclases) influencia a estabilidade de poços?	Fracturação sem deslocamento perceptível dos blocos. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Juntas (Diáclases)?	Fracturação sem deslocamento perceptível dos blocos. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Falhas.	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura. (Ver exemplos práticos nas aulas e no roteiro).
+Como Falhas influencia a estabilidade de poços?	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Falhas?	Fractura com deslocamento relativo de blocos ao longo de um plano de fractura. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Dobras.	Deformação interna com flexão e encurtamento das camadas rochosas. (Ver exemplos práticos nas aulas e no roteiro).
+Como Dobras influencia a estabilidade de poços?	Deformação interna com flexão e encurtamento das camadas rochosas. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Dobras?	Deformação interna com flexão e encurtamento das camadas rochosas. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Poro-pressão.	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout. (Ver exemplos práticos nas aulas e no roteiro).
+Como Poro-pressão influencia a estabilidade de poços?	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Poro-pressão?	Pressão dos fluidos nos poros das rochas; afeta estabilidade de poços e risco de kick/blowout. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Janela de perfuração segura.	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior). (Ver exemplos práticos nas aulas e no roteiro).
+Como Janela de perfuração segura influencia a estabilidade de poços?	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior). (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Janela de perfuração segura?	Intervalo entre a pressão de poro (limite inferior) e a pressão de fratura (limite superior). (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Sanding (produção de areia).	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório. (Ver exemplos práticos nas aulas e no roteiro).
+Como Sanding (produção de areia) influencia a estabilidade de poços?	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Sanding (produção de areia)?	Perda de material da formação quando as tensões do fluxo excedem a resistência da rocha reservatório. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Critério de Mohr-Coulomb.	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento. (Ver exemplos práticos nas aulas e no roteiro).
+Como Critério de Mohr-Coulomb influencia a estabilidade de poços?	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Critério de Mohr-Coulomb?	Critério para avaliar falhas reativadas com base em tensões normais e cisalhantes e resistência ao cisalhamento. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de SPT (Standard Penetration Test).	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos. (Ver exemplos práticos nas aulas e no roteiro).
+Como SPT (Standard Penetration Test) influencia a estabilidade de poços?	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar SPT (Standard Penetration Test)?	Ensaio de penetração em campo que fornece resistência à penetração e parâmetros geotécnicos. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de CPT (Cone Penetration Test).	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência. (Ver exemplos práticos nas aulas e no roteiro).
+Como CPT (Cone Penetration Test) influencia a estabilidade de poços?	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar CPT (Cone Penetration Test)?	Ensaio de penetração de cone para caracterizar perfil contínuo do solo e parâmetros de resistência. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Ensaio de carga em placa.	Teste de campo para determinar resposta à carga superficial e capacidade de carga local. (Ver exemplos práticos nas aulas e no roteiro).
+Como Ensaio de carga em placa influencia a estabilidade de poços?	Teste de campo para determinar resposta à carga superficial e capacidade de carga local. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Ensaio de carga em placa?	Teste de campo para determinar resposta à carga superficial e capacidade de carga local. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Ensaio de consolidação.	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação. (Ver exemplos práticos nas aulas e no roteiro).
+Como Ensaio de consolidação influencia a estabilidade de poços?	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Ensaio de consolidação?	Ensaio laboratorial para medir compressibilidade e coeficiente de consolidação. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Arenito.	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade. (Ver exemplos práticos nas aulas e no roteiro).
+Como Arenito influencia a estabilidade de poços?	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Arenito?	Rocha clástica típica reservatório: geralmente alta porosidade e permeabilidade. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Folhelho (Shale).	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade. (Ver exemplos práticos nas aulas e no roteiro).
+Como Folhelho (Shale) influencia a estabilidade de poços?	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Folhelho (Shale)?	Rocha biogênica rica em matéria orgânica: geralmente selante/geradora com baixa permeabilidade. (Ver exemplos práticos nas aulas e no roteiro).
+Liste 3 aplicações práticas de Granito.	Rocha ígnea compacta com grãos não orientados; baixa porosidade. (Ver exemplos práticos nas aulas e no roteiro).
+Como Granito influencia a estabilidade de poços?	Rocha ígnea compacta com grãos não orientados; baixa porosidade. (Ver exemplos práticos nas aulas e no roteiro).
+Quais ensaios permitem caracterizar Granito?	Rocha ígnea compacta com grãos não orientados; baixa porosidade. (Ver exemplos práticos nas aulas e no roteiro).
+Pergunta de revisão avançada #1: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #2: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #3: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #4: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #5: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #6: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #7: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #8: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #9: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #10: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #11: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #12: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #13: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #14: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #15: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #16: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #17: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #18: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #19: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #20: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #21: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #22: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #23: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #24: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #25: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #26: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #27: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #28: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #29: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #30: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #31: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #32: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #33: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #34: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #35: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #36: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #37: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #38: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #39: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #40: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #41: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #42: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #43: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #44: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #45: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #46: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #47: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #48: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #49: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #50: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #51: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #52: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #53: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #54: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #55: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #56: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #57: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #58: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #59: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #60: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #61: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #62: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #63: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #64: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #65: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #66: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #67: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #68: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #69: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #70: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #71: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #72: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #73: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #74: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #75: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #76: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #77: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #78: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #79: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #80: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #81: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #82: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #83: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #84: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #85: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #86: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #87: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #88: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #89: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #90: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #91: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #92: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #93: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #94: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #95: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #96: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #97: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #98: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #99: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #100: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #101: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #102: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #103: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #104: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #105: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #106: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #107: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #108: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #109: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #110: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #111: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #112: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #113: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #114: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #115: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #116: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #117: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #118: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #119: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #120: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #121: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #122: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #123: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #124: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #125: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #126: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #127: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #128: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #129: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #130: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #131: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #132: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #133: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #134: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #135: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #136: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #137: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #138: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #139: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #140: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #141: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #142: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #143: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #144: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #145: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #146: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #147: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #148: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #149: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #150: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #151: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #152: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #153: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #154: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #155: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #156: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #157: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #158: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #159: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #160: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #161: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #162: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #163: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #164: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #165: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #166: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #167: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #168: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #169: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #170: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #171: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #172: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #173: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #174: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #175: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #176: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #177: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #178: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #179: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #180: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #181: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #182: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #183: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #184: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #185: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #186: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #187: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #188: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #189: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #190: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #191: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #192: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #193: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #194: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #195: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #196: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #197: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #198: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #199: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #200: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #201: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #202: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #203: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #204: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #205: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #206: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #207: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #208: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #209: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #210: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #211: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #212: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #213: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #214: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #215: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #216: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #217: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #218: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #219: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #220: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #221: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #222: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #223: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #224: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #225: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #226: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #227: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #228: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #229: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #230: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #231: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #232: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #233: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #234: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #235: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #236: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #237: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #238: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #239: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #240: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #241: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #242: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #243: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #244: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #245: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #246: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #247: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #248: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #249: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #250: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #251: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #252: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #253: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #254: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #255: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #256: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #257: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #258: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #259: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #260: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #261: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #262: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #263: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #264: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #265: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #266: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #267: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #268: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #269: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #270: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #271: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #272: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #273: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #274: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.
+Pergunta de revisão avançada #275: Explique brevemente um conceito/prática crítica em Mecânica das Rochas.	Resposta: explique tensões in-situ, janelas de perfuração segura, classificação ISRM, cálculos de Zingg/Sneed e interpretação de ensaios de campo conforme o roteiro.

@@ -1,0 +1,75 @@
+{
+  "endpoint": "POST /api/scenarios",
+  "description": "Create a new scenario with MCDA weights",
+  "method": "POST",
+  "url": "http://localhost:3000/api/scenarios",
+  "summary": "Save scenario configuration",
+  
+  "request": {
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    },
+    "body": {
+      "name": "Climate-First Policy 2026",
+      "description": "Emphasis on solar potential and climate goals",
+      "weights": {
+        "ghi": 0.25,
+        "terrain": 0.15,
+        "population": 0.20,
+        "grid_distance": 0.20,
+        "ndvi": 0.15,
+        "nightlights": 0.05
+      },
+      "solar_params": {
+        "panel_efficiency": 0.18,
+        "system_loss": 0.14,
+        "derate_factor": 0.78
+      },
+      "financial_params": {
+        "capex_per_mw": 1500000,
+        "opex_annual": 50000,
+        "lifetime_years": 25,
+        "discount_rate": 0.08
+      }
+    }
+  },
+  
+  "response": {
+    "status": 201,
+    "statusText": "Created",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": true,
+      "message": "Scenario created successfully",
+      "data": {
+        "scenario": {
+          "id": "123e4567-e89b-12d3-a456-426614174000",
+          "name": "Climate-First Policy 2026",
+          "description": "Emphasis on solar potential and climate goals",
+          "user_id": "550e8400-e29b-41d4-a716-446655440000",
+          "weights": {
+            "ghi": 0.25,
+            "terrain": 0.15,
+            "population": 0.20,
+            "grid_distance": 0.20,
+            "ndvi": 0.15,
+            "nightlights": 0.05
+          },
+          "created_at": "2026-03-06T10:30:00Z",
+          "updated_at": "2026-03-06T10:30:00Z"
+        }
+      }
+    }
+  },
+  
+  "notes": [
+    "Requires valid accessToken",
+    "Weights must sum to 1.0",
+    "Name must be unique per user",
+    "All 6 criteria weights required (ghi, terrain, population, grid_distance, ndvi, nightlights)",
+    "Scenario is private to the authenticated user"
+  ]
+}

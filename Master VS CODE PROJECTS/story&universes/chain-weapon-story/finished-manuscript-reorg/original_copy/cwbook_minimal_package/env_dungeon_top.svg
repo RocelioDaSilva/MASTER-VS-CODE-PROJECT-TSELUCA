@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2a2a"/>
+      <stop offset="1" stop-color="#141414"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="url(#g)"/>
+  <g fill="#0f0f0f" opacity="0.96">
+    <rect x="40" y="48" width="36" height="72" rx="6"/>
+    <rect x="120" y="34" width="28" height="86" rx="6"/>
+    <path d="M220,110 L260,40 L300,110 Z"/>
+    <path d="M340,110 L380,50 L420,110 Z"/>
+    <path d="M500,110 L560,60 L640,110 Z"/>
+    <rect x="680" y="58" width="28" height="52" rx="6"/>
+    <path d="M820,110 L860,36 L920,110 Z"/>
+    <path d="M980,110 L1020,60 L1060,110 Z"/>
+  </g>
+  <text x="1188" y="112" font-family="serif" font-size="10" fill="#6d6d6d" text-anchor="end" opacity="0.8">DUNGEON · NIGHT</text>
+</svg>

@@ -1,0 +1,81 @@
+\babel@toc {portuguese}{}\relax 
+\contentsline {section}{\numberline {1}Introdução}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}A Crise Energética como Barreira ao Desenvolvimento em Angola: Uma Análise Quantificada}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}A Energia Solar como Alternativa Estratégica: Potencial, Política e Necessidade de Planejamento Otimizado}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Problema de Investigação e Objetivos}{7}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Revisão da Literatura}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Sistemas Solares Comunitários: Conceitos e Experiências Internacionais}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Análise Multicritério em SIG para Energias Renováveis}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Observação da Terra para Avaliação de Recursos Solares}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Contexto Angolano: Esforços Existentes e Lacunas de Planejamento}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Contribuição Original deste Trabalho}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Posicionamento Competitivo: Comparação com Literatura Contemporânea}{12}{subsection.2.6}%
+\contentsline {section}{\numberline {3}GEESP-Angola: Um Framework Geoespacial para Priorização de Sistemas Solares Comunitários}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fundamentação Teórica e Conceptual}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Quadro Analítico Multidimensional}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Framework Metodológico GEESP-Angola}{14}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Arquitetura Geral do Framework}{14}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Fase 1: Avaliação Geoespacial Integrada}{15}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Fase 2: Análise Multicritério para Priorização}{15}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Fase 3: Desenho de Soluções Contextualizadas}{15}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Fase 4: Implementação e Aprendizagem Adaptativa}{16}{subsubsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.4}Vias de Implementação e Integração Política}{16}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Integração com Estratégias Nacionais Existentes}{16}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Aproveitamento de Oportunidades de Reforma Legal Recentes}{16}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Mecanismos de Financiamento e Investimento}{16}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}Conclusão e Recomendações Estratégicas}{16}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Área de estudo}{17}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Dados e critérios}{17}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Ponderação e agregação}{17}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Flexibilidade Metodológica: Ponderação Personalizada por Perfil Comunitário}{18}{subsubsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.9}Avaliação tecnológica}{19}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}Ilustração Prática: Transformação de Cacula (Zona A)}{19}{subsubsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.10}Procedimentos analíticos}{21}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Validação e indicadores de impacto}{22}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}Protocolo de Validação em Campo: Da Previsão à Realidade}{22}{subsubsection.3.11.1}%
+\contentsline {section}{\numberline {4}Resultados}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Mapas de Aptidão Individual por Critério}{24}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mapa de Aptidão Integrada}{25}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Avaliação Tecnológica por Zona}{26}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Análise de Sensibilidade}{26}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Resultados quantitativos}{27}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Estimativa de impacto e custos preliminares}{27}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Discussão}{27}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Interpretação dos Resultados}{27}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Contribuições Metodológicas}{27}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Posicionamento Competitivo e Novidade}{28}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Implicações Práticas}{28}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Plano de Implementação e Mitigação de Riscos}{29}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Cronograma de Implementação (18 Meses)}{29}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Matriz de Mitigação de Riscos}{29}{subsubsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.6}Implicações para seleção e apresentação em Boston}{29}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Recomendações práticas para submissão e apresentação}{29}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Da Análise Geoespacial à Transformação Socioeconómica: Reposicionamento de Causalidade}{30}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Limitações e Desafios}{30}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Trabalho Futuro}{31}{subsection.5.10}%
+\contentsline {section}{\numberline {6}Plano de Ação e Cronograma}{31}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Checklist de submissão}{32}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Contribuições dos autores}{32}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Alinhamento com Objetivos de Desenvolvimento Sustentável (ODS)}{32}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Análise de Viabilidade Financeira: Viabilidade Económica e Periods de Retorno}{33}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Parâmetros Financeiros Base}{33}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Resultados de Viabilidade Financeira por Zona}{34}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Interpretação e Implicações para Investidores}{34}{subsubsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.5}Limitações Metodológicas Ampliadas}{35}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusões}{36}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Mensagem final}{36}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Softwares e Plataformas Desenvolvidas}{37}{section.8}%
+\contentsline {subsection}{\numberline {8.1}1. Dashboard Web Interativo (Prioridade Crítica)}{38}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}2. API REST para Processamento MCDA (Prioridade Crítica)}{39}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}3. Scripts Google Earth Engine (Prioridade Alta)}{39}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}4. Notebooks Jupyter (Prioridade Alta)}{40}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}5. Ferramenta de Cálculo LCOE (Prioridade Alta)}{40}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}6. Sistema de Monitoramento Pós-Implementação (Prioridade Média)}{40}{subsection.8.6}%
+\contentsline {section}{\numberline {A}Análise de Sensibilidade Completa}{41}{appendix.A}%
+\contentsline {section}{\numberline {B}Características Detalhadas das 45 Comunidades}{42}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Lista Completa de Comunidades Identificadas}{42}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Estatísticas por Zona Prioritária}{44}{subsection.B.2}%
+\contentsline {section}{\numberline {C}Metodologia Detalhada e Código Fonte}{44}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Repositório GitHub e Componentes Software}{44}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}Requisitos Python e Dependências}{45}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Validação e Testes}{45}{subsection.C.3}%

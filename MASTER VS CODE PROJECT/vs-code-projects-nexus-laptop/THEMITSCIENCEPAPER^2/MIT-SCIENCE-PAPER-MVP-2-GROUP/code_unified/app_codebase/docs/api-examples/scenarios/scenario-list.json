@@ -1,0 +1,67 @@
+{
+  "endpoint": "GET /api/scenarios",
+  "description": "List all scenarios for authenticated user",
+  "method": "GET",
+  "url": "http://localhost:3000/api/scenarios",
+  "summary": "Retrieve user's scenario library",
+  
+  "request": {
+    "headers": {
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    }
+  },
+  
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": true,
+      "message": "Scenarios retrieved successfully",
+      "data": {
+        "scenarios": [
+          {
+            "id": "123e4567-e89b-12d3-a456-426614174000",
+            "name": "Climate-First Policy 2026",
+            "description": "Emphasis on solar potential and climate goals",
+            "weights": {
+              "ghi": 0.25,
+              "terrain": 0.15,
+              "population": 0.20,
+              "grid_distance": 0.20,
+              "ndvi": 0.15,
+              "nightlights": 0.05
+            },
+            "created_at": "2026-03-06T10:30:00Z",
+            "updated_at": "2026-03-06T10:30:00Z"
+          },
+          {
+            "id": "223e4567-e89b-12d3-a456-426614174000",
+            "name": "Infrastructure-Priority 2026",
+            "description": "Focus on grid accessibility and development potential",
+            "weights": {
+              "ghi": 0.20,
+              "terrain": 0.10,
+              "population": 0.25,
+              "grid_distance": 0.25,
+              "ndvi": 0.15,
+              "nightlights": 0.05
+            },
+            "created_at": "2026-03-01T08:15:00Z",
+            "updated_at": "2026-03-06T09:00:00Z"
+          }
+        ],
+        "total": 2
+      }
+    }
+  },
+  
+  "notes": [
+    "Returns only scenarios owned by authenticated user",
+    "Does not include scenarios shared with user (handled separately)",
+    "Sorted by updated_at descending (most recent first)",
+    "Requires valid accessToken"
+  ]
+}

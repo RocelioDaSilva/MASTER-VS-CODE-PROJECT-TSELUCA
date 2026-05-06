@@ -1,0 +1,102 @@
+\babel@toc {portuguese}{}\relax 
+\contentsline {section}{\numberline {1}Introdução}{8}{section.1}%
+\contentsline {subsection}{\numberline {1.1}A Crise Energética como Barreira ao Desenvolvimento em Angola: Uma Análise Quantificada}{8}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}A Energia Solar como Alternativa Estratégica: Potencial, Política e Necessidade de Planejamento Otimizado}{9}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Problema de Investigação e Objetivos}{9}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Questões e Hipóteses de Investigação}{10}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Revisão da Literatura}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Sistemas Solares Comunitários: Conceitos e Experiências Internacionais}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Análise Multicritério em SIG para Energias Renováveis}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Observação da Terra para Avaliação de Recursos Solares}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Contexto Angolano: Esforços Existentes e Lacunas de Planejamento}{13}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Panorama de Esforços Existentes e Lacunas: Asset Mapping do Ecossistema Energético Angolano}{14}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Contribuição Original deste Trabalho}{16}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Contribuição Original e Posicionamento Competitivo}{17}{subsection.2.7}%
+\contentsline {section}{\numberline {3}GEESP-Angola: Um Framework Geoespacial para Priorização de Sistemas Solares Comunitários}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fundamentação Teórica e Conceptual}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}O Quadro EVDT: Estrutura de Avaliação Transparente}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Quadro Analítico Multidimensional}{19}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Framework Metodológico GEESP-Angola}{19}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Arquitetura Geral do Framework}{19}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Fase 1: Avaliação Geoespacial Integrada}{19}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Fase 2: Análise Multicritério para Priorização}{20}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Fase 3: Desenho de Soluções Contextualizadas}{20}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}Fase 4: Implementação e Aprendizagem Adaptativa}{20}{subsubsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.5}Ecossistema Institucional e Mapeamento de Stakeholders}{20}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Matriz de Decisão e Responsabilidades}{22}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.6}Vias de Implementação e Integração Política}{23}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Integração com Estratégias Nacionais Existentes}{23}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Aproveitamento de Oportunidades de Reforma Legal Recentes}{23}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Mecanismos de Financiamento e Investimento}{23}{subsubsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.7}Conclusão e Recomendações Estratégicas}{23}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Área de estudo}{24}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Dados e critérios}{24}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Critérios Exclusionários e Mascaramento Anterior à Sobresposição}{25}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Ponderação e agregação: Método de Hierarquia Analítica (AHP)}{26}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}Flexibilidade Metodológica: Ponderação Personalizada por Perfil Comunitário}{27}{subsubsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.12}Avaliação tecnológica}{29}{subsection.3.12}%
+\contentsline {subsubsection}{\numberline {3.12.1}Ilustração Prática: Transformação de Cacula (Zona A)}{29}{subsubsection.3.12.1}%
+\contentsline {subsection}{\numberline {3.13}Procedimentos analíticos}{32}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Validação e indicadores de impacto}{34}{subsection.3.14}%
+\contentsline {subsubsection}{\numberline {3.14.1}Protocolo de Validação em Campo: Da Previsão à Realidade}{34}{subsubsection.3.14.1}%
+\contentsline {section}{\numberline {4}Resultados}{37}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Mapas de Aptidão Individual por Critério}{37}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mapa de Aptidão Integrada}{38}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Avaliação Tecnológica por Zona}{39}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Análise de Sensibilidade}{39}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Resultados quantitativos}{40}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Estimativa de impacto e custos preliminares}{40}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Avaliação do Ciclo de Vida (LCA) — Sumário}{41}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Governança e sustentabilidade operacional}{41}{subsection.4.8}%
+\contentsline {section}{\numberline {A}Apêndice A: Avaliação do Ciclo de Vida (LCA) — Pressupostos e Cálculos}{43}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Unidade Funcional e Horizonte}{43}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Fatores de Emissão e Massa dos Componentes}{43}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Cálculo resumido}{43}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Cenários e Sensibilidade}{43}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}Resultados Numéricos por Cenário}{44}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}Notas sobre limites do estudo}{44}{subsection.A.6}%
+\contentsline {section}{\numberline {B}Discussão}{44}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Interpretação dos Resultados}{45}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Contribuições Metodológicas}{45}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Implicações Práticas}{46}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Implicações para seleção e apresentação em Boston}{46}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Recomendações práticas para submissão e apresentação}{46}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}Da Análise Geoespacial à Transformação Socioeconómica: Reposicionamento de Causalidade}{47}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.7}Equidade, Vulnerabilidade e Salvaguardas: Lições da Literatura e Implementação no GEESP-Angola}{48}{subsection.B.7}%
+\contentsline {subsection}{\numberline {B.8}Indicadores Quantificados para Medição de Impacto Social}{50}{subsection.B.8}%
+\contentsline {subsection}{\numberline {B.9}Limitações e Desafios}{51}{subsection.B.9}%
+\contentsline {subsection}{\numberline {B.10}Trabalho Futuro}{54}{subsection.B.10}%
+\contentsline {section}{\numberline {C}Conclusões}{55}{appendix.C}%
+\contentsline {section}{\numberline {A}Ambiente Computacional e Softwares Desenvolvidos}{56}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Detalhes Técnicos dos Componentes}{57}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}1. Dashboard Web Interativo (Prioridade Crítica)}{57}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.2}2. API REST para Processamento MCDA (Prioridade Crítica)}{57}{subsubsection.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.3}3. Scripts Google Earth Engine (Prioridade Alta)}{58}{subsubsection.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.4}4. Notebooks Jupyter (Prioridade Alta)}{58}{subsubsection.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.5}5. Ferramenta de Cálculo LCOE (Prioridade Alta)}{59}{subsubsection.A.1.5}%
+\contentsline {subsubsection}{\numberline {A.1.6}6. Sistema de Monitoramento Pós-Implementação (Prioridade Média)}{59}{subsubsection.A.1.6}%
+\contentsline {section}{\numberline {B}Análise de Sensibilidade Completa}{59}{appendix.B}%
+\contentsline {section}{\numberline {C}Características Detalhadas das 45 Comunidades}{61}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Lista Completa de Comunidades Identificadas}{61}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}Estatísticas por Zona Prioritária}{63}{subsection.C.2}%
+\contentsline {section}{\numberline {D}Metodologia Detalhada e Código Fonte}{63}{appendix.D}%
+\contentsline {subsection}{\numberline {D.1}Repositório GitHub e Componentes Software}{63}{subsection.D.1}%
+\contentsline {subsection}{\numberline {D.2}Requisitos Python e Dependências}{64}{subsection.D.2}%
+\contentsline {subsection}{\numberline {D.3}Validação e Testes}{64}{subsection.D.3}%
+\contentsline {section}{\numberline {A}Documentação Completa do Processo AHP}{65}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Estrutura Hierárquica}{66}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Participantes e Processo}{66}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Escala de Preferência Utilizada}{67}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Resultados de Consistência e Agregação}{67}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}Sensibilidade aos Especialistas}{68}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}Fontes de Possível Viés e Mitigação}{68}{subsection.A.6}%
+\contentsline {section}{\numberline {B}Matrizes AHP e Ponderações}{68}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Matriz de Comparação Pareada: 5 Critérios Principais}{68}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Sensibilidade dos Pesos: Análise ±20\%}{69}{subsection.B.2}%
+\contentsline {section}{\numberline {C}Protocolo de Validação de Campo: Manual Técnico}{70}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Seleção de Sítios Piloto: Critérios}{70}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}Equipamento Técnico: Especificações}{70}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Procedimento Diário de Coleta}{70}{subsection.C.3}%
+\contentsline {subsection}{\numberline {C.4}Critério de Aceitação: Tolerâncias}{71}{subsection.C.4}%
+\contentsline {subsection}{\numberline {C.5}Protocolo de Contingência}{71}{subsection.C.5}%
+\contentsline {section}{\numberline {D}Dados Comunitários: Listagem Completa}{71}{appendix.D}%

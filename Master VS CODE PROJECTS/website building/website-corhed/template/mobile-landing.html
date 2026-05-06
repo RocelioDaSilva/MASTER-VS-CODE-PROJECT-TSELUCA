@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#003366">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="YourBusiness — Professional consulting, analytics, technical support, digital solutions, and more.">
+    <title>YourBusiness – Professional Business Solutions</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23003366'/><stop offset='100%25' style='stop-color:%23004d99'/></linearGradient></defs><rect width='64' height='64' rx='12' fill='url(%23bg)'/><text x='32' y='44' font-family='sans-serif' font-size='32' font-weight='bold' fill='%23fff' text-anchor='middle'>YB</text></svg>" type="image/svg+xml">
+    <style>
+        /* ============================================
+           YourBusiness — Mobile Landing Page
+           Single-file, mobile-first, zero dependencies
+           ============================================ */
+
+        :root {
+            --pri: #003366;
+            --pri-l: #004d99;
+            --pri-d: #002855;
+            --acc: #e50000;
+            --acc-h: #c00;
+            --acc-l: #ff4444;
+            --txt: #333;
+            --txt-l: #666;
+            --txt-m: #555;
+            --bg: #fff;
+            --bg-a: #f5f5f5;
+            --brd: #e0e0e0;
+            --ff: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --r: 12px;
+            --sh: 0 4px 20px rgba(0,0,0,.08);
+            --sh-l: 0 8px 30px rgba(0,51,102,.12);
+            --t: .3s ease;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body { font-family: var(--ff); line-height: 1.65; color: var(--txt); background: var(--bg); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+        a { color: inherit; text-decoration: none; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* === HEADER === */
+        .header {
+            background: linear-gradient(135deg, var(--pri) 0%, var(--pri-l) 100%);
+            color: #fff;
+            padding: 0.9rem 1.25rem;
+            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,.12);
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: max(0.9rem, env(safe-area-inset-top));
+        }
+        .logo {
+            font-size: 1.45rem; font-weight: 800; letter-spacing: 1.5px;
+            color: #fff; text-decoration: none;
+        }
+        .nav-toggle {
+            display: flex; flex-direction: column; gap: 5px;
+            background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 101;
+        }
+        .nav-toggle span {
+            display: block; width: 26px; height: 2.5px; background: #fff; border-radius: 3px;
+            transition: all var(--t);
+        }
+        .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5.5px); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5.5px); }
+
+        .nav-menu {
+            position: fixed; top: 0; right: -100%; width: 280px; height: 100%;
+            background: var(--pri); padding: 5rem 2rem 2rem; z-index: 100;
+            transition: right .35s cubic-bezier(.4,0,.2,1);
+            box-shadow: -4px 0 20px rgba(0,0,0,.25);
+        }
+        .nav-menu.open { right: 0; }
+        .nav-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 99;
+            opacity: 0; pointer-events: none; transition: opacity .3s ease;
+        }
+        .nav-overlay.open { opacity: 1; pointer-events: auto; }
+        .nav-menu a {
+            display: block; color: #fff; font-size: 1.15rem; font-weight: 500;
+            padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,.1);
+            transition: color var(--t);
+        }
+        .nav-menu a:active { color: var(--acc-l); }
+
+        /* === HERO === */
+        .hero {
+            background: linear-gradient(135deg, #003366 0%, #004d99 45%, #0066cc 100%);
+            color: #fff; padding: 3.5rem 1.5rem 3rem; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle at 30% 70%, rgba(255,255,255,.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: 2rem; font-weight: 800; margin-bottom: 1rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,.25); line-height: 1.2;
+            position: relative;
+        }
+        .hero p {
+            font-size: 1.05rem; opacity: .93; margin-bottom: 2rem;
+            max-width: 540px; margin-left: auto; margin-right: auto;
+            line-height: 1.7; position: relative;
+        }
+
+        /* === CTA BUTTON === */
+        .cta {
+            display: inline-block; background: linear-gradient(135deg, var(--acc) 0%, var(--acc-h) 100%);
+            color: #fff; padding: 0.9rem 2.2rem; border-radius: 50px;
+            font-weight: 700; font-size: 1rem; border: none; cursor: pointer;
+            transition: all var(--t); text-decoration: none;
+            box-shadow: 0 4px 15px rgba(229,0,0,.25);
+            -webkit-tap-highlight-color: transparent;
+        }
+        .cta:active { transform: scale(.97); box-shadow: 0 2px 8px rgba(229,0,0,.3); }
+
+        /* === STATS BAR === */
+        .stats {
+            background: var(--pri-d); color: #fff; padding: 1.75rem 1.25rem;
+        }
+        .stats-inner {
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem; max-width: 500px; margin: 0 auto; text-align: center;
+        }
+        .stat h3 { font-size: 1.8rem; color: var(--acc-l); line-height: 1; margin-bottom: .25rem; }
+        .stat p { font-size: .82rem; opacity: .85; }
+
+        /* === SECTIONS === */
+        .section { padding: 3rem 1.25rem; }
+        .section-alt { background: linear-gradient(135deg, #f8f9fb 0%, #fff 100%); }
+
+        .section-title {
+            text-align: center; font-size: 1.65rem; color: var(--pri);
+            margin-bottom: 2rem; position: relative; padding-bottom: .75rem;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 3.5px;
+            background: linear-gradient(90deg, var(--pri), var(--acc));
+            border-radius: 2px;
+        }
+
+        /* === SERVICE CARDS === */
+        .cards { display: flex; flex-direction: column; gap: 1rem; }
+        .card {
+            background: #fff; padding: 1.5rem; border-radius: var(--r);
+            box-shadow: var(--sh); border-left: 4px solid var(--acc);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .card:active { transform: scale(.985); }
+        .card-icon { font-size: 1.6rem; margin-bottom: .5rem; }
+        .card h3 { color: var(--pri); font-size: 1.1rem; margin-bottom: .5rem; font-weight: 700; }
+        .card p { color: var(--txt-l); font-size: .92rem; line-height: 1.75; }
+
+        /* === WHY US === */
+        .why-grid { display: flex; flex-direction: column; gap: 1rem; }
+        .why-card {
+            background: #fff; padding: 1.4rem; border-radius: var(--r);
+            box-shadow: 0 2px 12px rgba(0,0,0,.05);
+            border-top: 3px solid var(--pri);
+        }
+        .why-icon { font-size: 1.8rem; margin-bottom: .5rem; }
+        .why-card h3 { color: var(--pri); font-size: 1.05rem; margin-bottom: .35rem; }
+        .why-card p { color: var(--txt-l); font-size: .9rem; line-height: 1.7; }
+
+        /* === TESTIMONIALS === */
+        .testimonials { display: flex; flex-direction: column; gap: 1.25rem; }
+        .testimonial {
+            background: #fff; padding: 1.5rem; border-radius: var(--r);
+            box-shadow: var(--sh); position: relative;
+            border-top: 4px solid var(--pri);
+        }
+        .testimonial::before {
+            content: '\201C'; font-size: 3.5rem; color: var(--pri); opacity: .12;
+            position: absolute; top: .25rem; left: .75rem; line-height: 1;
+            font-family: Georgia, serif;
+        }
+        .t-stars { color: #f5a623; font-size: .85rem; margin-bottom: .6rem; letter-spacing: 2px; }
+        .t-text {
+            color: var(--txt-m); font-style: italic; line-height: 1.8;
+            margin-bottom: 1.25rem; position: relative; z-index: 1; font-size: .92rem;
+        }
+        .t-author { display: flex; align-items: center; gap: .75rem; }
+        .t-avatar {
+            width: 44px; height: 44px;
+            background: linear-gradient(135deg, var(--pri), var(--acc));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: #fff; font-weight: 700; font-size: .95rem; flex-shrink: 0;
+        }
+        .t-info strong { color: var(--pri); display: block; font-size: .95rem; }
+        .t-info span { color: var(--txt-l); font-size: .8rem; }
+
+        /* === CONTACT === */
+        .contact-cards { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 2rem; }
+        .contact-card {
+            background: #fff; padding: 1.25rem; border-radius: var(--r);
+            box-shadow: 0 2px 10px rgba(0,0,0,.05); text-align: center;
+            transition: box-shadow var(--t);
+        }
+        .contact-card h3 { color: var(--pri); font-size: 1rem; margin-bottom: .35rem; }
+        .contact-card a {
+            color: var(--acc); font-weight: 700; font-size: .95rem;
+            text-decoration: none; transition: color var(--t);
+        }
+        .contact-card p { color: var(--txt-m); font-size: .95rem; }
+
+        /* === FORM === */
+        .form-box {
+            background: #fff; padding: 1.75rem 1.25rem; border-radius: var(--r);
+            box-shadow: var(--sh);
+        }
+        .form-box h2 {
+            color: var(--pri); font-size: 1.35rem; margin-bottom: 1.5rem; text-align: center;
+        }
+        .fg { margin-bottom: 1.25rem; }
+        .fg label {
+            display: block; margin-bottom: .4rem; color: var(--pri);
+            font-weight: 600; font-size: .9rem;
+        }
+        .fg input, .fg textarea, .fg select {
+            width: 100%; padding: .85rem; border: 2px solid var(--brd);
+            border-radius: 8px; font-family: inherit; font-size: 1rem;
+            transition: border-color var(--t), box-shadow var(--t);
+            -webkit-appearance: none; appearance: none;
+            background: #fff;
+        }
+        .fg input:focus, .fg textarea:focus, .fg select:focus {
+            outline: none; border-color: var(--pri);
+            box-shadow: 0 0 0 3px rgba(0,51,102,.12);
+        }
+        .fg textarea { resize: vertical; min-height: 110px; }
+        .fg input[type="checkbox"] { width: auto; margin-right: .5rem; }
+        .check-label {
+            display: flex; align-items: center; font-weight: normal;
+            font-size: .88rem; color: var(--txt-m);
+        }
+        .check-label a { color: var(--pri); text-decoration: underline; }
+        .field-err { color: var(--acc); font-size: .82rem; margin-top: .2rem; display: block; }
+        .form-msg {
+            padding: .85rem; border-radius: 8px; margin-bottom: 1rem;
+            display: none; font-size: .9rem; text-align: center;
+        }
+        .form-msg.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; display: block; }
+        .form-msg.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; display: block; }
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--pri) 0%, var(--acc) 100%);
+            color: #fff; padding: 1rem; border: none; border-radius: 8px;
+            font-size: 1.05rem; font-weight: 700; cursor: pointer;
+            transition: all var(--t); -webkit-tap-highlight-color: transparent;
+        }
+        .submit-btn:active { transform: scale(.98); }
+        .submit-btn.loading {
+            pointer-events: none; opacity: .7;
+        }
+        .submit-btn.loading::after {
+            content: ''; width: 18px; height: 18px;
+            border: 2.5px solid rgba(255,255,255,.3); border-top-color: #fff;
+            border-radius: 50%; display: inline-block;
+            margin-left: .65rem; vertical-align: middle;
+            animation: spin .8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* === FOOTER === */
+        .footer {
+            background: var(--pri); color: #fff;
+            padding: 2.5rem 1.25rem 1.5rem;
+            padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+            text-align: center;
+        }
+        .footer-logo { font-size: 1.3rem; font-weight: 800; letter-spacing: 1px; margin-bottom: .5rem; }
+        .footer-desc { color: rgba(255,255,255,.85); font-size: .85rem; margin-bottom: 1.5rem; max-width: 320px; margin-left: auto; margin-right: auto; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.25rem; margin-bottom: 1.5rem; }
+        .footer-links a { color: rgba(255,255,255,.85); font-size: .85rem; transition: color var(--t); }
+        .footer-links a:active { color: var(--acc-l); }
+        .footer-social { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .footer-social a {
+            width: 42px; height: 42px; border-radius: 50%;
+            border: 1.5px solid rgba(255,255,255,.3);
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: .85rem; font-weight: 600;
+            transition: all var(--t);
+        }
+        .footer-social a:active { background: rgba(255,255,255,.15); border-color: #fff; }
+        .footer-copy { font-size: .78rem; color: rgba(255,255,255,.65); border-top: 1px solid rgba(255,255,255,.1); padding-top: 1rem; }
+
+        /* === COOKIE BANNER === */
+        .cookie-bar {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            background: var(--pri-d); color: #fff;
+            padding: 1rem 1.25rem;
+            padding-bottom: max(1rem, env(safe-area-inset-bottom));
+            z-index: 9999;
+            box-shadow: 0 -4px 20px rgba(0,0,0,.25);
+            transform: translateY(100%); transition: transform .4s ease;
+            text-align: center;
+        }
+        .cookie-bar.show { transform: translateY(0); }
+        .cookie-bar p { font-size: .85rem; margin-bottom: .75rem; line-height: 1.5; }
+        .cookie-bar a { color: var(--acc-l); text-decoration: underline; }
+        .cookie-btns { display: flex; gap: .6rem; justify-content: center; }
+        .cookie-btns button {
+            padding: .55rem 1.4rem; border: none; border-radius: 6px;
+            cursor: pointer; font-weight: 700; font-size: .85rem;
+            transition: all var(--t); -webkit-tap-highlight-color: transparent;
+        }
+        .btn-accept { background: var(--acc); color: #fff; }
+        .btn-accept:active { background: var(--acc-h); }
+        .btn-decline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.4) !important; }
+        .btn-decline:active { border-color: #fff !important; background: rgba(255,255,255,.1); }
+
+        /* === BACK TO TOP === */
+        .btt {
+            position: fixed; bottom: 1.25rem; right: 1.25rem;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--pri); color: #fff; border: none;
+            font-size: 1.2rem; cursor: pointer;
+            opacity: 0; visibility: hidden; transform: translateY(10px);
+            transition: all .3s ease; z-index: 98;
+            box-shadow: 0 3px 12px rgba(0,0,0,.18);
+            display: flex; align-items: center; justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .btt.show { opacity: 1; visibility: visible; transform: translateY(0); }
+        .btt:active { background: var(--acc); transform: scale(.92); }
+
+        /* === SCROLL ANIMATIONS === */
+        .reveal {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity .55s ease-out, transform .55s ease-out;
+        }
+        .reveal.on { opacity: 1; transform: translateY(0); }
+
+        /* === FOCUS STYLES === */
+        a:focus-visible, button:focus-visible, input:focus-visible,
+        textarea:focus-visible, select:focus-visible {
+            outline: 3px solid var(--pri); outline-offset: 2px;
+        }
+        .header a:focus-visible, .nav-menu a:focus-visible,
+        .footer a:focus-visible { outline-color: #fff; }
+
+        /* === TABLET+ (min 600px) === */
+        @media (min-width: 600px) {
+            .hero h1 { font-size: 2.6rem; }
+            .hero p { font-size: 1.15rem; }
+            .stats-inner { grid-template-columns: repeat(4, 1fr); max-width: 700px; }
+            .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+            .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+            .testimonials { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+            .contact-cards { flex-direction: row; }
+            .contact-card { flex: 1; }
+            .form-box { padding: 2.5rem; max-width: 600px; margin: 0 auto; }
+            .section { padding: 4rem 2rem; }
+            .section-title { font-size: 2rem; }
+        }
+
+        /* === DESKTOP (min 900px) === */
+        @media (min-width: 900px) {
+            .hero { padding: 5rem 2rem; }
+            .hero h1 { font-size: 3.2rem; }
+            .cards { grid-template-columns: repeat(3, 1fr); }
+            .testimonials { grid-template-columns: repeat(3, 1fr); }
+            .section { padding: 5rem 2rem; }
+        }
+
+        /* === REDUCED MOTION === */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: .01ms !important; transition-duration: .01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal { opacity: 1; transform: none; }
+        }
+
+        /* === PRINT === */
+        @media print {
+            .header, .footer, .btt, .cookie-bar { display: none !important; }
+            body { color: #000; background: #fff; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <a href="#" class="logo">YourBusiness</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <h1>Professional Business Solutions</h1>
+            <p>Delivering excellence through innovative services and dedicated support for businesses of all sizes.</p>
+            <a href="#contact" class="cta">Get a Free Consultation</a>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats" aria-label="Key statistics">
+            <div class="stats-inner">
+                <div class="stat"><h3>500+</h3><p>Satisfied Clients</p></div>
+                <div class="stat"><h3>6+</h3><p>Years in Business</p></div>
+                <div class="stat"><h3>15+</h3><p>Expert Team Members</p></div>
+                <div class="stat"><h3>95%</h3><p>Client Satisfaction</p></div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section" id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="cards">
+                <article class="card reveal">
+                    <div class="card-icon">🔧</div>
+                    <h3>Consulting Services</h3>
+                    <p>Expert guidance to optimize your business operations and increase efficiency with years of industry experience.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">📊</div>
+                    <h3>Business Analytics</h3>
+                    <p>Data-driven insights to make informed decisions. We identify opportunities for growth and improvement.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Technical Support</h3>
+                    <p>Reliable technical assistance 24/7. We resolve issues quickly and efficiently to minimize downtime.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">📱</div>
+                    <h3>Digital Solutions</h3>
+                    <p>Custom digital strategies tailored to your business. From web development to mobile apps, we deliver results.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">💼</div>
+                    <h3>Project Management</h3>
+                    <p>Professional project coordination ensuring timely delivery and quality results throughout the lifecycle.</p>
+                </article>
+                <article class="card reveal">
+                    <div class="card-icon">🎯</div>
+                    <h3>Marketing Strategy</h3>
+                    <p>Comprehensive marketing solutions to boost brand visibility and reach your target audience effectively.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- WHY US -->
+        <section class="section section-alt" id="why">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon">✅</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Years of successful projects and satisfied clients across multiple industries.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">🎓</div>
+                    <h3>Expert Team</h3>
+                    <p>Skilled professionals with deep industry knowledge and hands-on experience.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">🧩</div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored services designed to fit your unique needs, goals, and budget.</p>
+                </div>
+                <div class="why-card reveal">
+                    <div class="why-icon">💬</div>
+                    <h3>Transparent Communication</h3>
+                    <p>Clear communication and regular updates throughout every engagement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section" id="testimonials">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial reveal">
+                    <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="t-text">Working with YourBusiness transformed our operations. Their consulting team identified inefficiencies we'd overlooked for years and delivered a clear roadmap for growth.</p>
+                    <div class="t-author">
+                        <div class="t-avatar" aria-hidden="true">JR</div>
+                        <div class="t-info">
+                            <strong>James R.</strong>
+                            <span>CEO, Tech Solutions Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="t-text">The analytics service gave us incredible insights into our customer behavior. We've seen a 40% increase in conversions since implementing their recommendations.</p>
+                    <div class="t-author">
+                        <div class="t-avatar" aria-hidden="true">ML</div>
+                        <div class="t-info">
+                            <strong>Maria L.</strong>
+                            <span>Marketing Director, RetailPro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial reveal">
+                    <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="t-text">Their technical support team is outstanding. Response times are lightning fast and they've helped us maintain 99.9% uptime across all our systems.</p>
+                    <div class="t-author">
+                        <div class="t-avatar" aria-hidden="true">DK</div>
+                        <div class="t-info">
+                            <strong>David K.</strong>
+                            <span>CTO, CloudFirst Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section section-alt" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-cards">
+                <div class="contact-card reveal">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+12345678900">+1 (234) 567-8900</a></p>
+                </div>
+                <div class="contact-card reveal">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></p>
+                </div>
+                <div class="contact-card reveal">
+                    <h3>📍 Address</h3>
+                    <p>123 Business Street<br>City, State 12345</p>
+                </div>
+            </div>
+
+            <div class="form-box reveal">
+                <h2>Send Us a Message</h2>
+                <div id="formMsg" class="form-msg" role="alert" aria-live="polite"></div>
+                <form id="contactForm" novalidate>
+                    <div class="fg">
+                        <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                        <span class="field-err" aria-live="polite"></span>
+                    </div>
+                    <div class="fg">
+                        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        <span class="field-err" aria-live="polite"></span>
+                    </div>
+                    <div class="fg">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </div>
+                    <div class="fg">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">-- Select a Service --</option>
+                            <option value="consulting">Consulting Services</option>
+                            <option value="analytics">Business Analytics</option>
+                            <option value="support">Technical Support</option>
+                            <option value="digital">Digital Solutions</option>
+                            <option value="projects">Project Management</option>
+                            <option value="marketing">Marketing Strategy</option>
+                        </select>
+                    </div>
+                    <div class="fg">
+                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" placeholder="Tell us about your needs…" required></textarea>
+                        <span class="field-err" aria-live="polite"></span>
+                    </div>
+                    <div class="fg">
+                        <label class="check-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            I agree to the <a href="#">Privacy Policy</a>
+                        </label>
+                        <span class="field-err" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-logo">YourBusiness</div>
+        <p class="footer-desc">Professional services company dedicated to delivering high-quality solutions for businesses of all sizes.</p>
+        <div class="footer-social">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+        <div class="footer-copy">&copy; 2026 YourBusiness. All rights reserved.</div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Cookie consent">
+        <p>We use cookies to improve your experience. Read our <a href="#">Cookie Policy</a>.</p>
+        <div class="cookie-btns">
+            <button class="btn-accept" id="cookieOk">Accept</button>
+            <button class="btn-decline" id="cookieNo">Decline</button>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button class="btt" id="btt" aria-label="Back to top">↑</button>
+
+    <script>
+    (function(){
+        'use strict';
+
+        /* === NAV === */
+        var toggle = document.querySelector('.nav-toggle');
+        var menu = document.getElementById('navMenu');
+        var overlay = document.getElementById('navOverlay');
+
+        function openNav() { toggle.classList.add('open'); menu.classList.add('open'); overlay.classList.add('open'); toggle.setAttribute('aria-expanded','true'); }
+        function closeNav() { toggle.classList.remove('open'); menu.classList.remove('open'); overlay.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
+
+        toggle.addEventListener('click', function(){ menu.classList.contains('open') ? closeNav() : openNav(); });
+        overlay.addEventListener('click', closeNav);
+        menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeNav); });
+        document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeNav(); });
+
+        /* === COOKIE === */
+        var bar = document.getElementById('cookieBar');
+        if(!localStorage.getItem('ybCookie')){
+            setTimeout(function(){ bar.classList.add('show'); bar.setAttribute('aria-modal','true'); }, 1200);
+        }
+        document.getElementById('cookieOk').addEventListener('click', function(){ localStorage.setItem('ybCookie','ok'); bar.classList.remove('show'); bar.removeAttribute('aria-modal'); });
+        document.getElementById('cookieNo').addEventListener('click', function(){ localStorage.setItem('ybCookie','no'); bar.classList.remove('show'); bar.removeAttribute('aria-modal'); });
+
+        /* === BACK TO TOP === */
+        var btt = document.getElementById('btt');
+        window.addEventListener('scroll', function(){ btt.classList.toggle('show', window.scrollY > 350); }, {passive:true});
+        btt.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+
+        /* === SCROLL REVEAL === */
+        var els = document.querySelectorAll('.reveal');
+        if('IntersectionObserver' in window){
+            var obs = new IntersectionObserver(function(entries){
+                entries.forEach(function(e){
+                    if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target); }
+                });
+            }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+            els.forEach(function(el){ obs.observe(el); });
+        } else {
+            els.forEach(function(el){ el.classList.add('on'); });
+        }
+
+        /* === SMOOTH SCROLL === */
+        document.querySelectorAll('a[href^="#"]').forEach(function(a){
+            a.addEventListener('click', function(e){
+                var id = this.getAttribute('href');
+                if(id==='#') return;
+                var t = document.querySelector(id);
+                if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
+            });
+        });
+
+        /* === PHONE INPUT FILTER === */
+        var ph = document.getElementById('phone');
+        if(ph){ ph.addEventListener('input', function(){ this.value = this.value.replace(/[^\d\s\-\(\)\+]/g,''); }); }
+
+        /* === FORM === */
+        var form = document.getElementById('contactForm');
+        if(form){
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                var msg = document.getElementById('formMsg');
+                var ok = true;
+                form.querySelectorAll('[required]').forEach(function(f){
+                    var err = f.parentElement.querySelector('.field-err');
+                    if(f.type==='checkbox' && !f.checked){
+                        ok=false; if(err) err.textContent='You must agree to continue.';
+                    } else if(f.type==='email' && f.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value)){
+                        ok=false; f.style.borderColor='var(--acc)'; if(err) err.textContent='Please enter a valid email.';
+                    } else if(!f.value.trim() && f.type!=='checkbox'){
+                        ok=false; f.style.borderColor='var(--acc)'; if(err) err.textContent='This field is required.';
+                    } else {
+                        f.style.borderColor=''; if(err) err.textContent='';
+                    }
+                });
+                if(!ok){ if(msg){msg.className='form-msg error'; msg.textContent='Please fill in all required fields correctly.';} return; }
+
+                var btn = form.querySelector('.submit-btn');
+                if(btn){btn.classList.add('loading'); btn.disabled=true; btn.textContent='Sending...';}
+                setTimeout(function(){
+                    if(msg){msg.className='form-msg success'; msg.textContent='✓ Thank you! Your message has been sent. We\'ll get back to you within 24 hours.';}
+                    form.reset();
+                    if(btn){btn.classList.remove('loading'); btn.disabled=false; btn.textContent='Send Message';}
+                    setTimeout(function(){ if(msg) msg.style.display='none'; }, 8000);
+                }, 1500);
+            });
+
+            form.querySelectorAll('input,textarea,select').forEach(function(f){
+                f.addEventListener('input', function(){
+                    this.style.borderColor='';
+                    var err = this.parentElement.querySelector('.field-err');
+                    if(err) err.textContent='';
+                    var msg = document.getElementById('formMsg');
+                    if(msg && msg.classList.contains('error')) msg.style.display='none';
+                });
+            });
+        }
+
+    })();
+    </script>
+</body>
+</html>

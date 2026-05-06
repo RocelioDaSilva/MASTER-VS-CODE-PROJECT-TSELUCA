@@ -1,0 +1,9 @@
+# Python dependencies for petroleum-engineering-market-prospects
+#
+# Core — data pipeline
+openpyxl>=3.1.0
+
+# Automation — news monitoring (automation/fetch_alerts.py)
+feedparser>=6.0.0
+requests>=2.31.0
+python-dateutil>=2.8.0

@@ -1,0 +1,103 @@
+#separador:PontoEVírgula
+
+#tags:Mecanica_Rochas::Cap1::Conceitos
+Segundo o material de aula, como se define "Mecânica das Rochas" e quais são duas finalidades práticas na indústria petrolífera?;É a disciplina da engenharia que estuda teoricamente e experimentalmente as propriedades das rochas e suas respostas (deformações) a perturbações; finalidades práticas: prever a estabilidade de poços e caracterizar maciços rochosos para projetos de perfuração e produção.
+Defina e dê uma característica que permita distinguir: juntas (diáclases), falhas e dobras.;Juntas: fraturas sem deslocamento perceptível (aumentam permeabilidade); Falhas: fratura com deslocamento relativo de blocos (podem controlar fluxo de fluidos); Dobras: curvaturas/encurtamentos das camadas (indicam esforços tectônicos).
+Qual é o objeto de estudo da Mecânica das Rochas?;Rochas e maciços rochosos, incluindo suas propriedades físicas e mecânicas e o efeito de descontinuidades.
+Qual o principal objetivo desta disciplina no curso de Engenharia de Petróleos?;Dotar o estudante de conceitos para avaliar comportamento mecânico das rochas e aplicar esse conhecimento na perfuração e produção de poços.
+O que se entende por Geomecânica no contexto petrolífero e por que é essencial?;Integra Geologia, Geofísica, Petrofísica e Mecânica das Rochas para avaliar riscos geomecânicos; é essencial para evitar desmoronamentos, kicks e otimizar recuperação.
+Quais problemas operacionais podem ocorrer se o engenheiro não dominar Geomecânica?;Desmoronamento de paredes do poço, perda de circulação, kick/blowout e perfuração de poço seco.
+Como a Mecânica das Rochas contribui para a economia e o ambiente?;Reduz riscos e custos operacionais, aumenta eficiência na produção e ajuda a prevenir acidentes ambientais e danos a infraestruturas.
+Cite três disciplinas diretamente relacionadas à Mecânica das Rochas na indústria petrolífera.;Geologia do Petróleo; Geofísica; Engenharia de Perfuração (também: Engenharia de Reservatórios, Petrofísica, Fraturamento Hidráulico).
+
+#tags:Mecanica_Rochas::Cap1::Perfuracao
+O que acontece mecanicamente na parede do poço quando se remove rocha durante a perfuração?;As tensões in-situ redistribuem-se na parede do poço; sem fluido com peso adequado, a parede pode ceder e ocorrer desmoronamento.
+Explique o conceito de "Janela de Perfuração Segura" e por que é crítico mantê-la.;Intervalo de pressão entre a pressão de poro (limite inferior, evita colapso) e a pressão de fratura (limite superior, evita perda de circulação). Manter pressão de fundo dentro da janela evita kicks e fraturamento indesejado.
+Formações pressurizadas (kick): qual a causa imediata e quais as ações operacionais recomendadas?;Causa: poro-pressão maior que o peso da coluna de fluido; Ações: parar perfuração, circular para detectar/expulsar influxo, aumentar gradualmente peso da lama e, se necessário, assentar revestimento.
+Desmoronamento em formações frágeis: causas típicas e medidas de mitigação?;Causa: rocha frágil + ação mecânica da coluna/fluido; Mitigação: controlar vibração da coluna, usar fluido com propriedades adequadas e circular para limpeza.
+Como proceder em formações moles ou facilmente laváveis?;Trabalhar a coluna para limpeza, reduzir efeitos erosivos (ajustar circulação e parâmetros) e avançar com cuidado até BHA passar; considerar revestimento se necessário.
+Formações reativas: qual é o problema e que tipo de fluido resolve melhor?;Problema: interação químico-hídrica (ex.: folhelhos hidratáveis) que fragiliza a rocha; Solução: usar fluidos inertes (base óleo/sintético, salmouras) para reduzir reatividade.
+Perfuração em formações móveis (ex.: sal): como identificar e qual é a solução?;Identificação: comportamento de fluxo/afundamento da formação no poço; Solução: aumentar peso do fluido ou assentar coluna de revestimento adicional para controlar fluxo da formação.
+Quebras por vibração: por que ocorrem e que ajuste operacional se faz?;Ocorrem por ressonância/impacto em intercalações duras; ajustar diminuindo rotação da coluna e reduzindo peso sobre broca para reduzir vibração.
+Que critério geomecânico é usado para avaliar reativação de falhas?;Critério de Mohr-Coulomb (avaliação de tensões normais e de corte e resistência ao cisalhamento).
+Explique em termos simples o que a Lei de Darcy diz sobre permeabilidade e fluxo.;A Lei de Darcy estabelece que a vazão é proporcional à permeabilidade e ao gradiente de pressão; mais vazios e conectividade implicam maior permeabilidade e maior fluxo de hidrocarbonetos.
+O que é "sanding" e quais são as consequências na produção?;Sanding = produção de partículas (areia) do reservatório quando tensões do fluxo superam resistência da rocha; gera perda de equipamentos, entupimentos e queda de produção.
+Por que estudos geomecânicos antecedem técnicas de estimulação?;Para avaliar riscos de fraturamento indesejado, reativação de falhas e garantir que a estimulação aumente a produtividade sem comprometer a integridade do reservatório.
+
+#tags:Mecanica_Rochas::Cap2::Conceitos
+Defina "rocha" conforme o material da disciplina.;Material sólido, consolidado, normalmente formado por um ou mais minerais, com propriedades físicas e mecânicas específicas.
+Qual a diferença entre porosidade e permeabilidade?;Porosidade = volume de vazios em relação ao volume total; Permeabilidade = capacidade dos vazios estarem conectados permitindo fluxo.
+Como se classificam as rochas por origem?;Ígneas (magmáticas), Sedimentares e Metamórficas.
+Quais as percentagens aproximadas dos três grandes grupos de rochas na crosta terrestre?;Sedimentares ≈ 66%; Ígneas ≈ 20%; Metamórficas ≈ 14%.
+As rochas ígneas/metamórficas podem ser reservatórios de petróleo? Explique.;Sim, se altamente fraturadas ou intemperizadas que gerem porosidade/permeabilidade; contudo, rochas sedimentares são tipicamente os melhores reservatórios.
+
+#tags:Mecanica_Rochas::Cap2::Igneas
+Como se formam rochas ígneas e qual a diferença entre plutónicas e vulcânicas?;Formam-se pela cristalização do magma. Plutónicas (intrusivas): arrefecimento lento em profundidade (grãos grandes); Vulcânicas (extrusivas): arrefecimento rápido na superfície (grãos finos/vítreos).
+O que distingue minerais máficos de félsicos?;Máficos: escuros, pobres em sílica, cristalizam primeiro (ex.: olivina); Félsicos: claros, ricos em sílica, cristalizam por último (ex.: quartzo, feldspato).
+
+#tags:Mecanica_Rochas::Cap2::Metamorficas
+O que é metamorfismo regional e que tipos de rochas produz?;Metamorfismo em larga escala por pressão dirigida e temperatura, típico em zonas de convergência; produz ardósia, xisto, gnaisse.
+O que é metamorfismo de contacto e que transformação gera?;Metamorfismo localizado por aquecimento próximo a intrusões magmáticas; recristalização térmica (ex.: corneana).
+Qual rocha resulta do metamorfismo do calcário?;Mármore.
+Qual rocha resulta do metamorfismo do arenito rico em quartzo?;Quartzito.
+Ordene por grau de metamorfismo crescente: Ardósia, Filito, Micaxisto, Gnaisse.;Ardósia → Filito → Micaxisto → Gnaisse.
+
+#tags:Mecanica_Rochas::Cap2::Sedimentares
+Como se formam rochas sedimentares clásticas?;Por transporte, deposição e litificação de sedimentos derivados da erosão de outras rochas.
+O que são rochas sedimentares quimiogênicas? Dê um exemplo.;Formadas por precipitação química de substâncias dissolvidas; ex.: calcário por precipitação de carbonatos.
+O que são rochas sedimentares biogênicas e um exemplo importante para petróleo?;Formadas por acumulação de matéria orgânica; folhelho (shale) é exemplo e frequentemente gerador de hidrocarbonetos.
+Por que o arenito é importante como rocha-reservatório?;Porque é clástico com grãos relativamente bem separados e conectados, resultando em boa porosidade e permeabilidade.
+Qual o papel dos evaporitos (ex.: sal-gema) no sistema petrolífero?;Atuam como selante (barreira) que impede migração de óleo/gás, favorecendo acumulação em reservatórios.
+O que caracteriza folhelho (shale) como gerador/selante?;Alto teor de matéria orgânica (gerador) e baixa permeabilidade (selante), dependendo de maturação e fraturamento.
+
+#tags:Mecanica_Rochas::Cap2::Classificacao_Visual
+[Imagem] Identifique a rocha: aglomerado compacto de grãos sem orientação e volume de vazios reduzido. <img src="rocha_ignea_granito.jpg">;Granito — rocha ígnea plutónica, textura fanerítica, baixa porosidade.
+[Imagem] Identifique a rocha: grãos arredondados e maior volume de vazios. <img src="rocha_sedimentar_conglomerado.jpg">;Conglomerado — rocha sedimentar clástica com clastos arredondados.
+[Imagem] Identifique a rocha: grãos orientados numa direção preferencial (foliação). <img src="rocha_metamorfica_xisto.jpg">;Micaxisto/Xisto — rocha metamórfica com foliação bem desenvolvida.
+
+#tags:Mecanica_Rochas::Cap2::Solo_vs_Rocha
+Defina "solo" em engenharia civil.;Agregados minerais não consolidados que perdem resistência em contacto prolongado com água e não oferecem resistência como uma rocha intacta.
+O que são solos residuais?;Solos formados pela meteorização da rocha no local, sem transporte (in situ).
+O que são solos sedimentares (transportados)?;Materiais transportados por água/vento/glaciar e depositados longe da rocha de origem.
+Cite três diferenças chave entre rocha e solo.;Rocha: elevada coesão interna, superfícies de fratura geradas, módulos de deformação altos; Solo: particulado, perde coesão com água, menor resistência.
+Explique brevemente o que é anisotropia num maciço rochoso.;Propriedade de apresentar comportamento mecânico diferente conforme a direção devido a foliação, camadas ou descontinuidades.
+O que é heterogeneidade num maciço rochoso?;Presença de elementos com propriedades físicas/mecânicas distintas (lentes, veios, zonas alteradas).
+Quais fatores geológicos controlam o comportamento mecânico de um maciço rochoso?;Litologia, grau de alteração, descontinuidades, estrutura geológica, condições hidrogeológicas e estado de esforços.
+
+#tags:Mecanica_Rochas::Cap2::Granulometria
+Segundo Wentworth, qual a classe granulométrica para partículas > 2 mm?;Cascalho (> 2 mm).
+Qual a classe para partículas entre 2 mm e 0,06 mm?;Areia (2 – 0,06 mm).
+Qual a classe para partículas entre 0,06 mm e 0,002 mm?;Silte (0,06 – 0,002 mm).
+Qual a classe para partículas < 0,002 mm?;Argila (< 0,002 mm).
+Quando se deve usar peneiração e quando hidrometria (sedimentação) segundo ASTM D422?;Peneiração: partículas > 0,075 mm; Sedimentação/hidrometria: partículas < 0,075 mm.
+O que significa o símbolo GW na classificação unificada de solos?;GW = Gravel Well-graded (pedregulho bem graduado).
+O que significa o símbolo CL?;CL = Clay of low plasticity (argila de baixa plasticidade).
+O que significa o símbolo ML?;ML = Silt of low plasticity (silte de baixa plasticidade).
+Explique rapidamente a Linha A no gráfico de plasticidade (IP = 0.73(LL-20)).;Linha A define limite entre material dominado por argila e por silte; IP calculado pela fórmula ajuda distinguir CL/ML.
+
+#tags:Mecanica_Rochas::Cap2::Calculos_Forma
+[Zingg 1935] Quais os três diâmetros usados na classificação de forma e como se calculam as razões principais?;L (maior), I (intermédio), S (menor). Razões: I/L e S/I, usadas para posicionar a partícula no diagrama de Zingg.
+[Cálculo] Calcule I/L e S/I para L=2.3 mm, I=1.8 mm, S=1.5 mm (mostre passos).;I/L = 1.8/2.3 = 0.78; S/I = 1.5/1.8 = 0.83 — interpretar no gráfico de Zingg para classificar (ex.: disco, esférico, alongado).
+[Cálculo] Calcule S/L e (L-I)/(L-S) para L=4.12 mm, I=2.83 mm, S=1.75 mm (passos).;S/L = 1.75/4.12 = 0.42; (L-I)/(L-S) = (4.12-2.83)/(4.12-1.75) = 1.29/2.37 = 0.54 — usar tabela de Sneed & Folk para classificar esfericidade.
+O que é esfericidade e por que importa na sedimentologia?;Medida de quão próxima a partícula está de uma esfera; influencia empilhamento, porosidade e transporte sedimentar.
+O que é arredondamento de grão?;Medida da nitidez das arestas; partículas bem arredondadas indicam maior transporte e desgaste.
+
+#tags:Mecanica_Rochas::Cap2::ISRM
+Explique sucintamente a classificação ISRM A1–A5 para grau de alteração.;A1: Rocha sã (sem alteração); A2: Pouco alterada (alteração nas descontinuidades); A3: Medianamente alterada (fragmentos não quebram com a mão); A4: Muito alterada (fragmentos quebram facilmente); A5: Completamente alterada (decomposta, textura visível — solo residual).
+Como reconhecer in situ uma rocha A3 versus A4 segundo ISRM?;A3: fragmentos mantêm resistência, não quebram à mão; A4: fragmentos fracos, quebram facilmente com a mão.
+
+#tags:Mecanica_Rochas::Cap2::Macico_Rochoso
+Defina "maciço rochoso" de forma operacional para projetos de engenharia.;Conjunto de blocos de rocha e descontinuidades que controla o comportamento mecânico e estabilidade do local de obra.
+O que se entende por matriz rochosa?;Material rochoso intacto sem considerar descontinuidades — a porção resistente da rocha.
+Como as descontinuidades controlam o comportamento do maciço?;Descontinuidades (juntas, falhas, camadas) determinam caminhos preferenciais de fraturas, permeabilidade e reduzem resistência global.
+
+#tags:Mecanica_Rochas::Cap2::Quiz_Geral
+[Quiz] O que mede o ensaio de compressão uniaxial em rochas?;Mede a resistência à compressão e permite estimar módulo de elasticidade (E) sob carregamento uniaxial.
+[Quiz] O que representa o Módulo de Young numa rocha?;Representa a rigidez elástica: tensão/ deformação na região elástica.
+[Quiz] O que é Pressão de Poro?;Pressão dos fluidos nos poros da rocha; influência estabilidade e fluxo.
+[Quiz] O que acontece se a pressão do fluido exceder a pressão de fratura?;Fraturamento indesejado da formação e provável perda de circulação.
+[Quiz] Quando o fenômeno de "Sanding" ocorre?;Quando o fluxo de produção gera tensões de arraste superiores à resistência da rocha reservatório (partículas soltas são mobilizadas).
+
+#tags:Mecanica_Rochas::Instrucoes_Anki
+# Observação: este ficheiro está formatado para importação no Anki com separador ponto e vírgula.
+# Recomendações: importar com "Fields separated by: ;" e escolher baralho/etiquetas conforme os blocos de #tags.

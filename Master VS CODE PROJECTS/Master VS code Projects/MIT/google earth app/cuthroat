@@ -1,0 +1,264 @@
+// =====================================================================
+// 🌞 SOLAR SITE SUITABILITY MODEL FOR ANGOLA
+// Practical geospatial analysis using Google Earth Engine
+// Based on core datasets: Solar Resource, Terrain, Land Cover, Infrastructure
+// =====================================================================
+
+// =====================================================================
+// 1. DEFINE AREA OF INTEREST (AOI)
+// =====================================================================
+
+var angola = ee.FeatureCollection('FAO/GAUL/2015/level0')
+              .filter(ee.Filter.eq('ADM0_NAME', 'Angola'));
+
+// Initialize map view
+Map.centerObject(angola, 6);
+Map.addLayer(angola, {color: 'black', width: 2}, 'Angola Boundary', true);
+
+// =====================================================================
+// 2. DATA ACQUISITION & PREPROCESSING
+// =====================================================================
+
+print('Loading core datasets...');
+
+// ----- 2.1 SOLAR RESOURCE (GHI) -----
+// Using ERA5-Land as Global Solar Atlas equivalent
+var ghi = ee.ImageCollection('ECMWF/ERA5_LAND/DAILY_AGGR')
+  .filterDate('2020-01-01', '2023-12-31')
+  .select('surface_solar_radiation_downwards_sum')
+  .mean()
+  .divide(3600000) // Convert J/m² to kWh/m²/day
+  .clip(angola)
+  .rename('GHI');
+
+// Temperature (for panel efficiency consideration)
+var temperature = ee.ImageCollection('ECMWF/ERA5_LAND/DAILY_AGGR')
+  .filterDate('2020-01-01', '2023-12-31')
+  .select('temperature_2m_mean')
+  .mean()
+  .subtract(273.15) // Convert K to C
+  .clip(angola)
+  .rename('temperature');
+
+// ----- 2.2 TERRAIN (SLOPE & ASPECT) -----
+var elevation = ee.Image('NASA/NASADEM_HGT/001')
+  .select('elevation')
+  .clip(angola);
+
+var slope = ee.Terrain.slope(elevation);
+var aspect = ee.Terrain.aspect(elevation);
+
+// ----- 2.3 LAND COVER -----
+var landCover = ee.ImageCollection('ESA/WorldCover/v200')
+  .first()
+  .select('Map')
+  .clip(angola);
+
+// ----- 2.4 INFRASTRUCTURE ACCESSIBILITY -----
+var accessibility = ee.Image('Oxford/MAP/accessibility_to_cities_2015_v1_0')
+  .clip(angola);
+
+// ----- 2.5 DISTANCE TO COAST -----
+// Create water mask for coastline
+var waterMask = ee.ImageCollection('MODIS/006/MOD44W')
+  .filterDate('2015-01-01', '2015-12-31')
+  .first()
+  .select('water_mask')
+  .clip(angola);
+
+var distanceToCoast = waterMask
+  .distance(ee.Kernel.euclidean(127500, 'meters'))
+  .divide(1000) // Convert to km
+  .rename('distance_to_coast_km');
+
+// =====================================================================
+// 3. NORMALIZE LAYERS TO COMMON SCALE (0-1)
+// =====================================================================
+
+print('Normalizing factors...');
+
+// ----- 3.1 SOLAR RESOURCE SCORE -----
+// Higher GHI = better (Angola range: ~4.5-6.5 kWh/m²/day)
+var ghiNorm = ghi.unitScale(4.5, 6.5).clamp(0, 1).rename('ghi_score');
+
+// Temperature efficiency (moderate temps are better, extreme heat reduces efficiency)
+var tempNorm = temperature
+  .subtract(25).abs() // Optimal around 25°C
+  .multiply(-0.04).add(1)
+  .clamp(0.7, 1.0)
+  .rename('temp_score');
+
+var solarScore = ghiNorm.multiply(0.7).add(tempNorm.multiply(0.3)).rename('solar_score');
+
+// ----- 3.2 TERRAIN SCORE -----
+// Gentle slopes (0-5°) are ideal, >15° are poor
+var slopeNorm = ee.Image(1)
+  .subtract(slope.divide(15).clamp(0, 1))
+  .clamp(0, 1)
+  .rename('slope_score');
+
+// South-facing (180°) is optimal for Southern Hemisphere
+var aspectDeviation = aspect.subtract(180).abs();
+var aspectNorm = aspectDeviation
+  .multiply(-0.0111).add(1) // 90° deviation = 0 score
+  .clamp(0, 1)
+  .rename('aspect_score');
+
+var terrainScore = slopeNorm.multiply(0.7).add(aspectNorm.multiply(0.3)).rename('terrain_score');
+
+// ----- 3.3 LAND COVER SCORE -----
+// Barren/grassland = excellent (1.0), forest/urban/water = poor (0.0)
+var landCoverScore = ee.Image(0.5)
+  .where(landCover.eq(10), 0.2)   // Tree cover - poor
+  .where(landCover.eq(20), 0.7)   // Shrubland - moderate
+  .where(landCover.eq(30), 0.8)   // Grassland - good
+  .where(landCover.eq(40), 0.4)   // Cropland - variable
+  .where(landCover.eq(50), 0.1)   // Built-up - poor
+  .where(landCover.eq(60), 0.9)   // Bare/sparse - excellent
+  .where(landCover.eq(80), 0.0)   // Water - unsuitable
+  .where(landCover.eq(95), 0.3)   // Mangroves - poor
+  .rename('land_cover_score');
+
+// ----- 3.4 INFRASTRUCTURE SCORE -----
+// Lower travel time = better accessibility
+var infraScore = accessibility
+  .multiply(-0.0001).add(1)
+  .clamp(0.1, 1)
+  .rename('infra_score');
+
+// ----- 3.5 COAST DISTANCE SCORE -----
+// Optimal: 10-50 km from coast (avoid fog/salt mist, but maintain logistics)
+var coastScore = distanceToCoast
+  .subtract(30).abs() // Peak at ~30 km
+  .multiply(-0.02).add(1)
+  .clamp(0.3, 1)
+  .rename('coast_score');
+
+// =====================================================================
+// 4. WEIGHTED OVERLAY ANALYSIS
+// =====================================================================
+
+print('Calculating final suitability score...');
+
+// Weights based on importance for Angola
+var weights = {
+  solar: 0.40,      // Solar resource is most critical
+  terrain: 0.25,    // Terrain constraints important
+  land: 0.20,       // Land cover suitability
+  infra: 0.10,      // Infrastructure accessibility
+  coast: 0.05       // Coast distance (moderate importance)
+};
+
+// Calculate weighted suitability score
+var suitabilityScore = solarScore.multiply(weights.solar)
+  .add(terrainScore.multiply(weights.terrain))
+  .add(landCoverScore.multiply(weights.land))
+  .add(infraScore.multiply(weights.infra))
+  .add(coastScore.multiply(weights.coast))
+  .clamp(0, 1)
+  .rename('suitability_score');
+
+// Apply hard constraints (exclude unsuitable areas)
+var hardConstraints = slope.lt(15)                    // Max slope 15°
+  .and(landCover.neq(80))                             // Exclude water
+  .and(landCover.neq(50))                             // Exclude built-up
+  .and(landCover.neq(10));                            // Exclude dense forest
+
+var finalSuitability = suitabilityScore
+  .updateMask(hardConstraints)
+  .clip(angola)
+  .rename('final_suitability');
+
+// =====================================================================
+// 5. VISUALIZE RESULTS
+// =====================================================================
+
+// Individual factor layers (optional, for analysis)
+Map.addLayer(ghi, {min: 4.5, max: 6.5, palette: ['blue', 'yellow', 'orange', 'red']}, 
+             'GHI (kWh/m²/day)', false);
+Map.addLayer(slopeNorm, {min: 0, max: 1, palette: ['red', 'yellow', 'green']}, 
+             'Slope Suitability', false);
+Map.addLayer(landCoverScore, {min: 0, max: 1, palette: ['red', 'orange', 'yellow', 'green']}, 
+             'Land Cover Suitability', false);
+Map.addLayer(infraScore, {min: 0, max: 1, palette: ['red', 'orange', 'yellow', 'green']}, 
+             'Infrastructure Accessibility', false);
+Map.addLayer(distanceToCoast, {min: 0, max: 200, palette: ['darkblue', 'lightblue', 'white']}, 
+             'Distance to Coast (km)', false);
+
+// Final suitability heatmap (main result)
+Map.addLayer(finalSuitability, {
+  min: 0.0,
+  max: 1.0,
+  palette: ['darkred', 'red', 'orange', 'yellow', 'lime', 'green', 'darkgreen']
+}, 'Solar Suitability Score', true);
+
+// =====================================================================
+// 6. STATISTICS & EXPORT
+// =====================================================================
+
+// Print summary statistics
+print('=== ANGOLA SOLAR SUITABILITY ANALYSIS ===');
+print('Mean Suitability Score:', finalSuitability.reduceRegion({
+  reducer: ee.Reducer.mean(),
+  geometry: angola,
+  scale: 1000,
+  maxPixels: 1e9
+}));
+
+print('Area with Score > 0.7 (sq km):', ee.Number(
+  finalSuitability.gt(0.7).multiply(ee.Image.pixelArea())
+    .reduceRegion({
+      reducer: ee.Reducer.sum(),
+      geometry: angola,
+      scale: 1000,
+      maxPixels: 1e9
+    }).get('suitability_score')
+).divide(1000000));
+
+// Export suitability map
+Export.image.toDrive({
+  image: finalSuitability,
+  description: 'Angola_Solar_Suitability',
+  scale: 500,
+  region: angola.geometry(),
+  maxPixels: 1e9,
+  fileFormat: 'GeoTIFF',
+  crs: 'EPSG:4326'
+});
+
+// Export all factor layers
+var allLayers = ee.Image.cat([
+  finalSuitability,
+  solarScore,
+  terrainScore,
+  landCoverScore,
+  infraScore,
+  coastScore,
+  ghi,
+  slope,
+  distanceToCoast
+]).rename([
+  'suitability',
+  'solar_score',
+  'terrain_score',
+  'land_score',
+  'infra_score',
+  'coast_score',
+  'ghi',
+  'slope',
+  'distance_to_coast'
+]);
+
+Export.image.toDrive({
+  image: allLayers,
+  description: 'Angola_Solar_All_Factors',
+  scale: 500,
+  region: angola.geometry(),
+  maxPixels: 1e9,
+  fileFormat: 'GeoTIFF'
+});
+
+print('');
+print('✅ Analysis complete!');
+print('📊 Check the map for suitability visualization');
+print('💾 Export tasks created - check Tasks tab');

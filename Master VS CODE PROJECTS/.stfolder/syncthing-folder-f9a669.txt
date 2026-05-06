@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: jxcu3-2upzt
+created: 2026-05-01T13:37:46+01:00

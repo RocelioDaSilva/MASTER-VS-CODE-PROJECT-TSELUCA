@@ -1,0 +1,38 @@
+[12:42:10] ═══════════════════════════════════════════════════════
+[12:42:10] 🎯 ANPG - EXTRAÇÃO DENTRO DO IFRAME DO POWER BI
+[12:42:10] ═══════════════════════════════════════════════════════
+[12:42:10] 
+[12:42:10] 🚀 Iniciando navegador...
+[12:42:17] ✅ Navegador pronto
+[12:42:17] 📍 Abrindo página ANPG...
+[12:42:40] ✅ Página carregada
+[12:42:40] ⏳ Aguardando Power BI carregar...
+[12:42:41] ✅ iframe detectado
+[12:42:41] ✅ Conteúdo carregado
+[12:42:41] ⚠️ Timeout ao esperar Power BI: this.page.waitForTimeout is not a function
+[12:42:41] ⚠️ Power BI não carregou, tentando extração direta...
+[12:42:41] 🔍 Acessando conteúdo do iframe...
+[12:42:41] 📊 Total de frames encontrados: 4
+[12:42:41] ✅ Frame 0 tem conteúdo (1644 chars)
+[12:42:41] ✅ Frame 1 tem conteúdo (1205 chars)
+[12:42:41] ✅ Frame 2 tem conteúdo (7872 chars)
+[12:42:41] 📦 Empresas extraídas do iframe: 390
+[12:42:41] 🔄 Tentando extração direta da página...
+[12:42:41] ✅ Extração direta: 45 empresas capturadas
+[12:42:41] 📂 Expandindo categorias...
+[12:42:41] ✅ Tentativa 1: 31 elementos expandidos
+[12:42:41] ⚠️ Erro ao expandir (tentativa 1): this.page.waitForTimeout is not a function
+[12:42:42] ✅ Tentativa 2: 30 elementos expandidos
+[12:42:42] ⚠️ Erro ao expandir (tentativa 2): this.page.waitForTimeout is not a function
+[12:42:42] ✅ Tentativa 3: 30 elementos expandidos
+[12:42:42] ⚠️ Erro ao expandir (tentativa 3): this.page.waitForTimeout is not a function
+[12:42:42] 🖱️ Executando right-clicks...
+[12:42:42] ✅ 10 right-clicks executados
+[12:42:42] ❌ Erro ao executar right-clicks: this.page.waitForTimeout is not a function
+[12:42:42] 🔄 Tentando extração direta da página...
+[12:42:42] ✅ Extração direta: 52 empresas capturadas
+[12:42:42] 🧹 Limpando e filtrando dados...
+[12:42:42] ✅ Filtrado para 388 empresas únicas
+[12:42:42] 💾 Salvando resultados...
+[12:42:42] ✅ CSV salvo: ANPG_IFRAME_EXTRACTED_2026-02-25_388.csv
+[12:42:42] ✅ JSON salvo: ANPG_IFRAME_EXTRACTED_2026-02-25_388.json

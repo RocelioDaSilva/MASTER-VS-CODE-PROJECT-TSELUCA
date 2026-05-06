@@ -1,0 +1,132 @@
+# ⚡ QUICK REFERENCE CARD (72H CRÍTICO)
+
+Print this page or keep open at all times.
+
+---
+
+## 📅 TIMELINE VISUAL
+
+```
+DIA 1 (9 FEB)          DIA 2 (10 FEB)           DIA 3 (11 FEB)         DIA 4 (12 FEB)
+09:00-17:00            09:00-14:00              09:00-12:00            09:00-17:00
+======================== ======================== ===================== ========================
+MINEA Print+           QA Reviews +             MINEA Sign +           🔴 REVISTA SUBMIT
+Review (8h)            Corrections (5h)         Delivery (3h)          ⏰ DEADLINE: 13:00
+```
+
+---
+
+## 🎯 TASK BREAKDOWN
+
+| Task | Deadline | Time | Owner | Status |
+|------|----------|------|-------|--------|
+| **1. MINEA Print** | 9 FEB 17:00 | 8h | Rocélio | ⏳ |
+| **2. Reviews** | 10 FEB 14:00 | 5h | Rocélio+Co | ⏳ |
+| **3. MINEA Sign** | 11 FEB 12:00 | 3h | Rocélio | ⏳ |
+| **4. Revista SUBMIT** | **12 FEB 13:00** | 8h | Rocélio+Co | 🔴 CRÍTICO |
+| **5. GANNT Export** | 12 FEB 17:00 | 3h | Rocélio | ⏳ |
+
+---
+
+## 📝 FILES READY (JUST EXECUTE)
+
+✅ **submissions/MINEA_Support_Letter_FEB2026.md** → Export Word → Print
+✅ **manuscript/SOL.tex** → Already corrected (0.83, 2027/2028)
+✅ **PROJECT_MANAGEMENT/GANNT_MASTER_FEB2026.md** → Export Excel → Asana
+✅ **RISK_MITIGATION_MATRIX_FEB2026.md** → Reference only
+✅ **planning/BASELINE_SURVEY_PROTOCOL_FEB2026.md** → IRB later
+✅ **funding/FUNDING_PROPOSAL_COMPLETE_FEB2026.md** → Distribution later
+
+---
+
+## 📞 KEY CONTACTS (Save in Phone)
+
+| Role | Name | Phone | Email | Use |
+|------|------|-------|-------|-----|
+| **MINEA Director** | Eng. [Name] | +244 923 XXX | [email] | Signature |
+| **MINEA Secretary** | [Name] | +244 923 XXX | [email] | Backup |
+| **Journal Support** | N/A | N/A | support@editorialmanager.com | Tech issues |
+| **Co-author 1** | [Name] | [phone] | [email] | QA reviews |
+| **Co-author 2** | [Name] | [phone] | [email] | QA reviews |
+| **Rocélio (You)** | +244 923 456 789 | roceli@isptec.ao | Emergency |
+
+---
+
+## 🔴 CRITICAL PATH (GATES EVERYTHING)
+
+```
+12 FEB 13:00: REVISTA SUBMIT ← GATES ← 11 FEB MINEA Sign
+                                    ← GATES ← 10 FEB Reviews
+                                              ← GATES ← 9 FEB MINEA Print
+```
+
+**If ANY task delays: ENTIRE FASE 1B pushed back**
+
+---
+
+## ⚠️ RISKS & QUICK FIXES
+
+| Problem | Solution | Backup |
+|---------|----------|--------|
+| Impressora falha | Gráfica rápida (1h, USD 20) | PDF digital sign |
+| MINEA Director unavailable | Contactar secretária | Leave doc + follow-up 10 FEB |
+| PDF compilation fails | Use Overleaf cloud export | Co-author PDF |
+| Co-author silence | Submit anyway (editor accepts) | Email approval assumed |
+| Revista portal down | Email submission: support@editorialmanager.com | Redirect to fallback journal |
+
+---
+
+## ✅ DAILY CHECKLIST
+
+### DIA 1 (TODAY 9 FEV) - By 17:00
+- [ ] MINEA letter opened & reviewed
+- [ ] Exported to Word (.docx)
+- [ ] Printed 3 copies on MINEA letterhead
+- [ ] Delivered to MINEA Director (or secretary)
+- [ ] Email confirmation sent
+
+### DIA 2 (10 FEV) - By 14:00
+- [ ] SOL.tex reviewed by co-authors
+- [ ] PDF compiled & tested
+- [ ] GANNT final dates confirmed
+- [ ] Co-author approvals received
+
+### DIA 3 (11 FEV) - By 12:00
+- [ ] MINEA letter retrieved (signed)
+- [ ] Scanned + emailed to roceli@isptec.ao
+- [ ] Backup physical copy archived
+
+### DIA 4 (12 FEV) - By 17:00
+- [ ] **13:00: REVISTA SUBMITTED** ✅
+- [ ] Confirmation email received
+- [ ] GANNT Excel created
+- [ ] GANNT shared via Asana
+
+---
+
+## 🚀 NEXT PHASE PREVIEW (After DIA 4)
+
+- **FEB 13:** Conselhos comunitários confirmations
+- **FEB 15-16:** Community councils meetings
+- **FEB 20:** IRB submission
+- **FEB 22:** Funding proposal distribution
+- **FEB 25+:** Equipment procurement
+- **MAY 18:** Baseline surveys start
+
+---
+
+## 💪 YOU'VE GOT THIS!
+
+All 5 core files created ✅
+All contacts listed ✅
+All risks mitigated ✅
+All deadlines clear ✅
+
+**Mission: 72 HOURS → PHASE 1A ACTIVATED**
+
+**Start Task 1 NOW. Go!**
+
+---
+
+**Last Update:** 9 FEB 2026, 08:45 UTC  
+**Keep This Card Visible** 📍

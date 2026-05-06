@@ -1,0 +1,1055 @@
+{
+  "total_chapters": 105,
+  "chapters": [
+    {
+      "num": 1,
+      "label": "I",
+      "title": "The Tavern – A Stranger Arrives",
+      "source_file": "01-Tavern-Opening",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The Northern Highlands"
+    },
+    {
+      "num": 2,
+      "label": "II",
+      "title": "The Training Years Begin",
+      "source_file": "02-Training-Years-Begin",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The Border Pass"
+    },
+    {
+      "num": 3,
+      "label": "III",
+      "title": "The City Beneath – First Awareness",
+      "source_file": "03-City-Beneath",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Fortress Hall"
+    },
+    {
+      "num": 4,
+      "label": "IV",
+      "title": "First Magic Lesson – Control and Consequence",
+      "source_file": "04-First-Magic-Lesson",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The High Keep"
+    },
+    {
+      "num": 5,
+      "label": "V",
+      "title": "The Frostfang Crucible",
+      "source_file": "04-Frostfang-Incident",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The Ridge"
+    },
+    {
+      "num": 6,
+      "label": "VI",
+      "title": "The Sabotaged Ring",
+      "source_file": "05-Exam-Sabotage",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The Grey Mountains"
+    },
+    {
+      "num": 7,
+      "label": "VII",
+      "title": "The Observation Game",
+      "source_file": "05-Observation-Game",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Divided City"
+    },
+    {
+      "num": 8,
+      "label": "VIII",
+      "title": "The First Contact",
+      "source_file": "06-First-Contact",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Market Ward"
+    },
+    {
+      "num": 9,
+      "label": "IX",
+      "title": "The Network's Test",
+      "source_file": "07-Network-Test",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Fortress Hall"
+    },
+    {
+      "num": 10,
+      "label": "X",
+      "title": "The Covenant Scholar",
+      "source_file": "08-Covenant-Scholar",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The High Keep"
+    },
+    {
+      "num": 11,
+      "label": "XI",
+      "title": "Harald's Final Warning",
+      "source_file": "09-Final-Warning",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Council Chamber"
+    },
+    {
+      "num": 12,
+      "label": "XII",
+      "title": "The Last Ordinary Day",
+      "source_file": "10-Last-Ordinary-Day",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Academy"
+    },
+    {
+      "num": 13,
+      "label": "XIII",
+      "title": "Academy Initiation",
+      "source_file": "11-Academy-Initiation",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Divided City"
+    },
+    {
+      "num": 14,
+      "label": "XIV",
+      "title": "First Operations",
+      "source_file": "12-First-Operations",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Market Ward"
+    },
+    {
+      "num": 15,
+      "label": "XV",
+      "title": "The Archive Access",
+      "source_file": "13-The-Archive-Access",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Silent Chamber"
+    },
+    {
+      "num": 16,
+      "label": "XVI",
+      "title": "The Competitor Networks",
+      "source_file": "14-The-Competitor-Networks",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Tower of Records"
+    },
+    {
+      "num": 17,
+      "label": "XVII",
+      "title": "The Provincial Cost",
+      "source_file": "14B-The-Provincial-Cost",
+      "character": "Kael",
+      "pov_name": "Kael",
+      "landscape": "Wasteland",
+      "location": "The Scarred Earth"
+    },
+    {
+      "num": 18,
+      "label": "XVIII",
+      "title": "The Heresy Archive",
+      "source_file": "15-The-Heresy-Archive",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Deep Archives"
+    },
+    {
+      "num": 19,
+      "label": "XIX",
+      "title": "The Patient Grower",
+      "source_file": "15B-The-Patient-Grower",
+      "character": "Aisen",
+      "pov_name": "Kaelen Blackwood",
+      "landscape": "City",
+      "location": "The Divided City"
+    },
+    {
+      "num": 20,
+      "label": "XX",
+      "title": "The Database Infiltration",
+      "source_file": "16-The-Database-Infiltration",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hall of Echoes"
+    },
+    {
+      "num": 21,
+      "label": "XXI",
+      "title": "Examination Crisis",
+      "source_file": "17-Examination-Crisis",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Fortress Hall"
+    },
+    {
+      "num": 22,
+      "label": "XXII",
+      "title": "The Load-Bearing Wall",
+      "source_file": "17B-The-Load-Bearing-Wall",
+      "character": "Ryo",
+      "pov_name": "Vex",
+      "landscape": "City",
+      "location": "The Tower of Records"
+    },
+    {
+      "num": 23,
+      "label": "XXIII",
+      "title": "The Military Assignment",
+      "source_file": "18-The-Military-Assignment",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Council Chamber"
+    },
+    {
+      "num": 24,
+      "label": "XXIV",
+      "title": "Military Training Initiate",
+      "source_file": "19-Military-Training-Initiate",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Mountains",
+      "location": "The Grey Mountains"
+    },
+    {
+      "num": 25,
+      "label": "XXV",
+      "title": "Institutional Gravity",
+      "source_file": "19B-Institutional-Gravity",
+      "character": "Aisen",
+      "pov_name": "Amara",
+      "landscape": "City",
+      "location": "The Divided City"
+    },
+    {
+      "num": 26,
+      "label": "XXVI",
+      "title": "The Threshold",
+      "source_file": "20-The-Threshold",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Coast",
+      "location": "The New Harbor"
+    },
+    {
+      "num": 27,
+      "label": "XXVII",
+      "title": "The Two Masks",
+      "source_file": "20B-The-Two-Masks",
+      "character": "Aisen",
+      "pov_name": "Elara Valorin",
+      "landscape": "City",
+      "location": "The Fortress Hall"
+    },
+    {
+      "num": 28,
+      "label": "XXVIII",
+      "title": "The Serath Arrangement",
+      "source_file": "21-Academy-Arrival",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Tower of Records"
+    },
+    {
+      "num": 29,
+      "label": "XXIX",
+      "title": "The Pattern in the Noise",
+      "source_file": "21B-The-Pattern-in-the-Noise",
+      "character": "Amara",
+      "pov_name": "Rin",
+      "landscape": "City",
+      "location": "The Council Chamber"
+    },
+    {
+      "num": 30,
+      "label": "XXX",
+      "title": "Covenant Marking",
+      "source_file": "22-Covenant-Marking",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Academy"
+    },
+    {
+      "num": 31,
+      "label": "XXXI",
+      "title": "The Public Hearing",
+      "source_file": "22B-The-Public-Hearing",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Border Province"
+    },
+    {
+      "num": 32,
+      "label": "XXXII",
+      "title": "Heresy and Power",
+      "source_file": "23-Heresy-and-Power",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hall of Echoes"
+    },
+    {
+      "num": 33,
+      "label": "XXXIII",
+      "title": "Chain Spear Mastery",
+      "source_file": "24-Chain-Spear-Mastery",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Dead March"
+    },
+    {
+      "num": 34,
+      "label": "XXXIV",
+      "title": "Amara Positioning",
+      "source_file": "25-Amara-Positioning",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Broken Road"
+    },
+    {
+      "num": 35,
+      "label": "XXXV",
+      "title": "Network Expands",
+      "source_file": "26-Network-Expands",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Council Chamber"
+    },
+    {
+      "num": 36,
+      "label": "XXXVI",
+      "title": "The Village Aftermath",
+      "source_file": "26B-Village-Aftermath",
+      "character": "Kael",
+      "pov_name": "Kael",
+      "landscape": "Wasteland",
+      "location": "The Burnt Plain"
+    },
+    {
+      "num": 37,
+      "label": "XXXVII",
+      "title": "Academy Conflict",
+      "source_file": "27-Academy-Conflict",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Divided City"
+    },
+    {
+      "num": 38,
+      "label": "XXXVIII",
+      "title": "Network Consolidation",
+      "source_file": "28-Network-Consolidation",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Market Ward"
+    },
+    {
+      "num": 39,
+      "label": "XXXIX",
+      "title": "The Final Planning",
+      "source_file": "29-The-Final-Planning",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Dead March"
+    },
+    {
+      "num": 40,
+      "label": "XL",
+      "title": "The Blockade",
+      "source_file": "29B-The-Blockade",
+      "character": "Aisen",
+      "pov_name": "Amara",
+      "landscape": "Wasteland",
+      "location": "The Broken Road"
+    },
+    {
+      "num": 41,
+      "label": "XLI",
+      "title": "Archive Infiltration",
+      "source_file": "30-Archive-Infiltration",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hidden Passage"
+    },
+    {
+      "num": 42,
+      "label": "XLII",
+      "title": "The Final Border Stand",
+      "source_file": "30-Final-Border-Stand",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Burnt Plain"
+    },
+    {
+      "num": 43,
+      "label": "XLIII",
+      "title": "Deployment Begins",
+      "source_file": "31-Deployment-Begins",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Border Province"
+    },
+    {
+      "num": 44,
+      "label": "XLIV",
+      "title": "Force Geometry",
+      "source_file": "31B-Force-Geometry",
+      "character": "Orin",
+      "pov_name": "Serath",
+      "landscape": "Wasteland",
+      "location": "The Ash Fields"
+    },
+    {
+      "num": 45,
+      "label": "XLV",
+      "title": "Evidence Distribution",
+      "source_file": "32-Evidence-Distribution",
+      "character": "Aisen",
+      "pov_name": "Aisen & Kael",
+      "landscape": "Wasteland",
+      "location": "The Dead March"
+    },
+    {
+      "num": 46,
+      "label": "XLVI",
+      "title": "The Investigation Deepens",
+      "source_file": "33-The-Investigation-Deepens",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Broken Road"
+    },
+    {
+      "num": 47,
+      "label": "XLVII",
+      "title": "The Ultimatum Letter",
+      "source_file": "33B-The-Ultimatum-Letter",
+      "character": "Kairos",
+      "pov_name": "Elara",
+      "landscape": "Wasteland",
+      "location": "The Scarred Earth"
+    },
+    {
+      "num": 48,
+      "label": "XLVIII",
+      "title": "The Extraction",
+      "source_file": "34-The-Extraction",
+      "character": "Aisen",
+      "pov_name": "Aisen & Cynthia",
+      "landscape": "Dungeon",
+      "location": "The Deep Archives"
+    },
+    {
+      "num": 49,
+      "label": "XLIX",
+      "title": "The Ghost Agent",
+      "source_file": "34B-The-Ghost-Agent",
+      "character": "Amara",
+      "pov_name": "Rin",
+      "landscape": "Dungeon",
+      "location": "The Vault Beneath"
+    },
+    {
+      "num": 50,
+      "label": "L",
+      "title": "Military Campaign Escalation",
+      "source_file": "35-Military-Campaign-Escalation",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Market Ward"
+    },
+    {
+      "num": 51,
+      "label": "LI",
+      "title": "Conscription – The War Arrives",
+      "source_file": "36-Conscription",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Dead March"
+    },
+    {
+      "num": 52,
+      "label": "LII",
+      "title": "The Covenant Confrontation – Seraphine's Interest",
+      "source_file": "37-Covenant-Confrontation",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Covenant Halls"
+    },
+    {
+      "num": 53,
+      "label": "LIII",
+      "title": "The Deliberation – Decision at Oasis Point",
+      "source_file": "38-Deliberation",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hidden Passage"
+    },
+    {
+      "num": 54,
+      "label": "LIV",
+      "title": "The Weight of Command",
+      "source_file": "38B-The-Weight-of-Command",
+      "character": "Kael",
+      "pov_name": "Kael",
+      "landscape": "Dungeon",
+      "location": "The Deep Archives"
+    },
+    {
+      "num": 55,
+      "label": "LV",
+      "title": "The Regional Conflict",
+      "source_file": "39-Regional-Conflict",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Border Province"
+    },
+    {
+      "num": 56,
+      "label": "LVI",
+      "title": "Architecture of Absence",
+      "source_file": "39B-Architecture-of-Absence",
+      "character": "Ryo",
+      "pov_name": "Vex",
+      "landscape": "Dungeon",
+      "location": "The Hall of Echoes"
+    },
+    {
+      "num": 57,
+      "label": "LVII",
+      "title": "The Contact Point",
+      "source_file": "40-Contact-Point",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Silent Chamber"
+    },
+    {
+      "num": 58,
+      "label": "LVIII",
+      "title": "The Transition Decision",
+      "source_file": "41-Transition-Decision",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Covenant Halls"
+    },
+    {
+      "num": 59,
+      "label": "LIX",
+      "title": "The Institutional Replacement",
+      "source_file": "42-Institutional-Replacement",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hidden Passage"
+    },
+    {
+      "num": 60,
+      "label": "LX",
+      "title": "The Network Reorganization",
+      "source_file": "43-Network-Reorganization",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Academy"
+    },
+    {
+      "num": 61,
+      "label": "LXI",
+      "title": "The Convergence",
+      "source_file": "44-Convergence",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Coast",
+      "location": "The Pilgrim's Path"
+    },
+    {
+      "num": 62,
+      "label": "LXII",
+      "title": "The HQ Assault – Breaking the Machine",
+      "source_file": "45-HQ-Assault",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "Dungeon",
+      "location": "The Hall of Echoes"
+    },
+    {
+      "num": 63,
+      "label": "LXIII",
+      "title": "The Language of Roots",
+      "source_file": "45B-The-Language-of-Roots",
+      "character": "Kael",
+      "pov_name": "Kaelen",
+      "landscape": "Forest",
+      "location": "The Living Canopy"
+    },
+    {
+      "num": 64,
+      "label": "LXIV",
+      "title": "The Merchant's War",
+      "source_file": "47-The-Merchants-War",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Tower of Records"
+    },
+    {
+      "num": 65,
+      "label": "LXV",
+      "title": "The Language of Equal",
+      "source_file": "47B-First-Contact",
+      "character": "Kairos",
+      "pov_name": "Elara",
+      "landscape": "City",
+      "location": "The Council Chamber"
+    },
+    {
+      "num": 66,
+      "label": "LXVI",
+      "title": "The Crown's Gambit",
+      "source_file": "48B-The-Crowns-Gambit",
+      "character": "Kairos",
+      "pov_name": "Elara",
+      "landscape": "City",
+      "location": "The Academy"
+    },
+    {
+      "num": 67,
+      "label": "LXVII",
+      "title": "Varro's Gambit",
+      "source_file": "53-Varros-Gambit",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Vault Beneath"
+    },
+    {
+      "num": 68,
+      "label": "LXVIII",
+      "title": "The Sanctuary Falls",
+      "source_file": "54-The-Sanctuary-Falls",
+      "character": "Kael",
+      "pov_name": "Kaelen",
+      "landscape": "Dungeon",
+      "location": "The Hall of Echoes"
+    },
+    {
+      "num": 69,
+      "label": "LXIX",
+      "title": "The Network Bleeds",
+      "source_file": "55-The-Network-Bleeds",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Fortress Hall"
+    },
+    {
+      "num": 70,
+      "label": "LXX",
+      "title": "Kael's Collapse",
+      "source_file": "55B-Kaels-Collapse",
+      "character": "Kael",
+      "pov_name": "Kael",
+      "landscape": "Wasteland",
+      "location": "The Broken Road"
+    },
+    {
+      "num": 71,
+      "label": "LXXI",
+      "title": "The Covenant Schism",
+      "source_file": "56-The-Covenant-Schism",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Wasteland",
+      "location": "The Scarred Earth"
+    },
+    {
+      "num": 72,
+      "label": "LXXII",
+      "title": "The Blueprint of Destruction",
+      "source_file": "56B-The-Blueprint-of-Destruction",
+      "character": "Ryo",
+      "pov_name": "Vex",
+      "landscape": "Wasteland",
+      "location": "The Burnt Plain"
+    },
+    {
+      "num": 73,
+      "label": "LXXIII",
+      "title": "Caspian's Choice",
+      "source_file": "57-Caspians-Choice",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Coast",
+      "location": "The Pilgrim's Path"
+    },
+    {
+      "num": 74,
+      "label": "LXXIV",
+      "title": "The Provincial Atrocity",
+      "source_file": "58-The-Provincial-Atrocity",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "City",
+      "location": "The Market Ward"
+    },
+    {
+      "num": 75,
+      "label": "LXXV",
+      "title": "The Document That Burns",
+      "source_file": "58B-The-Document-That-Burns",
+      "character": "Aisen",
+      "pov_name": "Amara",
+      "landscape": "Coast",
+      "location": "The Shattered Coast"
+    },
+    {
+      "num": 76,
+      "label": "LXXVI",
+      "title": "The Alliance Negotiation",
+      "source_file": "59-The-Alliance-Negotiation",
+      "character": "Aisen",
+      "pov_name": "Aisen/Kaelen",
+      "landscape": "Coast",
+      "location": "The Salt Flats"
+    },
+    {
+      "num": 77,
+      "label": "LXXVII",
+      "title": "Corvin's Bridge",
+      "source_file": "60-Corvins-Bridge",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Coast",
+      "location": "The Threshold"
+    },
+    {
+      "num": 78,
+      "label": "LXXVIII",
+      "title": "The Crown Falls",
+      "source_file": "61-The-Crown-Falls",
+      "character": "Kairos",
+      "pov_name": "Elara",
+      "landscape": "City",
+      "location": "The Academy"
+    },
+    {
+      "num": 79,
+      "label": "LXXIX",
+      "title": "The Spy Exposed",
+      "source_file": "62-The-Spy-Exposed",
+      "character": "Amara",
+      "pov_name": "Rin",
+      "landscape": "Dungeon",
+      "location": "The Vault Beneath"
+    },
+    {
+      "num": 80,
+      "label": "LXXX",
+      "title": "Three Funerals",
+      "source_file": "63-Three-Funerals",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "Coast",
+      "location": "The New Harbor"
+    },
+    {
+      "num": 81,
+      "label": "LXXXI",
+      "title": "Aisen's Realization",
+      "source_file": "64-Aisens-Realization",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Coast",
+      "location": "The Shattered Coast"
+    },
+    {
+      "num": 82,
+      "label": "LXXXII",
+      "title": "The Princess Burns",
+      "source_file": "64B-The-Princess-Burns",
+      "character": "Kairos",
+      "pov_name": "Elara",
+      "landscape": "Coast",
+      "location": "The Salt Flats"
+    },
+    {
+      "num": 83,
+      "label": "LXXXIII",
+      "title": "Pre-Assault Planning",
+      "source_file": "65-Pre-Assault-Planning",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hidden Passage"
+    },
+    {
+      "num": 84,
+      "label": "LXXXIV",
+      "title": "The Last Geometry",
+      "source_file": "65B-The-Last-Geometry",
+      "character": "Orin",
+      "pov_name": "Serath",
+      "landscape": "Coast",
+      "location": "The Quiet Shore"
+    },
+    {
+      "num": 85,
+      "label": "LXXXV",
+      "title": "The Burning Forest",
+      "source_file": "66-The-Burning-Forest",
+      "character": "Kael",
+      "pov_name": "Kaelen",
+      "landscape": "Forest",
+      "location": "The Ashenveil Woods"
+    },
+    {
+      "num": 86,
+      "label": "LXXXVI",
+      "title": "The HQ Approach",
+      "source_file": "67-The-HQ-Approach",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "Dungeon",
+      "location": "The Hall of Echoes"
+    },
+    {
+      "num": 87,
+      "label": "LXXXVII",
+      "title": "The Assault — First Wave",
+      "source_file": "68-The-Assault-First-Wave",
+      "character": "Aisen",
+      "pov_name": "Serath/Rin",
+      "landscape": "Dungeon",
+      "location": "The Silent Chamber"
+    },
+    {
+      "num": 88,
+      "label": "LXXXVIII",
+      "title": "The Building Speaks",
+      "source_file": "68B-The-Building-Speaks",
+      "character": "Ryo",
+      "pov_name": "Vex",
+      "landscape": "Mountains",
+      "location": "The High Keep"
+    },
+    {
+      "num": 89,
+      "label": "LXXXIX",
+      "title": "Seraphine Confrontation",
+      "source_file": "69-Seraphine-Confrontation",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Hidden Passage"
+    },
+    {
+      "num": 90,
+      "label": "XC",
+      "title": "Aisen's Final Stand",
+      "source_file": "70-Aisens-Final-Stand",
+      "character": "Aisen",
+      "pov_name": "Aisen",
+      "landscape": "Dungeon",
+      "location": "The Deep Archives"
+    },
+    {
+      "num": 91,
+      "label": "XCI",
+      "title": "The Silence After",
+      "source_file": "71-The-Silence-After",
+      "character": "Kael",
+      "pov_name": "Kaelen",
+      "landscape": "Coast",
+      "location": "The Pilgrim's Path"
+    },
+    {
+      "num": 92,
+      "label": "XCII",
+      "title": "The Record",
+      "source_file": "72-The-Record",
+      "character": "Amara",
+      "pov_name": "Rin",
+      "landscape": "Coast",
+      "location": "The New Harbor"
+    },
+    {
+      "num": 93,
+      "label": "XCIII",
+      "title": "The Last Report",
+      "source_file": "73-The-Last-Report",
+      "character": "Aisen",
+      "pov_name": "Amara",
+      "landscape": "Coast",
+      "location": "The Shattered Coast"
+    },
+    {
+      "num": 94,
+      "label": "XCIV",
+      "title": "The Network Holds",
+      "source_file": "74-The-Network-Holds",
+      "character": "Kael",
+      "pov_name": "Kael",
+      "landscape": "City",
+      "location": "The Tower of Records"
+    },
+    {
+      "num": 95,
+      "label": "XCV",
+      "title": "Breaking Point",
+      "source_file": "75-Breaking-Point",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "Mountains",
+      "location": "The Ridge"
+    },
+    {
+      "num": 96,
+      "label": "XCVI",
+      "title": "The Moderate Peace",
+      "source_file": "76-The-Moderate-Peace",
+      "character": "Kairos",
+      "pov_name": "Elara",
+      "landscape": "City",
+      "location": "The Academy"
+    },
+    {
+      "num": 97,
+      "label": "XCVII",
+      "title": "The Serath Doctrine",
+      "source_file": "77-The-Serath-Doctrine",
+      "character": "Orin",
+      "pov_name": "Serath",
+      "landscape": "City",
+      "location": "The Divided City"
+    },
+    {
+      "num": 98,
+      "label": "XCVIII",
+      "title": "Reconstruction",
+      "source_file": "78-Reconstruction",
+      "character": "Ryo",
+      "pov_name": "Vex",
+      "landscape": "Coast",
+      "location": "The New Harbor"
+    },
+    {
+      "num": 99,
+      "label": "XCIX",
+      "title": "The Garden",
+      "source_file": "79-The-Garden",
+      "character": "Kael",
+      "pov_name": "Kaelen",
+      "landscape": "Forest",
+      "location": "The Living Canopy"
+    },
+    {
+      "num": 100,
+      "label": "C",
+      "title": "New Governance — Year One",
+      "source_file": "80-New-Governance-Year-One",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "City",
+      "location": "The Tower of Records"
+    },
+    {
+      "num": 101,
+      "label": "CI",
+      "title": "Caspian's Freedom",
+      "source_file": "81-Caspians-Freedom",
+      "character": "Caspian",
+      "pov_name": "Caspian",
+      "landscape": "Coast",
+      "location": "The Threshold"
+    },
+    {
+      "num": 102,
+      "label": "CII",
+      "title": "Five Years Later",
+      "source_file": "82-Five-Years-Later",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "Coast",
+      "location": "The Quiet Shore"
+    },
+    {
+      "num": 103,
+      "label": "CIII",
+      "title": "Kael's Pocket",
+      "source_file": "83-Kaels-Pocket",
+      "character": "Kael",
+      "pov_name": "Kael",
+      "landscape": "Mountains",
+      "location": "The Northern Highlands"
+    },
+    {
+      "num": 104,
+      "label": "CIV",
+      "title": "The History",
+      "source_file": "84-The-History",
+      "character": "Amara",
+      "pov_name": "Rin",
+      "landscape": "Coast",
+      "location": "The New Harbor"
+    },
+    {
+      "num": 105,
+      "label": "CV",
+      "title": "Final Coda: The Ordinary Foundation",
+      "source_file": "85-Final-Coda-The-Ordinary-Foundation",
+      "character": "Orin",
+      "pov_name": "Multiple",
+      "landscape": "Coast",
+      "location": "The Shattered Coast"
+    }
+  ]
+}

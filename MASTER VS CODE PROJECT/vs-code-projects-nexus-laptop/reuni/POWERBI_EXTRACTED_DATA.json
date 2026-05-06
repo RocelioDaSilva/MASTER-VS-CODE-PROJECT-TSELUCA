@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-02-25T12:03:40.630Z",
+  "report_ids": {
+    "report_id": "b45fe264-d2ac-4038-9597-ff37c5313ce4",
+    "workspace_id": "78a0e229-4463-40c8-872a-b4942c3c310d"
+  },
+  "extracted_data": {
+    "total_items": 31,
+    "page_title": "Microsoft Power BI",
+    "tables_found": 0,
+    "canvas_elements": 0,
+    "text_lines": 36
+  },
+  "page_content_preview": {
+    "first_20_lines": [
+      "Mostrar atalhos de teclado",
+      "Mostrar sugestões de leitores de ecrã",
+      "Avançar para o conteúdo principal",
+      "Relatório do Power BI",
+      "Serviços",
+      "Bens",
+      "Deslocar para cima",
+      "Deslocar para baixo",
+      "Deslocar para a esquerda",
+      "Deslocar para a direita",
+      "Serviço/Actvidade/Tipo de Sociedade/Empresa",
+      "Consultoria, Assessoria e Auditoria",
+      "Serviço de Inspecção, Testes e Certificação",
+      "Serviço de Suporte as Operações",
+      "Serviços de Assistência Jurídica",
+      "Serviços de Apoio",
+      "Serviços de Engenharia e gestão de Projectos (Pré-Feed, FEED e Engenharia de Detalhe)",
+      "Serviços de Fabricação",
+      "Serviços de Finanças e Seguros",
+      "Serviços de Formação e Capacitação Profissional"
+    ],
+    "total_tables": []
+  },
+  "extracted_items": [
+    "Avançar para o conteúdo principal",
+    "Bens",
+    "Consultoria, Assessoria e Auditoria",
+    "Deslocar para a direita",
+    "Deslocar para a esquerda",
+    "Deslocar para baixo",
+    "Deslocar para cima",
+    "Mostrar atalhos de teclado",
+    "Mostrar sugestões de leitores de ecrã",
+    "Relatório Ampliado Para 81%",
+    "Serviço de Inspecção, Testes e Certificação",
+    "Serviço de Suporte as Operações",
+    "Serviço/Actvidade/Tipo de Sociedade/Empresa",
+    "Serviços",
+    "Serviços Logistícos",
+    "Serviços de Apoio",
+    "Serviços de Assistência Jurídica",
+    "Serviços de Engenharia e gestão de Projectos (Pré-Feed, FEED e Engenharia de Detalhe)",
+    "Serviços de Fabricação",
+    "Serviços de Finanças e Seguros",
+    "Serviços de Formação e Capacitação Profissional",
+    "Serviços de Fornecimento de Pessoal",
+    "Serviços de Geociências",
+    "Serviços de Operação Marítima",
+    "Serviços de Reservatório",
+    "Serviços de Saúde, Meio ambiente e Segurança",
+    "Serviços de Tecnologias de Informação e Comunicação",
+    "Serviços de Transporte, Instalação, Hook up e Comissionamento",
+    "Serviços e Bens de Perfuração, Completação e Intervenções de Poços",
+    "Serviços no Âmbito da Avaliação do Potencial Petrolífero das Bacias Interiores",
+    "Sistema de Produção Submarino (SPS) e Umbilicais, Linhas de Escoamento e Elevação (SURF)"
+  ],
+  "raw_page_data": {
+    "title": "Microsoft Power BI",
+    "url": "https://app.powerbi.com/view?r=eyJrIjoiYjQ1ZmUyNjQtZDJhYy00MDM4LTk1OTctZmYzN2M1MzEzY2U0IiwidCI6Ijc4YTBlMjI5LTQ0NjMtNDBjOC04NzJhLWI0OTQyYzNjMzEwZCIsImMiOjl9",
+    "text_content": [
+      "Mostrar atalhos de teclado",
+      "Mostrar sugestões de leitores de ecrã",
+      "Avançar para o conteúdo principal",
+      "Relatório do Power BI",
+      "Serviços",
+      "Bens",
+      "Deslocar para cima",
+      "Deslocar para baixo",
+      "Deslocar para a esquerda",
+      "Deslocar para a direita",
+      "Serviço/Actvidade/Tipo de Sociedade/Empresa",
+      "Consultoria, Assessoria e Auditoria",
+      "Serviço de Inspecção, Testes e Certificação",
+      "Serviço de Suporte as Operações",
+      "Serviços de Assistência Jurídica",
+      "Serviços de Apoio",
+      "Serviços de Engenharia e gestão de Projectos (Pré-Feed, FEED e Engenharia de Detalhe)",
+      "Serviços de Fabricação",
+      "Serviços de Finanças e Seguros",
+      "Serviços de Formação e Capacitação Profissional",
+      "Serviços de Fornecimento de Pessoal",
+      "Serviços de Geociências",
+      "Serviços de Operação Marítima",
+      "Serviços de Reservatório",
+      "Serviços de Saúde, Meio ambiente e Segurança",
+      "Serviços de Tecnologias de Informação e Comunicação",
+      "Serviços de Transporte, Instalação, Hook up e Comissionamento",
+      "Serviços e Bens de Perfuração, Completação e Intervenções de Poços",
+      "Serviços Logistícos",
+      "Serviços no Âmbito da Avaliação do Potencial Petrolífero das Bacias Interiores",
+      "Sistema de Produção Submarino (SPS) e Umbilicais, Linhas de Escoamento e Elevação (SURF)",
+      "-",
+      "+",
+      "81%",
+      "Microsoft Power BI",
+      "Relatório Ampliado Para 81%"
+    ],
+    "tables": [],
+    "canvas_elements": 0,
+    "json_data": [],
+    "table_cells": [
+      {
+        "index": 2,
+        "text": "Relatório do Power BI\nServiços\nBens\nDeslocar para cima\nDeslocar para baixo\nDeslocar para a esquerda\nDeslocar para a direita\nServiço/Actvidade/Tipo de Sociedade/Empresa\n \nConsultoria, Assessoria e Audi"
+      },
+      {
+        "index": 3,
+        "text": "Serviços\nBens"
+      },
+      {
+        "index": 6,
+        "text": "Serviços\nBens"
+      },
+      {
+        "index": 7,
+        "text": "Serviços\nBens"
+      },
+      {
+        "index": 8,
+        "text": "Serviços\nBens"
+      },
+      {
+        "index": 9,
+        "text": "Deslocar para cima\nDeslocar para baixo\nDeslocar para a esquerda\nDeslocar para a direita\nServiço/Actvidade/Tipo de Sociedade/Empresa\n \nConsultoria, Assessoria e Auditoria\nServiço de Inspecção, Testes e"
+      },
+      {
+        "index": 12,
+        "text": "Deslocar para cima\nDeslocar para baixo\nDeslocar para a esquerda\nDeslocar para a direita\nServiço/Actvidade/Tipo de Sociedade/Empresa\n \nConsultoria, Assessoria e Auditoria\nServiço de Inspecção, Testes e"
+      },
+      {
+        "index": 13,
+        "text": "Deslocar para cima\nDeslocar para baixo\nDeslocar para a esquerda\nDeslocar para a direita\nServiço/Actvidade/Tipo de Sociedade/Empresa\n \nConsultoria, Assessoria e Auditoria\nServiço de Inspecção, Testes e"
+      },
+      {
+        "index": 14,
+        "text": "Deslocar para cima\nDeslocar para baixo\nDeslocar para a esquerda\nDeslocar para a direita\nServiço/Actvidade/Tipo de Sociedade/Empresa\n \nConsultoria, Assessoria e Auditoria\nServiço de Inspecção, Testes e"
+      }
+    ]
+  }
+}

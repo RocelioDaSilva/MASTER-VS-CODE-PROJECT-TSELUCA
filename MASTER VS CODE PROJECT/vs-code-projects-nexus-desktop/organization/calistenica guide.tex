@@ -1,0 +1,600 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\geometry{left=2.8cm,right=2.8cm,top=2.8cm,bottom=2.8cm,headheight=15pt}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=teal,
+    urlcolor=blue,
+    pdftitle={Plano de Transformação Corporal - Rocélio},
+    pdfauthor={Rocélio}
+}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{setspace}
+\onehalfspacing  % 1.5 spacing
+\setlength{\parskip}{0.8\baselineskip}
+\setlength{\parindent}{0pt}
+
+% Define colors
+\definecolor{primary}{RGB}{0,102,102}
+\definecolor{secondary}{RGB}{204,102,0}
+\definecolor{tipbg}{RGB}{230,245,245}
+\definecolor{warningbg}{RGB}{255,240,240}
+
+% Custom commands
+\newcommand{\checkmarkbox}{\textcolor{primary}{\checkmark}}
+\newcommand{\warningbox}[1]{\begin{tcolorbox}[colback=warningbg, colframe=secondary, title=\textbf{Atenção}] #1 \end{tcolorbox}}
+\newcommand{\tipbox}[1]{\begin{tcolorbox}[colback=tipbg, colframe=primary, title=\textbf{Dica}] #1 \end{tcolorbox}}
+
+% Setup section formatting
+\addtokomafont{section}{\color{primary}\Large\bfseries}
+\addtokomafont{subsection}{\color{primary}\large\bfseries}
+\addtokomafont{subsubsection}{\color{primary}\normalsize\bfseries}
+
+\title{\vspace{1cm}\Huge\textbf{Plano de Transformação Corporal Completo}\\\large Versão Iniciante — Adaptado ao Teu Perfil (Pernas Fortes / Braços Fracos)}
+\author{Rocélio \qquad 20 anos \qquad 175 cm \qquad 95 kg}
+\date{16 de março de 2026}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\vspace{2cm}
+\begin{center}
+\textit{“O único lugar onde o sucesso vem antes do trabalho é no dicionário.”} \\[0.3cm]
+— Vidal Sassoon
+\end{center}
+\newpage
+
+\section*{Objetivo}
+\begin{itemize}
+    \item Reduzir o peso de \textbf{95 kg para 75 kg} em 6 meses.
+    \item Desenvolver força muscular e capacidade cardiovascular.
+    \item Adotar uma reeducação alimentar sustentável.
+\end{itemize}
+\textbf{Frequência:} 3–4 dias por semana (adaptada para iniciantes). \\
+\textbf{Duração das sessões:} 45–60 minutos. \\
+\textbf{Observação pessoal:} Completaste a São Silvestre de Luanda 2025 (10 km em 1:27:04). Tens boa resistência nas pernas, mas precisas de fortalecer a parte superior do corpo (menos de 5 flexões normais). Este plano foi ajustado para equilibrar essa diferença.
+
+\vspace{1cm}
+\tableofcontents
+\newpage
+
+\section{Calistenia — Guia Prático (Versão Iniciante)}
+\subsection{Visão Geral}
+\begin{itemize}
+    \item \textbf{Objetivo:} 95 kg → 75 kg em 6 meses, combinando força, cardio e alimentação.
+    \item \textbf{Equipamento:} Nenhum necessário.
+    \item \textbf{Frequência:} 3–4 dias/semana (Segunda, Quarta, Sexta).
+    \item \textbf{Duração:} 45–60 minutos por sessão.
+    \item \textbf{Progressão:} Aumentar repetições gradualmente, priorizando sempre a forma correta e a consistência.
+\end{itemize}
+
+\subsubsection{Análise do Teu Perfil}
+Com base nos teus resultados da São Silvestre (31/12/2025):
+\begin{itemize}
+    \item \textbf{Resistência cardiovascular:} Completaste 10 km em 1:27:04 (ritmo médio de 8:43/km). É um excelente ponto de partida; podemos evoluir para ritmos mais rápidos ao longo do tempo.
+    \item \textbf{Força de pernas:} Já tens uma base sólida. O objetivo é manter e tonificar, sem volume excessivo.
+    \item \textbf{Força de braços:} É o teu ponto fraco (menos de 5 flexões normais). Dedicaremos mais tempo e séries aos exercícios de peito, ombros e tríceps.
+    \item \textbf{Mergulhos de tríceps:} Consegues executá-los, o que é um ótimo ponto de partida. Aumentaremos gradualmente as repetições.
+\end{itemize}
+
+\subsubsection{Filosofia para Iniciantes}
+\begin{itemize}
+    \item \textbf{Não te compares} com vídeos do YouTube — cada corpo tem o seu ritmo.
+    \item \textbf{Fraco hoje, forte amanhã} — a única direção é para a frente.
+    \item \textbf{Forma > Quantidade} — 8 repetições perfeitas valem mais que 15 tortas.
+    \item \textbf{Consistência é o teu superpoder} — 3 treinos por semana durante 6 meses transformam qualquer corpo.
+\end{itemize}
+
+\subsubsection{Gráfico de Transformação Visual — 95 kg → 75 kg em 24 semanas}
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+\draw[->] (0,0) -- (8,0) node[below] {Semanas};
+\draw[->] (0,0) -- (0,6) node[left] {Peso (kg)};
+\foreach \s in {0,4,8,12,16,20,24} \draw (\s*0.333,0.1) -- (\s*0.333,-0.1) node[below] {\s};
+\foreach \p in {75,80,85,90,95} \draw (-0.1,\p/15-5) -- (0.1,\p/15-5) node[left] {\p};
+\draw[thick, primary] plot[domain=0:24, samples=50] (\x*0.333, {95/15 - (\x/24)*(20/15)});
+\filldraw[secondary] (0,95/15-5) circle (2pt);
+\filldraw[secondary] (24,75/15-5) circle (2pt);
+\end{tikzpicture}
+\caption{Trajetória esperada da perda de peso.}
+\end{figure}
+
+\subsection{Estrutura Semanal (Versão Iniciante com Ênfase em Braços)}
+\subsubsection{SEGUNDA — Full Body com Foco em Braços (45 min)}
+\textbf{Aquecimento (5 min):}
+\begin{itemize}
+    \item 2 min: Marcha no lugar (sem impacto).
+    \item 2 min: Movimentos dinâmicos muito leves (5 círculos com os braços, 5 balanços de pernas baixos).
+    \item 1 min: Respiração profunda.
+\end{itemize}
+
+\paragraph{1. PERNAS — Manutenção (10 min)}
+\subparagraph{Agachamentos Apoiados}
+\begin{itemize}
+    \item \textbf{Execução:} De frente para uma cadeira, pés afastados na largura dos ombros. Coloca as mãos no apoio da cadeira. Desce o quadril até tocar levemente a cadeira, mantendo os joelhos alinhados com os pés. Sobe com força através dos calcanhares.
+    \item \textbf{Séries × Repetições:} 2 × 10.
+    \item \textbf{Dica:} Mantém os joelhos sempre atrás da linha dos dedos dos pés.
+\end{itemize}
+\begin{center}
+\fbox{\parbox{0.4\textwidth}{\centering [Ilustração: Agachamento apoiado]}}
+\end{center}
+
+\subparagraph{Elevação de Calcanhares}
+\begin{itemize}
+    \item \textbf{Execução:} De pé, pés afastados na largura dos quadris. Levanta lentamente os calcanhares, ficando na ponta dos pés. Segura por 1 segundo no topo e desce de forma controlada.
+    \item \textbf{Séries × Repetições:} 2 × 15.
+    \item \textbf{Nota:} Excelente para fortalecer as panturrilhas.
+\end{itemize}
+\begin{center}
+\fbox{\parbox{0.4\textwidth}{\centering [Ilustração: Elevação de calcanhares]}}
+\end{center}
+
+\paragraph{2. PEITO E BRAÇOS — Ênfase (20 min)}
+\subparagraph{Flexões na Parede}
+\begin{itemize}
+    \item \textbf{Execução:} De frente para a parede, afasta os pés à largura dos ombros. Coloca as mãos na parede à altura dos ombros. Desce o tronco em direção à parede, dobrando os cotovelos, e depois empurra de volta à posição inicial.
+    \item \textbf{Séries × Repetições:} 4 × 8.
+    \item \textbf{Progressão:} Aumente 1 repetição por série a cada semana.
+\end{itemize}
+\begin{center}
+\fbox{\parbox{0.4\textwidth}{\centering [Ilustração: Flexão na parede]}}
+\end{center}
+
+\subparagraph{Mergulhos de Tríceps (em cadeira)}
+\begin{itemize}
+    \item \textbf{Execução:} Sente-se na borda de uma cadeira firme, mãos ao lado do corpo, dedos apontados para a frente. Deslize o quadril para fora da cadeira e desça lentamente, dobrando os cotovelos até formar um ângulo de 90 graus. Volte à posição inicial empurrando com os braços.
+    \item \textbf{Séries × Repetições:} 3 × 8.
+    \item \textbf{Dica:} Mantenha os ombros relaxados e os cotovelos apontados para trás.
+\end{itemize}
+\begin{center}
+\fbox{\parbox{0.4\textwidth}{\centering [Ilustração: Mergulho de tríceps]}}
+\end{center}
+
+\subparagraph{Prancha}
+\begin{itemize}
+    \item \textbf{Execução:} Apoie os antebraços no chão, alinhados com os ombros. Estenda as pernas e mantenha o corpo reto, contraindo o abdômen e os glúteos. Mantenha a posição.
+    \item \textbf{Séries × Tempo:} 3 × 20 segundos.
+    \item \textbf{Progressão:} Aumente 5–10 segundos por semana.
+\end{itemize}
+\begin{center}
+\fbox{\parbox{0.4\textwidth}{\centering [Ilustração: Prancha]}}
+\end{center}
+
+\subsubsection{QUARTA — Cardio Leve / HIIT + Ênfase em Braços (45 min)}
+\textbf{Aquecimento (5 min):} Marcha no lugar, círculos com os braços, elevação de joelhos baixa.
+
+\textbf{Protocolo HIIT Iniciante:} 20 segundos de esforço seguidos de 40 segundos de descanso. Repetir o circuito 3 a 4 vezes.
+
+\begin{itemize}
+    \item \textbf{Polichinelos Lentos:} Executar de forma controlada; se necessário, substituir por afastamento lateral sem salto.
+    \item \textbf{Mountain Climbers:} Em prancha, alternar as pernas lentamente; caso seja muito intenso, fazer marcha com joelhos altos no lugar.
+    \item \textbf{Agachamento com Toque:} Realizar agachamento e, ao subir, tocar os dedos dos pés (ou o chão) com as mãos.
+\end{itemize}
+Após o HIIT, realizar:
+\begin{itemize}
+    \item \textbf{Flexões na Parede:} 3 séries (repetições máximas controladas).
+    \item \textbf{Mergulhos de Tríceps:} 3 séries (repetições máximas controladas).
+\end{itemize}
+\textbf{Cool-down (5 min):} Alongamentos suaves para braços, ombros e pernas.
+
+\subsubsection{SEXTA — Full Body com Foco em Braços (45 min)}
+Repetir o treino de Segunda-feira. Se os braços estiverem muito doridos, reduzir para 3 séries por exercício.
+
+\subsection{Índice de Exercícios — Quick Reference Cards}
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Exercício} & \textbf{Séries} & \textbf{Repetições/Tempo} & \textbf{Descanso} \\
+\midrule
+Flexão na parede & 4 & 8–12 & 60 s \\
+Mergulho de tríceps & 3 & 8–12 & 60 s \\
+Agachamento apoiado & 2 & 10–15 & 60 s \\
+Elevação de calcanhares & 2 & 15–20 & 45 s \\
+Prancha & 3 & 20–40 s & 60 s \\
+\bottomrule
+\end{tabular}
+\caption{Progressão sugerida — Semana 1.}
+\end{table}
+
+\textbf{Como usar:} Na primeira semana, comece com os valores indicados. A cada semana, adicione 1 repetição por série (ou 2–5 segundos na prancha). Se não conseguir progredir, mantenha o mesmo nível por mais uma semana.
+
+\subsection{Progressão de Flexões — Meses 1–4 (Roadmap Visual)}
+\begin{enumerate}
+    \item \textbf{Mês 1:} Flexão na parede (4×8 → 4×12).
+    \item \textbf{Mês 2:} Flexão em superfície inclinada (mesa, cadeira) — 4×10 → 4×15.
+    \item \textbf{Mês 3:} Flexão nos joelhos (chão) — 3×8 → 3×12.
+    \item \textbf{Mês 4:} Flexão completa — iniciar com 3×3 e progredir.
+\end{enumerate}
+\textbf{Importante:} Cada estágio deve durar no mínimo 4 semanas. Respeite o seu ritmo; a consistência é mais importante que a velocidade.
+
+\subsection{Princípios Fundamentais para Iniciantes}
+\begin{enumerate}[label=\arabic*., leftmargin=*]
+    \item \textbf{Ouve o Teu Corpo:} Dor muscular (queimação) é normal. Dor articular (cotovelos, ombros) é um sinal de alerta. Reduza a amplitude, use versões mais fáceis ou descanse.
+    \item \textbf{Não Tenhas Vergonha de Versões Mais Fáceis:} A flexão na parede é um exercício legítimo e eficaz para construir força inicial.
+    \item \textbf{Consistência > Intensidade:} Três treinos por semana durante seis meses produzem transformação; um treino extenuante que cause dor por cinco dias gera frustração.
+    \item \textbf{Regista Tudo:} Anote repetições, percepção de esforço (fácil/médio/difícil) e quaisquer desconfortos. Isso permite um progresso mensurável.
+    \item \textbf{Forma > Quantidade — Sempre:} Oito repetições perfeitas valem mais que quinze com má execução. Controle o movimento (2 segundos na descida, 1 segundo na subida) e mantenha o corpo alinhado.
+\end{enumerate}
+
+\tipbox{Se sentires dor nas articulações, não ignores. Volta a um nível mais fácil ou descansa. A tua segurança vem primeiro.}
+
+\section{Benchmark Físico — Protocolo de Testes (Versão Iniciante)}
+\subsection{Equipamento Necessário}
+Balança digital, fita métrica flexível (cm), cronómetro, espaço para caminhada, opcionalmente um smartphone para gravar a forma.
+
+\subsection{Pré-requisitos}
+\begin{itemize}
+    \item Sono adequado (7–9 horas).
+    \item Refeição leve 2–3 horas antes.
+    \item Hidratação adequada.
+    \item Aquecimento leve de 5 minutos.
+    \item Realizar as medições sempre nas mesmas condições (horário, estado alimentar).
+\end{itemize}
+
+\subsection{Teste \#1: Avaliação da Composição Corporal}
+Medidas de base (5 de março de 2026):
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+Medida & Valor \\
+\midrule
+Peso & 95 kg \\
+Cintura (ponto mais estreito) & 91,5 cm \\
+Abdómen (ao nível do umbigo) & 94,5 cm \\
+Anca & 117 cm \\
+Coxa (direita) & 74,3 cm \\
+Coxa (esquerda) & 74,5 cm \\
+Peito & 96,5 cm \\
+Braço (esquerdo) & 32,5 cm \\
+Braço (direito) & 31,5 cm \\
+Pescoço & 37,5 cm \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Teste \#2: Aptidão Cardiovascular Iniciante}
+\textbf{Teste de 1 km caminhada rápida:}
+\begin{enumerate}
+    \item Aquecimento de 3 minutos.
+    \item Caminhar 1 km o mais rápido possível (sem correr).
+    \item Registrar o tempo e a frequência cardíaca imediatamente após o término.
+\end{enumerate}
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Métrica & Baseline & Mês 3 & Mês 6 \\
+\midrule
+Tempo 1 km caminhada & — & — & — \\
+FC após 1 km & — & — & — \\
+FC em repouso (manhã) & — & — & — \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Teste \#3: Força Iniciante (Adaptado)}
+\begin{itemize}
+    \item \textbf{Flexão na parede (máx repetições):} Meta aos 6 meses: 30+.
+    \item \textbf{Mergulho de tríceps (máx repetições):} Meta aos 6 meses: 20+.
+    \item \textbf{Agachamento apoiado (máx repetições):} Meta aos 6 meses: 30+.
+    \item \textbf{Prancha (tempo máximo):} Meta aos 6 meses: 60+ segundos.
+\end{itemize}
+
+\subsection{Estimativa de Gordura Corporal (Método da Marinha)}
+Fórmula para homens:
+\[
+\%GC = 86{,}010 \times \log_{10}(\text{abdómen} - \text{pescoço}) - 70{,}041 \times \log_{10}(\text{altura}) + 36{,}76
+\]
+\textbf{Exemplo baseline:} Abdómen 94,5 cm, pescoço 37,5 cm, altura 175 cm → $\approx 31\%$. \\
+\textbf{Meta aos 6 meses:} 15–20\%.
+
+\textbf{Rácio cintura-altura:} $\frac{\text{cintura}}{\text{altura}} < 0,5$ é considerado saudável. Baseline: $0,523$; meta: $< 0,45$.
+
+\subsection{Cronograma de Reavaliação}
+\begin{itemize}
+    \item \textbf{Semanal:} Peso, FC em repouso, níveis de energia, adesão ao plano.
+    \item \textbf{Mensal:} Todas as medidas antropométricas, testes de força, fotos de evolução.
+    \item \textbf{Trimestral:} Reavaliação completa do plano e ajustes.
+\end{itemize}
+
+\section{Benchmarking Progress Tracker}
+\subsection{Registo Mensal}
+\textbf{Mês 1 (Abril 2026):}
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+Métrica & Valor \\
+\midrule
+Peso & \_\_ kg \\
+Cintura & \_\_ cm \\
+Abdómen & \_\_ cm \\
+Coxa média & \_\_ cm \\
+Flexões parede (máx) & \_\_ \\
+Mergulhos tríceps (máx) & \_\_ \\
+Agachamentos apoiados (máx) & \_\_ \\
+Prancha & \_\_ seg \\
+FC repouso & \_\_ bpm \\
+\bottomrule
+\end{tabular}
+\end{table}
+(Repetir para os meses 2 a 6.)
+
+\section{Body Improvement Plan — Perfil Pessoal}
+\begin{itemize}
+    \item \textbf{Nome:} Rocélio
+    \item \textbf{Nascimento:} 28/09/2005 (20 anos)
+    \item \textbf{Nacionalidade:} Angolana
+    \item \textbf{Altura:} 175 cm
+    \item \textbf{Peso atual:} 95 kg
+    \item \textbf{Desempenho recente:} São Silvestre de Luanda 2025 – 10 km em 1:27:04 (3725.º lugar)
+\end{itemize}
+
+\subsection{Análise do Estado Atual}
+\begin{itemize}
+    \item IMC: 31,02 (obesidade grau I).
+    \item Gordura corporal estimada: 31\% (elevada).
+    \item Rácio cintura-altura: 0,523 (acima do recomendado).
+    \item Circunferência abdominal: 94,5 cm (gordura visceral significativa).
+    \item Força de pernas: razoável (capacidade de correr 10 km).
+    \item Força de braços: fraca (menos de 5 flexões normais).
+\end{itemize}
+
+\subsection{Áreas de Foco Prioritário}
+\begin{enumerate}
+    \item Redução da gordura visceral (barriga) — a mais metabolicamente danosa.
+    \item Fortalecimento de braços, peito e ombros (desequilíbrio atual).
+    \item Manutenção da força de pernas.
+    \item Melhoria da capacidade cardiovascular (ritmo de corrida).
+\end{enumerate}
+
+\subsection{Metas de 6 Meses (Realistas para Iniciante)}
+\begin{itemize}
+    \item \textbf{Peso:} 74–82 kg (perda de 13–21 kg).
+    \item \textbf{Abdómen:} 82–86 cm (redução de 8–12 cm).
+    \item \textbf{Gordura corporal:} 15–20\%.
+    \item \textbf{Força:} 30+ flexões na parede, 20+ mergulhos, 30+ agachamentos, 60+ segundos de prancha.
+    \item \textbf{Cardio:} Melhorar o ritmo de corrida para 10 km em menos de 1:15:00.
+\end{itemize}
+
+\subsection{Plano de Treino (Resumo)}
+3–4 dias por semana, com ênfase na parte superior do corpo (peito, ombros, braços) e manutenção das pernas, seguindo a progressão detalhada na Parte 1.
+
+\subsection{Directrizes Nutricionais}
+\begin{itemize}
+    \item \textbf{Calorias:} 1800–2000 kcal/dia.
+    \item \textbf{Proteína:} 150–170 g/dia (1,6–1,8 g/kg de peso corporal).
+    \item \textbf{Carboidratos:} 180–220 g/dia (priorizar fontes complexas).
+    \item \textbf{Gorduras:} 50–60 g/dia (preferir gorduras insaturadas).
+    \item \textbf{Fibra:} 35–40 g/dia.
+    \item \textbf{Água:} 3–4 litros/dia.
+\end{itemize}
+
+\section{Comprehensive Health Plan}
+\subsection{Objectivos de Saúde}
+\begin{itemize}
+    \item Perda de peso sustentável (14–21 kg).
+    \item Melhoria da composição corporal (redução da gordura visceral e ganho de massa muscular).
+    \item Saúde cardiovascular (redução da FC de repouso, aumento do VO$_2$máx).
+    \item Saúde mental (redução do stress, melhora do humor).
+    \item Energia sustentada ao longo do dia.
+    \item Criação de hábitos duradouros.
+\end{itemize}
+
+\subsection{Estratégias de Regulação do Apetite}
+\begin{enumerate}
+    \item \textbf{Hidratação:} 3–4 L/dia (500 ml ao acordar, 250 ml antes das refeições).
+    \item \textbf{Frequência alimentar:} Refeições a cada 3–4 horas (4–5 refeições/dia).
+    \item \textbf{Proteína em todas as refeições:} 30–35 g por refeição.
+    \item \textbf{Fibra:} 30–40 g/dia, proveniente de feijão, vegetais, mandioca, milho.
+    \item \textbf{Estabilizar a glicemia:} Evitar açúcares refinados e alimentos ultraprocessados.
+    \item \textbf{Mastigação lenta:} Dedicar 20–30 minutos a cada refeição.
+    \item \textbf{Distinguir fome real de fome emocional.}
+    \item \textbf{Sono adequado:} 7–9 horas por noite.
+    \item \textbf{Gestão do stress:} Meditação, respiração consciente.
+\end{enumerate}
+
+\subsection{Exemplo de Dia Alimentar (1800–2000 kcal, 150g proteína)}
+\begin{itemize}
+    \item \textbf{Peq. almoço:} 3 ovos mexidos + 1 fatia de pão integral + 100 g de feijão.
+    \item \textbf{Lanche:} 30 g de leite em pó + 1 banana.
+    \item \textbf{Almoço:} 140 g de frango grelhado + 80 g de arroz integral + vegetais (folha de mandioca, quiabo) regados com azeite.
+    \item \textbf{Lanche:} 25 g de leite em pó + 1 banana.
+    \item \textbf{Jantar:} 150 g de carne magra + 120 g de mandioca cozida + vegetais com 15 ml de óleo de palma (ou azeite).
+\end{itemize}
+
+\subsection{Sono e Recuperação}
+\begin{itemize}
+    \item Duração: 7–9 horas por noite, com horários regulares.
+    \item Higiene do sono: evitar ecrãs 1 hora antes de dormir, manter o quarto escuro e fresco.
+    \item \textbf{Evidência:} Um estudo de 2010 no \textit{Annals of Internal Medicine} mostrou que indivíduos em dieta que dormiram 8,5 horas perderam mais de duas vezes mais gordura do que aqueles que dormiram apenas 5,5 horas, com a mesma dieta e exercício.
+\end{itemize}
+
+\subsection{Saúde Mental e Gestão do Stress}
+\begin{itemize}
+    \item Meditação diária (5–10 minutos).
+    \item Técnica de respiração 4-7-8 (inspirar 4 s, segurar 7 s, expirar 8 s).
+    \item Diário de gratidão (registar 3 coisas positivas por dia).
+    \item Manter actividades sociais e momentos de lazer.
+\end{itemize}
+
+\subsection{Monitorização}
+\begin{itemize}
+    \item \textbf{Semanal:} Peso, energia, qualidade do sono, adesão ao plano.
+    \item \textbf{Mensal:} Medidas antropométricas, fotos, testes de força.
+    \item \textbf{Trimestral:} Reavaliação completa dos objectivos e ajustes no plano.
+\end{itemize}
+
+\section{Metabolismo e Mecânica Corporal}
+\subsection{O que é o Metabolismo?}
+Conjunto de processos químicos que convertem os alimentos em energia e constroem/reparam tecidos.
+
+\subsection{Componentes do Gasto Energético Diário (TDEE)}
+\begin{enumerate}
+    \item \textbf{Taxa Metabólica Basal (BMR):} 60–75\% do TDEE. Aos 95 kg, estima-se cerca de 2050 kcal/dia.
+    \item \textbf{Efeito Térmico dos Alimentos (TEF):} 8–15\%. A proteína tem o maior custo energético (20–30\%).
+    \item \textbf{Gasto com Actividade (AEE):} 15–30\%, incluindo exercício físico e NEAT (actividade não programada).
+\end{enumerate}
+
+\subsection{Equilíbrio Energético}
+Variação de peso = Calorias ingeridas – Calorias gastas. \\
+1 kg de gordura corporal $\approx$ 7700 kcal. Para perder 15 kg em 6 meses, é necessário um défice diário médio de aproximadamente 640 kcal.
+
+\subsection{Como o Corpo Queima Gordura}
+\begin{enumerate}
+    \item Mobilização: hormonas libertam ácidos gordos dos adipócitos.
+    \item Transporte para as células.
+    \item Oxidação nas mitocôndrias, produzindo ATP.
+    \item Eliminação: CO$_2$ expirado e água excretada.
+\end{enumerate}
+A gordura visceral é a primeira a ser mobilizada com défice calórico e exercício aeróbio.
+
+\subsection{Músculo e Metabolismo}
+O tecido muscular é metabolicamente activo: 1 kg de músculo queima cerca de 6 kcal/dia em repouso (contra 2 kcal do tecido adiposo). Preservar a massa muscular durante o défice calórico é crucial para manter o metabolismo elevado.
+
+\subsection{Hormonas Chave}
+\begin{itemize}
+    \item \textbf{Grelina:} hormona da fome; aumenta com falta de sono e stress.
+    \item \textbf{Leptina:} hormona da saciedade; diminui em défices prolongados.
+    \item \textbf{Insulina:} regula a glicemia; picos elevados dificultam o acesso às reservas de gordura.
+    \item \textbf{Cortisol:} hormona do stress; em excesso promove acumulação de gordura abdominal.
+    \item \textbf{Testosterona:} hormona anabólica; favorece a queima de gordura e é apoiada por treino de força, sono adequado e ingestão de gorduras saudáveis.
+\end{itemize}
+
+\subsection{Adaptações ao Exercício}
+\begin{itemize}
+    \item \textbf{Curto prazo:} melhoria neuromuscular, ganhos de força sem hipertrofia significativa.
+    \item \textbf{Médio prazo (4–12 semanas):} hipertrofia, aumento da densidade mitocondrial.
+    \item \textbf{Longo prazo (3–6 meses):} transformação visível, aumento da taxa metabólica de repouso.
+\end{itemize}
+
+\subsection{Mitos Comuns}
+\begin{itemize}
+    \item \textbf{Cardio queima mais gordura que musculação?} Ambos são importantes; a combinação é ideal.
+    \item \textbf{Comer gordura engorda?} O que engorda é o excesso calórico, independentemente da fonte.
+    \item \textbf{Carboidratos à noite viram gordura?} O balanço calórico total é o que determina o ganho ou perda de gordura.
+    \item \textbf{É possível perder gordura localizada?} Não. A perda de gordura é sistémica; exercícios específicos tonificam a musculatura local.
+\end{itemize}
+
+\section{Research Sources \& Evidence Base}
+\subsection{Eficácia do Treino Calisténico}
+\textit{Isokinetics and Exercise Science} (2017): o treino calisténico melhora a postura, a força e a composição corporal sem necessidade de equipamento.
+
+\subsection{Perda de Gordura Visceral (Prioridade)}
+\begin{itemize}
+    \item Exercício aeróbio mínimo de 10 MET-horas/semana reduz a gordura visceral. O plano (caminhadas + HIIT suave) atinge esse patamar.
+    \item Dieta hipocalórica combinada com exercício promove mobilização preferencial da gordura visceral.
+\end{itemize}
+
+\subsection{Sono e Perda de Gordura}
+\textit{Annals of Internal Medicine} (2010): indivíduos em dieta que dormiram 8,5 horas perderam mais de duas vezes mais gordura do que os que dormiram 5,5 horas, com a mesma dieta e exercício.
+
+\subsection{Sustentabilidade da Perda de Peso}
+A perda de peso permanente requer mudanças duradouras no estilo de vida. Dieta isolada produz resultados, mas dieta + exercício é superior. Dietas ricas em proteína aumentam a saciedade e o efeito térmico.
+
+\subsection{Avaliação da Composição Corporal}
+Medidas de circunferência (especialmente abdominal) predizem a gordura visceral melhor do que o IMC ou o peso isolado.
+
+\subsection{Alinhamento do Teu Plano com a Evidência}
+\begin{itemize}
+    \item Treino calisténico validado (versões mais fáceis também eficazes).
+    \item Défice calórico agressivo mas seguro (1800–2000 kcal).
+    \item Elevada ingestão proteica ($\ge 1,6$ g/kg).
+    \item Foco na gordura visceral (caminhada + HIIT suave).
+    \item Sono priorizado (7–9 horas).
+    \item Combinação de dieta e exercício.
+    \item Monitorização por circunferências e testes funcionais.
+\end{itemize}
+
+\subsection{Resultados Realistas (baseados na evidência)}
+\begin{itemize}
+    \item Perda de peso: 1,5–2,5 kg/mês (iniciantes podem ter perdas mais rápidas nas primeiras semanas).
+    \item Redução abdominal: 1–2 cm/mês.
+    \item Meta de 74–82 kg em 6 meses é plausível com adesão consistente.
+\end{itemize}
+
+\section{Quick Start — Comece Esta Semana!}
+\subsection{Primeira Semana: Checklist}
+\begin{itemize}
+    \item[$\checkmark$] Ler o perfil pessoal (Secção 4).
+    \item[$\checkmark$] Guardar este PDF no telemóvel.
+    \item[$\checkmark$] Escolher um caderno ou app para anotar os treinos.
+    \item[$\checkmark$] Tirar uma foto de frente e de lado (para comparação futura).
+\end{itemize}
+
+\subsection{Segunda-feira — Treino \#1}
+\textbf{Aquecimento:} 5 min \\
+\textbf{Agachamentos Apoiados:} 2 × 10 \\
+\textbf{Elevação de Calcanhares:} 2 × 15 \\
+\textbf{Flexões na Parede:} 4 × 8 \\
+\textbf{Mergulhos de Tríceps:} 3 × 8 \\
+\textbf{Prancha:} 3 × 20 seg \\
+\textbf{Cool-down:} 5 min (alongamentos)
+
+\subsection{Quarta-feira — Treino \#2}
+\textbf{Aquecimento:} 5 min \\
+\textbf{HIIT Circuito (3 rondas):}
+\begin{itemize}
+    \item 20 seg Polichinelos Lentos + 40 seg descanso
+    \item 20 seg Mountain Climbers + 40 seg descanso
+    \item 20 seg Agachamento com Toque + 40 seg descanso
+\end{itemize}
+\textbf{Flexões na Parede:} 3 séries (repetições máximas controladas) \\
+\textbf{Mergulhos de Tríceps:} 3 séries (repetições máximas controladas) \\
+\textbf{Cool-down:} 5 min
+
+\subsection{Sexta-feira — Treino \#3}
+Repetir o treino de Segunda-feira. Se estiver muito dorido, reduzir para 3 séries por exercício.
+
+\section*{Conclusão}
+Este plano foi desenhado especialmente para ti, Rocélio, respeitando o teu ponto de partida e o teu desequilíbrio natural (pernas mais fortes que braços). Lembra-te:
+
+\begin{itemize}
+    \item \textbf{Não precisas de ser forte para começar. Precisas de começar para ser forte.}
+    \item A tua participação na São Silvestre prova que tens determinação. Agora é canalizar essa energia para fortalecer os braços.
+    \item Cada repetição de flexão é um passo para equilibrar o teu corpo.
+    \item Confia no processo. Os resultados aparecem para quem aparece.
+\end{itemize}
+
+Todos os fortes já foram fracos. Todos os que correm já ofegaram. Todos os que levantam peso já tremeram.
+
+O teu único trabalho hoje é aparecer e tentar. O resto é consequência.
+
+\begin{center}
+\textit{“O melhor momento para começar foi ontem. O segundo melhor é hoje.”}
+\end{center}
+
+\vspace{2cm}
+\begin{center}
+\rule{0.7\textwidth}{0.5pt}
+\small\textcolor{primary}{Versão 2.0 — Melhorada visual e textualmente}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\textit{“A transformação não acontece quando esperas, mas quando decides.”}
+\end{center}
+\vspace*{\fill}
+
+\end{document}

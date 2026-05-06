@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 32" width="1200" height="32" role="img" aria-labelledby="dividerLabel">
+  <title id="dividerLabel">Section Divider</title>
+  <style>
+    :root{--fg:#444;--accent:#6b3e26;}
+    .line{stroke:var(--fg);stroke-width:1.5;opacity:0.9;}
+    .orn{fill:var(--accent);}
+  </style>
+  <line x1="40" y1="16" x2="520" y2="16" class="line"/>
+  <polygon points="600,8 612,16 600,24 588,16" class="orn"/>
+  <line x1="680" y1="16" x2="1160" y2="16" class="line"/>
+</svg>

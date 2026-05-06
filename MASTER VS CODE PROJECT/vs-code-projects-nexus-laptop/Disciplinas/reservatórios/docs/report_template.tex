@@ -1,0 +1,67 @@
+% Report template for Project 1 — Factor Z
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Projecto 1 — Cálculo do Factor de Compressibilidade do Gás Natural (Z)}
+\author{Grupo — Engenharia de Reservatórios I \\\small{Docente: Geraldo Ramos}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Resumo breve do projecto e dos objectivos.
+\end{abstract}
+
+\section{Introdução}
+Contexto e objectivos.
+
+\section{Metodologia}
+Descrição das correlações implementadas:
+\begin{itemize}
+  \item Gás Ideal (Z = 1)
+  \item Hall--Yarborough (Newton--Raphson)
+  \item Dranchuk \\& Abou--Kassem (iteração em densidade reduzida)
+  \item Correções pseudo-críticas: Standing, Sutton
+  \item Correcções de contaminantes: Wichert--Aziz; Carr--Kobayashi--Burrows
+\end{itemize}
+
+\section{Resultados}
+Importe a tabela CSV gerada pelo programa (ex.: `results.csv`) e inclua-a aqui. Exemplo com tabular:
+
+\begin{table}[ht]
+\centering
+\caption{Exemplo de resultados — pressão vs Z}
+\begin{tabular}{r r r}
+\toprule
+Pressão (psia) & Z (Hall--Yarborough) & Z (DAK) \\
+\midrule
+1000 & 0.8723 & 0.8731 \\
+2000 & 0.8902 & 0.8908 \\
+3000 & 0.8510 & 0.8509 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Propriedades do gás}
+Inclua viscosidade (Lee--González--Eakin / Lucas), Bg e Eg, com unidades escolhidas.
+
+\section{Discussão e Conclusões}
+Discussão dos resultados e comparação entre métodos.
+
+\section{Instruções para replicação}
+O código está em `src/`. Para executar a GUI (refatorada):
+\begin{verbatim}
+python -m src.main
+\end{verbatim}
+Gere uma tabela CSV via a função de exportação e inclua-a no relatório.
+
+\end{document}

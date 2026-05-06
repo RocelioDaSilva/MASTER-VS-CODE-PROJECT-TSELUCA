@@ -1,0 +1,306 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,calc}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{fontawesome5} % Para ícones (requer pacote fontawesome5 ou similar)
+
+% Configuração de cabeçalho e rodapé
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Guia de Negócio: Digitalização de Restaurantes}}
+\fancyhead[R]{\small\textit{Kilamba}}
+\fancyfoot[C]{\thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Cores personalizadas
+\definecolor{corprincipal}{RGB}{0,102,204}
+\definecolor{cordestaque}{RGB}{204,102,0}
+\definecolor{corfundo}{RGB}{245,245,245}
+
+% Comando para caixas de dica
+\newtcolorbox{dica}{
+    colback=corfundo,
+    colframe=corprincipal,
+    title=Dica,
+    fonttitle=\bfseries,
+    boxrule=0.5mm,
+    arc=3mm,
+    breakable
+}
+
+% Comando para caixas de alerta
+\newtcolorbox{alerta}{
+    colback=red!5,
+    colframe=red!75!black,
+    title=Atenção,
+    fonttitle=\bfseries,
+    boxrule=0.5mm,
+    arc=3mm,
+    breakable
+}
+
+% Comando para caixas de sucesso
+\newtcolorbox{sucesso}{
+    colback=green!5,
+    colframe=green!75!black,
+    title=Sucesso,
+    fonttitle=\bfseries,
+    boxrule=0.5mm,
+    arc=3mm,
+    breakable
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge\bfseries\color{corprincipal} Guia Completo para o Sucesso}\\[0.3cm]
+    {\Large\bfseries Negócio de Digitalização de Restaurantes em Kilamba}\\[1cm]
+    {\large \textit{Um passo a passo estratégico para capturar o mercado local}}\\[0.5cm]
+    \rule{\textwidth}{0.4pt}\\[0.5cm]
+    {\large \textbf{Data:} \today}\\[0.2cm]
+    {\large \textbf{Versão:} 1.0}\\[0.2cm]
+    \vspace{0.5cm}
+    \includegraphics[width=0.2\textwidth]{example-image} % Substitua por um logo se desejar
+\end{center}
+
+\tableofcontents
+\newpage
+
+\section{Introdução}
+O mercado de restaurantes em Kilamba apresenta uma oportunidade única para serviços de marketing digital e gestão de presença online. Com o crescimento do uso do Google Maps e a procura por comodidade, os estabelecimentos que não possuem um perfil digital bem estruturado perdem clientes diariamente.
+
+Este documento fornece um roteiro detalhado para criar um negócio de sucesso que oferece:
+\begin{itemize}
+    \item Otimização de perfis no Google Maps (Google Business Profile);
+    \item Criação de cardápios digitais atualizáveis via QR Code;
+    \item Gestão de reputação online e análise de tendências com Google Trends;
+    \item Um pacote completo de serviços que aumenta a visibilidade e as vendas dos restaurantes.
+\end{itemize}
+
+Siga cada fase para construir uma base sólida, desde a pesquisa inicial até a venda e implementação.
+
+\section{Fase 1: Pesquisa e Análise de Mercado}
+Antes de abordar qualquer restaurante, é essencial entender o cenário local. Utilize as seguintes etapas:
+
+\subsection{Mapear os Spots Mais Populares}
+\begin{enumerate}
+    \item Acesse o Google Maps e pesquise por “restaurantes em Kilamba”, “melhores spots Kilamba”, “onde comer em Kilamba”.
+    \item Filtre pelos estabelecimentos com maior número de avaliações (acima de 100) e pontuação média superior a 4,0.
+    \item Crie uma lista com os 10–15 mais populares, anotando:
+    \begin{itemize}
+        \item Nome e endereço;
+        \item Se possuem perfil no Google Maps completo (fotos, horários, website);
+        \item Tipo de cozinha (hambúrguer, pizza, comida fancy, etc.);
+        \item Presença em redes sociais e site próprio.
+    \end{itemize}
+    \item \textbf{Objetivo:} Identificar os concorrentes diretos do seu futuro cliente e entender o que já funciona bem.
+\end{enumerate}
+
+\subsection{Analisar Outros Spots na Mesma Área}
+\begin{enumerate}
+    \item Navegue manualmente pelo mapa de Kilamba no Google Maps, zoomando em ruas e bairros.
+    \item Procure restaurantes que tenham poucas avaliações (menos de 50) ou informações incompletas.
+    \item Esses serão seus \textbf{clientes em potencial} — eles estão “invisíveis” digitalmente e carecem de serviços de marketing.
+    \item Registre contatos (telefone, Instagram) para abordagem posterior.
+\end{enumerate}
+
+\subsection{Usar o Google Trends para Validar a Demanda}
+O Google Trends ajuda a provar que as pessoas já estão procurando ativamente por comidas específicas em Kilamba.
+\begin{enumerate}
+    \item Acesse \url{https://trends.google.com}.
+    \item Compare termos como:
+    \begin{itemize}
+        \item “pizza Kilamba”
+        \item “hambúrguer Kilamba”
+        \item “comida fancy Kilamba”
+        \item “restaurante familiar Kilamba”
+    \end{itemize}
+    \item Analise os gráficos de tendência (picos em fins de semana, feriados).
+    \item \textbf{Exemplo de argumento:} “Olha, as pesquisas por ‘pizza Kilamba’ aumentam 80\% aos sábados, mas seu restaurante não aparece nos resultados. Com meu serviço, você estará visível exatamente quando o cliente está procurando.”
+\end{enumerate}
+
+\begin{dica}
+    Capture prints dos gráficos do Trends e monte um pequeno relatório para apresentar aos clientes. Isso demonstra profissionalismo e dados concretos.
+\end{dica}
+
+\section{Fase 2: Ferramentas e Preparação do Pacote de Serviços}
+Agora você definirá os serviços que oferecerá, as ferramentas utilizadas e como estruturar o pacote.
+
+\subsection{Otimização do Google Maps (Google Business Profile)}
+Cada restaurante precisa de um perfil completo e ativo no Google. O serviço inclui:
+\begin{itemize}
+    \item \textbf{Criação/Reivindicação:} Se o estabelecimento não tem perfil, criar; se tem, reivindicar a propriedade.
+    \item \textbf{Informações completas:} Horários, telefone, website, categoria correta.
+    \item \textbf{Fotos profissionais:} Fotografar pratos, ambiente, fachada (ou contratar um fotógrafo).
+    \item \textbf{Atributos:} Marcar opções como “tem estacionamento”, “aceita reservas”, “tem música ao vivo”, etc.
+    \item \textbf{Gestão de avaliações:} Responder a comentários positivos e negativos de forma cordial.
+\end{itemize}
+
+\subsection{Criação do Cardápio Digital}
+A principal inovação que você venderá é o cardápio digital atualizável. Duas abordagens principais:
+
+\subsubsection{Cardápio via QR Code (Sistemas especializados)}
+\begin{itemize}
+    \item \textbf{Ferramentas recomendadas:} OlaClick, QR Menu Maker, MenuQ.
+    \item \textbf{Vantagens:}
+    \begin{itemize}
+        \item O cliente escaneia o código na mesa e vê o cardápio no celular.
+        \item Atualizações em tempo real (preços, disponibilidade).
+        \item Permite incluir fotos de alta qualidade, vídeos e até pedidos online (em versões mais avançadas).
+    \end{itemize}
+    \item \textbf{Custo:} A maioria oferece planos mensais acessíveis (5–20 USD/mês). Você pode repassar esse custo ao cliente como parte do pacote.
+\end{itemize}
+
+\subsubsection{Cardápio no Site ou WordPress}
+\begin{itemize}
+    \item \textbf{Ferramentas:} WordPress com plugins como MenuMax, ou construtores como Wix, Canva (para PDF interativo).
+    \item \textbf{Vantagem:} Cria uma presença institucional mais robusta; pode ser integrado ao Google Maps.
+    \item \textbf{Desvantagem:} Atualizações podem exigir mais tempo se não forem feitas via sistema simplificado.
+\end{itemize}
+
+\begin{sucesso}
+    O case da OlaClick mostra aumento de 25\% nas vendas de restaurantes que adotaram o cardápio digital com QR Code. Utilize esse dado para convencer os clientes.
+\end{sucesso}
+
+\subsection{Design dos QR Codes}
+Não basta gerar o código; é necessário apresentá-lo de forma atraente.
+\begin{itemize}
+    \item Use o \textbf{Canva} ou \textbf{Adobe Express} para criar templates personalizados com o logo do restaurante.
+    \item Ofereça opções de suportes: adesivos para mesas, porta-códigos de acrílico, ou até cardápios físicos reduzidos com o QR Code destacado.
+\end{itemize}
+
+\section{Fase 3: O Discurso de Vendas (O Pitch)}
+Um bom pitch é a diferença entre conquistar ou perder um cliente. Estruture sua conversa em três momentos:
+
+\subsection{Diagnóstico Personalizado}
+\begin{quote}
+    “Bom dia, \[nome do proprietário\]. Passei pelo seu restaurante e notei que, no Google Maps, ele não aparece quando alguém procura por \[tipo de comida\] aqui em Kilamba. Além disso, o cardápio atual parece ser apenas impresso, o que dificulta mudanças rápidas. Estou aqui para apresentar uma solução que resolve esses dois problemas e ainda aumenta as vendas.”
+\end{quote}
+
+\subsection{A Solução (O Pacote Completo)}
+Apresente os três pilares do seu serviço:
+\begin{enumerate}
+    \item \textbf{Visibilidade no Google:} Criação/otimização do perfil, fotos profissionais, gestão de avaliações.
+    \item \textbf{Cardápio Digital:} Sistema com QR Code, atualizável em tempo real, sem custos de impressão.
+    \item \textbf{Acompanhamento:} Relatórios mensais de desempenho (quantas visualizações no Google, cliques no cardápio).
+\end{enumerate}
+
+\subsection{Demonstração de Valor (Por que isso dá dinheiro?)}
+Utilize dados:
+\begin{itemize}
+    \item “Sabia que 77\% dos consumidores consultam o menu online antes de decidir onde comer? Sem presença digital, você perde esses clientes.”
+    \item “Com o cardápio digital, o ticket médio costuma aumentar porque fotos apetitosas incentivam pedidos adicionais.”
+    \item “Restaurantes que respondem a avaliações no Google têm 30\% mais chances de serem escolhidos.”
+\end{itemize}
+
+\begin{dica}
+    Tenha sempre um \textbf{demo} pronto. Use um dispositivo móvel para mostrar como funciona o QR Code: escaneie, abra o cardápio, simule uma atualização de preço em tempo real. Isso gera impacto imediato.
+\end{dica}
+
+\section{Fase 4: Implementação e Manutenção}
+Depois de fechar o contrato, siga este fluxo de trabalho:
+
+\subsection{Criação da Demonstração (Demo) Personalizada}
+\begin{enumerate}
+    \item Selecione um restaurante piloto ou crie um exemplo fictício.
+    \item Configure um cardápio digital básico com alguns pratos.
+    \item Mostre ao cliente o painel de administração: como adicionar um novo prato, alterar preços, desativar itens.
+    \item Entregue uma amostra física do QR Code para que ele possa testar.
+\end{enumerate}
+
+\subsection{Impressão e Instalação dos QR Codes}
+\begin{itemize}
+    \item Utilize papel adesivo resistente ou suportes de acrílico para colocar nas mesas.
+    \item Coloque também um QR Code na entrada (para clientes que passam na rua) e outro no balcão de pedidos (se houver).
+    \item Recomende que o restaurante mantenha um cardápio físico reduzido para os clientes que preferem o tradicional, mas sempre com destaque para o código.
+\end{itemize}
+
+\subsection{Estrutura de Preços}
+Ofereça modelos de assinatura mensal para garantir receita recorrente. Sugestão:
+
+\vspace{0.5cm}
+\begin{center}
+\begin{tabular}{|p{3cm}|p{7cm}|p{4cm}|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Plano}} & \multicolumn{1}{c|}{\textbf{O que inclui}} & \multicolumn{1}{c|}{\textbf{Preço sugerido}} \\
+\hline
+\textbf{Básico} & 
+- Criação/otimização do perfil Google Business Profile \\
+- Cardápio digital com QR Code (até 30 itens) \\
+- 1 atualização de cardápio por mês \\
+- Suporte por e-mail &
+AOA 15.000–25.000/mês \\
+\hline
+\textbf{Premium} & 
+- Tudo do Básico \\
+- Atualizações ilimitadas \\
+- Gestão de avaliações no Google (respostas a todos os comentários) \\
+- Postagens mensais no perfil do Google (promoções) \\
+- Relatório mensal de desempenho &
+AOA 35.000–50.000/mês \\
+\hline
+\textbf{Setup Único} & 
+- Fotografia profissional dos pratos e ambiente \\
+- Design personalizado do QR Code \\
+- Configuração inicial completa (Google + cardápio) &
+AOA 30.000–60.000 (uma vez) \\
+\hline
+\end{tabular}
+\end{center}
+\vspace{0.5cm}
+
+\subsection{Fluxo de Trabalho (Workflow)}
+Abaixo um diagrama visual do processo completo:
+
+\begin{center}
+\begin{tikzpicture}[node distance=1.2cm, auto, font=\small,
+    box/.style={rectangle, draw=corprincipal, thick, fill=corfundo, text width=3.5cm, align=center, minimum height=0.8cm, rounded corners=2mm},
+    arrow/.style={->, >=stealth, thick}]
+    \node[box] (pesquisa) {Pesquisa e Mapeamento};
+    \node[box, below=of pesquisa] (contato) {Abordagem e Pitch};
+    \node[box, below=of contato] (contrato) {Fechamento do Contrato};
+    \node[box, below=of contrato] (setup) {Setup: Google + Cardápio Digital};
+    \node[box, below=of setup] (entrega) {Entrega: QR Codes + Treinamento};
+    \node[box, below=of entrega] (manutencao) {Manutenção Mensal};
+    
+    \draw[arrow] (pesquisa) -- (contato);
+    \draw[arrow] (contato) -- (contrato);
+    \draw[arrow] (contrato) -- (setup);
+    \draw[arrow] (setup) -- (entrega);
+    \draw[arrow] (entrega) -- (manutencao);
+    \draw[arrow] (manutencao.west) -- ++(-1,0) |- (pesquisa.west);
+\end{tikzpicture}
+\end{center}
+
+\section{Conclusão e Próximos Passos}
+Com este guia, você tem em mãos uma metodologia testada para transformar a presença digital de restaurantes em Kilamba. Os próximos passos práticos são:
+\begin{enumerate}
+    \item Realizar a pesquisa de mercado nos próximos 3 dias.
+    \item Criar um portfólio de demonstração (exemplo fictício) com um cardápio digital pronto.
+    \item Definir os preços finais com base na sua região e público-alvo.
+    \item Agendar reuniões com os 10 primeiros potenciais clientes mapeados.
+    \item Começar com um piloto (um cliente que aceite um desconto em troca de um depoimento) e usar esse case para alavancar novos contratos.
+\end{enumerate}
+
+Lembre-se: a chave do sucesso é \textbf{mostrar resultados}. Cada novo cliente deve gerar um aumento mensurável em visualizações, cliques e, consequentemente, vendas. Utilize esses números para refinar seu discurso e crescer de forma escalável.
+
+\begin{center}
+    \rule{0.7\textwidth}{0.4pt}\\
+    \textit{“O melhor marketing não é aquele que gasta mais, mas aquele que está presente quando o cliente decide.”}\\
+    \textbf{Boa sorte e bons negócios!}
+\end{center}
+
+\end{document}

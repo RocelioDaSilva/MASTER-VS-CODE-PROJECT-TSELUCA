@@ -1,0 +1,184 @@
+% slide_template_beamer.tex - Stylish Beamer slide template
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+
+% Define professional color palette
+\definecolor{spe-teal}{RGB}{0,102,102}
+\definecolor{spe-accent}{RGB}{255,102,0}
+\definecolor{spe-light}{RGB}{230,245,245}
+\definecolor{spe-dark}{RGB}{20,40,60}
+
+% Override theme colors
+\setbeamercolor{structure}{fg=spe-teal}
+\setbeamercolor{title}{fg=white, bg=spe-teal}
+\setbeamercolor{frametitle}{fg=white, bg=spe-teal}
+\setbeamercolor{itemize item}{fg=spe-accent}
+\setbeamercolor{block title}{fg=white,bg=spe-teal}
+\setbeamercolor{block body}{bg=spe-light}
+
+% Font adjustments
+\usefonttheme{professionalfonts}
+\setbeamerfont{title}{size=\Large, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+
+\title[SPE ISPTEC]{SPE ISPTEC Student Chapter}
+\subtitle{Transforme sua Carreira — Oportunidades e Benefícios}
+\author{SPE ISPTEC Student Chapter}
+\date{\today}
+\institute{ISPTEC — Instituto Superior Politécnico de Tecnologia e Ciências}
+
+\begin{document}
+
+% Title frame with enhanced design
+{
+\setbeamertemplate{footline}{}
+\begin{frame}[plain]
+  \titlepage
+  \vspace{-2cm}
+  \begin{center}
+    {\small\color{spe-accent}\textit{Participa · Aprende · Cresce · Prospera}}
+  \end{center}
+\end{frame}
+}
+
+% Overview frame
+\begin{frame}{O que vais aprender hoje?}
+  \begin{enumerate}
+    \item[\color{spe-accent}\textbf{1}] Quem somos e por que a SPE importa
+    \item[\color{spe-accent}\textbf{2}] Benefícios concretos de participar
+    \item[\color{spe-accent}\textbf{3}] Como aderir em 3 passos simples
+    \item[\color{spe-accent}\textbf{4}] Próximos eventos e oportunidades
+  \end{enumerate}
+  
+  \vspace{1em}
+  
+  {\centering\color{spe-teal}\textbf{A SPE conecta, capacita e transforma carreiras.}}
+\end{frame}
+
+% About SPE frame
+\begin{frame}{Quem somos — Society of Petroleum Engineers}
+  \begin{block}{Fundada em 1913 — Presença global em 140+ países}
+    A SPE é a maior associação profissional dedicada ao avanço da tecnologia de engenharia de petróleo e gás.
+  \end{block}
+  
+  \vspace{0.8cm}
+  
+  \begin{itemize}[<+->]
+    \item[\color{spe-accent}✓] Mais de 150.000 membros profissionais
+    \item[\color{spe-accent}✓] Comunidade forte de estudantes (Student Chapters)
+    \item[\color{spe-accent}✓] Recursos técnicos de classe mundial (OnePetro)
+    \item[\color{spe-accent}✓] Redes de networking e mentoria
+  \end{itemize}
+\end{frame}
+
+% Benefits frame 1
+\begin{frame}{Benefícios — Por que aderir?}
+  
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{block}{Profissional}
+      \begin{itemize}
+        \item Networking com especialistas
+        \item Acesso a recursos técnicos
+        \item Desenvolvimento contínuo
+      \end{itemize}
+    \end{block}
+    
+    \column{0.5\textwidth}
+    \begin{block}{Pessoal}
+      \begin{itemize}
+        \item Oportunidades de liderança
+        \item Competições e desafios
+        \item Comunidade de apoio
+      \end{itemize}
+    \end{block}
+  \end{columns}
+  
+  \vspace{1em}
+  
+  {\centering\textbf{\color{spe-accent}Investimento baixo, retorno alto: aumenta empregabilidade e visibilidade.}}
+\end{frame}
+
+% Benefits frame 2 — detailed
+\begin{frame}{Oportunidades Concretas}
+  
+  \begin{enumerate}[<+->]
+    \item[\color{spe-accent}\textbf{🤝}] \textbf{Networking:} contacta profissionais, ex-alunos, potenciais empregadores
+    \item[\color{spe-accent}\textbf{💼}] \textbf{Carreira:} acesso a ofertas de trabalho e estágios exclusivos
+    \item[\color{spe-accent}\textbf{📚}] \textbf{Conhecimento:} base de dados OnePetro com 140.000+ artigos técnicos
+    \item[\color{spe-accent}\textbf{🏆}] \textbf{Competições:} PetroBowl, PetroGames (formação + prêmios)
+    \item[\color{spe-accent}\textbf{💰}] \textbf{Bolsas:} Student Chapter Grants para atividades e eventos
+    \item[\color{spe-accent}\textbf{⭐}] \textbf{Credibilidade:} reconhecimento global de uma marca respeitada
+  \end{enumerate}
+\end{frame}
+
+% How to join frame
+\begin{frame}{Como Aderir — 3 Passos Simples}
+  
+  \begin{enumerate}
+    \item[\color{spe-accent}\textbf{Passo 1}] Visita \url{https://www.spe.org/join/}
+    
+    \vspace{0.5em}
+    
+    \item[\color{spe-accent}\textbf{Passo 2}] Cria conta com email institucional
+    
+    \vspace{0.5em}
+    
+    \item[\color{spe-accent}\textbf{Passo 3}] Seleciona categoria \texttt{Student} + confirma filiação ISPTEC
+  \end{enumerate}
+  
+  \vspace{1.5em}
+  
+  \begin{center}
+    \fbox{\textbf{\color{spe-accent}Inscrições abertas — processa em menos de 5 minutos}}
+  \end{center}
+\end{frame}
+
+% Events frame
+\begin{frame}{Próximos Eventos — Junte-se a Nós}
+  
+  \begin{tabular}{lll}
+    \color{spe-accent}\textbf{Quando} & \color{spe-accent}\textbf{O quê} & \color{spe-accent}\textbf{Onde} \\
+    \hline
+    [Data] & Palestra com Profissional & Auditório \\
+    [Data] & Workshop CV \& Entrevistas & Sala de Aula \\
+    [Data] & PetroBowl (Treino) & Online/Presencial \\
+    [Data] & Visita Técnica & Refinaria/Empresa \\
+  \end{tabular}
+  
+  \vspace{1.5em}
+  
+  {\centering\textbf{\color{spe-teal}Inscreve-te nos próximos eventos e começa hoje!}}
+\end{frame}
+
+% Call to action frame
+\begin{frame}[plain]
+  \centering
+  
+  \vspace{2cm}
+  
+  {\Huge\bfseries\color{spe-teal}Junte-se à Comunidade SPE}
+  
+  \vspace{1cm}
+  
+  {\Large\color{spe-dark}Transforme sua carreira académica em oportunidades concretas}
+  
+  \vspace{1.5cm}
+  
+  {\Large\color{spe-accent}\url{https://www.spe.org/join/}}
+  
+  \vspace{1.5cm}
+  
+  {\normalsize\color{spe-dark}SPE ISPTEC Student Chapter\\[0.3cm]
+  \textit{Participa · Aprende · Cresce · Prospera}}
+  
+  \vspace{2cm}
+\end{frame}
+
+\end{document}

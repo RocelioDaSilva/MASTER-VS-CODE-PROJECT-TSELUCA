@@ -1,0 +1,54 @@
+# SYNCTHING DEVICE CONFIGURATION
+## Quick Reference - Device IDs & Pairing Instructions
+
+### Desktop Device (NEXUS)
+```
+Device ID: XVMNNZF-KDKG77E-AANW7M7-NXGJLW6-BGJN7BU-2SRELTE-3TEERVU-MDLZJAG
+Location: C:\Users\PCGAME\AppData\Roaming\Syncthing\syncthing.exe
+Web UI: http://127.0.0.1:8384
+Status: ✅ Running
+Uptime: 1+ minutes
+Version: v2.1.0-rc.1
+```
+
+### Quick Add Device (For each Laptop)
+1. On laptop: Start Syncthing → http://127.0.0.1:8384
+2. Note laptop Device ID from Devices → This Device → Identification
+3. On NEXUS: Devices → Add Remote Device → Paste laptop ID
+4. On laptop: Accept connection from NEXUS
+5. Create/add folder share on both devices
+6. Test sync with a small file
+
+### Device IDs to Add
+```
+Laptop #1 ID: [GET THIS FROM DEVICE]
+Laptop #2 ID: [GET THIS FROM DEVICE]
+```
+
+### Essential Ignore Patterns
+```
+.git/
+.venv/
+venv/
+node_modules/
+repo_admin/reorg_archives/
+.vscode/
+__pycache__/
+*.pyc
+```
+
+### Folder Share Configuration
+- **Path:** Your workspace root directory
+- **Label:** MIT-SCIENCE-PAPER or similar
+- **Devices:** All computers in sync
+- **Ignore Patterns:** Paste from .stignore.example
+
+### Canonical Backup Command
+After sync is complete, ensure all changes are backed to GitHub:
+```bash
+git add .
+git commit -m "sync backup $(date)"
+git push origin main
+```
+
+**See SYNCTHING_SETUP_GUIDE.md for full instructions.**

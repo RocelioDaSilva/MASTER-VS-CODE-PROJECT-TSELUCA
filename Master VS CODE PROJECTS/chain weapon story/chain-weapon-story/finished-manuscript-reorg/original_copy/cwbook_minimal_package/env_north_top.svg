@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="n1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6f0f5"/>
+      <stop offset="1" stop-color="#c0d7e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="url(#n1)"/>
+  <g fill="#506b7a" opacity="0.95">
+    <polygon points="0,110 80,40 160,78 240,34 320,86 400,24 480,90 560,20 640,74 720,30 800,92 880,40 960,84 1040,28 1120,76 1200,32"/>
+  </g>
+  <text x="1188" y="112" font-family="serif" font-size="10" fill="#547a8e" text-anchor="end" opacity="0.85">NORTHERN WASTES · DUSK</text>
+</svg>

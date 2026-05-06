@@ -1,0 +1,1618 @@
+\documentclass[12pt, a4paper]{report}
+
+% ─── Packages ────────────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% microtype omitted for compatibility
+\usepackage[margin=2.2cm, top=2.8cm, bottom=2.8cm, left=2.4cm, right=2.4cm]{geometry}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\setlength{\headheight}{32pt}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,shadows,calc,fadings,decorations.pathmorphing}
+\usepackage{pifont}
+\usepackage{caption}
+\usepackage{ragged2e}
+
+% Icon substitutions
+\newcommand{\faLightbulb}{\ding{72}}
+\newcommand{\faExclamationTriangle}{\ding{52}}
+\newcommand{\faFistRaised}{\ding{108}}
+\newcommand{\faShield}{\ding{110}}
+\newcommand{\faStar}{\ding{72}}
+\newcommand{\faArrowUp}{$\uparrow$}
+\newcommand{\faArrowDown}{$\downarrow$}
+\newcommand{\faBookOpen}{\ding{70}}
+\newcommand{\faDatabase}{\ding{118}}
+\newcommand{\faRandom}{\ding{229}}
+\newcommand{\faUsers}{\ding{171}}
+\newcommand{\faQuoteLeft}{\ding{125}}
+\newcommand{\faQuoteRight}{\ding{126}}
+\newcommand{\faBook}{\ding{118}}
+\newcommand{\faBolt}{\ding{72}}
+\newcommand{\faWrench}{\ding{81}}
+\usepackage{setspace}
+\setstretch{1.08}
+
+% ─── Colour Palette ──────────────────────────────────────────────────────────
+% Dual palette: Cyan (Zoner) and Magenta (Rushdown)
+\definecolor{ahriCyan}{HTML}{00D4F0}
+\definecolor{ahriBlue}{HTML}{0088EE}
+\definecolor{ahriPink}{HTML}{FF69B4}
+\definecolor{ahriMagenta}{HTML}{EE44FF}
+\definecolor{ahriDark}{HTML}{080D24}
+\definecolor{ahriMidDark}{HTML}{0D1735}
+\definecolor{ahriAccent}{HTML}{70CCFF}
+\definecolor{ahriGold}{HTML}{FFD060}
+\definecolor{ahriRed}{HTML}{FF6688}
+\definecolor{ahriGreen}{HTML}{3FFFAA}
+\definecolor{ahriGray}{HTML}{AABFD8}
+\definecolor{ahriLightGray}{HTML}{CDD8EC}
+\definecolor{sectionbg}{HTML}{0B1838}
+\definecolor{tablehead}{HTML}{0D2050}
+\definecolor{tablerow}{HTML}{090F2A}
+\definecolor{tablerowalt}{HTML}{0F1940}
+\definecolor{tipbg}{HTML}{071C48}
+\definecolor{warnbg}{HTML}{280E0E}
+\definecolor{patchbg}{HTML}{181005}
+\definecolor{chapterbg}{HTML}{091530}
+\definecolor{buffbg}{HTML}{061508}
+\definecolor{nerfbg}{HTML}{180606}
+\definecolor{ahriDeepBlue}{HTML}{04091E}
+\definecolor{ahriCyanDim}{HTML}{00BBDD}
+\definecolor{ahriGoldDim}{HTML}{B88030}
+
+\pagecolor{ahriDark}
+\color{ahriLightGray}
+
+% ─── Header / Footer ─────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{%
+  \begin{tikzpicture}[baseline=-4pt]
+    \node[
+      fill=ahriCyan!15,
+      draw=ahriCyan!50,
+      line width=0.5pt,
+      rounded corners=3pt,
+      inner sep=4pt
+    ]{%
+      \textcolor{ahriCyan}{\small\bfseries\sffamily AHRI \textcolor{ahriCyanDim}{$\mid$} THE SPIRIT FOX}%
+    };
+  \end{tikzpicture}%
+}
+\fancyhead[R]{%
+  \textcolor{ahriGray}{\scriptsize\sffamily
+    2XKO Master Guide
+    \textcolor{ahriCyan!80}{\textbullet}\;
+    Zoner \textcolor{ahriCyan!70}{+} Rushdown
+    \textcolor{ahriCyan!80}{\textbullet}\;
+    \textcolor{ahriGold}{v1.1.3}
+  }%
+}
+\fancyfoot[C]{%
+  \textcolor{ahriBlue!50}{\rule{4cm}{0.3pt}}\;%
+  \textcolor{ahriGray}{\small\thepage}%
+  \;\textcolor{ahriBlue!50}{\rule{4cm}{0.3pt}}%
+}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{ahriCyan!70}\leaders\hrule height\headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{ahriBlue!30}\leaders\hrule height\footrulewidth\hfill}}
+
+% ─── Section Formatting ──────────────────────────────────────────────────────
+\titleformat{\chapter}[display]
+  {\normalfont}
+  {}
+  {0pt}
+  {%
+    \begin{tcolorbox}[
+      colback=chapterbg,
+      colframe=ahriCyan!70,
+      arc=6pt,
+      boxrule=1.5pt,
+      left=22pt, right=22pt, top=16pt, bottom=16pt,
+      enhanced,
+      overlay={%
+        \fill[ahriCyan, opacity=0.08] (frame.north west) rectangle (frame.south east);
+        \fill[ahriCyan] (frame.north west) rectangle +(\linewidth+3pt, 3pt);
+        \node[anchor=north east, text=ahriCyan!30, font=\fontsize{56}{56}\selectfont, opacity=0.12]
+          at ([xshift=-4pt,yshift=4pt]frame.north east) {\faBookOpen};
+      }
+    ]
+    {\footnotesize\bfseries\sffamily\color{ahriCyan!70}\MakeUppercase{Chapter \thechapter}}\\[4pt]\huge\bfseries\sffamily\color{ahriCyan}\MakeUppercase
+  }
+  [%
+    \end{tcolorbox}%
+    \vspace{-4pt}%
+    \textcolor{ahriBlue!50}{\rule{\linewidth}{1pt}}%
+    \vspace{4pt}%
+  ]
+
+\titlespacing*{\chapter}{0pt}{0pt}{16pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\sffamily\color{ahriAccent}}
+  {%
+    \begin{tikzpicture}[baseline=-2pt]
+      \fill[ahriCyan] (0,0) rectangle (3pt, 12pt);
+      \fill[ahriBlue!60] (4pt,0) rectangle (6pt, 12pt);
+    \end{tikzpicture}\;%
+    \textcolor{ahriCyan}{\thesection}%
+  }{0.6em}{}
+  [\vspace{-6pt}\textcolor{ahriCyan!70}{\rule{\linewidth}{0.6pt}}\vspace{2pt}]
+
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\sffamily\color{ahriGold}}
+  {\textcolor{ahriGold!70}{\thesubsection}}{0.8em}{}
+  [\vspace{-4pt}\textcolor{ahriGold!50}{\rule{\linewidth}{0.5pt}}\vspace{2pt}]
+
+\titlespacing*{\subsection}{0pt}{14pt}{6pt}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\sffamily\color{ahriGray}}
+  {\textcolor{ahriGray!70}{\thesubsubsection}}{0.8em}{}
+
+\titlespacing*{\subsubsection}{0pt}{10pt}{4pt}
+
+% ─── tcolorbox Styles ────────────────────────────────────────────────────────
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{tipbox}[1][]{
+  colback=tipbg,
+  colframe=ahriCyan!80,
+  coltitle=white,
+  colbacktitle=ahriCyan!55!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faLightbulb\enspace TIP},
+  #1, breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriCyan!55!black},
+}
+
+\newtcolorbox{warnbox}[1][]{
+  colback=warnbg,
+  colframe=ahriRed!80,
+  coltitle=white,
+  colbacktitle=ahriRed!55!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faExclamationTriangle\enspace WARNING},
+  #1, breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriRed!55!black},
+}
+
+\newtcolorbox{combobox}[2][]{
+  colback=sectionbg,
+  colframe=ahriAccent!70,
+  coltitle=white,
+  colbacktitle=ahriBlue!55!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faFistRaised\enspace #2},
+  #1, breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriBlue!55!black},
+}
+
+\newtcolorbox{matchupbox}[2][]{
+  colback=tablerow,
+  colframe=ahriGold!70,
+  coltitle=white,
+  colbacktitle=ahriGold!45!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faShield\enspace #2},
+  #1, breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriGold!45!black},
+}
+
+\newtcolorbox{zonerinfobox}[1][]{
+  colback=ahriDeepBlue,
+  colframe=ahriCyan!70,
+  coltitle=white,
+  colbacktitle=ahriCyan!55!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faBookOpen\enspace ZONER VARIANT},
+  #1, breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriCyan!55!black},
+}
+
+\newtcolorbox{rushdowninfobox}[1][]{
+  colback=ahriDeepBlue,
+  colframe=ahriMagenta!70,
+  coltitle=white,
+  colbacktitle=ahriMagenta!50!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faFistRaised\enspace RUSHDOWN VARIANT},
+  #1, breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriMagenta!50!black},
+}
+
+\newtcolorbox{nerfbox}{
+  colback=nerfbg,
+  colframe=ahriRed!60,
+  coltitle=white,
+  colbacktitle=ahriRed!55!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faArrowDown\enspace NERFS --- v1.1.3},
+  breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriRed!55!black},
+}
+
+\newtcolorbox{buffbox}{
+  colback=buffbg,
+  colframe=ahriGreen!60,
+  coltitle=white,
+  colbacktitle=ahriGreen!50!black,
+  fonttitle=\bfseries\small\sffamily,
+  title={\faArrowUp\enspace BUFFS --- v1.1.3},
+  breakable, enhanced,
+  arc=5pt,
+  boxrule=1pt,
+  left=10pt, right=10pt, top=2pt, bottom=8pt,
+  attach boxed title to top left={yshift=-2.5mm, xshift=5mm},
+  boxed title style={arc=3pt, boxrule=0pt, colframe=ahriGreen!50!black},
+}
+
+% ─── Button & Notation Commands ──────────────────────────────────────────────
+\newcommand{\btn}[2]{%
+  \tikz[baseline=(char.base)]{%
+    \node[
+      draw=#1,
+      line width=1pt,
+      fill=tablerow,
+      inner sep=4pt,
+      text=#1,
+      font=\bfseries\small\sffamily,
+      rounded corners=3pt,
+      minimum height=16pt
+    ] (char) {#2};%
+  }\hspace{0.05em}%
+}
+
+\newcommand{\btnL}{\btn{ahriGray}{L}}
+\newcommand{\btnM}{\btn{ahriGray}{M}}
+\newcommand{\btnH}{\btn{ahriGray}{H}}
+\newcommand{\btnS}[1]{\btn{ahriAccent}{S#1}}
+\newcommand{\btnT}{\btn{ahriGold}{T}}
+
+\newcommand{\dirDown}{\btn{ahriGray!70}{$\downarrow$}}
+\newcommand{\dirForward}{\btn{ahriGray!70}{$\rightarrow$}}
+\newcommand{\dirBack}{\btn{ahriGray!70}{$\leftarrow$}}
+\newcommand{\dirUp}{\btn{ahriGray!70}{$\uparrow$}}
+\newcommand{\dirDF}{\btn{ahriGray!70}{$\searrow$}}
+
+\newcommand{\plus}{\textbf{\textcolor{ahriGold}{+}}\hspace{0.1em}}
+\newcommand{\arrow}{\textbf{\textcolor{ahriGold}{$\triangleright$}}\hspace{0.1em}}
+
+% ─── Text Style Commands ─────────────────────────────────────────────────────
+\newcommand{\notation}[1]{{\small\texttt{\textcolor{ahriCyan}{#1}}}}
+\newcommand{\movename}[1]{\textbf{\textcolor{ahriGold}{#1}}}
+\newcommand{\advantage}[1]{\textcolor{ahriGreen}{\textbf{#1}}}
+\newcommand{\disadvantage}[1]{\textcolor{ahriRed}{\textbf{#1}}}
+\newcommand{\champ}[1]{\textcolor{ahriAccent}{\textbf{#1}}}
+\newcommand{\patchbuff}[1]{\textcolor{ahriGreen}{\textbf{\faArrowUp\;#1}}}
+\newcommand{\patchnerf}[1]{\textcolor{ahriRed}{\textbf{\faArrowDown\;#1}}}
+\newcommand{\NEW}{{\footnotesize\bfseries\textcolor{ahriCyan}{[NEW]}}\;}
+\newcommand{\zoner}{\textcolor{ahriCyan}{\bfseries\sffamily{\small $\blacktriangleright$} ZONER:}\;}
+\newcommand{\rushdown}{\textcolor{ahriMagenta}{\bfseries\sffamily{\small $\blacktriangleright$} RUSHDOWN:}\;}
+
+% ─── Table Column Types ───────────────────────────────────────────────────────
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
+
+% Global table row padding
+\setlength{\extrarowheight}{4pt}
+\renewcommand{\arraystretch}{1.22}
+
+% Global list spacing
+\setlist[itemize]{itemsep=3pt,topsep=4pt,parsep=0pt}
+\setlist[enumerate]{itemsep=3pt,topsep=4pt,parsep=0pt}
+
+% ─── Decorative Separator ────────────────────────────────────────────────────
+\newcommand{\sectionrule}{%
+  \vspace{6pt}%
+  \begin{center}
+    \textcolor{ahriBlue!40}{\rule{3cm}{0.3pt}}%
+    \;\textcolor{ahriCyan}{\small$\diamond$}\;%
+    \textcolor{ahriCyan}{\faStar}%
+    \;\textcolor{ahriCyan}{\small$\diamond$}\;%
+    \textcolor{ahriBlue!40}{\rule{3cm}{0.3pt}}%
+  \end{center}%
+  \vspace{4pt}%
+}
+
+% ─── Table of Contents Styling ───────────────────────────────────────────────
+\contentsmargin{0pt}
+\titlecontents{chapter}[0pt]
+  {\vspace{6pt}\bfseries\sffamily\color{ahriAccent}}
+  {\textcolor{ahriCyan}{\thecontentslabel}\enspace}
+  {}
+  {\hfill\textcolor{ahriCyan}{\thecontentspage}}
+  [\vspace{2pt}\textcolor{ahriBlue!50}{\rule{\linewidth}{0.4pt}}\vspace{2pt}]
+
+\titlecontents{section}[1.5em]
+  {\small\sffamily\color{ahriLightGray}}
+  {\textcolor{ahriGray}{\thecontentslabel}\enspace}
+  {}
+  {\titlerule*[0.4pc]{\textcolor{ahriBlue!60}{.}}\textcolor{ahriGray}{\thecontentspage}}
+
+\titlecontents{subsection}[3em]
+  {\small\sffamily\color{ahriGray!80}}
+  {\textcolor{ahriGray!60}{\thecontentslabel}\enspace}
+  {}
+  {\titlerule*[0.4pc]{\textcolor{ahriBlue!50}{.}}\textcolor{ahriGray}{\thecontentspage}}
+
+% ─── Hyperref ─────────────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  linkcolor=ahriCyan,
+  urlcolor=ahriAccent,
+  citecolor=ahriGold,
+  pdftitle={Ahri: The Spirit Fox -- Complete 2XKO Master Guide (Both Variants) v1.1.3},
+  pdfauthor={2XKO Community},
+  pdfsubject={Fighting Game Guide},
+  pdfkeywords={Ahri, 2XKO, League of Legends, Fighting Game, Zoner, Rushdown},
+  bookmarksnumbered=true,
+  bookmarksopen=true,
+}
+
+% ─── Graphics Path ────────────────────────────────────────────────────────────
+\graphicspath{{./images/}{./images/notation/}{./images/moves/}{./images/combos/}}
+\captionsetup{labelsep=colon,font=small,labelfont={color=ahriCyan,bf}}
+
+% Placeholder for missing images
+\newcommand{\imagePlaceholder}[1]{%
+  \begin{tcolorbox}[
+    colback=ahriMidDark, colframe=ahriGray!70,
+    arc=4pt, boxrule=0.6pt,
+    left=4pt, right=4pt, top=4pt, bottom=4pt,
+    width=0.95\linewidth
+  ]
+    \centering
+    \textcolor{ahriGray!60}{\small\itshape [Image: #1]}%
+  \end{tcolorbox}%
+}
+
+% ═════════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ═════════════════════════════════════════════════════════════════════════════
+
+% ─── TITLE PAGE ──────────────────────────────────────────────────────────────
+\begin{titlepage}
+  \centering
+  \thispagestyle{empty}
+
+  % Top gradient bar (TikZ)
+  \begin{tikzpicture}[remember picture, overlay]
+    % Top bar
+    \fill[ahriCyan] (current page.north west)
+      rectangle ([yshift=-5pt]current page.north east);
+    \fill[ahriBlue!80] ([yshift=-5pt]current page.north west)
+      rectangle ([yshift=-10pt]current page.north east);
+    \fill[ahriBlue!30] ([yshift=-10pt]current page.north west)
+      rectangle ([yshift=-14pt]current page.north east);
+    % Bottom bar
+    \fill[ahriCyan] (current page.south west)
+      rectangle ([yshift=5pt]current page.south east);
+    \fill[ahriBlue!80] ([yshift=5pt]current page.south west)
+      rectangle ([yshift=10pt]current page.south east);
+    % Subtle side accents
+    \fill[ahriCyan!20, opacity=0.3]
+      (current page.north west) rectangle ([xshift=6pt]current page.south west);
+    \fill[ahriCyan!20, opacity=0.3]
+      (current page.north east) rectangle ([xshift=-6pt]current page.south east);
+  \end{tikzpicture}
+
+  \vspace{2.2cm}
+
+  % ── Game tag / subtitle badge ──
+  \begin{tikzpicture}
+    \node[
+      fill=ahriMidDark, draw=ahriBlue!60,
+      rounded corners=4pt, line width=1pt,
+      inner sep=6pt
+    ]{%
+      \textcolor{ahriGray}{\footnotesize\sffamily\bfseries
+        2XKO \textcolor{ahriBlue!60}{$\mid$}
+        SEASON 1 \textcolor{ahriBlue!60}{$\mid$}
+        PATCH v1.1.3 \textcolor{ahriBlue!60}{$\mid$}
+        MARCH 2026
+      }%
+    };
+  \end{tikzpicture}
+
+  \vspace{1.4em}
+
+  % ── Main champion name block ──
+  \begin{tcolorbox}[
+    colback=chapterbg,
+    colframe=ahriCyan,
+    arc=8pt,
+    boxrule=2pt,
+    left=36pt, right=36pt, top=22pt, bottom=22pt,
+    enhanced,
+    width=0.88\linewidth,
+    overlay={%
+      \fill[ahriCyan, opacity=0.06]
+        (frame.north west) rectangle (frame.south east);
+      \fill[ahriCyan]
+        (frame.north west) rectangle ([yshift=-3pt]frame.north east);
+      \fill[ahriCyan]
+        ([yshift=3pt]frame.south west) rectangle (frame.south east);
+    }
+  ]
+    \centering
+    {\fontsize{52}{52}\selectfont\bfseries\sffamily\textcolor{ahriCyan}{AHRI}}%
+    \\[0.4em]
+    {\Large\bfseries\sffamily\textcolor{white}{THE SPIRIT FOX}}
+  \end{tcolorbox}
+
+  \vspace{1.2em}
+
+  % ── Archetype badges ──
+  \begin{tikzpicture}
+    \node[
+      fill=ahriCyan!15, draw=ahriCyan!60,
+      rounded corners=3pt, line width=0.8pt,
+      inner sep=5pt
+    ](z){%
+      \textcolor{ahriCyan}{\small\sffamily\bfseries ZONER}%
+    };
+    \node[anchor=west, xshift=10pt] at (z.east) (r) {%
+      \begin{tikzpicture}
+        \node[fill=ahriMidDark, draw=ahriGray!30, rounded corners=3pt, line width=0.6pt, inner sep=5pt]{%
+          \textcolor{ahriGray}{\small\sffamily Region: \textbf{Ionia}}%
+        };
+      \end{tikzpicture}%
+    };
+  \end{tikzpicture}
+  \quad
+  \begin{tikzpicture}
+    \node[
+      fill=ahriMagenta!12, draw=ahriMagenta!60,
+      rounded corners=3pt, line width=0.8pt,
+      inner sep=5pt
+    ]{%
+      \textcolor{ahriMagenta}{\small\sffamily\bfseries RUSHDOWN}%
+    };
+  \end{tikzpicture}
+
+  \vspace{1.8em}
+
+  {\Huge\bfseries\sffamily\textcolor{white}{MASTER GUIDE}}
+
+  \vspace{0.5em}
+
+  % ── Feature tags ──
+  \begin{tikzpicture}
+    \node[
+      fill=ahriMidDark, draw=ahriBlue!50,
+      rounded corners=4pt, line width=0.8pt,
+      inner sep=8pt
+    ]{%
+      \textcolor{ahriLightGray}{\small\sffamily
+        Frame Data
+        \textcolor{ahriCyan!50}{$\cdot$}
+        Combos
+        \textcolor{ahriCyan!50}{$\cdot$}
+        Both Playstyles
+        \textcolor{ahriCyan!50}{$\cdot$}
+        Matchups
+        \textcolor{ahriCyan!50}{$\cdot$}
+        Team Synergies
+      }%
+    };
+  \end{tikzpicture}
+
+  \vspace{2em}
+  \textcolor{ahriBlue!50}{\rule{0.72\linewidth}{0.8pt}}
+  \vspace{1.8em}
+
+  % ── Sources box ──
+  \begin{tcolorbox}[
+    colback=patchbg,
+    colframe=ahriGold!50,
+    arc=4pt,
+    boxrule=0.8pt,
+    left=18pt, right=18pt, top=7pt, bottom=7pt,
+    width=0.78\linewidth,
+    center
+  ]
+    \centering
+    \small\sffamily\textcolor{ahriLightGray}{%
+      Sources: Mobalytics.gg $\cdot$ Games.gg $\cdot$ 2xko.wiki\\[2pt]
+      \textcolor{ahriGold}{Season 1, Version 1.1.3 --- March 2026}\\[2pt]
+      \textit{Combined Zoner \& Rushdown Comprehensive Guides}%
+    }
+  \end{tcolorbox}
+
+  \vfill
+
+  % ── Quote ──
+  {\small%
+   \textcolor{ahriBlue!60}{\faQuoteLeft}\;%
+   \textcolor{ahriAccent}{\textit{``It's more than magic{\ldots} it's my soul.''}}%
+   \;\textcolor{ahriGray}{\small --- Ahri}%
+   \;\textcolor{ahriBlue!60}{\faQuoteRight}%
+  }
+
+  \vspace{1.5cm}
+
+\end{titlepage}
+
+% ─── TABLE OF CONTENTS ───────────────────────────────────────────────────────
+{
+  \hypersetup{linkcolor=ahriAccent}
+  \setlength{\parskip}{0pt}
+  \tableofcontents
+}
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{How to Use This Master Guide}
+% ═════════════════════════════════════════════════════════════════════════════
+
+This guide contains \textbf{two complete interpretations of Ahri} in 2XKO:
+
+\vspace{4pt}
+
+\begin{zonerinfobox}
+\textbf{The Zoner Variant} emphasizes screen control through projectile management. Orb placement, wall bounces, and spacing discipline define this playstyle. Best for players who enjoy positioning, reads, and setting traps.
+\end{zonerinfobox}
+
+\vspace{6pt}
+
+\begin{rushdowninfobox}
+\textbf{The Rushdown Variant} emphasizes aggressive pressure through air mobility and rekka chains. Air dash mixups, oki setups, and corner carries define this playstyle. Best for players who enjoy momentum, mixups, and execution.
+\end{rushdowninfobox}
+
+\section{Reading This Guide}
+
+Core content (Move Lists, Frame Data, Mechanics, Neutral Game, Mixups) is shared between both variants. When playstyle-specific information appears, it's marked with:
+
+\begin{itemize}
+  \item \zoner Details specific to the zoning playstyle
+  \item \rushdown Details specific to the rushdown playstyle
+\end{itemize}
+
+Choose the variant that resonates with your playstyle, or learn both for maximum flexibility.
+
+\section{Guide Structure}
+
+This guide is organized into the following chapters, each building on the previous:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{0.6cm} L{4.2cm} L{8.8cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{\#}} & \textcolor{ahriCyan}{\textbf{Chapter}} & \textcolor{ahriCyan}{\textbf{Contents}} \\
+\rowcolor{tablerow}1 & How to Use & Guide conventions, playstyle overview \\
+\rowcolor{tablerowalt}2 & Champion Overview & Who is Ahri, stats, strengths \& weaknesses \\
+\rowcolor{tablerow}3 & Move List Reference & All normals, specials, supers, assists with notation \\
+\rowcolor{tablerowalt}4 & Frame Data & Startup, on-hit, on-block values; practical applications \\
+\rowcolor{tablerow}5 & Unique Mechanics & Air dash, Spirit Rush, Foxfire rekka, Bounce!, oki dart \\
+\rowcolor{tablerowalt}6 & Neutral Game & Buttons, anti-air, air-to-air, pillar strategies \\
+\rowcolor{tablerow}7 & Mixup System & Strike-throw, overhead, crossup, wakeup oki \\
+\rowcolor{tablerowalt}8 & Combo Guide & Beginner through advanced routes with notes \\
+\rowcolor{tablerow}9 & Matchup Strategies & vs.\ Rushdown, Zoner, Grappler, Balanced \\
+\rowcolor{tablerowalt}10 & Team Compositions & Partner synergies, assist usage \\
+\rowcolor{tablerow}11 & Advanced Concepts & Air mobility mastery, patch notes, common mistakes \\
+\end{tabularx}
+\end{center}
+
+\section{Skill Level Recommendations}
+
+\begin{tipbox}[title={\faLightbulb\enspace WHERE TO START}]
+\begin{itemize}[itemsep=3pt]
+  \item \textbf{New to Ahri:} Read Chapters 2--3, then jump to Chapter 8 (Beginner Combos). Return to mechanics as needed.
+  \item \textbf{Intermediate:} Focus on Chapters 5--7 for mechanics depth and mixup trees.
+  \item \textbf{Advanced:} Chapters 8--11 cover high-level routing, matchup reads, and optimization.
+\end{itemize}
+\end{tipbox}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Champion Overview}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Who is Ahri?}
+
+Ahri is the Spirit Fox of Ionia---a celestial enchantress who uses mystical orbs and supernatural charm to manipulate the battlefield. In 2XKO, Ahri occupies a unique position: she can be played as either a \textbf{Zoner} or \textbf{Rushdown} character depending on gameplan and team composition.
+
+Her kit rewards creative, strategic thinking with omnidirectional mobility (Spirit Rush), safe pressure strings (Foxfire Blast rekka), and setup-heavy oki tools (Stalking Dart). With only \textbf{900 HP}---tied for the second lowest in the game---she demands execution and precision, but one good confirm leads to devastating, corner-carrying combinations.
+
+\section{Playstyle Comparison}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{L{3cm} L{5cm} L{5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Aspect}} & \textcolor{ahriCyan}{\textbf{Zoner}} & \textcolor{ahriMagenta}{\textbf{Rushdown}} \\
+\rowcolor{tablerow}\textbf{Core Tool} & Orb projectiles at all ranges & Air dash and rekka pressure chains \\
+\rowcolor{tablerowalt}\textbf{Gameplan} & Control screen with spacing discipline & Approach aggressively through air mobility \\
+\rowcolor{tablerow}\textbf{Win Condition} & Force approaches into poke range & Land combo to establish corner pressure \\
+\rowcolor{tablerowalt}\textbf{Neutral Strategy} & Fullscreen orb loops; avoid close range & Jump/dash in; bait anti-air; land confirm \\
+\rowcolor{tablerow}\textbf{Oki Strength} & Stalking Dart positioning; wall bounces & Foxfire safe strings into mixups \\
+\rowcolor{tablerowalt}\textbf{Weaknesses} & Low raw damage output; predictable patterns & Requires execution; heavily meter-dependent \\
+\end{tabularx}
+\end{center}
+
+\section{Strengths and Weaknesses}
+
+\setlength{\columnseprule}{0.4pt}\renewcommand{\columnseprulecolor}{\color{ahriBlue!40}}
+\begin{multicols}{2}
+
+\subsection*{\textcolor{ahriGreen}{\faArrowUp\; Shared Strengths}}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item Only character with traditional air dash---forward and backward
+  \item Omnidirectional Spirit Rush (8 directional movement with attack)
+  \item Safe pressure strings through Foxfire Blast rekka system
+  \item Strong anti-air options with meaty upward normals
+  \item Stalking Dart persists on tag for persistent layered pressure
+  \item Charm ultimate creates tick-throw and overhead opportunities
+  \item Excellent team flexibility; works in any position
+\end{itemize}
+
+\columnbreak
+
+\subsection*{\textcolor{ahriRed}{\faArrowDown\; Shared Weaknesses}}
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+  \item Second lowest health in game (900 HP)---fragile
+  \item High execution skill floor; low damage without demanding combos
+  \item Backdash slowed in Season 1---escape less evasive
+  \item S2 Super now properly in active frames---interrupts more easily
+  \item Charm startup (19f) is reactable without setup
+  \item Projectiles not full-screen---limited zoning range
+  \item Very matchup-dependent
+\end{itemize}
+
+\end{multicols}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Move List Reference}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Notation Guide}
+
+\begin{tipbox}
+Ahri guides use \textbf{numpad notation}. Think of a numpad: 5 = neutral, 6 = forward, 4 = back, 2 = down, 8 = up, 9 = up-forward (jump). \notation{jc.} = jump cancel, \notation{[X]} = hold input, \notation{j.} = jumping version, \notation{AD} = air dash.
+\end{tipbox}
+
+\begin{center}
+\begin{tcolorbox}[colback=chapterbg,colframe=ahriGray!40,arc=3pt,width=0.95\textwidth]
+  \centering
+  \textcolor{ahriCyan}{\textbf{2XKO Button Notation Reference}}\\[0.3em]
+  \small
+  \begin{tabular}{cc|cc}
+  \btnL & \btnM & \btnH & \btnT \\
+  Light & Medium & Heavy & Throw \\[0.3em]
+  \btnS{1} & \btnS{2} & \dirDown & \dirForward \\
+  Super 1 & Super 2 & Down & Forward \\[0.3em]
+  \dirBack & \dirUp & \plus & \arrow \\
+  Back & Up & Plus & Next \\
+  \end{tabular}
+\end{tcolorbox}
+\end{center}
+
+\begin{center}
+\begin{tabular}{C{2.5cm} L{10cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Symbol}} & \textcolor{ahriCyan}{\textbf{Meaning}} \\
+\rowcolor{tablerow}\notation{>} & Cancel/chain from previous move into next \\
+\rowcolor{tablerowalt}\notation{,} & Link (requires strict timing) from previous to next \\
+\rowcolor{tablerow}\notation{\textasciitilde} & Follow-up/cancel into multi-stage move \\
+\rowcolor{tablerowalt}\notation{dl./delay} & Delay the following move slightly \\
+\rowcolor{tablerow}\notation{j.} & Jumping version of attack \\
+\rowcolor{tablerowalt}\notation{jc.} & Jump cancel into next action \\
+\rowcolor{tablerow}\notation{land} & Must land before continuing combo \\
+\rowcolor{tablerowalt}\notation{[H]} & Hold button for charged version \\
+\rowcolor{tablerow}\notation{AD} & Air dash cancel \\
+\rowcolor{tablerowalt}\notation{UF/DF} & Up-forward / Down-forward direction \\
+\end{tabular}
+\end{center}
+
+\section{Normal Moves}
+
+\subsection{Ground Normals}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.8cm} L{4cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Name}} & \textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5L} & Fox Jab & 5f startup; fastest normal; strong interrupt/tick throw tool \\
+\rowcolor{tablerowalt}\notation{2L} & Crouching Jab & 6f startup; godlike low poke; safe on block \\
+\rowcolor{tablerow}\notation{5M} & Spirit Claw & 10f startup; best medium range in cast; primary footsie \\
+\rowcolor{tablerowalt}\notation{2M} & Crouching Claw & 9f startup; reliable mid-range low; combo starter \\
+\rowcolor{tablerow}\notation{5H} & Fox Spirit & 13f startup; large vertical hitbox; long range \\
+\rowcolor{tablerowalt}\notation{2H} & Celestial Ascent & 15f startup; anti-air; advances forward \\
+\rowcolor{tablerow}\notation{3H} & Spirit Dive (Launcher) & 18f startup; primary launcher; excellent combo starter \\
+\rowcolor{tablerowalt}\notation{66H} & Run H & Advancing heavy; strong pressure extender \\
+\end{tabularx}
+\end{center}
+
+\subsection{Air Normals}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.8cm} L{4cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Name}} & \textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{j.L} & Air Light & Strong air-to-air; good horizontal range; deceptively fast \\
+\rowcolor{tablerowalt}\notation{j.M} & Air Medium & Primary combo extender in air strings \\
+\rowcolor{tablerow}\notation{j.H} & Air Heavy & Go-to air-to-air; counter-hit leaves opponent in hitstun until landing \\
+\rowcolor{tablerowalt}\notation{j.[H]} & Charged Air Heavy & Extended combo properties; use half-charge for optimal damage \\
+\rowcolor{tablerow}\notation{j.2L} & Falling Spark & Hits on both sides; perfect for ambiguous crossups \\
+\rowcolor{tablerowalt}\notation{j.2H} & Air Down Heavy & Downward-angled; good for catching grounded opponents \\
+\end{tabularx}
+\end{center}
+
+\subsection{Key Ground Normal Properties}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.5cm} C{2cm} C{2cm} C{2cm} L{5.5cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Move}} &
+\textcolor{ahriCyan}{\textbf{Range}} &
+\textcolor{ahriCyan}{\textbf{Type}} &
+\textcolor{ahriCyan}{\textbf{Special}} &
+\textcolor{ahriCyan}{\textbf{Primary Use}} \\
+\rowcolor{tablerow}\notation{5L} & Close & High & Interrupt & Strike-throw starter; fastest button \\
+\rowcolor{tablerowalt}\notation{2L} & Close & Low & Safe & 50/50 setups; tick-throw tool \\
+\rowcolor{tablerow}\notation{5M} & Mid & High & Whiff & Best footsie; primary poke \\
+\rowcolor{tablerowalt}\notation{2M} & Mid & Low & --- & Combo starter; pressure low \\
+\rowcolor{tablerow}\notation{5H} & Long & High & Check & Neutral poke; range check \\
+\rowcolor{tablerowalt}\notation{3H} & Mid & Launch & Launcher & Primary combo starter \\
+\end{tabularx}
+\end{center}
+
+\section{Command Normals}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.6cm} L{4cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Name}} & \textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{3M} & Swept Away & Hard knockdown on hit. Sets up mixups. PRIMARY oki tool \\
+\rowcolor{tablerowalt}\notation{j.2L} & Falling Spark & Hits on both sides; crossup tool after knockdown \\
+\rowcolor{tablerow}\notation{3S2} & Bounce! & Overhead command normal. Cancels into Air Dash---core mixup tool \\
+\end{tabularx}
+\end{center}
+
+\section{Special Moves}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2cm} L{4.2cm} L{7.5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Name}} & \textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5S1 / j.S1} & Orb of Deception & 3/4-screen rekka projectile. AIR OK. \patchnerf{18f startup, was 16f} \\
+\rowcolor{tablerowalt}\notation{2S1} & Orb Arc & Lob arc trajectory; optimal for oki setups and wall bounces \\
+\rowcolor{tablerow}\notation{6S2} & Spirit Rush Forward & Omnidirectional dash. 5 directions grounded; 5 airborne \\
+\rowcolor{tablerowalt}\notation{8S2} & Spirit Rush Up & Vertical mobility; escape tech and aerial extension \\
+\rowcolor{tablerow}\notation{4S2} & Spirit Rush Back & Escape pressure while remaining threatening \\
+\rowcolor{tablerowalt}\notation{2S2} & Spirit Rush Down & Down-forward aerial option; corner carry tool \\
+\rowcolor{tablerow}\notation{3S2} & Bounce! & Overhead; Air Dash cancel on hit/block---mixup setup \\
+\rowcolor{tablerowalt}\notation{5S2} & Wild Flares & Multi-hit ground special; safe at -0 on block \\
+\end{tabularx}
+\end{center}
+
+\subsection{Special Move Quick Reference}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.8cm} C{2.5cm} C{2cm} L{6.5cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Move}} &
+\textcolor{ahriCyan}{\textbf{Name}} &
+\textcolor{ahriCyan}{\textbf{Range}} &
+\textcolor{ahriCyan}{\textbf{Primary Purpose}} \\
+\rowcolor{tablerow}\notation{5S1} & Foxfire Blast & 3/4-screen & Rekka starter; safe projectile at mid-range \\
+\rowcolor{tablerowalt}\notation{2S1} & Orb Arc & Fullscreen & Oki tool; wall bounce setups \\
+\rowcolor{tablerow}\notation{3S1} & Charged Orb & Fullscreen & Unblockable vs crouching; committal \\
+\rowcolor{tablerowalt}\notation{6S2} & Spirit Rush Fwd & Dash & Corner carry; aggressive approach \\
+\rowcolor{tablerow}\notation{3S2} & Bounce! & Close & Overhead; cancel into Air Dash on hit/block \\
+\rowcolor{tablerowalt}\notation{5S2} & Wild Flares & Close & Multi-hit; safe at $-$0 on block \\
+\end{tabularx}
+\end{center}
+
+\section{Supers and Ultimate}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2.4cm} L{4.2cm} L{7.2cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Name}} & \textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{22S1} & Essence Theft & Enhanced Orb super; more projectiles. Fullscreen coverage. Can OTG \\
+\rowcolor{tablerowalt}\notation{22S2} & Spirit Overdrive & Multi-hit dashes. Works airborne and grounded. Excellent corner carry \\
+\rowcolor{tablerow}\notation{S1+S2} & Charm (2 bars) & Ultimate. Invincible startup---use as reversal. Slow to startup (19f) \\
+\end{tabularx}
+\end{center}
+
+\section{Assist Moves}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.8cm} L{4.5cm} L{7.5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Name}} & \textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{T} & Spirit Rush Assist & Rushes forward; crosses through creating sandwich. Easy confirm on hit \\
+\rowcolor{tablerowalt}\notation{4T} & Orb Rain Assist & Airborne Orb barrage (3 projectiles). Long-range coverage \\
+\rowcolor{tablerow}\notation{2T} & Spirit Overdrive Assist & Multi-hit dash super. Only available post-KO \\
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Frame Data and Practical Application}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Normal Moves Frame Data}
+
+\begin{center}
+\begin{tabular}{C{2cm} C{2cm} C{2.5cm} C{2.5cm} L{5cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Move}} &
+\textcolor{ahriCyan}{\textbf{Startup}} &
+\textcolor{ahriCyan}{\textbf{On Hit}} &
+\textcolor{ahriCyan}{\textbf{On Block}} &
+\textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5L} & 5 & \advantage{+2} & \disadvantage{$-$2} & Fastest; interrupt/tick-throw \\
+\rowcolor{tablerowalt}\notation{2L} & 6 & \advantage{+2} & \disadvantage{$-$1} & Godlike low; safe; high/low starter \\
+\rowcolor{tablerow}\notation{5M} & 10 & \advantage{+1} & \disadvantage{$-$2} & Best range in cast; footsie tool \\
+\rowcolor{tablerowalt}\notation{2M} & 9 & \advantage{+1} & \disadvantage{$-$2} & Lower hitbox medium; combo starter \\
+\rowcolor{tablerow}\notation{5H} & 13 & \disadvantage{$-$1} & \disadvantage{$-$4} & Massive range; neutral check \\
+\rowcolor{tablerowalt}\notation{2H} & 15 & Launch & \disadvantage{$-$2} & Anti-air; advances forward \\
+\rowcolor{tablerow}\notation{3H} & 18 & Launch & \disadvantage{$-$2} & Launcher; converts from max-range 5H \\
+\rowcolor{tablerowalt}\notation{2T} & 9 & Launch & \disadvantage{$-$2} & Fastest tag launcher in game \\
+\end{tabular}
+\end{center}
+
+\section{Projectile Timing}
+
+\begin{center}
+\begin{tabular}{C{2.5cm} C{2cm} C{2.5cm} L{6.5cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Move}} &
+\textcolor{ahriCyan}{\textbf{Startup}} &
+\textcolor{ahriCyan}{\textbf{Recovery}} &
+\textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5S1} & 18f & \disadvantage{$-$2} & Standard Orb; \patchnerf{+2f startup}. Air OK \\
+\rowcolor{tablerowalt}\notation{2S1} & 18f & \disadvantage{$-$2} & Arc trajectory; fullscreen reach \\
+\rowcolor{tablerow}\notation{3S1} & 24f & \disadvantage{$-$5} & Charged; unblockable vs crouch \\
+\rowcolor{tablerowalt}\notation{[S1]} & 18f & \disadvantage{$-$1} & Essence Theft (Super); faster recovery \\
+\end{tabular}
+\end{center}
+
+\section{Reading Frame Data}
+
+\begin{tipbox}
+\textbf{Startup:} Frames before active. Lower = faster.\\[0.3em]
+\textbf{On Hit:} \advantage{Positive} = your turn. \disadvantage{Negative} = opponent's turn.\\[0.3em]
+\textbf{On Block:} \disadvantage{$-3$ or less} = safe. \disadvantage{$-4$ or more} = punishable. \advantage{Positive} = continue pressure.\\[0.3em]
+\textbf{Launch} = sends airborne; enables air combo.
+\end{tipbox}
+
+\section{Practical Frame Notes}
+
+\begin{itemize}
+  \item \movename{5L} at 5f is one of fastest jabs in 2XKO --- use to interrupt, counter tick-throws, or start strike-throw mix
+  \item \movename{2L} at \disadvantage{$-$1} is essentially free --- your primary low button for 50/50s
+  \item \movename{5M} with exceptional range is the best footsie tool for whiff-punishing mid-range
+  \item \movename{5H} at \disadvantage{$-$4} is relatively safe --- excellent in combos and long-range checks
+  \item \zoner \movename{5S1 (Orb)} at \disadvantage{$-$2} is safe; throw freely at mid-range; recovery covered by projectile travel
+  \item \rushdown \movename{2S1 (Arc Orb)} at \disadvantage{$-$2} is your safest oki setup; wall bounces give positioning advantage
+  \item \movename{3S1 (Charged)} at \disadvantage{$-$5} is committal --- only use when covered or at safe distance
+\end{itemize}
+
+\section{Supers \& Ultimate Frame Data}
+
+\begin{center}
+\begin{tabular}{C{2.2cm} C{2cm} C{2cm} C{2cm} L{4cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Move}} &
+\textcolor{ahriCyan}{\textbf{Startup}} &
+\textcolor{ahriCyan}{\textbf{Invul}} &
+\textcolor{ahriCyan}{\textbf{On Block}} &
+\textcolor{ahriCyan}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{22S1} & 12f & No & \disadvantage{$-$8} & OTG capable; fullscreen coverage \\
+\rowcolor{tablerowalt}\notation{22S2} & 10f & No & \disadvantage{$-$6} & Multi-hit; corner carry extension \\
+\rowcolor{tablerow}\notation{S1+S2} & 19f & \advantage{Yes} & --- & Reversal; 2 bars; Charm effect on hit \\
+\end{tabular}
+\end{center}
+
+\section{Punish Windows}
+
+\begin{tipbox}[title={\faLightbulb\enspace PUNISH REFERENCE}]
+When you block these, punish immediately with \notation{5L} or \notation{2L} into full combo:
+\begin{itemize}[itemsep=2pt]
+  \item Any move at \disadvantage{$-$5} or worse on block (your 5f jab reaches)
+  \item Whiffed grabs: enormous recovery --- full punish every time
+  \item Blocked DPs/reversals: wait for invincibility to expire, then punish landing
+  \item \movename{3S1 (Charged Orb)} at \disadvantage{$-$5}: punishable if not spaced correctly
+\end{itemize}
+\end{tipbox}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Unique Mechanics}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Air Dash System}
+
+Ahri is the \textbf{only character in 2XKO with a traditional air dash}. Activating it with \notation{L+M} or \notation{66} while airborne, she can dash both forward and backward from any air normal or air special (once per airborne sequence).
+
+\begin{tipbox}
+Most of Ahri's air normals and air specials can be cancelled into an Air Dash. This makes approach angles nearly unpredictable and is used in the majority of longer combo routes.
+\end{tipbox}
+
+\subsection{Baiting Anti-Airs}
+
+Air Dash early upon jumping:
+\begin{itemize}
+  \item Fly over committed anti-air and land behind opponent
+  \item Creates ambiguous left/right that must be read and re-blocked
+  \item Enables safejump setups and unblockable pressure after knockdown
+\end{itemize}
+
+\subsection{Air Dash in Combos}
+
+The second hit of Foxfire rekka (Foxfire Leap) can be Air Dash cancelled mid-air:
+\begin{itemize}
+  \item \zoner \notation{S1 > S1 > S1} chain is safe; use 3rd hit for corner positioning
+  \item \rushdown \notation{S1 > S1 > AD > j.M > j.H} extends into full mid-air combo
+\end{itemize}
+
+\section{Spirit Rush --- Omnidirectional Dashes}
+
+\movename{Spirit Rush} (\notation{any direction + S2}) is the \textbf{only omnidirectional move in 2XKO}. On ground: 5 directions. In air: 5 directions.
+
+\subsection{Ground Directions}
+
+\begin{center}
+\begin{tabular}{L{3.5cm} L{3.5cm} L{6cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Direction}} & \textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Use Case}} \\
+\rowcolor{tablerow}Forward & \notation{6S2} & Aggressive approach; corner carry \\
+\rowcolor{tablerowalt}Up-Forward & \notation{9S2} & Hits Warwick more easily (S1 buff); combo extension \\
+\rowcolor{tablerow}Up & \notation{8S2} & Vertical mobility; escape grabs \\
+\rowcolor{tablerowalt}Up-Back & \notation{7S2} & Escape while remaining threatening \\
+\rowcolor{tablerow}Back & \notation{4S2} & Retreat with attack; reset neutral \\
+\end{tabular}
+\end{center}
+
+\subsection{Air Directions}
+
+\begin{center}
+\begin{tabular}{L{3.5cm} L{3.5cm} L{6cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Direction}} & \textcolor{ahriCyan}{\textbf{Input}} & \textcolor{ahriCyan}{\textbf{Use Case}} \\
+\rowcolor{tablerow}Forward & \notation{j.6S2} & Air combo carry; aggressive approach \\
+\rowcolor{tablerowalt}Down-Forward & \notation{j.3S2} & Corner carry; oki positioning \\
+\rowcolor{tablerow}Down & \notation{j.2S2} & Repositioning; dive attack \\
+\rowcolor{tablerowalt}Down-Back & \notation{j.1S2} & Aerial escape with attack \\
+\rowcolor{tablerow}Back & \notation{j.4S2} & Retreat with threat maintained \\
+\end{tabular}
+\end{center}
+
+\begin{tipbox}
+\textbf{Combo Extension Rule:} Ahri can cancel into another Spirit Rush if the first one \textit{hits}. She can perform up to two Spirit Rushes before landing. This creates nearly infinite aerial repositioning in longer combos.
+\end{tipbox}
+
+\section{Foxfire Rekka System}
+
+\notation{5S1} begins the three-hit rekka sequence:
+
+\begin{enumerate}
+  \item \movename{Foxfire Blast (1st):} Projectile traveling 3/4-screen. Safe to throw at mid range
+  \item \movename{Foxfire Leap (2nd):} Advancing follow-up; air-dash cancelable for advanced routing
+  \item \movename{Foxfire Dive (3rd):} Ground bounce on hit; conversion into launcher
+\end{enumerate}
+
+\begin{tipbox}
+The entire \notation{S1 > S1 > S1} string is \textbf{safe on block}. On hit, convert to full combo. On block, maintain pressure or tag.
+\end{tipbox}
+
+\section{Orb Arc (2S1) and Wall Bounces}
+
+\begin{itemize}
+  \item \zoner Wall bounces are your primary zoning advantage; position arcs 1-2 character lengths from corner for double-threat coverage
+  \item \rushdown Wall bounce oki is devastating; forces opponent navigation or chip accumulation before you apply pressure
+\end{itemize}
+
+\section{Bounce! Overhead and Air Dash Cancels}
+
+\movename{Bounce!} (\notation{3S2}) overhead can be cancelled into Air Dash on hit or block:
+
+\begin{itemize}
+  \item After blocked Bounce! + Air Dash: choose double overhead, crossup, single overhead into low, or empty dash throw
+  \item Creates nearly unreactable mixup tree from one blocked situation
+  \item Conditioning is key: use low pressure to condition crouch-blocking, then \notation{3S2} lands as overhead
+\end{itemize}
+
+\section{Wakeup Oki with Stalking Dart}
+
+The primary oki sequence involves Stalking Dart (\notation{2S1}):
+
+\begin{enumerate}
+  \item End combo with ground bounce into knockdown
+  \item Input \notation{2S1} on opponent wakeup
+  \item Stalking Dart explodes and creates free mixup or pins opponent
+\end{enumerate}
+
+\begin{itemize}
+  \item \zoner Dart persists and forces navigation; chip damage accumulates while opponent deals with threat
+  \item \rushdown Dart plants before you dash in for unblockable pressure; recovery-rolling opponents get dash-throw mixed
+\end{itemize}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Neutral Game}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Core Neutral Pillars}
+
+\begin{enumerate}
+  \item \textbf{Air superiority} --- air dash makes every jump a potential mix or escape
+  \item \textbf{Button coverage} --- 5M range is unmatched; poke and whiff-punish effectively
+  \item \zoner Spacing discipline --- keep at optimal orb range; avoid close-range engagement
+  \item \rushdown Aggressive approach --- use dashes and jumps to apply constant pressure
+\end{enumerate}
+
+\section{Key Neutral Buttons}
+
+\begin{center}
+\begin{tabular}{L{3.5cm} L{3.5cm} L{6cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Button}} & \textcolor{ahriCyan}{\textbf{Frame Data}} & \textcolor{ahriCyan}{\textbf{Use Case}} \\
+\rowcolor{tablerow}\movename{5L} & 5f startup & Fast interrupt; strike-throw starter \\
+\rowcolor{tablerowalt}\movename{2L} & 6f startup & Godlike low; safe; primary 50/50 setup \\
+\rowcolor{tablerow}\movename{5M} & 10f startup & Primary footsie; whiff-punish tool \\
+\rowcolor{tablerowalt}\movename{5H} & 13f startup & Long-range neutral check \\
+\rowcolor{tablerow}\movename{5S1} & 18f startup & Safe projectile at mid-range \\
+\rowcolor{tablerowalt}\movename{2S1} & 18f startup & Wall bounce positioning tool \\
+\rowcolor{tablerow}\movename{j.H} & -- & Primary air-to-air; beat jumps \\
+\rowcolor{tablerowalt}\movename{j.2L} & -- & Crossup tool; ambiguous approach \\
+\end{tabular}
+\end{center}
+
+\subsection{Playstyle-Specific Applications}
+
+\begin{tcolorbox}[colback=sectionbg,colframe=ahriBlue!60,arc=5pt,boxrule=0.8pt,left=8pt,right=8pt,top=6pt,bottom=6pt]
+\begin{multicols}{2}
+\textcolor{ahriCyan}{\bfseries\sffamily\faBookOpen\ \ ZONER NEUTRAL}\\[4pt]
+\begin{itemize}
+  \item Throw fullscreen orbs; position at midscreen
+  \item Opponent blocks → keep applying orbs
+  \item Opponent dashes → punish with \notation{2H} or \notation{5L}
+  \item Use \notation{5M} footsies; never trade at close range
+\end{itemize}
+\columnbreak
+\textcolor{ahriMagenta}{\bfseries\sffamily\faFistRaised\ \ RUSHDOWN NEUTRAL}\\[4pt]
+\begin{itemize}
+  \item Jump early; air dash over opponent reactions
+  \item Throw Foxfire rekka while advancing safely
+  \item Use Spirit Rush up/forward to reposition fast
+  \item Control air space; force opponent to jump back
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\section{Handling Anti-Airs}
+
+When opponents react to jumps with anti-airs, Ahri has responses:
+
+\begin{center}
+\begin{tabular}{L{4.5cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Anti-Air}} & \textcolor{ahriCyan}{\textbf{Ahri Counter}} \\
+\rowcolor{tablerow}Down H anti-air & Air Dash early $>$ fly over $>$ \notation{j.2H} from behind \\
+\rowcolor{tablerowalt}Jump-back air-to-air & Neutral jump \notation{j.H} to out-range \\
+\rowcolor{tablerow}Reversal/DP on jump & Empty air dash; let them whiff; punish landing \\
+\rowcolor{tablerowalt}Air throw attempt & Air throw first; she combos from solo air throw \\
+\end{tabular}
+\end{center}
+
+\section{Air-to-Air Superiority}
+
+Ahri excels in the air:
+
+\begin{itemize}
+  \item \movename{j.H}: best horizontal range; counter-hit chains to full combo
+  \item \movename{j.L}: fast; deceptively wide; good quick air checks
+  \item \movename{j.S1}: fires straight forward when opponent expects down-angled projectile
+  \item \movename{Air Dash}: bait anti-airs by dashing over them; punish whiff
+\end{itemize}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Mixup System and Oki}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Strike-Throw Mix}
+
+Ahri's ground mixup uses \notation{5L} and \notation{2L} with dashes:
+
+\begin{enumerate}
+  \item Condition with low pressure (\notation{2L}, \notation{2M})
+  \item Dash in and either \notation{2L} (they blocked low) or \notation{6T} (they expected low)
+  \item Tight timing makes reactions nearly impossible
+\end{enumerate}
+
+\begin{tipbox}
+Land this 2-3 times to condition, then break with the opposite option. Ahri's fastest low (2L at 6f) wins most strike-throw windows.
+\end{tipbox}
+
+\section{High/Low with Bounce! Overhead}
+
+\begin{enumerate}
+  \item Establish low pressure with \notation{2L}, \notation{2M}, Foxfire rekka chains
+  \item Condition opponent to crouch-block
+  \item Input \notation{3S2 (Bounce!)} overhead when they expect another low
+  \item Air Dash cancel on hit for extended mixup
+\end{enumerate}
+
+\begin{warnbox}
+Bounce! startup (slow) makes it reactable raw. Only use in conditioned strings or with Assist covering approach.
+\end{warnbox}
+
+\section{Air Dash and Spirit Rush Mixups}
+
+From blocked Heavy attack:
+
+\begin{enumerate}
+  \item Cancel \notation{5H} on block into \notation{8S2 (Spirit Rush Up)}
+  \item Call Tag Assist simultaneously
+  \item Air Dash over opponent from above
+  \item Choose same side or crossup side for left/right confusion
+\end{enumerate}
+
+\section{Falling Spark Ambiguous Crossups}
+
+After any knockdown (\notation{3M} or ground bounce):
+
+\begin{itemize}
+  \item Jump and use \notation{j.2L (Falling Spark)} --- hits both sides
+  \item Left/right connection timing depends on spacing --- difficult to react to
+  \item Cancelable into air Foxfire on hit for full combo follow-up
+\end{itemize}
+
+\section{Wakeup Oki Strategy}
+
+\begin{tcolorbox}[colback=sectionbg,colframe=ahriBlue!60,arc=5pt,boxrule=0.8pt,left=8pt,right=8pt,top=6pt,bottom=6pt]
+\begin{multicols}{2}
+\textcolor{ahriCyan}{\bfseries\sffamily\faBookOpen\ \ ZONER OKI}\\[4pt]
+\begin{itemize}
+  \item End combos into Swept Away (hard knockdown)
+  \item Plant Stalking Dart on wakeup; maintain distance
+  \item Opponents roll away → punish with backdash throw
+  \item Neutral wakeup → eat explosion → free mixup
+\end{itemize}
+\columnbreak
+\textcolor{ahriMagenta}{\bfseries\sffamily\faFistRaised\ \ RUSHDOWN OKI}\\[4pt]
+\begin{itemize}
+  \item After knockdown, jump-in immediately for safejump
+  \item Use Falling Spark for ambiguous left/right
+  \item Call Assist for sandwich approach (unblockable)
+  \item Corner: Stalking Dart explodes before dash-in pressure
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Combo Guide}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Combo Overview}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2.2cm} C{2cm} C{2cm} C{2cm} L{4.6cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Route}} &
+\textcolor{ahriCyan}{\textbf{Difficulty}} &
+\textcolor{ahriCyan}{\textbf{Damage}} &
+\textcolor{ahriCyan}{\textbf{Carry}} &
+\textcolor{ahriCyan}{\textbf{When to Use}} \\
+\rowcolor{tablerow}5L Starter & \advantage{Easy} & Low & Good & Neutral confirms anywhere \\
+\rowcolor{tablerowalt}5H Launcher & \advantage{Easy} & Low & Moderate & Max-range punishes \\
+\rowcolor{tablerow}Foxfire AD & \textcolor{ahriGold}{Medium} & Medium & High & Mid-screen pressure hits \\
+\rowcolor{tablerowalt}5H Max Range & \textcolor{ahriGold}{Medium} & Medium & High & Max-range 5H whiff punish \\
+\rowcolor{tablerow}Corner Air Loop & \disadvantage{Hard} & High & Corner & After any corner carry \\
+\rowcolor{tablerowalt}Ult Finisher & \disadvantage{Hard} & Max & Corner & 2-bar meter with good read \\
+\end{tabularx}
+\end{center}
+
+\begin{tipbox}[title={\faLightbulb\enspace COMBO LEARNING ORDER}]
+Learn the beginner routes first until they are automatic, then layer in the Air Dash extensions. Advanced combos require the Air Dash cancel timing to be muscle memory before attempting the full loop.
+\end{tipbox}
+
+\section{Beginner Combos}
+
+\begin{combobox}[]{Beginner --- 5L Starter}
+\notation{5L} \arrow \notation{5M} \arrow \notation{5H} \arrow jc. \arrow \notation{j.M} \arrow \notation{j.H} \arrow \notation{j.S1}
+\begin{itemize}
+  \item Basic ground-to-air conversion
+  \item Works everywhere on screen
+  \item End with air Orb for positioning reset
+\end{itemize}
+\end{combobox}
+
+\begin{combobox}[]{Beginner --- 5H Launcher}
+\notation{5H} \arrow jc. \arrow \notation{j.L} \arrow \notation{j.M} \arrow \notation{j.H} \arrow \notation{j.2S1}
+\begin{itemize}
+  \item Launcher into full air chain
+  \item After landing, reset to neutral for oki setup
+  \item No strict timing required; great for learning
+\end{itemize}
+\end{combobox}
+
+\section{Intermediate Combos}
+
+\begin{combobox}[]{Intermediate --- Foxfire Rekka with Air Dash Extension}
+\notation{5M} \arrow \notation{5H} \arrow \notation{S1} \arrow \notation{S1} \arrow AD \arrow \notation{j.M} \arrow \notation{3H} \arrow jc.
+\begin{itemize}
+  \item Air Dash cancel after 2nd Foxfire is the key timing challenge
+  \item Deals more damage and carries farther than beginner route
+  \item Land the final repositioning and continue
+\end{itemize}
+\end{combobox}
+
+\begin{combobox}[]{Intermediate --- 5H Max Range Confirm}
+\notation{5H} \arrow \notation{3H} \arrow jc. \arrow \notation{j.M} \arrow \notation{j.H} \arrow \notation{j.S1} \arrow land \arrow \notation{3H} \arrow jc.
+\begin{itemize}
+  \item Unique to Ahri: converts from max-range 5H because 3H launcher reaches
+  \item Midair S1 projectile sets up second air loop on landing
+  \item Excellent for mid-screen confirms
+\end{itemize}
+\end{combobox}
+
+\section{Advanced Combos}
+
+\begin{combobox}[]{Advanced --- Corner Double Air Loop}
+\notation{5L} \arrow \notation{5M} \arrow \notation{5H} \arrow \notation{3H} \arrow jc. \arrow \notation{j.H} \arrow \notation{j.S2} \arrow land \arrow \notation{3H} \arrow jc. \arrow \notation{j.M} \arrow \notation{j.H} \arrow \notation{j.S2}
+\begin{itemize}
+  \item Corner-only route with Tag Launcher ender
+  \item First loop carries opponent into corner
+  \item Tag extends combo for massive team damage
+\end{itemize}
+\end{combobox}
+
+\begin{combobox}[]{Advanced --- Ult Finisher with Omnidirectional Spirit Rush}
+\notation{5M} \arrow \notation{S1} \arrow \notation{S1} \arrow AD \arrow \notation{j.M} \arrow \notation{j.[H]} \arrow \notation{j.S1} \arrow land \arrow \notation{3H} \arrow jc. \arrow \notation{j.M} \arrow \notation{j.H} \arrow \notation{j.3S2} \arrow \notation{S1+S2}
+\begin{itemize}
+  \item Half-charged j.H before air Orb is high-damage battery
+  \item Omnidirectional Spirit Rush positions perfectly for Charm Ultimate
+  \item Without 2 bars: end with Hyper Spirit Rush or oki setup instead
+\end{itemize}
+\end{combobox}
+
+\section{Combo Ender Options}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{L{3.5cm} L{3.5cm} L{6cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Ender}} &
+\textcolor{ahriCyan}{\textbf{Situation}} &
+\textcolor{ahriCyan}{\textbf{Result}} \\
+\rowcolor{tablerow}\notation{j.S1} (air Orb) & Anywhere & Neutral reset; opponent must guess oki \\
+\rowcolor{tablerowalt}\notation{j.3S2} (Spirit Rush) & Mid/Corner & Corner carry; oki positioning \\
+\rowcolor{tablerow}\notation{3M} (Swept Away) & After launcher & Hard knockdown; primary oki setup \\
+\rowcolor{tablerowalt}\notation{S1+S2} (Charm) & 2 bars available & Maximum damage; invincible ender \\
+\rowcolor{tablerow}Tag Launcher & Partner ready & Extend combo with partner for huge damage \\
+\end{tabularx}
+\end{center}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Matchup Strategies}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Playstyle Matchup Recommendations}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{L{3.5cm} L{3.5cm} L{6cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Opponent Type}} & \textcolor{ahriCyan}{\textbf{Recommended}} & \textcolor{ahriCyan}{\textbf{Reasoning}} \\
+\rowcolor{tablerow}Rushdown (Vi, Darius) & Zoner & Maintain distance; orbs force approaches \\
+\rowcolor{tablerowalt}Other Zoner (Teemo, Jinx) & Rushdown & Use air mobility to navigate projectiles \\
+\rowcolor{tablerow}Grappler (Blitzcrank, Braum) & Zoner & Keep fullscreen; never let them close \\
+\rowcolor{tablerowalt}Balanced (Ekko, Yasuo) & Either & Choose based on team composition \\
+\end{tabularx}
+\end{center}
+
+\section{vs. Rushdowns}
+
+\begin{matchupbox}[]{Strategy vs. Rushdowns (Vi, Darius)}
+\begin{multicols}{2}
+\textcolor{ahriCyan}{\bfseries\sffamily\faBookOpen\ \ ZONER}
+\begin{itemize}
+  \item Maintain distance obsessively; zone with fullscreen orbs
+  \item Backdash to reset spacing when they approach
+  \item Trade orb pressure for positioning advantage
+  \item Never let them land close; anti-air consistently
+\end{itemize}
+\columnbreak
+\textcolor{ahriMagenta}{\bfseries\sffamily\faFistRaised\ \ RUSHDOWN}
+\begin{itemize}
+  \item Air Dash early on their jumps; land for mixup
+  \item Use Foxfire rekka to maintain safe pressure
+  \item Exceed their speed through superior air mobility
+  \item Establish corner oki and lock them down
+\end{itemize}
+\end{multicols}
+\end{matchupbox}
+
+\section{vs. Zoners}
+
+\begin{matchupbox}[]{Strategy vs. Zoners (Teemo, Jinx)}
+\begin{multicols}{2}
+\textcolor{ahriCyan}{\bfseries\sffamily\faBookOpen\ \ ZONER}
+\begin{itemize}
+  \item Match their fullscreen coverage; patience wins
+  \item Land one confirm and establish superior oki
+  \item Use wall bounces for positioning advantage
+  \item Outlast their momentum; one hit changes everything
+\end{itemize}
+\columnbreak
+\textcolor{ahriMagenta}{\bfseries\sffamily\faFistRaised\ \ RUSHDOWN}
+\begin{itemize}
+  \item Use air dash and Spirit Rush to navigate projectiles
+  \item Jump from angles they can't cover; land confirm
+  \item Once close, pressure is overwhelming
+  \item Use oki Stalking Dart to prevent reset
+\end{itemize}
+\end{multicols}
+\end{matchupbox}
+
+\section{vs. Grapplers}
+
+\begin{matchupbox}[]{Strategy vs. Grapplers (Blitzcrank, Braum)}
+\begin{itemize}
+  \item \textbf{Never yield close range:} Grapplers can't grab air or fullscreen
+  \item \textbf{Zoner:} Maintain distance with continuous orb loops
+  \item \textbf{Rushdown:} Air Dash constantly; they can't catch you
+  \item \textbf{Whiff punish:} Their grabs have enormous end lag on whiff
+  \item Call Assist for additional threats while you maintain distance
+\end{itemize}
+\end{matchupbox}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Team Compositions}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{What Ahri Wants in a Partner}
+
+\begin{itemize}
+  \item \zoner Cover fullscreen or close-range gaps; enable time for zoning setups
+  \item \rushdown Extend combo potential; provide defensive coverage during approach
+  \item Both: High damage teammate to compensate for Ahri's lower raw numbers
+  \item Both: Strong tag-in presence for meter extension
+\end{itemize}
+
+\section{Best Team Pairings}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2.5cm} C{2.5cm} L{9cm}}
+\rowcolor{tablehead}\textcolor{ahriCyan}{\textbf{Ahri}} & \textcolor{ahriCyan}{\textbf{Partner}} & \textcolor{ahriCyan}{\textbf{Synergy}} \\
+\rowcolor{tablerow}Ahri & Ekko & Dual mobility; combined projectile coverage; strong oki layering \\
+\rowcolor{tablerowalt}Ahri & Vi & Complementary gameplan; zone (Ahri) into close pressure (Vi) \\
+\rowcolor{tablerow}Ahri & Jinx & Fullscreen projectile combo; overwhelming pressure \\
+\rowcolor{tablerowalt}Ahri & Yasuo & Wind Wall + Orbs; strong Assist synergy \\
+\rowcolor{tablerow}Ahri & Braum & Tanky anchor; shield covers fragility; good team sustain \\
+\end{tabularx}
+\end{center}
+
+\section{Using Ahri as Assist}
+
+\subsection{Forward Assist (Spirit Rush)}
+
+Rushes forward; crosses through opponent on hit:
+\begin{itemize}
+  \item Creates automatic sandwich with point character
+  \item Easy confirm on hit due to spin property
+  \item Bounces into air on block --- Handshake Tag for airdash pressure
+\end{itemize}
+
+\subsection{Back Assist (Orb Rain)}
+
+Airborne Orb barrage (3 projectiles):
+\begin{itemize}
+  \item Long-range Assist coverage
+  \item Patch 1.1.3: hitting Ahri stops remaining projectiles
+  \item Use at ranges where point can defend Ahri
+  \item On hit: builds meter and extends combo
+\end{itemize}
+
+\section{Assist Coverage Chart}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{L{2.5cm} C{2cm} C{2cm} C{2cm} L{4.5cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Assist}} &
+\textcolor{ahriCyan}{\textbf{Range}} &
+\textcolor{ahriCyan}{\textbf{Invul}} &
+\textcolor{ahriCyan}{\textbf{Meter}} &
+\textcolor{ahriCyan}{\textbf{Best Used When}} \\
+\rowcolor{tablerow}Spirit Rush (T) & Close & No & \advantage{Builds} & Point needs sandwich; hit-confirm setup \\
+\rowcolor{tablerowalt}Orb Rain (4T) & Long & No & \advantage{Builds} & Point needs fullscreen cover; safe poke \\
+\rowcolor{tablerow}Spirit Overdrive (2T) & Mid & Yes & \disadvantage{Costs} & Post-KO reversal; desperation punish \\
+\end{tabularx}
+\end{center}
+
+\section{Gameplan Summary by Role}
+
+\begin{tcolorbox}[colback=sectionbg,colframe=ahriBlue!60,arc=5pt,boxrule=0.8pt,left=8pt,right=8pt,top=8pt,bottom=8pt]
+\begin{multicols}{2}
+\textcolor{ahriCyan}{\bfseries\sffamily\faBookOpen\ \ AHRI AS POINT (ZONER)}\\[4pt]
+\begin{itemize}[leftmargin=*]
+  \item Open with orbs to establish screen control
+  \item Call back assist (Orb Rain) to layer threats
+  \item Land one confirm; carry to corner
+  \item Tag out after hard knockdown; let partner finish
+\end{itemize}
+\columnbreak
+\textcolor{ahriMagenta}{\bfseries\sffamily\faFistRaised\ \ AHRI AS POINT (RUSHDOWN)}\\[4pt]
+\begin{itemize}[leftmargin=*]
+  \item Use forward assist (Spirit Rush) for sandwich mix
+  \item Air dash in on assist hit; maximize combo
+  \item Establish corner oki; layer orb dart
+  \item Convert every knockdown into more pressure
+\end{itemize}
+\end{multicols}
+\end{tcolorbox}
+
+\clearpage
+
+% ═════════════════════════════════════════════════════════════════════════════
+\chapter{Advanced Concepts}
+% ═════════════════════════════════════════════════════════════════════════════
+
+\section{Air Mobility Mastery}
+
+\zoner Air Dashes used defensively:
+\begin{itemize}
+  \item Air Dash backward after jump to bait anti-air; let them whiff
+  \item Use bouncing jumps to avoid ground-level projectiles
+\end{itemize}
+
+\rushdown Air Dashes used offensively:
+\begin{itemize}
+  \item Early air dash over anti-airs; land behind for mixup
+  \item Mid-jump air dash for extended floating; pressure layering
+  \item Delayed air dash for subtle repositioning that's hard to read
+\end{itemize}
+
+\section{Season 1 Patch Summary (Version 1.1.3)}
+
+\begin{nerfbox}
+\begin{itemize}
+  \item \movename{Orb startup}: 16f $\to$ 18f (+2f) --- less oppressive early
+  \item \movename{Backdash} slowed --- escape more committal
+  \item \movename{S2 Super} now properly in active frames --- interrupts more easily
+  \item \movename{Charm} cooldown increased --- less blockstring spam
+\end{itemize}
+\end{nerfbox}
+
+\vspace{6pt}
+
+\begin{buffbox}
+\begin{itemize}
+  \item \movename{Spirit Rush} cancels into Orb mid-dash --- new routing enabled
+  \item \movename{9S2} hits Warwick more easily --- S1 buff
+\end{itemize}
+\end{buffbox}
+
+\section{Decision Tree: Which Option to Use}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{L{4.2cm} L{3.5cm} L{5.3cm}}
+\rowcolor{tablehead}
+\textcolor{ahriCyan}{\textbf{Situation}} &
+\textcolor{ahriCyan}{\textbf{Option}} &
+\textcolor{ahriCyan}{\textbf{Why}} \\
+\rowcolor{tablerow}Opponent jumps at you & \notation{2H} anti-air & Fast, advancing; converts to combo \\
+\rowcolor{tablerowalt}Opponent dashes in & \notation{5L} interrupt & 5f; beats most dashes clean \\
+\rowcolor{tablerow}You need to escape & \notation{4S2} or \notation{7S2} & Retreat with hitbox attached \\
+\rowcolor{tablerowalt}After knockdown, midscreen & \notation{2S1} (Stalking Dart) & Plants oki; forces navigation \\
+\rowcolor{tablerow}After knockdown, corner & \notation{j.2L} (Falling Spark) & Ambiguous crossup; forces error \\
+\rowcolor{tablerowalt}Opponent at fullscreen & \notation{5S1} chain & Safe rekka; builds pressure \\
+\rowcolor{tablerow}You're low HP, cornered & \notation{S1+S2} (Charm) & Invincible reversal; use 2 bars \\
+\rowcolor{tablerowalt}Need meter, safe spot & \notation{5S1 > 5S1 > 5S1} & Entire string safe on block \\
+\end{tabularx}
+\end{center}
+
+\section{Common Mistakes}
+
+\begin{warnbox}[title={\faExclamationTriangle\enspace TOP MISTAKES TO AVOID}]
+\begin{itemize}[itemsep=4pt]
+  \item \movename{Trading at 900 HP:} You always lose even trades --- use air mobility to disengage
+  \item \movename{Raw Bounce!:} Fully reactable without conditioning or Assist cover; set it up first
+  \item \movename{Whiffing Spirit Rush:} Recovery frames are punishable --- only use when the hit is confirmed
+  \item \movename{Predictable Air Dashes:} Vary direction, timing, and height constantly or get anti-aired
+  \item \movename{Forgetting Stalking Dart oki:} The explosion is your primary oki tool; always place after Limit Strike
+  \item \movename{Over-spending meter:} Reserve bars for Charm reversal when low HP --- it can save rounds
+\end{itemize}
+\end{warnbox}
+
+\clearpage
+
+\section{Upcoming Content and Future Patches}
+
+As of \textcolor{ahriGold}{\textbf{March 10, 2026}}, Riot Games has teased the following upcoming champions and changes:
+
+\begin{tipbox}[title={\faLightbulb\enspace HORIZON PREVIEW}]
+\textbf{Teased Champions:}
+\begin{itemize}[itemsep=3pt]
+  \item \champ{Akail} --- Champion archetype and mechanics TBD; official reveal expected in coming months
+  \item \champ{Senna} --- Roleposition and kit details TBD; gameplay reveal pending
+\end{itemize}
+
+These new champions will expand the 2XKO roster beyond the current 12 and may introduce new playstyle archetypes or team synergies. Keep an eye on the official 2XKO website and community channels for announcements.
+\end{tipbox}
+
+\begin{warnbox}[title={\faExclamationTriangle\enspace BALANCE PATCH SCHEDULE}]
+Riot commits to regular balance patches. After v1.1.3 (March 2026):
+\begin{itemize}[itemsep=3pt]
+  \item Monitor official patch notes for Ahri adjustments
+  \item Frame data and combo routes may change with future updates
+  \item Playstyle viability can shift based on matchup metagame evolution
+  \item Update your guides as new information becomes available
+\end{itemize}
+\end{warnbox}
+
+\vfill
+
+\begin{tcolorbox}[
+  colback=ahriDeepBlue, colframe=ahriBlue!40,
+  arc=6pt, boxrule=0.8pt,
+  left=18pt, right=18pt, top=10pt, bottom=10pt,
+  width=0.82\linewidth, center
+]
+  \centering
+  \textcolor{ahriBlue!60}{\rule{0.5\linewidth}{0.4pt}}\\[0.6em]
+  \textcolor{ahriGray}{\small\sffamily
+    This Master Guide combines the Zoning and Rushdown variants of Ahri\\
+    from the \textit{complete\_guide} and \textit{AKITSUNE} community sources.\\[4pt]
+    Choose the variant that matches your playstyle, or learn both for maximum flexibility.
+  }\\[4pt]
+  \textcolor{ahriGold}{\footnotesize\sffamily Season 1 $\cdot$ Version 1.1.3 $\cdot$ March 2026}\\[4pt]
+  \textcolor{ahriGray!60}{\footnotesize\itshape Game data subject to change with future patches.}\\[0.6em]
+  \textcolor{ahriBlue!60}{\rule{0.5\linewidth}{0.4pt}}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\end{document}

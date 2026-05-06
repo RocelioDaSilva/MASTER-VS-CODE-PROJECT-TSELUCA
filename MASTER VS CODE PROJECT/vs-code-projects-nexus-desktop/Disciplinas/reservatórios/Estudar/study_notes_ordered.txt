@@ -1,0 +1,604 @@
+============================================================
+FILE: Aula 0_Engenharia de Reservatórios 1 2025_2026- Apresentac&#807;a&#771;o E Breves Considerações (1).pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Ramos 1Geraldo Ramos,  BSc, MSc, PhD Apresentação e breves considerações 1.
+- Engenharia de Reservatórios de  Petróleo.
+-  Ramos, G.
+- Editora DOIS03, 2023 4 Geraldo Ramos,  BSc, MSc, PhD Apresentação e breves considerações da UC Injection  OUTRAS REFERÊNCIAS (BIBLIOGRAFIA)  AHMED, T.
+-  4 - Ramos, G.
+-  5 - Ramos, G.
+- 5 Geraldo Ramos,  BSc, MSc, PhD Apresentação e breves considerações da UC Injection  HORÁRIO 6 Geraldo Ramos,  BSc, MSc, PhD Missão, Visão e Valores da Unidade Curricular Injection  |Missão  Formar engenheiros de petróleo com competências fundamentais sobre o comportamento dos reservatórios de hidrocarbonetos, integra...
+-  Aplicação de métodos de engenharia de reservatórios.
+- |Tipo de Avaliação Avaliação Somativa:  duas avaliações parcelares (30%):  exame de época normal (60 %)  exame de Recurso Outras Avaliações  Avaliação Diagonóstica (0%)  Avaliação Formativa (10%) OBS: Avaliação parcelar a ser lançada no Unimestre será avaliações diagonóstica + Formativa + somativa= 40% 18 Geraldo...
+- Fonte: 29ª Edição – CF – Saber - 2025 22 Geraldo Ramos,  BSc, MSc, PhD MUITO OBRIGADA!
+- 23 Geraldo Ramos,  BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Compromisso com a instituição:  Com a Missão, Visão e Valores da Instituição
+- Ética e Justiça:  Respeito aos valores morais e cívicos que norteiam a conduta humana, adoptando o princípio da imparcialidade e da
+- Excelência e Meritocracia:  Buscar excelência em todas as realizações, reconhecendo o desempenho
+- Autonomia e Iniciativa:  Capacidade de tomar decisões independentes e desenvolver acções para o alcance dos objectivos da instituição
+- Estímulo ao Pensamento Crítico e Reflexivo:  Capacidade de análise crítica, de resolver problemas e de tomar as decisões certas
+- Engenharia de Reservatórios I 
+Carga Horária Total: 4 Unidades de créditos, 60H Semestral e 4H semanais.
+- Docente da UC: Geraldo André Raposo Ramos
+- Contacto: geraldo.ramos@isptec.co.ao
+- LIVRO DE REFERÊNCIA:  ROSA, A. J.; CARVALHO, R. D. S.; XAVIER, J. A. D. Engenharia de Reservatórios de
+- Rio de Janeiro: Interciência, 2006, 808 p..
+- USA: Gulf Professional Publishing,
+- Tulsa: PennWell Books, 1990. 548 p..
+- Aulas Práticas: resolução de problemas e aplicação de modelos.
+- Laboratório Computacional: simulações com softwares de reservatórios.
+- Estudos de Caso: análise de cenários reais da indústria.
+- Trabalho Independente: leituras dirigidas e exercícios individuais.
+- Orientação Tutorial: apoio personalizado para dúvidas e trabalhos.
+- Aprendizagem Colaborativa: realização de trabalhos em
+- Estratégia Interrogativa: utiliza perguntas para estimular o
+
+============================================================
+FILE: SALA DE AULA INVERTIDA_Aula 1_ 2025_2026 - INTRODUÇÃO À ENG RESER 1 (2).pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Ramos 1ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD Introdução à Engenharia de Reservatórios 1  1.1.
+- Engenharia de Reservatórios: funções e objectivos;  1.2.
+- História da engenharia de reservatórios;  1.3.
+- Mecanismos de produção de reservatórios.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 24 Consolidação da aula 25 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 1.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 29 BIBLIOGRAFIA ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 1 - ROSA, A.
+- Engenharia de Reservatórios de Petróleo.
+- Engenharia de Reservatórios: fundamentos.
+- 7 - Ramos, G.
+- 31 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Engenharia de Reservatórios: funções e objectivos;
+- NOTA: Querogênio é a parte insolúvel da matéria orgânica modificada por
+- PhD
+OBS: Todos esses trabalhos exigem um conhecimento profundo das propriedades da rocha e do
+- PhD
+A recuperação desses fluidos do reservatório é através da:  Recuperação Primária (Escopo de ERI)
+- PhD
+21
+
+ 
+Classificação de Reservatórios
+Reservatório de óleo: de acordo com a posição que ocupa no diagrama de fases pode ser de óleo
+- PhD
+22
+
+ 
+Classificação de Reservatórios
+Reservatório de gás: É quando o fluido se encontra no
+- O gás pode ser: húmido, seco ou retrógado.
+- PhD
+23
+
+ 
+Classificação de Reservatórios
+RESERVATÓRIO DE ÓLEO E GÁS:  Uma mistura de hidrocarbonetos em que se
+- O sistema de produção de um campo petrolífero é definido como: SIM NÃO
+- O principal objetivo da Engenharia de Reservatórios é: SIM NÃO
+- Um condensate reservoir caracteriza-se por: SIM NÃO
+- Engenharia de Reservatórios é apoiar decisões de desenvolvimento do campo porque: SIM NÃO
+- Rio de Janeiro: Interciência, 2006, 808 p..
+- Tulsa: PennWell Books, 1990. 548 p..
+- USA: Gulf Professional
+
+============================================================
+FILE: SALA DE AULA INVERTIDA_Aula 2_2025_2026 - INTRODUÇÃO À ENG RESER 1 (2).pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Ramos 1ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD Introdução à Engenharia de Reservatórios 1  1.1.
+- História da engenharia de reservatórios;  1.3.
+- Mecanismos de produção de reservatórios.
+-  Isso é o influxo de água que desloca o óleo para os poços de produção.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 27 BIBLIOGRAFIA ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 1 - ROSA, A.
+- Engenharia de Reservatórios de Petróleo.
+- Engenharia de Reservatórios: fundamentos.
+- 7 - Ramos, G.
+- 29 ENGENHARIA DE  RESERVATÓRIOS - I
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Engenharia de Reservatórios: funções e objectivos;
+- Condições Padrão:  EUA 14,7 psia (1 atm) e 15,56 ̊C (60 oF)
+- Fonte: Environment Protection Agency (EPA), 2016
+- Água dissolvida na fase de hidrocarbonetos: nas condições típicas do
+- BRINE: Com relação à salinidade das águas, as salmouras (brine) são classificadas
+- SALOBRE: àgua com salinidade inferior à da água do mar, ou que
+- A produção depende em dois efeitos principais:  A descompressão: que causa a expansão dos fluidos contidos no reservatório e
+- O deslocamento do fluido por outro fluido: por exemplo, a invasão da zona de óleo
+- PhD
+12
+
+ 
+Mecanismo de Produção
+Os mecanismos principais de produção são:  Gás em solução;
+- Nota: Os mecanismos de produção compõe o que chamamos na indústria Petrolífera de recuperação
+- Mecanismo Combinado
+Trata-se de combinação de
+um dos 3 mecanismos já
+citados:  Mecanismo de Gás em
+- O óleo produzido em reservatórios leve caracteriza-se por: SIM NÃO
+- O gás produzido em reservatórios influencia a recuperação de óleo porque: SIM NÃO
+- Reservatórios com mecanismo de water drive caracterizam-se por: SIM NÃO
+- A viscosidade do óleo impacta diretamente: SIM NÃO
+- O condensado produzido em reservatórios ocorre quando: SIM NÃO
+- A produção de óleo em um reservatório undersaturated depende principalmente de: SIM NÃO
+- Completar: HIDROCARBOTENOS + NÃO HIDROCARBONETOS = _____________
+- Os estudantes deverão elaborar um trabalho investigativo sobre a temática: “História da
+
+============================================================
+FILE: SALA DE AULA INVERTIDA_Aula 2_2025_2026 - INTRODUÇÃO À ENG RESER 1 (3).pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Ramos 1ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD Introdução à Engenharia de Reservatórios 1  1.1.
+- História da engenharia de reservatórios;  1.3.
+- Mecanismos de produção de reservatórios.
+-  Isso é o influxo de água que desloca o óleo para os poços de produção.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 27 BIBLIOGRAFIA ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 1 - ROSA, A.
+- Engenharia de Reservatórios de Petróleo.
+- Engenharia de Reservatórios: fundamentos.
+- 7 - Ramos, G.
+- 29 ENGENHARIA DE  RESERVATÓRIOS - I
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Engenharia de Reservatórios: funções e objectivos;
+- Condições Padrão:  EUA 14,7 psia (1 atm) e 15,56 ̊C (60 oF)
+- Fonte: Environment Protection Agency (EPA), 2016
+- Água dissolvida na fase de hidrocarbonetos: nas condições típicas do
+- BRINE: Com relação à salinidade das águas, as salmouras (brine) são classificadas
+- SALOBRE: àgua com salinidade inferior à da água do mar, ou que
+- A produção depende em dois efeitos principais:  A descompressão: que causa a expansão dos fluidos contidos no reservatório e
+- O deslocamento do fluido por outro fluido: por exemplo, a invasão da zona de óleo
+- PhD
+12
+
+ 
+Mecanismo de Produção
+Os mecanismos principais de produção são:  Gás em solução;
+- Nota: Os mecanismos de produção compõe o que chamamos na indústria Petrolífera de recuperação
+- Mecanismo Combinado
+Trata-se de combinação de
+um dos 3 mecanismos já
+citados:  Mecanismo de Gás em
+- O óleo produzido em reservatórios leve caracteriza-se por: SIM NÃO
+- O gás produzido em reservatórios influencia a recuperação de óleo porque: SIM NÃO
+- Reservatórios com mecanismo de water drive caracterizam-se por: SIM NÃO
+- A viscosidade do óleo impacta diretamente: SIM NÃO
+- O condensado produzido em reservatórios ocorre quando: SIM NÃO
+- A produção de óleo em um reservatório undersaturated depende principalmente de: SIM NÃO
+- Completar: HIDROCARBOTENOS + NÃO HIDROCARBONETOS = _____________
+- Os estudantes deverão elaborar um trabalho investigativo sobre a temática: “História da
+
+============================================================
+FILE: Aula 3_SALADEAULAINVERTIDAEnRES1 2025_2026_cap2.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 52.1.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 72.2.
+- 𝒘𝒓 = 𝒘𝒔 𝒘𝑯𝟐𝑶 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD e 18 2.3.1.3.
+- oAPI do Óleo ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 222.3.1.4.
+- Dados: wH2O = 10.000N/m3, g = 10m/s2 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 24 Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 252.3.1.6.
+- Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 282.3.1.7.
+- oAPI  Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 312.3.1.7.
+- 37 Exrcícios ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 6.
+- 38 Exrcícios ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 8.
+- 7 - Ramos, G.
+- 42 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Pode-se definir fluido como:  Substância que se deforma continuamente, isto é, escoa, sob acção de uma força tangencial
+- ANÁLISES NORMALMENTE REALIZADAS: Determinação da composição.
+- Determinação de propriedades tecnológicas: Bo, Rs etc.
+- Exemplo: Fase gasosa, líquida e sólida de um sistema.
+- PhD
+Percentagem em massa: quociente da massa do componente pela massa total da mistura
+- × 100
+Percentagem em volume: quociente do volume do componente pelo volume total da mistura
+- × 100
+Percentagem em mol: quociente do número de mols do componente pelo número de mols total da
+- PhD
+Massa molecular de uma substância: soma das massas atômicas que constituem a molécula dessa
+- Coordenadas pseudocríticas: conhecida a composição da mistura, as propriedades calculam-se
+- Coordenadas pseudo-reduzidas: em vez de propriedades reduzidas calculam-se as chamadas
+- A massa específica pode ser quantificada pela equação:  Onde, ρ é a massa específica, m representa a massa da substância e V volume ocupado pela
+- É o 
+recíproco da massa específica: 𝒗𝒔 = 𝑽
+- Massa e Volume Específica
+NOTA: Além do óleo, serão apresentadas algumas propriedades da massa específica de outros
+- Peso específico relativo: representa a relação entre o peso específico do
+- Ou simplesmente: 𝑐 = 1
+- Dados: wH2O =
+- A viscosidade é função dos seguintes
+factores:  Temperatura.
+- Viscosidade do Óleo Saturado: Viscosidade do óleo na pressão do “ponto de bolha” e na
+- Viscosidade o Óleo após a Saturação: Viscosidade do óleo a pressões acima do “ponto de bolha”
+
+============================================================
+FILE: Aula 4_SALADEAULAINVERTIDAEnRES1 2025_2026_cap2 (1).pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Indústria do Gás Natural de Geraldo Ramos 2.3.2.1.2.
+- Ramos.
+- Ramos.
+- Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 20 2.3.2.2.
+- Razão de Solubilidade Óleo-Gás Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 27 2.3.3.1.
+- Razão de Solubilidade Óleo-Gás Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 28 2.3.3.1.
+- Razão de Solubilidade Óleo-Gás Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 29 2.3.3.1.
+- 4 - Ramos, G.
+- 5 - Ramos, G.
+- Engenharia de Produção do Gás Natural., volume 2.
+- 43 Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD Gráfico Engenharia de Reservatórios                         Geraldo Ramos, BSc, MSc, PhD 44
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Os gases podem ser classificados como gases ideais ou gases reais:  Gás ideal é um fluido hipotético que obedece as seguintes condições:
+- Os gases ideais: Gases são considerados como ideais quando submetidos a baixas pressões e altas
+- Mariotte: o volume ocupado por uma determinada massa de um gás ideal será
+- Lei de Charles: O volume ocupado por uma determinada massa de um gás ideal será directamente
+- Para o número n mols de gás tem-se: 𝑝𝑉 = 𝑛𝑅𝑇
+- Onde: 𝜌 = 𝑚
+- Para gases reais a equação de estado toma a seguinte forma: 𝑝𝑉 = 𝑧𝑛𝑅𝑇
+- Para o gás em condicções ou estados 1 ou 2: 𝑝1𝑉1
+- Nota: Erros de até 500% são observados no uso da equação de estado do gás ideal para pressões mais
+- Principais não hidrocarbonetos: Dióxido de Carbono (CO2), Sulfado de Hidrogénio (H2S), Nitrogénio
+- Gás natural ácido:  Apresenta mais de 5,7 milhões de H2S por metro cúbico de gás. Valor é equivalente a
+- H2S e CO2
+no gás: 𝑨 = 𝒚𝑯𝟐𝑺 + 𝒚𝑪𝑶𝟐
+- Y é a densidade
+reduzida que pode ser determinada na equação não linear seguinte: 𝑋2 = −𝑌 + 1 𝑌 + 1 𝑌
+- Os autores propuseram as seguintes equações de estado para calcular o factor de z: Nota: Ver os procedimentos na pág. 53 do Vol.2 da Indústria do Gás Natural ou 107 da Aplicação de
+- F apresenta a seguinte
+composição: 1. Calcule a compressibilidade de gás sob as condições iniciais do reservatório.
+- Cálculo do factor volume de formação de um gás real: 𝐵𝑔 = 𝑉𝑅
+- Coeficiente de viscosidade de uma 
+mistura de gases: Onde:
+- Ou seja: 𝐵𝑡 = 𝐵𝑜 + 𝑅𝑠𝑖 − 𝑅𝑠 𝐵𝑔
+- Sobre gases ideais: SIM NÃO
+
+============================================================
+FILE: Aula 5_AULAINVERTIDAEnRES1 2025_2026 - ProRochas_2025_2026.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Porosidade;  3.5.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 53.2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 8 3.3.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 14 Exemplo 2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 15 Exemplo 3.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 16 3.4.1.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 193.4.1.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 223.4.2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 233.4.2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 263.4.2.
+- 44 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Os engenheiros de reservatórios realizam as suas análises baseando nas:  Propriedades das rochas;
+- A compreensão das propriedades petrofísicas ajuda-nos a: Estimar os hidrocarbonetos presentes nos reservatórios(por exemplo, porosidade e saturação de fluido).
+- O volume total da rocha é definido como: 𝑉𝑡 = 𝑉𝑝 + 𝑉𝑠
+- Nota: A porosidade é adimensional e é 0 1.
+- ÇÃO DA POROSIDADE
+A porosidade pode ser classificada quanto a conecção e a origem: Conexão de poros (Classificação de Engenharia)
+- Porosidade quanto a origem
+Porosidade primária: A e D
+- Porosidade secundária: B e C
+- Métodos de medição da porosidade de rocha-reservatórios:  Amostragem (medição em laboratório a partir de pequenas amostras de testemunhos);
+- Segundo método: Uma amostra de testemunho é triturada e os grãos de rocha resultantes são colocados no
+- Terceirométodo: lei de Boyle
+- Método de deslocamento: é baseado no equilíbrio massa / material.
+- Quanto aos componentes da rocha: SIM NÃO
+- Sobre porosidade: SIM NÃO
+- Porosidade primária caracteriza-se por: SIM NÃO
+- Factores que influenciam a porosidade: SIM NÃO
+- Em relação à matriz rochosa: SIM NÃO
+- Sobre classificação de porosidade: SIM NÃO
+- Rochas com alta porosidade: SIM NÃO
+- Sobre arenitos como reservatórios: SIM NÃO
+
+============================================================
+FILE: Aula 6_AULAINVERTIDAEnRES1 2025_2026 - ProprRochas_2025_2026.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Permeabilidade;  3.8.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 53.5.
+- 𝑺𝒐𝒎=𝟏−𝑺𝒘𝒄−𝑺𝒐𝒄 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 93.6.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 133.7.
+- k = constante de  permeabilidade 𝜈𝑥 = 𝑞 𝐴 = − 𝑘 𝜇 𝑑𝑝 𝑑𝑥 𝜈𝑟 = 𝑞 𝐴 = − 𝑘 𝜇 𝑑𝑝 𝑑𝑟 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 143.7.
+- Permeabilidade ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 153.7.
+- Permeabilidade 3.7.1.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 17 3.7.2.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 18 3.7.3.
+- ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD 28 Exercícios 6.
+- 32 ENGENHARIA DE RESERVATÓRIOS - I                                                    GERALDO RAMOS, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- As pressões internas incluem: A pressão do fluido Pf que é a pressão exercida pelo fluido nos espaços dos poros (em torno 0,465 psig /
+- Três tipos de compressibilidade devem ser distinguidos nas rochas: Compressibilidade da rocha matriz,
+- Compressibilidade da rocha matriz: é a variação fraccional em volume do material sólido da
+- Compressibilidade total da rocha: é a variação fracional do volume total da rocha, com a
+- Compressibilidade dos poros: é a variação fracional do volume poroso da rocha com a
+- Dado calcular a porosidade para a pressão actual tendo as seguintes informações: Compressidade efectiva = 10 X 10-6 psi-1
+- PhD
+8
+
+ 
+SATURAÇÃO MÉDIA: Exemplo óleo
+- Os métodos de determinação da sarturação de fluidos: métodos indirectos e
+- Exemplo:  Registos eléctricos (perfilagem do poço);
+- Condição única: é a existência de Continuidade entre os poros.
+- NOTA: Para fluido compressível a vazão é medida à pressão média
+- Permeabilidade
+
+ 
+Permeabilidade absoluta: Para usar unidades de campo multiplicar a formula pela constante
+- Permeabilidade efectiva: a rocha reservatório contém sempre dois ou mais fluídos e a
+- Permeabilidade Relativa
+Permeabilidade relativa: é a permeabilidade efectiva normalizada, ou
+- PERMEABILIDADE MÉDIA RADIAL: 𝑘𝑚é𝑑𝑖𝑎 =
+- PERMEABILIDADE MÉDIA GEOMÉTRICA: 𝑘𝑚é𝑑𝑖𝑎 =
+- Sobre compressibilidade da rocha: SIM NÃO
+- Compressibilidade dos fluidos: SIM NÃO
+- Saturação de fluidos: SIM NÃO
+
+============================================================
+FILE: Aula 7_AULAINVERTICAEnRES1 2025_2026 - PropRochas_2025_2026.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Capilaridade e pressão capilar;  3.10.
+- Tarefas 2 Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 3.8.
+- Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 53.8.
+- Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 63.9.
+- Exercícios Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 27 2.
+- Exercícios Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 29 3.
+- Exercícios Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 30 4.
+- Exercícios Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 31 5.
+- Figura A Exercícios Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 33 7.
+- Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 34Exercícios BIBLIOGRAFIA Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 35 1 - ROSA, A.
+- 36 Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Geralmente distingue-se:  Fase molhante (aderida à rocha): usualmente é a fase aquosa;
+- Fase não-molhante: usualmente a fase orgânica (óleo e gás);
+- Devido às forças atractivas:  a fase molhante tende a ocupar os poros menores;
+- Fonte: Iglesias, 2009
+- Por exemplo: Reservatórios de óleo encontram-se em contacto pelo menos dois fluidos imiscíveis, água e óleo
+- A altura acima do nível de água livre: ℎ = 𝑝𝑐
+- Esta equação contém dois tipos de propriedades: Propriedades geométricas do reservatório de poros (no modelo simples expresso pelo raio)
+- Propriedades da pressão capilar para diferentes sistemas de fluido: Engenharia de Reservatórios 1
+- Métodos estáticos: injecção de mercúrio
+- Métodos dinâmicos: centrifugação
+- A distribuição do fluido no espaço poroso é controlada por: Propriedades do espaço poroso
+- Interação rocha-fluidos
+Conversão dos dados de laboratório para o campo: 𝑝𝑐𝑙
+- Exemplo: Uma rocha molhada em água, a saturação de
+- A função de Leverrett adimensional para SI e unidades de campo é definida como: 𝐽 = 𝑝𝑐 Τ𝑘 𝜙
+- Equação simplificada: 𝐽 = 𝐶ℎ Τ𝑘 𝜙
+- Onde: 𝐶 = 𝛾𝑤 − 𝛾𝑜
+- São dadas: Tensão interfacial entre água e o óleo = 30 dina/cm
+- Pede-se que sejam determinados: a) O fluido que molha preferencialmente a rocha
+- PhD
+26
+Responda as seguintes questões: a) Qual dos três tipos de rocha é a “melhor” qualidade de rocha-reservatório? Porque?
+
+============================================================
+FILE: Aula 8_AULAINVERTIDAEnRES1 2025_2026 - PropRochas_2025_2026.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Contacto de hidrocarbonetos/água  3.13.
+- 𝑝𝑎𝑡𝑚 + 𝜌𝑤𝑔𝐷𝑜𝑤𝑐 = 𝑝𝑜 + 𝜌𝑜𝑔 𝐷𝑜𝑤𝑐 − 𝐷𝑜𝑚 𝐷𝑜𝑤𝑐 = 𝑝𝑜 − 𝑝𝑎𝑡𝑚 − 𝜌𝑜𝑔𝐷𝑜𝑚 𝑔 𝜌𝑤 − 𝜌𝑜  Para interface: pressão no óleo= pressão na  água  Para unidades de campo: 63.12.2.
+-  Pressão do óleo = pressão da água no contacto óleo / água 83.12.2.
+- Sobre a distribuição de hidrocarbonetos e água em um reservatório, podemos afirmar: SIM NÃO a) O óleo se acumula sempre acima da água devido à diferença de densidade b) A água ocupa as regiões de menor porosidade c) O contato óleo/água é normalmente definido como a superfície de transição entre zonas saturadas de óleo...
+- Em um reservatório molhado preferencialmente por água: SIM NÃO a) Óleo se acumula principalmente em poros maiores  b) Água ocupa os poros menores  c) Saturação irreversível de óleo é alta  d) O contato hidrocarboneto/água depende da capilaridade  e) A produção de óleo é independente da saturação de água  14 Tarefa Enge...
+- 17 Exercícios Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 3.
+- Diferencie saturação irreversível de água e saturação de óleo residual no contexto do  contato hidrocarboneto/água.
+- Engenharia de Reservatórios 1                         Geraldo Ramos, BSc, MSc, PhD 21
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Resolvendo as duas equações: 𝑍𝐹𝑂𝐿 = 𝑝𝑜 − 𝑝𝑔 + 𝜌𝑔𝑔𝑍𝑔 − 𝜌𝑜𝑔𝑍𝑜
+- Seguindo o mesmo procedimento na zona do nível de água livre: 𝑍𝐹𝑊𝐿 = 𝑝𝑤 − 𝑝𝑜 + 𝜌𝑜𝑔𝑍𝑜 − 𝜌𝑤𝑔𝑍𝑤
+- Nota: A pressão aumenta conforme descemos e diminui conforme
+- Para interface: pressão no óleo= pressão na
+- Para unidades de campo: 63.12.2. Contacto de Hidrocarbonetos/Água
+- Equação da água: 𝑝𝑤 𝐷 = 𝜌𝑤𝑔
+- Equação do óleo: 𝑝𝑜 𝐷 = 𝜌𝑜𝑔
+- Equação do petróleo:  Um desconhecido: Co - precisa de uma medição da pressão.
+- O contato entre hidrocarbonetos e água no reservatório é importante porque: SIM NÃO
+- Em um reservatório típico: SIM NÃO
+- Sobre o petróleo residual em contacto com água: SIM NÃO
+- A presença de água connata em uma rocha: SIM NÃO
+- Em um reservatório molhado preferencialmente por água: SIM NÃO
+- Deriva a equação para nivel da zona de água livre ilustrada abaixo: 18
+- Rio de Janeiro: Interciência, 2006, 808 p..
+- Engenharia de Reservatórios: fundamentos. 1ª. ed. Rio de
+- Janeiro: Elsevier, 2014, 488 p..
+- Tulsa: PennWell
+- USA: Gulf Professional Publishing, Elsevier, 2010. 1376 p.
+
+============================================================
+FILE: Aula 9_AULAINVERTEnRES1 2025_2026 - Integração_Dados.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 5 4.4.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 74.4.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 104.5.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 114.5.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 124.5.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 184.6.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 204.6.1.
+- Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD 31 Exercícios 3.
+- 4 - Ramos, G.
+- 5 - Ramos, G.
+- 36 Engenharia de Reservatórios I                      Geraldo Ramos, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- O objectivo do método volumétrico é estimar os volumes de hidrocarbonetos: volume do
+- Os 
+métodos de cálculo utilizados podem ser por: Analogia;
+- DESEMPENHO DO RESERVATÓRIO:  Análise do declínio de produção - baseia-se na observação do histórico da produção e a
+- Equação de balanço de materiais: a equação é escrita em função das propriedades da
+- Método Volumétrico - Exemplo
+Os seguintes dados são de um reservatório óleo: Volume total---------------------------------------------------------------------- 33,847x106 m3.
+- Sobre métodos de cálculo de volumes originais: SIM NÃO
+- Sobre o método volumétrico: SIM NÃO
+- Sobre integração de dados: SIM NÃO
+- Sobre incertezas no cálculo volumétrico: SIM NÃO
+- Sobre parâmetros do método volumétrico: SIM NÃO
+- Sobre dados utilizados: SIM NÃO
+- Sobre limitações do método volumétrico: SIM NÃO
+- Sobre a importância do cálculo volumétrico: SIM NÃO
+- Provar que: 𝑆𝑜 = 1 − 𝑁𝑝
+- Outros dados são:  Constante do aparelho (C=Aleitura/Areal) ---------------------------------------- 1,27
+- Sm3
+Calcular o volume: a) Total do reservatório em m3, utilizando a fórmula trapezoidal.
+- Rio
+de Janeiro: Interciência, 2006, 808 p..
+- Tulsa: PennWell Books, 1990. 548 p..
+- USA: Gulf Professional
+
+============================================================
+FILE: Aula 10_SALAINVERTIDAEnRES1 2025_2026 - Integração_Dados.pdf
+============================================================
+Principais pontos:
+- Geraldo A.
+- Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 54.6.2.
+- Estimativa de Volume Recuperável/Reservas Tipo de Reservas Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 64.6.2.
+- Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 74.6.2.
+- Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 94.6.2.
+- Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 134.6.3.
+- Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 22 Exemplos 2.
+- Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 33 BIBLIOGRAFIA Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD 1 - ROSA, A.
+- Engenharia de Reservatórios de Petróleo.
+- 4 - Ramos, G.
+- 5 - Ramos, G.
+- 37 Engenharia de Reservatórios I                         Geraldo Ramos, BSc, MSc, PhD
+
+Definições / termos importantes:
+- SEMESTRE
+2025 - 2026
+1
+Docente: Prof. Dr. Geraldo A. R. Ramos
+- Estimativa de reserva: é conhecer a quantidade de fluído que pode ser retirado de
+- Provadas: Podem ser estimadas com certeza e  são recuperáveis sob condições económicas
+- Prováveis: Menor certeza do que as provadas um nível de confiança  de  50%
+- Possíveis: Reservas ainda não descobertas nível de confiança de 10%
+- Reservas
+
+ 
+Tipo de Reservas
+As reservas também são denotadas como quantidades: 1P (provadas),
+- Fonte: Petrangola, 2021 (Direito ao ponto)
+- Esquema mostrando um reservatório em 
+camadas com as seguintes variáveis: espessura e saturação de água.
+- Esquema mostrando um reservatório em
+camadas com as seguintes variáveis: espessura, porosidade e saturação de
+- O NTG é uma fracção que pode variar de 0 a 1: quanto maior o número, maior a fracção do
+- Alguns desses parâmetros são:  Cut-off de porosidade: utiliza-se 0,08 (8%) para reservatórios de óleo e 0,06(6%) para
+- Cut-off de saturação: normalmente é utilizado 0,5 (50%) para saturação de água
+- Cut-off de argilosidade: valores elevados indicam que o reservatório é argiloso, e
+- Cut-off de espessura: depende do contexto. Pode ser 1 - 2 m para poços rasos
+- Sobre cut-offs: SIM NÃO
+- Sobre integração de dados: SIM NÃO
+- Sobre incertezas no cálculo volumétrico: SIM NÃO
+- Sobre parâmetros para cálculo de volume original: SIM NÃO
+- Sobre parâmetros para caracterizar o fluxo: SIM NÃO
+- Sobre a relação entre cut-offs e reservas: SIM NÃO
+
+============================================================
+FILE: Tarefas de Engenharia de Reservatórios I 2024.pdf
+============================================================
+Principais pontos:
+- (b) Densidade do gás.
+- Figura 3.7: Reservatório de gás seco.
+- Calcule o volume original de óleo no reservatório.
+- ϕ=5 % Viscosidade do óleo no reservatório...
+- Hidrocarbonetos Produzidos Principalmente Gás Gás e condensado Óleo e gás Óleo e gás 32 Solução - Propriedades dos Fluidos AULA 2 1.
+- SOLUÇÃO i.
+- Figura 6.18: Reservatório de gás seco.
+- Figura 6.19: Reservatório com capa de gás.
+- SOLUÇÃO N : G = 31 47 = 0, 66 i.
+- Calcule o volume original de óleo no reservatório.
+- ϕ=5 % Viscosidade do óleo no reservatório...
+- , volume 2.
+
+Definições / termos importantes:
+- Politécnico de Tecnologias e Ciências - ISPTEC
+18 de maio de 2024
+
+ 
+COPYRIGHT: © 2024 by Geraldo Ramos. All rights reserved.
+- Os problemas deste documento estão relacionados com:  Capítulo 1  Introdução à Engenharia de Reservatórios;
+- O documento está dividido em três partes:  Parte - I: O questionário dos problemas
+- Parte - II: As soluções dos problemas
+- Aula - 5: Compressibilidade; Saturação; Permeabilidade . . . . . . . . . . . . . . . . . . . . . 8
+- Aula-6: Molhabilidade; Capilaridade e pressão capilar; Processos de embebição e drenagem;
+- Aula-7: Contacto de hidrocarbonetos/água . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+- PARTE - I: Poblemas
+- Dene: (a) Cricondenbar,
+- Completar: HIDROCARBOTENOS + NÃO HIDROCARBONETOS = 
+- Table: Tabela do exercício 4
+- Dados: γH2O = 10000N/m 3, g = 10
+- Calcular: (a) Massa molecular aparente do gás.
+- Determine para essa mistura: (a) A massa molecular
+- Estão disponíveis os seguintes dados: V1 = 100cc
+- Determinar a porosidade de uma amostra de testemunho no laboratório: (a) Para uma semana
+- Derivar a equação do uxo radial ilustrada abaixo: q = 2πkh (pe − pw)
+- Responda as seguintes questões: (a) Qual dos três tipos de rocha é a melhor qualidade de rocha-reservatório? Porque?
+- Deriva a equação para nível da zona de água livre ilustrada abaixo: ZF W L = pw − po + ρogZo − ρwgZw
+- Provar que: So =

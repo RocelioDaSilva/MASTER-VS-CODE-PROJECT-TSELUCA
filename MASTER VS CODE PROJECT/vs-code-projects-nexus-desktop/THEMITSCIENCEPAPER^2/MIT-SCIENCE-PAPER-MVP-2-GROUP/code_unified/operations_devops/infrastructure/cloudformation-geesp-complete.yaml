@@ -1,0 +1,679 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'GEESP-Angola Complete AWS Infrastructure as Code - CloudFormation Template'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: production
+    AllowedValues: [development, staging, production]
+    Description: Environment name
+  
+  InstanceType:
+    Type: String
+    Default: t3.large
+    AllowedValues: [t3.micro, t3.small, t3.medium, t3.large, t3.xlarge, m5.large, m5.xlarge]
+    Description: EC2 instance type for application servers
+  
+  DBInstanceClass:
+    Type: String
+    Default: db.t3.medium
+    AllowedValues: [db.t3.micro, db.t3.small, db.t3.medium, db.t3.large, db.m5.large]
+    Description: RDS instance class
+  
+  DBAllocatedStorage:
+    Type: Number
+    Default: 100
+    MinValue: 20
+    MaxValue: 1000
+    Description: Database allocated storage in GB
+  
+  KeyPairName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: EC2 Key Pair for SSH access
+  
+  Environment:
+    Type: String
+    Default: production
+    AllowedValues: [development, staging, production]
+
+Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Label:
+          default: "Infrastructure Configuration"
+        Parameters:
+          - Environment
+          - KeyPairName
+      - Label:
+          default: "Compute Configuration"
+        Parameters:
+          - InstanceType
+      - Label:
+          default: "Database Configuration"
+        Parameters:
+          - DBInstanceClass
+          - DBAllocatedStorage
+
+Conditions:
+  IsProduction: !Equals [!Ref Environment, production]
+  IsStaging: !Equals [!Ref Environment, staging]
+
+Resources:
+  # ============================================================================
+  # VPC & NETWORKING
+  # ============================================================================
+  
+  GeespVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-vpc-${Environment}
+
+  # Public Subnet (Bastion, NAT Gateway)
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref GeespVPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-public-subnet-1-${Environment}
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref GeespVPC
+      CidrBlock: 10.0.2.0/24
+      AvailabilityZone: !Select [1, !GetAZs '']
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-public-subnet-2-${Environment}
+
+  # Private Subnets (App servers, RDS)
+  PrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref GeespVPC
+      CidrBlock: 10.0.11.0/24
+      AvailabilityZone: !Select [0, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-private-subnet-1-${Environment}
+
+  PrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref GeespVPC
+      CidrBlock: 10.0.12.0/24
+      AvailabilityZone: !Select [1, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-private-subnet-2-${Environment}
+
+  # Internet Gateway
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-igw-${Environment}
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref GeespVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  # NAT Gateway (for private subnets to reach internet)
+  NATGatewayEIP:
+    Type: AWS::EC2::EIP
+    DependsOn: AttachGateway
+    Properties:
+      Domain: vpc
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-nat-eip-${Environment}
+
+  NATGateway:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      AllocationId: !GetAtt NATGatewayEIP.AllocationId
+      SubnetId: !Ref PublicSubnet1
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-nat-${Environment}
+
+  # Route Tables
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref GeespVPC
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-public-rt-${Environment}
+
+  PublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  PublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref GeespVPC
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-private-rt-${Environment}
+
+  PrivateRoute:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId: !Ref PrivateRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId: !Ref NATGateway
+
+  PrivateSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet1
+      RouteTableId: !Ref PrivateRouteTable
+
+  PrivateSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet2
+      RouteTableId: !Ref PrivateRouteTable
+
+  # ============================================================================
+  # SECURITY GROUPS
+  # ============================================================================
+  
+  BastionSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub geesp-bastion-sg-${Environment}
+      GroupDescription: Security group for bastion host
+      VpcId: !Ref GeespVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+          Description: SSH from anywhere
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: All outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-bastion-sg-${Environment}
+
+  AppSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub geesp-app-sg-${Environment}
+      GroupDescription: Security group for application servers
+      VpcId: !Ref GeespVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          SourceSecurityGroupId: !Ref BastionSecurityGroup
+          Description: SSH from bastion
+        - IpProtocol: tcp
+          FromPort: 8000
+          ToPort: 8000
+          SourceSecurityGroupId: !Ref ALBSecurityGroup
+          Description: FastAPI from ALB
+        - IpProtocol: tcp
+          FromPort: 8501
+          ToPort: 8501
+          SourceSecurityGroupId: !Ref ALBSecurityGroup
+          Description: Streamlit from ALB
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: All outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-app-sg-${Environment}
+
+  ALBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub geesp-alb-sg-${Environment}
+      GroupDescription: Security group for Application Load Balancer
+      VpcId: !Ref GeespVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+          Description: HTTP from anywhere
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+          Description: HTTPS from anywhere
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: All outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-alb-sg-${Environment}
+
+  RDSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupName: !Sub geesp-rds-sg-${Environment}
+      GroupDescription: Security group for RDS database
+      VpcId: !Ref GeespVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 5432
+          ToPort: 5432
+          SourceSecurityGroupId: !Ref AppSecurityGroup
+          Description: PostgreSQL from app servers
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+          Description: All outbound traffic
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-rds-sg-${Environment}
+
+  # ============================================================================
+  # RDS DATABASE
+  # ============================================================================
+  
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupName: !Sub geesp-db-subnet-${Environment}
+      DBSubnetGroupDescription: Subnet group for GEESP RDS
+      SubnetIds:
+        - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-db-subnet-${Environment}
+
+  GeesDatabase:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Snapshot
+    Properties:
+      DBInstanceIdentifier: !Sub geesp-db-${Environment}
+      DBInstanceClass: !Ref DBInstanceClass
+      Engine: postgres
+      EngineVersion: '14.7'
+      AllocatedStorage: !Ref DBAllocatedStorage
+      StorageType: gp3
+      StorageEncrypted: !If [IsProduction, true, false]
+      MasterUsername: admin
+      MasterUserPassword: !Sub '{{resolve:secretsmanager:geesp-db-password-${Environment}:SecretString:password}}'
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      VPCSecurityGroups:
+        - !Ref RDSSecurityGroup
+      MultiAZ: !If [IsProduction, true, false]
+      BackupRetentionPeriod: !If [IsProduction, 30, 7]
+      PreferredBackupWindow: '02:00-03:00'
+      PreferredMaintenanceWindow: 'sun:03:00-sun:04:00'
+      EnableCloudwatchLogsExports:
+        - postgresql
+      EnableIAMDatabaseAuthentication: !If [IsProduction, true, false]
+      EnablePerformanceInsights: !If [IsProduction, true, false]
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-database-${Environment}
+
+  # ============================================================================
+  # EC2 INSTANCES
+  # ============================================================================
+  
+  BastionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-bastion-role-${Environment}
+
+  BastionInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref BastionRole
+
+  BastionHost:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Sub '{{resolve:ssm:/aws/service/canonical/ubuntu/server/22.04/stable/current/amd64/hvm/ebs-gp3/ami-id}}'
+      InstanceType: t3.micro
+      KeyName: !Ref KeyPairName
+      SubnetId: !Ref PublicSubnet1
+      SecurityGroupIds:
+        - !Ref BastionSecurityGroup
+      IamInstanceProfile: !Ref BastionInstanceProfile
+      UserData:
+        Fn::Base64: |
+          #!/bin/bash
+          set -e
+          apt-get update
+          apt-get install -y \
+            curl \
+            wget \
+            git \
+            htop \
+            net-tools \
+            openssh-server \
+            fail2ban \
+            wireguard \
+            wireguard-tools
+          
+          # Harden SSH
+          sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
+          sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+          systemctl restart ssh
+          
+          # Enable CloudWatch
+          wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
+          dpkg -i -E ./amazon-cloudwatch-agent.deb
+          
+          echo "Bastion host initialization complete"
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-bastion-${Environment}
+
+  AppServerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy
+      Policies:
+        - PolicyName: ECRAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ecr:GetAuthorizationToken
+                  - ecr:BatchGetImage
+                  - ecr:GetDownloadUrlForLayer
+                Resource: '*'
+        - PolicyName: S3Access
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: !Sub '${DataBucket.Arn}/*'
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-app-role-${Environment}
+
+  AppInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref AppServerRole
+
+  # Launch Template for App Servers (for ASG)
+  AppServerLaunchTemplate:
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      LaunchTemplateName: !Sub geesp-app-launch-template-${Environment}
+      LaunchTemplateData:
+        ImageId: !Sub '{{resolve:ssm:/aws/service/canonical/ubuntu/server/22.04/stable/current/amd64/hvm/ebs-gp3/ami-id}}'
+        InstanceType: !Ref InstanceType
+        KeyName: !Ref KeyPairName
+        SecurityGroupIds:
+          - !Ref AppSecurityGroup
+        IamInstanceProfile:
+          Arn: !GetAtt AppInstanceProfile.Arn
+        UserData:
+          Fn::Base64: |
+            #!/bin/bash
+            set -e
+            apt-get update
+            apt-get install -y \
+              python3 \
+              python3-pip \
+              git \
+              curl \
+              docker.io \
+              postgresql-client
+            
+            # Add ubuntu user to docker group
+            usermod -aG docker ubuntu
+            
+            # Clone repository
+            cd /home/ubuntu
+            git clone https://github.com/ISPTEC-Energy/geesp-angola.git
+            cd geesp-angola
+            
+            # Install Python dependencies
+            pip3 install -r requirements.txt
+            
+            # Start API service
+            systemctl restart docker
+            docker pull ghcr.io/isptec-energy/geesp-angola:latest
+            docker run -d \
+              --name geesp-api \
+              -p 8000:8000 \
+              -e DATABASE_URL="postgresql://admin:${DB_PASSWORD}@${DB_HOST}:5432/geesp_db" \
+              ghcr.io/isptec-energy/geesp-angola:latest
+            
+            echo "App server initialization complete"
+        TagSpecifications:
+          - ResourceType: instance
+            Tags:
+              - Key: Name
+                Value: !Sub geesp-app-server-${Environment}
+              - Key: Environment
+                Value: !Ref Environment
+
+  # Auto Scaling Group
+  AppAutoScalingGroup:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      AutoScalingGroupName: !Sub geesp-app-asg-${Environment}
+      VPCZoneIdentifier:
+        - !Ref PrivateSubnet1
+        - !Ref PrivateSubnet2
+      LaunchTemplate:
+        LaunchTemplateId: !Ref AppServerLaunchTemplate
+        Version: !GetAtt AppServerLaunchTemplate.LatestVersionNumber
+      MinSize: !If [IsProduction, 2, 1]
+      MaxSize: !If [IsProduction, 6, 2]
+      DesiredCapacity: !If [IsProduction, 2, 1]
+      HealthCheckType: ELB
+      HealthCheckGracePeriod: 300
+      TargetGroupARNs:
+        - !Ref AppTargetGroup
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-app-instance-${Environment}
+          PropagateAtLaunch: true
+
+  # ============================================================================
+  # LOAD BALANCING
+  # ============================================================================
+  
+  ApplicationLoadBalancer:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      Name: !Sub geesp-alb-${Environment}
+      Type: application
+      Subnets:
+        - !Ref PublicSubnet1
+        - !Ref PublicSubnet2
+      SecurityGroups:
+        - !Ref ALBSecurityGroup
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-alb-${Environment}
+
+  AppTargetGroup:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      Name: !Sub geesp-app-targets-${Environment}
+      Port: 8000
+      Protocol: HTTP
+      TargetType: instance
+      VpcId: !Ref GeespVPC
+      HealthCheckEnabled: true
+      HealthCheckPath: /health
+      HealthCheckProtocol: HTTP
+      HealthCheckIntervalSeconds: 30
+      HealthCheckTimeoutSeconds: 5
+      HealthyThresholdCount: 2
+      UnhealthyThresholdCount: 3
+      Matcher:
+        HttpCode: 200-299
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-app-tg-${Environment}
+
+  ALBListener:
+    Type: AWS::ElasticLoadBalancingV2::Listener
+    Properties:
+      LoadBalancerArn: !Ref ApplicationLoadBalancer
+      Port: 80
+      Protocol: HTTP
+      DefaultActions:
+        - Type: forward
+          TargetGroupArn: !Ref AppTargetGroup
+
+  # ============================================================================
+  # STORAGE
+  # ============================================================================
+  
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub geesp-data-${Environment}-${AWS::AccountId}
+      VersioningConfiguration:
+        Status: Enabled
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: Name
+          Value: !Sub geesp-data-bucket-${Environment}
+
+  # ============================================================================
+  # MONITORING & LOGGING
+  # ============================================================================
+  
+  GeespLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /geesp-angola/${Environment}
+      RetentionInDays: !If [IsProduction, 30, 7]
+
+  # ============================================================================
+  # OUTPUTS
+  # ============================================================================
+
+Outputs:
+  VpcId:
+    Description: VPC ID
+    Value: !Ref GeespVPC
+    Export:
+      Name: !Sub geesp-vpc-${Environment}
+
+  BastionHostDNS:
+    Description: Bastion host public DNS
+    Value: !GetAtt BastionHost.PublicDnsName
+    Export:
+      Name: !Sub geesp-bastion-dns-${Environment}
+
+  BastionHostIP:
+    Description: Bastion host public IP
+    Value: !GetAtt BastionHost.PublicIp
+    Export:
+      Name: !Sub geesp-bastion-ip-${Environment}
+
+  LoadBalancerDNS:
+    Description: Application Load Balancer DNS
+    Value: !GetAtt ApplicationLoadBalancer.DNSName
+    Export:
+      Name: !Sub geesp-alb-dns-${Environment}
+
+  DatabaseEndpoint:
+    Description: RDS database endpoint
+    Value: !GetAtt GeesDatabase.Endpoint.Address
+    Export:
+      Name: !Sub geesp-db-endpoint-${Environment}
+
+  DatabasePort:
+    Description: RDS database port
+    Value: !GetAtt GeesDatabase.Endpoint.Port
+    Export:
+      Name: !Sub geesp-db-port-${Environment}
+
+  DataBucketName:
+    Description: S3 data bucket name
+    Value: !Ref DataBucket
+    Export:
+      Name: !Sub geesp-data-bucket-${Environment}
+
+  LogGroupName:
+    Description: CloudWatch log group
+    Value: !Ref GeespLogGroup
+    Export:
+      Name: !Sub geesp-log-group-${Environment}
+
+  AppSecurityGroupId:
+    Description: Application server security group ID
+    Value: !Ref AppSecurityGroup
+    Export:
+      Name: !Sub geesp-app-sg-${Environment}
+
+  BastionSecurityGroupId:
+    Description: Bastion host security group ID
+    Value: !Ref BastionSecurityGroup
+    Export:
+      Name: !Sub geesp-bastion-sg-${Environment}

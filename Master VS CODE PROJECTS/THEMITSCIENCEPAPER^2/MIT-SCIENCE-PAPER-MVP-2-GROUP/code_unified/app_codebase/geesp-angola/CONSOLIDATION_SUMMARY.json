@@ -1,0 +1,81 @@
+{
+  "backend/api/endpoints.py": {
+    "exists": true,
+    "functions": 10,
+    "classes": 0,
+    "lines": 462,
+    "bytes": 12256,
+    "class_names": [],
+    "error": null
+  },
+  "backend/database/models.py": {
+    "exists": true,
+    "functions": 13,
+    "classes": 8,
+    "lines": 430,
+    "bytes": 16771,
+    "class_names": [
+      "Scenario",
+      "AnalysisResult",
+      "ResultsMetadata",
+      "SiteEvaluation",
+      "Map",
+      "Project",
+      "DailyGeneration",
+      "MaintenanceLog"
+    ],
+    "error": null
+  },
+  "backend/analysis/base.py": {
+    "exists": true,
+    "functions": 23,
+    "classes": 5,
+    "lines": 279,
+    "bytes": 8196,
+    "class_names": [
+      "AnalysisResult",
+      "Component",
+      "Validator",
+      "AnalysisEngine",
+      "RasterProcessor"
+    ],
+    "error": null
+  },
+  "backend/analysis/lcoe.py": {
+    "exists": true,
+    "functions": 12,
+    "classes": 1,
+    "lines": 479,
+    "bytes": 17828,
+    "class_names": [
+      "LCOECalculator"
+    ],
+    "error": null
+  },
+  "backend/analysis/mcda.py": {
+    "exists": true,
+    "functions": 10,
+    "classes": 2,
+    "lines": 473,
+    "bytes": 17810,
+    "class_names": [
+      "AHPWeighter",
+      "MCDAnalyzer"
+    ],
+    "error": null
+  },
+  "backend/analysis/validation_base.py": {
+    "exists": true,
+    "functions": 15,
+    "classes": 4,
+    "lines": 246,
+    "bytes": 8469,
+    "class_names": [
+      "ValidationType",
+      "ValidationCheck",
+      "ValidationResult",
+      "ValidationPipeline"
+    ],
+    "error": null
+  }
+}

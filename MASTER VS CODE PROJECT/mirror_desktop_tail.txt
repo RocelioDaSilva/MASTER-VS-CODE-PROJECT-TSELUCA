@@ -1,0 +1,200 @@
+﻿	    New File  		     259	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Servi‡os De Manipula‡Æo E Lifting\SCA\SPECTRUM CREST SERVICES, LDA_5001939688.md
+100%  
+	    New File  		     299	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Servi‡os de repara‡Æo de motores el‚ctricos\SCDA\MTA - M quinas e Tractores de Angola, Lda_5417034665.md
+100%  
+	    New File  		     246	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Servi‡os De Manipula‡Æo E Lifting\SCDA\BUREAU VERITAS ANGOLA_5401340968.md
+100%  
+	    New File  		     349	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Sistemas_Softwares De Ciberseguran‡a & Servi‡os Associados\SCA\Kallo Oumar - Com‚rcio Geral e Presta‡Æo de Servi‡os, Lda_5000190373.md
+100%  
+	    New File  		     366	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Servi‡os De Repara‡Æo E Manuten‡Æo De Equipamentos De Grua E De Eleva‡Æo\SCA\VGE ANGOLA - Com‚rcio Geral e Presta‡Æo de Servi‡os, Lda_5000226319.md
+100%  
+	    New File  		     332	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Servi‡os De Repara‡Æo E Manuten‡Æo De Equipamentos De Grua E De Eleva‡Æo\SCA\VisÆo geral - Presta‡Æo de Servi‡o, LDA_5002093839.md
+100%  
+	    New File  		     294	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum market research\petroleum-engineering-market-prospects\data\processed\company_hierarchy_originals\9. Servi‡os de Forma‡Æo e Capacita‡Æo Profissional\Servi‡os de revestimento, tubagem de produ‡Æo e manuseamento de peneiras, equipamentos e servi‡os\SCA\Harvest Clean_5001662511.md
+100%  
+	    New File  		    1643	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\alert.tsx
+100%  
+	    New File  		     161	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\aspect-ratio.tsx
+100%  
+	    New File  		    1164	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\badge.tsx
+100%  
+	    New File  		    1957	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\button.tsx
+100%  
+	    New File  		    2867	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\calendar.tsx
+100%  
+	    New File  		    1937	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\card.tsx
+100%  
+	    New File  		    6486	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\carousel.tsx
+100%  
+	    New File  		    1100	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\checkbox.tsx
+100%  
+	    New File  		    5052	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\command.tsx
+100%  
+	    New File  		    3971	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\dialog.tsx
+100%  
+	    New File  		    1227	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\hover-card.tsx
+100%  
+	    New File  		    2868	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\pagination.tsx
+100%  
+	    New File  		    1525	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\radio-group.tsx
+100%  
+	    New File  		    1704	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\scroll-area.tsx
+100%  
+	    New File  		    5789	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\select.tsx
+100%  
+	    New File  		     801	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\separator.tsx
+100%  
+	    New File  		   24144	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\sidebar.tsx
+100%  
+	    New File  		     276	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\skeleton.tsx
+100%  
+	    New File  		    1119	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\slider.tsx
+100%  
+	    New File  		     925	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\sonner.tsx
+100%  
+	    New File  		    1182	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\switch.tsx
+100%  
+	    New File  		    1952	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\tabs.tsx
+100%  
+	    New File  		     711	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\textarea.tsx
+100%  
+	    New File  		    1586	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\components\ui\toggle.tsx
+100%  
+	    New File  		     113	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\components\Sidebar.tsx
+100%  
+	    New File  		     113	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\Dashboard.tsx
+100%  
+	    New File  		     119	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\Optimization.tsx
+100%  
+	    New File  		     132	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\ProductionAnalysis.tsx
+100%  
+	    New File  		     134	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\ReservoirSimulation.tsx
+100%  
+	    New File  		     117	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\Uncertainty.tsx
+100%  
+	    New File  		      82	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\Visualization.tsx
+100%  
+	    New File  		     118	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\pages\WellTesting.tsx
+100%  
+	    New File  		     339	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\.gitignore
+100%  
+	    New File  		    2381	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\package.json
+100%  
+	    New File  		     143	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\postcss.config.mjs
+100%  
+	    New File  		     658	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\tsconfig.json
+100%  
+	    New File  		     865	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\Full project-20260219T174551Z-1-001 - C¢pia\MIT-SCIENCE-PAPER\Full project\08_Archive\archive\OLD_VERSIONS\old_manuscripts\writing\figuras\texput.log
+100%  
+	    New File  		     865	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\Full project-20260219T174551Z-1-001 - C¢pia\_old_information\legacy_mit_science_paper\archive_snapshots\archive\OLD_VERSIONS\old_manuscripts\writing\figuras\texput.log
+100%  
+	    New File  		     142	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\components\visualizations\MLModelDashboard.tsx
+100%  
+	    New File  		     166	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\app\components\visualizations\ReservoirVisualization3D.tsx
+100%  
+	    New File  		    2522	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\app\globals.css
+100%  
+	    New File  		     584	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\hooks\use-mobile.tsx
+100%  
+	    New File  		     303	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\theme-provider.tsx
+100%  
+	    New File  		     958	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\public\placeholder-logo.png
+100%  
+	    New File  		    3208	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\public\placeholder-logo.svg
+100%  
+	    New File  		    2615	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\public\placeholder-user.jpg
+100%  
+	    New File  		    1596	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\public\placeholder.jpg
+100%  
+	    New File  		     172	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\lib\utils.ts
+100%  
+	    New File  		    2522	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\styles\globals.css
+100%  
+	    New File  		   15318	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\lib\connectors\databases.ts
+100%  
+	    New File  		    9240	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\lib\connectors\simulation-engines.ts
+100%  
+	    New File  		    4575	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\alert-dialog.tsx
+100%  
+	    New File  		    1643	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\alert.tsx
+100%  
+	    New File  		     161	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\aspect-ratio.tsx
+100%  
+	    New File  		    1164	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\badge.tsx
+100%  
+	    New File  		    2827	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\breadcrumb.tsx
+100%  
+	    New File  		    1957	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\button.tsx
+100%  
+	    New File  		    2653	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\calendar.tsx
+100%  
+	    New File  		    6486	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\carousel.tsx
+100%  
+	    New File  		    1100	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\checkbox.tsx
+100%  
+	    New File  		     340	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\collapsible.tsx
+100%  
+	    New File  		    3971	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\dialog.tsx
+100%  
+	    New File  		    7633	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\dropdown-menu.tsx
+100%  
+	    New File  		    1227	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\hover-card.tsx
+100%  
+	    New File  		    2239	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\input-otp.tsx
+100%  
+	    New File  		     750	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\label.tsx
+100%  
+	    New File  		    1275	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\popover.tsx
+100%  
+	    New File  		     819	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\progress.tsx
+100%  
+	    New File  		    5789	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\select.tsx
+100%  
+	    New File  		     801	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\separator.tsx
+100%  
+	    New File  		    4421	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\sheet.tsx
+100%  
+	    New File  		   24144	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\sidebar.tsx
+100%  
+	    New File  		    1119	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\slider.tsx
+100%  
+	    New File  		     925	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\sonner.tsx
+100%  
+	    New File  		    1182	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\switch.tsx
+100%  
+	    New File  		    2882	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\table.tsx
+100%  
+	    New File  		     821	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\toaster.tsx
+100%  
+	    New File  		    1814	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\toggle-group.tsx
+100%  
+	    New File  		    1586	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\ui\toggle.tsx
+100%  
+	    New File  		    2986	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\visualizations\DeclineCurveAnalysis.tsx
+100%  
+	    New File  		    5191	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\visualizations\ReservoirVisualization3D.tsx
+100%  
+	    New File  		   22950	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\components\connections\connection-manager-ui.tsx
+100%  
+	    New File  		     342	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\app\components\ui\select.tsx
+100%  
+	    New File  		     142	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\app\components\visualizations\MLModelDashboard.tsx
+100%  
+	    New File  		     166	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\app\components\visualizations\ReservoirVisualization3D.tsx
+100%  
+	    New File  		     259	C:\Users\PCGAME\Desktop\MASTER VS CODE PROJECT\MASTER-VS-CODE-PROJECT-TSELUCA\petroleum-engineering-market-prospects-clone\isptec\tseluca\oil&gas projects\thepetrolumen\petrolumen\web-prototype\petroleum-dashboard\app\components\visualizations\WellPerformanceComparison.tsx
+100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :     21246     21245      4851         0         0         4
+   Files :    351397    333780     17617         0         0         9
+   Bytes :   2.491 g  414.75 m   2.086 g         0         0    19.0 k
+   Times :   1:05:29   0:03:49                       0:00:00   0:00:15
+
+
+   Speed :           1,891,071 Bytes/sec.
+   Speed :             108.208 MegaBytes/min.
+   Ended : Sunday, May 3, 2026 1:23:35 PM
+

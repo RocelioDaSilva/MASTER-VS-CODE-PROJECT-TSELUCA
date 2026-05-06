@@ -1,0 +1,22 @@
+{
+  "full_url": "https://app.powerbi.com/view?r=eyJrIjoiYjQ1ZmUyNjQtZDJhYy00MDM4LTk1OTctZmYzN2M1MzEzY2U0IiwidCI6Ijc4YTBlMjI5LTQ0NjMtNDBjOC04NzJhLWI0OTQyYzNjMzEwZCIsImMiOjl9",
+  "url_base": "https://app.powerbi.com/view",
+  "parameters": {
+    "r_encoded": "eyJrIjoiYjQ1ZmUyNjQtZDJhYy00MDM4LTk1OTctZmYzN2M1MzEzY2U0IiwidCI6Ijc4YTBlMjI5LTQ0NjMtNDBjOC04NzJhLWI0OTQyYzNjMzEwZCIsImMiOjl9",
+    "r_decoded": {
+      "k": "b45fe264-d2ac-4038-9597-ff37c5313ce4",
+      "t": "78a0e229-4463-40c8-872a-b4942c3c310d",
+      "c": 9
+    }
+  },
+  "extracted_ids": {
+    "config": 9
+  },
+  "timestamp": "2026-02-25T12:01:45.622Z",
+  "notes": [
+    "Report ID pode ser usado com Power BI REST API",
+    "Requer autenticação com Azure AD",
+    "Para acessar dados, use: https://api.powerbi.com/v1.0/myorg/reports/{reportId}",
+    "Ou acesse via Power BI Service dashboard"
+  ]
+}

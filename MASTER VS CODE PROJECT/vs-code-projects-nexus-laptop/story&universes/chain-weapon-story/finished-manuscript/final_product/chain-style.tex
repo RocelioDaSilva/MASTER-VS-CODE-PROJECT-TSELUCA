@@ -1,0 +1,188 @@
+% chain-style.tex - Enhanced stylish book template
+% Usage: \input{chain-style.tex} in your document preamble.
+% Designed for XeLaTeX / LuaLaTeX. Provides:
+% - Per-page POV symbol area (header outer)
+% - Top and bottom small landscape bands with optional location labels
+% - Decorative chapter opener hooks (use pgfornament if available)
+% - Outer chapter stripe with per-chapter markers (set total with \SetTotalChapters{})
+% - Quote box, scene-break ornament, and guidance for drop capitals (lettrine)
+
+% --------------------
+% Fonts, layout, and core packages
+% --------------------
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+
+\usepackage{geometry}
+\geometry{paperwidth=6in,paperheight=9in,inner=1in,outer=0.9in,top=1in,bottom=1in,headsep=12pt,headheight=30pt}
+
+\usepackage{xcolor}
+\definecolor{CWAccent}{HTML}{2E6BB2}
+\definecolor{CWAccent2}{HTML}{B2524A}
+\definecolor{CWGray}{HTML}{6B6B6B}
+\definecolor{sepia}{HTML}{704214}
+\definecolor{gold}{HTML}{D4AF37}
+\definecolor{parchment}{HTML}{FBF1E8}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.pathmorphing,shadows,positioning,fit}
+\usepackage{tikzpagenodes}
+\usepackage{pgfornament}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{everypage}
+\usepackage{lettrine}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\usepackage{lipsum} % example text; remove in your manuscript
+
+% Reduce overfull boxes in long italic/dialogue blocks
+\emergencystretch=3em
+\raggedbottom
+
+% --------------------
+% Top / Bottom landscapes with optional location labels
+% --------------------
+% The user can override the whole TikZ band with \setTopLandscape{<tikz or \\includegraphics>}
+% or simply set a location string with \setTopLocation{Town -- Dockside}
+\newcommand{\TopLocationText}{}
+\newcommand{\BottomLocationText}{}
+
+\newcommand{\TopLandscapeDefault}{%
+  \begin{tikzpicture}[x=\textwidth,y=1cm,baseline]
+    \fill[CWAccent!20] (0,0) .. controls (0.12,0.6) and (0.28,0.35) .. (0.45,0.65) .. controls (0.62,0.95) and (0.78,0.3) .. (1,0) -- (1,1.2) -- (0,1.2) -- cycle;
+    \fill[CWAccent!35] (0,0.2) .. controls (0.22,0.7) and (0.38,0.25) .. (0.57,0.6) .. controls (0.75,0.9) and (0.95,0.35) .. (1,0.45) -- (1,1.2) -- (0,1.2) -- cycle;
+    \ifx\TopLocationText\empty\else
+      \node[anchor=south west,font=\sffamily\small\bfseries\color{CWGray}] at (0.02,0.12) {\TopLocationText};
+    \fi
+  \end{tikzpicture}%
+}
+
+\newcommand{\BottomLandscapeDefault}{%
+  \begin{tikzpicture}[x=\textwidth,y=1cm,baseline]
+    \fill[CWAccent!14] (0,0.25) to[out=10,in=170] (1,0.25) -- (1,1.1) -- (0,1.1) -- cycle;
+    \draw[CWAccent,very thick,decorate,decoration={snake,amplitude=0.6pt,segment length=3pt}] (0,0.38) to[out=10,in=170] (1,0.38);
+    \ifx\BottomLocationText\empty\else
+      \node[anchor=north east,font=\sffamily\small\bfseries\color{CWGray}] at (0.98,0.95) {\BottomLocationText};
+    \fi
+  \end{tikzpicture}%
+}
+
+\newcommand{\TopLandscapeContent}{\TopLandscapeDefault}
+\newcommand{\BottomLandscapeContent}{\BottomLandscapeDefault}
+\newcommand{\setTopLandscape}[1]{\renewcommand{\TopLandscapeContent}{#1}}
+\newcommand{\setBottomLandscape}[1]{\renewcommand{\BottomLandscapeContent}{#1}}
+\newcommand{\setTopLocation}[1]{\renewcommand{\TopLocationText}{#1}}
+\newcommand{\setBottomLocation}[1]{\renewcommand{\BottomLocationText}{#1}}
+
+% --------------------
+% POV symbol system
+% --------------------
+% Circular badge: \POVMarker[<size>]{<fill-color>}{<char-or-glyph>}
+\newcommand{\POVMarker}[3][1.8em]{%
+  \tikz[baseline=(char.base)]{%
+    \node[draw=none, circle, fill=#2, text=white, inner sep=0pt, minimum size=#1] (char) {\sffamily\bfseries\small #3};
+  }%
+}
+\newcommand{\POVGraphic}[1]{\raisebox{-0.12\baselineskip}{\includegraphics[height=1.8em]{#1}}}
+
+\newcommand{\CurrentPOV}{\POVMarker[1.6em]{CWGray}{?}}
+\newcommand{\setPOV}[1]{\renewcommand{\CurrentPOV}{#1}}
+\newcommand{\setPOVName}[1]{\def\CurrentPOVName{#1}}
+
+% Example character symbols (customize or replace with \POVGraphic)
+\newcommand{\AliceSymbol}{\POVMarker[2.0em]{CWAccent}{A}}
+\newcommand{\RavenSymbol}{\POVMarker[2.0em]{CWAccent2}{R}}
+\newcommand{\NullSymbol}{\POVMarker[2.0em]{CWGray}{?}}
+
+% Small helper: place the POV symbol at the start of a scene/paragraph
+\newcommand{\ScenePOV}{\noindent\CurrentPOV\enspace}
+
+% POV chapter wrapper: set POV glyph, name, then start a chapter
+\newcommand{\POVchapter}[2]{%
+  \setPOV{\POVMarker[2.0em]{CWAccent}{#1}}%
+  \setPOVName{#2}%
+  \chapter{#2}%
+}
+
+% --------------------
+% Header / Footer: landscapes in center, POV at outer header, page number outer footer
+% --------------------
+\fancyhf{}
+\fancyhead[LE,RO]{\CurrentPOV}
+\fancyhead[C]{\TopLandscapeContent}
+\fancyfoot[C]{\BottomLandscapeContent}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\pagestyle{fancy}
+
+% --------------------
+% Chapter stripe with per-chapter markers (like Bible margin stripes)
+% Usage: \SetTotalChapters{<n>} to enable marks. If n==0 the stripe is hidden.
+% Place this in the preamble to set the total chapter count for the book.
+\newcounter{CWTotalChapters}
+\newcommand{\SetTotalChapters}[1]{\setcounter{CWTotalChapters}{#1}}
+\SetTotalChapters{0}
+
+\AddEverypageHook{%
+  \ifnum\value{CWTotalChapters}>0
+    \ifnum\value{chapter}>0
+      \begin{tikzpicture}[remember picture,overlay]
+        % choose outer side depending on page parity
+        \ifodd\value{page}
+          \coordinate (sttop) at (current page text area.north east);
+          \coordinate (stbot) at (current page text area.south east);
+          \def\xshift{6mm}
+        \else
+          \coordinate (sttop) at (current page text area.north west);
+          \coordinate (stbot) at (current page text area.south west);
+          \def\xshift{-6mm}
+        \fi
+        % stripe shaft
+        \fill[CWAccent!65] ($(sttop)+(\xshift,0)$) rectangle ($(stbot)+(\xshift-4mm,0)$);
+        % chapter markers along the text area height
+        \pgfmathtruncatemacro{\nchap}{\value{CWTotalChapters}}
+        \foreach \i in {1,...,\nchap} {%
+          \pgfmathsetmacro{\t}{ifthenelse(\nchap>1, (\i-1)/(\nchap-1), 0.5)}%
+          \coordinate (mark) at ($(sttop)!\t!(stbot)$);
+          \coordinate (markout) at ($(mark)+(\xshift-2mm,0)$);
+          \ifnum\i=\value{chapter}
+            \draw[fill=white, draw=CWAccent, line width=0.9pt] (markout) circle (1.6mm);
+          \else
+            \draw[fill=white!85, draw=CWAccent!30] (markout) circle (0.9mm);
+          \fi
+        }
+        % small chapter number rotated in the stripe
+        \node[rotate=90, font=\sffamily\bfseries, text=white] at ($(sttop)!0.5!(stbot)+(\xshift-9mm,0)$) {\thechapter};
+      \end{tikzpicture}%
+    \fi
+  \fi
+}
+
+% --------------------
+% Decorative chapter openers & titlesec setup
+% --------------------
+\titleformat{\chapter}[display]
+  {\centering\normalfont\Huge\bfseries}
+  {\vspace*{-1em}\CurrentPOV\quad\Huge\thechapter}
+  {0.5em}
+  {\centering}
+  [\vspace{1em}\hrule\vspace{1em}]
+
+% --------------------
+% Quote box and scene break
+% --------------------
+\newtcolorbox{quotebox}{enhanced,breakable,colback=sepia!8,colframe=gold!60,left=3mm,right=3mm,top=2mm,bottom=2mm,boxrule=0.6pt,borderline west={3pt}{0pt}{gold!65},before=\begingroup\sloppy,after=\endgroup}
+
+\newcommand{\scenebreak}{\par\bigskip\begin{center}\pgfornament[width=2.2em]{88}\end{center}\bigskip}
+
+% Readability tweaks
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0.5em}
+
+% End of chain-style.tex

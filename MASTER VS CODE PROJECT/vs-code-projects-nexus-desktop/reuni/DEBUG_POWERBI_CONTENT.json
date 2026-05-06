@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-02-25T12:39:18.968Z",
+  "title": "Microsoft Power BI",
+  "total_lines": 36,
+  "first_50_lines": [
+    "Mostrar atalhos de teclado",
+    "Mostrar sugestões de leitores de ecrã",
+    "Avançar para o conteúdo principal",
+    "Relatório do Power BI",
+    "Serviços",
+    "Bens",
+    "Deslocar para cima",
+    "Deslocar para baixo",
+    "Deslocar para a esquerda",
+    "Deslocar para a direita",
+    "Serviço/Actvidade/Tipo de Sociedade/Empresa",
+    "Consultoria, Assessoria e Auditoria",
+    "Serviço de Inspecção, Testes e Certificação",
+    "Serviço de Suporte as Operações",
+    "Serviços de Assistência Jurídica",
+    "Serviços de Apoio",
+    "Serviços de Engenharia e gestão de Projectos (Pré-Feed, FEED e Engenharia de Detalhe)",
+    "Serviços de Fabricação",
+    "Serviços de Finanças e Seguros",
+    "Serviços de Formação e Capacitação Profissional",
+    "Serviços de Fornecimento de Pessoal",
+    "Serviços de Geociências",
+    "Serviços de Operação Marítima",
+    "Serviços de Reservatório",
+    "Serviços de Saúde, Meio ambiente e Segurança",
+    "Serviços de Tecnologias de Informação e Comunicação",
+    "Serviços de Transporte, Instalação, Hook up e Comissionamento",
+    "Serviços e Bens de Perfuração, Completação e Intervenções de Poços",
+    "Serviços Logistícos",
+    "Serviços no Âmbito da Avaliação do Potencial Petrolífero das Bacias Interiores",
+    "Sistema de Produção Submarino (SPS) e Umbilicais, Linhas de Escoamento e Elevação (SURF)",
+    "-",
+    "+",
+    "81%",
+    "Microsoft Power BI",
+    "Relatório Ampliado Para 81%"
+  ],
+  "elements_found": 50,
+  "elements_sample": [
+    {
+      "tag": "HTML",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "BODY",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "",
+      "id": "pbiAppPlaceHolder",
+      "visible": true
+    },
+    {
+      "tag": "REPORT-EMBED",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "mainContent",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "landingController fillAvailableSpace",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "embeddedLandingRootContent reportContainerContent isActive embeddedPV embeddedLandingRootContentLogoVisible",
+      "id": "reportLandingContainer",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "embeddedPV",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "EXPLORATION-CONTAINER",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "exploration-container-modern",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "explorationContainer explorationWithChrome themeableElement reading newPaneColors",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DOCKING-CONTAINER",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "dockVContainer dockFill",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "dockHContainer dockFill",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "explorationContent fill",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "explorationHost explorationHostNoAppBar",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "fillAvailableSpace verticalItemsContainer",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "horizontalItemsContainer",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "EXPLORATION",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "exploreCanvasToBottom",
+      "id": "",
+      "visible": true
+    },
+    {
+      "tag": "DIV",
+      "text": "Mostrar atalhos de teclado\nMostrar sugestões de leitores de ecrã\nAvançar para o conteúdo principal\nR",
+      "classes": "exploration",
+      "id": "",
+      "visible": true
+    }
+  ]
+}

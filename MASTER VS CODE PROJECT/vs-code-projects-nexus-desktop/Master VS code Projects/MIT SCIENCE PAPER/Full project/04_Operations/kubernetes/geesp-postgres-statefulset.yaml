@@ -1,0 +1,366 @@
+# Kubernetes PostgreSQL + PostGIS StatefulSet for GEESP-Angola
+# Usage: kubectl apply -f k8s/geesp-postgres-statefulset.yaml
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgres-pv-1
+  namespace: geesp-production
+spec:
+  capacity:
+    storage: 100Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: fast-ssd
+  hostPath:
+    path: /mnt/postgres-data/node1
+
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-ssd
+provisioner: kubernetes.io/no-provisioner
+allowVolumeExpansion: true
+volumeBindingMode: WaitForFirstConsumer
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  namespace: geesp-production
+  labels:
+    app: postgres
+spec:
+  ports:
+  - port: 5432
+    name: postgres
+  clusterIP: None  # Headless service for StatefulSet
+  selector:
+    app: postgres
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-lb
+  namespace: geesp-production
+  labels:
+    app: postgres
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 5432
+    targetPort: 5432
+  selector:
+    app: postgres
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: geesp-production
+spec:
+  serviceName: postgres
+  replicas: 1  # Change to 3+ for HA with replicas
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9187"
+        prometheus.io/path: "/metrics"
+    spec:
+      securityContext:
+        fsGroup: 999
+        runAsNonRoot: true
+        runAsUser: 999
+      
+      containers:
+      - name: postgres
+        image: postgis/postgis:15-3.3
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - name: postgres
+          containerPort: 5432
+        
+        env:
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: db-user
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: db-password
+        - name: POSTGRES_DB
+          value: "geesp_production"
+        - name: PGDATA
+          value: "/var/lib/postgresql/data/pgdata"
+        
+        # PostgreSQL configuration
+        - name: POSTGRES_INITDB_ARGS
+          value: >
+            -c shared_preload_libraries=pg_stat_statements
+            -c max_connections=200
+            -c shared_buffers=256MB
+            -c effective_cache_size=1GB
+            -c work_mem=2MB
+        
+        # Health checks
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - exec pg_isready -U $POSTGRES_USER -h localhost
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        
+        readinessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - exec pg_isready -U $POSTGRES_USER -h localhost
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 2
+        
+        # Resource management
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "1Gi"
+          limits:
+            cpu: "2000m"
+            memory: "2Gi"
+        
+        # Volume mounts
+        volumeMounts:
+        - name: postgres-storage
+          mountPath: /var/lib/postgresql/data
+        - name: postgres-config
+          mountPath: /etc/postgresql
+        
+        # Security context
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+              - ALL
+            add:
+              - CHOWN
+              - DAC_OVERRIDE
+          readOnlyRootFilesystem: false
+      
+      # PostgreSQL exporter for monitoring
+      - name: postgres-exporter
+        image: prometheuscommunity/postgres-exporter:v0.12.1
+        
+        ports:
+        - name: metrics
+          containerPort: 9187
+        
+        env:
+        - name: DATA_SOURCE_NAME
+          value: "postgresql://$(POSTGRES_USER):$(POSTGRES_PASSWORD)@localhost:5432/$(POSTGRES_DB)?sslmode=disable"
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: db-user
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: db-password
+        
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"
+        
+        livenessProbe:
+          httpGet:
+            path: /metrics
+            port: metrics
+          initialDelaySeconds: 10
+          periodSeconds: 10
+      
+      volumes:
+      - name: postgres-config
+        configMap:
+          name: postgres-config
+          optional: true
+  
+  volumeClaimTemplates:
+  - metadata:
+      name: postgres-storage
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      storageClassName: fast-ssd
+      resources:
+        requests:
+          storage: 100Gi
+
+---
+# ConfigMap for PostgreSQL initialization
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: geesp-production
+data:
+  init-db.sql: |
+    -- Enable PostGIS extension
+    CREATE EXTENSION IF NOT EXISTS postgis;
+    CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
+    
+    -- Create schema for GEESP data
+    CREATE SCHEMA IF NOT EXISTS geesp;
+    
+    -- Create locations table with geospatial support
+    CREATE TABLE IF NOT EXISTS geesp.locations (
+      location_id UUID PRIMARY KEY,
+      name VARCHAR(255) NOT NULL,
+      geom GEOMETRY(POINT, 4326),
+      province VARCHAR(100),
+      district VARCHAR(100),
+      population INTEGER DEFAULT 0,
+      solar_potential FLOAT DEFAULT 0,
+      poverty_rate FLOAT DEFAULT 0,
+      created_at TIMESTAMP DEFAULT NOW(),
+      updated_at TIMESTAMP DEFAULT NOW()
+    );
+    
+    -- Create spatial index
+    CREATE INDEX IF NOT EXISTS idx_locations_geom ON geesp.locations USING GIST(geom);
+    
+    -- Create energy data table
+    CREATE TABLE IF NOT EXISTS geesp.energy_data (
+      id UUID PRIMARY KEY,
+      location_id UUID REFERENCES geesp.locations(location_id),
+      year INTEGER,
+      consumption_kwh FLOAT,
+      generation_kwh FLOAT,
+      grid_availability_hours INTEGER,
+      created_at TIMESTAMP DEFAULT NOW()
+    );
+    
+    -- Create LCOE analysis results table
+    CREATE TABLE IF NOT EXISTS geesp.lcoe_results (
+      id UUID PRIMARY KEY,
+      location_id UUID REFERENCES geesp.locations(location_id),
+      technology VARCHAR(50),
+      lcoe_usd_per_kwh FLOAT,
+      capital_cost_usd FLOAT,
+      annual_opex_usd FLOAT,
+      annual_generation_kwh FLOAT,
+      created_at TIMESTAMP DEFAULT NOW()
+    );
+    
+    GRANT USAGE ON SCHEMA geesp TO geesp_app;
+    GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA geesp TO geesp_app;
+
+---
+# Backup Job (runs weekly)
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: postgres-backup
+  namespace: geesp-production
+spec:
+  schedule: "0 2 * * 0"  # 2 AM every Sunday
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: postgres-backup
+          containers:
+          - name: backup
+            image: postgis/postgis:15-3.3
+            command:
+            - /bin/sh
+            - -c
+            - |
+              export PGPASSWORD=$POSTGRES_PASSWORD
+              BACKUP_FILE="/backups/postgres-$(date +%Y%m%d-%H%M%S).sql.gz"
+              mkdir -p /backups
+              pg_dump -h postgres -U $POSTGRES_USER \
+                geesp_production | gzip > $BACKUP_FILE
+              echo "Backup created: $BACKUP_FILE"
+              # Keep only last 30 days of backups
+              find /backups -name "postgres-*.sql.gz" -mtime +30 -delete
+            env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: geesp-database-credentials
+                  key: db-user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: geesp-database-credentials
+                  key: db-password
+            volumeMounts:
+            - name: backup-storage
+              mountPath: /backups
+          volumes:
+          - name: backup-storage
+            persistentVolumeClaim:
+              claimName: postgres-backups
+          restartPolicy: OnFailure
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-backups
+  namespace: geesp-production
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard
+  resources:
+    requests:
+      storage: 500Gi
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ServiceAccount
+metadata:
+  name: postgres-backup
+  namespace: geesp-production
+
+---
+# ServiceMonitor for Prometheus (if using Prometheus Operator)
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: postgres-monitor
+  namespace: geesp-production
+spec:
+  selector:
+    matchLabels:
+      app: postgres
+  endpoints:
+  - port: metrics
+    interval: 30s
