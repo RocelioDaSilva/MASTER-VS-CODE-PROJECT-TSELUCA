@@ -1,0 +1,1845 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{underscore}       % Permite _ no texto sem causar erro
+\usepackage{xspace}           % Ajuda com espaçamento
+
+% ─── Suporte a Unicode (robusto para qualquer contexto) ──────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+\newunicodechar{Δ}{$\Delta$}
+\newunicodechar{π}{$\pi$}
+\newunicodechar{μ}{$\mu$}
+\newunicodechar{°}{\textdegree}                     % Funciona em texto e matemática
+\newunicodechar{–}{\textendash}
+\newunicodechar{—}{\textemdash}
+\newunicodechar{•}{\textbullet}
+\newunicodechar{→}{\ensuremath{\rightarrow}}        % Funciona dentro e fora de matemática
+\newunicodechar{←}{\ensuremath{\leftarrow}}
+\newunicodechar{á}{\ifmmode\text{\'{a}}\else\'{a}\fi} % Acento agudo
+\newunicodechar{ã}{\ifmmode\text{\~{a}}\else\~{a}\fi}
+\newunicodechar{ç}{\ifmmode\text{\c{c}}\else\c{c}\fi}
+\newunicodechar{é}{\ifmmode\text{\'{e}}\else\'{e}\fi}
+\newunicodechar{í}{\ifmmode\text{\'{i}}\else\'{i}\fi}
+\newunicodechar{ó}{\ifmmode\text{\'{o}}\else\'{o}\fi}
+\newunicodechar{ú}{\ifmmode\text{\'{u}}\else\'{u}\fi}
+\newunicodechar{â}{\ifmmode\text{\^{a}}\else\^{a}\fi}
+\newunicodechar{ê}{\ifmmode\text{\^{e}}\else\^{e}\fi}
+\newunicodechar{ô}{\ifmmode\text{\^{o}}\else\^{o}\fi}
+\newunicodechar{õ}{\ifmmode\text{\~{o}}\else\~{o}\fi}
+
+% ─── Cores Customizadas ──────────────────────────────────────────────────────
+\definecolor{darkmain}{HTML}{1a1a2e}
+\definecolor{accent}{HTML}{e94560}
+\definecolor{lightbg}{HTML}{f5f5f5}
+\definecolor{softbg}{HTML}{eeeeee}
+\definecolor{petroblue}{HTML}{0066cc}
+\definecolor{petrogreen}{HTML}{00a651}
+
+% ─── Geometria da Página ─────────────────────────────────────────────────────
+\geometry{
+  top=2cm,
+  bottom=2cm,
+  left=2cm,
+  right=2cm,
+  headheight=15pt
+}
+
+% ─── Cabeçalho e Rodapé ──────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{darkmain}{\textbf{PetroChamp 2025}}}
+\fancyhead[R]{\textcolor{darkmain}{Guia de Preparação}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\color{accent}\hrule width\headwidth height\headrulewidth\kern-\headrulewidth}
+
+% ─── Estilos Customizados ────────────────────────────────────────────────────
+\tcbuselibrary{skins}
+\tcbset{
+  enhanced,
+  colback=lightbg,
+  colframe=accent,
+  boxrule=2pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  arc=8pt,
+  outer arc=8pt
+}
+
+% ─── Comando para Seções ──────────────────────────────────────────────────────
+\newcommand{\mysection}[1]{
+  {\noindent\large\textbf{\textcolor{darkmain}{#1}}}
+  \vspace{6pt}
+}
+
+% ─── Começar o Documento ─────────────────────────────────────────────────────
+\begin{document}
+
+% ─── Página de Capa ──────────────────────────────────────────────────────────
+\begin{center}
+\vspace*{3cm}
+
+{\Huge\textbf{\textcolor{accent}{PetroChamp 2025}}}
+
+\vspace{1cm}
+
+{\LARGE\textbf{\textcolor{darkmain}{Guia Completo de Preparação}}}
+
+\vspace{2cm}
+
+{\large\textit{Repositório centralizado de informações para excelência na competição}}
+
+\vspace{3cm}
+
+\begin{tcolorbox}[colback=petroblue!10, colframe=petroblue, boxrule=2pt]
+\textbf{Data do Evento:} 03 de abril de 2025\\
+\textbf{Local:} Hotel A Preciosa, Morro Bento\\
+\textbf{Objetivos:} Desenvolver e demonstrar habilidades técnicas na indústria petrolífera
+\end{tcolorbox}
+
+\vspace{3cm}
+
+{\normalsize Versão: 1.0 | Março 2026}
+
+\end{center}
+
+\newpage
+
+% ─── Índice ──────────────────────────────────────────────────────────────────
+\tableofcontents
+\newpage
+
+% ─── Seção 1: Contexto Geral ──────────────────────────────────────────────────
+\section*{1. Contexto Geral do Evento}
+
+\subsection*{Ata do Evento de Lançamento do PetroChamp 2025}
+
+\begin{tcolorbox}
+\textbf{Data:} 03 de abril de 2025\\
+\textbf{Local:} Hotel A Preciosa, Morro Bento\\
+\textbf{Horário:} 18:00 horas
+\end{tcolorbox}
+
+\subsubsection*{1. Abertura}
+
+A sessão de lançamento do Petrochamp 2025 foi realizada no dia 03 de abril de 2025, no Hotel A Preciosa, Morro Bento, com início às 18h00. O evento contou com a presença de diversas autoridades acadêmicas, representantes do setor petrolífero, estudantes e convidados especiais.
+
+\subsubsection*{2. Composição da Mesa de Honra}
+
+A mesa de honra foi composta pelas seguintes personalidades:
+\begin{itemize}
+  \item Representante da Direção do ISPTEC
+  \item Presidente da Associação de Estudantes, Neusa António
+  \item Representante do Ministério dos Recursos Minerais, Petróleo e Gás
+  \item Representante da Indústria Petrolífera
+\end{itemize}
+
+\subsubsection*{3. Discursos e Intervenções}
+
+Os discursos iniciais destacaram a importância do Petrochamp 2025 como uma plataforma para desenvolver e demonstrar habilidades técnicas dos estudantes na indústria petrolífera. Foram ressaltadas a relevância académica e profissional do evento e a necessidade de cooperação entre instituições de ensino e o setor industrial.
+
+\subsubsection*{4. Apresentação do Petrochamp 2025}
+
+Foi feita uma apresentação oficial do evento, abordando os seguintes pontos:
+\begin{itemize}
+  \item Objetivos do Petrochamp 2025
+  \item Modalidades da competição
+  \item Critérios de avaliação
+  \item Calendário e fases da competição
+  \item Benefícios para os participantes e premiações
+\end{itemize}
+
+\subsubsection*{5. Encerramento}
+
+Após a sessão de perguntas e respostas, o evento foi encerrado com um momento de networking entre os presentes, permitindo a troca de ideias e o fortalecimento de parcerias.
+
+\vspace{12pt}
+
+\textit{Sem mais a tratar, a presente ata foi lavrada e assinada pelos responsáveis.}
+
+\newpage
+
+% ─── Seção 2: Instituições Participantes ──────────────────────────────────────
+\section*{2. Instituições Participantes}
+
+\mysection{Universidades e Institutos Acreditados}
+
+\begin{tcolorbox}[colback=petrogreen!10, colframe=petrogreen]
+\begin{itemize}
+  \item Piaget de Benguela
+  \item Universidade Católica de Angola
+  \item Instituto Superior Politécnico Catangoji
+  \item Instituto Superior Politécnico de Kalandula
+  \item Universidade Agostinho Neto
+  \item Universidade de Belas
+  \item Universidade de Jean Piaget de Luanda
+  \item ISPTEC
+\end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+% ─── Seção 3: Perfil Académico do Estudante ──────────────────────────────────
+\section*{3. Perfil Académico do Estudante (3.º ao 5.º ano)}
+
+\subsection*{Disciplinas Concluídas (1.º ao 5.º Semestre)}
+
+\textbf{Essenciais para o teste:}
+
+\begin{enumerate}
+  \item \textbf{Introdução à Engenharia de Petróleos} (1.º Sem) – Conceitos fundamentais da área
+  \item \textbf{Geologia Geral} (2.º Sem) – Formação de bacias sedimentares e reservatórios
+  \item \textbf{Termodinâmica Aplicada} (4.º Sem) – Comportamento de fluidos e processos termodinâmicos em reservatórios
+  \item \textbf{Geoestatística} (4.º Sem) – Análise estatística de dados geológicos e de reservatórios
+  \item \textbf{Fenómenos de Transporte I} (5.º Sem) – Mecânica de fluidos aplicada a escoamento em meios porosos e dutos
+  \item \textbf{Geoquímica Orgânica} (5.º Sem) – Origem, composição e transformações do petróleo
+  \item \textbf{Introdução à Análise de Bacias} (5.º Sem) – Técnicas de avaliação de bacias sedimentares para exploração
+\end{enumerate}
+
+\subsection*{Disciplinas Pendentes}
+
+\textbf{Núcleo duro para a competição:}
+
+\begin{enumerate}
+  \item Engenharia de Reservatórios I e II
+  \item Engenharia de Poços
+  \item Simulação e Modelagem de Reservatórios
+  \item Avaliação de Formações
+  \item Completação de Poços
+  \item Sistemas de Produção em Superfície
+  \item Sistemas Marítimos de Produção
+  \item Escoamento de Petróleo
+  \item Mecânica das Rochas
+  \item Elevação de Petróleo
+\end{enumerate}
+
+\newpage
+
+% ─── Seção 4: Estrutura da Competição ─────────────────────────────────────────
+\section*{4. Estrutura da Competição PetroChamp}
+
+\subsection*{Áreas de Conhecimento Avaliadas}
+
+\begin{itemize}
+  \item Engenharia de Perfuração
+  \item Engenharia de Reservatórios
+  \item Engenharia de Produção
+  \item Engenharia de Completação
+  \item Geologia
+  \item Geofísica
+  \item Petroquímica
+  \item História do Petróleo em Angola
+\end{itemize}
+
+\subsection*{Formato da Competição}
+
+A competição envolve um teste classificatório, do qual os três melhores colocados formarão o time da instituição. O teste abordará desde conceitos básicos até problemas práticos de média e alta complexidade, incluindo:
+
+\begin{itemize}
+  \item Interpretação de dados geológicos e de reservatórios
+  \item Análise de dados sísmicos e perfis de poço
+  \item Cálculos de vazão, pressão, densidade de fluido e outros parâmetros
+  \item Tomada de decisão perante problemas típicos da indústria
+  \item Conhecimento aprofundado da história petrolífera de Angola
+\end{itemize}
+
+\newpage
+
+% ─── Seção 5: Questionário - Engenharia de Perfuração ────────────────────────
+\section*{5. Questionário Completo – PetroChamp 2025}
+
+A seguir, apresenta-se um questionário de \textbf{500 perguntas dissertativas}, divididas por área temática. Cada seção contém questões de níveis básico, intermediário e avançado, elaboradas com base nos conteúdos programáticos das universidades participantes.
+
+\newpage
+
+\subsection*{Tema 1: Engenharia de Perfuração (Perguntas 1–63)}
+
+\begin{enumerate}
+  \item (Básico) O que é um poço de petróleo e quais são as principais fases do processo de perfuração?
+  \textbf{Resposta:} Um poço de petróleo é uma perfuração na crosta terrestre que visa a exploração e produção de hidrocarbonetos. As principais fases são: locação e preparação do terreno, perfuração da seção de superfície, instalação e cimentação do revestimento de superfície, perfuração das seções intermediárias e de produção (com respectivos revestimentos), e finalmente a completação.
+
+  \item (Básico) Descreva os principais tipos de brocas de perfuração (ex.: tricônica, PDC) e suas aplicações.
+  \textbf{Resposta:} Brocas tricônicas: possuem três cones rotativos com dentes de aço ou insertos de tungstênio. Adequadas para formações abrasivas e duras, como xistos e arenitos consolidados. Brocas PDC (Polycrystalline Diamond Compact): possuem pastilhas de diamante sintético fixas. Indicadas para formações macias a médias, oferecem alta taxa de penetração (ROP) e maior durabilidade.
+
+  \item (Básico) Explique as principais funções dos fluidos de perfuração.
+  \textbf{Resposta:} As funções principais são: (1) equilibrar as pressões da formação (evitar kicks), (2) transportar os cascalhos para a superfície, (3) resfriar e lubrificar a broca e a coluna, (4) revestir as paredes do poço, (5) suspender os sólidos quando a circulação para, (6) transmitir potência hidráulica à broca.
+
+  \item (Básico) O que é um blowout e quais dispositivos (como BOP) são usados para evitá-lo?
+  \textbf{Resposta:} Blowout é a liberação descontrolada de fluidos da formação (gás, óleo ou água) para a superfície. Para preveni-lo, utiliza-se o Blowout Preventer (BOP), um conjunto de válvulas de alta pressão instalado na cabeça do poço. Existem BOPs de anel (annular) e de ram (shear rams, pipe rams) que podem selar o poço em emergências.
+
+  \item (Básico) Diferencie perfuração vertical de perfuração direcional. Quais as motivações para perfurar direcionalmente?
+  \textbf{Resposta:} A perfuração vertical segue uma trajetória reta em direção ao centro da Terra. A direcional é intencionalmente desviada para atingir alvos laterais. Motivações: acessar reservatórios abaixo de áreas inacessíveis (urbanas, marinhas), drenar múltiplas zonas a partir de uma única plataforma, evitar falhas geológicas, e perfurar poços de alívio.
+
+  \item (Intermediário) Como se calcula a densidade ideal do fluido de perfuração para equilibrar a pressão dos fluidos do reservatório?
+  \textbf{Resposta:} A densidade ideal (em lb/gal ou kg/m³) é calculada para que a pressão hidrostática no fundo do poço seja ligeiramente superior à pressão de poros da formação (overbalance). Usa-se a fórmula: $P_{\text{hid}} = \rho \cdot g \cdot h$. Normalmente adiciona-se uma margem de segurança (kick tolerance). O valor é obtido a partir de dados de pressão de formação (RFT, MDT) ou testes de poço.
+
+  \item (Intermediário) Explique a diferença entre poços rasos e profundos e os desafios técnicos adicionais.
+  \textbf{Resposta:} Poços rasos (<1000 m) apresentam menor gradiente geotérmico, menor sobrecarga e riscos reduzidos de alta pressão. Poços profundos (>3000 m) enfrentam altas temperaturas (HPHT), pressões extremas, maior tempo de operação, riscos de stuck pipe, e exigem equipamentos especiais (BOPs de alta pressão, fluidos estáveis termicamente).
+
+  \item (Intermediário) O que são colunas de perfuração e qual o papel do kelly ou do top drive?
+  \textbf{Resposta:} A coluna de perfuração (drill string) é composta por tubos (drill pipes) que transmitem rotação e circulação à broca. O kelly (quatro ou sextavado) era o componente que transferia rotação da mesa rotativa para a coluna. O top drive é um sistema moderno que fica no topo da coluna e fornece rotação e circulação simultaneamente, permitindo perfurar em seções de 28 m (stands) e aumentando a eficiência e segurança.
+
+  \item (Intermediário) Descreva o processo de cimentação de um revestimento. Por que é crítico?
+  \textbf{Resposta:} Após o revestimento (casing) ser descido, bombeia-se cimento (slurry) para o anular entre o revestimento e a formação. O cimento é deslocado para a posição, sobe pelo anular e endurece. É crítico para: isolar zonas produtoras, evitar migração de fluidos entre camadas, proteger o revestimento contra corrosão e fornecer suporte estrutural.
+
+  \item (Intermediário) Quais fatores influenciam a escolha da trajetória do poço?
+  \textbf{Resposta:} Os fatores incluem: localização do reservatório (em relação à superfície), objetivos de drenagem (poços horizontais, multilaterais), condições geológicas (falhas, tectônica salina), restrições ambientais (áreas protegidas), economia (custo x produtividade) e capacidade dos equipamentos (MWD, rotary steerable).
+
+  \item (Intermediário) Quais os principais riscos ambientais associados à perfuração e como mitigá-los?
+  \textbf{Resposta:} Riscos: vazamento de fluidos de perfuração (sintéticos ou à base de água), descarte inadequado de cascalhos, e blowouts. Mitigação: uso de fluidos biodegradáveis, gestão de resíduos com reutilização, uso de BOPs e válvulas de segurança, monitoramento contínuo e planos de contingência.
+
+  \item (Intermediário) O que é um kick e como o balanço de pressão atua no seu controlo?
+  \textbf{Resposta:} Kick é a entrada indesejada de fluidos da formação no poço devido à pressão hidrostática insuficiente. O controle se dá pelo método do balanço de pressão: fecha-se o BOP, circula-se o fluido invasor com um fluido mais denso (kill fluid) mantendo a pressão de fundo constante (ex.: método do perfurador, método do engenheiro).
+
+  \item (Intermediário) Cite e explique operações especiais de perfuração (coring, DST).
+  \textbf{Resposta:} Coring: extração de testemunhos cilíndricos de rocha para análise geológica e petrofísica. DST (Drill Stem Test): teste de formação realizado com a coluna de perfuração no fundo, medindo pressão, vazão e coletando amostras de fluidos, sem completar o poço.
+
+  \item (Intermediário) Diferencie perfuração de completamento. Em que ponto termina a perfuração?
+  \textbf{Resposta:} A perfuração termina quando o poço atinge a profundidade final (TD) e o último revestimento (produção) é cimentado. A completação começa então, incluindo a descida do tubing, instalação de packers, perfuração do revestimento (perfuração da formação) e instalação da árvore de natal.
+
+  \item (Intermediário) Como se dimensiona a coluna de revestimento (casing)? Quais parâmetros são considerados?
+  \textbf{Resposta:} Dimensiona-se com base em: pressões internas e externas (burst e collapse), cargas de tração durante a descida, profundidade e gradientes de pressão de poros e fratura, e margens de segurança (fator de projeto). Utiliza-se programas de engenharia para selecionar o aço (grau, peso por pé) e espessura.
+
+  \item (Intermediário) Explique o papel da mesa rotativa, derrick, guincho e swivel.
+  \textbf{Resposta:} Mesa rotativa: fornece rotação à coluna (em sonda convencional). Derrick: torre que suporta o peso da coluna. Guincho (drawworks): levanta e abaixa a coluna. Swivel: suspende a coluna e permite a entrada de fluido de circulação enquanto a coluna gira.
+
+  \item (Intermediário) O que é a profundidade de toque (TD) e por que é importante?
+  \textbf{Resposta:} TD (Total Depth) é a profundidade final do poço. É importante porque define o alcance do reservatório, a geometria da completação e os volumes de revestimento e cimento necessários.
+
+  \item (Intermediário) O que se entende por ``fundo do poço''? Considerações de circulação de fluidos.
+  \textbf{Resposta:} Fundo do poço (bottomhole) é a região onde a broca atua. A circulação de fluido deve manter a velocidade anular suficiente para transportar cascalhos, evitar acumulação e manter a pressão hidrostática adequada.
+
+  \item (Intermediário) Importância do monitoramento de pressão no fundo do poço. Riscos de aumento súbito.
+  \textbf{Resposta:} O monitoramento (com PWD – Pressure While Drilling) evita kicks e perdas de circulação. Um aumento súbito pode indicar kick, enquanto queda pode indicar perda de circulação. A rápida detecção permite ações corretivas.
+
+  \item (Intermediário) Quais cálculos são necessários para estimar a taxa de penetração (ROP)?
+  \textbf{Resposta:} A ROP é estimada através de modelos que correlacionam parâmetros operacionais: peso sobre a broca (WOB), rotação (RPM), torque, tipo de broca, propriedades do fluido e litologia. Fórmulas empíricas e simulações são usadas para prever e otimizar a ROP.
+
+  \item (Avançado) Vantagens e desvantagens da perfuração com lama vs. perfuração sem lama (underbalanced).
+  \textbf{Resposta:} Overbalanced (com lama): vantagens – maior controle de kicks, estabilidade do poço; desvantagens – danos à formação (skin). Underbalanced: vantagens – menor dano, maior produtividade natural; desvantagens – maior risco de blowout, necessidade de equipamentos especiais (rotating BOP), custo elevado.
+
+  \item (Avançado) Explique o fenômeno de stuck pipe e métodos para preveni-lo ou resolvê-lo.
+  \textbf{Resposta:} Stuck pipe ocorre quando a coluna fica presa no poço. Causas: desmoronamento, overpull, pressão diferencial (differential sticking). Prevenção: manter boas propriedades reológicas do fluido, evitar alta overbalance, usar stabilizers. Resolução: aplicar torque, circulação reversa, ferramentas de jarring (jars), e como último recurso, pescaria (fishing).
+
+  \item (Avançado) Descreva características e utilização de colunas de perfuração especiais (liners, etc.).
+  \textbf{Resposta:} Liner: revestimento que não alcança a superfície, suspenso por um liner hanger. Utilizado em seções profundas para reduzir custo e peso. Também há liners de perfuração (drill-in liners) que permitem completação em poço aberto.
+
+  \item (Avançado) Diferencie equipamentos de perfuração offshore dos onshore. Adaptações para águas profundas.
+  \textbf{Resposta:} Onshore: sondas terrestres com torres modulares. Offshore: plataformas fixas (jack-up) para águas rasas, e flutuantes (semi-submersíveis, drillships) para águas profundas. Adaptações para águas profundas incluem BOP submarino, sistemas de posicionamento dinâmico (DP), risers marítimos e sistemas de controle remoto.
+
+  \item (Avançado) Desafios técnicos da perfuração em águas ultra profundas (>1500 m).
+  \textbf{Resposta:} Desafios: alta pressão de poros e fratura com janela de operação estreita; baixa temperatura no fundo do mar (formação de hidratos); longas colunas de riser e BOP submarino de alto custo; logística complexa; monitoramento remoto; e riscos de perda de circulação devido ao gradiente de fratura reduzido.
+
+  \item (Avançado) Calcule o volume de cimento necessário para cimentar uma secção de revestimento.
+  \textbf{Resposta:} O volume é calculado somando: volume do anular (entre revestimento e poço) + volume de revestimento (shoe track) + fator de segurança. Fórmula: $V = \pi/4 \times (D_{\text{poço}}^2 - D_{\text{casing}}^2) \times L_{\text{anular}} \times F_{\text{excesso}}$. Exemplo: para poço de 12,25" e revestimento de 9,625", comprimento 1000 m, excesso 30\%, volume aprox. 25 m³.
+
+  \item (Avançado) Explique o conceito de sobrepressão geológica e como afeta o projeto de perfuração.
+  \textbf{Resposta:} Sobrepressão ocorre quando a pressão de poros excede o gradiente hidrostático normal. É comum em zonas de rápida sedimentação, como em margens passivas. No projeto de perfuração, exige-se maior densidade do fluido, revestimentos mais resistentes ao colapso e BOPs de maior capacidade.
+
+  \item (Avançado) Descreva o procedimento de controlo de poço em caso de kick.
+  \textbf{Resposta:} 1. Detectar o kick (aumento no poço de fluxo, aumento no volume de lama). 2. Fechar o BOP (anular ou ram). 3. Registrar a pressão de fechamento (SIDPP, SICP). 4. Preparar fluido de kill com densidade adequada. 5. Circular o fluido invasor utilizando método do perfurador ou do engenheiro, mantendo pressão de fundo constante.
+
+  \item (Avançado) Principais propriedades reológicas de um fluido de perfuração e sua influência no desempenho.
+  \textbf{Resposta:} Propriedades: viscosidade plástica (PV), limite de escoamento (YP), gel strength, e filtrado (API). Influenciam a capacidade de transporte de cascalhos, a perda de circulação, a estabilidade do poço e a pressão hidrostática equivalente (ECD). Fluidos com alto YP e baixa PV são desejáveis para limpeza.
+
+  \item (Avançado) O que é e como se calcula o fator de pressão hidrostática de formação?
+  \textbf{Resposta:} É o gradiente de pressão de poros expresso em psi/ft ou kPa/m. Calcula-se a partir de dados de pressão de poros (RFT, MDT) e profundidade. A fórmula: $G_p = P_p / D$, onde $P_p$ é a pressão de poros e $D$ a profundidade. Comparado com o gradiente hidrostático normal (0,465 psi/ft) identifica sobrepressão.
+
+  \item (Avançado) Aplicações da perfuração direcional e tecnologias de navegação (MWD, LWD).
+  \textbf{Resposta:} Aplicações: poços horizontais, multilaterais, de alívio, e acesso a reservatórios offshore a partir de plataformas concentradas. MWD (Measurement While Drilling) fornece direção, inclinação e parâmetros de fundo em tempo real. LWD (Logging While Drilling) adiciona dados petrofísicos (resistividade, raio-gama) para geosteering.
+
+  \item (Avançado) Importância do mud logging no diagnóstico em tempo real.
+  \textbf{Resposta:} Mud logging monitora gases de formação (C1-C5), litologia dos cascalhos, e parâmetros de perfuração. Permite identificar zonas de hidrocarbonetos, alertar para kicks ou perdas de circulação, e auxiliar na geosteering, especialmente em poços direcionais.
+
+  \item (Avançado) Considerações de engenharia na cimentação em zona produtora ou aquífera.
+  \textbf{Resposta:} Deve-se isolar completamente a zona produtora ou aquífera para evitar contaminação cruzada. O slurry de cimento deve ter baixo filtrado para não danificar a formação. Utiliza-se centralizadores e sistemas de deslocamento eficientes para garantir um anular uniforme.
+
+  \item (Avançado) Procedimento de identificação de casing points e string back-off.
+  \textbf{Resposta:} Casing points são as profundidades onde se assenta cada revestimento. String back-off é uma operação para desrosquear uma parte da coluna presa, usando ferramentas de back-off. Requer cálculo de torque e tensões residuais.
+
+  \item (Avançado) Impacto do uso de broca PDC vs. tricônica na eficiência e geração de cascalho.
+  \textbf{Resposta:} PDC gera cascalho fino e uniforme, proporciona maior ROP em formações macias, mas é sensível a impactos. Tricônica gera cascalho mais grosso, melhor para formações duras e intercaladas. A escolha impacta a hidráulica, a limpeza do poço e o desgaste da broca.
+
+  \item (Avançado) Como projetar um programa de perfuração detalhado.
+  \textbf{Resposta:} Um programa inclui: geometria do poço (profundidades, diâmetros), seleção de revestimentos, densidade de fluido por seção, seleção de brocas, parâmetros operacionais (WOB, RPM, vazão), procedimentos de cimentação, e planejamento de contingências (controlo de poço, stuck pipe).
+
+  \item (Avançado) Como a variação na densidade da lama afeta a pressão hidrostática?
+  \textbf{Resposta:} A pressão hidrostática é diretamente proporcional à densidade. Aumentar a densidade em 1 lb/gal aumenta a pressão em aproximadamente 0,052 psi/ft. Pequenas variações podem resultar em overbalance excessivo (risco de perda de circulação) ou subbalance (risco de kick).
+
+  \item (Avançado) Sistemas avançados de perfuração automatizada (smart rigs).
+  \textbf{Resposta:} Smart rigs integram sensores, algoritmos de controle e automação para otimizar ROP, gerenciar parâmetros, detectar kicks automaticamente, e reduzir o tempo não produtivo. Incluem top drive automatizado, sistemas de posicionamento de coluna, e integração com modelos geomecânicos em tempo real.
+
+  \item (Avançado) O que são BOPs? Diferencie anulares de ram blowout preventers.
+  \textbf{Resposta:} BOPs são equipamentos de segurança para fechar o poço. Anulares: utilizam um anel de borracha que se expande para selar qualquer diâmetro dentro do poço. Rams: possuem blocos de aço que fecham sobre a coluna (pipe ram) ou cortam e selam (shear ram). Os anulares são mais rápidos mas menos robustos contra pressões extremas.
+
+  \item (Avançado) Importância do teste de integridade da formação (FIT) após cimentação.
+  \textbf{Resposta:} O FIT (Formation Integrity Test) é realizado para verificar a capacidade da formação em suportar uma pressão máxima sem fraturar. É essencial para definir a máxima densidade de fluido e a próxima profundidade de revestimento, garantindo que a janela de operação seja respeitada.
+
+  \item (Avançado) Técnica de ``casing while drilling'': quando é usada?
+  \textbf{Resposta:} Casing while drilling utiliza o revestimento como coluna de perfuração, eliminando a necessidade de trip de coluna. É usada em formações problemáticas (perda de circulação, poços instáveis) para reduzir riscos e tempo, e em poços de pequeno diâmetro.
+
+  \item (Avançado) Principais preocupações de segurança em perfuração offshore e normas aplicáveis.
+  \textbf{Resposta:} Preocupações: blowout, colisão de embarcações, falhas de equipamentos submarinos, incêndios, evacuação de pessoal. Normas: API RP 53 (BOP), NORSOK, e regulamentações locais da ANPG. O uso de sistema de gestão de segurança (SMS) e barreiras de segurança é obrigatório.
+
+  \item (Avançado) Como a densidade do fluido afeta a pressão hidrostática e o risco de kick?
+  \textbf{Resposta:} Densidade insuficiente reduz a pressão hidrostática, aumentando o risco de influxo de fluidos da formação (kick). Densidade excessiva pode fraturar a formação e causar perda de circulação. O equilíbrio é crítico para manter o controle do poço.
+
+  \item (Avançado) O que é um poço off-bottom e como corrigir erros de inclinação?
+  \textbf{Resposta:} Poço off-bottom refere-se a uma seção onde a inclinação desviou da trajetória planejada. A correção é feita usando ferramentas de direção (downhole motors, rotary steerable) para ajustar o ângulo e o azimute gradualmente.
+
+  \item (Avançado) Funcionamento de um sistema BOP submarino vs. de solo.
+  \textbf{Resposta:} Submarino: instalado no fundo do mar, acionado hidraulicamente ou eletro-hidraulicamente via umbilical, com acumuladores. Solo: instalado na superfície, acionado diretamente por sistemas hidráulicos. O submarino exige redundância e controle remoto devido à inacessibilidade.
+
+  \item (Avançado) Conceito de velocidade anular e sua influência na remoção de cascalhos.
+  \textbf{Resposta:} Velocidade anular é a velocidade do fluido no espaço entre a coluna e o poço. Deve ser suficiente (geralmente > 30-50 m/min) para transportar os cascalhos até a superfície. Velocidade baixa causa acumulação e stuck pipe.
+
+  \item (Avançado) O que é cavitação do fluido no fundo do poço?
+  \textbf{Resposta:} Cavitação é a formação de bolhas de vapor devido à queda de pressão abaixo da pressão de vapor do fluido. Pode ocorrer próximo à broca ou em restrições, causando danos à bomba e perda de eficiência hidráulica. É evitada com controle de vazão e pressão.
+
+  \item (Avançado) Como propriedades geológicas da formação afetam a seleção de brocas?
+  \textbf{Resposta:} Formações abrasivas (arenitos consolidados) exigem brocas com insertos de tungstênio ou diamante; formações plásticas (folhelhos) favorecem PDC; formações intercaladas requerem brocas híbridas. A dureza e a abrasividade são determinantes.
+
+  \item (Avançado) Como determinar a espessura ótima de um liner?
+  \textbf{Resposta:} A espessura ótima é determinada por análise de colapso (collapse), estouro (burst) e tração, usando fatores de segurança (geralmente 1,1 a 1,25). Considera-se também a compatibilidade com a ferramenta de suspensão (liner hanger) e o diâmetro interno para operações futuras.
+
+  \item (Avançado) Conceitos de torque e drag em poços direcionais e como gerenciá-los.
+  \textbf{Resposta:} Torque e drag são as forças de fricção entre a coluna e as paredes do poço. São gerenciados com fluidos lubrificantes, uso de ferramentas de rotação (rotary steerable), planejamento de trajetória suave, e monitoramento de torque em tempo real.
+
+  \item (Avançado) Perfuração underbalanced: em que consiste, vantagens e cuidados.
+  \textbf{Resposta:} Consiste em manter a pressão hidrostática abaixo da pressão de poros. Vantagens: menor dano à formação, maior produtividade, detecção precoce de hidrocarbonetos. Cuidados: uso de rotating BOP, controle rigoroso de influxo, e plano de contingência para transição para overbalanced.
+
+  \item (Avançado) Como diferenciar kicks causados por gás vs. zonas de água de alta pressão?
+  \textbf{Resposta:} Kicks de gás: expansão rápida ao subir, aumento de pressão no BOP mais lento, fluxo de gás na superfície. Kicks de água: menor expansão, pressão de fechamento mais estável. Análise de cromatografia do gás e relação entre SIDPP e SICP ajudam a distinguir.
+
+  \item (Avançado) Técnicas de levantamento artificial a considerar na fase de perfuração/completação.
+  \textbf{Resposta:} Durante a perfuração, deve-se planejar a completação para futuro levantamento artificial (ex.: instalação de mandris de gas lift, cabos de ESP). A fase de perfuração define o diâmetro do revestimento e a trajetória para acomodar esses equipamentos.
+
+  \item (Avançado) Como ferramentas de fundo (drilling jars) ajudam a desobstruir tubos travados?
+  \textbf{Resposta:} Drilling jars são ferramentas que acumulam energia elástica e a liberam de forma súbita (impacto) para desprender a coluna presa. Podem ser hidráulicos ou mecânicos. São colocados na coluna para permitir impactos ascendentes ou descendentes.
+
+  \item (Avançado) Características de projeto do shoe e float collar de um revestimento.
+  \textbf{Resposta:} Shoe (sapata) é a extremidade inferior do revestimento, com válvula de retenção (float shoe) para impedir refluxo de cimento. Float collar é posicionado alguns metros acima e contém válvulas similares. Ambos garantem que o cimento permaneça no anular após a cimentação.
+
+  \item (Avançado) Procedimento de perfuração sobrebalanceada seguida de kill.
+  \textbf{Resposta:} Perfura-se com pressão hidrostática maior que a pressão de poros (overbalanced). Após atingir TD, realiza-se um kill (circulação de fluido de maior densidade) se necessário para estabilizar o poço antes da completação. O kill pode ser feito pelo método do perfurador ou do engenheiro.
+
+  \item (Avançado) Influência da rotação da broca na eficiência de corte.
+  \textbf{Resposta:} A rotação (RPM) influencia diretamente a taxa de penetração (ROP) e o torque. Para brocas PDC, altas RPM são eficientes; para tricônicas, há uma faixa ótima para evitar desgaste excessivo. A combinação com peso sobre a broca (WOB) é otimizada para cada formação.
+
+  \item (Avançado) Como determinar a ROP a partir de medições em campo?
+  \textbf{Resposta:} A ROP é medida diretamente pelo sistema de superfície (sensor de profundidade e tempo). Em tempo real, é calculada como $\Delta \text{profundidade} / \Delta \text{tempo}$. Dados de ROP são registrados e analisados junto com parâmetros de perfuração (WOB, RPM, torque).
+
+  \item (Avançado) Condições ambientais que impactam negativamente as operações de perfuração.
+  \textbf{Resposta:} Ondas e correntes fortes (offshore), ventos intensos, temperatura extremamente baixa (formação de hidratos), gelo marinho, e eventos climáticos extremos (ciclones). Exigem planejamento sazonal, ancoragem adequada e equipamentos robustos.
+
+  \item (Avançado) Situação típica de kick e o passo a passo do seu controlo.
+  \textbf{Resposta:} 1. Detecção: aumento de fluxo, aumento de volume de lama, aumento de pressão na bomba. 2. Fechamento do BOP. 3. Leitura das pressões de fechamento (SIDPP, SICP). 4. Cálculo da densidade de kill. 5. Circulação do influxo com fluido de kill pelo método do perfurador (circulação direta) ou do engenheiro (circulação com ajuste). 6. Verificação de que o poço está morto (pressões zeradas).
+
+  \item (Avançado) Considerações específicas na perfuração de poços horizontais e multilaterais.
+  \textbf{Resposta:} Poços horizontais requerem controle de torque e arraste, estabilidade da seção horizontal, e sistemas de geosteering para manter a trajetória no reservatório. Poços multilaterais exigem equipamentos especiais (whipstocks, janelas) e completações complexas para isolar cada lateral.
+
+  \item (Avançado) Indicadores primários de perda de circulação e estratégias para remediá-la.
+  \textbf{Resposta:} Indicadores: redução no volume de lama nos tanques, redução na pressão de bomba, aumento de torque, e cascalhos alterados. Estratégias: redução de vazão, adição de material perdido (LCM), injeção de cimento (squeeze), ou mudança para fluidos com menor densidade.
+
+  \item (Avançado) Como integrar dados geológicos e geofísicos em tempo real para ajustar o programa de perfuração?
+  \textbf{Resposta:} Utiliza-se sistemas de geosteering que combinam dados LWD (raio-gama, resistividade) com modelos sísmicos atualizados. Os dados são transmitidos para a superfície, onde engenheiros de perfuração e geocientistas ajustam a trajetória para maximizar a exposição ao reservatório e evitar zonas não produtivas.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 2: Engenharia de Reservatórios (Perguntas 64–125)}
+
+\begin{enumerate}
+  \setcounter{enumi}{63}
+  \item (Básico) O que define um reservatório petrolífero? Propriedades básicas (porosidade, permeabilidade).
+  \textbf{Resposta:} Um reservatório petrolífero é uma rocha porosa e permeável, contendo hidrocarbonetos em quantidades economicamente viáveis. As propriedades básicas são porosidade (volume de vazios) e permeabilidade (capacidade de fluxo).
+
+  \item (Básico) Diferencie reservatórios convencionais de não convencionais.
+  \textbf{Resposta:} Convencionais: alta porosidade e permeabilidade, fluxo natural viável. Não convencionais: baixíssima permeabilidade (folhelhos, tight gas, carvão), exigindo fraturamento hidráulico para produção econômica.
+
+  \item (Básico) O que é porosidade total e porosidade efetiva?
+  \textbf{Resposta:} Porosidade total é a fração do volume total ocupada por poros (incluindo poros isolados). Porosidade efetiva é a fração de poros interconectados, disponível para armazenamento e fluxo de fluidos.
+
+  \item (Básico) Diferença entre permeabilidade absoluta e efetiva.
+  \textbf{Resposta:} Permeabilidade absoluta é a capacidade da rocha de transmitir um único fluido (100\% saturado). Permeabilidade efetiva é a capacidade de transmitir um fluido específico na presença de outros (ex.: óleo e água).
+
+  \item (Básico) O que é saturação irreversível de água e como influencia a produção?
+  \textbf{Resposta:} É a saturação de água abaixo da qual a água não flui (imóvel). Influencia a produção porque reduz a permeabilidade relativa ao óleo e determina a produção de água inicial.
+
+  \item (Básico) Quais os principais mecanismos de drive?
+  \textbf{Resposta:} Drive de gás em solução (solution gas drive), capa de gás (gas cap drive), aquífero (water drive), gravidade (gravity drainage), e combinação (composite drive).
+
+  \item (Básico) Defina reservas comprovadas, prováveis e possíveis.
+  \textbf{Resposta:} Comprovadas (1P): alta certeza (>90\%) de recuperação. Prováveis (2P): provadas + prováveis (50\% certeza). Possíveis (3P): adição de reservas possíveis (10\% certeza).
+
+  \item (Básico) O que significa fator de recuperação? De que fatores depende?
+  \textbf{Resposta:} É a fração do óleo original in place (OOIP) que pode ser produzida. Depende do mecanismo de drive, das propriedades da rocha e dos fluidos, da heterogeneidade e do esquema de recuperação (primário, secundário, EOR).
+
+  \item (Básico) Métodos básicos para estimar reservas.
+  \textbf{Resposta:} Método volumétrico (baseado em volume de rocha, porosidade, saturação e fator de volume), métodos de balanço de materiais (MB) e análise de declínio de produção.
+
+  \item (Básico) O que é um teste de formação e que informações fornece?
+  \textbf{Resposta:} Um teste de formação (ex.: DST) fornece pressão de reservatório, permeabilidade (efetiva), dano (skin), e amostras de fluidos.
+
+  \item (Básico) Explique o uso da Lei de Darcy no contexto de reservatórios.
+  \textbf{Resposta:} Darcy descreve o fluxo laminar em meios porosos: $q = (kA/\mu) \cdot (\Delta P/\Delta L)$. É usada para calcular vazões, permeabilidade e queda de pressão.
+
+  \item (Básico) O que é um modelo volumétrico de reservatório?
+  \textbf{Resposta:} É um modelo geométrico 3D que representa a distribuição de propriedades petrofísicas (porosidade, saturação, espessura) e os limites do reservatório.
+
+  \item (Básico) Importância do estudo das propriedades PVT dos fluidos.
+  \textbf{Resposta:} PVT define o comportamento de fases, fatores de volume (Bo, Bg), razão de solubilidade (Rs), viscosidade e compressibilidade, essenciais para cálculos de reservas e simulação.
+
+  \item (Básico) Defina área de drenagem de um poço.
+  \textbf{Resposta:} É a área do reservatório da qual um poço produz fluidos, geralmente assumida como circular (raio de drenagem) ou baseada em malha de simulação.
+
+  \item (Básico) O que se entende por formação drive rock e aquífero?
+  \textbf{Resposta:} Drive rock é o mecanismo de expulsão de fluidos pela compressibilidade da rocha. Aquífero é um corpo de água conectado ao reservatório que fornece energia (water drive).
+
+  \item (Básico) Conceito de pressão de fratura do reservatório.
+  \textbf{Resposta:} É a pressão na qual a rocha começa a fraturar. É um limite crítico para evitar perda de circulação durante a perfuração e completação.
+
+  \item (Básico) O que é incompressibilidade de fluido e de rocha?
+  \textbf{Resposta:} Incompressibilidade significa que o volume não varia com a pressão. Na prática, fluidos e rochas são compressíveis, e essa compressibilidade é importante para balanço de materiais e simulação.
+
+  \item (Intermediário) Discuta métodos de recuperação aprimorada (EOR) e suas indicações.
+  \textbf{Resposta:} EOR inclui métodos térmicos (injeção de vapor), químicos (polímeros, surfactantes) e miscíveis (CO$_2$, hidrocarbonetos). Indicados para reservatórios maduros ou óleos pesados.
+
+  \item (Intermediário) Como o método de Material Balance é usado para calcular reservas?
+  \textbf{Resposta:} Utiliza a equação de balanço de materiais (Havlena-Odeh) para relacionar a produção acumulada com a expansão dos fluidos e da rocha, permitindo estimar o OOIP e identificar o mecanismo de drive.
+
+  \item (Intermediário) O que é compressibilidade de reservatório?
+  \textbf{Resposta:} É a capacidade da rocha e dos fluidos de variar de volume com a pressão. É representada pela compressibilidade total $c_t$, usada em balanço de materiais e simulação.
+
+  \item (Intermediário) Explique o que é um modelo dinâmico de reservatório.
+  \textbf{Resposta:} É um modelo computacional que simula o fluxo de fluidos ao longo do tempo, incorporando geologia, propriedades petrofísicas, PVT e dados de produção (history matching) para prever comportamento futuro.
+
+  \item (Intermediário) Quais dados geológicos são importantes para a modelagem?
+  \textbf{Resposta:} Dados: topo e base das camadas, falhas, geometria estrutural, fácies sedimentares, propriedades petrofísicas (porosidade, permeabilidade, saturação) e modelos de incerteza.
+
+  \item (Intermediário) Como é realizado o history matching?
+  \textbf{Resposta:} Ajusta-se parâmetros do modelo (permeabilidade, porosidade, contatos) para reproduzir o histórico de produção (pressão, vazão, water cut) observado no campo.
+
+  \item (Intermediário) O que é eficiência de varredura (sweep efficiency)?
+  \textbf{Resposta:} É a fração do reservatório contactada pelo fluido injetado (água, gás). Divide-se em eficiência de varredura areal (areal sweep) e vertical (vertical sweep).
+
+  \item (Intermediário) Importância do coeficiente volumétrico de formação (Bo, Bg).
+  \textbf{Resposta:} Bo relaciona o volume de óleo na superfície com o volume no reservatório; Bg faz o mesmo para o gás. São essenciais para converter volumes de produção e estimar reservas.
+
+  \item (Intermediário) Principais dificuldades de produzir de reservatórios maduros.
+  \textbf{Resposta:} Declínio de pressão, aumento do water cut, incrustações, corrosão, necessidade de workovers e métodos de recuperação secundária/terciária.
+
+  \item (Intermediário) O que é produção fracionada e impactos do aumento do water cut?
+  \textbf{Resposta:} Produção fracionada (ex.: water cut) é a fração de água na produção total. Aumento do water cut reduz a eficiência de elevação, aumenta custos de separação e pode inviabilizar poços.
+
+  \item (Intermediário) O que é um óleo drive natural (gas cap drive)?
+  \textbf{Resposta:} É um mecanismo onde a energia vem da expansão de uma capa de gás (gás livre acima do óleo). É eficiente, mas pode causar conificação de gás.
+
+  \item (Intermediário) Como funciona a injeção de água secundária?
+  \textbf{Resposta:} Injeta-se água em poços específicos para manter a pressão do reservatório e deslocar o óleo para os poços produtores (water flooding).
+
+  \item (Intermediário) Como realizar e interpretar um teste de vazão para obter a IPR?
+  \textbf{Resposta:} Realiza-se um teste de fluxo a múltiplas vazões, medindo a pressão de fundo (BHP) e a vazão. A curva IPR (Inflow Performance Relationship) relaciona a vazão com a pressão de fundo, usando modelos de Vogel para óleo ou equações de gás.
+
+  \item (Intermediário) O que é a pressão original do reservatório (ORP)?
+  \textbf{Resposta:} É a pressão no reservatório antes de qualquer produção. É a referência para definir os mecanismos de drive.
+
+  \item (Intermediário) Defina os fatores volumétricos de gás e óleo.
+  \textbf{Resposta:} Bo = volume de óleo no reservatório / volume de óleo nas condições de superfície (stock tank). Bg = volume de gás no reservatório / volume de gás nas condições de superfície (em scf ou m³).
+
+  \item (Intermediário) Critérios económicos em análises de desenvolvimento.
+  \textbf{Resposta:} Incluem Valor Presente Líquido (NPV), taxa interna de retorno (IRR), payback, e análise de sensibilidade a preços de petróleo e custos de CAPEX/OPEX.
+
+  \item (Intermediário) Como a heterogeneidade do reservatório afeta a produção?
+  \textbf{Resposta:} Heterogeneidades (camadas de baixa permeabilidade, fraturas, barreiras) causam fluxo preferencial, breakthrough precoce de água/gás e baixa eficiência de varredura.
+
+  \item (Intermediário) O que é escoamento transiente e steady-state?
+  \textbf{Resposta:} Transiente: a pressão varia com o tempo em toda a área de drenagem. Steady-state: a pressão é constante em qualquer ponto (estabilizada) após a influência das fronteiras.
+
+  \item (Intermediário) Influência da tensão capilar e gravidade na distribuição de fluidos.
+  \textbf{Resposta:} Tensão capilar determina a altura da zona de transição (transição óleo-água). Gravidade causa segregação de fases, formando uma interface clara (GOC, OWC) em reservatórios homogêneos.
+
+  \item (Intermediário) Principais tipos de rochas-reservatório e características petrofísicas.
+  \textbf{Resposta:} Arenitos: alta porosidade intergranular (10-30\%), permeabilidade moderada a alta (10-1000 mD). Carbonatos: porosidade vugular e fraturada, permeabilidade variável (0,1-100 mD). Folhelhos (shale gas): porosidade muito baixa (<10\%), permeabilidade na ordem de nanodarcys.
+
+  \item (Intermediário) O que se entende por rock typing e flow units?
+  \textbf{Resposta:} Rock typing agrupa rochas com propriedades petrofísicas semelhantes (porosidade-permeabilidade). Flow units são volumes contínuos com propriedades de fluxo homogêneas, definidas por índices de zona de fluxo (FZI).
+
+  \item (Intermediário) Por que reservatórios não convencionais são tratados diferentemente?
+  \textbf{Resposta:} Devido à permeabilidade ultrabaixa, exigem fraturamento hidráulico maciço e poços horizontais para criar área de drenagem. O fluxo ocorre por fraturas induzidas, e a análise de produção requer modelos específicos.
+
+  \item (Intermediário) Como a interpretação de perfis (logs) auxilia na definição de volumes?
+  \textbf{Resposta:} Logs fornecem porosidade, saturação de água, litologia e espessura líquida. Esses dados são usados para calcular o volume de hidrocarbonetos in place (HCIIP) e mapear a extensão do reservatório.
+
+  \item (Intermediário) Como a curva de declínio de produção pode estimar a vida útil de um campo?
+  \textbf{Resposta:} Utiliza-se curvas de declínio hiperbólico, exponencial ou harmônico (Arps) para extrapolar a produção futura e estimar a vida econômica com base na taxa de abandono.
+
+  \item (Intermediário) Vantagens e desafios de poços horizontais.
+  \textbf{Resposta:} Vantagens: maior exposição ao reservatório, maior vazão, menor conificação. Desafios: custo elevado, maior complexidade de completação, risco de instabilidade e stuck pipe.
+
+  \item (Intermediário) Injeção de CO$_2$ em recuperação aprimorada.
+  \textbf{Resposta:} A injeção de CO$_2$ miscível reduz a viscosidade do óleo e o inchaço, melhorando a recuperação. É uma técnica de EOR e também de sequestro geológico de carbono.
+
+  \item (Intermediário) Injeção de vapor (steam injection): em que tipos de reservatórios é usada?
+  \textbf{Resposta:} Usada em reservatórios de óleo pesado (viscosidade alta) para reduzir a viscosidade e melhorar a mobilidade. Métodos: CSS (cyclic steam stimulation) e SAGD (steam assisted gravity drainage).
+
+  \item (Intermediário) Como calcular a produtividade/injetividade de um poço?
+  \textbf{Resposta:} A produtividade (PI) é calculada como $PI = q / (P_{\text{res}} - P_{\text{wf}})$ para óleo. Para gás, usa-se relações de pseudo-pressão. A injetividade é análoga, mas com fluido injetado.
+
+  \item (Intermediário) Explique os termos reservoir drive e rock drive.
+  \textbf{Resposta:} Reservoir drive é a energia que move os fluidos (expansão de gás, água, ou injeção). Rock drive é a contribuição da compressibilidade da rocha no balanço de materiais.
+
+  \item (Intermediário) Problemas ambientais na produção e como são tratados.
+  \textbf{Resposta:} Descarte de água produzida (contaminada), emissões de CO$_2$, vazamentos. Tratamentos: reinjeção de água, separação de óleo, flares com eficiência, e monitoramento ambiental.
+
+  \item (Intermediário) Métodos de recuperação secundária.
+  \textbf{Resposta:} Injeção de água (waterflood) e injeção de gás (gas injection) para manter pressão e deslocar o óleo.
+
+  \item (Intermediário) Diferenças entre óleo leve e óleo pesado do ponto de vista operacional.
+  \textbf{Resposta:} Óleo leve flui facilmente, requer menos aquecimento, mas pode ter alta GOR. Óleo pesado é viscoso, exige aquecimento ou diluição, e tem menor fator de recuperação em produção primária.
+
+  \item (Avançado) Princípios matemáticos da simulação numérica de reservatórios.
+  \textbf{Resposta:} Baseia-se na discretização das equações de fluxo (diferenças finitas, elementos finitos) e na resolução simultânea de equações de conservação de massa para cada fase (óleo, água, gás), acopladas a relações de permeabilidade relativa, capilaridade e PVT.
+
+  \item (Avançado) Impacto da geometria de reservatório no desenvolvimento de campo.
+  \textbf{Resposta:} Reservatórios alongados ou com falhas selantes exigem arranjos de poços específicos para drenagem eficiente. Geometrias complexas afetam o número de poços, a localização das plataformas e os esquemas de injeção.
+
+  \item (Avançado) Papel de fraturas naturais na permeabilidade efetiva de carbonatos.
+  \textbf{Resposta:} Fraturas aumentam drasticamente a permeabilidade efetiva, mas podem causar heterogeneidade extrema e breakthrough precoce. A caracterização de fraturas é essencial para simulação.
+
+  \item (Avançado) Análise de declínio (curvas de Arps): equações básicas.
+  \textbf{Resposta:} As equações de Arps: $q(t) = q_i / (1 + b D_i t)^{1/b}$ (hiperbólico), $q(t) = q_i e^{-D_i t}$ (exponencial), $q(t) = q_i / (1 + D_i t)$ (harmônico). Usam-se para prever produção futura.
+
+  \item (Avançado) Derive a equação de continuidade de massa para escoamento radial.
+  \textbf{Resposta:} Para escoamento radial em meio poroso, a equação de continuidade é: $\frac{1}{r}\frac{\partial}{\partial r}\left(r \rho v_r\right) + \frac{\partial(\phi \rho)}{\partial t} = 0$, que combinada com Darcy resulta na equação de difusividade.
+
+  \item (Avançado) Desafios de interpretação em reservatórios ultra profundos (África Ocidental).
+  \textbf{Resposta:} Desafios: alta pressão e temperatura (HPHT), baixa resolução sísmica abaixo de camadas de sal, incertezas nos contatos, e custos elevados de testes de formação.
+
+  \item (Avançado) Influência do gradiente geotérmico e pressões iniciais na modelagem.
+  \textbf{Resposta:} Gradiente geotérmico afeta as propriedades PVT e a viscosidade. Pressões iniciais definem o regime de fluxo e a necessidade de injeção de fluidos.
+
+  \item (Avançado) Incorporação de sequestro de CO$_2$ no planeamento de campo.
+  \textbf{Resposta:} Utiliza-se a injeção de CO$_2$ para EOR e também como armazenamento geológico permanente. O planejamento deve considerar a integridade da vedação e a captura de carbono.
+
+  \item (Avançado) Inovações recentes (4D sísmica, monitoramento em tempo real).
+  \textbf{Resposta:} 4D sísmica permite visualizar a movimentação de fluidos. Monitoramento em tempo real com sensores de fundo (downhole gauges) e telemetria melhora a gestão de reservatórios.
+
+  \item (Avançado) Avaliação do impacto da injeção de CO$_2$ na recuperação.
+  \textbf{Resposta:} Utiliza-se simulação composicional para prever o aumento do fator de recuperação, a miscibilidade, e os riscos de corrosão e precipitação de asfaltenos.
+
+  \item (Avançado) Quando recomendar esquemas de injeção de água ou gás?
+  \textbf{Resposta:} Injeção de água é preferível para reservatórios com boa permeabilidade e óleo leve/médio. Injeção de gás (ou WAG) é indicada quando se deseja evitar breakthrough de água ou em reservatórios com óleo volátil.
+
+  \item (Avançado) Análise petrofísica detalhada no planeamento de extração.
+  \textbf{Resposta:} Inclui integração de logs, testemunhos e dados de produção para definir unidades de fluxo (rock typing), permeabilidades relativas, e parâmetros de saturação. Essencial para simulação.
+
+  \item (Avançado) Diferença entre medições de BHP e medições de superfície em testes de poço.
+  \textbf{Resposta:} BHP (pressão de fundo) é medida com ferramentas de fundo e é a mais representativa para análise de reservatório. Medições de superfície são influenciadas por efeitos de coluna e perda de carga.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 3: Engenharia de Produção (Perguntas 126–188)}
+
+\begin{enumerate}
+  \setcounter{enumi}{125}
+  \item (Básico) O que é levantamento artificial e principais métodos.
+  \textbf{Resposta:} Levantamento artificial é a técnica de adicionar energia ao poço para elevar os fluidos quando a energia natural é insuficiente. Principais métodos: bomba de hastes (sucker rod), bomba centrífuga submersível (ESP), gas lift, bomba de cavidade progressiva (PCP), e plunger lift.
+
+  \item (Básico) O que é um teste de produção de poço?
+  \textbf{Resposta:} É a medição de vazão de óleo, água e gás, além de pressão e temperatura, para avaliar o desempenho do poço e calibrar modelos.
+
+  \item (Básico) O que significa taxa de produção (bpd, MCFD)?
+  \textbf{Resposta:} bpd: barris de óleo por dia. MCFD: mil pés cúbicos de gás por dia. São as unidades padrão de vazão.
+
+  \item (Básico) Diferencie poços horizontais e verticais em termos de vazão.
+  \textbf{Resposta:} Poços horizontais têm maior área de contato com o reservatório, resultando em maior vazão (tipicamente 2 a 5 vezes maior) e menor conificação, em comparação com verticais.
+
+  \item (Básico) Parâmetros que influenciam a vazão de um poço.
+  \textbf{Resposta:} Pressão de reservatório, permeabilidade, espessura, viscosidade do fluido, raio de drenagem, dano (skin), e método de levantamento artificial.
+
+  \item (Básico) O que é a IPR e como se relaciona à produtividade?
+  \textbf{Resposta:} IPR (Inflow Performance Relationship) é a relação entre a vazão do poço e a pressão de fundo. A produtividade (PI) é a inclinação da curva (q / ΔP) para fluxo linear.
+
+  \item (Básico) Papel de medidores de vazão e separadores.
+  \textbf{Resposta:} Medidores de vazão (multifásicos ou de cada fase) quantificam a produção. Separadores dividem as fases (óleo, gás, água) para medição individual e tratamento.
+
+  \item (Básico) O que se entende por fator de gás?
+  \textbf{Resposta:} GOR (Gas-Oil Ratio) é a relação entre o volume de gás produzido e o volume de óleo (em scf/stb ou m³/m³). Pode ser de solução ou total.
+
+  \item (Básico) Como o gás dissolvido se manifesta na subida do fluido?
+  \textbf{Resposta:} À medida que a pressão diminui, o gás dissolvido liberta-se, reduzindo a densidade da coluna e auxiliando a elevação do fluido (efeito de lift natural).
+
+  \item (Básico) O que é snubbing e quando é usado?
+  \textbf{Resposta:} Snubbing é uma operação de trabalho em poço pressurizado usando equipamento que empurra a coluna contra a pressão. Usado quando não se deseja matar o poço (ex.: poços de gás de alta pressão).
+
+  \item (Básico) O que é entalpia de fluido e como afeta a produção?
+  \textbf{Resposta:} Entalpia é a energia térmica do fluido. Em sistemas com injeção de vapor, alta entalpia reduz a viscosidade do óleo pesado e melhora o fluxo.
+
+  \item (Básico) Diferencie separador bifásico de trifásico.
+  \textbf{Resposta:} Separador bifásico separa gás e líquido (óleo+água). Trifásico separa gás, óleo e água.
+
+  \item (Básico) Unidades de tratamento de produção em terra.
+  \textbf{Resposta:} Incluem separadores, tratadores de emulsão, tanques de armazenamento, estações de compressão de gás, e sistemas de tratamento de água.
+
+  \item (Básico) O que são workovers e intervenções em poço?
+  \textbf{Resposta:} Workover é uma intervenção no poço para reparo, substituição de equipamentos, ou recompletação. Inclui operações com sondas ou unidades de workover.
+
+  \item (Básico) Diferenças operacionais entre produção onshore e offshore.
+  \textbf{Resposta:} Offshore exige plataformas ou FPSOs, sistemas submarinos, elevados custos de intervenção, e maior automação. Onshore tem acesso mais fácil, mas maior impacto superficial.
+
+  \item (Básico) O que são testes de queda de pressão (drawdown tests)?
+  \textbf{Resposta:} São testes onde se mede a pressão de fundo durante um fluxo constante, para determinar permeabilidade e dano.
+
+  \item (Básico) Diferenças entre eficiência volumétrica e eficiência de varredura.
+  \textbf{Resposta:} Eficiência volumétrica é o produto da eficiência de varredura areal e vertical. Eficiência de varredura é a fração do reservatório contatada pelo agente de deslocamento.
+
+  \item (Básico) Poço com fluxo espontâneo vs. necessidade de levantamento artificial.
+  \textbf{Resposta:} Fluxo espontâneo ocorre quando a pressão do reservatório é suficiente para vencer as perdas de carga e elevar o fluido. Caso contrário, é necessário levantamento artificial.
+
+  \item (Básico) Conceito de fluxo isotérmico vs. adiabático em escoamento de gás.
+  \textbf{Resposta:} Isotérmico: temperatura constante (válido para trocas de calor intensas). Adiabático: sem troca de calor (mais comum em alta velocidade).
+
+  \item (Intermediário) Descreva a análise nodal para sistemas de produção.
+  \textbf{Resposta:} Análise nodal divide o sistema de produção em nós (ex.: fundo do poço, cabeça do poço) e acopla a curva de influxo (IPR) com a curva de capacidade da coluna (Tubing Performance Curve) para determinar o ponto de operação (vazão e pressão).
+
+  \item (Intermediário) Critérios para instalação de levantamento artificial.
+  \textbf{Resposta:} Incluem vazão esperada, profundidade, GOR, water cut, presença de areia, custos de energia, e facilidade de manutenção.
+
+  \item (Intermediário) Como dimensionar uma bomba submersível (ESP)?
+  \textbf{Resposta:} Dimensiona-se com base na vazão desejada, altura manométrica (TDH), propriedades do fluido (viscosidade, GOR), e seleção de estágios da bomba e motor.
+
+  \item (Intermediário) Como calcular a vida produtiva aproximada de um poço?
+  \textbf{Resposta:} Utiliza-se a reserva recuperável do poço (fração do volume drenado) e a taxa de produção média, ou extrapolação da curva de declínio até a taxa de abandono.
+
+  \item (Intermediário) Técnicas de estimulação de poços (fraturamento, acidificação).
+  \textbf{Resposta:} Fraturamento hidráulico: cria fraturas preenchidas com propante para aumentar a condutividade. Acidificação: injeta ácido para dissolver minerais (calcário) ou remover danos de formação.
+
+  \item (Intermediário) O que é o Índice de Produção (PI)?
+  \textbf{Resposta:} É a relação entre vazão e queda de pressão (PI = q / (P_res - P_wf)). Pode ser constante (fluxo linear) ou variável.
+
+  \item (Intermediário) Como prever a distribuição de fluidos produzidos?
+  \textbf{Resposta:} Através de simulação de reservatório que considera curvas de permeabilidade relativa, saturação e histórico de produção.
+
+  \item (Intermediário) Influência da análise PVT no projeto de produção.
+  \textbf{Resposta:} PVT fornece propriedades como viscosidade, fator de volume, e GOR, essenciais para dimensionar equipamentos de elevação e separação.
+
+  \item (Intermediário) Como a queda de pressão no reservatório afeta a produção de gás?
+  \textbf{Resposta:} Para gás, a vazão é proporcional à diferença de quadrados de pressão (ou pseudo-pressão). Queda de pressão reduz a vazão exponencialmente.
+
+  \item (Intermediário) Diferenças de projeto entre bomba de óleo e bomba para gás.
+  \textbf{Resposta:} Bombas de óleo (ESP) são sensíveis a gás livre; requerem separadores de gás. Bombas para gás (compressores) lidam com fluxo bifásico.
+
+  \item (Intermediário) Significado das siglas BHP e PI.
+  \textbf{Resposta:} BHP: Bottom Hole Pressure (pressão de fundo). PI: Productivity Index (índice de produtividade).
+
+  \item (Intermediário) Conceito de fluxo multifásico e seus desafios.
+  \textbf{Resposta:} Fluxo multifásico envolve a presença simultânea de óleo, água e gás. Desafios: padrões de fluxo, perda de carga, erosão, e instabilidade (slug flow).
+
+  \item (Intermediário) Técnicas de produção em campos offshore de águas profundas.
+  \textbf{Resposta:} Uso de sistemas submarinos (árvores de natal horizontais), FPSOs, risers flexíveis, e elevação artificial por gas lift ou ESP.
+
+  \item (Intermediário) O que é flow assurance e problemas associados (hidratos, cera).
+  \textbf{Resposta:} Flow assurance é a garantia de fluxo contínuo. Problemas: hidratos (bloqueios sólidos em baixas temperaturas), deposição de parafina (cera), asfaltenos, e corrosão.
+
+  \item (Intermediário) Como selecionar o método de levantamento artificial adequado?
+  \textbf{Resposta:} Baseia-se em: vazão, profundidade, GOR, water cut, presença de sólidos, custo, disponibilidade de energia e infraestrutura.
+
+  \item (Intermediário) Indicadores de desempenho de poços ao longo do tempo.
+  \textbf{Resposta:} Declínio de vazão, aumento do water cut, queda de pressão de fundo, aumento da eficiência de gas lift, e necessidade de workovers.
+
+  \item (Intermediário) Conceito de backpressure e sua influência.
+  \textbf{Resposta:} Backpressure é a pressão na cabeça do poço. Reduzir backpressure aumenta a vazão, mas pode causar conificação e instabilidade.
+
+  \item (Intermediário) Projeto de trocadores de calor e sistemas de condicionamento.
+  \textbf{Resposta:} Dimensionados para aquecer ou resfriar o fluido a fim de evitar formação de hidratos, quebrar emulsões, ou separar fases.
+
+  \item (Intermediário) O que significa EoS e por que é importante?
+  \textbf{Resposta:} EoS (Equation of State) é usada em simulação composicional para prever o comportamento de fases de misturas de hidrocarbonetos.
+
+  \item (Avançado) Derive uma equação de produção de gás relacionando vazão, pressão e parâmetros.
+  \textbf{Resposta:} Para fluxo pseudo-estacionário de gás: $q_g = \frac{kh}{1424 T} \left( \overline{P}^2 - P_{\text{wf}}^2 \right)$ (em unidades de campo), onde k é permeabilidade, h espessura, T temperatura, e $\overline{P}$ pressão média.
+
+  \item (Avançado) Compare diferentes equações de estado (Peng-Robinson vs. SRK).
+  \textbf{Resposta:} Ambas são cúbicas. Peng-Robinson é mais precisa para líquidos e usada em reservatórios de óleo e gás; SRK (Soave-Redlich-Kwong) é mais simples e adequada para gases leves.
+
+  \item (Avançado) Conceito de fator de pele (skin) e como afeta a produtividade.
+  \textbf{Resposta:} Skin (S) representa dano ou estimulação próximo ao poço. Skin positivo reduz a vazão; negativo (estimulação) aumenta. Afeta a queda de pressão adicional: $\Delta P_{\text{skin}} = \frac{q\mu}{2\pi kh} S$.
+
+  \item (Avançado) Método nodal detalhado e sua aplicação na otimização.
+  \textbf{Resposta:} O método nodal resolve iterativamente as curvas de influxo (reservatório) e outfluxo (tubing, choke, linha) para encontrar a vazão de equilíbrio. Otimiza-se parâmetros como diâmetro do tubing, profundidade de válvulas de gas lift, e pressão de cabeça.
+
+  \item (Avançado) Equilíbrio entre compressibilidade de gás e do reservatório no fluxo multifásico.
+  \textbf{Resposta:} Em reservatórios de gás, a compressibilidade do gás é muito maior que a da rocha. No fluxo bifásico, as compressibilidades combinadas determinam a velocidade de propagação das ondas de pressão.
+
+  \item (Avançado) Dimensionamento de ESP sob condições extremas de pressão.
+  \textbf{Resposta:} Exige bombas de alto diferencial de pressão (estágios), motores de alta potência, sistemas de resfriamento, e proteção contra areia e gás.
+
+  \item (Avançado) Diferenças operacionais entre sistemas multicamadas e único.
+  \textbf{Resposta:} Em multicamadas, podem-se usar completações inteligentes para controlar a contribuição de cada zona. A elevação artificial é mais complexa (ex.: gas lift com válvulas de controle).
+
+  \item (Avançado) Cálculo da vazão usando uma relação IPR adequada.
+  \textbf{Resposta:} Para óleo, usa-se a equação de Vogel: $q / q_{\max} = 1 - 0.2(P_{\text{wf}}/P_{\text{res}}) - 0.8(P_{\text{wf}}/P_{\text{res}})^2$. Para gás, usa-se a equação de pseudo-pressão de Al-Hussainy.
+
+  \item (Avançado) Projeto de gas lift: cálculo da vazão de gás necessária.
+  \textbf{Resposta:} Utiliza-se curvas de desempenho de válvulas e análise nodal para determinar o ponto de injeção e a vazão de gás que minimiza a densidade da coluna, maximizando a produção.
+
+  \item (Avançado) Previsão de produção a longo prazo com análise de declínio.
+  \textbf{Resposta:} Aplica-se a equação de Arps ajustada aos dados históricos, considerando o mecanismo de declínio (exponencial, hiperbólico) e projeta-se até a taxa econômica.
+
+  \item (Avançado) Impacto do aumento do water cut no dimensionamento de instalações.
+  \textbf{Resposta:} Aumento do water cut exige maior capacidade de separação de água, maior tratamento de efluentes, e pode reduzir a eficiência da elevação artificial.
+
+  \item (Avançado) Análise económica simplificada: cálculo do break-even price.
+  \textbf{Resposta:} Calcula-se o preço do petróleo necessário para cobrir os custos operacionais e de capital, considerando a receita bruta, royalties, e impostos.
+
+  \item (Avançado) Uso do balanço de material para estimar reservas de gás.
+  \textbf{Resposta:} Para gás seco, a equação $G = \frac{G_p B_g}{B_g - B_{gi}}$ (ou usando pressões) permite estimar o gás inicial in place (GIIP).
+
+  \item (Avançado) Problemática da deposição de parafina e métodos de mitigação.
+  \textbf{Resposta:} Parafina (cera) precipita quando a temperatura cai abaixo do ponto de nuvem. Mitigação: injeção de inibidores, aquecimento (cables), pigging, e revestimentos anti-adesivos.
+
+  \item (Avançado) Prevenção de hidratos em gasodutos submarinos.
+  \textbf{Resposta:} Métodos: injeção de metanol, aquecimento (tubos isolados), despressurização, e uso de inibidores de baixa dosagem (LDHI).
+
+  \item (Avançado) Compare métodos de cálculo de queda de pressão (Darcy-Weisbach vs. Beggs-Brill).
+  \textbf{Resposta:} Darcy-Weisbach é usado para escoamento monofásico; Beggs-Brill é um método empírico para fluxo multifásico em dutos, amplamente utilizado na indústria.
+
+  \item (Avançado) Por que a injeção de gás pode ser necessária e seu efeito no perfil de pressão.
+  \textbf{Resposta:} Injeção de gás (ex.: gas lift) reduz a densidade da coluna, diminuindo a pressão de fundo e aumentando o drawdown. O perfil de pressão ao longo do tubing torna-se menos íngreme.
+
+  \item (Avançado) Desafios na produção de óleo leve vs. gás seco.
+  \textbf{Resposta:} Óleo leve: GOR alta, formação de hidratos menos severa, mas requer separação eficiente. Gás seco: alta compressibilidade, necessidade de compressão, e risco de hidratos.
+
+  \item (Avançado) Cálculo da taxa de produção de gás a partir de Qo e GOR.
+  \textbf{Resposta:} $Q_g = Q_o \times GOR$ (em unidades consistentes). Para óleo com gás associado, GOR total = GOR de solução + GOR de gás livre.
+
+  \item (Avançado) Uso do fator de compressibilidade Z para converter volume de gás.
+  \textbf{Resposta:} A equação dos gases reais: $PV = ZnRT$. Z corrige o desvio do comportamento ideal, essencial para conversão de volumes em diferentes pressões e temperaturas.
+
+  \item (Avançado) Implementação computacional de uma análise nodal.
+  \textbf{Resposta:} Utiliza-se softwares (PIPESIM, Prosper) que resolvem iterativamente as curvas de influxo e outfluxo, considerando correlações de fluxo multifásico, propriedades PVT e configuração do sistema.
+
+  \item (Avançado) Desafios de produção em campos maturos offshore angolanos.
+  \textbf{Resposta:} Campos maduros apresentam alto water cut, declínio de pressão, incrustações, necessidade de workovers frequentes, e gerenciamento de fluidos corrosivos.
+
+  \item (Avançado) Riscos operacionais e ambientais na fase de produção.
+  \textbf{Resposta:} Riscos: vazamentos de óleo/gás, incêndios, falhas de equipamentos (BOP, árvore de natal), e descarte inadequado de água produzida. Mitigados por sistemas de detecção, manutenção preventiva e planos de emergência.
+
+  \item (Avançado) Cálculo da capacidade volumétrica de bombas e compressores.
+  \textbf{Resposta:} Para bombas, capacidade = vazão × altura manométrica × eficiência. Para compressores, utiliza-se a lei dos gases e curvas de desempenho.
+
+  \item (Avançado) Diferença entre poço aberto (flowing) e shut-in nos cálculos de produtividade.
+  \textbf{Resposta:} Em fluxo, a pressão de fundo é menor que a estática. A produtividade é avaliada pela relação entre vazão e drawdown. Em shut-in, mede-se a pressão estática para análise de reservatório.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 4: Engenharia de Completação (Perguntas 189–250)}
+
+\begin{enumerate}
+  \setcounter{enumi}{188}
+  \item (Básico) O que significa ``completar um poço''? Principais etapas.
+  \textbf{Resposta:} Completar um poço é o conjunto de operações após a perfuração para permitir a produção segura e eficiente. Etapas: descida da coluna de produção (tubing), instalação de packers, perfuração do revestimento (perfuração da formação), instalação de equipamentos de controle de areia, e instalação da árvore de natal.
+
+  \item (Básico) Diferencie completamento open-hole, cased-hole e com liner.
+  \textbf{Resposta:} Open-hole: sem revestimento na zona produtora. Cased-hole: revestimento cimentado e perfurado. Com liner: revestimento suspenso que não atinge a superfície.
+
+  \item (Básico) O que é um liner (liner hanger) e como é instalado?
+  \textbf{Resposta:} Liner é um revestimento curto suspenso por um liner hanger (sistema de ancoragem) dentro do revestimento anterior. Instalado com ferramenta de assentamento.
+
+  \item (Básico) O que é tubulação de produção (tubing) e critérios para escolha do diâmetro.
+  \textbf{Resposta:} Tubing é a coluna por onde os fluidos fluem até a superfície. Critérios: vazão esperada, perda de carga, compatibilidade com equipamentos de elevação artificial, e integridade.
+
+  \item (Básico) Explique a perfuração do revestimento (perfuração da formação).
+  \textbf{Resposta:} É a operação de criar furos no revestimento e no cimento para conectar o poço à formação. Usam-se canhões perfuradores (sistema de disparo).
+
+  \item (Básico) Principais métodos de perfuração da formação através do revestimento.
+  \textbf{Resposta:} Perfuração por canhão (casing gun), com cargas de formato (shaped charges). Pode ser em overbalance ou underbalance.
+
+  \item (Básico) Importância da cimentação do revestimento final de produção.
+  \textbf{Resposta:} Isola zonas produtoras, impede migração de fluidos, suporta o revestimento e previne corrosão.
+
+  \item (Básico) Uso de packers de produção.
+  \textbf{Resposta:} Packers isolam o anular entre o tubing e o revestimento, permitindo controle de fluxo e injeção de fluidos.
+
+  \item (Básico) O que é controlo de areia e quando usar gravel pack?
+  \textbf{Resposta:} Controlo de areia evita produção de sólidos. Gravel pack é usado em formações não consolidadas para filtrar areia.
+
+  \item (Básico) Exemplos de ferramentas de segurança em fundo de poço.
+  \textbf{Resposta:} Downhole safety valves (DHSV), shear-out plugs, e válvulas de controle.
+
+  \item (Básico) O que são retrabalhos (workovers) e recompletações?
+  \textbf{Resposta:} Workover é intervenção para reparo ou substituição de equipamentos. Recompletação é alterar a zona de produção ou o método de completação.
+
+  \item (Básico) Diferencie casing de tubing.
+  \textbf{Resposta:} Casing é o revestimento permanente que isola o poço; tubing é a coluna de produção removível.
+
+  \item (Intermediário) Critérios para escolha do diâmetro e tipo de tubing.
+  \textbf{Resposta:} Baseiam-se em vazão, perda de carga, erosão (velocidade máxima), compatibilidade com packer e equipamentos de elevação, e custo.
+
+  \item (Intermediário) Desafios e técnicas de completação em poço horizontal.
+  \textbf{Resposta:} Desafios: distribuição uniforme de fluxo, controle de areia, e isolamento de zonas. Técnicas: uso de slotted liners, screens, packers hidráulicos e completações inteligentes.
+
+  \item (Intermediário) O que são liner-top packers e suas aplicações.
+  \textbf{Resposta:} São packers instalados no topo do liner para vedar o anular entre o liner e o revestimento anterior, usados para isolar pressões.
+
+  \item (Intermediário) Isolamento seletivo de zonas produtoras com casing packers.
+  \textbf{Resposta:} Utilizam-se packers infláveis ou mecânicos para isolar intervalos dentro do revestimento, permitindo produção seletiva.
+
+  \item (Intermediário) Uso de gravel packs ou sand screens em formações arenosas.
+  \textbf{Resposta:} Gravel pack preenche o anular entre o screen e a formação com cascalho para filtragem. Sand screens (telas) sozinhas são usadas em formações mais consolidadas.
+
+  \item (Intermediário) O que significa water-through-annulus e como controlá-lo.
+  \textbf{Resposta:} É a produção de água através do anular entre revestimentos. Controla-se com cimentação adequada, squeeze de cimento, e uso de packers.
+
+  \item (Intermediário) Etapas de instalação de uma árvore de natal (Christmas tree) offshore.
+  \textbf{Resposta:} Instalação do wellhead, colocação da árvore vertical ou horizontal, conexão dos jumpers, testes de pressão, e instalação do sistema de controle.
+
+  \item (Intermediário) Propósito de tiebacks e sistemas com side pocket.
+  \textbf{Resposta:} Tieback: extensão de revestimento do topo do liner até a superfície. Side pocket: mandris no tubing para instalação de válvulas de gas lift ou injeção química.
+
+  \item (Intermediário) O que é squeeze de cimento?
+  \textbf{Resposta:} Injeção de cimento sob pressão para reparar vazamentos ou isolar zonas.
+
+  \item (Intermediário) Planeamento de uma completação multilateral.
+  \textbf{Resposta:} Envolve a seleção de sistemas de junção (junction), isolamento de laterais, e planejamento de acesso para intervenções futuras.
+
+  \item (Intermediário) Etapas de instalação de uma ESP como parte da completação.
+  \textbf{Resposta:} Inclui descida do motor, bomba, proteção (seal section), cabos elétricos, e sensores de fundo.
+
+  \item (Intermediário) O que são completions commingled?
+  \textbf{Resposta:} São completações que produzem simultaneamente de múltiplas zonas, misturando os fluidos no poço.
+
+  \item (Intermediário) Como completações inteligentes (smart completions) otimizam a produção.
+  \textbf{Resposta:} Usam válvulas de controle de fluxo (ICVs) e sensores de fundo para ajustar a produção de cada zona remotamente, otimizando a drenagem e evitando conificação.
+
+  \item (Intermediário) Completação de um poço de injeção.
+  \textbf{Resposta:} Geralmente possui packers, válvulas de injeção e sistemas de controle para garantir que o fluido injetado (água, gás) seja direcionado para a zona desejada.
+
+  \item (Intermediário) Configurações típicas de válvulas de cabeçote de poço.
+  \textbf{Resposta:} Árvore de natal: válvula mestre superior e inferior, válvula de asa, válvula de anular, e choke.
+
+  \item (Avançado) Projeto completo de completação para um poço com três camadas produtoras.
+  \textbf{Resposta:} Projeto inclui: separação das camadas com packers, uso de sliding sleeves ou ICVs, possibilidade de dual completion (duas colunas) ou stacked completion, e sistema de elevação artificial.
+
+  \item (Avançado) Riscos de uma completação mal executada e como mitigá-los.
+  \textbf{Resposta:} Riscos: vazamentos no packer, falha de isolamento, perda de controle de areia, e dificuldades de intervenção. Mitigação: testes de pressão rigorosos, seleção adequada de materiais, e planejamento de contingências.
+
+  \item (Avançado) Cálculo de resistência de um packer em relação a pressões.
+  \textbf{Resposta:} Os packers são classificados por sua capacidade de suportar diferencial de pressão. O cálculo envolve verificar as forças de expansão e a vedação.
+
+  \item (Avançado) O que é um completion integrity test e quando realizá-lo.
+  \textbf{Resposta:} Teste de integridade da completação, realizado após a instalação, para verificar vedação de packers, válvulas e conexões.
+
+  \item (Avançado) Como a pressão hidrostática e diferencial podem comprometer a cimentação final.
+  \textbf{Resposta:} Pressões diferenciais podem causar influxos de fluidos durante a cimentação ou perda de circulação, resultando em má qualidade do cimento.
+
+  \item (Avançado) Considerações de engenharia no tubing running schedule.
+  \textbf{Resposta:} O \textit{tubing running schedule} é um plano detalhado para a descida da coluna de produção. As considerações incluem: forças e tensões (tração, compressão, pressão interna e externa, efeito de ballooning), variações térmicas, simulação de torque e arraste, planejamento de folgas e movimentação para ativação de ferramentas, e controle da densidade e limpeza dos fluidos de completação.
+
+  \item (Avançado) Otimização do espaçamento das perfurações.
+  \textbf{Resposta:} A otimização busca o equilíbrio entre a área de drenagem e a integridade mecânica do poço. Utiliza-se modelagem geomecânica 3D para prever direção de fraturas e distribuição de tensões, e simulação de reservatório para determinar o número de tiros por metro e a distribuição (fásica ou espiral) que maximiza o Índice de Produtividade (IP) sem causar conificação prematura de água ou gás. Em poços horizontais, o espaçamento varia para corrigir a queda de pressão por atrito.
+
+  \item (Avançado) Execução simultânea de perfuração e estimulação em poços offshore profundos.
+  \textbf{Resposta:} Comum em poços de águas ultraprofundas para reduzir custos de sonda. Técnica de Simul-Frac utiliza dois ou mais FPSOs ou um MSV para fraturar um poço enquanto a sonda perfura o próximo. Os desafios incluem gerenciamento de logística, interferência de pressão entre poços adjacentes e riscos de colisão de embarcações. Utilizam-se sistemas de open-hole ou frac valves para acesso sem necessidade de rig.
+
+  \item (Avançado) Diferenças de completação para poços de gás vs. óleo.
+  \textbf{Resposta:} Para óleo: foco no controle de areia (gravel pack/frac pack) e na separação de fluidos, com gas lift como elevação artificial predominante, e tubing dimensionado para vazões bifásicas. Para gás: maior ênfase na metalurgia devido ao risco de sour service (H$_2$S) e corrosão por CO$_2$, velocidades de fluxo mais críticas para evitar erosão, uso de downhole safety valves (DHSV) de alto desempenho e completações monobore para facilitar a intervenção, com dimensionamento crítico para evitar a formação de hidratos.
+
+  \item (Avançado) Compare gravel pack vs. frac pack.
+  \textbf{Resposta:} Gravel Pack: utilizado em formações consolidadas ou com baixa tendência à produção de areia. Coloca-se cascalho entre o screen e a formação para atuar como filtro, sem fraturamento significativo; o fluxo converge radialmente. Frac Pack: combinação de fraturamento hidráulico e gravel pack. Aplica-se alta pressão para fraturar a formação e coloca-se propante na fratura, seguido do screen e gravel pack. Usado em formações não consolidadas ou de baixa permeabilidade, resultando em maior raio de drenagem e menor skin.
+
+  \item (Avançado) Projeto de poço de injeção de vapor vs. poço produtor convencional.
+  \textbf{Resposta:} Poço de Injeção de Vapor (CSS ou SAGD): requer isolamento térmico (vácuo ou insulated tubing) para minimizar perdas de calor. O packer e o cimento devem suportar altas temperaturas (até 350$^\circ$C), utilizando-se thermal packers que expandem com o calor. O aço deve ser resistente a thermal cycling. Poço Convencional: projetado para pressão e temperatura ambiente ou moderadas, foco em resistência à corrosão (CO$_2$/H$_2$S) e à fadiga mecânica, não às tensões térmicas extremas.
+
+  \item (Avançado) O que é uma completação tipo stacked completion?
+  \textbf{Resposta:} É uma completação em poço único que produz de múltiplas zonas isoladas verticalmente, uma acima da outra, sem que os fluidos se misturem no poço (a menos que desejado). Cada zona é isolada por packers e acessada por sliding sleeves ou válvulas. É chamada stacked porque os equipamentos são "empilhados" verticalmente, permitindo produção seletiva ou simultânea, mas com controle limitado de cada zona em relação à elevação artificial.
+
+  \item (Avançado) Conceito de completação dual (duas colunas de produção).
+  \textbf{Resposta:} Sistema que utiliza duas colunas de produção (duas linhas de tubing) concêntricas ou lado a lado, permitindo produzir duas zonas diferentes de forma independente e simultânea. Utiliza dual packer e cabeças de poço especiais com duas árvores de natal ou uma árvore dupla. É complexa, cara e de difícil intervenção, sendo substituída em muitos casos por completações stacked ou intelligent wells.
+
+  \item (Avançado) Preparação e cuidados em completações HPHT (High Pressure High Temperature).
+  \textbf{Resposta:} Materiais: uso de superalloys (Inconel, Hastelloy) para resistir à corrosão em altas pressões e temperaturas (acima de 10.000 psi e 300$^\circ$F). Projeto: simulação rigorosa de esforços combinados (triaxial stress). Fluidos: fluidos de completação de alta densidade (formiatos de césio/potássio) livres de sólidos. Testes: testes de pressão em níveis muito superiores aos convencionais (ex.: 1,5x a pressão de operação) e certificação de equipamentos (API 6A).
+
+  \item (Avançado) O que é completamento monobore?
+  \textbf{Resposta:} Sistema onde o diâmetro interno do tubing é o mesmo (ou muito próximo) do diâmetro interno da árvore de natal, do packer e do revestimento (casing) abaixo. Permite o acesso irrestrito ao fundo do poço com ferramentas de wireline ou coiled tubing, facilitando intervenções futuras sem a necessidade de remover a coluna de produção. É comum em poços de gás e poços que exigem manutenção frequente.
+
+  \item (Avançado) Diferenças entre árvore de natal vertical e horizontal (submarina).
+  \textbf{Resposta:} Vertical (VXT): instalada diretamente sobre o wellhead, com válvulas alinhadas verticalmente. Permite acesso direto com wireline através da árvore, é mais alta. Horizontal (HXT): instalada lateralmente sobre o wellhead, com fluxo passando horizontalmente. O tubing hanger fica dentro do wellhead (baixo perfil), é mais segura para intervenções rig-less, mais compacta e oferece melhor proteção contra impactos, sendo padrão em águas profundas.
+
+  \item (Avançado) Características de uma completação retrievable.
+  \textbf{Resposta:} Refere-se a uma completação onde os equipamentos de fundo (packer, sliding sleeves, tubing) podem ser removidos (recuperados) sem a necessidade de perfurar ou remover o revestimento principal. É o oposto de uma completação permanent (ou cemented). Permite reparos e substituições ao longo da vida do poço, mas possui limitações de pressão e temperatura comparado a sistemas cimentados.
+
+  \item (Avançado) Uso de downhole safety valves (DHSV).
+  \textbf{Resposta:} São válvulas de segurança instaladas no tubing que fecham automaticamente em caso de fluxo excessivo ou perda de controle (fail-safe close). Localizadas a cerca de 50-100 metros abaixo do leito marinho (offshore) ou do mudline. Operam por pressão hidráulica ou eletrônica. São o principal equipamento de segurança passiva para evitar blowouts e vazamentos, obrigatórias em poços de gás e testadas periodicamente.
+
+  \item (Avançado) Completação de poço de gás seco vs. óleo.
+  \textbf{Resposta:} Gás Seco: isento de líquidos. Prioriza o controle de hidratos (injeção de metanol ou aquecimento) e altas velocidades de fluxo para evitar acúmulo de água de condensação. Metalurgia resistente a CO$_2$/H$_2$S. Óleo: preocupa-se com a separação gás-óleo no poço (evitar slug flow), controle de areia e injeção de gas lift. O dimensionamento é para fluxo multifásico.
+
+  \item (Avançado) Materiais e procedimentos especiais para poços HPHT.
+  \textbf{Resposta:} Materiais: uso de aços inoxidáveis superausteníticos (ex.: 13Cr, 25Cr, ou Duplex). Para ambientes extremamente corrosivos, usa-se Nickel Alloys (718, 925). Threads: conexões premium com vedação metal-metal, pois as conexões API padrão não suportam as tensões e vazamentos em HPHT. Procedimentos: controle rigoroso de torque make-up, uso de pipe ram no BOP específico para o tubing, e procedimentos de bullheading em emergências.
+
+  \item (Avançado) Completações que combinam métodos químicos e físicos.
+  \textbf{Resposta:} Refere-se a sistemas inteligentes (intelligent completions) que utilizam: Físico: sensores de pressão, temperatura e vazão (downhole gauges) instalados permanentemente. Químico: válvulas de controle de fluxo (ICVs) que podem injetar inibidores (de escala, de corrosão, de hidrato) de forma precisa na zona afetada. A combinação permite gerenciamento remoto da produção e injeção química preventiva sem intervenção.
+
+  \item (Avançado) O que é uma completação behind-pipe?
+  \textbf{Resposta:} Refere-se a uma zona de reservatório que é cimentada (atrás do revestimento) e não está inicialmente em comunicação com o poço. A completação behind-pipe é a técnica de abrir essa zona através de perfurações (perfurando o revestimento e o cimento) para adicionar nova produção (ou injeção) sem a necessidade de perfurar um novo poço (recompletion ou workover).
+
+  \item (Avançado) Diferença entre completions overbalanced e underbalanced.
+  \textbf{Resposta:} Overbalanced: a pressão hidrostática do fluido de completação é maior que a pressão da formação. É mais segura (controla influxos), mas pode danificar a formação (invasão de fluido, skin positivo). Underbalanced: a pressão hidrostática é menor que a pressão da formação. O poço "flui" enquanto a completação é instalada. Minimiza danos, permitindo maior produtividade natural, mas exige equipamentos especiais de contenção de pressão (BOP rotativo, snubbing units) e é mais arriscada.
+
+  \item (Avançado) Principais equipamentos de superfície de cabeçote de poço.
+  \textbf{Resposta:} Wellhead (Cabeça de Poço): suporta o casing e o tubing. Christmas Tree (Árvore de Natal): conjunto de válvulas (mestre, alívio, asa, e de produção) que controlam o fluxo. Choke (Válvula Estranguladora): controla a vazão e pressão de saída. Coflexip e Jumpers: conexões flexíveis entre a árvore e o manifold. SCM (Subsea Control Module): em submarino, a "central eletrônica" que controla as válvulas e monitora sensores.
+
+  \item (Avançado) O que são sliding sleeves e como são operadas?
+  \textbf{Resposta:} São dispositivos de fundo de poço que permitem abrir ou fechar portas de comunicação entre o tubing e o anular (ou entre o anular e a formação, em casos de completação cimentada). Operação: Mecânica: por wireline com ferramenta shifting tool (GS). Hidráulica: aplicando pressão no anular ou no tubing para acionar um pistão que move a manga. Eletro-hidráulica: em completações inteligentes, acionadas remotamente por sinais elétricos ou hidráulicos.
+
+  \item (Avançado) Completações com acesso a múltiplas zonas (side-pocket).
+  \textbf{Resposta:} Utiliza side-pocket mandrels no tubing que permitem a instalação de válvulas de gas lift ou chemical injection sem obstruir o diâmetro principal do tubing. Esses mandris têm um "bolso" lateral onde as válvulas são assentadas e recuperadas por wireline. Permitem a produção simultânea de múltiplas zonas através do tubing principal enquanto se gerencia a elevação artificial ou a injeção química zona a zona.
+
+  \item (Avançado) Integração entre completação e prevenção de produções indesejadas.
+  \textbf{Resposta:} Controle de Areia: uso de screens e gravel pack para evitar produção de sólidos. Controle de Água: instalação de inflow control devices (ICDs) ou válvulas inteligentes para equalizar o influxo ao longo do poço horizontal, evitando a conificação prematura de água. Controle de Gás: gas lift valves profundas para manter o drawdown controlado e evitar slugging. Integridade: packer e tie-back para garantir que o fluido produzido não migre para zonas não autorizadas ou para o ambiente.
+
+  \item (Avançado) O que é uma completação bypass?
+  \textbf{Resposta:} Sistema onde o fluxo principal é desviado (bypass) através de uma ferramenta ou packer. Exemplo comum: packer bypass usado durante operações de gravel pack, onde o fluido de transporte do cascalho é desviado para o anular sem passar pelo screen até o momento certo. Outro uso é em poços de injeção, onde um bypass permite tratar a formação sem desmontar a completação.
+
+  \item (Avançado) Testes de pressão no tubing e no anular após completação.
+  \textbf{Resposta:} Procedimento crítico para verificar a integridade dos equipamentos. Teste do Tubing: pressuriza-se o tubing contra o packer fechado ou contra a árvore de natal para verificar vazamentos nas conexões ou no corpo do tubing. Teste do Anular: pressuriza-se o espaço anular (casing-tubing) para verificar a vedação do packer e das conexões do casing. Consequências: vazamento no anular indica falha do packer ou casing; no tubing, indica conexões mal apertadas. Os testes respeitam pressões máximas de projeto (geralmente 1,2 a 1,5 x pressão máxima de operação).
+
+  \item (Avançado) Conceito de barefoot completion.
+  \textbf{Resposta:} É a completação mais simples, também chamada de open hole completion. O revestimento (casing) termina antes da zona produtora, deixando o intervalo produtor "a pé descalço" (exposto diretamente ao poço). Não há screen nem gravel pack. Utilizada apenas em formações consolidadas (rochas duras) que não produzem areia. Oferece máxima produtividade (menor skin), mas zero controle de areia e dificulta a estimulação seletiva.
+
+  \item (Avançado) Compare completions com liner hanger vs. convencionais.
+  \textbf{Resposta:} Com Liner Hanger: utiliza um liner (revestimento que não sobe até a superfície) suspenso no revestimento anterior por um liner hanger. É mais econômico em poços profundos, comum em poços horizontais e de águas profundas. Convencional (Casing String): o revestimento vai da superfície até a profundidade final (full string). Oferece maior integridade estrutural e facilidade de completação (maior diâmetro interno disponível), mas é mais caro e pesado.
+
+  \item (Avançado) Completações em poços degradados (calcificação, incrustação).
+  \textbf{Resposta:} Poços maduros ou com problemas de incrustação (escala de carbonato, sulfato) exigem: Acesso: monobore para permitir limpeza periódica com coiled tubing e ferramentas de milling. Materiais: revestimentos internos com liner de aço inoxidável ou aplicação de chemical inhibitors via capillary strings. Estratégia: instalação de crossover e sliding sleeves para permitir bullheading de ácidos ou solventes na zona danificada sem remover a coluna.
+
+  \item (Avançado) Completações em coiled tubing.
+  \textbf{Resposta:} Utiliza-se coiled tubing (tubo flexível contínuo) como coluna de produção permanente. É comum em poços de baixa vazão, poços de carvão (CBM) ou como completação temporária. Oferece rapidez de instalação e facilidade de remoção, mas possui limitações de diâmetro, pressão e profundidade. Geralmente utilizada com packer de coiled tubing e árvore de natal especial.
+
+  \item (Avançado) Técnicas não convencionais de completação.
+  \textbf{Resposta:} Completação Expandível: uso de expandable sand screens (ESS) ou expandable liners que são expandidos mecanicamente ou hidraulicamente para se ajustarem ao poço aberto (open hole), eliminando o anular e reduzindo o risco de pack-off. Multilateral: completação de poços com múltiplos laterais (ramificações) partindo do mesmo poço principal, aumentando a exposição ao reservatório. Temporary Abandonment (TA): técnicas de abandono temporário com bridge plugs de alto desempenho para permitir batch drilling. Completação com Fibra Óptica: instalação de cabos de fibra óptica (DTS, DAS) permanentemente colados ao tubing ou casing para monitoramento em tempo real.
+
+  \item (Avançado) Protocolos de segurança críticos durante operações de completação.
+  \textbf{Resposta:} Barreiras de Segurança: manter duas barreiras independentes em todos os momentos (ex.: packer + tubing + válvulas de superfície) contra a liberação de fluidos da formação. Pressão e Flow Checks: verificações constantes de pressão nos anulares; monitoramento de fluxo para detectar influxos (kicks) ou perdas de circulação. BOP: instalação e teste obrigatório do BOP antes de qualquer operação que exponha o poço; as rams devem ser específicas para o diâmetro do tubing. Kill Sheet: cálculo atualizado de densidade de fluido de kill e procedimentos de bullheading ou lubricate-and-bleed. Gestão de Mudanças (MOC): qualquer desvio do procedimento planejado requer aprovação formal. Testes de Pressão: realizar testes de pressão em todos os equipamentos de superfície, árvore de natal, tubing e anular antes de deslocar o BOP ou iniciar a produção.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 5: Geologia do Petróleo (Perguntas 251–313)}
+
+\begin{enumerate}
+  \setcounter{enumi}{250}
+  \item (Básico) O que define um reservatório petrolífero em termos geológicos?
+  \textbf{Resposta:} É uma rocha porosa e permeável, contida dentro de uma armadilha geológica, que contém quantidades economicamente viáveis de hidrocarbonetos (óleo e/ou gás).
+
+  \item (Básico) Diferencie rocha geradora, reservatório e selante.
+  \textbf{Resposta:} Geradora: rocha rica em matéria orgânica (fonte) que, sob calor e pressão, gera hidrocarbonetos. Geralmente folhelhos ou calcários laminados. Reservatório: rocha porosa e permeável (arenitos, calcários fraturados) que armazena os hidrocarbonetos. Selante (Rocha Selo): rocha impermeável (folhelho, sal, argilito) que impede a migração ascendente dos hidrocarbonetos, permitindo seu acúmulo.
+
+  \item (Básico) O que são bacias sedimentares e por que são importantes?
+  \textbf{Resposta:} São depressões da crosta terrestre preenchidas por sedimentos acumulados ao longo de milhões de anos. São importantes porque é nelas que ocorrem os processos de geração, migração e acúmulo de petróleo (sistemas petrolíferos).
+
+  \item (Básico) Explique o que é uma armadilha de petróleo (estrutural, estratigráfica).
+  \textbf{Resposta:} É a configuração geológica que impede a migração dos hidrocarbonetos, concentrando-os. Estrutural: formada por deformações da crosta (anticlinais, falhas, domos salinos). Estratigráfica: formada por variações nas características dos sedimentos (lentes de arenito, discordâncias, recifes).
+
+  \item (Básico) Principais tipos de rochas-reservatório e suas características.
+  \textbf{Resposta:} Arenitos (Clásticos): porosidade intergranular, alta permeabilidade (10-1000 mD), boa continuidade lateral. Calcários/Dolomitos (Carbonáticos): porosidade vugular, fraturas e intercristalina. Permeabilidade muito variável (alta em fraturas, baixa em matriz).
+
+  \item (Básico) O que é porosidade e permeabilidade em geologia de reservatório?
+  \textbf{Resposta:} Porosidade: fração do volume total da rocha que é ocupada por vazios (poros). Mede a capacidade de armazenamento. Permeabilidade: capacidade da rocha de transmitir fluidos através de seus poros interconectados.
+
+  \item (Básico) Diferencie porosidade primária e secundária.
+  \textbf{Resposta:} Primária: original, formada no momento da deposição dos sedimentos (espaços entre grãos). Secundária: desenvolvida após a deposição, por processos de dissolução (vugos) ou fraturamento.
+
+  \item (Básico) O que se entende por matéria orgânica fonte de petróleo?
+  \textbf{Resposta:} Restos de organismos vivos (principalmente algas, plâncton e plantas) depositados em ambientes anóxicos (sem oxigênio) e preservados nos sedimentos. Com o sepultamento, transformam-se em querogênio e, depois, em hidrocarbonetos.
+
+  \item (Básico) O que é petrografia de rocha-reservatório?
+  \textbf{Resposta:} É o estudo microscópico (em lâmina delgada) da rocha para identificar minerais, textura, porosidade, cimentação e diagênese, determinando sua qualidade como reservatório.
+
+  \item (Básico) Influência da tectónica na formação de armadilhas.
+  \textbf{Resposta:} A tectônica (movimentação das placas) gera estruturas como dobras (anticlinais), falhas e blocos soerguidos, que são as principais armadilhas estruturais onde o petróleo se acumula.
+
+  \item (Básico) Estratigrafia de perfis de poço e uso de fósseis.
+  \textbf{Resposta:} A estratigrafia correlaciona camadas geológicas. Perfis de poço (raio-gama, resistividade) identificam litologias. Fósseis (foraminíferos, palinomorfos) são usados para datar as rochas (bioestratigrafia) e interpretar ambientes deposicionais.
+
+  \item (Básico) O que são cores de testemunhos e como são usados?
+  \textbf{Resposta:} São amostras cilíndricas de rocha extraídas durante a perfuração. São usadas para análise direta de porosidade, permeabilidade, saturação de fluidos, e para calibração dos perfis de poço.
+
+  \item (Básico) Como a diagénese afeta as propriedades das rochas?
+  \textbf{Resposta:} A diagênese (compactação, cimentação, dissolução) altera a porosidade e permeabilidade. Cimentação (ex.: por calcita ou sílica) reduz a qualidade; dissolução (ex.: de feldspatos) pode criar porosidade secundária.
+
+  \item (Básico) O que define a geração de hidrocarbonetos (janela de petróleo)?
+  \textbf{Resposta:} É a faixa de temperatura (60$^\circ$C a 120$^\circ$C, aproximadamente) e profundidade onde o querogênio (matéria orgânica) se transforma em óleo. Acima (mais quente) gera gás (janela do gás).
+
+  \item (Básico) Por que bacias deltaicas tendem a concentrar petróleo?
+  \textbf{Resposta:} Porque os deltas depositam enormes quantidades de sedimentos (arenitos como reservatórios) e matéria orgânica (folhelhos como geradores) em um ambiente de rápida subsidência, criando um sistema petrolífero completo.
+
+  \item (Básico) Importância da idade geológica de um reservatório.
+  \textbf{Resposta:} A idade (ex.: Cretáceo, Mioceno) influencia a maturidade térmica, a qualidade dos fluidos (óleo leve vs. pesado) e a história de deformação tectônica que a rocha sofreu.
+
+  \item (Básico) Ambientes sedimentares favoráveis à formação de reservatórios.
+  \textbf{Resposta:} Canais fluviais, barras de areia de praia, leques submarinos (turbiditos), recifes carbonáticos, eólicos (desertos).
+
+  \item (Básico) Exemplo de fóssil indicador estratigráfico.
+  \textbf{Resposta:} Foraminíferos planctônicos (ex.: \textit{Globigerinoides} para o Neogeno) ou palinomorfos (esporos de pólen).
+
+  \item (Intermediário) Distinções entre migração primária e secundária.
+  \textbf{Resposta:} Primária: movimento dos hidrocarbonetos da rocha geradora (folhelho) para a rocha reservatório (arenito), expelindo a água intersticial. Secundária: movimento dentro da rocha reservatório (poros) até a armadilha, ou de uma armadilha para outra (remigração).
+
+  \item (Intermediário) Conceito de sistema petrolífero.
+  \textbf{Resposta:} É o conjunto de elementos (rocha geradora, rocha reservatório, rocha selante, armadilha) e processos (geração, migração, acumulação) necessários para a formação de um acúmulo de petróleo. Define a "receita" para a existência de óleo.
+
+  \item (Intermediário) Como se determinam províncias petrolíferas?
+  \textbf{Resposta:} Por meio de estudos geológicos regionais (bacias sedimentares), geofísicos (sísmica) e geoquímicos (correlação óleo-rocha geradora) que definem áreas com características geológicas comuns e potencial exploratório.
+
+  \item (Intermediário) O que são mapas estruturais e isopach maps?
+  \textbf{Resposta:} Mapa Estrutural: mostra a profundidade de um determinado horizonte geológico (topo do reservatório), revelando dobras, falhas e estruturas. Mapa Isópaco: mostra a espessura verdadeira de uma camada (ex.: reservatório), indicando a variação lateral da espessura.
+
+  \item (Intermediário) Diferencie rochas detríticas de carbonáticas.
+  \textbf{Resposta:} Detríticas (Clásticas): originadas da erosão de rochas preexistentes, transportadas e depositadas (arenitos, folhelhos). Compostas por quartzo, feldspato, argilas. Carbonáticas: formadas por precipitação química ou biológica (calcários, dolomitos). Compostas por carbonato de cálcio (CaCO$_3$) ou magnésio.
+
+  \item (Intermediário) Recifes carbonáticos como reservatórios.
+  \textbf{Resposta:} Recifes antigos (ex.: do Cretáceo) formam estruturas rígidas e porosas (porosidade de framework) que podem constituir excelentes reservatórios, frequentemente isolados por folhelhos (selante).
+
+  \item (Intermediário) Relação entre o ciclo de Wilson e bacias sedimentares.
+  \textbf{Resposta:} O ciclo de Wilson (abertura e fechamento de oceanos) explica a evolução das bacias: rifte (abertura), margem passiva (subsidência térmica) e colisão (fechamento). Angola está em uma margem passiva do Atlântico, formada após a ruptura do Gondwana.
+
+  \item (Intermediário) Análises petrográficas de rochas reservatório.
+  \textbf{Resposta:} Inclui a descrição de minerais, tipo de cimento, contatos entre grãos (ponto, côncavo-convexo), e quantificação da porosidade e sua tipologia (intergranular, intragranular, de molde).
+
+  \item (Intermediário) Ambientes deposicionais associados a bons reservatórios.
+  \textbf{Resposta:} Sistemas de leques submarinos (turbiditos) para águas profundas; canais de maré e barras de praia para águas rasas; canais fluviais entrelaçados para onshore.
+
+  \item (Intermediário) O que é sequência estratigráfica e sua utilidade.
+  \textbf{Resposta:} É um pacote de rochas geneticamente relacionado, delimitado por discordâncias. Útil para correlacionar camadas em escala regional, prever a distribuição de arenitos e identificar níveis selantes regionais.
+
+  \item (Intermediário) Conceito de play petrolífero.
+  \textbf{Resposta:} É uma área ou região com características geológicas semelhantes que oferecem potencial exploratório. É um "modelo" de sistema petrolífero que pode ser aplicado em várias estruturas.
+
+  \item (Intermediário) Evidências geofísicas/geológicas de potencial reservatório.
+  \textbf{Resposta:} Anomalias de amplitude sísmica (bright spots, AVO), estruturas em anticlinal identificadas na sísmica, e análises de testemunhos com boa porosidade e permeabilidade.
+
+  \item (Intermediário) Interpretação de dados sísmicos para identificar estruturas.
+  \textbf{Resposta:} Os geofísicos interpretam linhas sísmicas para mapear o pick de horizontes (refletores). Eles identificam fault cuts (falhas), rollover anticlines (anticlinais associadas a falhas lístricas) e onlap/offlap (estratigrafia).
+
+  \item (Intermediário) Relação entre domos salinos e ocorrência de petróleo.
+  \textbf{Resposta:} O sal, por ser plástico e impermeável, ao subir (diapiros) deforma as camadas sobrejacentes, criando armadilhas estruturais (anticlinais). Além disso, o próprio sal atua como selante perfeito, vedando as acumulações laterais.
+
+  \item (Intermediário) Formação de reservatórios turbidíticos.
+  \textbf{Resposta:} Causados por correntes de turbidez (avalanches submarinas) que transportam sedimentos do talude continental para a planície abissal, depositando arenitos de alta qualidade em forma de leques submarinos.
+
+  \item (Intermediário) Falhas como barragens ou caminhos de migração.
+  \textbf{Resposta:} Falhas podem ser selantes (barragem) se o plano de falha for preenchido por material impermeável (argila) ou devido à pressão diferencial. Podem ser condutos (caminho) se estiverem abertas ou associadas a fraturas permeáveis.
+
+  \item (Intermediário) Bacias petrolíferas de Angola (Congo, Kwanza).
+  \textbf{Resposta:} Bacia do Congo: norte de Angola, inclui o enclave de Cabinda. Principal produtora, rica em turbiditos do Mioceno e Oligoceno. Bacia de Kwanza: região central (Luanda). Importante para descobertas do pré-sal e campos de águas profundas.
+
+  \item (Intermediário) Técnicas de campo na caracterização de reservatórios.
+  \textbf{Resposta:} Coleta de testemunhos (coring), perfilagem de poço (logging), análise de pressão (RFT, MDT), e testes de formação (DST).
+
+  \item (Intermediário) Impacto de reservatórios estratificados na produção.
+  \textbf{Resposta:} A variação vertical da permeabilidade (estratificação) pode causar coning precoce de água, produção desigual entre camadas e necessidade de completações seletivas.
+
+  \item (Intermediário) Influência da geometria da jazida no fluxo.
+  \textbf{Resposta:} Uma jazida muito alongada (alta relação comprimento/largura) pode ter eficiência de drenagem baixa. Geometrias complexas (falhas selantes internas) criam compartimentos isolados que exigem poços separados.
+
+  \item (Avançado) Uso de geoquímica isotópica para correlação óleo-rocha geradora.
+  \textbf{Resposta:} Isótopos de carbono ($\delta^{13}$C) e hidrogênio ($\delta$D) no óleo são comparados com os da rocha geradora (querogênio). Quando os valores coincidem, prova-se que o óleo foi gerado por aquela rocha (correlação genética).
+
+  \item (Avançado) Isótopos estáveis para inferir origem do petróleo.
+  \textbf{Resposta:} Razões isotópicas (ex.: $^{13}$C/$^{12}$C) indicam o ambiente deposicional (marinho vs. terrestre) e a idade da matéria orgânica. Óleos de ambiente marinho tendem a ser menos negativos que óleos terrestres.
+
+  \item (Avançado) Evolução tectónica das bacias de Angola e seu impacto.
+  \textbf{Resposta:} Após o rifte (Cretáceo Inferior) que separou África e América do Sul, houve a fase de margem passiva (pós-rifte). O sal do Aptiano (formação Loeme) foi depositado, e posteriormente os sedimentos do Terciário (Mioceno) carregaram o sal, gerando a tectônica salífera (domos) que criou as principais armadilhas.
+
+  \item (Avançado) Oil window e gas window na bacia de Angola.
+  \textbf{Resposta:} Na Bacia do Kwanza, o pré-sal (Cretáceo) está frequentemente na janela do gás (alta maturidade) devido ao soterramento profundo. O pós-sal (Mioceno) está na janela do óleo (maturidade média), gerando óleos leves.
+
+  \item (Avançado) Plots geológicos de maturação (Ro).
+  \textbf{Resposta:} A reflectância da vitrinita (\%Ro) é o principal indicador de maturação. Ro < 0.6\% (imaturo), 0.6-1.2\% (janela do óleo), >1.2\% (janela do gás).
+
+  \item (Avançado) Influência da idade e profundidade de sepultamento no potencial gerador.
+  \textbf{Resposta:} Quanto mais antiga e mais profunda a rocha geradora, maior a temperatura a que foi submetida. Se for muito profunda, pode ultrapassar a janela do óleo e gerar apenas gás, ou destruir a matéria orgânica (sobre-madura).
+
+  \item (Avançado) Efeitos da biodegradação no óleo.
+  \textbf{Resposta:} Bactérias na superfície (ou em reservatórios rasos e frios) consomem os hidrocarbonetos mais leves, deixando o óleo mais pesado, com maior teor de enxofre, metais e viscosidade. É comum em óleos pesados de Angola onshore.
+
+  \item (Avançado) Identificação de rocha geradora por imagem de raios-X.
+  \textbf{Resposta:} A fluorescência de raios-X (XRF) detecta elementos traços (Ni, V, Mo) e a imagem de raios-X de alta resolução revela a lâmina (laminação) e a presença de pirita (indicador de ambiente anóxico), típicos de rochas geradoras ricas.
+
+  \item (Avançado) Papel dos domos salinos nas províncias offshore de Angola.
+  \textbf{Resposta:} Os domos de sal (formação Loeme, Aptiano) criam as principais armadilhas estruturais para os reservatórios turbidíticos do Mioceno (pós-sal). Eles também atuam como selante vertical e lateral, permitindo acumulações gigantescas (ex.: Girassol, Dalia).
+
+  \item (Avançado) Diferenças geológicas entre bacias de óleo leve e pesado.
+  \textbf{Resposta:} Óleo Leve: geralmente associado a reservatórios profundos, bem soterrados, com boa maturação e pouca biodegradação. Óleo Pesado: associado a reservatórios rasos, com baixa temperatura, expostos à biodegradação ou a processos de lavagem por água meteórica.
+
+  \item (Avançado) Uso do conhecimento geológico na avaliação de riscos exploratórios.
+  \textbf{Resposta:} Redução de risco através da análise de plays: existência de rocha geradora madura, reservatório de qualidade, selante eficaz e timing correto (geração após formação da armadilha). Probabilidades são atribuídas a cada elemento.
+
+  \item (Avançado) Geologia básica das bacias do Congo e Kwanza.
+  \textbf{Resposta:} Ambas são bacias de margem passiva. A Bacia do Congo é caracterizada por um forte influxo sedimentar do rio Congo (Turbiditos terciários). A Bacia de Kwanza tem um pré-sal mais desenvolvido e uma história de rifte mais complexa. Ambas possuem tectônica salífera atuante.
+
+  \item (Avançado) Implicações geológicas da descoberta do pré-sal em Angola.
+  \textbf{Resposta:} Confirmou a continuidade da província petrolífera do pré-sal (Cretáceo) do Brasil para Angola (açúcar e café). Revelou reservatórios carbonáticos de alta qualidade (calcários lacustres e marinhos rasos) abaixo da camada de sal, em águas ultraprofundas.
+
+  \item (Avançado) O que é uma trap de sal e sua relação com exploração offshore.
+  \textbf{Resposta:} É uma armadilha formada pela deformação do sal (domos, paredes, soleiras). O sal empurra as rochas sedimentares para cima (anticlinais de rollover) ou as sela lateralmente. É o principal tipo de armadilha em águas profundas de Angola.
+
+  \item (Avançado) Diferenças geológicas entre bacias offshore e onshore.
+  \textbf{Resposta:} Onshore: rochas mais antigas (Cretáceo, Paleógeno), maior influência de intemperismo e tectônica de blocos. Reservatórios mais degradados (biodegradação). Offshore: sequências sedimentares mais jovens e espessas (Terciário), preservadas, com boa qualidade de reservatório (turbiditos) e excelente selante (folhelhos marinhos e sal).
+
+  \item (Avançado) Contribuição da geologia na estimativa de recursos em ultraprofundidades.
+  \textbf{Resposta:} Uso de modelos geológicos 3D que integram sísmica de alta resolução, atributos sísmicos (AVO) e analogias com campos descobertos para estimar volumes in-place e fatores de recuperação em reservatórios de alta pressão e temperatura (HPHT).
+
+  \item (Avançado) Uso de sísmica 4D para monitorar saturação de fluidos.
+  \textbf{Resposta:} Comparação de levantamentos sísmicos 3D realizados em diferentes épocas (tempo-lapse). As mudanças na amplitude e velocidade indicam a substituição de óleo por água ou gás livre, mapeando a frente de avanço da água e áreas não drenadas.
+
+  \item (Avançado) Caracterização geológica do petróleo leve da Bacia do Congo.
+  \textbf{Resposta:} Reservatórios turbidíticos do Mioceno, com alta porosidade (>20\%) e permeabilidade (100-1000 mD). Óleo de baixa densidade (30-40$^\circ$ API), baixo teor de enxofre, gerado a partir de rochas geradoras marinhas do Cretáceo.
+
+  \item (Avançado) O que são diques salinos e sua indicação de estruturas favoráveis.
+  \textbf{Resposta:} São intrusões de sal na forma de paredes verticais. Indicam intensa tectônica salífera. As áreas adjacentes a esses diques geralmente possuem falhas e anticlinais associadas que podem conter acumulações de hidrocarbonetos.
+
+  \item (Avançado) Identificação de porosidade secundária em calcários (karst) em Angola.
+  \textbf{Resposta:} Comum no pré-sal. Identificada em imagens de perfil de poço (FMI) como vugs e cavernas, e em testemunhos com alta dissolução. É crítica para a produtividade do pré-sal.
+
+  \item (Avançado) Propriedades geológicas do Oligoceno vs. Mioceno offshore.
+  \textbf{Resposta:} Oligoceno: reservatórios mais profundos, geralmente mais compactados, menor porosidade. Frequentemente associados a canais e leques mais antigos. Mioceno: reservatórios mais rasos, com porosidades excepcionalmente altas (preservadas), geometrias complexas de canais meandrantes e lobos de turbiditos.
+
+  \item (Avançado) Influência da mineralogia na condutividade elétrica medida em perfis.
+  \textbf{Resposta:} A presença de argilas (esmectita, ilita) aumenta a condutividade elétrica, podendo mascarar a presença de água (baixa resistividade). A análise de mineralogia (DRX) é essencial para calibrar o modelo de saturação (Archie).
+
+  \item (Avançado) Relevância da sismologia na estimativa de pressão de fratura.
+  \textbf{Resposta:} A velocidade sísmica (intervalar) é usada para prever o gradiente de sobrecarga e o gradiente de fratura (pressão de fratura) usando modelos geomecânicos (ex.: Eaton, Bowers), essencial para o projeto de completação (evitar perda de circulação).
+
+  \item (Avançado) Uso de geoquímica de fluxo para entender conectividade de reservatórios.
+  \textbf{Resposta:} Amostras de óleo durante a produção são analisadas (cromatografia de fase gasosa). Se dois poços têm óleos com "impressões digitais" (fingerprints) idênticas, provavelmente estão conectados; se diferentes, sugerem compartimentos isolados.
+
+  \item (Avançado) Como a história tectónica de Angola informa estratégias de exploração.
+  \textbf{Resposta:} A história de rifte (Cretáceo) e margem passiva (Terciário) permite prever a localização de geradoras (lagos de rifte), reservatórios (turbiditos do talude) e selantes (sal, folhelhos). A exploração foca em blocos que combinam esses elementos com armadilhas formadas pela tectônica salífera recente.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 6: Geofísica do Petróleo (Perguntas 314–375)}
+
+\begin{enumerate}
+  \setcounter{enumi}{313}
+  \item (Básico) O que é geofísica aplicada ao petróleo? Métodos principais.
+  \textbf{Resposta:} É a aplicação de princípios físicos (gravidade, magnetismo, elasticidade, eletricidade) para investigar a subsuperfície. Métodos principais: sísmica (reflexão), gravimetria, magnetometria e eletromagnetismo (MT/CSEM).
+
+  \item (Básico) Princípio do método sísmico de reflexão.
+  \textbf{Resposta:} Gera-se ondas sísmicas na superfície. Essas ondas propagam-se no subsolo e são refletidas (reflexão) nas interfaces onde há contraste de impedância acústica (mudança de densidade x velocidade). O tempo de retorno das ondas é registrado para mapear a estrutura geológica.
+
+  \item (Básico) Diferencie sísmica de reflexão de sísmica de refração.
+  \textbf{Resposta:} Reflexão: usa ondas refletidas para mapear estruturas profundas (mais comum na exploração). Refração: usa ondas que viajam ao longo da interface de alta velocidade (refratadas) para determinar velocidades e espessura de camadas rasas.
+
+  \item (Básico) O que são geofones e hidrofones?
+  \textbf{Resposta:} Geofones: sensores terrestres que convertem o movimento do solo (velocidade ou aceleração) em sinal elétrico. Hidrofones: sensores subaquáticos que detectam mudanças de pressão acústica.
+
+  \item (Básico) Uso de gravimetria e magnetometria na exploração.
+  \textbf{Resposta:} Gravimetria: mede variações na gravidade para identificar anomalias de densidade (bacias sedimentares, domos de sal, estruturas). Magnetometria: mede variações no campo magnético para identificar rochas ígneas ou metamórficas (basamento) e falhas profundas.
+
+  \item (Básico) Significado de survey sísmico 2D, 3D e 4D.
+  \textbf{Resposta:} 2D: linhas sísmicas isoladas. Mapeamento regional. 3D: malha densa de fontes e receptores, gerando um volume de dados tridimensional. 4D: sísmica 3D repetida ao longo do tempo para monitorar mudanças no reservatório (produção).
+
+  \item (Básico) O que é velocidade sísmica e como afeta o tempo de trânsito?
+  \textbf{Resposta:} Velocidade com que a onda sísmica se propaga em um meio (rocha). Quanto maior a velocidade, menor o tempo de trânsito (TWT) para uma dada profundidade.
+
+  \item (Básico) Interpretação de formas de relevo sísmico (anticlinas, falhas).
+  \textbf{Resposta:} Anticlinas aparecem como refletores arqueados para cima; falhas aparecem como descontinuidades e deslocamentos dos refletores.
+
+  \item (Básico) Dados de near offset e far offset.
+  \textbf{Resposta:} Near Offset: receptores próximos à fonte (incidência quase vertical). Usados para imagem estrutural. Far Offset: receptores distantes (incidência oblíqua). Usados para análise AVO e estimativa de velocidades.
+
+  \item (Básico) Conceito de AVO e sua utilidade.
+  \textbf{Resposta:} Amplitude Versus Offset. É a variação da amplitude sísmica com a distância fonte-receptor. Útil para identificar fluidos (gás, óleo, água) e litologia (arenito vs. folhelho).
+
+  \item (Básico) O que é migração sísmica?
+  \textbf{Resposta:} Processo de processamento que reposiciona os refletores sísmicos em sua verdadeira posição espacial, corrigindo os efeitos de difração e pull-up/pull-down causados pela geometria não vertical.
+
+  \item (Básico) Variação da velocidade das ondas sísmicas entre litologias.
+  \textbf{Resposta:} Ar: \textasciitilde330 m/s. Água: \textasciitilde1500 m/s. Sedimentos não consolidados: 1700-2500 m/s. Arenitos compactados: 2500-4500 m/s. Calcários: 4500-6000 m/s. Sal: 4500 m/s (velocidade anômala em relação a sedimentos compactados). Basalto/Granito: >5500 m/s.
+
+  \item (Básico) O que são sonic logs?
+  \textbf{Resposta:} Perfil de poço que mede o tempo de trânsito ($\Delta t$) da onda compressional (P) entre dois receptores. É usado para calcular a porosidade (junto com um modelo de matriz) e para calibrar a sísmica (correlação tempo-profundidade).
+
+  \item (Básico) Logs de resistividade e identificação de fluidos.
+  \textbf{Resposta:} Medem a resistividade elétrica da formação. Hidrocarbonetos (óleo/gás) são isolantes (alta resistividade), enquanto água salgada é condutora (baixa resistividade). Permitem calcular a saturação de água (Sw).
+
+  \item (Básico) Papel da logagem gamma e da densidade.
+  \textbf{Resposta:} Gamma Ray: mede radiação natural. Distingue folhelhos (alta emissão) de arenitos/carbonatos (baixa emissão). Densidade (Litho-Density): mede a densidade eletrônica da formação. Usada para calcular porosidade total e identificar litologias.
+
+  \item (Básico) Curva de densidade em perfilagem e indicação de tipos de rocha.
+  \textbf{Resposta:} A densidade da matriz varia: arenito (\textasciitilde2.65 g/cc), calcário (\textasciitilde2.71 g/cc), dolomito (\textasciitilde2.87 g/cc), sal (2.04 g/cc). Combinação com neutron e sonic ajuda na identificação litológica.
+
+  \item (Básico) Conversão de dados sísmicos de tempo para profundidade.
+  \textbf{Resposta:} Processo que usa informações de velocidade (provenientes de sonic logs ou VSP) para transformar o volume sísmico de tempo de trânsito (TWT) em profundidade verdadeira, permitindo posicionar poços e correlacionar com dados geológicos.
+
+  \item (Básico) O que são magnetotelúrica (MT) e AMT?
+  \textbf{Resposta:} Métodos eletromagnéticos passivos que medem as variações naturais dos campos elétrico e magnético terrestre para mapear a resistividade em profundidade, úteis para detectar altas resistividades (hidrocarbonetos) ou estruturas de sal.
+
+  \item (Básico) Importância da perfilagem de poços na validação sísmica.
+  \textbf{Resposta:} Os logs (sonic, densidade) fornecem a impedância acústica real. Ao gerar um synthetic seismogram (sintético) a partir dos logs e comparar com a sísmica real, valida-se a interpretação (picking) e a profundidade dos horizontes.
+
+  \item (Básico) O que é um downhole gauge?
+  \textbf{Resposta:} Sensor eletrônico instalado no fundo do poço (colado ao tubing ou integrado ao packer) que mede continuamente pressão e temperatura (PT) do reservatório durante a produção.
+
+  \item (Intermediário) Ferramentas de perfilagem multifuncionais (triple combo).
+  \textbf{Resposta:} Combo padrão que combina três ferramentas em uma única descida: Gamma Ray (litologia), Resistividade (fluidos), e Porosidade (densidade + neutron ou sônico).
+
+  \item (Intermediário) Diferença entre processing e interpretation sísmica.
+  \textbf{Resposta:} Processing: transforma os dados brutos (ruídos) em seções sísmicas com refletores coerentes (empilhamento, migração). Interpretation: geocientistas mapeiam os refletores (horizontes, falhas) para criar mapas estruturais e identificar potenciais armadilhas.
+
+  \item (Intermediário) O que é inversão sísmica e como ajuda na estimativa de propriedades?
+  \textbf{Resposta:} Processo que transforma dados sísmicos (amplitudes) em modelos de impedância acústica. A impedância acústica, por sua vez, pode ser correlacionada com propriedades de reservatório (porosidade, litologia) através de rock physics.
+
+  \item (Intermediário) Diferencie ondas P e S.
+  \textbf{Resposta:} P (Compressionais): propagam-se por compressão/dilatação. Propagam-se em sólidos e fluidos. Mais rápidas. S (Shear - Cisalhamento): propagam-se por movimento perpendicular à direção de propagação. Propagam-se apenas em sólidos (não em fluidos).
+
+  \item (Intermediário) O que são atributos sísmicos?
+  \textbf{Resposta:} Medidas derivadas dos dados sísmicos (amplitude, frequência, fase, coerência) que ajudam a destacar características geológicas específicas, como canais (atributo de coerência), presença de gás (baixa frequência) ou falhas (curvatura).
+
+  \item (Intermediário) O que é um sonic transit-time log?
+  \textbf{Resposta:} Mede o intervalo de tempo (microsegundos por pé) que uma onda acústica leva para percorrer um pé de formação. Inversamente proporcional à porosidade.
+
+  \item (Intermediário) Velocidade intervalar vs. velocidade média.
+  \textbf{Resposta:} Intervalar: velocidade de uma camada específica (entre dois refletores). Média: velocidade média de toda a coluna de rocha até uma determinada profundidade.
+
+  \item (Intermediário) O que é conversão sísmica?
+  \textbf{Resposta:} O fenômeno onde uma onda P, ao incidir em uma interface, pode se converter em onda S (e vice-versa). É explorada em converted-wave (PS) para obter informações sobre o shear modulus (rigidez) e fluidos.
+
+  \item (Intermediário) Importância do stacking e do NMO correction.
+  \textbf{Resposta:} NMO (Normal Moveout): corrige o efeito do offset no tempo de chegada, alinhando os refletores como se fossem de incidência vertical. Stacking: média de todos os traços com NMO corrigido. Aumenta a relação sinal/ruído e reduz a quantidade de dados.
+
+  \item (Intermediário) Ferramentas de perfilagem de precisão (imagem de poço).
+  \textbf{Resposta:} Ferramentas como FMI (Formation MicroImager) ou UBI (Ultrasonic Borehole Imager) geram imagens de alta resolução da parede do poço, permitindo identificar fraturas, estratificação, e estruturas sedimentares.
+
+  \item (Intermediário) Separação gama/densidade na análise litológica.
+  \textbf{Resposta:} O crossplot (gráfico cruzado) de densidade vs. neutron ou gamma ray vs. densidade permite identificar litologias (arenito, calcário, dolomito, folhelho) e tipos de porosidade.
+
+  \item (Intermediário) Integração de dados de poço com sísmica.
+  \textbf{Resposta:} Envolve a calibração dos horizontes sísmicos com os marcadores de poço (tops), a geração de synthetic seismograms e a inversão sísmica condicionada aos poços para gerar propriedades (impedância, porosidade) em 3D.
+
+  \item (Intermediário) O que é Seismic Stratigraphy?
+  \textbf{Resposta:} Interpretação de sequências estratigráficas (tratos de sistemas) a partir de padrões de refletores sísmicos (onlap, downlap, toplap) para interpretar ambientes deposicionais e prever a distribuição de reservatórios.
+
+  \item (Intermediário) Análise de velocidade para conversão tempo-profundidade.
+  \textbf{Resposta:} Utiliza-se velocity spectra (análise de velocidade) e dados de check-shot ou VSP para construir um modelo de velocidade 3D que permite a conversão precisa do tempo sísmico para profundidade.
+
+  \item (Intermediário) O que são source signature e wavelet?
+  \textbf{Resposta:} Source Signature: a forma de onda gerada pela fonte sísmica (air gun, vibrador). Wavelet: a forma de onda resultante após o processamento, que representa a resolução do dado sísmico.
+
+  \item (Intermediário) O que são marés sísmicas e ground roll, e como são removidos?
+  \textbf{Resposta:} Ground Roll: ruído de ondas superficiais (Rayleigh) de baixa frequência e alta amplitude. Remoção: através de filtros de frequência (f-k filters), atenuação por stacking diversificado ou noise attenuation avançada.
+
+  \item (Intermediário) Técnicas de perfilagem para permeabilidade e saturação (NMR).
+  \textbf{Resposta:} Ressonância Magnética Nuclear (NMR) mede a interação dos spins de hidrogênio (fluidos) com o campo magnético. Permite estimar porosidade livre, porosidade de argila, e permeabilidade (modelo de Coates ou SDR). Também distingue fluidos (óleo, água, gás).
+
+  \item (Intermediário) O que é tomografia sísmica?
+  \textbf{Resposta:} Técnica de inversão que usa os tempos de trânsito das ondas (principalmente first arrivals) para reconstruir um modelo de velocidade de alta resolução entre poços (tomografia cross-hole) ou em superfície.
+
+  \item (Intermediário) Diferenças entre aquisição sísmica offshore e onshore.
+  \textbf{Resposta:} Offshore: fonte (air guns) e receptores (hidrofones) em streamers (cabos) rebocados por navio. Fonte e receptores são deslocados continuamente. Ruído de ondas (swell) é menos complexo. Onshore: fonte (vibradores ou dinamite) e geofones espalhados no solo. Ruído de ground roll é intenso. Topografia e variações de superfície são um desafio.
+
+  \item (Intermediário) O que são seismic facies?
+  \textbf{Resposta:} Conjunto de unidades sísmicas (pacotes de refletores) com características de reflexão (amplitude, continuidade, frequência) distintas, que são interpretadas como representantes de um ambiente deposicional ou litologia específica.
+
+  \item (Avançado) Explique as classes de AVO conforme Calvert.
+  \textbf{Resposta:} Classe 1: alta impedância (arenito consolidado). Amplitude diminui com o offset. Inversão de polaridade rara. Classe 2: impedância próxima ao folhelho (arenito médio). Amplitude baixa no near offset, mas aumenta drasticamente e pode inverter no far offset. Classe 3: baixa impedância (arenito poroso/gás). Amplitude negativa forte que se torna ainda mais negativa com o offset. Indicador de gás. Classe 4: baixa impedância (arenito poroso/água). Amplitude negativa que diminui com o offset.
+
+  \item (Avançado) Uso de atributos sísmicos avançados para identificar reservatórios ocultos.
+  \textbf{Resposta:} Atributos de spectral decomposition identificam canais de areia finos abaixo da resolução de tuning. Atributos de curvature e ant-tracking destacam falhas e fraturas. Machine learning combina múltiplos atributos para classificar fácies sísmicas.
+
+  \item (Avançado) Aplicações de machine learning na interpretação sísmica.
+  \textbf{Resposta:} Redes neurais profundas (CNN) são usadas para: Fault detection (detecção automática de falhas). Horizon picking (mapeamento automático de horizontes). Facies classification (classificação de fácies sísmicas/reservatórios). Seismic inversion (aceleração do processo).
+
+  \item (Avançado) O que é a migração Kirchhoff?
+  \textbf{Resposta:} É um método de migração sísmica que soma, para cada ponto de imagem no subsolo, a contribuição de todas as amostras de dados (traços) ponderadas por uma função Green que considera a geometria de propagação da onda. É robusta e eficiente.
+
+  \item (Avançado) Processamento pré-empilhamento vs. pós-empilhamento.
+  \textbf{Resposta:} Pré-empilhamento (Pre-stack): a migração é aplicada antes do stacking (empilhamento). Preserva a informação de offset, essencial para AVO e inversão. Pós-empilhamento (Post-stack): aplicada após o stacking. Menos intensivo computacionalmente, mas perde as informações de AVO.
+
+  \item (Avançado) O que é anisotropia sísmica e como é considerada na migração?
+  \textbf{Resposta:} Anisotropia é a variação da velocidade sísmica com a direção de propagação (causada por foliação, fraturas, ou estresse). Em migração, é considerada através de modelos de anisotropia (VTI - Vertical Transverse Isotropy, TTI - Tilted Transverse Isotropy) para corrigir o posicionamento dos refletores.
+
+  \item (Avançado) Fatores que afetam a resolução vertical de um levantamento sísmico.
+  \textbf{Resposta:} A resolução vertical é aproximadamente $\lambda/4$, onde $\lambda$ é o comprimento de onda dominante. É afetada pela frequência da fonte (quanto maior, melhor a resolução), pela velocidade da rocha (quanto maior, pior a resolução para uma dada frequência) e pela atenuação.
+
+  \item (Avançado) Uso de VSP (Vertical Seismic Profile).
+  \textbf{Resposta:} É um levantamento sísmico onde os receptores são colocados dentro do poço (geofones) e a fonte na superfície. Fornece uma imagem de alta resolução próximo ao poço, uma medição direta de velocidades (calibração perfeita) e ajuda a identificar múltiplas e conversões.
+
+  \item (Avançado) Ondas de superfície e dispersão.
+  \textbf{Resposta:} Ondas de superfície (Love, Rayleigh) viajam pela interface ar-subsolo. Elas são dispersivas (velocidade varia com a frequência). Na sísmica, são consideradas ruído de ground roll e removidas, mas podem ser usadas para tomografia de superfície (MASW) para caracterizar geotecnia rasa.
+
+  \item (Avançado) Como se faz a sísmica time-lapse (4D) em reservatórios em produção?
+  \textbf{Resposta:} Realiza-se um levantamento 3D de base (baseline) antes da produção. Após alguns anos (monitor), repete-se o levantamento com a mesma geometria. Subtrai-se os volumes (ou atributos) para visualizar as mudanças de amplitude e velocidade causadas pela substituição de fluidos (óleo → água) e pressão.
+
+  \item (Avançado) Teste de velocidade walk-away VSP.
+  \textbf{Resposta:} É um VSP onde a fonte é movida ao longo de uma linha afastando-se do poço (caminhamento). Permite analisar a anisotropia e obter velocidades de onda S (convertidas), além de auxiliar na calibração da migração sísmica de superfície.
+
+  \item (Avançado) Cálculo da impedância acústica e sua relação com propriedades de rocha.
+  \textbf{Resposta:} Impedância Acústica (AI) = Densidade ($\rho$) x Velocidade (V). É calculada a partir de dados sísmicos (inversão) ou logs. Através de rock physics (modelos como Gassmann), a AI é relacionada à porosidade, saturação e litologia.
+
+  \item (Avançado) Respostas AVO para litologias.
+  \textbf{Resposta:} Arenitos com gás exibem forte aumento de amplitude negativa com o offset (Classe 3). Arenitos com óleo leve podem mostrar classe 2. Arenitos com água mostram pouco AVO. Folhelhos geralmente têm baixa resposta AVO. A análise de crossplot de intercept vs. gradiente (A vs. B) é usada para discriminar fluidos.
+
+  \item (Avançado) Equações de Gardner e Castagna.
+  \textbf{Resposta:} Gardner: relação empírica entre densidade e velocidade ($\rho = a \cdot V^b$). Usada para estimar densidade quando não há density log. Castagna (Mudrock Line): relação entre velocidade de onda P e S para folhelhos ($V_p = a \cdot V_s + b$). Usada para prever $V_s$ a partir de $V_p$.
+
+  \item (Avançado) Técnica de Kirchhoff Depth Migration (KDM).
+  \textbf{Resposta:} Migração de profundidade que utiliza uma representação integral (Kirchhoff) para propagar a onda, permitindo corrigir os efeitos de alta variação lateral de velocidade (como em domos de sal). É padrão para ambientes complexos como o offshore de Angola.
+
+  \item (Avançado) O que é rock physics model?
+  \textbf{Resposta:} Modelo físico que estabelece a relação entre as propriedades elásticas (Vp, Vs, densidade) da rocha e suas propriedades petrofísicas (porosidade, saturação, argilosidade, pressão). Permite a predição de seismic response para diferentes cenários de fluidos.
+
+  \item (Avançado) Determinação da saturação de hidrocarbonetos a partir de registos integrados.
+  \textbf{Resposta:} Utiliza-se a equação de Archie: $S_w^n = (a \cdot R_w) / (\phi^m \cdot R_t)$. Onde $R_t$ é da resistividade, $\phi$ da porosidade (neutron/densidade), $R_w$ da análise de água de formação. Em formações complexas (argilosas), usa-se modelos como Waxman-Smits ou Dual Water.
+
+  \item (Avançado) O que é seismic inversion?
+  \textbf{Resposta:} É o processo de transformar dados sísmicos (amplitudes) em um modelo de propriedades da rocha (impedância acústica, impedância elástica, ou porosidade). Pode ser determinística (modelo único) ou estocástica (simula múltiplos cenários).
+
+  \item (Avançado) Uso de logs (resistividade, neutron) para estimar saturação.
+  \textbf{Resposta:} Os logs fornecem as variáveis da equação de Archie ($\phi$, $R_t$). Para estimar $S_w$, é crucial a determinação precisa de $R_w$ (resistividade da água de formação) a partir de amostras de água ou de zonas 100\% água (clean zones).
+
+  \item (Avançado) O que é um acoustic log e sua relação com resistência acústica.
+  \textbf{Resposta:} O acoustic log (ou sonic log) mede o tempo de trânsito ($\Delta t$). A impedância acústica (AI) é calculada como $AI = \rho / \Delta t$ (considerando unidades consistentes). É a ponte entre o dado de poço (log) e o dado sísmico.
+
+  \item (Avançado) Por que a integração de sísmica 3D com logs é essencial?
+  \textbf{Resposta:} Porque os logs fornecem alta resolução vertical (cm) mas apenas em 1D (no poço). A sísmica fornece baixa resolução vertical (10-30m) mas cobertura 3D. A integração (inversão condicionada ao poço) permite estender as propriedades medidas no poço para todo o volume 3D.
+
+  \item (Avançado) Como a geofísica auxilia na determinação de parâmetros dinâmicos do reservatório?
+  \textbf{Resposta:} Através da sísmica 4D, que mostra o deslocamento de fluidos. Da sísmica 3D, obtêm-se atributos que se correlacionam com a permeabilidade (ex.: seismic texture). A rock physics e a inversão fornecem modelos de porosidade 3D que alimentam os simuladores de fluxo (simulação de reservatórios).
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 7: Petroquímica (Perguntas 376–438)}
+
+\begin{enumerate}
+  \setcounter{enumi}{375}
+  \item (Básico) O que são olefinas e aromáticos básicos (etileno, propileno, benzeno)?
+  \textbf{Resposta:} Olefinas (Alcenos): hidrocarbonetos insaturados com dupla ligação. Etileno (C$_2$H$_4$) e Propileno (C$_3$H$_6$) são as principais. Aromáticos: compostos cíclicos com ligações duplas conjugadas (anel benzênico). Benzeno (C$_6$H$_6$), Tolueno e Xileno (BTX).
+
+  \item (Básico) O que são petroquímicos de 1ª, 2ª e 3ª geração?
+  \textbf{Resposta:} 1ª Geração: matérias-primas (nafta, gás natural, GLP). 2ª Geração (Básicos): olefinas, aromáticos, metanol, amônia. 3ª Geração (Intermediários e Finais): polímeros (PE, PP, PET), solventes, plásticos, borrachas, fibras.
+
+  \item (Básico) O que é nafta e como é obtida?
+  \textbf{Resposta:} É uma fração líquida do refino do petróleo, com ponto de ebulição entre 30$^\circ$C e 200$^\circ$C. É obtida da destilação atmosférica (refinaria) e é a principal matéria-prima para o steam cracking.
+
+  \item (Básico) Processo básico de craqueamento térmico (steam cracking).
+  \textbf{Resposta:} Nafta ou etano são aquecidos a altas temperaturas (800-900$^\circ$C) na presença de vapor d'água (para reduzir a pressão parcial e evitar coqueamento). As moléculas grandes quebram-se em moléculas menores insaturadas (etileno, propileno, butadieno).
+
+  \item (Básico) O que é craqueamento catalítico (FCC)?
+  \textbf{Resposta:} Fluid Catalytic Cracking. Processo de refino que converte frações pesadas de petróleo (gasóleo) em gasolina e olefinas leves (propileno, butileno) usando catalisadores zeolíticos em leito fluidizado.
+
+  \item (Básico) O que são polímeros? Exemplos de plásticos comuns.
+  \textbf{Resposta:} São macromoléculas formadas pela repetição de monômeros. Exemplos: Polietileno (PE), Polipropileno (PP), Policloreto de Vinila (PVC), Poliestireno (PS), PET.
+
+  \item (Básico) Processo de craqueamento a vapor.
+  \textbf{Resposta:} Sinônimo de steam cracking. Processo endodérmico (absorve calor) para produzir olefinas leves.
+
+  \item (Básico) Polimerização do etileno para polietileno.
+  \textbf{Resposta:} Etileno é polimerizado usando catalisadores Ziegler-Natta ou metalocenos a pressões e temperaturas controladas para formar longas cadeias de polietileno (PEBD - baixa densidade, ou PEAD - alta densidade).
+
+  \item (Básico) Craqueamento catalítico de nafta para aromáticos (reforma catalítica).
+  \textbf{Resposta:} Reforma catalítica (Platforming) transforma nafta parafínica em aromáticos (benzeno, tolueno, xileno) e hidrogênio, na presença de catalisadores de platina.
+
+  \item (Básico) O que são BTX?
+  \textbf{Resposta:} Benzeno, Tolueno e Xilenos. São os principais aromáticos produzidos pela reforma catalítica.
+
+  \item (Básico) O que são alquilação e isomerização?
+  \textbf{Resposta:} Alquilação: combinação de olefinas leves (butileno) com isobutano para formar alquilato (componente de alta octanagem da gasolina). Isomerização: transforma parafinas lineares em ramificadas (isoparafinas) para melhorar a octanagem.
+
+  \item (Básico) Produtos petroquímicos finais e seus usos.
+  \textbf{Resposta:} Plásticos: embalagens, automóveis, construção. Fibras: poliéster (PET), náilon (têxteis). Borrachas: pneus (SBR). Detergentes: álcool linear (LAB). Fertilizantes: ureia, amônia.
+
+  \item (Básico) Integração da produção de GNL com a petroquímica.
+  \textbf{Resposta:} O gás natural (metano) é usado como matéria-prima para produzir metanol (MTO) ou amônia. Plantas de GNL (liquefação) e plantas petroquímicas são muitas vezes integradas para maximizar o valor agregado do gás.
+
+  \item (Básico) Exemplos de produtos de óleo leve vs. óleo pesado.
+  \textbf{Resposta:} Óleo leve (nafta): gasolina, solventes, petroquímicos básicos. Óleo pesado (resíduo): asfalto, coque, óleo combustível, lubrificantes.
+
+  \item (Básico) Produção de amónia a partir de gás natural (Haber-Bosch).
+  \textbf{Resposta:} Gás natural (CH$_4$) é reformado a vapor para produzir H$_2$, que reage com N$_2$ do ar a alta pressão (200 bar) e temperatura (400$^\circ$C) com catalisador de ferro para formar NH$_3$ (amônia).
+
+  \item (Básico) O que é MTO (Methanol-to-Olefins)?
+  \textbf{Resposta:} Processo que converte metanol (obtido do gás natural) em olefinas leves (etileno e propileno), permitindo a produção de petroquímicos a partir de gás em regiões sem nafta.
+
+  \item (Básico) Produção de eteno e propeno.
+  \textbf{Resposta:} Principalmente por steam cracking de nafta ou etano. O etano (do gás natural) produz alta seletividade para eteno; a nafta produz uma mistura de eteno, propeno, butadieno e aromáticos.
+
+  \item (Básico) O que são monómeros?
+  \textbf{Resposta:} Moléculas pequenas e simples que se repetem para formar um polímero. Exemplo: Etileno (monômero) para Polietileno (polímero).
+
+  \item (Básico) Exemplos de poliolefinas (PE, PP) e suas aplicações.
+  \textbf{Resposta:} PE (Polietileno): sacolas, garrafas, brinquedos. PP (Polipropileno): autopeças, embalagens de alimentos, seringas.
+
+  \item (Intermediário) Descreva a cadeia petroquímica e uma grande empresa.
+  \textbf{Resposta:} A cadeia petroquímica inicia na matéria-prima (nafta, gás), vai para os básicos (olefinas, aromáticos), depois intermediários (monômeros, ácidos) e finais (polímeros, plásticos). Em Angola, a Sonangol é a empresa estatal que gerencia a participação do estado na indústria, buscando verticalizar com projetos como o Polo Petroquímico de Soyo (GNL) e futuras refinarias.
+
+  \item (Intermediário) Produção de combustíveis sintéticos via Fischer-Tropsch.
+  \textbf{Resposta:} Processo que converte gás de síntese (CO + H$_2$) obtido de gás natural ou carvão em hidrocarbonetos líquidos (diesel, nafta, ceras) usando catalisadores de ferro ou cobalto.
+
+  \item (Intermediário) Compare craqueamento a vapor vs. catalítico.
+  \textbf{Resposta:} Craqueamento a Vapor (Steam Cracking): alta temperatura (800$^\circ$C), reação homogênea (sem catalisador), produz principalmente olefinas leves. Craqueamento Catalítico (FCC): temperatura moderada (500$^\circ$C), reação heterogênea (catalisador zeolítico), produz gasolina e olefinas.
+
+  \item (Intermediário) Separação de BTX na petroquímica.
+  \textbf{Resposta:} A mistura de aromáticos (reformado) é separada por extração com solventes seletivos (sulfolano) e destilação fracionada em torres para obter benzeno, tolueno e xilenos (ortoxileno, metaxileno, paraxileno).
+
+  \item (Intermediário) Síntese de olefinas vs. produção primária.
+  \textbf{Resposta:} Produção Primária: via steam cracking ou FCC. Síntese: via desidrogenação (PDH - Propano a Propileno) ou metátese (conversão entre olefinas).
+
+  \item (Intermediário) Produção de polipropileno.
+  \textbf{Resposta:} Polimerização do propileno (C$_3$H$_6$) utilizando catalisadores Ziegler-Natta ou metalocenos. Processos em fase gasosa ou bulk (líquido).
+
+  \item (Intermediário) O que são CNG e GLP, e sua origem.
+  \textbf{Resposta:} CNG (Gás Natural Comprimido): metano comprimido a alta pressão. Origem: campos de gás. GLP (Gás Liquefeito de Petróleo): propano e butano. Origem: refino do petróleo (refinarias) ou separação do gás natural (plantas de GNL/UPGN).
+
+  \item (Intermediário) Obtenção de olefinas leves a partir de gás natural.
+  \textbf{Resposta:} Via MTO (Metanol-to-Olefins): Gás natural → Metanol → Olefinas. Ou via desidrogenação de etano (presente no gás natural) → Etileno.
+
+  \item (Intermediário) Diferenças entre nafta leve e pesada.
+  \textbf{Resposta:} Nafta Leve: menor ponto de ebulição, mais rica em parafinas. Melhor para produção de etileno (maior rendimento). Nafta Pesada: maior ponto de ebulição, mais rica em naftenos e aromáticos. Melhor para reforma catalítica (produção de aromáticos).
+
+  \item (Intermediário) Papel dos catalisadores no craqueamento.
+  \textbf{Resposta:} Aceleram a reação de quebra das moléculas, tornando o processo mais seletivo e eficiente. No FCC, os zeólitos (sílica-alumina) promovem a quebra em moléculas de gasolina e propileno.
+
+  \item (Intermediário) Utilidade de produtos como isopropanol e etilenoglicol.
+  \textbf{Resposta:} Isopropanol: solvente, álcool para limpeza, matéria-prima para acetona. Etilenoglicol (MEG): anticongelante, matéria-prima para poliéster (PET).
+
+  \item (Intermediário) Eteno e propileno na cadeia petroquímica.
+  \textbf{Resposta:} São os blocos de construção. Eteno produz polietileno, etilenoglicol, cloreto de vinila. Propileno produz polipropileno, acrilonitrila, óxido de propileno.
+
+  \item (Intermediário) Reações endotérmicas e exotérmicas em fornos.
+  \textbf{Resposta:} Endotérmicas: craqueamento a vapor (absorve calor). Exotérmicas: reforma catalítica, polimerização (liberam calor).
+
+  \item (Intermediário) Arquitetura petroquímica de Angola e exemplos de unidades.
+  \textbf{Resposta:} Angola possui o Projeto Angola LNG (Soyo), que produz GNL, GLP e condensados. A Refinaria de Luanda e a futura Refinaria de Cabinda (e Lobito) visam integrar refino e petroquímica básica (produção de nafta para futuros complexos).
+
+  \item (Intermediário) Reforma catalítica de nafta e produção de aromáticos.
+  \textbf{Resposta:} Processo que usa catalisador de platina para desidrogenar naftenos e ciclizar parafinas, gerando hidrogênio e aromáticos (BTX). É a principal fonte de aromáticos.
+
+  \item (Intermediário) Produção de poliestireno.
+  \textbf{Resposta:} Polimerização do estireno (C$_6$H$_5$-CH=CH$_2$), obtido a partir de etileno e benzeno. Usado em embalagens rígidas, isolantes (isopor), eletrodomésticos.
+
+  \item (Intermediário) Elastómeros sintéticos (SBR) e sua fabricação.
+  \textbf{Resposta:} Borrachas sintéticas. SBR (Styrene-Butadiene Rubber) é produzido por copolimerização de estireno e butadieno. Principal uso: pneus.
+
+  \item (Intermediário) Polimerização em suspensão.
+  \textbf{Resposta:} Método onde o monômero líquido é suspenso em água (com estabilizante) e polimerizado por ação de iniciadores. Usado para produzir PVC, poliestireno em pérolas.
+
+  \item (Intermediário) Craqueamento catalítico a baixa severidade.
+  \textbf{Resposta:} Operação do FCC com temperatura mais baixa e menor tempo de residência para maximizar a produção de gasolina em detrimento de olefinas leves.
+
+  \item (Intermediário) Gestão de subprodutos na petroquímica.
+  \textbf{Resposta:} Subprodutos como metano (usado como combustível), hidrogênio (usado em hidrotratamento) e C$_4$ (butadieno, butilenos) são recuperados e integrados para maximizar a eficiência.
+
+  \item (Intermediário) Diferenças entre refinaria integrada e petroquímica pura.
+  \textbf{Resposta:} Refinaria Integrada: produz combustíveis e petroquímicos em um mesmo complexo, utilizando os fluxos de refino como matéria-prima petroquímica. Petroquímica Pura: alimentada exclusivamente por nafta ou etano adquiridos, focada apenas em produtos químicos.
+
+  \item (Intermediário) Usos de gasolina reformada, etanol e outros combustíveis.
+  \textbf{Resposta:} Gasolina reformada (alta octanagem) é usada em motores. Etanol (de cana/milho) é biocombustível ou aditivo. O GLP é usado para cozinha e aquecimento.
+
+  \item (Intermediário) Origem do GLP e GNV no processo industrial.
+  \textbf{Resposta:} GLP (propano/butano) vem das refinarias (destilação) e das plantas de processamento de gás (UPGN). GNV (gás natural) é o metano tratado e comprimido para veículos.
+
+  \item (Intermediário) Integração da petroquímica com produção de fertilizantes.
+  \textbf{Resposta:} O gás natural é matéria-prima para a amônia, que é convertida em ureia (fertilizante). Complexos integrados produzem fertilizantes junto com metanol ou GNL.
+
+  \item (Intermediário) Processos petroquímicos mais intensivos em energia.
+  \textbf{Resposta:} Steam cracking (alta temperatura) e a produção de amônia (alta pressão) são os mais intensivos em energia.
+
+  \item (Intermediário) Produção de monoetilenoglicol (MEG) a partir de etileno.
+  \textbf{Resposta:} Etileno é oxidado a óxido de etileno (EO), que é hidratado para formar MEG. Usado como anticongelante e na produção de PET.
+
+  \item (Intermediário) Produção de hexano e solventes minerais.
+  \textbf{Resposta:} Obtidos da destilação fracionada do petróleo (frações leves). Hexano é usado como solvente para extração de óleos vegetais (soja).
+
+  \item (Intermediário) Produtos petroquímicos usados como matéria-prima em plásticos.
+  \textbf{Resposta:} Etileno (PE), Propileno (PP), Estireno (PS), Cloreto de Vinila (PVC), Tereftalato (PET).
+
+  \item (Intermediário) Craqueamento catalítico de resíduos (visbreaking).
+  \textbf{Resposta:} Processo de redução de viscosidade de resíduos pesados (óleo combustível) por craqueamento térmico brando, produzindo gasóleo e coque.
+
+  \item (Intermediário) Extração de isómeros (iso-octano) via alquilação.
+  \textbf{Resposta:} Produção de alquilato (iso-octano), um componente de alta octanagem para gasolina, pela reação de isobutano com butilenos.
+
+  \item (Intermediário) Tratamento de gases (remoção de H$_2$S) antes do uso petroquímico.
+  \textbf{Resposta:} Gás natural e gases de refino passam por processos de sweetening (aminas) para remover H$_2$S (gás ácido) que é convertido em enxofre (processo Claus) para evitar corrosão e emissões.
+
+  \item (Intermediário) Produtos intermediários (xilenos, p-xileno) e suas aplicações.
+  \textbf{Resposta:} p-Xileno: oxidado a ácido tereftálico (PTA) para produção de PET (garrafas, fibras). o-Xileno: usado na produção de anidrido ftálico (plastificantes).
+
+  \item (Intermediário) Influência de fontes renováveis na petroquímica.
+  \textbf{Resposta:} Crescente uso de etanol para produzir etileno (via desidratação), e de óleos vegetais para produzir biodiesel e glicerina (matéria-prima para epóxi), competindo com a rota fóssil.
+
+  \item (Intermediário) O que é PDH (propano a propileno)?
+  \textbf{Resposta:} Propane Dehydrogenation. Processo catalítico que converte propano (do GLP ou gás natural) em propileno (olefina). É uma rota alternativa ao propileno de FCC ou steam cracking.
+
+  \item (Intermediário) Principais usos de polímeros de aromáticos (PET, poliestireno).
+  \textbf{Resposta:} PET: fibras têxteis, garrafas, filmes. Poliestireno: embalagens, copos descartáveis, isolantes.
+
+  \item (Intermediário) Produção de PVC a partir de cloreto de vinila.
+  \textbf{Resposta:} Etileno + Cloro → Dicloroetano (EDC) → Cloreto de Vinila (VCM) → Polimerização para PVC (Policloreto de Vinila).
+
+  \item (Intermediário) O que são cicloalcanos e naftas aromatizadas?
+  \textbf{Resposta:} Cicloalcanos (Naftenos): hidrocarbonetos saturados cíclicos (ciclohexano). Presentes na nafta. Naftas Aromatizadas: naftas ricas em aromáticos, produzidas por reforma catalítica.
+
+  \item (Intermediário) Minimização de subprodutos nocivos no craqueamento.
+  \textbf{Resposta:} Uso de fornos otimizados (temperatura controlada), aditivos para minimizar coque, e hidrotratamento de matérias-primas para remover enxofre e nitrogênio (precursores de emissões).
+
+  \item (Intermediário) Cuidados ambientais em plantas petroquímicas.
+  \textbf{Resposta:} Controle de emissões (NOx, SOx), tratamento de efluentes (águas contaminadas), gestão de resíduos sólidos (catalisadores usados), e flare (queima de segurança) com eficiência.
+
+  \item (Intermediário) Importância da reciclagem de plásticos na cadeia atual.
+  \textbf{Resposta:} Reciclagem mecânica (reprocessamento) e química (pirólise, despolimerização) são importantes para reduzir a dependência de matéria-prima virgem, atender demandas de economia circular e reduzir emissões.
+
+  \item (Intermediário) Polimerização em solução vs. suspensão.
+  \textbf{Resposta:} Solução: monômero dissolvido em solvente. Polímero é recuperado por evaporação. Suspensão: monômero em gotículas suspensas em água.
+
+  \item (Intermediário) Exemplos de petroquímicos em cosméticos, farmacêuticos, têxteis.
+  \textbf{Resposta:} Cosméticos: parafinas, óleo mineral, silicone. Farmacêuticos: álcool isopropílico, glicerina, ácido acetilsalicílico (derivado de benzeno). Têxteis: poliéster (PET), poliamida (Náilon), fibras acrílicas.
+
+  \item (Intermediário) O que são fluorcarbonos e como são produzidos?
+  \textbf{Resposta:} Compostos que contêm flúor e carbono (ex.: HFCs, HCFCs). Produzidos por reação de hidrocarbonetos clorados com HF (ácido fluorídrico). Usados em refrigeração e aerossóis (mas em fase de substituição devido ao potencial de aquecimento global).
+
+  \item (Intermediário) Inovações tecnológicas recentes (catalisadores seletivos).
+  \textbf{Resposta:} Desenvolvimento de catalisadores zeolíticos de poro controlado para maximizar a produção de propileno no FCC (e FCC de alta severidade). Uso de catalisadores metalocenos para polímeros de alta performance.
+\end{enumerate}
+
+\newpage
+
+\subsection*{Tema 8: Histórico do Petróleo em Angola (Perguntas 439–500)}
+
+\begin{enumerate}
+  \setcounter{enumi}{438}
+  \item (Básico) Primeiros sinais de petróleo em Angola no período colonial.
+  \textbf{Resposta:} Indícios de exsudações de petróleo em Cabinda e na Bacia do Kwanza (Dande) já no século XIX.
+
+  \item (Básico) Primeiras concessões petrolíferas em Angola.
+  \textbf{Resposta:} No início do século XX, concedidas pela administração portuguesa a empresas estrangeiras (como a Companhia de Petróleo de Angola - PETRANGOL).
+
+  \item (Básico) Primeira descoberta comercial (campo de Benfica).
+  \textbf{Resposta:} Campo de Benfica (Kwanza), descoberto em 1955, considerado o primeiro campo comercial, embora de pequeno porte.
+
+  \item (Básico) Primeira descoberta offshore (Campo Malongo, 1968).
+  \textbf{Resposta:} A descoberta do campo de Malongo, em Cabinda, pela Cabinda Gulf Oil (Chevron), iniciou a era offshore de Angola.
+
+  \item (Básico) Papel da Cabinda Gulf Oil na história do petróleo angolano.
+  \textbf{Resposta:} A Gulf Oil (atual Chevron) foi a pioneira no desenvolvimento de Cabinda, tornando-se a maior produtora até a independência e estabelecendo as bases para a indústria offshore.
+
+  \item (Básico) Criação da SONANGOL e seu papel após a independência.
+  \textbf{Resposta:} A Sonangol (Sociedade Nacional de Combustíveis de Angola) foi criada em 1976, após a independência. Tornou-se a concessionária nacional, detentora dos direitos de exploração e produção, e passou a regular e operar o setor, assumindo a participação do estado nos contratos.
+
+  \item (Básico) Impacto da Guerra Civil (1975–2002) na exploração e produção.
+  \textbf{Resposta:} A guerra destruiu infraestrutura onshore e limitou investimentos. No entanto, a produção offshore (Cabinda) permaneceu relativamente protegida, garantindo receitas para o governo, embora o setor tenha enfrentado sabotagens e fuga de cérebros.
+
+  \item (Básico) Destino das concessões coloniais após a independência.
+  \textbf{Resposta:} Foram nacionalizadas. A Sonangol assumiu o controle, renegociando os contratos com as multinacionais (Gulf, Total, etc.) dentro do novo quadro jurídico.
+
+  \item (Básico) Papel económico do petróleo para o governo pós-independência.
+  \textbf{Resposta:} O petróleo tornou-se a principal fonte de receita do estado angolano, financiando o esforço de guerra e, posteriormente, a reconstrução nacional.
+
+  \item (Básico) Importância do enclave de Cabinda na produção.
+  \textbf{Resposta:} Cabinda concentra a maior parte da produção histórica de Angola, com campos gigantes como Malongo, Takula e outros. É a "província petrolífera" por excelência.
+
+  \item (Básico) Compare campos onshore e offshore em Angola.
+  \textbf{Resposta:} Onshore: mais antigos, descobertos no período colonial. Menor produção individual, óleo mais pesado, infraestrutura degradada pela guerra. Offshore: predominantemente pós-independência (a partir de 1970/80). Campos gigantes (Girassol, Dalia), óleo leve, águas profundas.
+
+  \item (Básico) Principais descobertas após 2000.
+  \textbf{Resposta:} Girassol (1996, produção 2001), Dalia (1997, produção 2006), e as descobertas do pré-sal no Bloco 32 (Kilombo, etc.) após 2010.
+
+  \item (Básico) Influência da descoberta do campo Girassol (1996).
+  \textbf{Resposta:} Girassol foi o marco do desenvolvimento de águas profundas em Angola, provando a viabilidade técnica e econômica de FPSOs em lâminas d'água superiores a 1000m, atraindo investimentos maciços.
+
+  \item (Básico) Lei de partilha de produção adotada por Angola.
+  \textbf{Resposta:} O modelo de Production Sharing Agreement (PSA) / Contrato de Partilha de Produção (CPP), onde a Sonangol e as contratadas dividem a produção (óleo-custo, óleo-lucro). Substituiu o sistema de concessões após a independência.
+
+  \item (Básico) Impacto da queda dos preços do petróleo na economia angolana.
+  \textbf{Resposta:} Angola é altamente dependente do petróleo. Quedas (2008, 2014-2016, 2020) causaram crises cambiais, redução de investimentos públicos e recessão.
+
+  \item (Básico) Relação comercial Angola-Brasil no setor de petróleo.
+  \textbf{Resposta:} Empresas brasileiras (Petrobras, Odebrecht, etc.) tiveram forte presença em Angola, atuando em blocos de exploração, construção de infraestrutura (FPSOs, gasodutos) e serviços.
+
+  \item (Básico) Adesão de Angola à OPEP.
+  \textbf{Resposta:} Angola aderiu à OPEP (Organização dos Países Exportadores de Petróleo) em 2007, buscando coordenar políticas de produção e defender preços.
+
+  \item (Básico) Mudanças no marco regulatório desde a década de 1990.
+  \textbf{Resposta:} Abertura ao investimento estrangeiro, criação da Agência Nacional de Petróleo e Gás (ANPG) em 2019 (substituindo a Sonangol como concessionária), e realização de rodadas de licitação de blocos.
+
+  \item (Intermediário) Impacto das descobertas em águas profundas na geopolítica.
+  \textbf{Resposta:} Posicionou Angola como um dos principais fornecedores de petróleo leve para os EUA e China, aumentando sua relevância geopolítica e atraindo grandes corporações (Total, Chevron, Exxon, BP).
+
+  \item (Intermediário) Efeitos da abertura ao investimento estrangeiro.
+  \textbf{Resposta:} A partir dos anos 90, com o fim da guerra fria e a abertura econômica, Angola atraiu investimentos bilionários, transformando-se no maior produtor de petróleo da África Subsaariana (até meados dos anos 2010).
+
+  \item (Intermediário) O que foi o "bono petrolero"?
+  \textbf{Resposta:} Mecanismo controverso durante a guerra civil onde a Sonangol e o governo usavam receitas petrolíferas futuras (pré-venda de petróleo) para financiar compras de armas e equipamentos militares, muitas vezes com opacidade.
+
+  \item (Intermediário) Reação de Angola às quedas de preço de 2014 e 2020.
+  \textbf{Resposta:} Corte de gastos públicos, tentativa de diversificação econômica, e negociações com o FMI (Fundo Monetário Internacional) para ajuste fiscal. O governo também revisou os contratos com as operadoras para aumentar a participação nacional.
+
+  \item (Intermediário) Crescimento da produção até o pico histórico.
+  \textbf{Resposta:} A produção cresceu exponencialmente de 1980 até atingir o pico de cerca de 1.8 a 2 milhões de barris por dia entre 2008 e 2010, impulsionada pelos campos de águas profundas do Bloco 17 (Total) e Bloco 15 (Chevron).
+
+  \item (Intermediário) Importância dos campos do pré-sal angolano (Kilombo).
+  \textbf{Resposta:} Representam a nova fronteira exploratória para reverter o declínio da produção, com reservas significativas de óleo leve em águas ultraprofundas, abaixo da camada de sal, exigindo alta tecnologia.
+
+  \item (Intermediário) Distribuição dos blocos licenciados (Total, Chevron, etc.).
+  \textbf{Resposta:} Total: dominante no Bloco 17 (Girassol, Dalia, Pazflor) e pré-sal (Bloco 32). Chevron: dominante em Cabinda (Blocos 0, 14) e na área A (Kuito). ExxonMobil: Bloco 15 (Kizomba). BP, Eni, etc.: presença em blocos diversos.
+
+  \item (Intermediário) Influência da geopolítica regional na exploração.
+  \textbf{Resposta:} A estabilidade após 2002, a cooperação com a República do Congo e o apoio da comunidade internacional foram cruciais para o boom exploratório.
+
+  \item (Intermediário) Impacto tecnológico do campo Girassol (águas profundas).
+  \textbf{Resposta:} Girassol foi o primeiro desenvolvimento em águas profundas (1.400m) com FPSO de grande porte, subsea trees de alta pressão, e manifolds complexos, estabelecendo a expertise angolana em deepwater.
+
+  \item (Intermediário) Parcerias com empresas brasileiras (Petrobras).
+  \textbf{Resposta:} A Petrobras teve participação em blocos exploratórios e atuou como operadora no Bloco 31. Também foi parceira tecnológica no desenvolvimento de sistemas de elevação artificial e FPSOs.
+
+  \item (Intermediário) Reformas nas rodadas de licitação de blocos offshore.
+  \textbf{Resposta:} Após um hiato, a ANPG realizou rodadas de licitação (2019, 2020, etc.) para blocos de águas rasas (onshore e offshore marginal) e para blocos de águas profundas, visando atrair novos investidores e aumentar a produção.
+
+  \item (Intermediário) Recuperação da indústria após o fim da guerra civil.
+  \textbf{Resposta:} O fim da guerra em 2002 permitiu a reabilitação de infraestruturas onshore (oleodutos, refinaria), a entrada massiva de investimentos em deepwater, e o reassentamento de populações em áreas produtoras.
+
+  \item (Intermediário) Papel do Fundo Soberano de Angola (FSDEA).
+  \textbf{Resposta:} Criado em 2008 (Fundo Soberano de Angola), gerencia receitas do petróleo para investimentos diversificados (infraestrutura, saúde, educação) e poupança para as gerações futuras.
+
+  \item (Intermediário) Contratos de Partilha de Produção (CPP) em Angola.
+  \textbf{Resposta:} Estrutura onde a operadora e parceiros financiam a exploração. Em caso de sucesso, uma parte da produção é destinada ao custo (cost oil), e o restante (profit oil) é dividido entre o estado (Sonangol/ANPG) e os contratados, geralmente com percentual variável conforme a produção (R-factor).
+
+  \item (Intermediário) Evolução da produção de gás e projetos de GNL.
+  \textbf{Resposta:} Angola historicamente reinjetava gás associado para manter a pressão do reservatório. Com o projeto Angola LNG (Soyo), o gás passou a ser monetizado, transformando Angola em exportador de GNL.
+
+  \item (Intermediário) Estratégia da Sonangol para refino e petroquímica.
+  \textbf{Resposta:} Objetivo de reduzir a importação de derivados (gasolina, diesel) através da construção de novas refinarias (Cabinda, Lobito, Soyo) e da reabilitação da Refinaria de Luanda, além de desenvolver um polo petroquímico para agregar valor à cadeia de hidrocarbonetos.
+
+  \item (Intermediário) Organização da gestão de royalties.
+  \textbf{Resposta:} Os royalties (imposto sobre a produção) são recolhidos pela ANPG/Sonangol para o tesouro nacional. A alíquota varia conforme o contrato (geralmente entre 5\% e 15\% para óleo).
+
+  \item (Intermediário) Conceito de "economia petrolífera" no contexto angolano.
+  \textbf{Resposta:} Designa a estrutura econômica fortemente dependente do petróleo, que responde pela maior parte das exportações, da receita fiscal e do PIB, criando desafios de Dutch Disease (apreciação cambial, desindustrialização).
+
+  \item (Intermediário) Principais empresas nacionais e estrangeiras no upstream.
+  \textbf{Resposta:} Estrangeiras: TotalEnergies, Chevron, ExxonMobil, BP, Eni (Azule Energy), Equinor. Nacionais: Sonangol (como sócia e operadora em blocos de onshore e marginal fields), além de empresas de serviço (Somoil, etc.).
+
+  \item (Intermediário) Impactos sociais do boom do petróleo nas cidades.
+  \textbf{Resposta:} Crescimento urbano desordenado, fluxo migratório para Luanda e Cabinda, aumento do custo de vida, e criação de uma classe média ligada ao setor, mas também aumento das desigualdades.
+
+  \item (Intermediário) Influência dos campos maduros na estratégia atual.
+  \textbf{Resposta:} Campos maduros (onshore e águas rasas) representam um desafio de manutenção da produção. A estratégia envolve workovers, reabilitação de infraestrutura, e novas rodadas de licitação para marginal fields para estender a vida útil.
+
+  \item (Intermediário) Projetos de infraestrutura (oleodutos, refinarias).
+  \textbf{Resposta:} Oleodutos: O Malongo-Cabinda, e sistemas submarinos (subsea pipelines) interligando FPSOs. Refinarias: Refinaria de Luanda (existente), Refinaria de Cabinda (em construção), Refinaria de Lobito (planejada), e projeto do Soyo (GNL).
+
+  \item (Intermediário) Medição da produção offshore (FPSOs).
+  \textbf{Resposta:} A produção é medida através de medidores multifásicos (ou testes de separação) no FPSO. A quantidade de óleo exportado é medida por custody transfer (medidores calibrados) e reportada à ANPG.
+
+  \item (Intermediário) Medidas ambientais na indústria petrolífera angolana.
+  \textbf{Resposta:} Incluem monitoramento de qualidade da água, gestão de resíduos (cortes de perfuração), flaring reduction (redução da queima de gás), e planos de descomissionamento de instalações.
+
+  \item (Intermediário) Desafios logísticos nos campos offshore.
+  \textbf{Resposta:} Supre a necessidade de bases de apoio (Luanda, Cabinda, Soyo), transporte de pessoal por helicóptero, e complexa cadeia de suprimentos para operações submarinas (ROV, umbilicais).
+
+  \item (Intermediário) Efeitos do fim do conflito na Bacia do Congo.
+  \textbf{Resposta:} A estabilidade regional permitiu a exploração contínua e a integração dos projetos de GNL que envolvem a Bacia do Congo (gás associado dos campos de Cabinda e da vizinha República Democrática do Congo).
+
+  \item (Avançado) Compare a indústria petrolífera de Angola com a da Nigéria.
+  \textbf{Resposta:} Semelhanças: dependência do petróleo, desafios de governança, conflitos regionais históricos, presença de deepwater. Diferenças: Angola tem uma offshore mais técnica e consolidada como principal fonte; Nigéria tem maior produção de onshore e gás, mas enfrenta maior insegurança no Delta do Níger. Angola entrou na OPEP depois e tem uma estrutura de produção mais centralizada pela Sonangol/ANPG.
+
+  \item (Avançado) Papel dos acordos da OPEP nas cotas angolanas.
+  \textbf{Resposta:} Angola aderiu aos acordos de corte de produção (OPEP+) para estabilizar os preços, o que resultou em redução de sua produção (de \textasciitilde1.7 MMbbl/d para cotas próximas de 1.1-1.2 MMbbl/d). O país tem lutado para manter a produção devido ao declínio natural dos campos.
+
+  \item (Avançado) Impacto de sanções e geopolítica no setor.
+  \textbf{Resposta:} Angola mantém uma posição de neutralidade e estabilidade, não sendo alvo de sanções. No entanto, a geopolítica entre EUA, China e Rússia influencia as parcerias (China é grande credora e compradora de petróleo; empresas ocidentas são as principais operadoras técnicas).
+
+  \item (Avançado) Perspectivas de transição energética para Angola.
+  \textbf{Resposta:} Angola enfrenta o desafio de diversificar sua economia para além do petróleo, enquanto investe no desenvolvimento de gás natural (como combustível de transição) e em hidrogênio verde (aproveitando o potencial solar e hidrelétrico), além de expandir a indústria petroquímica para agregar valor.
+
+  \item (Avançado) Inovações tecnológicas (IA) adotadas em Angola.
+  \textbf{Resposta:} Uso de digital twins (gêmeos digitais) em FPSOs, otimização de perfuração com machine learning, e aplicação de real-time operations centers para monitoramento de poços e completações inteligentes.
+
+  \item (Avançado) Políticas de conteúdo local no setor de óleo e gás.
+  \textbf{Resposta:} Implementação do Decreto 5/18 (e atualizações) que exige a progressiva angolanização da força de trabalho e o uso de fornecedores locais, com metas de contratação de empresas nacionais e treinamento.
+
+  \item (Avançado) Estratégia futura face à exaustão de reservatórios maduros.
+  \textbf{Resposta:} Foco em rejuvenescimento de campos maduros (EOR - Enhanced Oil Recovery: injeção de água, polímeros, gás), desenvolvimento de novas fronteiras (pré-sal), e incentivo a operadoras independentes para campos marginais onshore.
+
+  \item (Avançado) Diferenças estruturais entre Sonangol e multinacionais.
+  \textbf{Resposta:} A Sonangol, como empresa estatal, tem responsabilidades regulatórias (até 2019) e comerciais, além de atuar como parceira em todos os blocos. Sua estrutura burocrática e de capital estatal difere das multinacionais (públicas/cotadas), que operam com foco em return on investment e tecnologias de ponta.
+
+  \item (Avançado) Estratégia de diversificação económica e indústria petrolífera.
+  \textbf{Resposta:} A "Agenda 2050" de Angola busca reduzir a dependência do petróleo (que caiu de 95\% para cerca de 30-40\% das receitas fiscais em alguns anos) através do desenvolvimento da agricultura, indústria e serviços, enquanto o petróleo financia essa transição.
+
+  \item (Avançado) Desafios regulatórios desde a independência até hoje.
+  \textbf{Resposta:} 1976-1990: consolidação da Sonangol como concessionária única, nacionalização, joint ventures. 1990-2019: contratos de partilha, entrada de investidores, opacidade em alguns períodos. 2019-presente: reforma do setor, criação da ANPG e do IRDP (Instituto Regulador de Derivados do Petróleo), separação das funções regulatória, concessionária e operacional da Sonangol.
+
+  \item (Avançado) Variação da qualidade do petróleo angolano ao longo do tempo.
+  \textbf{Resposta:} Angola produz majoritariamente óleos leves (Girassol, Dalia, Cabinda) de excelente qualidade (API 30-38). No entanto, com o envelhecimento dos campos e o desenvolvimento do pré-sal (também leve), a qualidade se mantém elevada, embora haja uma tendência de aumento da acidez (TAN) em alguns campos.
+
+  \item (Avançado) Importância de um livro sobre a história do petróleo em Angola (2025).
+  \textbf{Resposta:} Uma publicação recente seria crucial para consolidar o conhecimento sobre o papel do petróleo no desenvolvimento sócio-econômico, documentar as lições aprendidas (conflito, gestão de receitas, tecnologia), e servir de base para o planejamento da transição energética e para a formação de novas gerações.
+
+  \item (Avançado) Conclusões históricas sobre os impactos sociopolíticos do petróleo.
+  \textbf{Resposta:} O petróleo em Angola teve um impacto ambivalente: financiou a guerra civil e a corrupção em alguns períodos, mas também foi o principal motor da paz (pós-2002), do crescimento econômico e da reconstrução do país, criando uma classe empresarial e tecnocrata.
+
+  \item (Avançado) Relação entre a formação da Sonangol e a história económica.
+  \textbf{Resposta:} A Sonangol foi fundamental para a soberania nacional, controlando a principal fonte de riqueza. Sua evolução de órgão regulador/operador para holding empresarial reflete as mudanças na política econômica de Angola (de estado centralizado para abertura ao capital privado).
+
+  \item (Avançado) Efeitos da pandemia de COVID-19 na produção e receita.
+  \textbf{Resposta:} Causou queda na demanda e preços do petróleo, levando a uma severa crise fiscal em Angola (2020). A produção também foi afetada por restrições logísticas e atrasos em projetos de manutenção.
+
+  \item (Avançado) Contribuição de Angola para a segurança energética regional.
+  \textbf{Resposta:} Através do fornecimento de petróleo para mercados internacionais (China, Europa) e de GNL para a África Austral e Europa, Angola desempenha um papel estabilizador na oferta energética.
+
+  \item (Avançado) Papel de Angola em projetos transcontinentais.
+  \textbf{Resposta:} Além do petróleo, destaca-se o projeto do Corredor de Lobito (ferrovia) que tem potencial para transportar minerais e futuramente produtos energéticos, integrando Angola à economia da África Austral.
+
+  \item (Avançado) Discorra sobre a importância de registar e estudar a história do petróleo em Angola para inspirar políticas futuras.
+  \textbf{Resposta:} Estudar a história é essencial para evitar os erros do passado (maldição dos recursos, opacidade, dependência excessiva) e replicar os sucessos (capacitação técnica, atração de investimentos). O conhecimento histórico permite ao governo e às empresas angolanas planejar uma transição energética justa, desenvolver o conteúdo local de forma sustentável e criar políticas que garantam que o setor de óleo e gás continue a ser uma base para o desenvolvimento socioeconômico, mesmo em um cenário de descarbonização global. A memória institucional fortalece a governança, a soberania e a capacidade de negociar contratos que beneficiem as futuras gerações de angolanos.
+\end{enumerate}
+
+\newpage
+
+% ─── Conclusão ───────────────────────────────────────────────────────────────
+\section*{Conclusão}
+
+Este guia reúne todos os elementos essenciais para uma preparação sólida e alinhada com as exigências do \textbf{PetroChamp 2025}:
+
+\begin{itemize}
+  \item \textbf{Contexto histórico} do evento e participantes
+  \item \textbf{Perfil académico} do estudante de 3.º a 5.º ano
+  \item \textbf{8 áreas temáticas} cobrindo toda a engenharia petrolífera
+  \item \textbf{500 questões dissertativas} em níveis básico, intermediário e avançado, com respostas detalhadas
+\end{itemize}
+
+A excelência na competição não é apenas sobre conhecimento técnico, mas sobre integração crítica dos conceitos, aplicação a cenários reais, e aprofundamento progressivo das habilidades de engenharia.
+
+\vspace{12pt}
+
+\textcolor{accent}{\textbf{Boa preparação e sucesso na competição!}}
+
+\end{document}

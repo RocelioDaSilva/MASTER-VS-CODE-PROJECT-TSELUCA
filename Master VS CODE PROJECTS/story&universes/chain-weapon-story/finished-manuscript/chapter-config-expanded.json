@@ -1,0 +1,599 @@
+{
+  "book": {
+    "title": "Embers of the Forsaken Keep",
+    "author": "Author Name",
+    "total_chapters": 52,
+    "landscape_system": {
+      "description": "12 landscapes × 7 times of day = 84 total combinations",
+      "times_of_day": [
+        "Dawn",
+        "Morning",
+        "Noon",
+        "Afternoon",
+        "Sunset",
+        "Dusk",
+        "Night"
+      ],
+      "landscapes": [
+        "Mountains",
+        "City",
+        "Dungeon",
+        "Wasteland",
+        "Forest",
+        "Coast",
+        "Ruins",
+        "Valley",
+        "Plains",
+        "Cavern",
+        "Desert",
+        "Swamp"
+      ]
+    },
+    "time_of_day_colour_palettes": {
+      "Dawn": {
+        "key": "F5E6B3",
+        "mid": "D4A574",
+        "shade": "6B5B4F",
+        "mood": "Warm gold, cold shadows, purple-grey"
+      },
+      "Morning": {
+        "key": "F0F4E0",
+        "mid": "C4B895",
+        "shade": "5A4A3A",
+        "mood": "Bright, warm, clear"
+      },
+      "Noon": {
+        "key": "FFFEF5",
+        "mid": "D8C8A8",
+        "shade": "3A2A1A",
+        "mood": "Bright, neutral, high contrast"
+      },
+      "Afternoon": {
+        "key": "FFF4D8",
+        "mid": "E0B878",
+        "shade": "6B5535",
+        "mood": "Warm, mellow, golden"
+      },
+      "Sunset": {
+        "key": "FFD9A8",
+        "mid": "E07850",
+        "shade": "4A3535",
+        "mood": "Warm red-orange, deep shadows"
+      },
+      "Dusk": {
+        "key": "C8B8D0",
+        "mid": "8B7A9A",
+        "shade": "3A2A4A",
+        "mood": "Cool purple, deep blues, fading light"
+      },
+      "Night": {
+        "key": "8A9AA8",
+        "mid": "4A5A7A",
+        "shade": "1A2A3A",
+        "mood": "Cool blue-black, minimal light"
+      }
+    }
+  },
+  "chapters": [
+    {
+      "num": 1,
+      "label": "I",
+      "title": "A Place to Stand",
+      "character": "Aisen",
+      "landscape": "Mountains",
+      "time_of_day": "Dawn",
+      "location": "The Grey Mountains",
+      "notes": "First light breaks. Aisen stands at the edge of all things."
+    },
+    {
+      "num": 2,
+      "label": "II",
+      "title": "Walls That Know No Master",
+      "character": "Caspian",
+      "landscape": "City",
+      "time_of_day": "Morning",
+      "location": "The Divided City",
+      "notes": "Caspian moves through crowded streets as the city wakes."
+    },
+    {
+      "num": 3,
+      "label": "III",
+      "title": "The Scout's Return",
+      "character": "Ryo",
+      "landscape": "Ruins",
+      "time_of_day": "Noon",
+      "location": "The Broken Garrison",
+      "notes": "Harsh light reveals what night concealed."
+    },
+    {
+      "num": 4,
+      "label": "IV",
+      "title": "Blind Sight",
+      "character": "Kairos",
+      "landscape": "Dungeon",
+      "time_of_day": "Night",
+      "location": "The Deep Vaults",
+      "notes": "Below ground, day and night mean nothing."
+    },
+    {
+      "num": 5,
+      "label": "V",
+      "title": "What the Woods Remember",
+      "character": "Kael",
+      "landscape": "Forest",
+      "time_of_day": "Dusk",
+      "location": "The Ashenveil Woods",
+      "notes": "Between light and dark, the forest speaks."
+    },
+    {
+      "num": 6,
+      "label": "VI",
+      "title": "Three Doors",
+      "character": "Corvin",
+      "landscape": "City",
+      "time_of_day": "Noon",
+      "location": "The Fortress Hall",
+      "notes": "Bright noon light shows no mercy to the guilty."
+    },
+    {
+      "num": 7,
+      "label": "VII",
+      "title": "The Weight of Names",
+      "character": "Amara",
+      "landscape": "Ruins",
+      "time_of_day": "Sunset",
+      "location": "The Archivist's Tower",
+      "notes": "Gold light falls on centuries of record."
+    },
+    {
+      "num": 8,
+      "label": "VIII",
+      "title": "In the Grey Hour",
+      "character": "Orin",
+      "landscape": "Wasteland",
+      "time_of_day": "Dusk",
+      "location": "The Deadlands",
+      "notes": "Twilight makes the waste even more desolate."
+    },
+    {
+      "num": 9,
+      "label": "IX",
+      "title": "What Breaks First",
+      "character": "Renard",
+      "landscape": "Coast",
+      "time_of_day": "Sunset",
+      "location": "The Shattered Shore",
+      "notes": "Renard watches the sun drown in the sea."
+    },
+    {
+      "num": 10,
+      "label": "X",
+      "title": "Falling Stones",
+      "character": "Aisen",
+      "landscape": "Mountains",
+      "time_of_day": "Afternoon",
+      "location": "The High Peak",
+      "notes": "The afternoon light is merciless on stone."
+    },
+    {
+      "num": 11,
+      "label": "XI",
+      "title": "The Bargain Spoken",
+      "character": "Caspian",
+      "landscape": "Valley",
+      "time_of_day": "Morning",
+      "location": "The Hidden Valley",
+      "notes": "Morning mist cloaks what Caspian seeks."
+    },
+    {
+      "num": 12,
+      "label": "XII",
+      "title": "Hunting the Hunter",
+      "character": "Ryo",
+      "landscape": "Forest",
+      "time_of_day": "Night",
+      "location": "The Dark Forest Root",
+      "notes": "Night is Ryo's true domain."
+    },
+    {
+      "num": 13,
+      "label": "XIII",
+      "title": "Time Curdles",
+      "character": "Kairos",
+      "landscape": "Cavern",
+      "time_of_day": "Night",
+      "location": "The Hall of Echoes",
+      "notes": "Deep underground, all time is the same."
+    },
+    {
+      "num": 14,
+      "label": "XIV",
+      "title": "Old Tracks",
+      "character": "Kael",
+      "landscape": "Wasteland",
+      "time_of_day": "Noon",
+      "location": "The Burnt Plain",
+      "notes": "Noon burns away all pretense."
+    },
+    {
+      "num": 15,
+      "label": "XV",
+      "title": "The Heir Arrives",
+      "character": "Corvin",
+      "landscape": "City",
+      "time_of_day": "Morning",
+      "location": "The Palace Gates",
+      "notes": "Morning brings ceremony and tradition."
+    },
+    {
+      "num": 16,
+      "label": "XVI",
+      "title": "Keeper's Vigil",
+      "character": "Amara",
+      "landscape": "Ruins",
+      "time_of_day": "Night",
+      "location": "The Archive Peak",
+      "notes": "Night deepens the weight of memory."
+    },
+    {
+      "num": 17,
+      "label": "XVII",
+      "title": "The Long Road",
+      "character": "Orin",
+      "landscape": "Coast",
+      "time_of_day": "Dawn",
+      "location": "The Pilgrim's Path",
+      "notes": "Orin walks toward the rising sun."
+    },
+    {
+      "num": 18,
+      "label": "XVIII",
+      "title": "At World's Edge",
+      "character": "Renard",
+      "landscape": "Wasteland",
+      "time_of_day": "Sunset",
+      "location": "The Edge of All Things",
+      "notes": "Renard stands where the world ends."
+    },
+    {
+      "num": 19,
+      "label": "XIX",
+      "title": "The Choice Below",
+      "character": "Aisen",
+      "landscape": "Dungeon",
+      "time_of_day": "Night",
+      "location": "The Forsaken Keep",
+      "notes": "Deep below, the real choice awaits."
+    },
+    {
+      "num": 20,
+      "label": "XX",
+      "title": "Fractured Mirror",
+      "character": "Caspian",
+      "landscape": "City",
+      "time_of_day": "Afternoon",
+      "location": "The Broken Bridge",
+      "notes": "Caspian sees himself reflected, fractured."
+    },
+    {
+      "num": 21,
+      "label": "XXI",
+      "title": "Lightning Speaks",
+      "character": "Ryo",
+      "landscape": "Mountains",
+      "time_of_day": "Sunset",
+      "location": "The Storm Peak",
+      "notes": "Ryo's power matches the burning sky."
+    },
+    {
+      "num": 22,
+      "label": "XXII",
+      "title": "When Moments Snap",
+      "character": "Kairos",
+      "landscape": "Wasteland",
+      "time_of_day": "Noon",
+      "location": "The Timebreak",
+      "notes": "Time breaks like the brittle earth."
+    },
+    {
+      "num": 23,
+      "label": "XXIII",
+      "title": "Hunger",
+      "character": "Kael",
+      "landscape": "Forest",
+      "time_of_day": "Morning",
+      "location": "The Deepwood Heart",
+      "notes": "The beast within wakes with the sun."
+    },
+    {
+      "num": 24,
+      "label": "XXIV",
+      "title": "The Words Unspoken",
+      "character": "Corvin",
+      "landscape": "Dungeon",
+      "time_of_day": "Night",
+      "location": "The Silent Chamber",
+      "notes": "In darkness, the truth cannot be hidden."
+    },
+    {
+      "num": 25,
+      "label": "XXV",
+      "title": "Burdens Counted",
+      "character": "Amara",
+      "landscape": "Valley",
+      "time_of_day": "Noon",
+      "location": "The Tower of Records",
+      "notes": "By noon light, every burden is clear."
+    },
+    {
+      "num": 26,
+      "label": "XXVI",
+      "title": "The Wanderer's Rest",
+      "character": "Orin",
+      "landscape": "Forest",
+      "time_of_day": "Dusk",
+      "location": "The Last Sanctuary",
+      "notes": "At dusk, Orin finds a moment of peace."
+    },
+    {
+      "num": 27,
+      "label": "XXVII",
+      "title": "The Witness Sees Clearly",
+      "character": "Renard",
+      "landscape": "Coast",
+      "time_of_day": "Morning",
+      "location": "The Seer's Point",
+      "notes": "Morning brings clarity to the witness."
+    },
+    {
+      "num": 28,
+      "label": "XXVIII",
+      "title": "War Comes",
+      "character": "Aisen",
+      "landscape": "Mountains",
+      "time_of_day": "Morning",
+      "location": "The Assembly Ground",
+      "notes": "Morning brings armies to the mountains."
+    },
+    {
+      "num": 29,
+      "label": "XXIX",
+      "title": "Two Selves Collide",
+      "character": "Caspian",
+      "landscape": "Wasteland",
+      "time_of_day": "Night",
+      "location": "The No-Place",
+      "notes": "Night erases the boundaries between selves."
+    },
+    {
+      "num": 30,
+      "label": "XXX",
+      "title": "The Mage's Last Spell",
+      "character": "Ryo",
+      "landscape": "City",
+      "time_of_day": "Sunset",
+      "location": "The Burning Quarter",
+      "notes": "Ryo's last magic burns like the sunset."
+    },
+    {
+      "num": 31,
+      "label": "XXXI",
+      "title": "Breaking the Loop",
+      "character": "Kairos",
+      "landscape": "Coast",
+      "time_of_day": "Noon",
+      "location": "The Moment Between",
+      "notes": "Noon light shows the way out of time."
+    },
+    {
+      "num": 32,
+      "label": "XXXII",
+      "title": "Blood and Stone",
+      "character": "Kael",
+      "landscape": "Dungeon",
+      "time_of_day": "Night",
+      "location": "The Beast's Lair",
+      "notes": "The beast's lair has no need for light."
+    },
+    {
+      "num": 33,
+      "label": "XXXIII",
+      "title": "The Oath Held",
+      "character": "Corvin",
+      "landscape": "Mountains",
+      "time_of_day": "Noon",
+      "location": "The Final Keep",
+      "notes": "At noon, the oath stands clear and true."
+    },
+    {
+      "num": 34,
+      "label": "XXXIV",
+      "title": "The Ledger Complete",
+      "character": "Amara",
+      "landscape": "Ruins",
+      "time_of_day": "Afternoon",
+      "location": "The Memory Grove",
+      "notes": "Afternoon gold illuminates the final record."
+    },
+    {
+      "num": 35,
+      "label": "XXXV",
+      "title": "Hollowness Speaks",
+      "character": "Orin",
+      "landscape": "Cavern",
+      "time_of_day": "Night",
+      "location": "The Void Below",
+      "notes": "In the void below, hollow speaks to hollow."
+    },
+    {
+      "num": 36,
+      "label": "XXXVI",
+      "title": "The Watcher Rises",
+      "character": "Renard",
+      "landscape": "City",
+      "time_of_day": "Dawn",
+      "location": "The High Tower",
+      "notes": "Renard rises with the dawn, seeing all."
+    },
+    {
+      "num": 37,
+      "label": "XXXVII",
+      "title": "The Army Moves",
+      "character": "Aisen",
+      "landscape": "Wasteland",
+      "time_of_day": "Morning",
+      "location": "The March Forward",
+      "notes": "Morning brings the army across broken ground."
+    },
+    {
+      "num": 38,
+      "label": "XXXVIII",
+      "title": "Self's Shadow",
+      "character": "Caspian",
+      "landscape": "Forest",
+      "time_of_day": "Dusk",
+      "location": "The Shadow Wood",
+      "notes": "Dusk brings the shadow self into being."
+    },
+    {
+      "num": 39,
+      "label": "XXXIX",
+      "title": "The Storm Breaks",
+      "character": "Ryo",
+      "landscape": "Mountains",
+      "time_of_day": "Sunset",
+      "location": "The Peak's Crown",
+      "notes": "The storm breaks at sunset, beautiful and terrible."
+    },
+    {
+      "num": 40,
+      "label": "XL",
+      "title": "The Moment Held",
+      "character": "Kairos",
+      "landscape": "City",
+      "time_of_day": "Afternoon",
+      "location": "The Clock Tower",
+      "notes": "Kairos holds one perfect moment in the afternoon."
+    },
+    {
+      "num": 41,
+      "label": "XLI",
+      "title": "The Beast Within",
+      "character": "Kael",
+      "landscape": "Coast",
+      "time_of_day": "Dusk",
+      "location": "The Tide Pools",
+      "notes": "Dusk brings both beast and mercy."
+    },
+    {
+      "num": 42,
+      "label": "XLII",
+      "title": "An Oath Broken",
+      "character": "Corvin",
+      "landscape": "Dungeon",
+      "time_of_day": "Afternoon",
+      "location": "The Oath-house",
+      "notes": "Even in afternoon light, the oath shatters."
+    },
+    {
+      "num": 43,
+      "label": "XLIII",
+      "title": "What Remains",
+      "character": "Amara",
+      "landscape": "Wasteland",
+      "time_of_day": "Sunset",
+      "location": "The Ruin Field",
+      "notes": "Sunset gold illuminates only what remains."
+    },
+    {
+      "num": 44,
+      "label": "XLIV",
+      "title": "The Empty Walk",
+      "character": "Orin",
+      "landscape": "Mountains",
+      "time_of_day": "Night",
+      "location": "The High Pass",
+      "notes": "Night walks are walked alone."
+    },
+    {
+      "num": 45,
+      "label": "XLV",
+      "title": "All Eyes Turn",
+      "character": "Renard",
+      "landscape": "Forest",
+      "time_of_day": "Noon",
+      "location": "The Watching Ground",
+      "notes": "Renard watches all eyes turn toward him."
+    },
+    {
+      "num": 46,
+      "label": "XLVI",
+      "title": "The Cost Reckoned",
+      "character": "Aisen",
+      "landscape": "City",
+      "time_of_day": "Sunset",
+      "location": "The Victory Square",
+      "notes": "Victory wears the colours of sunset regret."
+    },
+    {
+      "num": 47,
+      "label": "XLVII",
+      "title": "In Two Places",
+      "character": "Caspian",
+      "landscape": "Dungeon",
+      "time_of_day": "Dusk",
+      "location": "The House of Selves",
+      "notes": "Dusk brings Caspian to both places at once."
+    },
+    {
+      "num": 48,
+      "label": "XLVIII",
+      "title": "White Fire",
+      "character": "Ryo",
+      "landscape": "Wasteland",
+      "time_of_day": "Sunset",
+      "location": "The Scorched Ground",
+      "notes": "Ryo's white fire burns like sunset itself."
+    },
+    {
+      "num": 49,
+      "label": "XLIX",
+      "title": "The Loop Finally Breaks",
+      "character": "Kairos",
+      "landscape": "Coast",
+      "time_of_day": "Sunrise",
+      "location": "The Shore of Ending",
+      "notes": "At the breaking point, new light comes."
+    },
+    {
+      "num": 50,
+      "label": "L",
+      "title": "The Hunt Ends",
+      "character": "Kael",
+      "landscape": "Forest",
+      "time_of_day": "Afternoon",
+      "location": "The Beast's Rest",
+      "notes": "Afternoon brings the hunt to its close."
+    },
+    {
+      "num": 51,
+      "label": "LI",
+      "title": "Oath Fulfilled",
+      "character": "Corvin",
+      "landscape": "Mountains",
+      "time_of_day": "Dawn",
+      "location": "The Highest Peak",
+      "notes": "Dawn shows Corvin his oath fulfilled."
+    },
+    {
+      "num": 52,
+      "label": "LII",
+      "title": "Through Ash to Embers",
+      "character": "Renard",
+      "landscape": "Coast",
+      "time_of_day": "Dawn",
+      "location": "The New Shore",
+      "notes": "New dawn breaks on a new world."
+    }
+  ]
+}

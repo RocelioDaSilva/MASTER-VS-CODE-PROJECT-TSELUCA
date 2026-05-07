@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-02-28T16:53:52.497731",
+  "phase": "3A-R",
+  "summary": {
+    "total_tests": 4,
+    "passed": 1,
+    "total_time": 54.997286558151245,
+    "success": false
+  },
+  "categories": {
+    "MCDA": {
+      "file": "tests/test_mcda_adapted.py",
+      "passed": true,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 0,
+      "time": 13.492442607879639,
+      "target": 85.0,
+      "description": "AHP Weighter and MCDA analysis"
+    },
+    "LCOE": {
+      "file": "tests/test_lcoe_adapted.py",
+      "passed": false,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 0,
+      "time": 19.083826065063477,
+      "target": 85.0,
+      "description": "LCOE Calculator and Solar Parameters"
+    },
+    "Validators": {
+      "file": "tests/test_validators_adapted.py",
+      "passed": false,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 0,
+      "time": 13.848585367202759,
+      "target": 80.0,
+      "description": "Geospatial and financial validators"
+    },
+    "Error Handling": {
+      "file": "tests/test_error_handling_adapted.py",
+      "passed": false,
+      "passed_count": 0,
+      "failed_count": 0,
+      "error_count": 2,
+      "time": 8.572432518005371,
+      "target": 80.0,
+      "description": "Exception handling and logging"
+    }
+  }
+}

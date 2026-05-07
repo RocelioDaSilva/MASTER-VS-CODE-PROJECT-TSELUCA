@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="400" viewBox="0 0 2400 400">
+<defs>
+  <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#6B4F3E"/>
+    <stop offset="100%" stop-color="#DDCFC1"/>
+  </linearGradient>
+</defs>
+<rect width="100%" height="100%" fill="url(#bg2)"/>
+<path d="M 0 400 L 0,321 126,346 252,377 378,378 505,312 631,341 757,330 884,300 1010,361 1136,379 1263,363 1389,368 1515,313 1642,304 1768,303 1894,347 2021,305 2147,310 2273,369 2400,316 L 2400,400 Z" fill="#6B4F3E" stroke="none"/>
+<path d="M 0 400 L 0,238 218,241 436,258 654,251 872,262 1090,273 1309,238 1527,231 1745,253 1963,263 2181,269 2400,259 L 2400,400 Z" fill="#A07F6D" stroke="none"/>
+<path d="M 0 400 L 0,153 160,162 320,186 480,181 640,166 800,155 960,176 1120,159 1280,157 1440,153 1600,156 1760,148 1920,167 2080,158 2240,182 2400,160 L 2400,400 Z" fill="#DDCFC1" stroke="none"/>
+<path d="M 0 400 L 0,86 160,71 320,91 480,79 640,86 800,75 960,83 1120,88 1280,86 1440,87 1600,86 1760,73 1920,84 2080,86 2240,91 2400,84 L 2400,400 Z" fill="#6B4F3E" stroke="none"/>
+<polygon points="126,159 117,188 135,188" fill="#0b0b0b" />
+<polygon points="306,151 298,175 314,175" fill="#0b0b0b" />
+<polygon points="325,156 319,175 331,175" fill="#0b0b0b" />
+<polygon points="538,152 531,175 545,175" fill="#0b0b0b" />
+<polygon points="394,152 385,179 403,179" fill="#0b0b0b" />
+<polygon points="2311,159 2305,179 2317,179" fill="#0b0b0b" />
+<polygon points="482,144 472,176 492,176" fill="#0b0b0b" />
+<polygon points="2216,154 2209,176 2223,176" fill="#0b0b0b" />
+<polygon points="614,168 609,185 619,185" fill="#0b0b0b" />
+<polygon points="1208,167 1202,186 1214,186" fill="#0b0b0b" />
+<polygon points="2175,156 2169,175 2181,175" fill="#0b0b0b" />
+<polygon points="1622,158 1613,186 1631,186" fill="#0b0b0b" />
+<polygon points="1615,171 1610,186 1620,186" fill="#0b0b0b" />
+<polygon points="1757,157 1751,175 1763,175" fill="#0b0b0b" />
+<polygon points="1590,170 1584,189 1596,189" fill="#0b0b0b" />
+<circle cx="1803" cy="72" r="30" fill="#8f7362" opacity="0.12"/>
+</svg>

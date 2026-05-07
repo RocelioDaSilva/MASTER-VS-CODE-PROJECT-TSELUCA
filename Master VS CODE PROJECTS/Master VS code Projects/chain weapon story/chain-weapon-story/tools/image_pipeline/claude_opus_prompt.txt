@@ -1,0 +1,50 @@
+Produce 16 distinct, high‑quality horizontal header/banner images inspired by the attached sample (flat layered hills, pine silhouettes, muted brown palette). These will be used as chapter/section header strips in a printed/ebook manuscript. Follow these requirements exactly.
+
+1) Count & sizes
+- Generate 16 unique images, labeled 01..16.
+- Primary size: 2400×400 px (6:1). Also provide a 1200×200 px web preview for each.
+
+2) Style groups (4 groups × 4 variants = 16)
+- Group A — Vector‑flat geometric: sharp clean shapes, flat color blocks, no texture.
+- Group B — Painterly: soft brushwork, subtle gradients, gentle light bloom.
+- Group C — Atmospheric/photographic: fog, depth, subtle lighting, natural texture.
+- Group D — Textured‑grit: light paper/film grain, weathering, faint scratches.
+
+3) Composition & motif
+- Preserve the horizontal layered‑ridge composition and small pine/trees silhouettes as the primary motif.
+- Do not add text, logos, faces, or recognizable landmarks.
+- Small subtle elements allowed: distant sun/moon, tiny stars, low fog — keep silhouette dominant.
+
+4) Variation rules
+- Vary time of day (dawn, noon, dusk, night), color temperature (warm/cool), contrast, and saturation.
+- Vector group: 4 distinct flat palettes (3–5 hex colors each).
+- Painterly group: vary brush size/softness and color wash intensity.
+- Atmospheric group: include at least one snowy/frost, one foggy/dawn, one hazy/clear, one starry/dusk variation.
+- Textured group: add gentle grain, paper texture, or light edge wear.
+
+5) Output format for each image (structured)
+- id: 01..16  
+- title: one-line (e.g., “Dusk Ridges — Warm”)  
+- style_group: A / B / C / D  
+- palette: 3–5 hex codes (e.g., #7A5A44, #9B8268, #EDE6D9)  
+- short_description: one sentence describing mood and changes from sample  
+- reproduction_prompt: one-line copy/paste prompt optimized for Stable Diffusion/SDXL (img2img) or DALL·E to reproduce this variant  
+- suggested_settings: recommended model (SDXL / SD img2img), denoising_strength, sampler, steps, guidance scale, and a seed if available  
+- upscaler_recommendation: Real‑ESRGAN or Topaz recommendation and scale (x2 / x4)  
+- thumbnail: a low-res preview (1200×200) embedded inline or base64 PNG  
+- final_image: the 2400×400 PNG (inline or base64) if supported
+
+6) Aesthetic & constraints
+- Beautiful, refined, minimal, readable at small sizes, print-friendly.
+- Avoid faces, text, logos, or copyrighted characters.
+- Maintain overall harmony with the sample’s muted, earthy tone unless explicitly labeled as “cool” or “night.”
+
+7) Extras per image
+- Provide 4 one-word tags (e.g., “dusk; warm; calm; minimal”).
+- Provide a one-line Stable Diffusion img2img snippet for reproduction (example settings included).
+
+8) If able, append at the end a single short command to generate 32 additional quick lower‑res variants (1200×200) using rapid thumbnail-style tweaks.
+
+Begin now with images 01..16, grouped and labeled A01–A04, B05–B08, C09–C12, D13–D16.
+
+If you need fewer or more images, state the desired count and I will reconfigure.

@@ -1,0 +1,187 @@
+# Merged Artifact: chapter-06-tarovin-candle-demonstration.md
+
+This file preserves all source content exactly.
+
+## Sources
+
+- manuscript/Chapters/drafts/Chapter-06-Tarovin-Candle-Demonstration.md (sha256: 257276d7f2cd7a89b9753fcb2f2bdecb9376cf1a7493d1ef54f928058d4b749a)
+- manuscript/Chapters/finals/Chapter-06-Tarovin-Candle-Demonstration.md (sha256: 257276d7f2cd7a89b9753fcb2f2bdecb9376cf1a7493d1ef54f928058d4b749a)
+
+---
+
+## Source: manuscript/Chapters/drafts/Chapter-06-Tarovin-Candle-Demonstration.md
+
+---
+Title: Tarovin's Candle Demonstration
+ChapterID: Chapter-06
+POV: Aisen
+Age: 6
+CanonicalAge: "Aisen: 6"
+POVPairing: "Tarovin / Aisen"
+Word Target: 2,500-3,500 words
+AnchorPoints: Tarovin (scholar-cleric), Candle telekinesis
+Chronology: Act I
+status: Draft
+updated: 2026-04-16
+---
+
+Tarovin arrived on a Thursday when the air smelled of wet straw and far-off lectures.
+
+He was not the sort of man who entered with a flourish. He came with a satchel of rolled papers and the kind of careful gait that suggested he measured his steps for meaning. When he shut the tavern door behind him, he paused as if cataloguing the way the air changed: a scent combination of peat, sweat, and slow-burning fat; the way the light slanted in through the east window; the small, almost hidden places where people left behind things they thought no longer mattered.
+
+Aisen watched from his usual doorway—a place that had long since ceased to feel like hiding and now felt like a vantage. Tarovin moved like someone who had been trained to notice the world in small increments. His hands were ink-stained at the fingertips. He wore a plain robe with a hem that had been patched meticulously.
+
+"Let me see," Tarovin said, when his father set a small candle on the table for demonstration. "Not to perform, but to think with."
+
+Aisen didn't know, precisely, what Tarovin meant by thinking with a candle. He had seen magic once in his life—the quiet, controlled float of a candle in the hand of a traveling scholar—but that had been a rumor until the morning Tarovin sat at the bar with his papers spread like a map of small, deliberate worlds.
+
+Tarovin's demonstration required so little drama that it would have been easy to miss: he wet his thumb, rolled it along the candle's base to anchor the wick, and then set it in the small iron holder. He sat opposite the candle and closed his eyes for a moment. The tavern quieted in that way that happens when someone does something people decide to watch.
+
+"Watch the air around the flame," Tarovin said. "Not the flame itself. Watch the way it breathes."
+
+Aisen watched. At first, nothing happened. The candle burned in the ordinary fashion—small, patient, yellow. But then the flame steadied in a way that suggested it was being given instructions. The tiny tongue of fire bent slightly, as if in response to an unheard voice. The air near the wick hummed; not a noise exactly but a thin, trembling of the world that made hairs stand up on Aisen's arms.
+
+Tarovin opened his eyes. He lifted a hand, held the motion halfway between a gesture and a calculation, and the candle rose three inches from the iron holder.
+
+Not by flame, not by wind. The flame remained a flame, but the wax below it no longer touched metal. It floated with the suspiciously calm certainty of something that understood its own place.
+
+Aisen's breath stopped the exact moment the candle rose.
+
+"How did you do that?" he asked before his father could say it. The question tumbled out of him, unfiltered, and Tarovin's eyes crinkled with something like amusement.
+
+"I convinced it to obey a simple law," Tarovin said. "Not by force, but by understanding the forces around it. That is the trick, boy. It is not the strength you apply; it is the rightness of the reasoning you apply to the world."
+
+He lowered the candle, setting it back into the holder as if putting a thought to rest. The movement was slow and careful.
+
+"Magic is not a thing you have," Tarovin continued. "It is a language you learn. You can speak it roughly, or you can speak it precisely. People who crack open worlds are usually those who speak it precisely."
+
+Aisen listened. He had heard people describe magic as something wild and unpredictable. This was not that. Tarovin's description made magic into something legible, like letters or bread-making—a craft more than a curse.
+
+"Would you want to learn?" Tarovin asked, suddenly turning his attention to Aisen directly.
+
+Aisen's mouth was dry. He thought of the candle, of the way its flame had held steady as if responding to a command that was not violent but exact. "Yes," he said.
+
+Tarovin's smile was small. "Then we must be patient. Learning requires an appetite for boring things. Reading the wrong books until your eyes learn new shapes. Practicing the same motion until it becomes muscle memory and then unlearning the bad parts of muscle memory."
+
+"Will you teach me now?" Aisen asked. The old hunger to learn—different from the hunger for recognition, older and more honest—rose inside him.
+
+"Not yet," Tarovin said. "When a man is six years old, he learns to be curious. When he is thirteen, he can begin to be taught something with power. Until then, gather small knowledge. Watch how fire breathes. Keep watch of wooden bridges and how they answer to weight. Learn to notice the small facts that can be assembled into a pattern. That is the beginning."
+
+He wrapped his satchel closed and reached for the coin he'd left on the table. "I'll return when he's older. Tell him then, if he's inclined, to come find me at the academy if it still lets in boys from border towns. Until then, feed the curiosity."
+
+He left as quietly as he had arrived, leaving behind the small impression of something else having been present in the tavern—an implication rather than a proclamation.
+
+After he left, Aisen stayed by the widow for a long time. He pressed his hand to the window's cool glass and tried to remember the rhythm of the air around the candle. He tried to map the motion of the flame and the way Tarovin's hand had curved as if tracing a letter in the air.
+
+That night, under the blanket in his small attic bed, Aisen practiced whispering to his candle and imagined that it listened. He knew it did not, not yet. But the image of the candle floating—small, patient, obedient—stayed with him, a thing to be returned to.
+
+The next morning, Tarovin had left a small scrap of paper behind, folded carefully and tucked beneath the salt jar on the counter. Aisen's father found it while sweeping and handed it down to him.
+
+It was a tiny note:
+
+"Watch the air. Ask why the flame breathes. Keep small notes. I'll return. —T"
+
+Aisen kept the scrap and folded it into his own pocket. He didn't know yet what the academy would be, or what Tarovin's words would ask him to become, but he felt the first tightness of a beginning—the beginning of a path that would bend his life toward questions and precise answers.
+
+In the months that followed, he watched the world like a student taking careful notes. He observed how smoke curled differently from one chimney to the next. He noted how a kettle sang before it boiled. He learned to feel for the weight of a bowl when carrying it from the fire to the table. He began to keep a small notebook of tiny discoveries—a list of patterns that seemed trivial at first and then, when assembled, promised to make sense of stranger things.
+
+Tarovin's candle had not been spectacle. It had been a grammar lesson. Aisen had no idea yet how that grammar would allow him to move the world.
+
+But he had learned to listen.
+
+And for someone who would one day decide when to ask and when to act, listening was the first true skill.
+
+---
+
+*End of Chapter 6*
+
+---
+
+## Source: manuscript/Chapters/finals/Chapter-06-Tarovin-Candle-Demonstration.md
+
+---
+Title: Tarovin's Candle Demonstration
+ChapterID: Chapter-06
+POV: Aisen
+Age: 6
+CanonicalAge: "Aisen: 6"
+POVPairing: "Tarovin / Aisen"
+Word Target: 2,500-3,500 words
+AnchorPoints: Tarovin (scholar-cleric), Candle telekinesis
+Chronology: Act I
+status: Draft
+updated: 2026-04-16
+---
+
+Tarovin arrived on a Thursday when the air smelled of wet straw and far-off lectures.
+
+He was not the sort of man who entered with a flourish. He came with a satchel of rolled papers and the kind of careful gait that suggested he measured his steps for meaning. When he shut the tavern door behind him, he paused as if cataloguing the way the air changed: a scent combination of peat, sweat, and slow-burning fat; the way the light slanted in through the east window; the small, almost hidden places where people left behind things they thought no longer mattered.
+
+Aisen watched from his usual doorway—a place that had long since ceased to feel like hiding and now felt like a vantage. Tarovin moved like someone who had been trained to notice the world in small increments. His hands were ink-stained at the fingertips. He wore a plain robe with a hem that had been patched meticulously.
+
+"Let me see," Tarovin said, when his father set a small candle on the table for demonstration. "Not to perform, but to think with."
+
+Aisen didn't know, precisely, what Tarovin meant by thinking with a candle. He had seen magic once in his life—the quiet, controlled float of a candle in the hand of a traveling scholar—but that had been a rumor until the morning Tarovin sat at the bar with his papers spread like a map of small, deliberate worlds.
+
+Tarovin's demonstration required so little drama that it would have been easy to miss: he wet his thumb, rolled it along the candle's base to anchor the wick, and then set it in the small iron holder. He sat opposite the candle and closed his eyes for a moment. The tavern quieted in that way that happens when someone does something people decide to watch.
+
+"Watch the air around the flame," Tarovin said. "Not the flame itself. Watch the way it breathes."
+
+Aisen watched. At first, nothing happened. The candle burned in the ordinary fashion—small, patient, yellow. But then the flame steadied in a way that suggested it was being given instructions. The tiny tongue of fire bent slightly, as if in response to an unheard voice. The air near the wick hummed; not a noise exactly but a thin, trembling of the world that made hairs stand up on Aisen's arms.
+
+Tarovin opened his eyes. He lifted a hand, held the motion halfway between a gesture and a calculation, and the candle rose three inches from the iron holder.
+
+Not by flame, not by wind. The flame remained a flame, but the wax below it no longer touched metal. It floated with the suspiciously calm certainty of something that understood its own place.
+
+Aisen's breath stopped the exact moment the candle rose.
+
+"How did you do that?" he asked before his father could say it. The question tumbled out of him, unfiltered, and Tarovin's eyes crinkled with something like amusement.
+
+"I convinced it to obey a simple law," Tarovin said. "Not by force, but by understanding the forces around it. That is the trick, boy. It is not the strength you apply; it is the rightness of the reasoning you apply to the world."
+
+He lowered the candle, setting it back into the holder as if putting a thought to rest. The movement was slow and careful.
+
+"Magic is not a thing you have," Tarovin continued. "It is a language you learn. You can speak it roughly, or you can speak it precisely. People who crack open worlds are usually those who speak it precisely."
+
+Aisen listened. He had heard people describe magic as something wild and unpredictable. This was not that. Tarovin's description made magic into something legible, like letters or bread-making—a craft more than a curse.
+
+"Would you want to learn?" Tarovin asked, suddenly turning his attention to Aisen directly.
+
+Aisen's mouth was dry. He thought of the candle, of the way its flame had held steady as if responding to a command that was not violent but exact. "Yes," he said.
+
+Tarovin's smile was small. "Then we must be patient. Learning requires an appetite for boring things. Reading the wrong books until your eyes learn new shapes. Practicing the same motion until it becomes muscle memory and then unlearning the bad parts of muscle memory."
+
+"Will you teach me now?" Aisen asked. The old hunger to learn—different from the hunger for recognition, older and more honest—rose inside him.
+
+"Not yet," Tarovin said. "When a man is six years old, he learns to be curious. When he is thirteen, he can begin to be taught something with power. Until then, gather small knowledge. Watch how fire breathes. Keep watch of wooden bridges and how they answer to weight. Learn to notice the small facts that can be assembled into a pattern. That is the beginning."
+
+He wrapped his satchel closed and reached for the coin he'd left on the table. "I'll return when he's older. Tell him then, if he's inclined, to come find me at the academy if it still lets in boys from border towns. Until then, feed the curiosity."
+
+He left as quietly as he had arrived, leaving behind the small impression of something else having been present in the tavern—an implication rather than a proclamation.
+
+After he left, Aisen stayed by the widow for a long time. He pressed his hand to the window's cool glass and tried to remember the rhythm of the air around the candle. He tried to map the motion of the flame and the way Tarovin's hand had curved as if tracing a letter in the air.
+
+That night, under the blanket in his small attic bed, Aisen practiced whispering to his candle and imagined that it listened. He knew it did not, not yet. But the image of the candle floating—small, patient, obedient—stayed with him, a thing to be returned to.
+
+The next morning, Tarovin had left a small scrap of paper behind, folded carefully and tucked beneath the salt jar on the counter. Aisen's father found it while sweeping and handed it down to him.
+
+It was a tiny note:
+
+"Watch the air. Ask why the flame breathes. Keep small notes. I'll return. —T"
+
+Aisen kept the scrap and folded it into his own pocket. He didn't know yet what the academy would be, or what Tarovin's words would ask him to become, but he felt the first tightness of a beginning—the beginning of a path that would bend his life toward questions and precise answers.
+
+In the months that followed, he watched the world like a student taking careful notes. He observed how smoke curled differently from one chimney to the next. He noted how a kettle sang before it boiled. He learned to feel for the weight of a bowl when carrying it from the fire to the table. He began to keep a small notebook of tiny discoveries—a list of patterns that seemed trivial at first and then, when assembled, promised to make sense of stranger things.
+
+Tarovin's candle had not been spectacle. It had been a grammar lesson. Aisen had no idea yet how that grammar would allow him to move the world.
+
+But he had learned to listen.
+
+And for someone who would one day decide when to ask and when to act, listening was the first true skill.
+
+---
+
+*End of Chapter 6*
+
+---
+

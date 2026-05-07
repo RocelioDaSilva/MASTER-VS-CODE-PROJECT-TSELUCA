@@ -1,0 +1,11 @@
+{
+  "reverted_count": 4,
+  "reverted": {
+    "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__init__.py": "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\repo_admin\\reorg_archives\\duplicates\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__init__.py",
+    "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__pycache__\\__init__.cpython-314.pyc": "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\repo_admin\\reorg_archives\\duplicates\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__pycache__\\__init__.cpython-314.pyc",
+    "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\resolver.py": "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\repo_admin\\reorg_archives\\duplicates\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\resolver.py",
+    "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__pycache__\\resolver.cpython-314.pyc": "c:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP\\repo_admin\\reorg_archives\\duplicates\\.venv\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\__pycache__\\resolver.cpython-314.pyc"
+  },
+  "skipped_count": 0,
+  "skipped": {}
+}

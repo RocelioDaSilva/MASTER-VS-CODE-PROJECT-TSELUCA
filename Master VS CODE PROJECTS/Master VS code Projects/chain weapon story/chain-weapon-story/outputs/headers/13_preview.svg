@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 2400 400">
+<defs>
+  <linearGradient id="bg13" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#6B5B4B"/>
+    <stop offset="100%" stop-color="#E6DED4"/>
+  </linearGradient>
+  <filter id="noise13">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="turb"/>
+    <feColorMatrix in="turb" type="saturate" values="0" result="mono"/>
+    <feComponentTransfer in="mono" result="alpha">
+      <feFuncA type="table" tableValues="0 0.08"/>
+    </feComponentTransfer>
+    <feBlend in="SourceGraphic" in2="mono" mode="overlay"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="url(#bg13)"/>
+<path d="M 0 400 L 0,359 200,363 400,353 600,356 800,316 1000,316 1200,371 1400,314 1600,349 1800,313 2000,311 2200,377 2400,332 L 2400,400 Z" fill="#6B5B4B" stroke="none"/>
+<path d="M 0 400 L 0,315 218,268 436,276 654,303 872,290 1090,272 1309,292 1527,262 1745,283 1963,311 2181,281 2400,292 L 2400,400 Z" fill="#9F8F7F" stroke="none"/>
+<path d="M 0 400 L 0,278 150,237 300,232 450,242 600,259 750,271 900,226 1050,229 1200,268 1350,229 1500,230 1650,232 1800,254 1950,232 2100,232 2250,242 2400,236 L 2400,400 Z" fill="#E6DED4" stroke="none"/>
+<path d="M 0 400 L 0,226 150,232 300,197 450,227 600,232 750,207 900,227 1050,212 1200,196 1350,223 1500,218 1650,213 1800,210 1950,216 2100,219 2250,213 2400,198 L 2400,400 Z" fill="#6B5B4B" stroke="none"/>
+<path d="M 0 400 L 0,181 126,166 252,150 378,163 505,186 631,155 757,179 884,148 1010,171 1136,175 1263,180 1389,168 1515,149 1642,149 1768,181 1894,186 2021,156 2147,155 2273,183 2400,153 L 2400,400 Z" fill="#9F8F7F" stroke="none"/>
+<path d="M 0 400 L 0,115 150,114 300,124 450,113 600,137 750,134 900,117 1050,128 1200,134 1350,135 1500,130 1650,120 1800,125 1950,132 2100,117 2250,138 2400,116 L 2400,400 Z" fill="#E6DED4" stroke="none"/>
+<path d="M 0 400 L 0,80 150,78 300,86 450,73 600,79 750,83 900,74 1050,81 1200,79 1350,79 1500,84 1650,79 1800,92 1950,90 2100,81 2250,84 2400,92 L 2400,400 Z" fill="#6B5B4B" stroke="none"/>
+<polygon points="1716,166 1712,179 1720,179" fill="#0b0b0b" />
+<polygon points="1110,158 1102,183 1118,183" fill="#0b0b0b" />
+<polygon points="217,160 208,189 226,189" fill="#0b0b0b" />
+<polygon points="2051,156 2044,178 2058,178" fill="#0b0b0b" />
+<polygon points="922,140 912,171 932,171" fill="#0b0b0b" />
+<polygon points="785,154 775,184 795,184" fill="#0b0b0b" />
+<polygon points="649,161 644,178 654,178" fill="#0b0b0b" />
+<polygon points="144,173 140,186 148,186" fill="#0b0b0b" />
+<polygon points="645,155 638,177 652,177" fill="#0b0b0b" />
+<polygon points="1776,170 1772,183 1780,183" fill="#0b0b0b" />
+<polygon points="228,162 220,187 236,187" fill="#0b0b0b" />
+<polygon points="907,156 902,172 912,172" fill="#0b0b0b" />
+<polygon points="847,156 840,177 854,177" fill="#0b0b0b" />
+<polygon points="1914,161 1905,188 1923,188" fill="#0b0b0b" />
+<polygon points="948,153 943,170 953,170" fill="#0b0b0b" />
+<polygon points="34,161 25,188 43,188" fill="#0b0b0b" />
+<polygon points="871,157 865,175 877,175" fill="#0b0b0b" />
+<polygon points="1530,171 1526,184 1534,184" fill="#0b0b0b" />
+<polygon points="668,169 664,181 672,181" fill="#0b0b0b" />
+<polygon points="2400,148 2390,178 2410,178" fill="#0b0b0b" />
+<polygon points="1055,159 1047,183 1063,183" fill="#0b0b0b" />
+<polygon points="1113,156 1104,183 1122,183" fill="#0b0b0b" />
+<polygon points="2285,148 2278,171 2292,171" fill="#0b0b0b" />
+<circle cx="941" cy="85" r="34" fill="#8f7f6f" opacity="0.12"/>
+<rect width="100%" height="100%" fill="#000000" opacity="0.0" filter="url(#noise13)" />
+</svg>

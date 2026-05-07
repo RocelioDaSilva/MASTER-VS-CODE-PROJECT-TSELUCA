@@ -1,0 +1,26 @@
+Citation audit for TeX: manuscript_unified\science_manuscript\manuscript\SOL.tex
+Bib file: manuscript_unified\science_manuscript\manuscript\referencias.bib
+
+Unique cited keys in TeX: 114
+Total BibTeX entries: 131
+
+Missing keys (cited in TeX but NOT in .bib): 0
+
+Unused keys (in .bib but not cited): 17
+ - Antonanzas2021
+ - Azimoh2016
+ - Bhattacharyya2016
+ - Comello2017
+ - IPCC_WG2_2022
+ - Li2025
+ - LiHealth2025
+ - Nussbaum2000
+ - Pedersen2016
+ - Peters2019
+ - Saaty1980
+ - Sen1999
+ - Suryani2020
+ - UNDP_Energy_Access
+ - afrobarometer_2023
+ - aznar_2018
+ - sun_africa_2023

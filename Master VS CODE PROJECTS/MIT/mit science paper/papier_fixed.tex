@@ -1,0 +1,108 @@
+% eor_angola.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\geometry{margin=2.5cm}
+
+\title{Recuperação Avançada de Petróleo: \\ Estratégia de Planeamento de Projetos nos Campos Petrolíferos Angolanos}
+\author{Geraldo Ramos\textsuperscript{a} \and Kyari Yates\textsuperscript{b} \\
+\small \textsuperscript{a}Escola de Petrotecnologia e Engenharia, Academia Sonangol, Luanda, Angola. \\
+\small \textsuperscript{a}Departamento de Geociências (DGC), ISPTEC, Luanda, Angola. \\
+\small \textsuperscript{b}Faculdade de Farmácia e Ciências da Vida, University of Robert Gordon, Aberdeen, UK.}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% Fonte original (PDF convertido): incluir citação do ficheiro fornecido
+% Fonte: (PDF convertido)
+
+\begin{abstract}
+A maioria dos campos petrolíferos angolanos encontra--se madura ou em maturação. 
+Este artigo apresenta uma estratégia abrangente de planeamento para a implementação de técnicas de Recuperação Avançada de Petróleo (EOR) em Angola, desde a triagem e seleção de campo, passando por testes laboratoriais e pilotos, até à implementação e abandono. O documento discute conceitos, classificação de métodos (térmico, químico, miscível/imiscível e outros), requisitos de dados, desafios técnicos e económicos, e propõe a criação de uma Equipa Nacional de Trabalho de EOR (ANEWT) para coordenar iniciativas nacionais. 
+\end{abstract}
+
+\noindent \textbf{Palavras-chave:} Recuperação Avançada de Petróleo (EOR), campos maduros, triagem de reservatórios.
+
+\section{Introdução}
+A exploração de hidrocarbonetos em Angola começou em 1910 e a primeira produção ocorreu em 1955. Muitos campos estão maduros e existe a necessidade de recuperar petróleo residual e prolongar a vida produtiva dos campos com técnicas EOR. A EOR pode aumentar substancialmente o fator de recuperação e suprir a procura energética, mitigando a dificuldade de descobrir novos campos. A proposta inclui a criação de uma ANEWT na Agência Nacional do Petróleo, Gás e Biocombustíveis (ANPG) para coordenar esforços entre governo, operadores e prestadores de serviços. (Fonte.)
+
+\section{Conceitos e classificação de EOR}
+A recuperação de hidrocarbonetos envolve três processos principais: primária, secundária e recuperação avançada (EOR). A EOR refere--se a um conjunto de tecnologias que injectam energia ou fluidos (gás, químicos, calor, micro-organismos) para mobilizar petróleo residual e melhorar o deslocamento dentro dos poros. Os métodos de EOR são geralmente classificados em:
+
+\begin{itemize}[noitemsep]
+  \item Térmicos (vapor, combustão in-situ, água quente).
+  \item Químicos (polímeros, surfactantes, alcalinos, combinações ASP).
+  \item Gás miscível e imiscível (CO\textsubscript{2}, hidrocarbonetos, N\textsubscript{2}).
+  \item Outros (microbiano etc.).
+\end{itemize}
+
+\subsection{Eficiências de varredura}
+A EOR atua sobre eficiência de varredura microscópica (deslocamento ao nível de poro) e macroscópica (varredura do volume do reservatório). O fator de recuperação global pode ser escrito como:
+\begin{equation}
+RF = PSD \times SE \times D \times T
+\end{equation}
+onde $PSD$ é o deslocamento em escala de poros, $SE$ a eficiência de varredura, $D$ a drenagem (conectividade) e $T$ o tempo/comercialidade do projecto. (Equação adaptada do artigo.)
+
+\subsection{Número capilar}
+O número capilar $N_{ca}$ relaciona forças viscosa e interfacial:
+\begin{equation}
+N_{ca} = \frac{v \mu}{\sigma \cos\theta}
+\end{equation}
+em que $v$ é velocidade, $\mu$ viscosidade, $\sigma$ tensão interfacial e $\theta$ ângulo de contacto. A redução da IFT pode diminuir a saturação residual de óleo. (Fonte.)
+
+\section{Oportunidades e desafios da EOR}
+\subsection{Oportunidades}
+Implementar EOR pode recuperar uma fração substancial do óleo remanescente, prolongar a vida dos campos e gerar sinergias como captura/armazenamento de CO\textsubscript{2}. A cooperação entre governo, NOCs, IOCs e empresas locais cria oportunidades económicas e sociais. (Fonte.)
+
+\subsection{Desafios}
+Operações offshore colocam desafios logísticos e de infra-estrutura; testes e implementação exigem dados extensivos (rocha, fluido, PVT, SCAL), instalações de injeção/tratamento e análises económicas para viabilidade. Processos térmicos levantam preocupações ambientais (emissões); químicos implicam custos e problemas de injectividade/adsorção; disponibilidade de CO\textsubscript{2} é desafio para miscibilidade. (Fonte.)
+
+\section{Estratégia de planeamento de EOR}
+A implementação de um projecto EOR envolve três fases principais:
+\begin{enumerate}
+  \item Seleção do projecto EOR (triagem, estudo de campo, simulação física e matemática, estudos de instalações).
+  \item Implementação e optimização do projecto (pilotos, monitorização, QA/QC).
+  \item Abandono do campo (quando economicamente apropriado), incluindo possibilidade de armazenamento de CO\textsubscript{2}.
+\end{enumerate}
+
+\subsection{Gestão de dados e triagem}
+A fase de gestão de dados recolhe propriedades de rocha e fluido: profundidade, API, viscosidade, porosidade, permeabilidade, saturações, temperatura, pressão, salinidade, litologia, entre outros. A triagem técnica pode ser feita por métodos convencionais, geológicos ou avançados (data-mining, redes neurais, modelos neuro-fuzzy). (Ver Secção 4 e Tabela de critérios.)
+
+\subsection{Simulação física e matemática}
+Testes laboratoriais (SCAL, IFT, molhabilidade, adsorção) e simulações numéricas (história de produção, previsão, análises de sensibilidade) são ambos essenciais para dimensionar e reduzir risco. Recomenda-se a correspondência histórica antes da previsão de performance do EOR.
+
+\subsection{Testes piloto e monitorização}
+Os pilotos variam de poço único a padrões múltiplos; devem incluir monitorização rigorosa (pressões, fluxos, análises de amostras, testes de traçadores, monitorização sísmica 4D quando possível) e procedimentos QA/QC.
+
+\section{Implementação e optimização}
+Com base nos estudos de viabilidade, desenvolver o Plano de Desenvolvimento de Campo (FDP) que detalhe a sequencia regulatória, infraestrutura de superfície/subsolo e calendário económico. Formação de pessoal e preparação de instalações são críticos, especialmente em Angola onde EOR é ainda emergente.
+
+\section{Abandono do projecto EOR}
+O abandono ocorre após esgotamento económico; deve incluir planos de descomissionamento e, quando viável, transição para armazenamento permanente de CO\textsubscript{2}. Preparar condições contratuais e técnicas para reutilização futura do sítio para armazenamento.
+
+\section{Conclusões}
+Um plano estratégico para EOR em Angola foi apresentado, salientando a necessidade de dados robustos, triagem adequada, pilotos bem concebidos, formação e coordenação nacional (ANEWT). A cooperação entre governo, operadores e centros de investigação é recomendada para maximizar recuperação e benefícios socioeconómicos.
+
+\section*{Agradecimentos}
+Agradecemos à Sonangol EP pela autorização para preparar e publicar este artigo. (Fonte original: artigo convertido).
+
+\begin{thebibliography}{99}
+\bibitem{isco2007} ISCO, T. (2007). Recuperação avançada de petróleo (EOR). Teledyne Technologies.
+\bibitem{alanazi2007} Al-Anazi, B. D. (2007). Técnicas avançadas de recuperação de petróleo e injeção de nitrogénio. CSEG Recorder.
+\bibitem{ramos2018} Ramos, G. A. R. (2018). Triagem baseada em neuro-fuzzy para projetos de EOR. Tese de doutoramento, University of Aberdeen.
+\bibitem{lake1989} Lake, L. W. (1989). Recuperação Avançada de Petróleo. Prentice-Hall.
+\bibitem{hite2004} Hite, J. R., et al. (2004). Planeamento de projectos EOR. SPE.
+% ... (adicione ou ajuste entradas conforme o PDF original)
+\end{thebibliography}
+
+\end{document}

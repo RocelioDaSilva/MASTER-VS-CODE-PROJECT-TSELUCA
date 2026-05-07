@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-labelledby="chapterLabel">
+  <title id="chapterLabel">Chapter Header</title>
+  <style>
+    :root{--fg:#111;--accent:#6b3e26;}
+    svg{font-family: Georgia, "Times New Roman", serif;}
+    .num{font-size:18px; fill:var(--accent); font-weight:700; letter-spacing:1px;}
+    .title{font-size:28px; fill:var(--fg); font-weight:700;}
+    .div{stroke:var(--accent);stroke-width:2; opacity:0.9;}
+  </style>
+  <rect width="100%" height="100%" fill="none"/>
+  <text x="60" y="70" class="num">CHAPTER 01</text>
+  <line x1="160" y1="64" x2="1140" y2="64" class="div"/>
+  <text x="600" y="70" class="title" text-anchor="middle">Tavern Opening</text>
+</svg>

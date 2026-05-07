@@ -1,0 +1,11 @@
+[
+  {
+    "nivel": 0,
+    "texto": "Consultoria, Assessoria e Auditoria",
+    "tipo": "CATEGORIA",
+    "nif": "",
+    "categoria": "",
+    "confirmado": "SIM",
+    "origem": "descobre_expand_all.js"
+  }
+]

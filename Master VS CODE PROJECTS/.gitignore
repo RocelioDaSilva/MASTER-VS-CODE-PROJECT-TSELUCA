@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python compiled
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Node
+node_modules/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.smart-env/
+.obsidian/cache
+
+# Build logs (not PDFs - PDFs are content)
+*.synctex(busy)
+
+# Temp
+*.tmp
+*.crdownload

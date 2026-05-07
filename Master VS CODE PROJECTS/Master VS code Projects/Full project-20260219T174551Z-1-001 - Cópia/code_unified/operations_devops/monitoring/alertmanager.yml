@@ -1,0 +1,113 @@
+# AlertManager Configuration for GEESP-Angola
+# File: monitoring/alertmanager.yml
+# This file defines how alerts are routed and notified
+
+global:
+  resolve_timeout: 5m
+  # Slack notification webhook
+  slack_api_url: '${SLACK_WEBHOOK_URL}'
+
+# The templates referred from below are defined in the 'templates' directive (not shown here)
+templates: []
+
+# The root route that applies to all alerts
+route:
+  # Default receiver
+  receiver: 'default-receiver'
+  
+  # Grouping configuration
+  group_by: ['alertname', 'cluster', 'service']
+  group_wait: 10s              # Wait 10s before first notification
+  group_interval: 10s          # Wait 10s before sending updated group
+  repeat_interval: 12h         # Resend unresolved alerts every 12h
+  
+  # Sub-routes for different alert severities
+  routes:
+    # Critical alerts: immediate notification to multiple channels
+    - match:
+        severity: critical
+      receiver: 'critical-alerts'
+      group_wait: 0s            # Send immediately
+      repeat_interval: 1h
+      continue: true
+    
+    # Warning alerts: slower notification
+    - match:
+        severity: warning
+      receiver: 'warning-alerts'
+      group_wait: 30s
+      repeat_interval: 6h
+      continue: true
+    
+    # Info alerts: periodic summary
+    - match:
+        severity: info
+      receiver: 'info-alerts'
+      group_wait: 1m
+      repeat_interval: 24h
+
+# Receivers define how to send notifications
+receivers:
+  - name: 'default-receiver'
+    slack_configs:
+      - channel: '#geesp-alerts'
+        title: 'GEESP Alert'
+        text: '{{ range .Alerts }}{{ .Annotations.description }}\n{{ end }}'
+
+  - name: 'critical-alerts'
+    # Email for critical alerts
+    email_configs:
+      - to: 'ops-critical@geesp-angola.org'
+        from: 'alertmanager@geesp.internal'
+        smarthost: 'mail.geesp.internal:587'
+        auth_username: 'alertmanager@geesp.internal'
+        auth_password: '${MAIL_PASSWORD}'
+        headers:
+          Subject: 'CRITICAL: {{ .GroupLabels.alertname }}'
+    
+    # Slack for critical alerts (different channel)
+    slack_configs:
+      - channel: '#geesp-critical'
+        title: 'CRITICAL - {{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}Severity: {{ .Labels.severity }}\nDescription: {{ .Annotations.description }}\n{{ end }}'
+        send_resolved: true
+    
+    # PagerDuty for on-call escalation
+    pagerduty_configs:
+      - service_key: '${PAGERDUTY_SERVICE_KEY}'
+        description: '{{ .GroupLabels.alertname }}'
+
+  - name: 'warning-alerts'
+    slack_configs:
+      - channel: '#geesp-warnings'
+        title: 'WARNING - {{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}{{ .Annotations.description }}\n{{ end }}'
+
+  - name: 'info-alerts'
+    slack_configs:
+      - channel: '#geesp-info'
+        title: 'INFO - {{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}{{ .Annotations.description }}\n{{ end }}'
+
+# Inhibition rules: suppress certain alerts under specific conditions
+inhibit_rules:
+  # Suppress warning alerts if critical alert for the same service is firing
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'instance']
+  
+  # Suppress info alerts if warning alert is firing
+  - source_match:
+      severity: 'warning'
+    target_match:
+      severity: 'info'
+    equal: ['alertname', 'instance']
+
+  # Suppress replica unavailable warnings when node is down
+  - source_match:
+      alertname: 'NodeDown'
+    target_match:
+      alertname: 'ReplicaUnavailable'
+    equal: ['node']

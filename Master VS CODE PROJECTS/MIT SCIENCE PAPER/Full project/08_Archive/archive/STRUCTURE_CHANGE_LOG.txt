@@ -1,0 +1,42 @@
+============================================================
+Applying new folder structure (greater + specified folders)
+============================================================
+
+--- 01_Science ---
+MOVED: manuscript -> 01_Science/manuscript
+MOVED: presentations -> 01_Science/presentations
+
+--- 02_Code ---
+MOVED: Coding parts/geesp-angola -> 02_Code/geesp-angola
+
+--- 03_Documentation ---
+MOVED: ROOT_DOCS -> 03_Documentation/navigation
+MOVED: docs -> 03_Documentation/technical
+MOVED: PROJECT_MANAGEMENT -> 03_Documentation/project_management
+MOVED: support -> 03_Documentation/support
+
+--- 04_Operations ---
+MOVED: scripts -> 04_Operations/scripts
+MOVED: infrastructure -> 04_Operations/infrastructure
+MOVED: k8s -> 04_Operations/kubernetes
+MOVED: ansible -> 04_Operations/ansible
+MOVED: monitoring -> 04_Operations/monitoring
+
+--- 05_Governance ---
+MOVED: GOVERNANCE_COMPLIANCE -> 05_Governance/compliance
+MOVED: submissions -> 05_Governance/submissions
+MOVED: funding -> 05_Governance/funding
+MOVED: planning -> 05_Governance/planning
+
+--- 06_Translations ---
+MOVED: translations -> 06_Translations/translations
+
+--- 07_Data ---
+MOVED: data -> 07_Data/data
+
+--- 08_Archive ---
+MOVED: ARCHIVE -> 08_Archive/archive
+
+============================================================
+Done. Summary:
+  Moves: 19

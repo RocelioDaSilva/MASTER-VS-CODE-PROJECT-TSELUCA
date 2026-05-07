@@ -1,0 +1,794 @@
+path,category,risk,action,note
+MIT-SCIENCE-PAPER/Full project/08_Archive/README.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/ARCHIVE_INDEX.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/CARTA_SUBMISSAO.docx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/README.txt,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.pdf,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/figuras/mapa_aptidao_integrada.pdf,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/figuras/mapa_distanciarede.pdf,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/figuras/mapa_irradiacao.pdf,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/figuras/mapa_populacao.pdf,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/referencias.bib,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/REORGANIZATION_COMPLETE.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/REORGANIZATION_SUMMARY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/STRUCTURE_CHANGE_LOG.txt,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/requirements_root_backup.txt,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/.env.example,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/.gitignore,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/ARCHITECTURE_REFERENCE.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/ENHANCEMENT_SUMMARY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/IMPLEMENTATION_GUIDE.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/QUICK_START.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/README.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/index.html,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/metadata.json,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/package-lock.json,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/package.json,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/server.ts,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/App.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/components/AdvancedFilter.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/components/Charts.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/components/FinancialAnalysis.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/components/Map.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/components/ScenarioLibrary.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/components/Sidebar.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/constants.ts,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/index.css,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/main.tsx,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/types.ts,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/tsconfig.json,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/vite.config.ts,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_ANALYSIS_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_CONSOLIDATION_ANALYSIS.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_CONSOLIDATION_IMPLEMENTATION_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_HARMONY_AUDIT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_REVIEW_COMPREHENSIVE.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_COMPLETE.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_COMPLETION_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_INDEX.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_VISUAL_SUMMARY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/HARMONY_TESTING_SUMMARY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/IMPLEMENTATION_COMPARISON_AND_MERGE_STRATEGY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/INDUSTRY_STANDARDS_AND_BEST_PRACTICES.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE1_COMPLETION_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE2_COMPLETION_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE2_FINAL_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE2_IMPORT_CENTRALIZATION_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_ACTUAL_COMPLETION_SUMMARY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_COMPLETION_CARD.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_REFACTORING_STATUS.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_UNIT_TEST_EXPANSION_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3C_PERFORMANCE_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE4_TYPE_SAFETY_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE5_ADVANCED_FEATURES_REPORT.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE_7_OPTIMIZATION_GUIDE.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PROJECT_WIDE_REORGANIZATION_COMPLETION_SUMMARY.md,Archive,Low,Keep archived,Historical/legacy content
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PROJECT_WIDE_REORGANIZATION_PLAN.md,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_e2e_workflows.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_integration_full_workflow.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_lcoe.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_load_performance.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_maps.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_security.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_utils.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+useless/archived_tests_phase5/__pycache__/test_validators.cpython-311-pytest-9.0.2.pyc,Archive,Low,Keep archived,Historical/legacy content
+.gitignore,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/ANALISE_FRAQUEZAS_COMPLETA.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/COMPILATION_ERRORS_REFERENCE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/01_IRB_Ethical_Approvals.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/02_MINEA_Approvals.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/03_Field_Technician_Hiring_and_Training.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/04_VPN_Secure_Data_Upload.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/05_Equipment_Procurement_Staging.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/06_Baseline_Survey_Protocol_Finalization.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/07_Production_DB_Initialization_and_Backups.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/08_Manuscript_Submission_Readiness.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/HIGH_PRIORITY_ISSUES/09_CI_Deployment_Readiness.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_BASELINE_SURVEY_PROTOCOL.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_DATABASE_PRODUCTION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_EQUIPMENT_PROCUREMENT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_IRB_APPROVAL.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_MANUSCRIPT_FINAL.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_MINEA_LETTER.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_TECHNICIAN_HIRING.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/HIGH_VPN_SECURITY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/high-priority-item.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/ISSUE_TEMPLATE/medium-priority-item.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.github/workflows/ci.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/.vscode/extensions.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/ADDITIONAL_16_SOURCES_PHASE2_2025-2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/ADDITIONAL_SOURCES_FOR_ENHANCEMENT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/ARGUMENTATION_ENHANCEMENTS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/EXPANSAO_TECNICA_RESUMO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/FINAL_HARMONY_REPORT_SOL_REORGANIZATION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/FINAL_SUBMISSION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/REORGANIZATION_SUMMARY.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/RESUMO_EXECUTIVO_SOL.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SCIENTIFIC_STANDARDS_REORGANIZATION_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOLEX.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_ORIGINAL.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado_FIXED_STRUCTURE.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figs/battery_recycling.svg,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figs/iot_protocol_stack.svg,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figs/koppen_climate.svg,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figs/solartainer_mali.svg,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/battery_recycling.jpg,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/climate_scenarios.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/iot_protocol_stack.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/koppen_climate.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_aptidao_integrada.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_aptidao_integrada.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_distanciarede.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_distanciarede.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_irradiacao.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_irradiacao.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_populacao.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_populacao.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/processo_identificacao.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/solar_technologies_overview.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/solartainer_mali.jpg,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/test.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/referencias.bib,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/referencias.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/referencias_submission.bib,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/reorganization_analysis.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/reorganization_output.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/presentations/one-page/ONE_PAGE_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/presentations/one-page/ONE_PAGE_SUMMARY.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/presentations/one-page/ONE_PAGE_SUMMARY.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/00_FINAL_HANDOFF_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/AUDIT_REPORTS/AUDIT_EXECUTIVE_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/AUDIT_REPORTS/AUDIT_INDEX_README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/CONSOLIDATION_REPORTS/CONSOLIDATION_ACTION_PLAN.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/CONSOLIDATION_REPORTS/CONSOLIDATION_DASHBOARD.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/CONSOLIDATION_REPORTS/CONSOLIDATION_FINAL_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/CONSOLIDATION_REPORTS/CONSOLIDATION_PHASE_INDEX.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/CONSOLIDATION_REPORTS/MARKDOWN_CONSOLIDATION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_1_COMPREHENSIVE_INVENTORY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_2_DEEP_REDUNDANCY_ANALYSIS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_2_UTILITY_CONSOLIDATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_3_TEST_ORGANIZATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_4-10_COMPREHENSIVE_STRATEGY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_4_API_CONSOLIDATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_5B_COMPLETE_CONSOLIDATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_5C_COMPLETE_DEVELOPER_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_5_FINAL_ACHIEVEMENT_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_5_FINAL_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_6_DOCUMENTATION_COMPLETE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/AUDIT_INTERACTIVE_DASHBOARD.ipynb,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/BEFORE_VS_AFTER.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/COMPLETE_FOLDER_REFERENCE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/COMPREHENSIVE_AUDIT_REPORT.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/COMPREHENSIVE_CODE_REORGANIZATION_STRATEGY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/CONSOLIDATED_AUDIT_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/CONSOLIDATED_PROJECT_HISTORY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/DEVELOPER_QUICK_START.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/FILE_INVENTORY_COMPLETE.csv,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/FINAL_VERIFICATION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/IMPLEMENTATION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/INDEX.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/MASTER_CODEBASE_CONSOLIDATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/MASTER_CODE_DOCUMENTATION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/PHASE_4_EXECUTION_PROGRESS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/POST_CONSOLIDATION_CHECKLIST.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/PROJECT_COMPLETION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/QUICK_REFERENCE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/SESSION_COMPLETE_PHASE6.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/SESSION_SUMMARY_20260307.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/START_HERE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/STRUCTURE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/VERIFICATION_AGAINST_ACTUAL_STRUCTURE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/VERIFICATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/ERROR_CODES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/00_CODE_IMPLEMENTATION_STATUS_CONSOLIDATED.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/01_PENDING_IMPLEMENTATION_ROADMAP.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/02_DOCUMENTATION_CLEANUP_PLAN.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/03_MASTER_NAVIGATION_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/PROJECT_HARMONY_TEST_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/analysis/financial-metrics.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/authentication/login-error.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/authentication/login-success.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/authentication/profile-get.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/authentication/refresh-token.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/authentication/register-error-weak-password.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/authentication/register-success.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/scenarios/scenario-create.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/api-examples/scenarios/scenario-list.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/archived-versions/CONSOLIDATION_AND_REORGANIZATION_MASTER_PLAN.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/archived-versions/CONSOLIDATION_COMPLETION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/archived-versions/DONE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/archived-versions/LISTA_IMAGENS_FONTES_CODIGO_PROJETO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/DEPLOYMENT_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/DEVELOPMENT_WORKFLOW.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/PRODUCTION_ARCHITECTURE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/QUICK_REFERENCE_CARD.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.bandit,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.editorconfig,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.env.example,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.github/workflows/ci.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.github/workflows/production-pipeline.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.gitignore,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.pre-commit-config.yaml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/.streamlit/config.toml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/01_MASTER_GETTING_STARTED.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/02_MASTER_ARCHITECTURE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/03_MASTER_IMPLEMENTATION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/04_MASTER_PRODUCTION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/05_MASTER_TESTING_QA.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/06_MASTER_DEVELOPMENT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/07_MASTER_DASHBOARD.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/08_MASTER_ADVANCED.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/API_DOCUMENTATION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHITECTURE_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/BACKEND_COMPREHENSIVE_AUDIT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/BACKEND_MODULE_INVENTORY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/CHANGELOG.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/CODEOWNERS,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/CONSOLIDATION_SUMMARY.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/CONTRIBUTING.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/DEVELOPER_SETUP_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/Dockerfile,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/Dockerfile.app,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/Dockerfile.root,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/FRONTEND_TYPESCRIPT_ANALYSIS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/GEESP-Angola.spec,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/LICENSE,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/Makefile,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_B1_B2_B3_COMPLETION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_B4_COMPLETION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_B5_COMPLETION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_C_COMPLETION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_D_E_COMPLETE_FINAL_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_D_E_FINAL_COMPLETION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_D_FRONTEND_CONSOLIDATION_COMPLETE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_E_COMPREHENSIVE_VALIDATION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_E_TESTING_ACTION_PLAN.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_F_EXECUTION_FRAMEWORK.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_F_READINESS_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_F_TESTING_STRATEGY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PROJECT_STATUS_DASHBOARD.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/QUICK_REFERENCE_PHASE_D_E.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/QUICK_START_IMPLEMENTED_FEATURES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/SESSION_COMPLETION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/TEST_SUITE_FINAL_STATUS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/gee_exports/export_manifest.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/communities_45.csv,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_aptidao_integrada.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_aptidao_integrada.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_aptidao_integrada.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_declividade.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_declividade.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_declividade.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_distanciarede.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_distanciarede.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_distanciarede.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_irradiacao.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_irradiacao.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_irradiacao.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_luminosidade_noturna.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_ndvi.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_ndvi.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_ndvi.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_populacao.npy,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_populacao.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapa_populacao.png,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/data/processed/mapas_metadata.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/db_init_backup.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/prepare_git_push.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/docker-compose-production.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/docker-compose.monitoring.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/docker-compose.root.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/docker-compose.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/.env.example,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/SECURITY_IMPLEMENTATION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/index.html,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/package.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/App.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/auth/__init__.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/auth/index.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/AdvancedFilter.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/Charts.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/Chat.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/FinancialAnalysis.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/Map.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/ScenarioLibrary.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/components/Sidebar.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/core.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/data/geoData.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/hooks/index.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/hooks/useAnalysis.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/hooks/useScenario.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/index.css,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/main.tsx,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/src/services/geminiService.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/tsconfig.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/validate-build.js,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/validate-phase-e.bat,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/frontend/vite.config.ts,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/k8s/geesp-deployment.yaml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/k8s/k8s-setup.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/launch_app.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/notebooks/demo_lcoe.ipynb,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/notebooks/demo_mcda.ipynb,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/phase3a_r_results_20260228_165352.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/phase3a_results_20260228_164607.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/pyproject.toml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/pytest.ini,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/requirements-app.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/requirements-dev.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/requirements-lock.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/requirements.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/run_all_tests.bat,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/tox.ini,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/DOCS_INDEX.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/COMPLETION_REPORT_100PERCENT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/CONSOLIDACAO_FINAL_MELHORIAS_FEB11_2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/DAILY_BRIEFING_TEMPLATE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/DASHBOARD_FINAL_MELHORIAS_FEB11_2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/EXECUTION_ACTIVATED_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/EXECUTION_PACKAGE_COMPLETE_INDEX.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/EXECUTION_STATUS_DASHBOARD_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/FILE_INDEX_IMPROVEMENTS_FEB11_2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/FULL_PROJECT_STREAMLINED.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/HANDS_OFF_COMPLETE_INVENTORY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/JOURNAL_SUBMISSION_METADATA_FEB12.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/MASTER_HANDS_OFF_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/MASTER_INDEX.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/ONE_PAGE_EXECUTION_SHEET.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/QUICK_REFERENCE_72H.txt,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/README_NEW.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/REORGANIZATION_COMPLETE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/REORGANIZATION_STRUCTURE_MAP_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/START_HERE_HANDS_OFF.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/AUDITS/COMPREHENSIVE_IMPROVEMENT_AUDIT_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/AUDITS/COMPREHENSIVE_MISSING_PARTS_AUDIT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/AUDITS/ORGANIZATION_CORRECTIONS_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/CHECKLISTS/MISSING_PARTS_ACTION_CHECKLIST.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/CHECKLISTS/PROJECT_COMPLETION_CHECKLIST.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/GANNT_EXPORT_FEB9.csv,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/RISK_MITIGATION_MATRIX_FEB2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/STATUS/PHASE1_COMPLETION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/STATUS/PHASE1_EXECUTIVE_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/STATUS/PROJECT_COMPLETENESS_DASHBOARD.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/ANSIBLE_VAULT_EXAMPLES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/BASTION_HOST_MFA_RUNBOOK.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/DEMO_SCRIPT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/FAQ_GEESP.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/FIELD_TRAINING_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/INSTITUTIONAL_SUPPORT_LETTERS_TEMPLATES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/SECRET_MANAGEMENT_GUIDE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/TECHNOLOGY_SELECTION_MATRIX_PHASE4.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/WIREGUARD_CLIENT_CONFIG_EXAMPLE.conf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/support/WIREGUARD_SERVER_CONFIG.conf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/API_TUTORIAL.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/DATABASE_SCHEMA.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/DOCKER_README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/FREE_DATASETS_SETUP.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/GEOSPATIAL_DATA_INTEGRATION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/HIGH_PRIORITY_ACTIONS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/KUBERNETES_DEPLOYMENT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/MONITORING_SETUP.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/MULTI_REGION_DEPLOYMENT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/VPN_INFRASTRUCTURE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/GEESP-COMPLETION-SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/IMPROVEMENTS_SUMMARY_FEB8.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/README-COMPLETION.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/REPRODUCIBILITY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/audit/COMPREHENSIVE_AUDIT_REPORT_FEB8.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/audit/STRICT_AUDIT_REPORT_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/EXECUTIVE_SUMMARY_PHASE4.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE1_IMPROVEMENTS_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE2_ACTIONABLE_TASKS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE3_COMPLETION_FEB8_2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE4_DELIVERY_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE4_SUPPORTING_DOCS_PARTONE.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/TECHNICAL_SUMMARY_PHASE4.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/capacity/MIT_SUMMARY_CAPABILITY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/capacity/RECOMENDACOES_OPERACIONAIS_LATEX.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/capacity/RELATORIO_CAPACIDADE_METODOLOGIA.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/checklists/CHECKLIST_SUBMISSAO_FINAL.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/checklists/RISK_SCREENING_CHECKLIST.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/references/MAPA_EVIDENCIAS_CODIGO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/references/PAPER_COMPLETION_REPORT.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/ansible/provision_wireguard_vpn.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/infrastructure/cloudformation-geesp-complete.yaml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/infrastructure/terraform/main.tf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/infrastructure/terraform/outputs.tf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/infrastructure/terraform/variables.tf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/kubernetes/geesp-app-deployment.yaml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/kubernetes/geesp-postgres-enhanced-statefulset.yaml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/kubernetes/geesp-postgres-statefulset.yaml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/monitoring/alert_rules.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/monitoring/alertmanager.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/monitoring/grafana_dashboard_data_quality.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/monitoring/grafana_dashboard_infrastructure.json,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/monitoring/prometheus.yml,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/create_github_issues.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/db_backup.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/db_init.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/db_restore.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/db_schema.sql,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/pg_env_example.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/setup_cron_backups.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/test_docker.sh,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/05_Governance/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/05_Governance/planning/BASELINE_SURVEY_PROTOCOL_FEB2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/05_Governance/submissions/MINEA_Support_Letter_FEB2026.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/AUDITORIA_MISSING_COMPLETA_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/CHECKLIST_CONCLUSAO_PROJETO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/FASE1_RESUMO_EXECUTIVO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/INDICE_MESTRE_PAINEL_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/MANIFESTO_ENTREGA_TRADUCOES_FEB9.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/PAINEL_COMPLETUDE_PROJETO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/manuscript/SOL.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/support/INSTITUTIONAL_SUPPORT_LETTERS_TEMPLATES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/07_Data/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/07_Data/data/processed/communities_45.csv,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/SOL.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/SOL.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_aptidao_integrada.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_aptidao_integrada.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_distanciarede.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_distanciarede.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_irradiacao.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_irradiacao.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_populacao.pdf,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_populacao.tex,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/referencias.bib,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/Coding parts/startofthecode,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/DEPLOYMENT_OPERATIONS_RUNBOOK.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/DEVELOPER_QUICK_START.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/FONTES_PESQUISA_COMPLEMENTAR_45_ARTIGOS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/GUIA_IMPLEMENTACAO_CITACOES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/MELHORIAS_TEORICAS_E_CASOS_NACIONAIS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/PHASE_2_INTEGRATION_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/PROJECT_IMPROVEMENTS_TRACKER.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/PROJECT_MASTER_DASHBOARD.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/PROJECT_STRUCTURE_FINAL.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/PROJECT_WIDE_IMPROVEMENTS_SUMMARY.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/README.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/STATUS_CITACOES_ATUALIZACAO.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/run_geesp_app.bat,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/PROMPT_TEMPLATES.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/RELATORIO_CONFORMIDADE_CIENTIFICA.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/RELATORIO_FINAL_MELHORIAS_BIBLIOGRAFICAS.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/RESEARCH_FINDINGS_COMPILED.md,Normal,Low,Keep,No immediate action required
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/execute_reorganization.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/expand_all_sections.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/expand_results_discussion.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/fix_corruptions.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/insert_governanca.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/reorganize_sol.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/reorganize_sol_analysis.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/analysis/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/analysis/base.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/analysis/lcoe.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/analysis/mcda.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/analysis/validation_base.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/api/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/api/api.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/api/endpoints.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/api/models.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/app.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/core/config.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/app.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/app_refactored.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/components.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/pages.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/state.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/cache_manager.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/error_handlers.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/helpers.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/page_router.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/session_state.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/utils/validators_ui.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/database/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/database/models.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/geospatial/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/geospatial/earth_engine_integration.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/geospatial/operations.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/geospatial/raster.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/integration/master_validation.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/integration/performance_benchmark.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/maps/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/maps/exporters.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/maps/generator.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/migrations/env.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/migrations/versions/001_initial_schema.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/models/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/models/models/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/models/models/monitoring.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/models/results.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/models/scenario.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/api/api.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/api/api_server.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/base.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/data_loaders_async.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/lcoe_calculator.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/mcda_analysis.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/scripts/validation_pipeline.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/conftest.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/e2e/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/integration/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/integration/test_dashboard_state.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/integration/test_database_models.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/integration/test_maps_pdf.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/performance/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/performance/test_performance_profiling.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/run_gee_tests.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/test_api_endpoints.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/test_lcoe_calculator.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/unit/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/unit/test_communities.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/unit/test_dashboard_components.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/unit/test_dashboard_pages.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/tests/unit/test_mcda.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/__init__.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/constants.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/data_processing.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/exceptions.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/helpers.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/logging.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/performance.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/utils/validation.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/wsgi.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/build_windows_app.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/find_orphaned_imports.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/import_migration_analyzer.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/monitoring/monitoring_app.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/phase2b_import_updater.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/run_tests.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/test_consolidation.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/validate_consolidation.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/validate_consolidations.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/api.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/create_one_page_visual.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/cron_data_sync.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/data_ingestion_etl.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/earth_engine_integration.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/free_datasets_integration.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/generate_financial_report.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/generate_sensitivity_report.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/monitoring_email_alerts.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/apply_new_structure.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/reorganize_comprehensive.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/reorganize_project.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/08_Archive/geesp-angola-fixes/phase2_unicode_logging_fix.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/fix_latex.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_e2e_workflows.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_edge_cases_comprehensive.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_gee_extraction.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_integration_full_workflow.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_lcoe.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_load_performance.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_maps.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_security.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_utils.py,Python Script,Low,Keep/maintain,Script source file
+useless/archived_tests_phase5/test_validators.py,Python Script,Low,Keep/maintain,Script source file
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.tex,Archive,Medium,Keep archived,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3B_REFACTORING_PROGRESS.md,Archive,Medium,Keep archived,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.tex.backup,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.tex.backup3,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.tex.backup_before_fix,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.tex.backup_before_newline_fix,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_BACKUP_20260305_234021.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado_BACKUP_20260315_172151.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/.env.example,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/.gitignore,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/GEESP-Angola-API.postman_collection.json,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/README.md,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/SECURITY_IMPLEMENTATION.md,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/TIER1_COMPLETION_REPORT.md,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/index.html,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/metadata.json,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/package-lock.json,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/package.json,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/server.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/App.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/AdvancedFilter.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/Charts.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/Chat.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/FinancialAnalysis.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/Map.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/ScenarioLibrary.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/components/Sidebar.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/constants.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/data/geoData.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/index.css,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/main.tsx,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/middleware/auth.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/routes/auth.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/services/geminiService.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/swagger.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/types.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/utils/password.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/tsconfig.json,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/vite.config.ts,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/DB_BACKUP_RESTORE.md,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/Referências,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOL.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOL.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOLV2IMPROVBYPT.TEX,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOL_backup_20260207_230841.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_aptidao_integrada.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_aptidao_integrada.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_distanciarede.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_distanciarede.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_irradiacao.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_irradiacao.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_populacao.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_populacao.tex,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/main.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/papier.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/papier_fixed.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/referencias.bib,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/write.pdf,Backup,Medium,Archive/verify canonical source,Multiple manuscript variants increase drift risk
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/RESUMO_EXECUTIVO_SOL.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/RESUMO_EXECUTIVO_SOL.fdb_latexmk,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/RESUMO_EXECUTIVO_SOL.fls,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/RESUMO_EXECUTIVO_SOL.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.bbl,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.fdb_latexmk,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.fls,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.out,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/%OUTDIR%/SOL.toc,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/RESUMO_EXECUTIVO_SOL.synctex.gz,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.bbl,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.fdb_latexmk,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.fls,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.out,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.synctex.gz,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL.toc,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOLEX.toc,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.bbl,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.blg,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.fdb_latexmk,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.out,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_melhorado.toc,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/compile_final_check.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_aptidao_integrada.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_aptidao_integrada.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_distanciarede.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_distanciarede.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_irradiacao.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_irradiacao.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_populacao.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/figures/mapa_populacao.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/reorganization_execution.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.bbl,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.blg,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.out,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/SOL.toc,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOL.bbl,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/bibtex.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/build.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compilation.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile2.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile_pass1.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile_pass2.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile_pass3.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_aptidao_integrada.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_aptidao_integrada.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_distanciarede.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_distanciarede.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_irradiacao.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_irradiacao.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_populacao.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/figuras/mapa_populacao.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/final.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/writing/figuras/texput.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/writing/texput.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_aptidao_integrada.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_aptidao_integrada.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_distanciarede.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_distanciarede.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_irradiacao.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_irradiacao.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_populacao.aux,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/Coding parts/SUBMISSION_READY/figuras/mapa_populacao.log,Build Artifact,Medium,Ignore/remove from VCS,Generated file; should not be source-of-truth
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/papier.tex,Manuscript Variant,Medium,Consolidate,Keep one canonical manuscript and archive variants
+MIT-SCIENCE-PAPER/main.tex,Manuscript Variant,Medium,Consolidate,Keep one canonical manuscript and archive variants
+MIT-SCIENCE-PAPER/papier.tex,Manuscript Variant,Medium,Consolidate,Keep one canonical manuscript and archive variants
+MIT-SCIENCE-PAPER/papier_fixed.tex,Manuscript Variant,Medium,Consolidate,Keep one canonical manuscript and archive variants
+MIT-SCIENCE-PAPER/ANALISE_CRITICA_ARGUMENTACAO_ARTIGO.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/ACADEMIC_SOURCES_SOLAR_ENERGY_ANGOLA.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/LISTA_EXTENSA_IMAGENS_SOL_TEX.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/01_Science/manuscript/SOL_SUBMISSION.tex,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/01_Science/presentations/deck/PRESENTATION_DECK_OUTLINE.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/AUDIT_REPORTS/DETAILED_HEALTH_CHECK.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/02_Code/ARCHIVE/PHASE_REPORTS/PHASE_3_QUALITY_ASSESSMENT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/04_FINAL_HARMONIZATION_REPORT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_F_BACKEND_INTEGRATION_PLAN.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/config.json,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/EXECUTION_TRACKER_REALTIME_FEB9-12.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/IMPLEMENTATION_SUMMARY_FEB11_2026.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/PLANO_EXECUCAO_72H_FEB9-12.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/PROJECT_FOLDER_GUIDE.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/AUDITS/MISSING_ITEMS_COMPREHENSIVE_FEB9.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/GANNT_MASTER_FEB2026.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/INDEX.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/TECHNICAL_DEBT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/analysis/ANALISE_INTEGRADA_PROPOSTA_VS_REALIDADE.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/analysis/PROJECT_ANALYSIS_REPORT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE2_COMPLETION_FEB8_2026.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE4_COMPLETION_SUMMARY.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/capacity/RESPOSTA_FINAL_CAPACIDADE.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/checklists/CHECKLIST_CAPACIDADE_DETALHADO.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/references/INDICE_DOCUMENTOS_CRIADOS.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/technical_debt_todo_prioritized.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/04_Operations/scripts/export_markers.ps1,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/05_Governance/funding/FUNDING_PROPOSAL_COMPLETE_FEB2026.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/coding/QUICKSTART.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/coding/README.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/CHECKLIST_ACAO_ITEMS_FALTANDO.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/FASE1_RELATORIO_CONCLUSAO.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/ITEMS_FALTANDO_ABRANGENTE_FEB9.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/LEIA-ME.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/ORGANIZACAO_CORRECOES_FEB9.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/docs/PROJECT_FOLDER_GUIDE_PT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/presentations/ONE_PAGE_SUMMARY_PT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/presentations/PRESENTATION_DECK_OUTLINE_PT.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/ANALISE_BIBLIOGRAFICA_E_MELHORIAS.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/MELHORIAS_BIBLIOGRAFICAS_CONCLUSAO.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/PHASE_C_TIER2_RESEARCH_PROTOCOL.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/STANDARDIZATION_CONSOLIDATION_STRATEGY.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/TESTING_STRATEGY_GUIDE.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/RELATORIO_DISCREPANCIA_CODIGO_MANUSCRITO.md,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/write.tex,Normal,Medium,Review outstanding items,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/analysis/CODE_FUNCTIONALITY_AUDIT.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/BUILD_WINDOWS_APP_QUICK.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/DEPENDENCIES_AND_SETUP.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/02_Code/docs/guides/WINDOWS_APP_PACKAGING.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-algeria/PHASE_F_EXECUTION_LOG.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/PHASE_F_QUICK_START.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/CHECKLIST_DIA1_FEB9_START_NOW.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/EXECUTION_GUIDE_REORGANIZATION_FEB9.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/HANDS_OFF_FEB10_FEB11_FEB12.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/HANDS_OFF_SYSTEM_ZERO_DECISIONS.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/navigation/LIVE_EXECUTION_TASK1_FEB9.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/project_management/CHECKLISTS/PORTUGUESE_TRANSLATION_COMPLETION_REPORT.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/PLANO_EXECUCAO_72H.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/audit/AUDITORIA_COMPLETA_ALINHAMENTO.md,Portability,Medium,Replace absolute paths,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/audit/AUDIT_FOLDER_STATUS.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/reports/phases/PHASE1_COMPLETION_FEB8_2026.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/resources/references/MASTER_SUMMARY_FINAL.md,Portability,Medium,Replace absolute paths,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/technical_debt_matches.csv,Portability,Medium,Replace absolute paths,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/technical_debt_matches_full.csv,Portability,Medium,Replace absolute paths,Contains unresolved work markers
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/DELIVERY_MANIFEST.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/README_TRANSLATIONS.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/06_Translations/translations/pt/coding/INSTALL.md,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+MIT-SCIENCE-PAPER/Full project/08_Archive/archive/REORGANIZATION_LOG.txt,Portability,Medium,Replace absolute paths,Contains machine-specific path reference
+repo_audit.py,Portability,Medium,Replace absolute paths,Contains unresolved work markers
+fix_citations.py,Python Script,Medium,Keep/maintain,Contains unresolved work markers
+fix_latex_issues.py,Python Script,Medium,Keep/maintain,Contains unresolved work markers

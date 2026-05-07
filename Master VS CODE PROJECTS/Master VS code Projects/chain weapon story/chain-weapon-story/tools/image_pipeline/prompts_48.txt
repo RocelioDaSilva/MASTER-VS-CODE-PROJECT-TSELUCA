@@ -1,0 +1,63 @@
+01-A: Rustic crossroads tavern at dusk, stag-antler sign silhouette, warm golden window light spilling onto wet cobbles, layered low hills behind, painterly brushwork, soft film grain — denoise 0.22, steps 28, cfg 7.5
+01-B: Rustic crossroads tavern, rainy evening with reflective puddles and amber glows, subtle mist, cinematic low light — denoise 0.26, steps 30, cfg 7.5
+01-C: Flat vector tavern header: clean shapes, warm gradient sky, minimal texture, crisp silhouettes — denoise 0.12, steps 22, cfg 6.5
+
+02-A: Layered forest ridges with flowering grove foreground, warm shafts of light and soft painterly bloom, gentle haze — denoise 0.24, steps 28, cfg 7.0
+02-B: Same grove at golden hour with stronger backlight and petal dust in air, more saturated greens — denoise 0.26, steps 30, cfg 7.0
+02-C: Stylized flat-graphic flower grove: simplified shapes, high-clarity silhouettes, harmonious greens — denoise 0.14, steps 22, cfg 6.5
+
+03-A: Academy training yard panorama with rows of spears and wooden dummies, stone halls in background, crisp mid-day light, semi-realistic detail — denoise 0.22, steps 28, cfg 7.5
+03-B: Same yard at overcast dawn with cool desaturated tones and soft shadows, more atmospheric haze — denoise 0.26, steps 30, cfg 7.5
+03-C: Minimal vector training yard: clean repeating spear silhouettes, muted palette, geometric clarity — denoise 0.12, steps 20, cfg 6.5
+
+04-A: Aldric’s Crossing skyline, layered towers and bridges with warm window glows and soft atmospheric haze, cinematic composition — denoise 0.24, steps 28, cfg 7.5
+04-B: City skyline at dusk with stronger rim light and cool-blue upper sky, subtle fog in valleys — denoise 0.26, steps 30, cfg 7.5
+04-C: Stylized skyline vector with flat color blocks and gentle gradient sky, clear silhouettes — denoise 0.14, steps 22, cfg 6.5
+
+05-A: Frostfang ridge panoramic: jagged cold peaks, thin snow dust, low sun casting long blue shadows, dramatic atmosphere — denoise 0.26, steps 30, cfg 8.0
+05-B: Frostfang at pale dawn with pink-cold horizon and drifting flurries, high contrast but soft edges — denoise 0.28, steps 32, cfg 8.0
+05-C: Clean geometric cold-peak variant: simple layered peaks, minimal texture, cool desaturated palette — denoise 0.14, steps 22, cfg 6.8
+
+06-A: Narrow mountain pass with rope bridge silhouettes and wind-blown banners, rim-lighting, cinematic tension — denoise 0.24, steps 28, cfg 7.8
+06-B: Same pass shrouded in thin cloud and drifting snow, muted tones and soft light — denoise 0.28, steps 30, cfg 8.0
+06-C: Minimal silhouette bridge scene: stark shapes, strong horizon line, high-clarity contrast — denoise 0.12, steps 20, cfg 6.5
+
+07-A: Misty river at dawn with low wooden boats half-hidden, reed silhouettes and soft reflections, atmospheric soft-focus — denoise 0.24, steps 28, cfg 7.2
+07-B: River at twilight with cooler tones, slight moon shimmer and thin fog layer, reflective water — denoise 0.26, steps 30, cfg 7.2
+07-C: Flat graphic river banner: long horizontal reeds and clean boat silhouettes, muted palette — denoise 0.14, steps 22, cfg 6.5
+
+08-A: Border village at dusk with watchfires and low huts, smoke trails and worn textures, textured-grit feel — denoise 0.28, steps 30, cfg 8.0
+08-B: Same village by dawn with faint blue light, embers fading, low-angle soft shadows — denoise 0.26, steps 30, cfg 7.8
+08-C: Simplified village strip: clean hut silhouettes, warm central glow, minimal texture — denoise 0.14, steps 22, cfg 6.5
+
+09-A: Refugee camp twilight panorama with rows of tents and lantern glows, muted compassionate palette and soft haze — denoise 0.24, steps 28, cfg 7.5
+09-B: Camp at pre-dawn with cool-blue lamps and damp ground reflections, gentle atmosphere — denoise 0.26, steps 30, cfg 7.5
+09-C: Vector-style camp header: orderly tent silhouettes, single warm focal light, low texture — denoise 0.12, steps 20, cfg 6.5
+
+10-A: Archive vault with high stacks and lamplight, dust motes and deep perspective, warm chiaroscuro — denoise 0.24, steps 28, cfg 7.8
+10-B: Archive cool variant with pale lamplight and stronger rim highlights on shelves, dusty shafts — denoise 0.26, steps 30, cfg 7.8
+10-C: Clean graphic stacks: repeating shelf silhouettes, uniform warm-tan palette, high readability — denoise 0.14, steps 22, cfg 6.8
+
+11-A: Ruined temple with crumbled pillars and faint rune glow, low fog and subtle magical particles, mystical painterly — denoise 0.26, steps 30, cfg 8.0
+11-B: Temple at moonlit night with faint bioluminescent rune dust and cool highlights — denoise 0.28, steps 32, cfg 8.0
+11-C: Stylized temple shapes with simplified glowing lines and minimal detail — denoise 0.14, steps 22, cfg 6.8
+
+12-A: Dungeon mouth rim with stalactite silhouettes and warm inner torchlight, deep shadow contrast — denoise 0.28, steps 30, cfg 8.0
+12-B: Same cave entrance with cold blue exterior and a single distant torch flicker inside, high contrast — denoise 0.30, steps 32, cfg 8.0
+12-C: Clean silhouette dungeon edge: bold rock shapes and single warm glow, minimal texture — denoise 0.14, steps 22, cfg 6.8
+
+13-A: Wasteland dunes, layered ridges with sparse scrub, muted sandy palette, minimal horizon — denoise 0.22, steps 28, cfg 7.0
+13-B: Wasteland at sunset with long warm shadows and subtle dust in air, richer golds — denoise 0.26, steps 30, cfg 7.2
+13-C: Flat geometric dunes: simple layered waves of color, clean edges, low grain — denoise 0.12, steps 20, cfg 6.5
+
+14-A: Snow plain with soft powder and distant wind-carved ridges, pale sky, calm minimalist composition — denoise 0.22, steps 28, cfg 7.2
+14-B: Snow plain at blue hour with gentle auroral tint and faint drifting snow — denoise 0.26, steps 30, cfg 7.5
+14-C: Clean cold-vector plain: broad pale bands, minimal detail, high clarity — denoise 0.12, steps 20, cfg 6.5
+
+15-A: Under-city vaulted arches with shallow reflective pools and amber lamplight, moody cinematic contrast — denoise 0.26, steps 30, cfg 8.0
+15-B: Under-city with cool-green bioluminescent accents and misted pools, eerie quiet — denoise 0.28, steps 32, cfg 8.0
+15-C: Graphic undercity strip: repeating arch silhouettes and single reflection band, limited palette — denoise 0.14, steps 22, cfg 6.8
+
+16-A: Dusk battlefield ridge with rows of spear and banner silhouettes, low fires and haze, somber cinematic light — denoise 0.26, steps 30, cfg 8.0
+16-B: Same ridge at sunrise with cool mist and backlit spears, quieter tone — denoise 0.28, steps 32, cfg 8.0
+16-C: High-contrast silhouette battlefield: bold flags and spear lines, minimal color, textured paper grain — denoise 0.14, steps 24, cfg 7.0

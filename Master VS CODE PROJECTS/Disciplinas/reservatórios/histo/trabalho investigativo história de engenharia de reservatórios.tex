@@ -1,0 +1,264 @@
+% TCC: História da Engenharia de Reservatórios
+\PassOptionsToPackage{brazilian}{babel}
+\documentclass[12pt,a4paper,oneside,brazilian,sumario=tradicional]{abntex2}
+
+% CORREÇÃO DO IDIOMA (evita aviso do babel)
+\PassOptionsToPackage{brazilian}{babel}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=2cm,top=3cm,bottom=2cm}
+\usepackage{setspace}
+\OnehalfSpacing
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\usepackage{emptypage}
+
+% Figuras, tabelas e ilustrações
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes, patterns, decorations.pathmorphing, calc}
+\captionsetup{font=small, labelfont=bf, justification=centering, skip=6pt}
+\renewcommand{\fonte}[1]{\vspace{2pt}\par\noindent\footnotesize Fonte: #1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{epigraph}
+\usepackage{microtype}
+
+\usepackage[alf,abnt-etal-list=0,abnt-etal-cite=3,abnt-repeated-author-omit=yes,abnt-emphasize=bf]{abntex2cite}
+
+\hypersetup{
+  pdftitle={História da Engenharia de Reservatórios},
+  pdfauthor={Nome do Estudante},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+
+% Compatibilidade para entradas geradas no .bbl (comandos antigos)
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\texttt}
+\usepackage{url}
+\providecommand{\htmladdnormallink}[2]{\href{#2}{#1}}
+
+% Dados da capa
+\titulo{História da Engenharia de Reservatórios}
+\autor{Nome do Estudante}
+\orientador{Nome do Orientador}
+\instituicao{%
+  Instituto Superior Politécnico de Tecnologias e Ciências -- ISPTEC\\
+  Departamento de Geociências\\
+  Curso de Engenharia de Petróleo
+}
+\local{Luanda -- Angola}
+\data{2026}
+\tipotrabalho{Trabalho de Avaliação Contínua}
+\preambulo{Trabalho investigativo apresentado ao Curso de Engenharia de
+Petróleo do Departamento de Geociências do Instituto Superior
+Politécnico de Tecnologias e Ciências (ISPTEC) como avaliação contínua
+na disciplina de Engenharia de Reservatórios, sob orientação do
+\imprimirorientador.}
+
+\begin{document}
+\frenchspacing
+\pretextual
+\imprimircapa
+\imprimirfolhaderosto
+
+\begin{fichacatalografica}
+  \thispagestyle{empty}
+  \vspace*{\fill}
+  \begin{center}
+    \fontsize{9}{9}\selectfont
+    \noindent
+    \imprimirautor.
+
+    \imprimirtitulo / \imprimirautor. -- \imprimirlocal: ISPTEC, \imprimirdata.
+
+    \pageref{LastPage} p. : il.
+
+    Trabalho de Avaliação Contínua -- Instituto Superior Politécnico de
+    Tecnologias e Ciências (ISPTEC). Departamento de Geociências. Curso
+    de Engenharia de Petróleo, \imprimirlocal, \imprimirdata.
+
+    Professor: \imprimirorientador.
+
+    1. Engenharia de Reservatórios -- História. 2. Petróleo -- Produção.
+    3. Simulação Numérica. 4. Recuperação Avançada de Petróleo (EOR).
+
+    I. \imprimirorientador. II. Instituto Superior Politécnico de Tecnologias e Ciências.
+  \end{center}
+\end{fichacatalografica}
+
+\begin{folhadeaprovacao}
+  \thispagestyle{empty}
+  \begin{center}
+    {\ABNTEXchapterfont\large\MakeUppercase{\imprimirautor}}
+    \vspace*{1cm}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\large\MakeUppercase{\imprimirtitulo}
+    \end{center}
+    \vspace*{1cm}
+    \hspace{.38\textwidth}
+    \begin{minipage}{.56\textwidth}
+      \imprimirpreambulo
+    \end{minipage}
+    \vspace*{1cm}
+  \end{center}
+
+  Trabalho avaliado em \underline{\hspace{1.8cm}} de
+  \underline{\hspace{3.5cm}} de \underline{\hspace{1.2cm}}
+
+  \vspace{1.5cm}
+  \assinatura{\textbf{\imprimirorientador} \\ Prof. Orientador}
+
+  \begin{center}
+    \imprimirlocal, \imprimirdata
+  \end{center}
+\end{folhadeaprovacao}
+
+\setlength{\absparsep}{18pt}
+\begin{resumo}
+Este trabalho apresenta uma visão histórica e crítica da Engenharia de
+Reservatórios, desde as práticas empíricas iniciais até as técnicas
+contemporâneas de simulação, recuperação avançada (EOR) e desafios
+ambientais. O texto sintetiza marcos históricos, métodos de estimativa de
+volumes, principais mecanismos de produção, e perspectivas futuras com
+ênfase na transformação digital e sustentabilidade. O documento foi
+construído a partir de material de referência e fontes técnicas
+especializadas, obedecendo normas acadêmicas para apresentações em LaTeX.
+\vspace{6pt}
+\noindent\textbf{Palavras-chave}: Engenharia de Reservatórios; EOR; simulação; história; Angola.
+\end{resumo}
+
+\begin{resumo}[Abstract]
+This study provides a concise historical overview of Reservoir Engineering,
+from early empirical practices to contemporary techniques including
+numerical simulation and enhanced oil recovery (EOR). It highlights the main
+historical milestones, recovery methods and future perspectives, emphasizing
+digital transformation and sustainability.
+\end{resumo}
+
+% Listas pré-textuais conforme modelo ISPTEC
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+\begin{siglas}
+  \item[CCS]    \textit{Carbon Capture and Storage} -- Captura e Armazenamento de CO\textsubscript{2}
+  \item[EOR]    \textit{Enhanced Oil Recovery} -- Recuperação Avançada de Petróleo
+  \item[IA]     Inteligência Artificial
+  \item[IoT]    \textit{Internet of Things} -- Internet das Coisas
+  \item[ISPTEC] Instituto Superior Politécnico de Tecnologias e Ciências
+  \item[OOIP]   \textit{Original Oil In Place} -- Volume Original de Óleo no Reservatório
+  \item[PVT]    Análise Pressão-Volume-Temperatura
+\end{siglas}
+
+\begin{simbolos}
+  \item[$q$] Vazão volumétrica (cm\textsuperscript{3}/s)
+  \item[$k$] Permeabilidade absoluta (Darcy ou mD)
+  \item[$A$] Área da seção transversal (cm\textsuperscript{2})
+  \item[$\mu$] Viscosidade dinâmica do fluido (cP)
+  \item[$\phi$] Porosidade efetiva (fração)
+  \item[$N$] Volume original de óleo \textit{in place} (OOIP)
+\end{simbolos}
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+\textual
+
+\chapter{Introdução}
+A engenharia de reservatórios constitui uma área essencial na indústria do
+petróleo, dedicada à análise, gestão e otimização da produção de
+hidrocarbonetos em meios porosos. Sua origem está ligada ao desenvolvimento
+da indústria petrolífera comercial a partir de meados do século XIX e ao
+avanço de conceitos físicos que permitiram a modelagem do escoamento em
+subsuperfície \cite{yergin1991,dake1994}.
+
+Este trabalho organiza conteúdo histórico e técnico para formar um TCC
+compatível com as normas acadêmicas, incluindo capa, resumo, sumário,
+introdução, desenvolvimento, conclusão e referências, empregando o pacote
+`abntex2` para conformidade com as normas ABNT.
+
+\chapter{Objetivos}
+\section{Objetivo Geral}
+Analisar a evolução histórica da Engenharia de Reservatórios e sua
+importância técnica e institucional para a gestão eficiente de campos
+petrolíferos.
+
+\section{Objetivos Específicos}
+\begin{itemize}
+  \item Descrever a origem da indústria petrolífera e a emergência da engenharia de reservatórios;
+  \item Apresentar a evolução dos métodos de recuperação (primária, secundária e EOR);
+  \item Identificar desafios atuais e perspectivas futuras, com foco em Angola.
+\end{itemize}
+
+\chapter{Metodologia}
+Trata-se de uma pesquisa bibliográfica e qualitativa, com levantamento e
+análise crítica de fontes técnicas, livros e publicações setoriais.
+As informações foram sintetizadas para atender à finalidade educativa e
+acadêmica do TCC \cite{ahmed2010,craft1991}.
+
+\chapter{Desenvolvimento}
+\section{Origem da indústria petrolífera}
+O marco inicial da indústria petrolífera moderna é comumente atribuído à
+perfuração do primeiro poço comercial por Edwin Drake, em 1859, nos EUA;
+posteriormente, a indústria expandiu-se globalmente, exigindo técnicas de
+exploração e produção cada vez mais sofisticadas \cite{yergin1991}.
+
+\section{Evolução histórica da Engenharia de Reservatórios}
+A disciplina evoluiu de práticas empíricas para uma área científica com base
+em princípios físicos como a Lei de Darcy, metodologias de balanço de
+materiais e, mais tarde, simulação numérica \cite{muskat1949,dake1994,peaceman1977}.
+Com o advento da computação, modelos tridimensionais e a integração de
+dados geológicos e de produção tornaram-se instrumentos essenciais
+para o planejamento de produção \cite{peaceman1977,aziz1979}.
+
+\section{Métodos de recuperação de petróleo}
+Os métodos de recuperação evoluíram de mecanismos naturais (recuperação
+primária) a técnicas secundárias (injeção de água/gás) e, ultimamente, a
+EOR (injeção de CO$_2$, polímeros, surfactantes, injeção de vapor) para
+recuperar volumes residuais \cite{lake2007,craft1991}.
+
+\section{Desafios atuais e perspectivas}
+Desafios modernos incluem a gestão de campos maduros, complexidade
+geológica, exigências ambientais e volatilidade de preços. A integração de
+inteligência artificial e digital twins oferece novas oportunidades para a
+otimização, enquanto a captura e armazenamento de carbono (CCS) e outras
+tecnologias seguem como áreas prioritárias de desenvolvimento \cite{mungan2019,bachu2000}.
+
+\chapter{Conclusão}
+Este trabalho sintetiza a trajetória da Engenharia de Reservatórios, mostrando
+como a disciplina transicionou de conhecimentos empíricos para uma prática
+multidisciplinar e tecnológica. Para Angola, recomenda-se priorizar a
+capacitação local, investimento em dados e pilotos bem delineados para
+aplicar métodos de EOR e considerar projetos de CCS quando viáveis.
+
+\postextual
+% Incluir todas as entradas do arquivo .bib (mesmo que não citadas diretamente)
+\nocite{*}
+\bibliographystyle{abntex2-alf}
+\bibliography{referencias}
+
+\end{document}

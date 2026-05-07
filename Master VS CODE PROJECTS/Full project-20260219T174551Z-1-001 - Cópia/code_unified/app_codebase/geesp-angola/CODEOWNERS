@@ -1,0 +1,36 @@
+# ============================================================================
+# CODEOWNERS: Automatic Code Review Assignments
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# ============================================================================
+
+# Global owners (all files)
+* @rocelio-da-silva
+
+# Core Scripts
+/scripts/ @rocelio-da-silva @alexandre-santos
+
+# Dashboard
+/dashboard/ @rocelio-da-silva
+
+# Monitoring
+/monitoring/ @rocelio-da-silva
+
+# Tests
+/tests/ @rocelio-da-silva
+
+# Data Processing
+/data/ @rocelio-da-silva @delfina-mpanka
+
+# Configuration Files
+/config.json @rocelio-da-silva
+pyproject.toml @rocelio-da-silva
+Makefile @rocelio-da-silva
+Dockerfile @rocelio-da-silva
+
+# CI/CD
+/.github/workflows/ @rocelio-da-silva
+
+# Documentation (Python/config only, not .md)
+*.json @rocelio-da-silva
+*.yaml @rocelio-da-silva
+*.yml @rocelio-da-silva

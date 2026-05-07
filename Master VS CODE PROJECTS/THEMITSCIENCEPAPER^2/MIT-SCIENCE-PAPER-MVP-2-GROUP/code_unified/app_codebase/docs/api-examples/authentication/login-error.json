@@ -1,0 +1,38 @@
+{
+  "endpoint": "POST /api/auth/login",
+  "description": "Login failed - invalid credentials",
+  "method": "POST",
+  "url": "http://localhost:3000/api/auth/login",
+  "summary": "Authentication failed",
+  
+  "request": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "email": "user@example.com",
+      "password": "WrongPassword123!"
+    }
+  },
+  
+  "response": {
+    "status": 401,
+    "statusText": "Unauthorized",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": false,
+      "error": "INVALID_CREDENTIALS",
+      "message": "Invalid email or password"
+    }
+  },
+  
+  "notes": [
+    "HTTP 401 Unauthorized returned for invalid credentials",
+    "Does not reveal whether email exists or just wrong password (security)",
+    "Rate limited: 5 attempts per 15 minutes per IP",
+    "After 5 failed attempts, get HTTP 429 Too Many Requests",
+    "Check email and password, then retry"
+  ]
+}
