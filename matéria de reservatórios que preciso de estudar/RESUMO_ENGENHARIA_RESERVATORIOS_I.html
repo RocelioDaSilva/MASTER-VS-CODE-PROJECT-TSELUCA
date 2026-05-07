@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resumo – Engenharia de Reservatórios I | ISPTEC 2025/2026</title>
+  <style>
+    /* ─── RESET & BASE ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+      color: #1a1a2e;
+      background: #f0f4f8;
+      line-height: 1.7;
+    }
+
+    /* ─── COLOUR PALETTE ─── */
+    :root {
+      --navy:   #0d1b2a;
+      --blue:   #1b4f72;
+      --light-blue: #2e86c1;
+      --orange: #e67e22;
+      --gold:   #f39c12;
+      --green:  #1a7a4a;
+      --red:    #c0392b;
+      --teal:   #0e6655;
+      --bg-card: #ffffff;
+      --bg-light: #eaf4fb;
+      --bg-formula: #fef9e7;
+      --border: #d5d8dc;
+      --accent1: #1b4f72;
+      --accent2: #e67e22;
+    }
+
+    /* ─── PRINT ─── */
+    @media print {
+      body { background: white; font-size: 12px; }
+      .no-print { display: none; }
+      .chapter { page-break-before: always; }
+      .cover { page-break-after: always; }
+      a { color: inherit; text-decoration: none; }
+    }
+
+    /* ─── LAYOUT ─── */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px 60px; }
+
+    /* ─── COVER ─── */
+    .cover {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, #145a8a 100%);
+      color: white;
+      text-align: center;
+      padding: 80px 40px 60px;
+      border-bottom: 6px solid var(--orange);
+      margin-bottom: 0;
+    }
+    .cover .logo-band {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 2px;
+      margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      line-height: 1.2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
+    }
+    .cover h2 {
+      font-size: 1.3rem;
+      font-weight: 300;
+      opacity: 0.85;
+      margin-bottom: 40px;
+    }
+    .cover .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+    .cover .meta-item {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 8px;
+      padding: 14px 12px;
+    }
+    .cover .meta-item span {
+      display: block;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.65;
+      margin-bottom: 4px;
+    }
+    .cover .meta-item strong { font-size: 1rem; }
+    .cover .tagline {
+      background: rgba(230,126,34,0.25);
+      border: 1px solid var(--orange);
+      border-radius: 8px;
+      padding: 14px 24px;
+      font-size: 0.95rem;
+      max-width: 560px;
+      margin: 0 auto;
+      font-style: italic;
+    }
+
+    /* ─── TABLE OF CONTENTS ─── */
+    .toc-section {
+      background: var(--bg-card);
+      border-left: 5px solid var(--orange);
+      border-radius: 0 12px 12px 0;
+      padding: 32px 36px;
+      margin: 36px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+    .toc-section h2 {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 20px;
+    }
+    .toc-list { list-style: none; }
+    .toc-list li { margin-bottom: 10px; }
+    .toc-list a {
+      text-decoration: none;
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: color 0.2s;
+    }
+    .toc-list a:hover { color: var(--orange); }
+    .toc-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+    }
+    .badge-1 { background: #1b4f72; }
+    .badge-2 { background: #1a7a4a; }
+    .badge-3 { background: #7d3c98; }
+    .badge-4 { background: #c0392b; }
+
+    /* ─── CHAPTER HEADER ─── */
+    .chapter-header {
+      padding: 40px 36px 28px;
+      border-radius: 12px 12px 0 0;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .chapter-header::after {
+      content: attr(data-num);
+      position: absolute;
+      right: 24px; bottom: -20px;
+      font-size: 8rem;
+      font-weight: 900;
+      opacity: 0.08;
+      line-height: 1;
+    }
+    .ch1-bg { background: linear-gradient(135deg, #1b4f72 0%, #2e86c1 100%); }
+    .ch2-bg { background: linear-gradient(135deg, #1a7a4a 0%, #27ae60 100%); }
+    .ch3-bg { background: linear-gradient(135deg, #6c3483 0%, #9b59b6 100%); }
+    .ch4-bg { background: linear-gradient(135deg, #922b21 0%, #e74c3c 100%); }
+    .chapter-header .num {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+    .chapter-header h2 { font-size: 1.7rem; font-weight: 800; }
+    .chapter-header .subtitle { font-size: 0.95rem; opacity: 0.8; margin-top: 6px; }
+
+    /* ─── CHAPTER BODY ─── */
+    .chapter-body {
+      background: var(--bg-card);
+      border-radius: 0 0 12px 12px;
+      padding: 32px 36px 40px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+      margin-bottom: 48px;
+    }
+
+    /* ─── SECTION TITLE ─── */
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 32px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-blue { background: var(--light-blue); }
+    .dot-green { background: var(--green); }
+    .dot-purple { background: #8e44ad; }
+    .dot-red { background: var(--red); }
+
+    /* ─── KEY CONCEPT BOX ─── */
+    .concept-box {
+      background: var(--bg-light);
+      border-left: 4px solid var(--light-blue);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    .concept-box.green { border-color: var(--green); background: #eafaf1; }
+    .concept-box.purple { border-color: #8e44ad; background: #f5eef8; }
+    .concept-box.red { border-color: var(--red); background: #fdedec; }
+    .concept-box.orange { border-color: var(--orange); background: #fef5e7; }
+
+    /* ─── DEFINITION ─── */
+    .def {
+      font-weight: 700;
+      color: var(--blue);
+    }
+    .def.green { color: var(--green); }
+    .def.purple { color: #7d3c98; }
+    .def.red { color: var(--red); }
+
+    /* ─── FORMULA BOX ─── */
+    .formula-box {
+      background: var(--bg-formula);
+      border: 1.5px solid #f0ca4d;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 14px 0;
+      font-family: 'Courier New', Consolas, monospace;
+      font-size: 0.95rem;
+      color: #5d4037;
+    }
+    .formula-box .formula-label {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #b7950b;
+      margin-bottom: 6px;
+    }
+    .formula-box .formula-main {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+    .formula-box .formula-note {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.82rem;
+      color: #7f8c8d;
+      margin-top: 8px;
+    }
+
+    /* ─── TABLE ─── */
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.88rem;
+    }
+    .styled-table thead tr {
+      background: var(--navy);
+      color: white;
+    }
+    .styled-table th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .styled-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e8ecef;
+    }
+    .styled-table tbody tr:nth-child(even) { background: #f8f9fa; }
+    .styled-table tbody tr:hover { background: #eaf4fb; }
+
+    /* ─── HIGHLIGHT PILL ─── */
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .pill-blue { background: #d6eaf8; color: #1b4f72; }
+    .pill-green { background: #d5f5e3; color: #1a7a4a; }
+    .pill-orange { background: #fdebd0; color: #935116; }
+    .pill-red { background: #fadbd8; color: #922b21; }
+
+    /* ─── GRID CARDS ─── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .card {
+      background: var(--bg-light);
+      border: 1px solid #d6eaf8;
+      border-radius: 10px;
+      padding: 16px 14px;
+    }
+    .card h4 {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--light-blue);
+      margin-bottom: 8px;
+    }
+    .card p { font-size: 0.9rem; line-height: 1.5; }
+    .card.green { background: #eafaf1; border-color: #a9dfbf; }
+    .card.green h4 { color: var(--green); }
+    .card.purple { background: #f5eef8; border-color: #d7bde2; }
+    .card.purple h4 { color: #7d3c98; }
+    .card.red { background: #fdedec; border-color: #f5b7b1; }
+    .card.red h4 { color: var(--red); }
+
+    /* ─── ALERT / TIP BOX ─── */
+    .tip {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 14px 0;
+      font-size: 0.9rem;
+    }
+    .tip .icon { font-size: 1.3rem; flex-shrink: 0; }
+
+    /* ─── ORDERED LIST STYLE ─── */
+    .styled-list { padding-left: 22px; margin: 8px 0 8px 0; }
+    .styled-list li { margin-bottom: 6px; }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      text-align: center;
+      color: #95a5a6;
+      font-size: 0.8rem;
+      padding: 40px 0 20px;
+      border-top: 1px solid #e5e8ec;
+      margin-top: 40px;
+    }
+
+    /* ─── BACK TO TOP ─── */
+    .back-to-top {
+      display: inline-block;
+      margin-top: 24px;
+      color: var(--light-blue);
+      font-size: 0.85rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .back-to-top:hover { text-decoration: underline; }
+
+    p { margin-bottom: 10px; }
+    strong { color: var(--navy); }
+  </style>
+</head>
+<body>
+
+<!-- ═══ COVER ═══ -->
+<div class="cover" id="top">
+  <div class="logo-band">ISPTEC · Angola</div>
+  <h1>Engenharia de Reservatórios I</h1>
+  <h2>Resumo Completo de Estudo · 4 Capítulos</h2>
+  <div class="meta-grid">
+    <div class="meta-item"><span>Ano / Semestre</span><strong>3º Ano · 2º Semestre</strong></div>
+    <div class="meta-item"><span>Ano Lectivo</span><strong>2025 / 2026</strong></div>
+    <div class="meta-item"><span>Docente</span><strong>Prof. Dr. Geraldo A. R. Ramos</strong></div>
+    <div class="meta-item"><span>Créditos</span><strong>4 UC · 60 h Semestrais</strong></div>
+  </div>
+  <div class="tagline">
+    "O que semeia pouco, pouco ceifará, e o que semeia em abundância, em abundância ceifará." — 2 Cor 9:6
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ═══ TABLE OF CONTENTS ═══ -->
+<div class="toc-section">
+  <h2>Índice</h2>
+  <ul class="toc-list">
+    <li><a href="#cap1"><span class="toc-badge badge-1">1</span>Introdução à Engenharia de Reservatórios</a></li>
+    <li><a href="#cap2"><span class="toc-badge badge-2">2</span>Propriedades dos Fluidos de Reservatório</a></li>
+    <li><a href="#cap3"><span class="toc-badge badge-3">3</span>Propriedades das Rochas de Reservatório</a></li>
+    <li><a href="#cap4"><span class="toc-badge badge-4">4</span>Integração de Dados, Cálculo Volumétrico e EBM</a></li>
+  </ul>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CAPÍTULO 1
+═══════════════════════════════════════════════════════ -->
+<div id="cap1">
+  <div class="chapter-header ch1-bg" data-num="1">
+    <div class="num">Capítulo 1</div>
+    <h2>Introdução à Engenharia de Reservatórios</h2>
+    <div class="subtitle">Sistema de Produção · Tipos de Reservatórios · Mecanismos de Produção</div>
+  </div>
+  <div class="chapter-body">
+
+    <!-- 1.1 Definições Fundamentais -->
+    <div class="section-title"><span class="dot dot-blue"></span>1.1 Definições Fundamentais</div>
+
+    <div class="concept-box">
+      <span class="def">Reservatório</span> — Configuração geológica dotada de propriedades específicas, armazenadora de petróleo ou gás em subsuperfície; rocha porosa e permeável portadora de hidrocarbonetos.
+    </div>
+
+    <div class="concept-box">
+      <span class="def">Engenharia de Reservatórios</span> — Ramo da Engenharia de Petróleo que estuda o fluxo dos fluidos (hidrocarbonetos) no interior das rochas porosas, visando <strong>maximizar o factor de recuperação</strong>. É multidisciplinar: física, química, geologia, matemática, ciência da computação.
+    </div>
+
+    <p><strong>Objectivo primordial:</strong> planear o desenvolvimento de um campo, prever o seu desempenho ao longo de toda a vida produtiva e propor correcções para optimizar a recuperação.</p>
+
+    <!-- 1.2 Sistema Petrolífero -->
+    <div class="section-title"><span class="dot dot-blue"></span>1.2 Sistema Petrolífero</div>
+
+    <p>Para existir acumulação de hidrocarbonetos são necessários 5 elementos em sincronismo geológico:</p>
+    <div class="card-grid">
+      <div class="card"><h4>Rocha Geradora</h4><p>Gera o petróleo a partir de matéria orgânica (querogénio + catagénese).</p></div>
+      <div class="card"><h4>Migração</h4><p>Mobiliza o petróleo da zona de geração até à rocha reservatório.</p></div>
+      <div class="card"><h4>Rocha Reservatório</h4><p>Porosa e permeável; armazena os hidrocarbonetos.</p></div>
+      <div class="card"><h4>Rocha Selante</h4><p>Impermeável; impede a fuga dos fluidos para a superfície.</p></div>
+      <div class="card"><h4>Armadilha (Trapa)</h4><p>Arranjo geométrico (dobras, falhas) que retém os hidrocarbonetos.</p></div>
+    </div>
+
+    <!-- 1.3 Sistema de Produção -->
+    <div class="section-title"><span class="dot dot-blue"></span>1.3 Sistema de Produção</div>
+
+    <p>Conjunto de equipamentos destinados a promover a colecta, separação, tratamento, estocagem e escoamento dos fluidos produzidos. Funciona em 3 etapas:</p>
+    <div class="card-grid">
+      <div class="card"><h4>① Recuperação</h4><p>Fluxo do reservatório até ao fundo do poço.</p></div>
+      <div class="card"><h4>② Elevação</h4><p>Fluxo do fundo do poço até à superfície (natural ou artificial).</p></div>
+      <div class="card"><h4>③ Escoamento</h4><p>Do topo do poço, passando pelo regulador, até ao separador.</p></div>
+    </div>
+
+    <!-- 1.4 Tipos de Reservatórios -->
+    <div class="section-title"><span class="dot dot-blue"></span>1.4 Tipos de Reservatórios (Diagrama de Fases)</div>
+
+    <div class="tip">
+      <span class="icon">💡</span>
+      <span>Os tipos de reservatório são definidos pela <strong>posição relativa</strong> da pressão e temperatura iniciais do reservatório relativamente ao envelope de fases do fluido (curva de bolha + curva de orvalho).</span>
+    </div>
+
+    <table class="styled-table">
+      <thead><tr><th>Tipo</th><th>Posição no Diagrama</th><th>Características-chave</th><th>GOR (scf/STB)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Óleo Subsaturado</strong></td><td>P > P<sub>bolha</sub> (acima da curva de bolha)</td><td>Monofásico líquido; sem gás livre no reservatório</td><td>&lt; 200</td></tr>
+        <tr><td><strong>Óleo Saturado</strong></td><td>P = P<sub>bolha</sub></td><td>Gás começa a separar-se do óleo; coexistência de fases</td><td>200–700</td></tr>
+        <tr><td><strong>Gas-Cap Reservoir</strong></td><td>Zona líquida + capa de gás livre acima</td><td>Gás livre + gás dissolvido no óleo; duas fases em equilíbrio</td><td>700–2.000</td></tr>
+        <tr><td><strong>Gás Condensado (Retrógrado)</strong></td><td>Entre ponto crítico e ponto de orvalho</td><td>Condensação retrógrada durante a queda de pressão no reservatório</td><td>100k–1M</td></tr>
+        <tr><td><strong>Gás Húmido</strong></td><td>À direita do ponto de orvalho</td><td>Gás no reservatório; gera líquidos na superfície</td><td>60k–100k</td></tr>
+        <tr><td><strong>Gás Seco</strong></td><td>Muito à direita do ponto crítico</td><td>Não forma líquidos em superfície</td><td>&gt; 100k</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Indicadores de produção -->
+    <div class="section-title"><span class="dot dot-blue"></span>1.5 Indicadores de Produção</div>
+    <div class="card-grid">
+      <div class="card"><h4>RGO</h4><p>Razão Gás/Óleo (scf/STB). Indicador do tipo de reservatório e do estado de produção.</p></div>
+      <div class="card"><h4>RAO</h4><p>Razão Água/Óleo (STB/STB). Indica a invasão de água.</p></div>
+      <div class="card"><h4>BSW</h4><p>Basic Sediments & Water — fracção de água na produção total de líquidos.</p></div>
+      <div class="card"><h4>RGL</h4><p>Razão Gás/Líquido (m³std/m³std).</p></div>
+    </div>
+
+    <!-- 1.6 Mecanismos de Produção -->
+    <div class="section-title"><span class="dot dot-blue"></span>1.6 Mecanismos de Produção (Recuperação Primária)</div>
+    <p>A produção depende de dois efeitos: <strong>descompressão</strong> (expansão dos fluidos) e <strong>deslocamento</strong> (invasão por outro fluido). Os mecanismos naturais são:</p>
+
+    <table class="styled-table">
+      <thead><tr><th>Mecanismo</th><th>Pressão</th><th>RGO</th><th>Produção de Água</th><th>Recuperação</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Gás em Solução</strong> (Solution Gas Drive)</td><td>Declínio rápido e contínuo</td><td>Baixa → pico → cai</td><td>Desprezível</td><td>5–25 %</td></tr>
+        <tr><td><strong>Influxo de Água</strong> (Water Drive)</td><td>Permanece elevada</td><td>Permanece baixa</td><td>Cedo e crescente</td><td>30–45 % (até 75 %)</td></tr>
+        <tr><td><strong>Capa de Gás</strong> (Gas-Cap Drive)</td><td>Declínio lento e contínuo</td><td>Aumenta continuamente</td><td>Desprezível</td><td>20–40 %</td></tr>
+        <tr><td><strong>Segregação Gravitacional</strong></td><td>Variável</td><td>Variável</td><td>Variável</td><td>Variável</td></tr>
+        <tr><td><strong>Combinado</strong></td><td colspan="4">Combinação de 2 ou mais dos acima.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="concept-box orange">
+      <strong>Tipos de Recuperação:</strong><br>
+      <span class="pill pill-blue">Primária</span> — mecanismos naturais (escopo de ERI) &nbsp;|&nbsp;
+      <span class="pill pill-green">Secundária</span> — injecção de água / gás &nbsp;|&nbsp;
+      <span class="pill pill-orange">Terciária</span> — métodos melhorados (EOR)
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Voltar ao topo</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CAPÍTULO 2
+═══════════════════════════════════════════════════════ -->
+<div id="cap2">
+  <div class="chapter-header ch2-bg" data-num="2">
+    <div class="num">Capítulo 2</div>
+    <h2>Propriedades dos Fluidos de Reservatório</h2>
+    <div class="subtitle">Óleo · Gás · Água · Equações de Estado · Dados PVT</div>
+  </div>
+  <div class="chapter-body">
+
+    <!-- 2.1 Introdução -->
+    <div class="section-title"><span class="dot dot-green"></span>2.1 Por Que Estudar as Propriedades dos Fluidos?</div>
+    <div class="concept-box green">
+      O conhecimento das propriedades dos fluidos é essencial para determinar:
+      <ul class="styled-list">
+        <li>Volume de hidrocarboneto presente no reservatório;</li>
+        <li>Volume de hidrocarboneto recuperável;</li>
+        <li>Taxa de recuperação;</li>
+        <li>Comportamento do fluxo no reservatório.</li>
+      </ul>
+    </div>
+    <p>As propriedades podem ser obtidas em laboratório (análise PVT) por <strong>amostragem em superfície</strong>, <strong>fundo de poço</strong> ou <strong>teste de formação</strong>, ou estimadas por <strong>correlações empíricas</strong>.</p>
+
+    <!-- 2.2 Propriedades do Óleo -->
+    <div class="section-title"><span class="dot dot-green"></span>2.2 Propriedades do Óleo</div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Massa Específica e Densidade</div>
+    <div class="formula-box">
+      <div class="formula-label">Massa Específica (SI)</div>
+      <div class="formula-main">ρ = m / V &nbsp;&nbsp;[kg/m³ ou lb/ft³]</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Densidade Relativa (Gravidade Específica)</div>
+      <div class="formula-main">γ<sub>o</sub> = ρ<sub>o</sub> / ρ<sub>w</sub> &nbsp;&nbsp;(referência: ρ<sub>w</sub> = 62,37 lb/ft³ a 60 °F)</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Grau API (American Petroleum Institute)</div>
+      <div class="formula-main">°API = 141,5 / γ<sub>o</sub> − 131,5</div>
+      <div class="formula-note">Inversamente proporcional à densidade: API alto = óleo mais leve. Água = 10 °API.</div>
+    </div>
+
+    <table class="styled-table">
+      <thead><tr><th>Tipo de Fluido</th><th>°API</th><th>GOR (scf/STB)</th><th>Cor</th></tr></thead>
+      <tbody>
+        <tr><td>Óleo de Baixa Contração (Heavy)</td><td>&lt; 35</td><td>&lt; 200</td><td>Preto</td></tr>
+        <tr><td>Black-Oil (Média Contração)</td><td>15–40</td><td>200–700</td><td>Castanho/Verde escuro</td></tr>
+        <tr><td>Óleo de Alta Contração (Light)</td><td>45–55</td><td>2.000–3.200</td><td>Verde a laranja</td></tr>
+        <tr><td>Gás Húmido</td><td>&gt; 60</td><td>60.000–100.000</td><td>—</td></tr>
+        <tr><td>Gás Seco</td><td>—</td><td>&gt; 100.000</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Factor Volume de Formação do Óleo (B<sub>o</sub>)</div>
+    <div class="concept-box green">
+      <span class="def green">B<sub>o</sub></span> — relação entre o volume do óleo <strong>nas condições do reservatório</strong> (pressão e temperatura) e o volume de óleo produzido <strong>nas condições padrão</strong> de superfície. Unidade: bbl/STB.<br><br>
+      B<sub>o</sub> &gt; 1 (o óleo ocupa mais volume no reservatório porque contém gás dissolvido).
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Razão de Solubilidade (R<sub>s</sub>)</div>
+    <div class="concept-box green">
+      <span class="def green">R<sub>s</sub></span> — quantidade de gás dissolvido no óleo, expressa em <strong>scf/STB</strong>. Aumenta com a pressão. Quando a pressão cai abaixo do ponto de bolha, o gás começa a libertar-se.
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Factor Volume de Formação Total / Bifásico (B<sub>t</sub>)</div>
+    <div class="formula-box">
+      <div class="formula-label">Factor Bifásico</div>
+      <div class="formula-main">B<sub>t</sub> = B<sub>o</sub> + (R<sub>si</sub> − R<sub>s</sub>) × B<sub>g</sub></div>
+      <div class="formula-note">R<sub>si</sub> = razão de solubilidade inicial (pressão de bolha); R<sub>s</sub> = razão actual; B<sub>g</sub> = FVF do gás.</div>
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Viscosidade do Óleo (µ<sub>o</sub>)</div>
+    <p>Depende de: temperatura, pressão, °API, R<sub>s</sub>. Correlações principais:</p>
+    <ul class="styled-list">
+      <li><strong>Óleo Morto (Dead-oil):</strong> Beggs-Robinson (1975) — µ em função de °API e T (°F)</li>
+      <li><strong>Óleo Saturado:</strong> Beggs-Robinson (1975) — µ em função de R<sub>s</sub> e µ<sub>morto</sub></li>
+      <li><strong>Após Saturação:</strong> Vasquez-Beggs (1980) — µ em função de p/p<sub>b</sub></li>
+    </ul>
+
+    <!-- 2.3 Propriedades do Gás -->
+    <div class="section-title"><span class="dot dot-green"></span>2.3 Propriedades do Gás</div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Equação de Estado — Gás Ideal</div>
+    <div class="formula-box">
+      <div class="formula-label">Lei dos Gases Ideais</div>
+      <div class="formula-main">p V = n R T</div>
+      <div class="formula-note">p em psia; V em ft³; n em lb-mol; R = 10,73 psia·ft³/(lb-mol·°R); T em °R = °F + 459,67</div>
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Gás Real — Factor de Compressibilidade Z</div>
+    <div class="formula-box">
+      <div class="formula-label">Equação de Estado do Gás Real</div>
+      <div class="formula-main">p V = z n R T</div>
+      <div class="formula-note">z é obtido pelo gráfico de Standing e Katz usando pressão e temperatura pseudoreduzidas (p<sub>pr</sub>, T<sub>pr</sub>).</div>
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Densidade e Massa Molecular do Gás</div>
+    <div class="formula-box">
+      <div class="formula-label">Massa Molecular Aparente</div>
+      <div class="formula-main">M<sub>a</sub> = γ<sub>g</sub> × M<sub>ar</sub> = γ<sub>g</sub> × 28,97</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Massa Específica do Gás (lb/ft³)</div>
+      <div class="formula-main">ρ<sub>g</sub> = p × M<sub>a</sub> / (z × R × T)</div>
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Factor Volume de Formação do Gás (B<sub>g</sub>)</div>
+    <div class="formula-box">
+      <div class="formula-label">Factor Volume de Formação do Gás</div>
+      <div class="formula-main">B<sub>g</sub> = 0,02827 × z × T / p &nbsp;&nbsp;[ft³/scf]</div>
+      <div class="formula-note">Ou em bbl/scf: B<sub>g</sub> = 0,00504 × z × T / p</div>
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Propriedades Pseudocríticas (Misturas de Gás)</div>
+    <div class="formula-box">
+      <div class="formula-label">Pressão e Temperatura Pseudocríticas</div>
+      <div class="formula-main">p<sub>pc</sub> = Σ y<sub>i</sub> · p<sub>ci</sub> &nbsp;&nbsp;&nbsp;&nbsp; T<sub>pc</sub> = Σ y<sub>i</sub> · T<sub>ci</sub></div>
+      <div class="formula-note">y<sub>i</sub> = fracção molar do componente i. As propriedades pseudoreduzidas: p<sub>pr</sub> = p/p<sub>pc</sub>; T<sub>pr</sub> = T/T<sub>pc</sub>.</div>
+    </div>
+
+    <div class="tip">
+      <span class="icon">📌</span>
+      <span><strong>Lei de Van der Waals:</strong> "Todos os fluidos exibem o mesmo comportamento quando submetidos à mesma pressão e temperatura reduzida." (Lei dos Estados Correspondentes)</span>
+    </div>
+
+    <div class="concept-box green">
+      <strong>Condições Padrão (Standard):</strong><br>
+      EUA: 14,7 psia e 60 °F (15,56 °C)<br>
+      Brasil: 1 atm e 20 °C<br>
+      <em>Todas as vazões são medidas nestas condições.</em>
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Voltar ao topo</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CAPÍTULO 3
+═══════════════════════════════════════════════════════ -->
+<div id="cap3">
+  <div class="chapter-header ch3-bg" data-num="3">
+    <div class="num">Capítulo 3</div>
+    <h2>Propriedades das Rochas de Reservatório</h2>
+    <div class="subtitle">Porosidade · Permeabilidade · Saturação · Capilaridade · Petrofísica</div>
+  </div>
+  <div class="chapter-body">
+
+    <!-- 3.1 Petrofísica -->
+    <div class="section-title"><span class="dot dot-purple"></span>3.1 Petrofísica</div>
+    <div class="concept-box purple">
+      <span class="def purple">Petrofísica</span> — estudo das propriedades físicas e químicas das rochas e suas interacções com os fluidos.<br><br>
+      <strong>RCAL</strong> (Routine Core Analysis): análise de rotina → porosidade, massa específica, permeabilidade, saturação.<br>
+      <strong>SCAL</strong> (Special Core Analysis): análise especial → pressão capilar, permeabilidade relativa, molhabilidade.
+    </div>
+
+    <!-- 3.2 Porosidade -->
+    <div class="section-title"><span class="dot dot-purple"></span>3.2 Porosidade (ϕ)</div>
+    <div class="concept-box purple">
+      <span class="def purple">Porosidade</span> — fracção do volume total da rocha ocupada por espaços vazios (poros).
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Definição de Porosidade</div>
+      <div class="formula-main">ϕ = V<sub>p</sub> / V<sub>t</sub></div>
+      <div class="formula-note">V<sub>p</sub> = volume poroso; V<sub>t</sub> = volume total. V<sub>t</sub> = V<sub>p</sub> + V<sub>s</sub> (volume de sólidos)</div>
+    </div>
+
+    <table class="styled-table">
+      <thead><tr><th>Tipo</th><th>Definição</th><th>Relevância</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Porosidade Total</strong></td><td>Todos os poros (conectados + isolados)</td><td>Volume total de armazenamento</td></tr>
+        <tr><td><strong>Porosidade Efectiva</strong></td><td>Apenas poros interconectados</td><td>Fluxo de fluidos → usada em reservatórios</td></tr>
+        <tr><td><strong>Porosidade Primária</strong></td><td>Formada durante a deposição/diagénese</td><td>Arenitos tipicamente</td></tr>
+        <tr><td><strong>Porosidade Secundária</strong></td><td>Formada após a deposição (fracturação, dissolução)</td><td>Carbonatos tipicamente</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Classificação Qualitativa da Porosidade</div>
+    <table class="styled-table">
+      <thead><tr><th>Qualidade</th><th>ϕ (%)</th></tr></thead>
+      <tbody>
+        <tr><td>Excelente</td><td>&gt; 20 %</td></tr>
+        <tr><td>Boa</td><td>15 – 20 %</td></tr>
+        <tr><td>Razoável (Fair)</td><td>10 – 15 %</td></tr>
+        <tr><td>Pobre</td><td>5 – 10 %</td></tr>
+        <tr><td>Muito Pobre</td><td>&lt; 5 %</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Medição da Porosidade em Laboratório</div>
+    <div class="formula-box">
+      <div class="formula-label">Volume Poroso por Saturação (método de peso)</div>
+      <div class="formula-main">V<sub>p</sub> = (W<sub>s</sub> − W<sub>d</sub>) / ρ<sub>fluido</sub></div>
+      <div class="formula-note">W<sub>s</sub> = peso saturado; W<sub>d</sub> = peso seco; ρ<sub>fluido</sub> = massa específica do fluido de saturação.</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Volume Total (amostra cilíndrica)</div>
+      <div class="formula-main">V<sub>t</sub> = π × (D/2)² × L</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Lei de Boyle (Porosímetro)</div>
+      <div class="formula-main">p<sub>i</sub> V<sub>i</sub> = p<sub>f</sub> V<sub>f</sub></div>
+      <div class="formula-note">Permite calcular V<sub>s</sub> (volume de sólido) e portanto V<sub>p</sub> = V<sub>t</sub> − V<sub>s</sub>.</div>
+    </div>
+
+    <!-- 3.3 Compressibilidade -->
+    <div class="section-title"><span class="dot dot-purple"></span>3.3 Compressibilidade da Rocha</div>
+    <div class="formula-box">
+      <div class="formula-label">Compressibilidade Efectiva dos Poros (C<sub>f</sub>)</div>
+      <div class="formula-main">C<sub>f</sub> = (1/V<sub>p</sub>) × (∂V<sub>p</sub>/∂p) &nbsp;&nbsp;[psi⁻¹]</div>
+      <div class="formula-note">Mede a variação fraccional do volume poroso por variação unitária de pressão.</div>
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Porosidade Actualizada com Variação de Pressão</div>
+      <div class="formula-main">ϕ = ϕ<sub>o</sub> × [1 + C<sub>f</sub>(p − p<sub>o</sub>)]</div>
+    </div>
+
+    <!-- 3.4 Saturação -->
+    <div class="section-title"><span class="dot dot-purple"></span>3.4 Saturação de Fluidos (S)</div>
+    <div class="concept-box purple">
+      <span class="def purple">Saturação</span> — fracção do volume poroso ocupada por um determinado fluido.
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Saturações de Óleo, Água e Gás</div>
+      <div class="formula-main">S<sub>o</sub> = V<sub>o</sub>/V<sub>p</sub> &nbsp;&nbsp; S<sub>w</sub> = V<sub>w</sub>/V<sub>p</sub> &nbsp;&nbsp; S<sub>g</sub> = V<sub>g</sub>/V<sub>p</sub></div>
+      <div class="formula-note">Restrição: S<sub>o</sub> + S<sub>w</sub> + S<sub>g</sub> = 1 (100%)</div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card purple"><h4>S<sub>wi</sub> (Conata)</h4><p>Saturação de água irredutível no momento da descoberta do reservatório.</p></div>
+      <div class="card purple"><h4>S<sub>or</sub> (Residual)</h4><p>Óleo que permanece nos poros após deslocamento — não é produzível.</p></div>
+      <div class="card purple"><h4>S<sub>om</sub> (Móvel)</h4><p>S<sub>om</sub> = 1 − S<sub>wc</sub> − S<sub>oc</sub> — fracção de óleo que pode ser produzida.</p></div>
+    </div>
+
+    <!-- 3.5 Permeabilidade -->
+    <div class="section-title"><span class="dot dot-purple"></span>3.5 Permeabilidade (k)</div>
+    <div class="concept-box purple">
+      <span class="def purple">Permeabilidade</span> — medida da capacidade da rocha de permitir o fluxo de fluido (Lei de Darcy, 1856).
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Lei de Darcy (1D, fluxo monofásico)</div>
+      <div class="formula-main">k = (q × μ × L) / (A × ΔP)</div>
+      <div class="formula-note">q = cm³/s; μ = cp; L = cm; A = cm²; ΔP = atm → k em Darcy. &nbsp; 1 Darcy = 1000 mD</div>
+    </div>
+    <div class="tip">
+      <span class="icon">⚠️</span>
+      <span><strong>Permeabilidade ≠ Porosidade!</strong> Alta porosidade não implica necessariamente alta permeabilidade. O que importa é a <em>conectividade</em> dos poros.</span>
+    </div>
+
+    <!-- 3.6 Molhabilidade e Capilaridade -->
+    <div class="section-title"><span class="dot dot-purple"></span>3.6 Molhabilidade e Pressão Capilar</div>
+    <div class="concept-box purple">
+      <span class="def purple">Molhabilidade</span> — tendência de um fluido de aderir à superfície da rocha na presença de outro fluido imiscível. Reservatórios podem ser molháveis a água (water-wet) ou a óleo (oil-wet).
+    </div>
+    <div class="concept-box purple">
+      <span class="def purple">Pressão Capilar (P<sub>c</sub>)</span> — diferença de pressão entre a fase não-molhante e a fase molhante na interface de dois fluidos imiscíveis num capilar.<br><br>
+      <strong>Função J de Leverett:</strong> normaliza dados de pressão capilar de diferentes amostras, permitindo comparação (usa ϕ, k, σ e θ).
+    </div>
+    <p><strong>Processos:</strong></p>
+    <ul class="styled-list">
+      <li><strong>Drenagem</strong> — a fase não-molhante (ex: óleo) desloca a fase molhante (água). Ocorre durante a migração do petróleo para o reservatório.</li>
+      <li><strong>Embebição</strong> — a fase molhante desloca a não-molhante. Ocorre durante a injecção de água.</li>
+    </ul>
+
+    <a href="#top" class="back-to-top">↑ Voltar ao topo</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CAPÍTULO 4
+═══════════════════════════════════════════════════════ -->
+<div id="cap4">
+  <div class="chapter-header ch4-bg" data-num="4">
+    <div class="num">Capítulo 4</div>
+    <h2>Integração de Dados, Cálculo Volumétrico e EBM</h2>
+    <div class="subtitle">Método Volumétrico · Net to Gross · Cut-offs · Equação de Balanço de Materiais · Reservas</div>
+  </div>
+  <div class="chapter-body">
+
+    <!-- 4.1 Método Volumétrico -->
+    <div class="section-title"><span class="dot dot-red"></span>4.1 Método Volumétrico (OOIP / OGIP)</div>
+
+    <div class="concept-box red">
+      <span class="def red">OOIP</span> (Original Oil In Place) — volume total de óleo no reservatório antes de qualquer produção, medido nas condições padrão de superfície. Também designado por N.
+    </div>
+
+    <div class="formula-box">
+      <div class="formula-label">Cálculo de OOIP (Método Volumétrico)</div>
+      <div class="formula-main">N = 7758 × A × h × NTG × ϕ × (1 − S<sub>wi</sub>) / B<sub>oi</sub></div>
+      <div class="formula-note">N em STB; A em acres; h em ft; NTG = Net to Gross (adimensional); ϕ = porosidade; S<sub>wi</sub> = saturação de água irredutível; B<sub>oi</sub> = FVF do óleo inicial (bbl/STB). Factor 7758 = conversão acre·ft → barris.</div>
+    </div>
+
+    <div class="formula-box">
+      <div class="formula-label">Cálculo de OGIP (Gás)</div>
+      <div class="formula-main">G = 43560 × A × h × NTG × ϕ × (1 − S<sub>wi</sub>) / B<sub>gi</sub></div>
+      <div class="formula-note">G em scf; factor 43560 = conversão acre·ft → ft³.</div>
+    </div>
+
+    <!-- 4.2 Net to Gross e Cut-offs -->
+    <div class="section-title"><span class="dot dot-red"></span>4.2 Net to Gross (NTG) e Cut-offs</div>
+    <div class="concept-box red">
+      <span class="def red">NTG</span> — razão entre a espessura de rocha produtiva (net pay) e a espessura total do intervalo estudado.
+    </div>
+    <div class="formula-box">
+      <div class="formula-label">Net to Gross</div>
+      <div class="formula-main">NTG = h<sub>res</sub> / h<sub>total</sub></div>
+    </div>
+
+    <p><strong>Cut-offs (valores mínimos/máximos para rocha ser considerada reservatório):</strong></p>
+    <table class="styled-table">
+      <thead><tr><th>Parâmetro</th><th>Cut-off Típico</th><th>Critério</th></tr></thead>
+      <tbody>
+        <tr><td>Porosidade (ϕ)</td><td>&gt; 8 % (óleo); &gt; 6 % (gás)</td><td>Capacidade de armazenamento mínima</td></tr>
+        <tr><td>Saturação de Água (S<sub>w</sub>)</td><td>&lt; 50 %</td><td>Acima deste valor, permeabilidade relativa favorece água</td></tr>
+        <tr><td>Argilosidade (V<sub>sh</sub>)</td><td>&lt; 30 %</td><td>Argila reduz severamente qualidade do reservatório</td></tr>
+        <tr><td>Espessura</td><td>1–2 m (onshore); &gt; 10 m (offshore)</td><td>Viabilidade económica</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 4.3 Reservas -->
+    <div class="section-title"><span class="dot dot-red"></span>4.3 Tipos de Reservas (Classificação SPE)</div>
+
+    <div class="formula-box">
+      <div class="formula-label">Reservas = Volume Recuperável − Produção Acumulada</div>
+      <div class="formula-main">Reservas = N × FR − N<sub>A</sub></div>
+      <div class="formula-note">FR = Factor de Recuperação; N<sub>A</sub> = produção acumulada.</div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card red"><h4>1P — Provadas</h4><p>≥ 90 % de probabilidade. Recuperáveis com certeza razoável sob condições económicas actuais. Podem ser <em>Desenvolvidas</em> ou <em>Não Desenvolvidas</em>.</p></div>
+      <div class="card red"><h4>2P — Prováveis</h4><p>≥ 50 % de probabilidade. Provadas + Prováveis. Menor grau de certeza.</p></div>
+      <div class="card red"><h4>3P — Possíveis</h4><p>≥ 10 % de probabilidade. Provadas + Prováveis + Possíveis. Maior incerteza.</p></div>
+    </div>
+
+    <div class="tip">
+      <span class="icon">📊</span>
+      <span><strong>Abordagem Probabilística:</strong> P90 (percentil 90) = 90 % de chance de ter pelo menos este volume; P50 = 50 %; P10 = 10 %. Indústria reporta P10, P50 e P90.</span>
+    </div>
+
+    <!-- 4.4 Integração de Dados -->
+    <div class="section-title"><span class="dot dot-red"></span>4.4 Integração de Dados e Incertezas</div>
+    <p>Estimar a quantidade de hidrocarbonetos é tentar resolver um puzzle que não se pode ver. As ferramentas usadas:</p>
+    <table class="styled-table">
+      <thead><tr><th>Parâmetro</th><th>Símbolo</th><th>Equipamento/Método</th></tr></thead>
+      <tbody>
+        <tr><td>Porosidade</td><td>ϕ</td><td>Perfilagem de porosidade; laboratório (testemunho)</td></tr>
+        <tr><td>Área</td><td>A</td><td>Levantamentos sísmicos; testes de pressão</td></tr>
+        <tr><td>Espessura</td><td>h</td><td>Registos de resistividade; pressão capilar; RFT</td></tr>
+        <tr><td>Saturação de Água</td><td>S<sub>w</sub></td><td>Testemunho; registos de resistividade; pressão capilar</td></tr>
+        <tr><td>FVF Óleo e Gás</td><td>B<sub>o</sub>, B<sub>g</sub></td><td>Análise PVT de amostras de fluido</td></tr>
+        <tr><td>Permeabilidade</td><td>k</td><td>Análise de testemunho; testes de poços</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 4.5 Equação de Balanço de Materiais -->
+    <div class="section-title"><span class="dot dot-red"></span>4.5 Equação de Balanço de Materiais (EBM)</div>
+
+    <div class="concept-box red">
+      <span class="def red">EBM</span> — equação fundamentada na <strong>Lei de Conservação de Massa</strong>: o volume produzido é igual ao somatório das expansões de todos os fluidos e da contracção da rocha no reservatório, mais qualquer influxo externo. "A produção acumulada = expansão total dos fluidos + influxo de água − injecção."
+    </div>
+
+    <div class="formula-box">
+      <div class="formula-label">EBM Generalizada (Forma de N)</div>
+      <div class="formula-main">
+        N = [N<sub>p</sub>B<sub>o</sub> + (R<sub>p</sub> − R<sub>s</sub>)B<sub>g</sub> − W<sub>e</sub> − W<sub>p</sub>B<sub>w</sub> − G<sub>inj</sub>B<sub>ginj</sub> − W<sub>inj</sub>B<sub>w</sub>]
+        &nbsp;/&nbsp;
+        [B<sub>o</sub> − B<sub>oi</sub> + (R<sub>si</sub> − R<sub>s</sub>)B<sub>g</sub> + mB<sub>oi</sub>(B<sub>g</sub>/B<sub>gi</sub>−1) + B<sub>oi</sub>(1+m)·C<sub>eff</sub>·Δp]
+      </div>
+      <div class="formula-note">C<sub>eff</sub> = (S<sub>wi</sub>·c<sub>w</sub> + c<sub>f</sub>) / (1 − S<sub>wi</sub>)</div>
+    </div>
+
+    <p><strong>Termos de Expansão na EBM:</strong></p>
+    <table class="styled-table">
+      <thead><tr><th>Termo</th><th>Significado Físico</th></tr></thead>
+      <tbody>
+        <tr><td><strong>E<sub>o</sub> = B<sub>o</sub> − B<sub>oi</sub> + (R<sub>si</sub> − R<sub>s</sub>)·B<sub>g</sub></strong></td><td>Expansão do óleo + gás dissolvido libertado</td></tr>
+        <tr><td><strong>E<sub>g</sub> = m·B<sub>oi</sub>·(B<sub>g</sub>/B<sub>gi</sub> − 1)</strong></td><td>Expansão da capa de gás</td></tr>
+        <tr><td><strong>E<sub>fw</sub> = B<sub>oi</sub>(1+m)·C<sub>eff</sub>·Δp</strong></td><td>Expansão da água conata + compressão da rocha</td></tr>
+        <tr><td><strong>W<sub>e</sub></strong></td><td>Influxo de água do aquífero</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Utilizações Práticas da EBM</div>
+    <ul class="styled-list">
+      <li>Determinar o volume original de óleo ou gás no reservatório (OOIP/OGIP);</li>
+      <li>Identificar e quantificar o mecanismo de produção dominante;</li>
+      <li>Estimar o influxo de água de aquíferos;</li>
+      <li>Prever o desempenho futuro do reservatório;</li>
+      <li>Verificar a consistência dos dados de produção.</li>
+    </ul>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Dados Necessários para a EBM</div>
+    <div class="card-grid">
+      <div class="card red"><h4>Produção</h4><p>N<sub>p</sub> (óleo), G<sub>p</sub> (gás), W<sub>p</sub> (água), R<sub>p</sub> (RGO de produção).</p></div>
+      <div class="card red"><h4>Pressão</h4><p>Pressão média do reservatório ao longo do tempo.</p></div>
+      <div class="card red"><h4>PVT</h4><p>B<sub>o</sub>, B<sub>g</sub>, B<sub>w</sub>, R<sub>s</sub> em função da pressão.</p></div>
+    </div>
+
+    <div class="section-title" style="font-size:0.95rem; margin-top:18px; border-bottom:none;">Comparação: EBM vs. Método Volumétrico</div>
+    <table class="styled-table">
+      <thead><tr><th>Critério</th><th>Método Volumétrico</th><th>EBM</th></tr></thead>
+      <tbody>
+        <tr><td>Dados necessários</td><td>Geológicos/petrofísicos (ϕ, S<sub>w</sub>, A, h)</td><td>Produção + Pressão + PVT</td></tr>
+        <tr><td>Fase de aplicação</td><td>Antes/início da produção</td><td>Durante a produção</td></tr>
+        <tr><td>Incerteza</td><td>Alta (dados estáticos)</td><td>Decresce com o tempo (dados dinâmicos)</td></tr>
+        <tr><td>Identifica mecanismo</td><td>Não</td><td>Sim</td></tr>
+        <tr><td>Melhor uso</td><td>Descoberta e avaliação inicial</td><td>Gestão do campo em produção</td></tr>
+      </tbody>
+    </table>
+
+    <div class="tip">
+      <span class="icon">🔑</span>
+      <span><strong>Método de Havlena-Odeh:</strong> linearização da EBM — plota-se produção vs. expansão para obter N (OOIP) da inclinação da recta. Identifica graficamente o mecanismo de produção dominante.</span>
+    </div>
+
+    <a href="#top" class="back-to-top">↑ Voltar ao topo</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SÍNTESE FINAL — FÓRMULAS ESSENCIAIS
+═══════════════════════════════════════════════════════ -->
+<div style="background:#0d1b2a; color:white; border-radius:12px; padding:36px; margin-bottom:48px;">
+  <h2 style="font-size:1.3rem; letter-spacing:1px; margin-bottom:24px; color:#f39c12;">⭐ Fórmulas Essenciais para a Prova</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:16px;">
+
+    <div style="background:rgba(255,255,255,0.08); border-radius:8px; padding:16px;">
+      <div style="color:#f39c12; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">Cap. 2 — Óleo</div>
+      <code style="display:block; font-size:0.88rem; line-height:1.8;">
+        γ<sub>o</sub> = ρ<sub>o</sub> / ρ<sub>w</sub><br>
+        °API = 141.5/γ<sub>o</sub> − 131.5<br>
+        B<sub>t</sub> = B<sub>o</sub> + (R<sub>si</sub>−R<sub>s</sub>)·B<sub>g</sub>
+      </code>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.08); border-radius:8px; padding:16px;">
+      <div style="color:#f39c12; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">Cap. 2 — Gás</div>
+      <code style="display:block; font-size:0.88rem; line-height:1.8;">
+        M<sub>a</sub> = γ<sub>g</sub> × 28.97<br>
+        ρ<sub>g</sub> = p·M<sub>a</sub> / (z·R·T)<br>
+        B<sub>g</sub> = 0.00504·z·T/p [bbl/scf]
+      </code>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.08); border-radius:8px; padding:16px;">
+      <div style="color:#f39c12; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">Cap. 3 — Rocha</div>
+      <code style="display:block; font-size:0.88rem; line-height:1.8;">
+        ϕ = V<sub>p</sub>/V<sub>t</sub><br>
+        V<sub>p</sub> = (W<sub>s</sub>−W<sub>d</sub>)/ρ<sub>fl</sub><br>
+        S<sub>o</sub>+S<sub>w</sub>+S<sub>g</sub> = 1<br>
+        k = qμL / (A·ΔP) [Darcy]
+      </code>
+    </div>
+
+    <div style="background:rgba(255,255,255,0.08); border-radius:8px; padding:16px;">
+      <div style="color:#f39c12; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px;">Cap. 4 — Volumétrico</div>
+      <code style="display:block; font-size:0.88rem; line-height:1.8;">
+        N = 7758·A·h·NTG·ϕ·(1−S<sub>wi</sub>)/B<sub>oi</sub><br>
+        NTG = h<sub>res</sub>/h<sub>total</sub><br>
+        S<sub>oi</sub> = 1 − S<sub>wi</sub><br>
+        Reservas = N·FR − N<sub>A</sub>
+      </code>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══ PERGUNTAS & EXERCÍCIOS ═══ -->
+<div style="margin:40px 0 0 0;">
+  <div style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:32px 40px 24px;border-radius:12px 12px 0 0;text-align:center;">
+    <div style="font-size:2.2em;font-weight:800;letter-spacing:2px;text-transform:uppercase;">📝 Perguntas &amp; Exercícios</div>
+    <div style="color:#bdc3c7;margin-top:8px;font-size:1.05em;">Compilação de todas as questões de consolidação, exercícios numéricos e tarefas — Aulas 0 a 12</div>
+  </div>
+
+  <!-- ═══ CAPÍTULO 1 ═══ -->
+  <div style="border-left:8px solid #2980b9;background:#f0f6ff;padding:28px 36px 24px;margin:0;">
+    <h2 style="color:#1a5276;font-size:1.6em;margin:0 0 4px;">Capítulo 1 — Sistema Petrolífero, Tipos de Reservatórios e Mecanismos de Produção</h2>
+    <p style="color:#5d6d7e;margin:0 0 20px;font-size:0.97em;">Aulas 1 &amp; 2</p>
+
+    <h3 style="color:#2980b9;border-bottom:2px solid #aed6f1;padding-bottom:6px;">🔵 Aula 1 — Questões de Consolidação (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Afirmação</th><th>Resposta</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Sistema de produção é: (A) Conjunto de equipamentos e processos desde o reservatório até à superfície.</td><td>SIM</td></tr>
+        <tr><td>2</td><td>Qual NÃO é função principal da Eng. Reservatórios? → (C) Desenvolver tecnologias de perfuração</td><td>NÃO</td></tr>
+        <tr><td>3</td><td>Reservatório "undersaturated" → (B) Pressão acima da pressão de saturação</td><td>SIM</td></tr>
+        <tr><td>4</td><td>Objectivo principal da Eng. Reservatórios → (A) Maximizar eficiência de extracção</td><td>SIM</td></tr>
+        <tr><td>5</td><td>Gas-cap reservoir → (A) Gás livre acima de um óleo saturado</td><td>SIM</td></tr>
+        <tr><td>6</td><td>Poço produtor tem como função → (A) Extracção de fluidos do reservatório</td><td>SIM</td></tr>
+        <tr><td>7</td><td>Condensate reservoir → (A) Óleo que forma gás ao ser produzido / condensa a partir do gás</td><td>SIM</td></tr>
+        <tr><td>8</td><td>Eng. Reservatórios apoia decisões porque → (A) Permite estimar recuperação económica</td><td>SIM</td></tr>
+        <tr><td>9</td><td>Diferença saturado vs subsaturado → (A) Saturado possui pressão ABAIXO da saturação (gás livre)</td><td>SIM</td></tr>
+        <tr><td>10</td><td>Manutenção de pressão → (A) Realizada por injecção de água ou gás</td><td>SIM</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#2980b9;border-bottom:2px solid #aed6f1;padding-bottom:6px;">🔵 Aula 1 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Explique o conceito de sistema de produção e identifique os seus componentes principais.</li>
+      <li>Descreva a importância da Engenharia de Reservatórios e as suas funções principais.</li>
+      <li>Diferencie reservatórios "undersaturated" e "saturated" utilizando diagramas de fases.</li>
+      <li>Como a história da Engenharia de Reservatórios influenciou os métodos modernos de avaliação?</li>
+      <li>Como o conhecimento do sistema petrolífero e dos tipos de reservatórios influencia o planeamento de desenvolvimento?</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+
+    <h3 style="color:#2980b9;border-bottom:2px solid #aed6f1;padding-bottom:6px;margin-top:24px;">🔵 Aula 2 — Questões de Consolidação (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Afirmação</th><th>Resposta</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Óleo leve → (B) Baixa densidade e alta mobilidade</td><td>SIM</td></tr>
+        <tr><td>2</td><td>Gás influencia recuperação porque → (A) Reduz pressão e facilita fluxo do óleo</td><td>SIM</td></tr>
+        <tr><td>3</td><td>Water drive → (A) Manutenção de pressão por influxo de água do aquífero</td><td>SIM</td></tr>
+        <tr><td>4</td><td>Viscosidade impacta → (A) A taxa de fluxo através do reservatório</td><td>SIM</td></tr>
+        <tr><td>5</td><td>Gas-cap drive → (A) Mantém pressão por expansão de gás acima do óleo</td><td>SIM</td></tr>
+        <tr><td>6</td><td>Condensado → (A) Óleo líquido que condensa a partir de gás com queda de pressão</td><td>SIM</td></tr>
+        <tr><td>7</td><td>Solution gas drive NÃO inclui → (E) Produção contínua de óleo sem declínio de pressão</td><td>NÃO (inclui)</td></tr>
+        <tr><td>8</td><td>Water influx sustenta produção porque → (A) Água do aquífero desloca óleo para os poços</td><td>SIM</td></tr>
+        <tr><td>9</td><td>Reservatório undersaturated depende principalmente de → (A) Pressão inicial e mobilidade dos fluidos</td><td>SIM</td></tr>
+        <tr><td>10</td><td>Gas-cap drive → (A) Gás livre no topo que expande e ajuda a manter pressão</td><td>SIM</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#2980b9;border-bottom:2px solid #aed6f1;padding-bottom:6px;">🔵 Aula 2 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Diferencie entre Sistema de Produção, Sistema Petrolífero e cadeia produtiva do petróleo.</li>
+      <li>Ilustre e explique o envelope de fases de um fluido de reservatório.</li>
+      <li>Apresente as três teorias sobre a origem dos hidrocarbonetos, compare-as e indique a mais aceite.</li>
+      <li>Descreva a área de actuação do Engenheiro de Reservatórios.</li>
+      <li>Complete: HIDROCARBONETOS + NÃO HIDROCARBONETOS = _____________</li>
+      <li>Explique as propriedades dos fluidos produzidos nos reservatórios de petróleo.</li>
+      <li>Descreva os mecanismos naturais de produção (primary recovery mechanisms).</li>
+      <li>Compare o mecanismo de expansão de gás vs. influxo de água na recuperação de petróleo.</li>
+      <li>Explique a importância de integrar o conhecimento dos fluidos e mecanismos no planeamento da produção.</li>
+      <li>Construa uma tabela: tipo de reservatório × condições iniciais × comportamento com Δp × hidrocarbonetos produzidos.</li>
+    </ol>
+  </div>
+
+  <!-- ═══ CAPÍTULO 2 ═══ -->
+  <div style="border-left:8px solid #27ae60;background:#f0fff5;padding:28px 36px 24px;margin:0;border-top:2px solid #a9dfbf;">
+    <h2 style="color:#1e8449;font-size:1.6em;margin:0 0 4px;">Capítulo 2 — Propriedades dos Fluidos de Reservatório</h2>
+    <p style="color:#5d6d7e;margin:0 0 20px;font-size:0.97em;">Aulas 3 &amp; 4</p>
+
+    <h3 style="color:#27ae60;border-bottom:2px solid #a9dfbf;padding-bottom:6px;">🟢 Aula 3 — Questões de Consolidação — Propriedades do Óleo (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Tema</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Misturas homogéneas</td><td>A, B, E</td></tr>
+        <tr><td>2</td><td>Soluções</td><td>A, B, D</td></tr>
+        <tr><td>3</td><td>Misturas homogéneas ideais</td><td>A, B, D</td></tr>
+        <tr><td>4</td><td>Massa específica do óleo</td><td>A, B, D</td></tr>
+        <tr><td>5</td><td>Peso específico relativo</td><td>A, B, D</td></tr>
+        <tr><td>6</td><td>Densidade</td><td>A, B, D</td></tr>
+        <tr><td>7</td><td>Grau API</td><td>A, B, C, E</td></tr>
+        <tr><td>8</td><td>Compressibilidade isotérmica</td><td>A, B, D</td></tr>
+        <tr><td>9</td><td>Factor volume de formação do óleo (Bo)</td><td>A, B, D, E</td></tr>
+        <tr><td>10</td><td>Viscosidade do óleo</td><td>A, B, D</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#27ae60;border-bottom:2px solid #a9dfbf;padding-bottom:6px;">🟢 Aula 3 — Exercícios Numéricos</h3>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li>Um reservatório cilíndrico (D = 2 m, h = 4 m) contém petróleo (ρ = 850 kg/m³). Calcule a massa de petróleo. Repita para gasolina (ρ = 740 kg/m³).</li>
+      <li>Sendo ρ = 740 kg/m³, determine o volume ocupado por 500 kg deste fluido.</li>
+      <li>Uma amostra de 400 kg ocupa 1500 L. Calcule: ρ (kg/m³), peso específico (N/m³) e peso específico relativo (usar ρ_H₂O = 1000 kg/m³).</li>
+      <li>Calcule o peso específico relativo (γ<sub>o</sub>) e o grau API de um óleo com ρ = 53 lb/ft³.
+        <div class="formula-box" style="margin:6px 0;">°API = 141.5/γ<sub>o</sub> − 131.5 &nbsp;|&nbsp; γ<sub>o</sub> = ρ<sub>óleo</sub>/ρ<sub>água</sub></div>
+      </li>
+      <li>Determine a densidade relativa e a massa específica de um óleo de 42 °API.</li>
+    </ol>
+
+    <h3 style="color:#27ae60;border-bottom:2px solid #a9dfbf;padding-bottom:6px;margin-top:20px;">🟢 Aula 3 — Exercícios de Gás (Lei dos Gases)</h3>
+    <ol start="6" style="line-height:2.3;color:#2c3e50;">
+      <li>(a) 510 ft³ de gás a 60°F e 12 psig: calcule o volume a 110°F e mesma pressão. (b) Qual a nova pressão se o volume for mantido constante e T subir a 110°F?</li>
+      <li>(a) Preencher um tanque de 100 ft³ a 40 psia / 90°F: calcule o volume em condições padrão. (b) Qual a pressão se o gás arrefecer a 60°F a volume constante?</li>
+      <li>Poço produtor de gás: γ<sub>g</sub> = 0,65; q = 1,1 MMscf/dia; p = 1500 psi; T = 150°F.<br>Calcule: (a) Massa molar aparente do gás; (b) ρ<sub>g</sub> nas condições do reservatório; (c) Vazão mássica em lb/dia.</li>
+      <li>Gás natural com composição: CO₂ = 0,05; C₁ = 0,90; C₂ = 0,03; C₃ = 0,02. Calcule o factor z pelo método de Standing-Katz para p = 2000 psia, T = 150°F.</li>
+    </ol>
+
+    <h3 style="color:#27ae60;border-bottom:2px solid #a9dfbf;padding-bottom:6px;margin-top:24px;">🟢 Aula 4 — Questões de Consolidação — Propriedades do Gás (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Tema</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Equação de estado dos gases</td><td>A, B, D</td></tr>
+        <tr><td>2</td><td>Gases ideais</td><td>A, B, D, E</td></tr>
+        <tr><td>3</td><td>Gases reais</td><td>A, B, C, E</td></tr>
+        <tr><td>4</td><td>Factor volume de formação do gás (Bg)</td><td>A, B, D</td></tr>
+        <tr><td>5</td><td>Viscosidade do gás</td><td>A, B, C, E</td></tr>
+        <tr><td>6</td><td>Razão de solubilidade (Rs)</td><td>A, B, D</td></tr>
+        <tr><td>7</td><td>Comportamento óleo-gás</td><td>A, B, C, E</td></tr>
+        <tr><td>8</td><td>FVF bifásico (Bt)</td><td>A, B, D, E</td></tr>
+        <tr><td>9</td><td>Equações de estado gases reais</td><td>A, B, C, E</td></tr>
+        <tr><td>10</td><td>Propriedades de gases em reservatórios</td><td>A, B, D</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#27ae60;border-bottom:2px solid #a9dfbf;padding-bottom:6px;">🟢 Aula 4 — Exercícios Numéricos</h3>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li>Calcule a massa do metano: V = 5 ft³, p = 700 psia, T = 68°F. (Assume gás ideal; M<sub>C1</sub> = 16 g/mol)</li>
+      <li>Gás natural (CO₂=0,05; C₁=0,90; C₂=0,03; C₃=0,02): calcule o factor z para p = 2000 psia e T = 150°F.</li>
+      <li>Gás natural ácido com γ<sub>g</sub> = 0,75, contendo 5% CO₂ e 10% H₂S: calcule ρ<sub>g</sub> a 3300 psia e 150°F (usando correcções de Wichert-Aziz).</li>
+      <li>Dados: p = 2500 psia; T = 180°F; z = 0,85.<br>
+        (a) Calcule B<sub>g</sub> em bbl/scf e o factor de expansão (scf/bbl).<br>
+        (b) Volume de gás produzido se V<sub>p</sub> = 1 × 10⁹ ft³.
+        <div class="formula-box" style="margin:6px 0;">B<sub>g</sub> = 0,00504 · zT / p &nbsp; (bbl/scf, com T em °R)</div>
+      </li>
+      <li>Construa a tabela e o gráfico de B<sub>g</sub> versus pressão para γ<sub>g</sub> = 0,64, T = 81°F, pressões de 3500 a 500 psia (intervalo de 500 psia).</li>
+      <li>Para uma mistura de gás com composição conhecida, calcule: massa molar aparente (M), ρ em condições de reservatório, volume molar, ρ em condições padrão, pressão parcial do propano, volume parcial do etano, fracção mássica de cada componente, T<sub>pc</sub>, z a 222,5°F / 500 psia, e viscosidade a 222,5°F / 1 atm e a 500 psia.</li>
+    </ol>
+
+    <h3 style="color:#27ae60;border-bottom:2px solid #a9dfbf;padding-bottom:6px;margin-top:20px;">🟢 Aula 4 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Explique o papel das equações de estado na caracterização dos gases de reservatório.</li>
+      <li>Compare o comportamento de gases ideais e gases reais em condições de reservatório.</li>
+      <li>Defina razão de solubilidade (Rs) e explique a sua importância na engenharia de reservatórios.</li>
+      <li>Descreva o comportamento bifásico óleo-gás nos reservatórios.</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+  </div>
+
+  <!-- ═══ CAPÍTULO 3 ═══ -->
+  <div style="border-left:8px solid #8e44ad;background:#fdf5ff;padding:28px 36px 24px;margin:0;border-top:2px solid #d2b4de;">
+    <h2 style="color:#6c3483;font-size:1.6em;margin:0 0 4px;">Capítulo 3 — Propriedades das Rochas de Reservatório</h2>
+    <p style="color:#5d6d7e;margin:0 0 20px;font-size:0.97em;">Aulas 5, 6, 7 &amp; 8</p>
+
+    <!-- AULA 5: POROSIDADE -->
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;">🟣 Aula 5 — Questões de Consolidação — Porosidade (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Tema</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Rochas de reservatório</td><td>A, C, E</td></tr>
+        <tr><td>2</td><td>Componentes da rocha (matriz, cimento, poros)</td><td>A, B, D</td></tr>
+        <tr><td>3</td><td>Porosidade (definição)</td><td>A, B, D</td></tr>
+        <tr><td>4</td><td>Porosidade primária (intergranular)</td><td>A, C, D</td></tr>
+        <tr><td>5</td><td>Porosidade secundária (fracturas, dissolução)</td><td>A, B, D, E</td></tr>
+        <tr><td>6</td><td>Factores que influenciam a porosidade</td><td>A, B, C, E</td></tr>
+        <tr><td>7</td><td>Matriz rochosa</td><td>A, B, D, E</td></tr>
+        <tr><td>8</td><td>Classificação da porosidade</td><td>A, B, D, E</td></tr>
+        <tr><td>9</td><td>Alta porosidade (características)</td><td>A, C, E</td></tr>
+        <tr><td>10</td><td>Arenitos como reservatórios</td><td>A, B, D, E</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;">🟣 Aula 5 — Exercícios Numéricos — Porosidade</h3>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li>Amostra saturada com óleo: W<sub>s</sub> = 130 g; W<sub>d</sub> = 105 g; ρ<sub>óleo</sub> = 840 kg/m³; V<sub>t</sub> = 180 cm³. Calcule a porosidade.
+        <div class="formula-box" style="margin:6px 0;">φ = V<sub>p</sub>/V<sub>t</sub> &nbsp;; &nbsp; V<sub>p</sub> = (W<sub>s</sub> − W<sub>d</sub>)/ρ<sub>óleo</sub></div>
+      </li>
+      <li>Determine a porosidade idealizada para arranjos de esferas (cúbico e romboédrico).</li>
+      <li>Lei de Boyle: V₁ = 100 cc (grão + poros), V₂ = 100 cc (célula), p₁ = 15 psi, p₂ = 60 psi, p<sub>f</sub> = 39 psi. Calcule o volume do grão e a porosidade.</li>
+      <li>Calcule a porosidade média de 4 amostras com porosidades diferentes (média ponderada pela espessura).</li>
+      <li>W<sub>d</sub> = 330 g; W<sub>s</sub> = 360 g; W<sub>ap</sub> (peso aparente em água) = 225 g. Calcule a porosidade pelo método de Arquimedes.</li>
+      <li>Complete as colunas de uma tabela de análise de rotina (RCAL): porosidade, permeabilidade, saturação de água.</li>
+      <li>Complete os dados de uma tabela de análise especial (SCAL): curvas Pc, permeabilidade relativa, molhabilidade.</li>
+      <li>Plano de determinação laboratorial da porosidade para 1, 2 e 3 semanas de trabalho.</li>
+    </ol>
+
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;margin-top:20px;">🟣 Aula 5 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Explique o conceito de rocha de reservatório e a sua importância.</li>
+      <li>Diferencie porosidade total e porosidade efectiva.</li>
+      <li>Descreva os efeitos da compactação na porosidade das rochas.</li>
+      <li>Analise a influência dos processos diagenéticos nas propriedades da rocha reservatório.</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+
+    <!-- AULA 6: COMPRESSIBILIDADE, SATURAÇÃO, PERMEABILIDADE -->
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;margin-top:28px;">🟣 Aula 6 — Questões de Consolidação — Compressibilidade, Saturação e Permeabilidade (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Tema</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Compressibilidade da rocha</td><td>A, C, D</td></tr>
+        <tr><td>2</td><td>Compressibilidade dos fluidos</td><td>A, C, E</td></tr>
+        <tr><td>3</td><td>Saturação de fluidos</td><td>A, B, C, E</td></tr>
+        <tr><td>4</td><td>Saturação de água</td><td>A, C, D</td></tr>
+        <tr><td>5</td><td>Permeabilidade absoluta</td><td>A, C, D</td></tr>
+        <tr><td>6</td><td>Permeabilidade relativa</td><td>A, B, D</td></tr>
+        <tr><td>7</td><td>Factores que influenciam permeabilidade</td><td>A, B, C, E</td></tr>
+        <tr><td>8</td><td>Compressibilidade total do sistema</td><td>A, B, D</td></tr>
+        <tr><td>9</td><td>Saturação residual de óleo</td><td>A, B, D, E</td></tr>
+        <tr><td>10</td><td>Relação entre propriedades</td><td>A, B, C, D</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;">🟣 Aula 6 — Exercícios Numéricos</h3>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li>V<sub>p</sub> = 18 cm³; ΔV<sub>p</sub> = 0,15 cm³; Δp = 900 psig. Calcule a compressibilidade dos poros (c<sub>f</sub>).
+        <div class="formula-box" style="margin:6px 0;">c<sub>f</sub> = −(1/V<sub>p</sub>)(ΔV<sub>p</sub>/Δp)</div>
+      </li>
+      <li>V<sub>t</sub> = 150 cm³; φ = 18%; c<sub>f</sub> = 7×10⁻⁶ psig⁻¹; gradiente de sobrecarga = 0,95 psig/ft; profundidade = 8000 ft. Calcule a porosidade a essa profundidade.</li>
+      <li>(a) Derive a conversão: 1 Darcy → m². (b) Converta 3,5 mD em m². (c) Converta 7,3×10⁻¹² m² em Darcy.</li>
+      <li>Experimento de permeabilidade: q = 0,07 cm³/s; p<sub>entrada</sub> = 43 psig; p<sub>saída</sub> = 0 psig; L = 3,5 in; D = 1,48 in; μ = 1 cP. Calcule k.
+        <div class="formula-box" style="margin:6px 0;">q = kA(p₁−p₂)/(μL) &nbsp; [Lei de Darcy]</div>
+      </li>
+      <li>Determine a saturação total de fluidos em recipientes (a), (b) e (c) a partir das figuras fornecidas.</li>
+      <li>Amostra: ρ<sub>w</sub> = 1 g/cm³; ρ<sub>o</sub> = 0,87 g/cm³; φ = 13,6%; L = 3 in; D = 1,5 in; W<sub>s</sub> = 144,3 g; W<sub>d</sub> = 133,2 g. Calcule S<sub>o</sub> e S<sub>w</sub>.</li>
+      <li>Derive a equação do fluxo radial permanente para fluido incompressível: q = 2πkh(p<sub>e</sub>−p<sub>w</sub>) / [μ ln(r<sub>e</sub>/r<sub>w</sub>)].</li>
+      <li style="color:#7f8c8d;"><em>Exemplo adicional (Aula 6):</em> Amostra L = 2 cm, D = 1 cm; q<sub>água</sub> = 60 cm³/min; p<sub>montante</sub> = 2,3 atm; p<sub>jusante</sub> = 1,0 atm; μ = 1 cP. Calcule k.</li>
+    </ol>
+
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;margin-top:20px;">🟣 Aula 6 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Explique o conceito de compressibilidade e a sua importância.</li>
+      <li>Diferencie compressibilidade da rocha e compressibilidade dos fluidos.</li>
+      <li>Explique saturação de fluidos e a sua relevância para a produção.</li>
+      <li>Analise a influência da saturação na permeabilidade relativa.</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+
+    <!-- AULA 7: MOLHABILIDADE / CAPILARIDADE -->
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;margin-top:28px;">🟣 Aula 7 — Questões de Consolidação — Molhabilidade e Pressão Capilar (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Tema</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Molhabilidade da rocha</td><td>A, C, D, E</td></tr>
+        <tr><td>2</td><td>Pressão capilar</td><td>A, B, D, E</td></tr>
+        <tr><td>3</td><td>Processos de embebição e drenagem</td><td>A, C, E</td></tr>
+        <tr><td>4</td><td>Função J de Leverett</td><td>A, B, D, E</td></tr>
+        <tr><td>5</td><td>Molhabilidade e recuperação de óleo</td><td>D, E</td></tr>
+        <tr><td>6</td><td>Pressão capilar e tamanho do poro</td><td>A, B, D</td></tr>
+        <tr><td>7</td><td>Embebição e drenagem nas curvas capilares</td><td>A, C, D, E</td></tr>
+        <tr><td>8</td><td>Função J de Leverett e escalonamento</td><td>A, B, C, E</td></tr>
+        <tr><td>9</td><td>Molhabilidade e eficiência de recuperação</td><td>A, C, E</td></tr>
+        <tr><td>10</td><td>Processos capilares e fluxo multifásico</td><td>A, C, D, E</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;">🟣 Aula 7 — Exercícios</h3>
+    <div class="concept-box" style="margin-bottom:12px;">
+      <strong>Fórmulas essenciais — Molhabilidade / Capilaridade:</strong>
+      <div class="formula-box">cos θ = (σ<sub>so</sub> − σ<sub>sw</sub>) / σ<sub>wo</sub> &nbsp;|&nbsp; p<sub>c</sub> = p<sub>nw</sub> − p<sub>w</sub> &nbsp;|&nbsp; p<sub>c</sub> = 2σ cosθ / r &nbsp;|&nbsp; h = 2σ cosθ / (gΔρr)</div>
+      <div class="formula-box" style="margin-top:4px;">J = p<sub>c</sub>√(k/φ) / (σ cosθ) &nbsp; [Função J de Leverett]</div>
+    </div>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li>Sistema bifásico (água + óleo + rocha): σ<sub>wo</sub> = 30 dina/cm; σ<sub>so</sub> = 80 dina/cm; σ<sub>sw</sub> = 65 dina/cm.<br>
+        Determine: (a) Fluido que molha preferencialmente; (b) Tensão de adesão; (c) Ângulo de contacto θ.</li>
+      <li>Desenhe esquemas de tubo capilar em sistema água/óleo para: (a) rocha molhável pela água (water-wet); (b) molhabilidade neutra; (c) rocha molhável pelo óleo (oil-wet).</li>
+      <li>Num poço perfurado numa estrutura com 3 tipos de rocha (A, B, C), com curvas de pressão capilar (ar/mercúrio convertidas para altura):<br>
+        (a) Qual é a melhor rocha-reservatório? Porquê?<br>
+        (b) Qual é a pior? Porquê?<br>
+        (c) S<sub>wi</sub> para cada tipo de rocha?<br>
+        (d) Qual tem a zona de transição mais curta?<br>
+        (e) Qual tem a zona de transição mais longa?<br>
+        (f) Se OWC = 5000 ft para rocha A, qual é o FWL?<br>
+        (g) WOC para as rochas B e C?<br>
+        (h) Se a rocha B é identificada a 4000 ft com S<sub>w</sub> = 35%: (i) Profundidade do FWL? (ii) OWC para cada rocha?</li>
+      <li>Medições de pressão capilar em laboratório (tabela fornecida). OWC = 1530 m abaixo do nível do mar.<br>
+        (a) São dados de drenagem ou embebição? (b) S<sub>wirr</sub>? (c) Converta p<sub>c</sub> lab → campo. (d) Converta p<sub>c</sub> → altura acima do FWL. (e) FWL esperado? (f) Espessura da zona de transição? (g) Onde perfurar para produzir óleo limpo?</li>
+      <li>Testemunho: φ = 12%, k = 50 mD; σ = 40 dina/cm; θ = 0°; S<sub>wirr</sub> = 0,2. Médias do reservatório: φ<sub>res</sub> = 16%, k<sub>res</sub> = 85 mD. Use a função J para gerar dados representativos de p<sub>c</sub> do reservatório.</li>
+      <li>Ensaio ar-salmoura: tabela dada. (a) Construa o gráfico S<sub>w</sub> × p<sub>c</sub>.</li>
+      <li>(a) Identifique a molhabilidade preferencial das curvas 1 e 2 na Figura A. (b) Identifique a curva de embebição e de drenagem na Figura B.</li>
+      <li>Na Figura A, identifique as curvas de alta, média e baixa permeabilidade para a zona de transição.</li>
+      <li>Na Figura A, identifique as curvas de alta, média e baixa densidade do fluido para a zona de transição.</li>
+    </ol>
+
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;margin-top:20px;">🟣 Aula 7 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Explique o conceito de molhabilidade e a sua importância.</li>
+      <li>Descreva a pressão capilar e os factores que a influenciam.</li>
+      <li>Explique os processos de embebição e drenagem e a sua relevância.</li>
+      <li>Como a embebição e a drenagem influenciam as estratégias de EOR (Enhanced Oil Recovery)?</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+
+    <!-- AULA 8: CONTACTO DE FLUIDOS / EBM SIMPLIFICADA -->
+    <h3 style="color:#8e44ad;border-bottom:2px solid #d2b4de;padding-bottom:6px;margin-top:28px;">🟣 Aula 8 — Contacto de Hidrocarbonetos/Água</h3>
+    <div class="concept-box" style="margin-bottom:12px;">
+      <strong>Fórmulas do Contacto de Fluidos:</strong>
+      <div class="formula-box">
+        Z<sub>FOL</sub> = (p<sub>o</sub> − p<sub>g</sub> + ρ<sub>g</sub>gZ<sub>g</sub> − ρ<sub>o</sub>gZ<sub>o</sub>) / [(ρ<sub>g</sub> − ρ<sub>o</sub>)g]<br>
+        Z<sub>FWL</sub> = (p<sub>w</sub> − p<sub>o</sub> + ρ<sub>o</sub>gZ<sub>o</sub> − ρ<sub>w</sub>gZ<sub>w</sub>) / [(ρ<sub>o</sub> − ρ<sub>w</sub>)g]
+      </div>
+    </div>
+    <p style="color:#5d6d7e;font-style:italic;">Tópicos abordados: interfaces FOL (Free Oil Level) e FWL (Free Water Level); distribuição de pressão com diferentes densidades; OWC vs FWL; cálculo de alturas de contacto a partir de dados de pressão.</p>
+  </div>
+
+  <!-- ═══ CAPÍTULO 4 ═══ -->
+  <div style="border-left:8px solid #c0392b;background:#fff5f5;padding:28px 36px 24px;margin:0;border-top:2px solid #f1948a;">
+    <h2 style="color:#922b21;font-size:1.6em;margin:0 0 4px;">Capítulo 4 — Integração de Dados, Método Volumétrico e Balanço de Materiais</h2>
+    <p style="color:#5d6d7e;margin:0 0 20px;font-size:0.97em;">Aulas 9, 10, 11 &amp; 12</p>
+
+    <!-- AULAS 9-10: MÉTODO VOLUMÉTRICO -->
+    <h3 style="color:#c0392b;border-bottom:2px solid #f1948a;padding-bottom:6px;">🔴 Aulas 9-10 — Questões de Consolidação — Método Volumétrico (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Tema</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Volume recuperável</td><td>B, C, D</td></tr>
+        <tr><td>2</td><td>Sistemas em camadas</td><td>A, C, D</td></tr>
+        <tr><td>3</td><td>Net to Gross (NTG)</td><td>A, B, C</td></tr>
+        <tr><td>4</td><td>Cut-offs</td><td>A, B, C, E</td></tr>
+        <tr><td>5</td><td>Integração de dados</td><td>A, C, D</td></tr>
+        <tr><td>6</td><td>Incertezas no cálculo volumétrico</td><td>A, B, D, E</td></tr>
+        <tr><td>7</td><td>Parâmetros para cálculo de volume original</td><td>A, B, C, D</td></tr>
+        <tr><td>8</td><td>Parâmetros para caracterizar o fluxo</td><td>A, B, C, E</td></tr>
+        <tr><td>9</td><td>Relação entre cut-offs e reservas</td><td>A, B, D</td></tr>
+        <tr><td>10</td><td>Sistemas em camadas e fluxo</td><td>A, C, D</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:#c0392b;border-bottom:2px solid #f1948a;padding-bottom:6px;">🔴 Aulas 9-10 — Exercícios Numéricos — Método Volumétrico</h3>
+    <div class="concept-box" style="margin-bottom:12px;">
+      <strong>Fórmulas do Método Volumétrico:</strong>
+      <div class="formula-box">
+        N = 7758 · A · h · NTG · φ · (1−S<sub>wi</sub>) / B<sub>oi</sub> &nbsp; [OOIP em STB]<br>
+        G = 43560 · A · h · NTG · φ · (1−S<sub>wi</sub>) / B<sub>gi</sub> &nbsp; [OGIP em scf]<br>
+        NTG = h<sub>reservatório</sub> / h<sub>total</sub> &nbsp; | &nbsp; Reservas = N · FR − N<sub>A</sub>
+      </div>
+    </div>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li>Reservatório de óleo homogéneo: B<sub>o</sub> = 1,31 bbl/STB; S<sub>wi</sub> = 20% (por registos de resistividade e pressão capilar). Com base nos dados de mapa, altura de saturação (RFT) e mapa de porosidade/litologia fornecidos:<br>
+        (a) Calcule N (OOIP) pelo método volumétrico.<br>
+        (b) Calcule o NTG para este reservatório.</li>
+      <li>Investigue os 20 países com maiores reservas de óleo e gás natural no mundo e elabore uma tabela comparativa.</li>
+      <li>Reservatório de gás: A = 3000 acres; h = 30 ft; φ = 15%; S<sub>wi</sub> = 20%; T = 150°F; p<sub>i</sub> = 2600 psi; γ<sub>g</sub> = 0,75; p<sub>abandono</sub> = 400 psi.<br>
+        Faça gráficos de: (a) Volume de gás produzido vs. B<sub>g</sub>; (b) Volume produzido vs. factor z; (c) Volume produzido vs. pressão.</li>
+      <li>Um reservatório de óleo: N = 3,2 × 10⁶ Sm³; V<sub>recuperável</sub> = 7,36 × 10⁵ Sm³; N<sub>produzido (3 anos)</sub> = 4 × 10⁵ Sm³.<br>
+        (a) Factor de recuperação (FR). (b) Fracção recuperada (fR). (c) Reservas actuais.</li>
+    </ol>
+
+    <h3 style="color:#c0392b;border-bottom:2px solid #f1948a;padding-bottom:6px;margin-top:20px;">🔴 Aulas 9-10 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Discuta o conceito de volume recuperável e a sua importância.</li>
+      <li>Analise o comportamento de reservatórios em sistemas estratificados (em camadas).</li>
+      <li>Explique o conceito de Net to Gross (NTG) e a sua relevância.</li>
+      <li>Discuta o papel dos cut-offs na avaliação de reservatórios.</li>
+      <li>Discuta a importância da integração de dados na caracterização do fluxo.</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+
+    <!-- AULAS 11-12: EBM -->
+    <h3 style="color:#c0392b;border-bottom:2px solid #f1948a;padding-bottom:6px;margin-top:28px;">🔴 Aulas 11-12 — Questões de Consolidação — Equação de Balanço de Materiais (SIM / NÃO)</h3>
+    <table class="styled-table" style="margin-bottom:18px;">
+      <thead><tr><th>#</th><th>Questão</th><th>Afirmativas Corretas</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>A EBM baseia-se em…</td><td>A (conservação de massa), C, E</td></tr>
+        <tr><td>2</td><td>A EBM é utilizada para…</td><td>A, B, D</td></tr>
+        <tr><td>3</td><td>A equação generalizada considera…</td><td>A, B, C, D</td></tr>
+        <tr><td>4</td><td>Assumir reservatório como tanque implica…</td><td>A, B, C, E</td></tr>
+        <tr><td>5</td><td>Limitações da EBM incluem…</td><td>A, B, E</td></tr>
+        <tr><td>6</td><td>A EBM generalizada permite identificar…</td><td>A, B, D, E</td></tr>
+        <tr><td>7</td><td>Pressão média do reservatório…</td><td>A, B, D</td></tr>
+        <tr><td>8</td><td>Dados necessários para EBM incluem…</td><td>A, B, D, E</td></tr>
+        <tr><td>9</td><td>A expansão dos fluidos ocorre devido a…</td><td>A, C</td></tr>
+        <tr><td>10</td><td>A EBM é mais adequada quando…</td><td>A, B, D</td></tr>
+      </tbody>
+    </table>
+
+    <div class="concept-box" style="margin-bottom:18px;">
+      <strong>EBM Generalizada — Equação de Havlena-Odeh (linearização):</strong>
+      <div class="formula-box">
+        F = N·E<sub>o</sub> + m·N·E<sub>g</sub> + (1+m)·N·E<sub>f,w</sub> + W<sub>e</sub>
+        <br><br>
+        E<sub>o</sub> = B<sub>o</sub>−B<sub>oi</sub> + (R<sub>si</sub>−R<sub>s</sub>)B<sub>g</sub> &nbsp;|&nbsp; E<sub>g</sub> = B<sub>oi</sub>(B<sub>g</sub>/B<sub>gi</sub>−1) &nbsp;|&nbsp; E<sub>f,w</sub> = B<sub>oi</sub>·(S<sub>wi</sub>c<sub>w</sub>+c<sub>f</sub>)·Δp/(1−S<sub>wi</sub>)
+        <br>
+        F = N<sub>p</sub>B<sub>o</sub> + (R<sub>p</sub>−R<sub>s</sub>)B<sub>g</sub> + W<sub>p</sub>B<sub>w</sub> − W<sub>inj</sub>B<sub>w</sub> − G<sub>inj</sub>B<sub>ginj</sub>
+      </div>
+    </div>
+
+    <h3 style="color:#c0392b;border-bottom:2px solid #f1948a;padding-bottom:6px;">🔴 Aulas 11-12 — Exercícios Numéricos — EBM</h3>
+    <ol style="line-height:2.3;color:#2c3e50;">
+      <li><strong>(Campo Big Butte — mecanismo combinado)</strong> p<sub>actual</sub> = 2500 psi; V<sub>zona de óleo</sub> = 100 000 ft³; V<sub>zona de gás</sub> = 20 000 ft³. Dados PVT e produção fornecidos em tabela (p<sub>i</sub>=3000 psia; B<sub>oi</sub>=1,35; N<sub>p</sub>=?; G<sub>p</sub>=5,5 MMMscf; W<sub>p</sub>=0,2 MMbbl; B<sub>g</sub>=0,0015). Calcule o óleo original no reservatório (N).</li>
+      <li><strong>(Campo com Vp de óleo = 75 MMft³, sem capa de gás e sem aquífero)</strong><br>
+        Dados: R<sub>s</sub> = 0,42 scf/STB/psi; p<sub>i</sub> = 3500 psia; p<sub>b</sub> = 2400 psia; B<sub>oi</sub>(3500 psia) = 1,33 bbl/STB; z(1500 psia,140°F) = 0,95; N<sub>p</sub>(1500 psia) = 1,0 MMSTB; RGO acumulada = 2800 scf/STB.<br>
+        Calcule: (a) N em STB; (b) G inicial em scf; (c) RGO dissolvida inicial; (d) Gás remanescente a 1500 psia; (e) Gás livre a 1500 psia; (f) Volume do reservatório de gás livre a 1500 psia; (g) RGO total do reservatório a 1500 psia.</li>
+      <li><strong>(Reservatório subsaturado)</strong> p<sub>i</sub> = 3685 psia; c<sub>f</sub> = 4,95×10⁻⁶ psi⁻¹; c<sub>w</sub> = 3,62×10⁻⁶ psi⁻¹; S<sub>wi</sub> = 24%; B<sub>w</sub> = 1,0; p<sub>b</sub> = 1500 psi. Dados de produção e PVT em tabela. Use a EBM para calcular N.</li>
+      <li><strong>(Mecanismo de capa de gás)</strong> p<sub>b</sub> = 234,18 kgf/cm²; sem produção de água; dados PVT em tabela (6 pressões).<br>
+        Use a EBM para determinar: (a) Volume original de óleo; (b) Volume original de gás capa.</li>
+      <li><strong>(Gás em solução — análise PVT completa)</strong> p<sub>b</sub> = 234,18 kgf/cm²; c<sub>f</sub> = 122,3×10⁻⁶ (kgf/cm²)⁻¹; c<sub>w</sub> = 42,7×10⁻⁶ (kgf/cm²)⁻¹; S<sub>wi</sub> = 0,20.<br>
+        (a) Determine f<sub>R</sub> até a pressão de bolha (comportamento volumétrico).<br>
+        (b) Expressão para f<sub>R</sub> até ao abandono (p<sub>ab</sub> = 63,3 kgf/cm²) como função de R<sub>ps</sub>.<br>
+        (c) Saturação de gás livre no reservatório para recuperação final de 12%.</li>
+      <li><strong>(Mecanismo de gás em solução — arenito)</strong> p<sub>i</sub> = 2500 psia; dados em tabela para 4 pressões (Bo, z, Rs, Bg); RGO acumulada mantida em 954 scf/STB; sem aquífero nem capa de gás. Calcule N.</li>
+      <li><strong>(Reservatório fracturado — compressibilidade)</strong> N = 650 MMSTB; p<sub>i</sub> = 7150 psia; p<sub>b</sub> = 4500 psia; B<sub>oi</sub> = 1,743 bbl/STB; B<sub>ob</sub> = 1,850 bbl/STB; c<sub>w</sub> = 3,0×10⁻⁶/psi; c<sub>f</sub> = 3,3×10⁻⁶/psi; S<sub>wi</sub> = 0,43; N<sub>pb</sub> = 43,473 MMSTB.<br>
+        (a) Calcule N inicial e a saturação de gás após 72 meses.<br>
+        (b) Qual seria a variação do volume de óleo se ignorarmos c<sub>w</sub> e c<sub>f</sub>?</li>
+    </ol>
+
+    <h3 style="color:#c0392b;border-bottom:2px solid #f1948a;padding-bottom:6px;margin-top:20px;">🔴 Aulas 11-12 — Tarefas / Questões Dissertativas</h3>
+    <ol style="line-height:2.1;color:#2c3e50;">
+      <li>Explique o princípio fundamental da Equação de Balanço de Materiais.</li>
+      <li>Descreva os principais termos da equação generalizada de balanço de materiais.</li>
+      <li>Discuta a importância da pressão média do reservatório na aplicação da EBM.</li>
+      <li>Discuta a importância da linearização da EBM (método de Havlena-Odeh).</li>
+      <li>Explique a importância da gestão da injecção de água em reservatórios de óleo.</li>
+      <li>Explique o comportamento do reservatório para pressões acima e abaixo da pressão de bolha.</li>
+      <li>Discuta as limitações da EBM e compare-a com o método volumétrico e a simulação numérica.</li>
+      <li>Fundamente as questões correctas e incorrectas das questões de consolidação.</li>
+    </ol>
+  </div>
+
+  <!-- ═══ RESUMO GERAL ═══ -->
+  <div style="background:#2c3e50;color:#fff;padding:28px 40px;border-radius:0 0 12px 12px;">
+    <h2 style="color:#f39c12;margin:0 0 16px;font-size:1.4em;text-align:center;">📊 Resumo das Fórmulas Essenciais para Exame</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div style="background:#34495e;border-radius:8px;padding:16px;">
+        <div style="color:#aed6f1;font-weight:700;margin-bottom:10px;">FLUIDOS</div>
+        <div style="font-family:monospace;font-size:0.88em;line-height:1.8;">
+          °API = 141.5/γ<sub>o</sub> − 131.5<br>
+          γ<sub>o</sub> = ρ<sub>óleo</sub> / ρ<sub>água@60°F</sub><br>
+          pV = znRT &nbsp; (gás real)<br>
+          B<sub>g</sub> = 0.00504·zT/p &nbsp; [bbl/scf]<br>
+          B<sub>t</sub> = B<sub>o</sub> + (R<sub>si</sub>−R<sub>s</sub>)·B<sub>g</sub>
+        </div>
+      </div>
+      <div style="background:#34495e;border-radius:8px;padding:16px;">
+        <div style="color:#a9dfbf;font-weight:700;margin-bottom:10px;">ROCHAS</div>
+        <div style="font-family:monospace;font-size:0.88em;line-height:1.8;">
+          φ = V<sub>p</sub>/V<sub>t</sub><br>
+          S<sub>o</sub>+S<sub>g</sub>+S<sub>w</sub> = 1<br>
+          q = kA(p₁−p₂)/(μL) &nbsp; [Darcy]<br>
+          p<sub>c</sub> = 2σcosθ/r<br>
+          J = p<sub>c</sub>√(k/φ)/(σcosθ)
+        </div>
+      </div>
+      <div style="background:#34495e;border-radius:8px;padding:16px;">
+        <div style="color:#f1948a;font-weight:700;margin-bottom:10px;">VOLUMÉTRICO</div>
+        <div style="font-family:monospace;font-size:0.88em;line-height:1.8;">
+          N = 7758·A·h·NTG·φ·(1−S<sub>wi</sub>)/B<sub>oi</sub><br>
+          G = 43560·A·h·NTG·φ·(1−S<sub>wi</sub>)/B<sub>gi</sub><br>
+          N<sub>R</sub> = N·FR<br>
+          Reservas = N·FR − N<sub>A</sub>
+        </div>
+      </div>
+      <div style="background:#34495e;border-radius:8px;padding:16px;">
+        <div style="color:#d7bde2;font-weight:700;margin-bottom:10px;">EBM</div>
+        <div style="font-family:monospace;font-size:0.88em;line-height:1.8;">
+          F = N·E<sub>o</sub> + mN·E<sub>g</sub> + (1+m)N·E<sub>f,w</sub> + W<sub>e</sub><br>
+          E<sub>o</sub> = B<sub>o</sub>−B<sub>oi</sub>+(R<sub>si</sub>−R<sub>s</sub>)B<sub>g</sub><br>
+          E<sub>g</sub> = B<sub>oi</sub>(B<sub>g</sub>/B<sub>gi</sub>−1)<br>
+          m = GB<sub>gi</sub>/(NB<sub>oi</sub>)
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<div class="footer">
+  <p><strong>Engenharia de Reservatórios I · ISPTEC · Angola · 2025/2026</strong></p>
+  <p>Prof. Dr. Geraldo A. R. Ramos &nbsp;|&nbsp; Resumo compilado a partir dos slides das Aulas 0–12</p>
+  <p style="margin-top:8px;">Referências: Rosa et al. (2006) · Dake (1983) · Ahmed (2010) · McCain (1990)</p>
+  <p style="margin-top:16px; color:#bdc3c7;">Para imprimir como PDF: Ctrl+P → Guardar como PDF (A4, sem margens).</p>
+</div>
+
+</div><!-- /container -->
+</body>
+</html>
