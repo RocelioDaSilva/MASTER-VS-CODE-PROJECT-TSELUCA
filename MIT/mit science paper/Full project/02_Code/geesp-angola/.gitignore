@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data & Cache
+data/raw/
+data/downloads/
+data/cache/
+*.cache
+*.pkl
+*.pickle
+*.parquet
+
+# Note: data/processed/ IS included (demonstration maps)
+
+# Outputs & Logs
+outputs/
+results/
+logs/
+*.log
+geesp-angola.log
+compilation.log
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Large Files
+*.tif
+*.tiff
+*.h5
+*.nc
+*.zip
+
+# Temporary
+temp/
+tmp/
+*.tmp
+
+# GEE exports
+geesp-angola-exports/
+ee-exports/
+
+# Configuration (local)
+.env
+local_config.json
+credentials.json
