@@ -1,0 +1,707 @@
+% ═══════════════════════════════════════════════════════════════════
+%  EMBERS OF THE FORSAKEN KEEP
+%  Integrated Book Template + Content
+%
+%  This master document:
+%    • Defines all 9 character glyphs
+%    • Defines all 6 landscape variations
+%    • Sets up header/footer/chapter stripe system
+%    • Includes chapter-specific configuration
+%    • Compiles with: xelatex (run twice)
+%
+%  To customize per chapter:
+%    \renewcommand{\ActiveCharacter}{CharName}
+%    \renewcommand{\ActiveLandscape}{LandscapeName}
+%    \renewcommand{\SceneLocation}{Location Label}
+%    \renewcommand{\CurrentChapterNum}{N}
+%    \renewcommand{\CurrentChapterLabel}{LABEL}
+%
+%  Options:
+%    Characters: Aisen | Caspian | Corvin | Ryo | Kael | Kairos | Orin | Amara | Renard
+%    Landscapes: Mountains | City | Dungeon | Wasteland | Forest | Coast
+% ═══════════════════════════════════════════════════════════════════
+
+\documentclass[12pt, a4paper, twoside, openright]{book}
+
+% ── Layout ──────────────────────────────────────────────────────────
+\usepackage[
+  a4paper,
+  top        = 3.0cm,
+  bottom     = 3.0cm,
+  left       = 3.6cm,
+  right      = 2.8cm,
+  headheight = 64pt,
+  headsep    = 14pt,
+  footskip   = 64pt
+]{geometry}
+
+% ── Fonts ───────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\usepackage{xunicode}
+
+\IfFontExistsTF{Lora}{
+  \setmainfont[
+    Ligatures = TeX,
+    Numbers   = OldStyle
+  ]{Lora}
+}{
+  \setmainfont[
+    Ligatures = TeX,
+    Numbers   = OldStyle
+  ]{TeX Gyre Pagella}
+}
+
+\IfFontExistsTF{GFS Baskerville}{
+  \newfontfamily\LabelFont[
+    Ligatures = TeX,
+    Letters   = SmallCaps
+  ]{GFS Baskerville}
+}{
+  \newfontfamily\LabelFont[
+    Ligatures = TeX,
+    Letters   = SmallCaps
+  ]{TeX Gyre Termes}
+}
+
+% ── Colour palette ──────────────────────────────────────────────────
+\usepackage{xcolor}
+\definecolor{PageBg}    {HTML}{F8F3EC}  % warm cream
+\definecolor{Ink}       {HTML}{1C1812}  % deep charcoal
+\definecolor{InkMid}    {HTML}{3A3028}  % dark brown
+\definecolor{Stone}     {HTML}{9A8A78}  % warm grey
+\definecolor{StoneLight}{HTML}{C8B8A8}  % pale grey
+
+% ── Character accent colours ────────────────────────────────────────
+%    These tint the POV glyph AND the chapter stripe block.
+\definecolor{ColAisen}  {HTML}{7A6A50}   % warm ochre — steadfast warrior
+\definecolor{ColCaspian}{HTML}{5A6A7A}   % cold slate — introspective scholar
+\definecolor{ColCorvin} {HTML}{4A4A4A}   % ash grey — weary commander
+\definecolor{ColRyo}    {HTML}{6A7A5A}   % storm green — volatile mage
+\definecolor{ColKael}   {HTML}{7A5A3A}   % earth brown — grounded tracker
+\definecolor{ColKairos} {HTML}{6A5A7A}   % deep violet — strange mystic
+\definecolor{ColOrin}   {HTML}{8A7A6A}   % pale dust — haunted wanderer
+\definecolor{ColAmara}  {HTML}{6A5A4A}   % bronze — protective keeper
+\definecolor{ColRenard} {HTML}{5A6A5A}   % forest grey — distant observer
+
+% ── Packages ────────────────────────────────────────────────────────
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{eso-pic}
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{xstring}
+\usepackage{calc}
+
+\makeatletter
+\providecommand\oddpage@label[2]{}
+\makeatother
+
+% ══════════════════════════════════════════════════════════════════
+%  CHARACTER GLYPH SYSTEM  (TikZ — scales cleanly at any size)
+%
+%  Each glyph is drawn in a normalised 2×2 unit box.
+%  Usage: \DrawGlyph{GlyphName}{size-in-cm}{colour}
+%  The \POVGlyph macro calls this automatically.
+%
+%  Nine POV characters, each with unique abstract symbol:
+%    • Aisen: fractured ascent — upward ambition, broken lines
+%    • Caspian: split circle — divided self, introspection
+%    • Corvin: crossed square — oath, hollow core
+%    • Ryo: lightning fracture — wild power, unpredictable paths
+%    • Kael: beast mark — primal strength, inner eye
+%    • Kairos: broken loop — trapped time, fractured moment
+%    • Orin: hollow core — emptiness, isolation
+%    • Amara: stratified triangle — layered purpose, multiple voices
+%    • Renard: observer star — eight-pointed witness
+% ══════════════════════════════════════════════════════════════════
+
+% ── Aisen: fractured ascent triangle ──
+\newcommand{\GlyphAisen}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+    \draw[line width=0.7pt] (0,0) -- (1,2) -- (2,0) -- cycle;
+    \draw[line width=0.5pt] (1,2) -- (1,0.75);
+    \draw[line width=0.5pt] (0.5,0.85) -- (0.85,0.85);
+  \end{tikzpicture}}
+
+% ── Caspian: split essence circle ──
+\newcommand{\GlyphCaspian}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round]
+    \draw[line width=0.7pt] (1,1) circle (0.9cm);
+    \draw[line width=0.5pt] (0.1,1) -- (1.9,1);
+    \draw[line width=0.5pt] (1,1.9) -- (1.35,1.3);
+  \end{tikzpicture}}
+
+% ── Corvin: crossed square / hollow oath ──
+\newcommand{\GlyphCorvin}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round]
+    \draw[line width=0.7pt] (0.2,0.2) rectangle (1.8,1.8);
+    \draw[line width=0.45pt] (0.2,0.2) -- (1.8,1.8);
+    \draw[line width=0.45pt] (0.2,1.8) -- (1.8,0.2);
+  \end{tikzpicture}}
+
+% ── Ryo: lightning fracture ──
+\newcommand{\GlyphRyo}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+    \draw[line width=0.8pt] (0.3,1.9) -- (1.1,1.0) -- (0.75,1.0) -- (1.7,0.1);
+    \draw[line width=0.4pt] (0.85,1.45) -- (1.3,1.45);
+  \end{tikzpicture}}
+
+% ── Kael: beast mark — triangle + inner eye ──
+\newcommand{\GlyphKael}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+    \draw[line width=0.7pt] (1,1.85) -- (1.85,0.2) -- (0.15,0.2) -- cycle;
+    \fill                   (1,0.72) circle (0.14cm);
+  \end{tikzpicture}}
+
+% ── Kairos: broken loop ──
+\newcommand{\GlyphKairos}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round]
+    \draw[line width=0.7pt] (1,1)
+      arc[start angle=30, end angle=340, radius=0.85cm];
+    \draw[line width=0.7pt] (1.74,1.43) -- (1.95,1.75);
+    \draw[line width=0.7pt] (1.74,1.43) -- (1.45,1.6);
+  \end{tikzpicture}}
+
+% ── Orin: hollow core ──
+\newcommand{\GlyphOrin}{%
+  \begin{tikzpicture}[x=1cm,y=1cm]
+    \draw[line width=0.7pt] (1,1) circle (0.85cm);
+    \draw[line width=0.5pt] (1,1) circle (0.32cm);
+  \end{tikzpicture}}
+
+% ── Amara: stratified triangle / layered mind ──
+\newcommand{\GlyphAmara}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+    \draw[line width=0.7pt] (0.15,0.2) -- (1,1.85) -- (1.85,0.2) -- cycle;
+    \draw[line width=0.45pt] (0.53,0.78) -- (1.47,0.78);
+    \draw[line width=0.45pt] (0.74,1.28) -- (1.26,1.28);
+  \end{tikzpicture}}
+
+% ── Renard: observer star (eight points) ──
+\newcommand{\GlyphRenard}{%
+  \begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+    \draw[line width=0.6pt]
+      (1.00,1.90) -- (1.22,1.22) -- (1.90,1.00) -- (1.22,0.78)
+      -- (1.00,0.10) -- (0.78,0.78) -- (0.10,1.00) -- (0.78,1.22) -- cycle;
+  \end{tikzpicture}}
+
+% ── Dispatcher: \DrawGlyph{MacroName}{size}{colour} ──
+\newcommand{\DrawGlyph}[3]{%
+  \begingroup
+    \color{#3}%
+    \scalebox{#2}{\csname Glyph#1\endcsname}%
+  \endgroup}
+
+% ══════════════════════════════════════════════════════════════════
+%  MASTER CONFIGURATION  ← change these per chapter
+% ══════════════════════════════════════════════════════════════════
+
+\newcommand{\BookTitle}{Embers of the Forsaken Keep}
+\newcommand{\BookAuthor}{Author Name}
+\newcommand{\TotalChapters}{52}
+
+% ── Default POV + Landscape (will be overridden per chapter) ──
+\newcommand{\CurrentChapterNum}{1}
+\newcommand{\CurrentChapterLabel}{I}
+\newcommand{\ActiveCharacter}{Aisen}
+\newcommand{\ActiveLandscape}{Mountains}
+\newcommand{\SceneLocation}{The Grey Mountains}
+
+% ── Auto-resolve POV colour based on character ──
+\newcommand{\POVGlyphName}{Aisen}
+\newcommand{\POVColor}{ColAisen}
+
+\AtBeginDocument{%
+  \ifstrequal{\ActiveCharacter}{Aisen}
+    {\renewcommand{\POVGlyphName}{Aisen}\renewcommand{\POVColor}{ColAisen}}{}%
+  \ifstrequal{\ActiveCharacter}{Caspian}
+    {\renewcommand{\POVGlyphName}{Caspian}\renewcommand{\POVColor}{ColCaspian}}{}%
+  \ifstrequal{\ActiveCharacter}{Corvin}
+    {\renewcommand{\POVGlyphName}{Corvin}\renewcommand{\POVColor}{ColCorvin}}{}%
+  \ifstrequal{\ActiveCharacter}{Ryo}
+    {\renewcommand{\POVGlyphName}{Ryo}\renewcommand{\POVColor}{ColRyo}}{}%
+  \ifstrequal{\ActiveCharacter}{Kael}
+    {\renewcommand{\POVGlyphName}{Kael}\renewcommand{\POVColor}{ColKael}}{}%
+  \ifstrequal{\ActiveCharacter}{Kairos}
+    {\renewcommand{\POVGlyphName}{Kairos}\renewcommand{\POVColor}{ColKairos}}{}%
+  \ifstrequal{\ActiveCharacter}{Orin}
+    {\renewcommand{\POVGlyphName}{Orin}\renewcommand{\POVColor}{ColOrin}}{}%
+  \ifstrequal{\ActiveCharacter}{Amara}
+    {\renewcommand{\POVGlyphName}{Amara}\renewcommand{\POVColor}{ColAmara}}{}%
+  \ifstrequal{\ActiveCharacter}{Renard}
+    {\renewcommand{\POVGlyphName}{Renard}\renewcommand{\POVColor}{ColRenard}}{}%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  TYPOGRAPHY & SPACING
+% ══════════════════════════════════════════════════════════════════
+\setlength{\parindent}{1.6em}
+\setlength{\parskip}{0pt}
+\linespread{1.55}
+\color{InkMid}
+
+\renewcommand{\LettrineFontHook}{\color{Stone}}
+\setcounter{DefaultLines}{3}
+\setlength{\DefaultFindent}{3pt}
+\setlength{\DefaultNindent}{0pt}
+
+\newcommand{\SceneBreak}{%
+  \vspace{14pt}%
+  \begin{center}%
+    {\color{StoneLight}\small
+      \textperiodcentered\quad\textperiodcentered\quad\textperiodcentered}%
+  \end{center}%
+  \vspace{10pt}}
+
+\newcommand{\POV}[2]{}
+\let\scenebreak\SceneBreak
+
+% ════════════════════════════════════════════════════════════════════
+%  LANDSCAPE VARIANTS  —  Six mood-based header silhouettes
+%
+%  These are drawn procedurally using normalized coordinates.
+%  The coordinate system is set up by \HeaderStrip macro:
+%    • TL = top-left corner
+%    • TR = top-right corner
+%    • \SH = strip height in cm (2.6cm)
+%  All y-offsets scale proportionally.
+%
+%  Usage: set \ActiveLandscape to one of the names below, then the
+%  correct landscape renders automatically via the dispatcher at bottom.
+% ════════════════════════════════════════════════════════════════════
+
+% ── 1. Mountains: Jagged peaks, warm and stoic ──
+\newcommand{\LandscapeBodyMountains}{%
+  \fill[Stone!07] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[Stone!20]
+    ($(TL)-(0,\SH cm*.18)$)
+    --($(TL)!.09!(TR)-(0,\SH cm*.54)$)--($(TL)!.19!(TR)-(0,\SH cm*.32)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.66)$)--($(TL)!.42!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.72)$)--($(TL)!.64!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.76!(TR)-(0,\SH cm*.64)$)--($(TL)!.88!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.56)$)--($(TR)-(0,\SH cm*.26)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[Stone!36]
+    ($(TL)-(0,\SH cm*.48)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.34)$)--($(TL)!.16!(TR)-(0,\SH cm*.60)$)
+    --($(TL)!.27!(TR)-(0,\SH cm*.40)$)--($(TL)!.39!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.51!(TR)-(0,\SH cm*.54)$)--($(TL)!.61!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.58)$)--($(TL)!.85!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.94!(TR)-(0,\SH cm*.50)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[Stone!62]
+    ($(TL)-(0,\SH cm*.70)$)
+    --($(TL)!.04!(TR)-(0,\SH cm*.58)$)--($(TL)!.08!(TR)-(0,\SH cm*.74)$)
+    --($(TL)!.12!(TR)-(0,\SH cm*.60)$)--($(TL)!.16!(TR)-(0,\SH cm*.78)$)
+    --($(TL)!.21!(TR)-(0,\SH cm*.64)$)--($(TL)!.26!(TR)-(0,\SH cm*.82)$)
+    --($(TL)!.32!(TR)-(0,\SH cm*.68)$)--($(TL)!.38!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.45!(TR)-(0,\SH cm*.72)$)--($(TL)!.52!(TR)-(0,\SH cm*.86)$)
+    --($(TL)!.58!(TR)-(0,\SH cm*.74)$)--($(TL)!.64!(TR)-(0,\SH cm*.82)$)
+    --($(TL)!.70!(TR)-(0,\SH cm*.68)$)--($(TL)!.76!(TR)-(0,\SH cm*.88)$)
+    --($(TL)!.82!(TR)-(0,\SH cm*.74)$)--($(TL)!.88!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.93!(TR)-(0,\SH cm*.66)$)--($(TL)!.97!(TR)-(0,\SH cm*.72)$)
+    --($(TR)-(0,\SH cm*.58)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+% ── 2. City: Urban skyline, measured and angular ──
+\newcommand{\LandscapeBodyCity}{%
+  \fill[Stone!06] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[Stone!16]
+    ($(TL)-(0,\SH cm*.40)$)
+    --($(TL)!.05!(TR)-(0,\SH cm*.55)$)--($(TL)!.10!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.14!(TR)-(0,\SH cm*.62)$)--($(TL)!.19!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.23!(TR)-(0,\SH cm*.58)$)--($(TL)!.28!(TR)-(0,\SH cm*.35)$)
+    --($(TL)!.33!(TR)-(0,\SH cm*.60)$)--($(TL)!.38!(TR)-(0,\SH cm*.40)$)
+    --($(TL)!.44!(TR)-(0,\SH cm*.65)$)--($(TL)!.50!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.56!(TR)-(0,\SH cm*.62)$)--($(TL)!.62!(TR)-(0,\SH cm*.42)$)
+    --($(TL)!.67!(TR)-(0,\SH cm*.58)$)--($(TL)!.72!(TR)-(0,\SH cm*.36)$)
+    --($(TL)!.77!(TR)-(0,\SH cm*.62)$)--($(TL)!.82!(TR)-(0,\SH cm*.44)$)
+    --($(TL)!.88!(TR)-(0,\SH cm*.58)$)--($(TL)!.93!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.97!(TR)-(0,\SH cm*.54)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[Stone!50]
+    ($(TL)-(0,\SH cm*.60)$)
+    --($(TL)!.02!(TR)-(0,\SH cm*.60)$)--($(TL)!.02!(TR)-(0,\SH cm*.72)$)
+    --($(TL)!.06!(TR)-(0,\SH cm*.72)$)--($(TL)!.06!(TR)-(0,\SH cm*.85)$)
+    --($(TL)!.10!(TR)-(0,\SH cm*.85)$)--($(TL)!.10!(TR)-(0,\SH cm*.68)$)
+    --($(TL)!.14!(TR)-(0,\SH cm*.68)$)--($(TL)!.14!(TR)-(0,\SH cm*.92)$)
+    --($(TL)!.17!(TR)-(0,\SH cm*.92)$)--($(TL)!.17!(TR)-(0,\SH cm*.75)$)
+    --($(TL)!.21!(TR)-(0,\SH cm*.75)$)--($(TL)!.21!(TR)-(0,\SH cm*.62)$)
+    --($(TL)!.26!(TR)-(0,\SH cm*.62)$)--($(TL)!.26!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.80)$)--($(TL)!.30!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.35!(TR)-(0,\SH cm*.70)$)--($(TL)!.35!(TR)-(0,\SH cm*.88)$)
+    --($(TL)!.39!(TR)-(0,\SH cm*.88)$)--($(TL)!.39!(TR)-(0,\SH cm*.72)$)
+    --($(TL)!.43!(TR)-(0,\SH cm*.72)$)--($(TL)!.43!(TR)-(0,\SH cm*.65)$)
+    --($(TL)!.48!(TR)-(0,\SH cm*.65)$)--($(TL)!.48!(TR)-(0,\SH cm*.78)$)
+    --($(TL)!.53!(TR)-(0,\SH cm*.78)$)--($(TL)!.53!(TR)-(0,\SH cm*.90)$)
+    --($(TL)!.57!(TR)-(0,\SH cm*.90)$)--($(TL)!.57!(TR)-(0,\SH cm*.68)$)
+    --($(TL)!.62!(TR)-(0,\SH cm*.68)$)--($(TL)!.62!(TR)-(0,\SH cm*.75)$)
+    --($(TL)!.67!(TR)-(0,\SH cm*.75)$)--($(TL)!.67!(TR)-(0,\SH cm*.86)$)
+    --($(TL)!.72!(TR)-(0,\SH cm*.86)$)--($(TL)!.72!(TR)-(0,\SH cm*.66)$)
+    --($(TL)!.77!(TR)-(0,\SH cm*.66)$)--($(TL)!.77!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.82!(TR)-(0,\SH cm*.80)$)--($(TL)!.82!(TR)-(0,\SH cm*.92)$)
+    --($(TL)!.86!(TR)-(0,\SH cm*.92)$)--($(TL)!.86!(TR)-(0,\SH cm*.72)$)
+    --($(TL)!.90!(TR)-(0,\SH cm*.72)$)--($(TL)!.90!(TR)-(0,\SH cm*.64)$)
+    --($(TL)!.95!(TR)-(0,\SH cm*.64)$)--($(TL)!.95!(TR)-(0,\SH cm*.78)$)
+    --($(TR)-(0,\SH cm*.78)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+% ── 3. Dungeon: Enclosed, oppressive ceiling ──
+\newcommand{\LandscapeBodyDungeon}{%
+  \fill[Stone!18] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[Stone!55]
+    (TL)--(TR)--($(TR)-(0,\SH cm*.28)$)
+    --($(TL)!.97!(TR)-(0,\SH cm*.28)$)--($(TL)!.92!(TR)-(0,\SH cm*.22)$)
+    --($(TL)!.86!(TR)-(0,\SH cm*.30)$)--($(TL)!.80!(TR)-(0,\SH cm*.18)$)
+    --($(TL)!.74!(TR)-(0,\SH cm*.32)$)--($(TL)!.68!(TR)-(0,\SH cm*.20)$)
+    --($(TL)!.62!(TR)-(0,\SH cm*.28)$)--($(TL)!.56!(TR)-(0,\SH cm*.15)$)
+    --($(TL)!.50!(TR)-(0,\SH cm*.30)$)--($(TL)!.44!(TR)-(0,\SH cm*.18)$)
+    --($(TL)!.38!(TR)-(0,\SH cm*.28)$)--($(TL)!.32!(TR)-(0,\SH cm*.20)$)
+    --($(TL)!.26!(TR)-(0,\SH cm*.32)$)--($(TL)!.20!(TR)-(0,\SH cm*.18)$)
+    --($(TL)!.14!(TR)-(0,\SH cm*.26)$)--($(TL)!.08!(TR)-(0,\SH cm*.14)$)
+    --($(TL)!.03!(TR)-(0,\SH cm*.24)$)--($(TL)-(0,\SH cm*.28)$)--cycle;
+  \fill[Stone!08]
+    ($(TL)!.35!(TR)-(0,\SH cm*.30)$)
+    ..controls($(TL)!.40!(TR)-(0,\SH cm*.02)$) and($(TL)!.60!(TR)-(0,\SH cm*.02)$)..
+    ($(TL)!.65!(TR)-(0,\SH cm*.30)$)
+    --($(TL)!.65!(TR)-(0,\SH cm)$)--($(TL)!.35!(TR)-(0,\SH cm)$)--cycle;
+  \foreach \xf/\lf in {.10/.55,.22/.62,.34/.48,.50/.56,.66/.52,.78/.60,.90/.50}{
+    \fill[Stone!60,opacity=0.55]
+      ($(TL)!\xf!(TR)-(0,\SH cm*.28)-(1.5pt,0)$)
+      --($(TL)!\xf!(TR)-(0,\SH cm*.28)+(1.5pt,0)$)
+      --($(TL)!\xf!(TR)-(0,\SH cm*\lf)$)--cycle;
+  }
+  \fill[Stone!42]
+    ($(TL)-(0,\SH cm*.82)$)
+    --($(TL)!.08!(TR)-(0,\SH cm*.86)$)--($(TL)!.16!(TR)-(0,\SH cm*.78)$)
+    --($(TL)!.25!(TR)-(0,\SH cm*.90)$)--($(TL)!.34!(TR)-(0,\SH cm*.80)$)
+    --($(TL)!.50!(TR)-(0,\SH cm*.88)$)--($(TL)!.66!(TR)-(0,\SH cm*.78)$)
+    --($(TL)!.75!(TR)-(0,\SH cm*.90)$)--($(TL)!.84!(TR)-(0,\SH cm*.82)$)
+    --($(TL)!.92!(TR)-(0,\SH cm*.88)$)--($(TR)-(0,\SH cm*.84)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+% ── 4. Wasteland: Barren, broken horizons ──
+\newcommand{\LandscapeBodyWasteland}{%
+  \fill[Stone!05] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[Stone!28]
+    ($(TL)-(0,\SH cm*.62)$)
+    --($(TL)!.12!(TR)-(0,\SH cm*.58)$)--($(TL)!.22!(TR)-(0,\SH cm*.64)$)
+    --($(TL)!.35!(TR)-(0,\SH cm*.60)$)--($(TL)!.48!(TR)-(0,\SH cm*.66)$)
+    --($(TL)!.60!(TR)-(0,\SH cm*.61)$)--($(TL)!.72!(TR)-(0,\SH cm*.65)$)
+    --($(TL)!.85!(TR)-(0,\SH cm*.59)$)--($(TL)!.95!(TR)-(0,\SH cm*.63)$)
+    --($(TR)-(0,\SH cm*.61)$)--($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \draw[Stone!38,line width=0.4pt]
+    ($(TL)!.20!(TR)-(0,\SH cm)$)--($(TL)!.35!(TR)-(0,\SH cm*.78)$)--($(TL)!.50!(TR)-(0,\SH cm)$);
+  \draw[Stone!38,line width=0.3pt]
+    ($(TL)!.35!(TR)-(0,\SH cm*.78)$)--($(TL)!.45!(TR)-(0,\SH cm*.88)$);
+  \draw[Stone!38,line width=0.4pt]
+    ($(TL)!.55!(TR)-(0,\SH cm)$)--($(TL)!.66!(TR)-(0,\SH cm*.82)$)--($(TL)!.80!(TR)-(0,\SH cm)$);
+  \draw[Stone!38,line width=0.3pt]
+    ($(TL)!.66!(TR)-(0,\SH cm*.82)$)--($(TL)!.72!(TR)-(0,\SH cm*.90)$);
+  \foreach \xf in {.08,.16,.72,.88}{
+    \fill[Stone!48,opacity=0.55]
+      ($(TL)!\xf!(TR)-(0,\SH cm*.92)-(2pt,0)$)
+      rectangle($(TL)!\xf!(TR)-(0,\SH cm*.72)+(2pt,0)$);
+  }
+}
+
+% ── 5. Forest: Organic, layered canopies ──
+\newcommand{\LandscapeBodyForest}{%
+  \fill[Stone!07] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[Stone!22]
+    ($(TL)-(0,\SH cm*.25)$)
+    ..controls($(TL)!.08!(TR)-(0,\SH cm*.08)$) and($(TL)!.16!(TR)-(0,\SH cm*.30)$)..
+    ($(TL)!.22!(TR)-(0,\SH cm*.15)$)
+    ..controls($(TL)!.30!(TR)+(0,.10cm)$) and($(TL)!.38!(TR)-(0,\SH cm*.28)$)..
+    ($(TL)!.45!(TR)-(0,\SH cm*.12)$)
+    ..controls($(TL)!.52!(TR)+(0,.05cm)$) and($(TL)!.60!(TR)-(0,\SH cm*.25)$)..
+    ($(TL)!.67!(TR)-(0,\SH cm*.10)$)
+    ..controls($(TL)!.74!(TR)+(0,.08cm)$) and($(TL)!.82!(TR)-(0,\SH cm*.22)$)..
+    ($(TL)!.88!(TR)-(0,\SH cm*.08)$)
+    ..controls($(TL)!.94!(TR)+(0,.04cm)$).. ($(TR)-(0,\SH cm*.20)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[Stone!40]
+    ($(TL)-(0,\SH cm*.50)$)
+    ..controls($(TL)!.06!(TR)-(0,\SH cm*.35)$) and($(TL)!.12!(TR)-(0,\SH cm*.55)$)..
+    ($(TL)!.18!(TR)-(0,\SH cm*.40)$)
+    ..controls($(TL)!.25!(TR)-(0,\SH cm*.28)$) and($(TL)!.32!(TR)-(0,\SH cm*.58)$)..
+    ($(TL)!.40!(TR)-(0,\SH cm*.42)$)
+    ..controls($(TL)!.48!(TR)-(0,\SH cm*.30)$) and($(TL)!.55!(TR)-(0,\SH cm*.60)$)..
+    ($(TL)!.62!(TR)-(0,\SH cm*.45)$)
+    ..controls($(TL)!.70!(TR)-(0,\SH cm*.32)$) and($(TL)!.78!(TR)-(0,\SH cm*.56)$)..
+    ($(TL)!.85!(TR)-(0,\SH cm*.40)$)
+    ..controls($(TL)!.92!(TR)-(0,\SH cm*.28)$).. ($(TR)-(0,\SH cm*.48)$)
+    --($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[Stone!65]
+    ($(TL)-(0,\SH cm*.70)$)
+    --($(TL)!.04!(TR)-(0,\SH cm*.58)$)--($(TL)!.07!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.11!(TR)-(0,\SH cm*.60)$)--($(TL)!.15!(TR)-(0,\SH cm*.82)$)
+    --($(TL)!.18!(TR)-(0,\SH cm*.64)$)--($(TL)!.22!(TR)-(0,\SH cm*.74)$)
+    --($(TL)!.26!(TR)-(0,\SH cm*.88)$)--($(TL)!.30!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.34!(TR)-(0,\SH cm*.80)$)--($(TL)!.39!(TR)-(0,\SH cm*.72)$)
+    --($(TL)!.44!(TR)-(0,\SH cm*.86)$)--($(TL)!.49!(TR)-(0,\SH cm*.74)$)
+    --($(TL)!.54!(TR)-(0,\SH cm*.84)$)--($(TL)!.59!(TR)-(0,\SH cm*.70)$)
+    --($(TL)!.64!(TR)-(0,\SH cm*.88)$)--($(TL)!.69!(TR)-(0,\SH cm*.76)$)
+    --($(TL)!.73!(TR)-(0,\SH cm*.82)$)--($(TL)!.78!(TR)-(0,\SH cm*.68)$)
+    --($(TL)!.82!(TR)-(0,\SH cm*.80)$)--($(TL)!.87!(TR)-(0,\SH cm*.64)$)
+    --($(TL)!.91!(TR)-(0,\SH cm*.76)$)--($(TL)!.95!(TR)-(0,\SH cm*.70)$)
+    --($(TR)-(0,\SH cm*.60)$)--($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+}
+
+% ── 6. Coast: Liminal, wavy water ──
+\newcommand{\LandscapeBodyCoast}{%
+  \fill[Stone!06] (TL) rectangle ($(TR)-(0,\SH cm)$);
+  \fill[Stone!20]
+    ($(TL)-(0,\SH cm*.55)$)--($(TR)-(0,\SH cm*.55)$)--($(TR)-(0,\SH cm)$)--($(TL)-(0,\SH cm)$)--cycle;
+  \fill[Stone!30]
+    ($(TL)!.55!(TR)-(0,\SH cm*.45)$)
+    --($(TL)!.65!(TR)-(0,\SH cm*.28)$)--($(TL)!.76!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.88!(TR)-(0,\SH cm*.25)$)--($(TR)-(0,\SH cm*.42)$)
+    --($(TR)-(0,\SH cm*.55)$)--($(TL)!.55!(TR)-(0,\SH cm*.55)$)--cycle;
+  \fill[Stone!58]
+    ($(TL)-(0,\SH cm*.30)$)
+    --($(TL)!.10!(TR)-(0,\SH cm*.24)$)--($(TL)!.22!(TR)-(0,\SH cm*.38)$)
+    --($(TL)!.30!(TR)-(0,\SH cm*.28)$)--($(TL)!.38!(TR)-(0,\SH cm*.48)$)
+    --($(TL)!.38!(TR)-(0,\SH cm*.55)$)--($(TL)-(0,\SH cm*.55)$)--cycle;
+  \foreach \yf/\op in {.68/.35,.74/.28,.80/.20}{
+    \draw[Stone!50,line width=0.4pt,opacity=\op]
+      ($(TL)!.40!(TR)-(0,\SH cm*\yf)$)
+      ..controls($(TL)!.55!(TR)-(0,\SH cm*\yf)+(0,3pt)$)..
+      ($(TR)-(0,\SH cm*\yf)$);
+  }
+}
+
+% ── Dispatcher: routes to active landscape ──
+\newcommand{\ActiveLandscapeBody}{%
+  \ifstrequal{\ActiveLandscape}{Mountains}{\LandscapeBodyMountains}{}%
+  \ifstrequal{\ActiveLandscape}{City}     {\LandscapeBodyCity}     {}%
+  \ifstrequal{\ActiveLandscape}{Dungeon}  {\LandscapeBodyDungeon}  {}%
+  \ifstrequal{\ActiveLandscape}{Wasteland}{\LandscapeBodyWasteland}{}%
+  \ifstrequal{\ActiveLandscape}{Forest}   {\LandscapeBodyForest}   {}%
+  \ifstrequal{\ActiveLandscape}{Coast}    {\LandscapeBodyCoast}    {}%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  HEADER STRIP  — landscape silhouette + location + POV glyph
+% ══════════════════════════════════════════════════════════════════
+\newcommand{\HeaderStrip}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \coordinate (TL) at (current page.north west);
+    \coordinate (TR) at (current page.north east);
+    \pgfmathsetmacro{\SH}{2.6}   % strip height in cm
+
+    % Landscape silhouette
+    \ActiveLandscapeBody
+
+    % Horizon hairline
+    \draw[Stone!45, line width=0.3pt]
+      ($(TL)-(0,\SH cm)$) -- ($(TR)-(0,\SH cm)$);
+
+    % Location label — centred, just below horizon
+    \node[anchor=north,
+          font=\fontsize{6}{8}\selectfont\LabelFont,
+          text=Stone, opacity=0.65]
+      at ($(TL)!0.5!(TR)-(0,\SH cm+2pt)$)
+      {\addfontfeatures{LetterSpace=9}\MakeUppercase{\SceneLocation}};
+
+    % POV glyph: top-left corner, just below horizon
+    % Small (0.14 scale), in the character's colour.
+    \node[anchor=north west, inner sep=0pt]
+      at ($(TL)+(1.5cm, -\SH cm - 5pt)$)
+      {\DrawGlyph{\POVGlyphName}{0.14}{\POVColor}};
+
+  \end{tikzpicture}%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  FOOTER STRIP  — ground plane + ruins + page number
+% ══════════════════════════════════════════════════════════════════
+\newcommand{\FooterStrip}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \coordinate (BL) at (current page.south west);
+    \coordinate (BR) at (current page.south east);
+    \pgfmathsetmacro{\FH}{2.4}   % strip height in cm
+
+    % Ground fill
+    \fill[Stone!08] ($(BL)+(0,\FH cm)$) rectangle (BR);
+    \fill[Stone!18, opacity=0.55] (BL) rectangle ($(BR)+(0,\FH cm*.35)$);
+
+    % Stone road (decorative)
+    \fill[Stone!30, opacity=0.40]
+      ($(BL)!.33!(BR)+(0,\FH cm*.04)$)
+      ..controls($(BL)!.46!(BR)+(0,\FH cm*.10)$) and($(BL)!.54!(BR)+(0,\FH cm*.10)$)..
+      ($(BL)!.67!(BR)+(0,\FH cm*.04)$)
+      -- ($(BL)!.62!(BR)$) -- ($(BL)!.38!(BR)$) -- cycle;
+
+    % Path stones
+    \foreach \xi/\yi in {.43/.07, .50/.10, .57/.07}{
+      \fill[Stone!45, opacity=0.30]
+        ($(BL)!\xi!(BR)+(0,\FH cm*\yi)$) ellipse (5pt and 2pt);
+    }
+
+   % Grass tufts
+    \foreach \xi/\yi in {.10/.18, .12/.14, .14/.20, .86/.18, .88/.14, .90/.20}{
+      \draw[Stone!50, line width=0.8pt, opacity=0.50]
+        ($(BL)!\xi!(BR)+(0,\FH cm*.04)$) -- ($(BL)!\xi!(BR)+(0,\FH cm*\yi)$);
+    }
+
+    % Ruin blocks — left and right
+    \fill[Stone!55, opacity=0.38]
+      ($(BL)!.140!(BR)+(0,\FH cm*.22)$) rectangle ($(BL)!.168!(BR)+(0,\FH cm*.52)$);
+    \fill[Stone!55, opacity=0.38]
+      ($(BL)!.122!(BR)+(0,\FH cm*.48)$) rectangle ($(BL)!.186!(BR)+(0,\FH cm*.56)$);
+    \fill[Stone!55, opacity=0.38]
+      ($(BL)!.832!(BR)+(0,\FH cm*.22)$) rectangle ($(BL)!.860!(BR)+(0,\FH cm*.52)$);
+    \fill[Stone!55, opacity=0.38]
+      ($(BL)!.814!(BR)+(0,\FH cm*.48)$) rectangle ($(BL)!.878!(BR)+(0,\FH cm*.56)$);
+
+    % Top border hairline
+    \draw[Stone!40, line width=0.3pt]
+      ($(BL)+(0,\FH cm)$) -- ($(BR)+(0,\FH cm)$);
+
+    % Page number — centred
+    \node[font=\fontsize{8}{10}\selectfont\LabelFont, text=Stone, opacity=0.70]
+      at ($(BL)!0.5!(BR)+(0,\FH cm*.50)$)
+      {\thepage};
+
+  \end{tikzpicture}%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  CHAPTER STRIPE  — right-edge colour bar, position by chapter
+% ══════════════════════════════════════════════════════════════════
+\newcommand{\ChapterStripe}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \coordinate (TR) at (current page.north east);
+    \coordinate (BR) at (current page.south east);
+    \pgfmathsetmacro{\BarW}{0.50}
+    % Slot height = page height / total chapters
+    \pgfmathsetmacro{\SlotH}{\paperheight / \TotalChapters}
+    % Block top and bottom in pt
+    \pgfmathsetmacro{\BlockTop}{\paperheight - (\CurrentChapterNum - 1)*\SlotH}
+    \pgfmathsetmacro{\BlockBot}{\paperheight - \CurrentChapterNum*\SlotH}
+    % Draw rectangle in POV colour
+    \fill[\POVColor]
+      ($(BR)-(\BarW cm,0)+(0,\BlockTop pt)$)
+      rectangle
+      ($(BR)+(0,\BlockBot pt)$);
+  \end{tikzpicture}%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  PAGE BACKGROUND + ALL OVERLAYS
+% ══════════════════════════════════════════════════════════════════
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[PageBg] (current page.south west) rectangle (current page.north east);
+  \end{tikzpicture}%
+  \HeaderStrip%
+  \FooterStrip%
+  \ChapterStripe%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  PAGE STYLE  — suppress default headers/footers
+%  (all layout drawn via AddToShipoutPicture)
+% ══════════════════════════════════════════════════════════════════
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ══════════════════════════════════════════════════════════════════
+%  CHAPTER OPENER COMMAND
+%
+%  Usage:
+%    \BookChapter{III}{The Weight of Ash & Embers}
+%
+%  Prints chapter label, decorative rule, and chapter title.
+% ══════════════════════════════════════════════════════════════════
+\newcommand{\BookChapter}[2]{%
+  \thispagestyle{fancy}%
+  \vspace*{2.0cm}%
+  \begin{center}%
+    {\color{Stone}\fontsize{7}{9}\selectfont\LabelFont
+      \addfontfeatures{LetterSpace=10}\MakeUppercase{Chapter #1}}%
+    \vspace{0.4cm}
+    {\color{StoneLight}\rule{2.8cm}{0.25pt}}%
+    \vspace{0.55cm}
+    {\color{Ink}\fontsize{21}{26}\selectfont\itshape #2}%
+  \end{center}%
+  \vspace{1.0cm}%
+}
+
+% ══════════════════════════════════════════════════════════════════
+%  BEGIN DOCUMENT
+% ══════════════════════════════════════════════════════════════════
+
+\begin{document}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% CHAPTER I  —  Example: Aisen POV, Mountains landscape
+% ═══════════════════════════════════════════════════════════════════════════
+
+\renewcommand{\CurrentChapterNum}{1}
+\renewcommand{\CurrentChapterLabel}{I}
+\renewcommand{\ActiveCharacter}{Aisen}
+\renewcommand{\ActiveLandscape}{Mountains}
+\renewcommand{\SceneLocation}{The Grey Mountains}
+
+\BookChapter{\CurrentChapterLabel}{A Place to Stand}
+
+\lettrine[lines=3]{T}{he wind came down from the Grey Mountains carrying the smell of burnt cedar and something older—something that had no name in the common tongue.} Aelindra tightened the strap of her vambrace and said nothing.
+
+Below, the valley curved like a wound in the earth, its floor dark with the remnants of three villages not a fortnight past. The smoke still rose in thin, patient threads, as though the ground itself had not yet decided whether to forgive.
+
+\SceneBreak
+
+She had spent seventeen years learning the difference between decisions made in rooms and decisions that lived in the soil afterward. She had yet to find a word for the distance between them. The boy behind her shifted weight. The boy said many true things. That was what made him dangerous to keep near and impossible to send away.
+
+``We should not have come this way,'' he said.
+
+``The path chooses itself,'' she replied.
+
+\newpage
+
+% ═══════════════════════════════════════════════════════════════════════════
+% CHAPTER II  —  Example: Caspian POV, City landscape
+% ═══════════════════════════════════════════════════════════════════════════
+
+\renewcommand{\CurrentChapterNum}{2}
+\renewcommand{\CurrentChapterLabel}{II}
+\renewcommand{\ActiveCharacter}{Caspian}
+\renewcommand{\ActiveLandscape}{City}
+\renewcommand{\SceneLocation}{The Divided City}
+
+\BookChapter{\CurrentChapterLabel}{Walls That Know No Master}
+
+\lettrine[lines=3]{C}{aspian had been learning to read the weight of his own absence.} It was not a natural skill. It was something that came from seventeen years of living in the margins, where every gesture meant too much and no gesture meant enough.
+
+The streets of the city spiralled upward like a scar. He'd walked them before, in other lives, wearing other names. Each time they felt like walking through someone else's memory.
+
+\SceneBreak
+
+The merchants here knew him by sight and reputation, but not by name. That was how he preferred it. Names were chains. Reputations were castles built on water. If you stayed still long enough, they dissolved.
+
+He kept walking.
+
+\newpage
+
+% Example continues with remaining chapters...
+% Each chapter follows the pattern above:
+%   1. Set chapter number and label
+%   2. Set POV character
+%   3. Set landscape
+%   4. Set location label
+%   5. Call \BookChapter{label}{title}
+%   6. Add chapter content
+
+% For now, document ends after 2 example chapters.
+% To complete: copy below from cwbook_minimal_package and wrap with config.
+
+\end{document}

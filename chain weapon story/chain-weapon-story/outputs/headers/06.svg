@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="400" viewBox="0 0 2400 400">
+<defs>
+  <linearGradient id="bg6" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#4B6B8F"/>
+    <stop offset="100%" stop-color="#D9E6F0"/>
+  </linearGradient>
+  <filter id="blur6" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2.7"/>
+  </filter>
+</defs>
+<rect width="100%" height="100%" fill="url(#bg6)"/>
+<path d="M 0 400 L 0,349 150,306 300,314 450,374 600,305 750,315 900,315 1050,356 1200,359 1350,337 1500,354 1650,374 1800,305 1950,305 2100,314 2250,306 2400,367 L 2400,400 Z" fill="#4B6B8F" stroke="none"/>
+<path d="M 0 400 L 0,261 150,234 300,280 450,231 600,227 750,236 900,235 1050,225 1200,272 1350,256 1500,259 1650,229 1800,264 1950,271 2100,247 2250,227 2400,282 L 2400,400 Z" fill="#7693B3" stroke="none"/>
+<path d="M 0 400 L 0,166 184,170 369,164 553,161 738,169 923,148 1107,152 1292,148 1476,156 1661,167 1846,186 2030,173 2215,160 2400,158 L 2400,400 Z" fill="#D9E6F0" stroke="none"/>
+<path d="M 0 400 L 0,74 200,84 400,79 600,80 800,92 1000,78 1200,78 1400,75 1600,68 1800,84 2000,79 2200,79 2400,90 L 2400,400 Z" fill="#4B6B8F" stroke="none"/>
+<polygon points="2316,144 2306,175 2326,175" fill="#0b0b0b" />
+<polygon points="405,155 396,184 414,184" fill="#0b0b0b" />
+<polygon points="1844,156 1834,187 1854,187" fill="#0b0b0b" />
+<polygon points="2371,152 2361,184 2381,184" fill="#0b0b0b" />
+<polygon points="2379,157 2370,185 2388,185" fill="#0b0b0b" />
+<polygon points="202,152 194,177 210,177" fill="#0b0b0b" />
+<polygon points="1532,161 1526,181 1538,181" fill="#0b0b0b" />
+<polygon points="1225,148 1215,179 1235,179" fill="#0b0b0b" />
+<polygon points="2223,155 2219,169 2227,169" fill="#0b0b0b" />
+<polygon points="1415,142 1406,171 1424,171" fill="#0b0b0b" />
+<polygon points="1035,177 1031,190 1039,190" fill="#0b0b0b" />
+<polygon points="2086,157 2078,181 2094,181" fill="#0b0b0b" />
+<polygon points="1998,169 1992,189 2004,189" fill="#0b0b0b" />
+<polygon points="446,166 441,182 451,182" fill="#0b0b0b" />
+<polygon points="1903,171 1897,190 1909,190" fill="#0b0b0b" />
+<polygon points="343,159 338,174 348,174" fill="#0b0b0b" />
+<polygon points="1586,163 1580,183 1592,183" fill="#0b0b0b" />
+<polygon points="1915,171 1909,191 1921,191" fill="#0b0b0b" />
+<polygon points="1860,173 1855,189 1865,189" fill="#0b0b0b" />
+<polygon points="1344,157 1339,172 1349,172" fill="#0b0b0b" />
+<polygon points="2298,145 2289,172 2307,172" fill="#0b0b0b" />
+<polygon points="2090,160 2084,180 2096,180" fill="#0b0b0b" />
+<polygon points="648,153 639,182 657,182" fill="#0b0b0b" />
+<polygon points="273,153 267,172 279,172" fill="#0b0b0b" />
+<polygon points="746,152 736,184 756,184" fill="#0b0b0b" />
+<polygon points="1662,158 1657,173 1667,173" fill="#0b0b0b" />
+<polygon points="2002,158 1992,189 2012,189" fill="#0b0b0b" />
+<polygon points="1272,158 1266,178 1278,178" fill="#0b0b0b" />
+<polygon points="329,146 321,171 337,171" fill="#0b0b0b" />
+<polygon points="1198,166 1194,179 1202,179" fill="#0b0b0b" />
+<polygon points="544,153 538,173 550,173" fill="#0b0b0b" />
+<polygon points="598,160 592,179 604,179" fill="#0b0b0b" />
+<circle cx="1323" cy="233" r="29" fill="#6f8fb3" opacity="0.12"/>
+<g filter="url(#blur6)">
+  <rect width="100%" height="100%" fill="#D9E6F0" opacity="0.06"/>
+</g>
+</svg>

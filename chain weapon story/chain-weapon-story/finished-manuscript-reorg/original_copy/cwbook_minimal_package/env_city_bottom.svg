@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cityG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d4c4a8"/>
+      <stop offset="1" stop-color="#bda68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="url(#cityG)"/>
+  <g fill="#887061" opacity="0.9">
+    <rect x="80" y="76" width="24" height="24" rx="3"/>
+    <rect x="140" y="70" width="40" height="30" rx="3"/>
+    <ellipse cx="360" cy="102" rx="120" ry="8" fill="#9a7a58" opacity="0.25"/>
+    <path d="M420,110 Q520,88 620,100" stroke="#8a6f53" stroke-width="1.2" fill="none" opacity="0.5"/>
+    <ellipse cx="820" cy="104" rx="90" ry="7" fill="#9a7a58" opacity="0.22"/>
+  </g>
+  <text x="1188" y="112" font-family="serif" font-size="10" fill="#7a5c3a" text-anchor="end" opacity="0.75">CITY · STREET</text>
+</svg>
