@@ -1,0 +1,50 @@
+[13:03:15] 
+[13:03:15] ═════════════════════════════════════════════════════════
+[13:03:15] 🎯 POWER BI - EXTRAÇÃO DE DADOS DO RELATÓRIO
+[13:03:15] ═════════════════════════════════════════════════════════
+[13:03:15] 
+[13:03:15] 📊 IDs DO RELATÓRIO:
+[13:03:15]    Report ID: b45fe264-d2ac-4038-9597-ff37c5313ce4
+[13:03:15]    Workspace ID: 78a0e229-4463-40c8-872a-b4942c3c310d
+[13:03:15] 
+[13:03:15] 🚀 Iniciando navegador...
+[13:03:17] 📍 Abrindo Power BI embed report...
+[13:03:25] ⏳ Aguardando carregamento (15s)...
+[13:03:40] 🔍 Extraindo dados da página...
+[13:03:40] ✅ Extração completada:
+[13:03:40]    Linhas de texto: 36
+[13:03:40]    Tabelas encontradas: 0
+[13:03:40]    Canvas elements: 0
+[13:03:40]    Elementos com dados: 9
+[13:03:40]    Scripts JSON: 0
+[13:03:40] 
+[13:03:40] 🔎 Procurando nomes de empresas no conteúdo...
+[13:03:40] ✅ 31 items potenciais encontrados
+[13:03:40] 
+[13:03:40] 📋 Primeiros 20 items:
+[13:03:40]    1. Mostrar atalhos de teclado
+[13:03:40]    2. Mostrar sugestões de leitores de ecrã
+[13:03:40]    3. Avançar para o conteúdo principal
+[13:03:40]    4. Serviços
+[13:03:40]    5. Bens
+[13:03:40]    6. Deslocar para cima
+[13:03:40]    7. Deslocar para baixo
+[13:03:40]    8. Deslocar para a esquerda
+[13:03:40]    9. Deslocar para a direita
+[13:03:40]    10. Serviço/Actvidade/Tipo de Sociedade/Empresa
+[13:03:40]    11. Consultoria, Assessoria e Auditoria
+[13:03:40]    12. Serviço de Inspecção, Testes e Certificação
+[13:03:40]    13. Serviço de Suporte as Operações
+[13:03:40]    14. Serviços de Assistência Jurídica
+[13:03:40]    15. Serviços de Apoio
+[13:03:40]    16. Serviços de Engenharia e gestão de Projectos (Pré-Feed, FEED e Engenharia de Detalhe)
+[13:03:40]    17. Serviços de Fabricação
+[13:03:40]    18. Serviços de Finanças e Seguros
+[13:03:40]    19. Serviços de Formação e Capacitação Profissional
+[13:03:40]    20. Serviços de Fornecimento de Pessoal
+[13:03:40] 
+[13:03:40] 💾 Salvando dados...
+[13:03:40] ✅ POWERBI_EXTRACTED_DATA.json salvo
+[13:03:40] ✅ POWERBI_ITEMS.csv salvo (31 items)
+[13:03:40] 📸 Capturando screenshot...
+[13:03:41] ✅ powerbi_report_screenshot.png
