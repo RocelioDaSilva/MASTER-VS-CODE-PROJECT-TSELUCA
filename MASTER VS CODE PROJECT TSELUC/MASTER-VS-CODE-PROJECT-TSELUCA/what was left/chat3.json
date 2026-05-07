@@ -1,0 +1,1572 @@
+{
+  "responderUsername": "GitHub Copilot",
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_14e70abf-1c37-4413-8ce0-1e1d7086ca49",
+      "message": {
+        "text": "But what is your story about ??\r\n\r\ngive me a quick summary in one text ",
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 71
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 3,
+              "endColumn": 37
+            },
+            "text": "But what is your story about ??\r\n\r\ngive me a quick summary in one text ",
+            "kind": "text"
+          }
+        ]
+      },
+      "variableData": {
+        "variables": [
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound\\ABILITIES.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/ABILITIES.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound/ABILITIES.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/ABILITIES.md",
+            "name": "ABILITIES.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound\\BACKSTORY.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/BACKSTORY.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound/BACKSTORY.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/BACKSTORY.md",
+            "name": "BACKSTORY.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound\\CHARACTER-ARC.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/CHARACTER-ARC.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound/CHARACTER-ARC.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/CHARACTER-ARC.md",
+            "name": "CHARACTER-ARC.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound\\CHARACTER.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/CHARACTER.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound/CHARACTER.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/CHARACTER.md",
+            "name": "CHARACTER.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound\\INTEGRATION.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/INTEGRATION.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound/INTEGRATION.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/INTEGRATION.md",
+            "name": "INTEGRATION.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound\\README.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/README.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound/README.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound/README.md",
+            "name": "README.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\CASPIAN-VANE.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CASPIAN-VANE.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/CASPIAN-VANE.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CASPIAN-VANE.md",
+            "name": "CASPIAN-VANE.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\CASSIUS-VENN-HEALER-TORTURER.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CASSIUS-VENN-HEALER-TORTURER.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/CASSIUS-VENN-HEALER-TORTURER.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CASSIUS-VENN-HEALER-TORTURER.md",
+            "name": "CASSIUS-VENN-HEALER-TORTURER.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\CORVIN-ASHFORD.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CORVIN-ASHFORD.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/CORVIN-ASHFORD.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CORVIN-ASHFORD.md",
+            "name": "CORVIN-ASHFORD.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\CULTURAL-GATEKEEPERS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CULTURAL-GATEKEEPERS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/CULTURAL-GATEKEEPERS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/CULTURAL-GATEKEEPERS.md",
+            "name": "CULTURAL-GATEKEEPERS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\HEARTLAND-SYSTEM.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/HEARTLAND-SYSTEM.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/HEARTLAND-SYSTEM.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/HEARTLAND-SYSTEM.md",
+            "name": "HEARTLAND-SYSTEM.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\KAEL-MERIDIAN.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/KAEL-MERIDIAN.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/KAEL-MERIDIAN.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/KAEL-MERIDIAN.md",
+            "name": "KAEL-MERIDIAN.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\MAGICAL-BEASTS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/MAGICAL-BEASTS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/MAGICAL-BEASTS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/MAGICAL-BEASTS.md",
+            "name": "MAGICAL-BEASTS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\SERAPHINE-MOROZ.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/SERAPHINE-MOROZ.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/SERAPHINE-MOROZ.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/SERAPHINE-MOROZ.md",
+            "name": "SERAPHINE-MOROZ.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\STORMCALLER.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/STORMCALLER.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/STORMCALLER.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/STORMCALLER.md",
+            "name": "STORMCALLER.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\TERRAK-STONESHAPER.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/TERRAK-STONESHAPER.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/TERRAK-STONESHAPER.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/TERRAK-STONESHAPER.md",
+            "name": "TERRAK-STONESHAPER.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\VARRO.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/VARRO.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/VARRO.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/VARRO.md",
+            "name": "VARRO.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\youtube videos that help in this section.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/youtube%20videos%20that%20help%20in%20this%20section.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/youtube videos that help in this section.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/youtube%20videos%20that%20help%20in%20this%20section.md",
+            "name": "youtube videos that help in this section.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\timelines\\LIFE-TIMELINE.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timelines/LIFE-TIMELINE.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/timelines/LIFE-TIMELINE.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timelines/LIFE-TIMELINE.md",
+            "name": "LIFE-TIMELINE.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\timelines\\youtube videos that help in this section.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timelines/youtube%20videos%20that%20help%20in%20this%20section.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/timelines/youtube videos that help in this section.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timelines/youtube%20videos%20that%20help%20in%20this%20section.md",
+            "name": "youtube videos that help in this section.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\ANOMALY-THEORY.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ANOMALY-THEORY.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/ANOMALY-THEORY.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ANOMALY-THEORY.md",
+            "name": "ANOMALY-THEORY.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\ASYMMETRIC-WARFARE.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ASYMMETRIC-WARFARE.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/ASYMMETRIC-WARFARE.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ASYMMETRIC-WARFARE.md",
+            "name": "ASYMMETRIC-WARFARE.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\CHAIN-SPEAR-CHRONICLES-BIBLE.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/CHAIN-SPEAR-CHRONICLES-BIBLE.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/CHAIN-SPEAR-CHRONICLES-BIBLE.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/CHAIN-SPEAR-CHRONICLES-BIBLE.md",
+            "name": "CHAIN-SPEAR-CHRONICLES-BIBLE.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\COSMOLOGY-GEOGRAPHY-TIMELINE.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/COSMOLOGY-GEOGRAPHY-TIMELINE.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/COSMOLOGY-GEOGRAPHY-TIMELINE.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/COSMOLOGY-GEOGRAPHY-TIMELINE.md",
+            "name": "COSMOLOGY-GEOGRAPHY-TIMELINE.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\CULTURAL-ENCOUNTERS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/CULTURAL-ENCOUNTERS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/CULTURAL-ENCOUNTERS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/CULTURAL-ENCOUNTERS.md",
+            "name": "CULTURAL-ENCOUNTERS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\CULTURAL-SPECIALIZATIONS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/CULTURAL-SPECIALIZATIONS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/CULTURAL-SPECIALIZATIONS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/CULTURAL-SPECIALIZATIONS.md",
+            "name": "CULTURAL-SPECIALIZATIONS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\DEEP-HISTORY-HIDDEN-AGENDAS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/DEEP-HISTORY-HIDDEN-AGENDAS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/DEEP-HISTORY-HIDDEN-AGENDAS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/DEEP-HISTORY-HIDDEN-AGENDAS.md",
+            "name": "DEEP-HISTORY-HIDDEN-AGENDAS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\ECONOMIC-FOUNDATION.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ECONOMIC-FOUNDATION.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/ECONOMIC-FOUNDATION.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ECONOMIC-FOUNDATION.md",
+            "name": "ECONOMIC-FOUNDATION.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\ENEMY-ARCHETYPES.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ENEMY-ARCHETYPES.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/ENEMY-ARCHETYPES.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/ENEMY-ARCHETYPES.md",
+            "name": "ENEMY-ARCHETYPES.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\POLITICAL-CURRENTS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/POLITICAL-CURRENTS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/POLITICAL-CURRENTS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/POLITICAL-CURRENTS.md",
+            "name": "POLITICAL-CURRENTS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\POWER-SYSTEMS-AND-CULTURES.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/POWER-SYSTEMS-AND-CULTURES.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/POWER-SYSTEMS-AND-CULTURES.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/POWER-SYSTEMS-AND-CULTURES.md",
+            "name": "POWER-SYSTEMS-AND-CULTURES.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\PRESSURE-THEORY-TELEKINESIS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/PRESSURE-THEORY-TELEKINESIS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/PRESSURE-THEORY-TELEKINESIS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/PRESSURE-THEORY-TELEKINESIS.md",
+            "name": "PRESSURE-THEORY-TELEKINESIS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\SABOTAGE-AND-MIND-GAMES.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/SABOTAGE-AND-MIND-GAMES.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/SABOTAGE-AND-MIND-GAMES.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/SABOTAGE-AND-MIND-GAMES.md",
+            "name": "SABOTAGE-AND-MIND-GAMES.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\SOCIAL-DYNAMICS-NOBILITY-POLITICS.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/SOCIAL-DYNAMICS-NOBILITY-POLITICS.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/SOCIAL-DYNAMICS-NOBILITY-POLITICS.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/SOCIAL-DYNAMICS-NOBILITY-POLITICS.md",
+            "name": "SOCIAL-DYNAMICS-NOBILITY-POLITICS.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\STORY-INCOMPLETENESS-AUDIT.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/STORY-INCOMPLETENESS-AUDIT.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/STORY-INCOMPLETENESS-AUDIT.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/STORY-INCOMPLETENESS-AUDIT.md",
+            "name": "STORY-INCOMPLETENESS-AUDIT.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\THE-CRUCIBLE-OF-THE-ACADEMY.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/THE-CRUCIBLE-OF-THE-ACADEMY.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/THE-CRUCIBLE-OF-THE-ACADEMY.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/THE-CRUCIBLE-OF-THE-ACADEMY.md",
+            "name": "THE-CRUCIBLE-OF-THE-ACADEMY.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\youtube videos that help in this section.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/youtube%20videos%20that%20help%20in%20this%20section.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding/youtube videos that help in this section.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding/youtube%20videos%20that%20help%20in%20this%20section.md",
+            "name": "youtube videos that help in this section.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\chain-diagram.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/chain-diagram.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/chain-diagram.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/chain-diagram.md",
+            "name": "chain-diagram.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\CHARACTER-ARC-FRAMEWORK.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/CHARACTER-ARC-FRAMEWORK.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/CHARACTER-ARC-FRAMEWORK.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/CHARACTER-ARC-FRAMEWORK.md",
+            "name": "CHARACTER-ARC-FRAMEWORK.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\COMPREHENSIVE-WRITING-STRATEGY.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/COMPREHENSIVE-WRITING-STRATEGY.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/COMPREHENSIVE-WRITING-STRATEGY.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/COMPREHENSIVE-WRITING-STRATEGY.md",
+            "name": "COMPREHENSIVE-WRITING-STRATEGY.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\first-arc-test.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/first-arc-test.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/first-arc-test.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/first-arc-test.md",
+            "name": "first-arc-test.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\IMPROVEMENTS-QUICK-CHECKLIST.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/IMPROVEMENTS-QUICK-CHECKLIST.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/IMPROVEMENTS-QUICK-CHECKLIST.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/IMPROVEMENTS-QUICK-CHECKLIST.md",
+            "name": "IMPROVEMENTS-QUICK-CHECKLIST.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\IMPROVEMENTS-SUMMARY.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/IMPROVEMENTS-SUMMARY.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/IMPROVEMENTS-SUMMARY.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/IMPROVEMENTS-SUMMARY.md",
+            "name": "IMPROVEMENTS-SUMMARY.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\README.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/README.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/README.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/README.md",
+            "name": "README.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\ROADMAP.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/ROADMAP.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/ROADMAP.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/ROADMAP.md",
+            "name": "ROADMAP.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\setup.sh",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/setup.sh",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/setup.sh",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/setup.sh",
+            "name": "setup.sh",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\STORY-IMPROVEMENTS-AUDIT.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/STORY-IMPROVEMENTS-AUDIT.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/STORY-IMPROVEMENTS-AUDIT.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/STORY-IMPROVEMENTS-AUDIT.md",
+            "name": "STORY-IMPROVEMENTS-AUDIT.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\STORY-OVERVIEW.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/STORY-OVERVIEW.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/STORY-OVERVIEW.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/STORY-OVERVIEW.md",
+            "name": "STORY-OVERVIEW.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\timeline.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timeline.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/timeline.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timeline.md",
+            "name": "timeline.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\writing-dashboard.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/writing-dashboard.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/writing-dashboard.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/writing-dashboard.md",
+            "name": "writing-dashboard.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "file",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\WRITING-PRIORITY-CHAPTERS-4-25.md",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/WRITING-PRIORITY-CHAPTERS-4-25.md",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/WRITING-PRIORITY-CHAPTERS-4-25.md",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/WRITING-PRIORITY-CHAPTERS-4-25.md",
+            "name": "WRITING-PRIORITY-CHAPTERS-4-25.md",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\antagonists",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/antagonists",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/antagonists",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/antagonists",
+            "name": "antagonists",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\beginning-middle-end",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/beginning-middle-end",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/beginning-middle-end",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/beginning-middle-end",
+            "name": "beginning-middle-end",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\chapters",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/chapters",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/chapters",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/chapters",
+            "name": "chapters",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters",
+            "name": "characters",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\allies",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/allies",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/allies",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/allies",
+            "name": "allies",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists",
+            "name": "antagonists",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\caspian-vane",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/caspian-vane",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/caspian-vane",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/caspian-vane",
+            "name": "caspian-vane",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\cassius-venn",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/cassius-venn",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/cassius-venn",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/cassius-venn",
+            "name": "cassius-venn",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\corvin-ashford",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/corvin-ashford",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/corvin-ashford",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/corvin-ashford",
+            "name": "corvin-ashford",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\corvus-ashford",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/corvus-ashford",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/corvus-ashford",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/corvus-ashford",
+            "name": "corvus-ashford",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kael-meridian",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kael-meridian",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kael-meridian",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kael-meridian",
+            "name": "kael-meridian",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/kethis-stormbound",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/kethis-stormbound",
+            "name": "kethis-stormbound",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\seraphine-moroz",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/seraphine-moroz",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/seraphine-moroz",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/seraphine-moroz",
+            "name": "seraphine-moroz",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\stormcaller",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/stormcaller",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/stormcaller",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/stormcaller",
+            "name": "stormcaller",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\terrak-stoneshaper",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/terrak-stoneshaper",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/terrak-stoneshaper",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/terrak-stoneshaper",
+            "name": "terrak-stoneshaper",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\the-possessor",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/the-possessor",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/the-possessor",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/the-possessor",
+            "name": "the-possessor",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\varro",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/varro",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/antagonists/varro",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/antagonists/varro",
+            "name": "varro",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\family",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/family",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/family",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/family",
+            "name": "family",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\groups",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/groups",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/groups",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/groups",
+            "name": "groups",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\main",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/main",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/main",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/main",
+            "name": "main",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\mentors",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/mentors",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/mentors",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/mentors",
+            "name": "mentors",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\other",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/other",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/other",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/other",
+            "name": "other",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\side",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/side",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/characters/side",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/characters/side",
+            "name": "side",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\conflict",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/conflict",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/conflict",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/conflict",
+            "name": "conflict",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\consistency",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/consistency",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/consistency",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/consistency",
+            "name": "consistency",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\culture",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/culture",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/culture",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/culture",
+            "name": "culture",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\ecology",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/ecology",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/ecology",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/ecology",
+            "name": "ecology",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\hierarchies",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/hierarchies",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/hierarchies",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/hierarchies",
+            "name": "hierarchies",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\magic-system",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/magic-system",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/magic-system",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/magic-system",
+            "name": "magic-system",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\notes",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/notes",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/notes",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/notes",
+            "name": "notes",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\outline",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/outline",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/outline",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/outline",
+            "name": "outline",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\pacing",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/pacing",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/pacing",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/pacing",
+            "name": "pacing",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\profiles",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/profiles",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/profiles",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/profiles",
+            "name": "profiles",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\story",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/story",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/story",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/story",
+            "name": "story",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\structure",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/structure",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/structure",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/structure",
+            "name": "structure",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\style",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/style",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/style",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/style",
+            "name": "style",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\supporting-cast",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/supporting-cast",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/supporting-cast",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/supporting-cast",
+            "name": "supporting-cast",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\technology",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/technology",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/technology",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/technology",
+            "name": "technology",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\theme",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/theme",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/theme",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/theme",
+            "name": "theme",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\timelines",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timelines",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/timelines",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/timelines",
+            "name": "timelines",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\world",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/world",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/world",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/world",
+            "name": "world",
+            "omittedState": 0
+          },
+          {
+            "kind": "directory",
+            "value": {
+              "$mid": 1,
+              "fsPath": "c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding",
+              "_sep": 1,
+              "external": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding",
+              "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/worldbuilding",
+              "scheme": "file"
+            },
+            "id": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story/worldbuilding",
+            "name": "worldbuilding",
+            "omittedState": 0
+          },
+          {
+            "id": "vscode.customizations.index",
+            "name": "prompt:customizationsIndex",
+            "value": "<skills>\nHere is a list of skills that contain domain specific knowledge on a variety of topics.\nEach skill comes with a description of the topic and a file path that contains the detailed instructions.\nWhen a user asks you to perform a task that falls within the domain of a skill, use the #tool:readFile tool to acquire the full instructions from the file URI.\n<skill>\n<name>agent-customization</name>\n<description>**WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). USE FOR: saving coding preferences; troubleshooting why instructions/skills/agents are ignored or not invoked; configuring applyTo patterns; defining tool restrictions; creating custom agent modes or specialized workflows; packaging domain knowledge; fixing YAML frontmatter syntax. DO NOT USE FOR: general coding questions (use default agent); runtime debugging or error diagnosis; MCP server configuration (use MCP docs directly); VS Code extension development. INVOKES: file system tools (read/write customization files), ask-questions tool (interview user for requirements), subagents for codebase exploration. FOR SINGLE OPERATIONS: For quick YAML frontmatter fixes or creating a single file from a known pattern, edit the file directly — no skill needed.</description>\n<file>copilot-skill:/agent-customization/SKILL.md</file>\n</skill>\n</skills>\n\n\n<agents>\nHere is a list of agents that can be used when running a subagent.\nEach agent has optionally a description with the agent's purpose and expertise. When asked to run a subagent, choose the most appropriate agent from this list.\nUse the #tool:runSubagent tool with the agent name to run the subagent.\n<agent>\n<name>Explore</name>\n<description>Fast read-only codebase exploration and Q&A subagent. Prefer over manually chaining multiple search and file-reading operations to avoid cluttering the main conversation. Safe to call in parallel. Specify thoroughness: quick, medium, or thorough.</description>\n<argumentHint>Describe WHAT you're looking for and desired thoroughness (quick/medium/thorough)</argumentHint>\n</agent>\n</agents>\n\n",
+            "kind": "promptText",
+            "modelDescription": "Chat customizations index",
+            "automaticallyAdded": true,
+            "toolReferences": [
+              {
+                "kind": "tool",
+                "id": "copilot_readFile",
+                "name": "Read File",
+                "range": {
+                  "start": 291,
+                  "endExclusive": 305
+                }
+              },
+              {
+                "kind": "tool",
+                "id": "runSubagent",
+                "icon": {
+                  "id": "organization"
+                },
+                "name": "Run Subagent",
+                "range": {
+                  "start": 1696,
+                  "endExclusive": 1713
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "kind": "thinking",
+          "value": "The user is asking for a quick summary of their story in one text. They've given me a massive workspace with extensive worldbuilding, character development, and story outlines. Let me look at what I have from the attachments and context.\n\nFrom the attachments and workspace structure, I can see:\n\n**Core Story Concept** (from README.md):\n- Fantasy story about an ordinary protagonist with a versatile chain spear\n- A world where physics and magic coexist\n- Randomness shapes the narrative\n- Main character: Tavern owner's son, learns spear, then magic, becomes a jack-of-some-trades\n- No plot armor, real consequences, world continues after MC's death\n\n**More Details** (from various attachments):\n- Protagonist: Aisen Korv\n- Born in a tavern in a border region\n- Not special, not chosen, not a hero with plot armor\n- Learns through failure and observation\n- Mixed heritage (Valdimereaan father, Umara mother)\n- Dies before the story ends\n- The world continues after his death\n\n**The 5-Chapter Arc** (from multiple files):\n1. Chapter 1: The Tavern Kid - childhood/origin\n2. Chapter 2: Chain in the Dark - learning/early training\n3. Chapter 3: Academy Gates - entering the academy\n4. Chapter 4: Frostfang Incident - major confrontation\n5. Chapter 5: Last Vigil - decision point/ending\n\n**Themes:**\n- Ordinariness in an extraordinary world\n- Learning through synthesis of different cultural traditions\n- Physics-based approach to problem-solving\n- Consequences matter, death is real\n- Anti-chosen-one narrative\n\nLet me provide a concise, punchy summary that captures the essence.",
+          "id": "thinking_0",
+          "generatedTitle": "Analyzed core story concept and character development"
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "",
+          "metadata": {
+            "vscodeReasoningDone": true,
+            "stopReason": "text"
+          }
+        },
+        {
+          "value": "# Your Story: Quick Summary\n\n**\"The Chain Weapon Story\"** is a fantasy novel about **Aisen Korv**, an ordinary tavern-keeper's son who becomes extraordinary not through destiny or magic, but through **failure, observation, and synthesis**.\n\nHe learns to fight from guards, picks up magic from reluctant teachers, and invents a versatile chain weapon by combining physics, hunting wisdom, and fragments of knowledge from six different cultures. He has no special bloodline, no plot armor, no chosen-one prophecy—just adaptability and stubborn pragmatism.\n\nThe story spans from his childhood watching adventurers in a border tavern, through Academy years filled with over-powered anomalies and political intrigue, into adulthood where he faces impossible odds. But here's the twist: **he dies before the story ends**, and the world continues without him.\n\n**Core theme**: In a world full of people with narrative shortcuts (reincarnators, transmigrators, ancient powers), the only real advantage is being ordinary enough to adapt to *anything*. The story asks: what makes a life meaningful if you're never the chosen one, never the legend, never destined for glory?\n\n**In one sentence**: An unspecial kid in a world of anomalies builds mastery through limitation, and proves that ordinary people matter—even when their story ends.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/c:/Users/PCGAME/Desktop/story&universes/chain-weapon-story/",
+            "scheme": "file"
+          }
+        }
+      ],
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.41.2",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "compact",
+            "description": "Free up context by compacting the conversation history. Optionally include extra instructions for compaction."
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "create_tests",
+                "description": "The user wants to generate unit tests.",
+                "examples": [
+                  "Generate tests for my selection using pytest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true,
+            "disambiguation": [
+              {
+                "category": "create_new_workspace_or_extension",
+                "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+                "examples": [
+                  "Scaffold a Node server.",
+                  "Create a sample project which uses the fileSystemProvider API.",
+                  "react application"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?",
+            "disambiguation": [
+              {
+                "category": "create_jupyter_notebook",
+                "description": "The user wants to create a new Jupyter notebook in Visual Studio Code.",
+                "examples": [
+                  "Create a notebook to analyze this CSV file."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setupTests",
+            "description": "Set up tests in your project (Experimental)",
+            "sampleRequest": "add playwright tests to my project",
+            "when": "config.github.copilot.chat.setupTests.enabled",
+            "disambiguation": [
+              {
+                "category": "set_up_tests",
+                "description": "The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Set up tests for this project."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": []
+      },
+      "timestamp": 1774819249575,
+      "modelId": "copilot/claude-haiku-4.5",
+      "modeInfo": {
+        "kind": "agent",
+        "isBuiltin": true,
+        "modeId": "agent",
+        "modeName": "agent",
+        "permissionLevel": "default"
+      },
+      "responseId": "response_e96aa1da-205c-420e-863f-ce03e5b7566d",
+      "result": {
+        "timings": {
+          "firstProgress": 6286,
+          "totalElapsed": 9414
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<attachments>\n<attachment id=\"BACKSTORY.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kethis-stormbound\\\\BACKSTORY.md\">\n</attachment>\n<attachment id=\"CHARACTER-ARC.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kethis-stormbound\\\\CHARACTER-ARC.md\">\n# KETHIS STORMBOUND - Character Arc in Story\r\n\r\n---\r\n\r\n## I. ARC OVERVIEW: FROM INVESTIGATOR TO ALLY (POSSIBLE)\r\n\r\n**Default Arc**: Kethis exists as an investigator-antagonist who *could* become ally based on player/narrative choices.\r\n\r\n**Not Simple Hero/Villain**: Kethis is morally gray. He kills without hesitation but refuses tyranny. Works for money but doesn't pursue wealth. Teaches harsh lessons but saves lives.\r\n\r\n---\r\n\r\n## II. CHAPTER-BY-CHAPTER PRESENCE\r\n\r\n### Chapter 1: The Tavern Kid **[NO APPEARANCE]**\r\n\r\nKethis is not yet present in the story. He's gathering intelligence on Void Covenant's movements in distant regions.\r\n\r\n---\n</attachment>\n<attachment id=\"CHARACTER.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kethis-stormbound\\\\CHARACTER.md\">\n# Antagonist: KETHIS STORMBOUND - Lightning Blade Warrior\r\n\r\n**Anomaly Type**: Elemental Specialist (Lightning-attuned)  \r\n**Specialization**: Adaptive lightning blade system with mechanical/tactical depth  \r\n**Status**: Independent mercenary; operates between factions  \r\n**Role**: Philosophical antagonist; embodies \"mastery through limitation\"  \r\n\r\n---\r\n\r\n## I. QUICK PROFILE\r\n\r\n| Attribute | Detail |\r\n|-----------|--------|\r\n| **Name** | Kethis Stormbound (birth name unknown; adopted name reflects lightning affinity) |\r\n| **Apparent Age** | Early 30s |\r\n| **Origin** | Unknown; possibly from Therryn (scholars of precision mechanics) |\n</attachment>\n<attachment id=\"INTEGRATION.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kethis-stormbound\\\\INTEGRATION.md\">\n# KETHIS STORMBOUND - Story Integration\r\n\r\n---\r\n\r\n## I. STORY POSITION OVERVIEW\r\n\r\n**Kethis's Role in the 5-Chapter Arc**:\r\n- Chapters 1-2: Absent (gathering intelligence elsewhere)\r\n- Chapter 3: Optional instructor / investigator\r\n- Chapter 4: Major encounter (Frostfang Incident)\r\n- Chapter 5: Decision point (ally, neutral, or antagonist)\r\n\r\n**Narrative Function**: Philosophical mirror to protagonist. Tests Aisen's beliefs through opposition. Becomes potential ally only if Aisen demonstrates understanding of limitation philosophy.\r\n\r\n---\r\n\r\n## II. CHAPTER-BY-CHAPTER INTEGRATION\r\n\r\n### Chapter 1: The Tavern Kid\r\n**Status**: KETHIS NOT PRESENT\n</attachment>\n<attachment id=\"README.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kethis-stormbound\\\\README.md\">\n# KETHIS STORMBOUND - Character Index\r\n\r\n**Character Name**: Kethis Stormbound  \r\n**Antagonist Type**: Philosophical Antagonist / Potential Ally  \r\n**Role In Story**: Mentor through opposition; investigator of Void Covenant  \r\n**Status**: Fully developed with 4-part profile  \r\n\r\n---\r\n\r\n## QUICK CHARACTER LINKS\r\n\r\n| Document | Purpose | Key Info |\r\n|----------|---------|----------|\r\n| [CHARACTER.md](CHARACTER.md) | Main profile + ability mechanics | Philosophy, blade system, combat style |\r\n| [BACKSTORY.md](BACKSTORY.md) | Origin & formative events | Test program tragedy, 10-year investigation |\n</attachment>\n<attachment id=\"CASPIAN-VANE.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\CASPIAN-VANE.md\">\n# Antagonist Profile: Lord Caspian Vane\r\n\r\n## Basic Information\r\n- **Name:** Caspian Vane\r\n- **Origin:** Minor noble family from the northern reaches of the Heartland Empire (Shattered Coast region); near the hidden domain of Lady Seraphine Moroz\r\n- **Hall at Academy:** Heartland Imperial Hall (Year 2 onwards); enrolled under false identity fabricated by Seraphine\r\n- **Surface Persona:** Quiet, polite, scholarly ice mage. Helpful tutor to younger students. Appears frail (pale, cool to touch) but genuinely kind. Notably disinterested in romance; maintains emotional distance from all.\n</attachment>\n<attachment id=\"CASSIUS-VENN-HEALER-TORTURER.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\CASSIUS-VENN-HEALER-TORTURER.md\">\n# Antagonist: SERAPHINE-HEALER-TORTURER (REVISED - Cellular Weaponizer)\r\n\r\n**WAIT - Checking if this character already exists separately from Seraphine Moroz...**\r\n\r\n*This profile is for a NEW character distinct from Lady Seraphine Moroz (ancient vampire). This character weaponizes HEALING MAGIC through understanding cellular biology, mutation, and degeneration.*\r\n\r\n---\r\n\r\n# Antagonist: DR. CASSIUS VENN - The Cellular Architect\r\n\r\n**Anomaly Type**: Healer-Savant (specialized knowledge, not traditional anomaly)  \r\n**Specialization**: Cellular biology + healing magic weaponry; physician-torturer\n</attachment>\n<attachment id=\"CORVIN-ASHFORD.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\CORVIN-ASHFORD.md\">\n# Ser Corvin Ashford: The Hollow Knight\r\n\r\n## I. Character Overview\r\n\r\n- **Name:** Ser Corvin Ashford (originally a minor knight from a poor noble family in the Heartland's borderlands)\r\n- **Age:** Late twenties during the Academy years; early thirties during the Border War; likely unchanged in physical appearance post-protagonist\n</attachment>\n<attachment id=\"CULTURAL-GATEKEEPERS.md\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\CULTURAL-GATEKEEPERS.md\">\n# Antagonists: Cultural Gatekeepers\r\n\r\n- **Background:** Secretive council of tradition enforcers\r\n- **Role:** Enforce cultural purity, suppress innovation\r\n- **Personality:** Dogmatic, manipulative, faceless\r\n- **Motivation:** Preserve power, prevent change\r\n- **Connection to Aisen:** Target Aisen for breaking taboos\r\n- **Arc:** From shadowy threat to exposed, weakened force\r\n- **Fate:** Influence wanes as Aisen’s ideas spread\n</attachment>\n<attachment id=\"HEARTLAND-SYSTEM.md\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\HEARTLAND-SYSTEM.md\">\n# Antagonist: The Heartland System\r\n\r\n- **Background:** Institutionalized hierarchy, bureaucracy, and tradition\r\n- **Role:** Systemic antagonist, opposes change and outsiders\r\n- **Personality:** Impersonal, rigid, self-preserving\r\n- **Motivation:** Maintain status quo, resist reform\r\n- **Connection to Aisen:** Blocks Aisen’s progress, isolates him\r\n- **Arc:** From unassailable to brittle and outdated\r\n- **Fate:** Survives, but is changed by Aisen’s legacy\n</attachment>\n<attachment id=\"KAEL-MERIDIAN.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\KAEL-MERIDIAN.md\">\n# Antagonist: Kael Meridian - The Physics Engine\r\n\r\n**Anomaly Type**: Transmigrator  \r\n**Specialization**: Precision Telekinesis (Pressure/Force/Molecular Manipulation)  \r\n**Status**: Academy rival turned post-Academy threat  \r\n**Role**: Philosophical antagonist; embodies \"knowledge without wisdom\"  \r\n\r\n---\r\n\r\n## I. QUICK PROFILE\r\n\r\n| Attribute | Detail |\r\n|-----------|--------|\r\n| **Name** | Kael Meridian (assumed name; true name lost with transmigration) |\r\n| **Apparent Age** | Early-mid 20s |\r\n| **Origin** | Transmigrator from modern Earth; inserted into body ~13 years prior |\n</attachment>\n<attachment id=\"MAGICAL-BEASTS.md\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\MAGICAL-BEASTS.md\">\n# Antagonists: Magical Beasts\r\n\r\n- **Background:** Manifestations of natural and magical imbalance\r\n- **Role:** External threat, test of survival and adaptation\r\n- **Personality:** Varies (some cunning, some mindless)\r\n- **Motivation:** Instinct, hunger, territoriality\r\n- **Connection to Aisen:** Force Aisen to adapt, symbolize world’s indifference\r\n- **Arc:** From terrifying unknown to understood challenge\r\n- **Fate:** Some are defeated, others become part of the world’s new balance\n</attachment>\n<attachment id=\"SERAPHINE-MOROZ.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\SERAPHINE-MOROZ.md\">\n# Antagonist Profile: Lady Seraphine Moroz\r\n\r\n## Basic Information\r\n- **Name:** Lady Seraphine Moroz (Moroz = \"frost\" in Slavic languages)\r\n- **Age:** Approximately 800 years old\r\n- **Origin:** Northern Heartland noblewoman from the era of Aelfar ruins' discovery\r\n- **Current Role:** Winter General of the Northern Covenant; architect of the Second Flux Tear plot\r\n- **Status:** Primary antagonist in post-protagonist era; omnipresent threat during Border War\r\n- **Vampire Type:** Ancient bloodline (turned by a dying Aelfar construct experiment); one of the first modern vampires\r\n\r\n---\r\n\r\n## Part I: Physical Presence & Appearance\r\n\r\n### Visual Characteristics\n</attachment>\n<attachment id=\"STORMCALLER.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\STORMCALLER.md\">\n# Antagonist: Stormcaller - The Wind Reincarnator\r\n\r\n**Anomaly Type**: Reincarnator  \r\n**Specialization**: Wind Magic (Raw, Ancient, Multifaceted)  \r\n**Status**: Academy rival turned independent faction threat  \r\n**Role**: Wild magic embodiment; represents primal power vs. synthesis  \r\n\r\n---\r\n\r\n## I. QUICK PROFILE\r\n\r\n| Attribute | Detail |\r\n|-----------|--------|\r\n| **Name** | Stormcaller (true name unknown; refuses to speak it) |\r\n| **Apparent Age** | Mid-twenties, but acts older |\r\n| **Origin** | Reincarnated from the Age of Fragments (~400 years prior), when magic was raw and destructive |\n</attachment>\n<attachment id=\"TERRAK-STONESHAPER.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\TERRAK-STONESHAPER.md\">\n# Antagonist: Terrak Stoneshaper - The Earth Strategist\r\n\r\n**Anomaly Type**: Prodigy (or possibly minor Lucky Encounter haver)  \r\n**Specialization**: Earth Magic (Strategic, Creative, Explosive)  \r\n**Status**: Academy peer-rival turned military architect antagonist  \r\n**Role**: Philosophical antagonist; embodies \"knowledge through creativity\" vs. \"knowledge through tradition\"  \r\n\r\n---\r\n\r\n## I. QUICK PROFILE\r\n\r\n| Attribute | Detail |\r\n|-----------|--------|\r\n| **Name** | Terrak Stoneshaper (adopted name; true origin unknown) |\r\n| **Apparent Age** | Early-mid 20s |\r\n| **Origin** | Discovered by Academy scouts; no known family or origin location |\n</attachment>\n<attachment id=\"VARRO.md\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\VARRO.md\">\n# Antagonist: Varro the Chainbreaker\r\n\r\n- **Background:** Exiled Valdimere war hero, now a bandit lord\r\n- **Role:** Main antagonist, symbol of corrupted tradition\r\n- **Personality:** Charismatic, ruthless, haunted by past\r\n- **Motivation:** Prove strength through chaos, destroy old order\r\n- **Connection to Aisen:** Sees Aisen as a threat and potential successor\r\n- **Arc:** From feared warlord to tragic, broken figure\r\n- **Fate:** Defeated by Aisen, legacy endures as a warning\n</attachment>\n<attachment id=\"youtube videos that help in this section.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\youtube videos that help in this section.md\">\n# YouTube Videos que Ajudam nesta Seção\r\n\r\n- [ ] [Como criar personagens memoráveis]\r\n\r\nhttps://www.youtube.com/watch?v=xt2PcwKHbxc&pp=ygUhaG93IHRvIHdyaXRlIG1lbW9yYWJsZSBjaGFyYWN0ZXJz\r\n\r\n/* Lines 7-1944 omitted */\r\nAdicione mais links relevantes conforme necessário.\n</attachment>\n<attachment id=\"LIFE-TIMELINE.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\timelines\\\\LIFE-TIMELINE.md\">\n# Detailed Life Timeline: Aisen Korv\r\n\r\n**Format**: Age | Year | Event | Significance | Mentors Active\r\n\r\n---\r\n\r\n## CHILDHOOD PHASE (Age 0-13)\r\n\r\n### Age 0-5: Tavern Observations\r\n| Age | Event | Detail | Notes |\r\n|-----|-------|--------|-------|\r\n| 0-2 | Birth (Winter Solstice, Year 247) | Born to Markos (age 30) & Eshara (age 25) | Mixed heritage: Valdimere + Umara |\r\n/* Lines 13-259 omitted */\r\n**The innovation**: Show that a person can live meaningfully, learn deeply, master techniques, matter to others, and still be fundamentally ordinary. Death comes. That's sufficient.\n</attachment>\n<attachment id=\"youtube videos that help in this section.md-1\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\timelines\\\\youtube videos that help in this section.md\">\n# YouTube Videos que Ajudam nesta Seção\r\n\r\n- [Como criar linhas do tempo para histórias](https://www.youtube.com/watch?v=33Q1Qe4QkJw) (PT)\r\n- [Organizando eventos e cronologias](https://www.youtube.com/watch?v=34Q1Qe4QkJw) (PT)\r\n- [Como planejar eventos históricos](https://www.youtube.com/watch?v=35Q1Qe4QkJw) (PT)\r\n- [Como usar cronologia para suspense](https://www.youtube.com/watch?v=36Q1Qe4QkJw) (PT)\r\n- [Como criar flashbacks e flashforwards](https://www.youtube.com/watch?v=37Q1Qe4QkJw) (PT)\r\n- [How to Create Timelines for Stories](https://www.youtube.com/watch?v=38Q1Qe4QkJw) (EN)\r\n/* Lines 9-16 omitted */\r\nAdicione mais links relevantes conforme necessário.\n</attachment>\n<attachment id=\"ANOMALY-THEORY.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\ANOMALY-THEORY.md\">\n# Variance Carriers & Anomaly Theory\r\n\r\n**Core Concept**: The protagonist lives in a world where certain individuals possess advantages that defy conventional advancement—not through magic or birthright alone, but through \"narrative irregularities.\" Through observation, study, and hard-won experience, Aisen learns to recognize these anomalies, understand their weaknesses, and exploit them using his grounded, physics-based toolkit.\r\n\r\n/* Lines 5-638 omitted */\r\n**Core truth**: In a world full of people with narrative shortcuts, the only genuine advantage is being ordinary enough to adapt to anything.\n</attachment>\n<attachment id=\"ASYMMETRIC-WARFARE.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\ASYMMETRIC-WARFARE.md\">\n# Asymmetric Warfare and Its Consequences: Guerrilla Tactics, Infrastructure War, and Ecological Devastation\r\n\r\nWar in this world is rarely a clean clash of armies on open fields. The vast distances, fragmented geography, and the thinning Veil have made **asymmetric warfare**—guerrilla campaigns, urban insurgency, and the deliberate targeting of infrastructure—a defining feature of conflict. Moreover, every military campaign leaves scars on the natural world, displacing magical beasts, poisoning land, and accelerating the ecological crisis that the protagonist's era is only beginning to understand.\n</attachment>\n<attachment id=\"CHAIN-SPEAR-CHRONICLES-BIBLE.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\CHAIN-SPEAR-CHRONICLES-BIBLE.md\">\n# THE CHAIN SPEAR CHRONICLES: A COMPREHENSIVE WORLD AND CHARACTER BIBLE\r\n\r\n---\r\n\r\n## I. INTRODUCTION: A STORY OF THE UNSPECIAL\r\n\r\nThis is the story of a young man born into a world that does not owe him anything. He is not a prodigy, a reincarnator, a regressor, or a chosen one. He has no noble blood, no ancient artifact, no prophecy. He is a tavern‑keeper's son who learns to fight from guards and hunters, picks up magic from a reluctant cleric, and builds a fighting style by mixing physics, hunting wisdom, and scraps of knowledge stolen from every culture he encounters.\r\n\r\n/* Lines 9-855 omitted */\r\n*End of The Chain Spear Chronicles Bible*\n</attachment>\n<attachment id=\"COSMOLOGY-GEOGRAPHY-TIMELINE.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\COSMOLOGY-GEOGRAPHY-TIMELINE.md\">\n# Cosmology, Geography & Timeline: A Living World\r\n\r\n**Purpose**: Establish the physical laws, magical systems, geographical realities, and historical progression that make Aisen's world a living system where change ripples outward. His journey is one small wave in an ongoing sea of transformation, but waves matter.\r\n\r\n---\r\n\r\n## PART I: COSMOLOGY AND ORIGINS\r\n\r\n### The Primordial Tension: Silence, Weave, and Flux\r\n\r\n/* Lines 11-802 omitted */\r\nThis is a world where change matters because people matter. Aisen's journey is one small wave. But all great currents are made of such waves.\n</attachment>\n<attachment id=\"CULTURAL-ENCOUNTERS.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\CULTURAL-ENCOUNTERS.md\">\n# Cultural Encounters: Learning Through People\r\n\r\n**Purpose**: Details the specific NPCs, encounters, and lessons that shape Aisen's synthesis across six cultural traditions. Each encounter is rooted in ordinary people—teachers who have no grand destiny for him, only stories and practical knowledge to share.\r\n\r\n---\r\n\r\n## FRAMEWORK: How Learning Works in This Story\r\n\r\nEach cultural tradition is learned through:\r\n1. **A memorable person** (teacher, mentor, temporary ally)\r\n2. **Practical crisis or sustained contact** (not classroom learning)\r\n3. **Specific lessons** with immediate application\r\n4. **Integration into synthesis** (combines with other traditions)\n</attachment>\n<attachment id=\"CULTURAL-SPECIALIZATIONS.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\CULTURAL-SPECIALIZATIONS.md\">\n# Cultural Specializations: Domains & Synthesis\r\n\r\n**Core Concept**: The world contains multiple established civilizations, each having developed distinct specializations across combat, magic, culture, and technology. The protagonist's power comes not from mastering any single culture but from synthesizing fragments learned from exposure to each. This reflects his fundamental nature: ordinary person with extraordinary adaptability.\r\n\r\n---\r\n\r\n## MAPPING: Real-World Inspirations to In-World Cultures\r\n\r\nThe six major cultural spheres:\r\n\r\n| Culture | Real-World Inspiration | Character Archetype | In-World Name |\n</attachment>\n<attachment id=\"DEEP-HISTORY-HIDDEN-AGENDAS.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\DEEP-HISTORY-HIDDEN-AGENDAS.md\">\n# Deep History, Hidden Agendas & the Ecological Crisis\r\n\r\n**Purpose**: Reveal the historical forces, political machinations, and moral complexities that form the silent current beneath the surface. The protagonist's era is not peaceful—it is a carefully maintained illusion of peace built on suppressed truths, ecological debt, and imperial ambition. His choices matter because they align with larger transformations he doesn't fully understand.\r\n\r\n---\r\n\r\n## PART I: THE FIRST GREAT WAR (460 Years Before Protagonist)\r\n\r\n/* Lines 9-749 omitted */\r\nThis is a world where change matters because people matter. Not as heroes. As humans.\n</attachment>\n<attachment id=\"ECONOMIC-FOUNDATION.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\ECONOMIC-FOUNDATION.md\">\n# Economic Foundation & Social Hierarchy: Ground-Level Realism\r\n\r\n**Purpose**: Establish the economic constraints, family structures, and institutional politics that shape Aisen's journey. This grounds his \"ordinariness\" not just in talent, but in material reality: he is poor, unconnected, and operating within systems designed to exclude him.\r\n\r\n---\r\n\r\n## PART I: THE WANDERING STAG TAVERN\r\n\r\n### History & Ownership\r\n\r\n**The Grandfather: Kaelen the Limper (Generation -2)**:\r\n- **Background**: Foot soldier in the Third Border War (Heartland vs. Kingdom of Thornwood), ~50 years before Aisen's birth\n</attachment>\n<attachment id=\"ENEMY-ARCHETYPES.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\ENEMY-ARCHETYPES.md\">\n# Enemy & Encounter Archetypes\r\n\r\n**Purpose**: Define 7-8 enemy types that Aisen will face across his life. Each archetype:\r\n- Represents a challenge type (not just \"stronger enemy\")\r\n- Tests different aspects of Aisen's synthesis\r\n- Shows why he never becomes legendary (can't beat everyone, gets desperate, makes mistakes)\r\n- Reflects cultural traditions or mechanical specialties\r\n/* Lines 8-394 omitted */\r\n**The truth**: Aisen is genuinely competent, genuinely strong, genuinely good at what he does. He's just not the *best*, not the *chosen*, not the *legendary*. He's ordinary in an extraordinary world—and that's the point.\n</attachment>\n<attachment id=\"POLITICAL-CURRENTS.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\POLITICAL-CURRENTS.md\">\n# Political Currents: How History, Strategy, and Mistake Shape the World and the Story\r\n\r\nBehind every technique, every spell, every cultural lens lies a web of political decisions—treaties signed, wars declared, reforms enacted, opportunities seized or squandered. These choices shape who holds power, who is excluded, and how the world responds to crisis. The protagonist's life is a small boat on a vast political ocean; the tides he navigates were set centuries before his birth and will continue to shift after his death.\n</attachment>\n<attachment id=\"POWER-SYSTEMS-AND-CULTURES.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\POWER-SYSTEMS-AND-CULTURES.md\">\n# Power Systems Across Cultures: Techniques, Philosophies, and Evolution\r\n\r\nEach nation has developed its own system of power—rooted in its geography, history, and cultural values. These systems are not static; they have evolved in response to the ecological crisis, political pressures, and cross‑cultural exchange. Below is an in‑depth exploration of each tradition, including foundational principles, training methods, signature techniques, and how they view—and sometimes borrow from—others.\r\n\r\n---\r\n\r\n## I. The Bureaucratic Heartland: *The Imperial Way*\r\n\r\n### A. Foundational Principles\n</attachment>\n<attachment id=\"PRESSURE-THEORY-TELEKINESIS.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\PRESSURE-THEORY-TELEKINESIS.md\">\n# Pressure Theory: Physics-Based Telekinesis System\r\n\r\n**Character**: Kael Meridian  \r\n**Knowledge Source**: Modern Earth physics applied to transmigrated telekinesis  \r\n**Core Principle**: Force = Pressure × Area; therefore, Force/Area = Pressure; minimize area of force application → maximize pressure  \r\n\r\n---\r\n\r\n## PART I: FOUNDATIONAL PRINCIPLES\r\n\r\n### The Core Insight\r\n\r\nTraditional telekinetic users think in terms of **push/pull/lift/crush**. Kael thinks in terms of **pressure distribution, molecular state-change, and systemic disruption**.\r\n\r\n**Earth Physics Principle**: \r\n$$P = \\frac{F}{A}$$\r\n\r\nWhere:\r\n- P = Pressure (Pa or N/m²)\n</attachment>\n<attachment id=\"SABOTAGE-AND-MIND-GAMES.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\SABOTAGE-AND-MIND-GAMES.md\">\n# The Game of Shadows: Sabotage, Mind Games, and the Fall of Anomalies\r\n\r\nThe Academy is a crucible not only of magic and steel but of ambition and cunning. Within its halls, students and faculty alike engage in a silent war—a contest of manipulation, sabotage, and psychological warfare that can elevate a house to glory or destroy a lineage in a single season. These tactics are drawn from centuries of human history, adapted to a world where magic, knowledge, and secrets are weapons.\n</attachment>\n<attachment id=\"SOCIAL-DYNAMICS-NOBILITY-POLITICS.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\SOCIAL-DYNAMICS-NOBILITY-POLITICS.md\">\n# The Social Labyrinth: Nobility, Events, Politics, and the Anomaly Divide\r\n\r\nThe Academy is not merely a place of learning—it is a stage where the hierarchies of the continent collide, where alliances are forged and betrayals planned, and where those touched by extraordinary fate (anomalies) walk among ordinary students. Understanding this social labyrinth is essential for anyone who, like the protagonist, must navigate it without the protection of birth or destiny.\n</attachment>\n<attachment id=\"STORY-INCOMPLETENESS-AUDIT.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\STORY-INCOMPLETENESS-AUDIT.md\">\n# Story Incompleteness Audit and Action Plan\r\n\r\nYou have constructed an extraordinarily detailed world—a continent with six distinct cultures, a magic system grounded in physics, a protagonist with a complete life arc, and a deep political history. But the *story*—the narrative sequence of scenes, emotional beats, and character journeys—remains largely in outline form.\r\n\r\nThis audit systematically identifies what parts of the story are incomplete, organized by narrative phase, along with estimated scope and priority for completion.\r\n\r\n---\r\n\r\n## I. The Protagonist's Early Life (Childhood – Academy Entrance)\r\n\r\n### Current State: 30% Complete\n</attachment>\n<attachment id=\"THE-CRUCIBLE-OF-THE-ACADEMY.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\THE-CRUCIBLE-OF-THE-ACADEMY.md\">\n# The Crucible of the Academy: Simulated Exercises, Exams, and the Race for the Future\r\n\r\nThe Academy at Aldric's Crossing is not merely a place of study—it is a pressure cooker where future leaders, warriors, and scholars are forged. Its curriculum is designed to simulate the chaos of real conflict, forcing students to adapt, compete, and discover their limits long before they face true danger. The constant churn of exercises, exams, and inter‑hall competitions creates rivalries, alliances, and a clear hierarchy of talent—or at least, a visible one.\n</attachment>\n<attachment id=\"youtube videos that help in this section.md-2\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\\\\youtube videos that help in this section.md\">\n# YouTube Videos que Ajudam nesta Seção\r\n\r\n- [Worldbuilding avançado](https://www.youtube.com/watch?v=39Q1Qe4QkJw) (PT)\r\n- [Detalhes para enriquecer seu mundo](https://www.youtube.com/watch?v=40Q1Qe4QkJw) (PT)\r\n- [Como criar mundos ricos em detalhes](https://www.youtube.com/watch?v=41Q1Qe4QkJw) (PT)\r\n- [Como evitar clichês em worldbuilding](https://www.youtube.com/watch?v=42Q1Qe4QkJw) (PT)\r\n- [Como conectar worldbuilding à trama](https://www.youtube.com/watch?v=43Q1Qe4QkJw) (PT)\r\n- [Advanced Worldbuilding](https://www.youtube.com/watch?v=44Q1Qe4QkJw) (EN)\r\n/* Lines 9-16 omitted */\r\nAdicione mais links relevantes conforme necessário.\n</attachment>\n<attachment id=\"chain-diagram.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\chain-diagram.md\">\n# Story Timeline\n\n`mermaid\ntimeline\n    title Chain Weapon Story Timeline\n\n    Childhood : Tavern kid sees adventurers\n`\n\"@ | Out-File -FilePath timeline.md -Encoding utf8\n\n# Create chain-diagram.md with chain weapon state diagram\n@\"\n# Chain Weapon States\n\n`mermaid\ngraph TD\n    A[Chain Weapon] --> B{Tightened}\n    /* Lines 36-60 omitted */\n    style E fill:#ffe6b3\n`\n\n## Telekinesis Synergy\n- **Floating segments** – control disconnected parts independently.\n- **State change mid‑flight** – tighten a thrown segment to turn it rigid.\n- **Torque application** – use telekinesis to tighten/loosen without touching.\n</attachment>\n<attachment id=\"CHARACTER-ARC-FRAMEWORK.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\CHARACTER-ARC-FRAMEWORK.md\">\n# Character Arc Framework: Ghost → Lie → Want → Need → Truth\r\n\r\n*Based on video craft analysis. Source: Expert writing advice on positive character arcs.*\r\n\r\n---\r\n\r\n## The Foundational Arc\r\n\r\nYour protagonist's journey follows the classic positive character arc, inverted through an unglamorous death that nonetheless validates his growth.\r\n\r\n### Phase 1: THE GHOST\r\n**Where**: Childhood (ages 5–14)  \r\n**What He Is**: An invisible nobody. Tavern-keeper's son in a border town where adventurers, merchants, soldiers, and refugees pass through. He observes everyone; no one notices him.\n</attachment>\n<attachment id=\"COMPREHENSIVE-WRITING-STRATEGY.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\COMPREHENSIVE-WRITING-STRATEGY.md\">\n# COMPREHENSIVE WRITING STRATEGY\r\n## Applied Video Craft Advice to Your Project\r\n\r\n*Last Updated: 28 de março de 2026*  \r\n*Reference Documents: CHARACTER-ARC-FRAMEWORK.md, FROSTFANG-INCIDENT-OUTLINE.md, writing-dashboard.md, arc-overview.md*\r\n\r\n---\r\n\r\n## I. VIDEO ANALYSIS APPLIED TO YOUR STORY\r\n\r\nYour worldbuilding is comprehensive and your outline is solid. The video advice reveals how to **transform that outline into compelling narrative**. Here's what the video teaches that directly applies:\r\n\r\n### A. The Nine-Point Plot Structure (Complete ✓)\r\n**Status**: Mapped in `arc-overview.md` | Your story aligns with this structure almost perfectly\n</attachment>\n<attachment id=\"first-arc-test.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\first-arc-test.md\">\n# First Arc: The Tavern Kid's Awakening\r\n\r\n## Chapter 1: The Robbery\r\n\r\n/* Lines 5-71 omitted */\r\nThis short arc establishes the MC's origin, early skills, and themes. Length: ~2,000 words. It shows his growth through failure, the coin-flip uncertainty (implied), and the world's indifference. If this works, expand to full novella.\n</attachment>\n<attachment id=\"IMPROVEMENTS-QUICK-CHECKLIST.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\IMPROVEMENTS-QUICK-CHECKLIST.md\">\n# Quick Reference: Improvements Checklist\r\n\r\n**Master List of Everything Needing Work** (Organized by Effort & Impact)\r\n\r\n---\r\n\r\n## 🔴 CRITICAL PATH (Do These First - 8 to 10 Weeks)\r\n\r\n### TIER 1: Narrative Backbone (~60-80 hours)\r\n\r\n**Scene Writing** (Estimated 35-40 hours):\r\n- [ ] **Frostfang Incident** (TIER 1 - CRITICAL) — 15-20 pages, 8-10 hours\r\n  - [ ] Journey to mountains (3-4 pages)\r\n  /* Lines 14-16 omitted */\r\n  - [ ] Aftermath & consequences (2-3 pages)\r\n\r\n- [ ] **Childhood Hook - Tavern Years** — 15-20 pages, 8-10 hours\r\n  - [ ] First kill (2-3 pages)\r\n  /* Lines 20-22 omitted */\r\n  - [ ] Farewell to family (2-3 pages)\n</attachment>\n<attachment id=\"IMPROVEMENTS-SUMMARY.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\IMPROVEMENTS-SUMMARY.md\">\n# Story Improvements Summary\r\n\r\n**Overall Assessment**: 35% Complete (Foundation Strong, Narrative Needs Work)\r\n\r\n---\r\n\r\n## THE GOOD ✓\r\n\r\nYour story has exceptional foundation across several dimensions:\r\n\r\n### World-Building: 90% Complete\r\n- 6 distinct cultures with specialization systems\r\n- Physics-based magic system internally consistent\r\n- Economic & political underpinnings realistic\r\n- Ecology crisis impacts shown in lore\r\n- **Quality**: Extraordinarily detailed & original\r\n\r\n### Character Concepts: 85% Complete\r\n- Protagonist arc clear & thematically sound\r\n- 10 major antagonists well-conceived with unique philosophies\n</attachment>\n<attachment id=\"README.md-1\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\README.md\">\n# Chain Weapon Story\n\n\nA fantasy story about an ordinary protagonist with a versatile chain spear, a world where physics and magic coexist, and where randomness shapes the narrative.\n\n- **Antagonists**: See antagonists/ANTAGONISTS-OVERVIEW.md for a summary of antagonist types, design principles, and key examples used throughout the story.\n\n- **Main character**: Tavern owner's son, learns spear, then magic, becomes a jack-of-some-trades.\n- **Weapon**: Chain that can tighten, loosen, connect, disconnect; used with telekinesis.\n- **Philosophy**: No plot armor, real consequences, world continues after MC's death.\n</attachment>\n<attachment id=\"ROADMAP.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\ROADMAP.md\">\n# Next Steps: Refined Roadmap\r\n*Updated: 28 de março de 2026 | Integrated with Video Craft Analysis*\r\n\r\nYour **foundation is complete and coherent**. This roadmap prioritizes what to build next *based on craft principles from video analysis*.\r\n\r\n**KEY INSIGHT FROM VIDEO**: \"First draft just needs to exist. Don't overthink. Write the sand into the sandbox.\"\r\n\r\n---\r\n\r\n## PHASE 0: UNLOCK WRITING (DO THIS WEEK - 4 Critical Decisions)\r\n\r\nThese four decisions unblock everything. They take ~2 hours total but enable all subsequent scenes.\r\n\r\n### Decision 1: Protagonist Name\r\n**Why**: Can't write dialogue without a name\n</attachment>\n<attachment id=\"setup.sh\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\setup.sh\">\n#!/bin/bash\n\n# Create main folder\nmkdir -p chain-weapon-story\ncd chain-weapon-story\n\n# Create subfolders\nmkdir -p notes chapters outline\n\n# Create README\ncat > README.md << 'EOF'\n# Chain Weapon Story\n\nA fantasy story about an ordinary protagonist with a versatile chain spear, a world where physics and magic coexist, and where randomness shapes the narrative.\n\n- **Main character**: Tavern owner's son, learns spear, then magic, becomes a jack-of-some-trades.\n- **Weapon**: Chain that can tighten, loosen, connect, disconnect; used with telekinesis.\n/* Lines 18-174 omitted */\necho \"Setup complete. Your project is now open in VS Code.\"\n</attachment>\n<attachment id=\"STORY-IMPROVEMENTS-AUDIT.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\STORY-IMPROVEMENTS-AUDIT.md\">\n# Comprehensive Story Improvements Audit\r\n\r\n**Date**: March 29, 2026  \r\n**Status**: Review of all major systems and progress  \r\n**Objective**: Identify remaining gaps and prioritize completion\r\n\r\n---\r\n\r\n## EXECUTIVE SUMMARY\r\n\r\nYour foundation is **exceptional**. World-building is 90% complete, characters are well-conceived, and the narrative arc is solid. However, the *dramatized narrative* remains only 20-30% complete. Below is a systematic audit of what needs work, organized by priority and effort.\r\n\r\n**Total Estimated Work**: 150-200 hours to completion  \r\n**Priority Tier**: Scenes > Missing Antagonists > Consistency Passes\r\n\r\n---\n</attachment>\n<attachment id=\"STORY-OVERVIEW.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\STORY-OVERVIEW.md\">\n# Story Overview: Complete Synthesis\r\n\r\n**Project**: Chain Weapon Story  \r\n**Core Concept**: A pragmatic, unspecial protagonist learns through failure, dies before the story ends, and the world continues. No harem, no chosen one, no plot armor.\r\n\r\nThis document consolidates all expansions into a single reference guide.\r\n\r\n---\r\n\r\n## I. PROTAGONIST FOUNDATION\r\n\r\n### Origin & Upbringing\r\n- Tavern-keeping family in a border region (cultural intersection)\r\n- Father: Valdimereaan, ex-guard, pragmatic\r\n- Mother: Umara immigrant, storyteller, spiritual\r\n- Dual heritage explains his openness to blending traditions\n</attachment>\n<attachment id=\"timeline.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\timeline.md\">\n# Story Timeline\n\n`mermaid\ntimeline\n    title Chain Weapon Story Timeline\n\n    Childhood : Tavern kid sees adventurers\n              : Robbery – first kill\n              : Starts hunting\n\n    Early Training : Almost dies to a beast\n                   : Meets adventurers, gets magic teacher\n                   : Learns spear from a guard\n\n    Academy : Enters academy\n            : Reckless prodigies die → international incident\n            : MC survives through luck/caution\n\n    Adult Life : Develops chain spear + telekinesis combos\n               : Gains reputation as versatile fighter\n               : Faces consequences of past choices\n</attachment>\n<attachment id=\"writing-dashboard.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\writing-dashboard.md\">\n# Writing Dashboard\n\n*Last Updated: 28 de março de 2026 | Based on Video Craft Analysis*\n\n## Nine-Point Plot Structure (MASTER ROADMAP)\n\n| Point | Story Element | Status | Target Words |\n|-------|---------------|--------|--------------|\n| 1. **Hook** | Childhood tavern scene; protagonist observes, wants more | Not started | 1,500–2,000 |\n| 2. **Inciting Incident** | Magical beast attack; nearly dies; decides to learn magic | Not started | 2,000–2,500 |\n| 3. **Entering New Realm** | Academy admission; overwhelmed by nobles and tradition | Not started | 2,500–3,000 |\n</attachment>\n<attachment id=\"WRITING-PRIORITY-CHAPTERS-4-25.md\" isSummarized=\"true\" filePath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\WRITING-PRIORITY-CHAPTERS-4-25.md\">\n# REVISED: Chapters 4-25 Writing Priority (Multi-PoV Architecture)\r\n\r\n**New Structure**: 21 chapters (4-25) with distributed PoV and cascading consequences.  \r\n**Est. Total Hours**: 140-180 (similar to original, but NOW WITH SYSTEMIC PAYOFF)\r\n\r\n---\r\n\r\n## PHASE 1: TAVERN FOUNDATION (Chapters 4-7) — 25-30 Hours\r\n\r\nThese four chapters are **THE FOUNDATION**. Everything ripples from here.\r\n\r\n### Chapter 4: The Information Broker\r\n**PoV**: Aisen Korv (primary), Merchant Halvin (secondary), Refugee Family (secondary)  \r\n**Priority**: CRITICAL - Initiates 3+ consequence chains  \r\n**Est. Time**: 6-7 hours | **Target Length**: 4,500-5,500 words\r\n\r\n**Must Include**:\n</attachment>\n<attachment id=\"antagonists\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\antagonists\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\antagonists` which has the following structure: ```\nANTAGONIST-DEVELOPMENT-PRIORITY-ROADMAP.md\nANTAGONIST-INTEGRATION-MAP.md\nANTAGONIST-INTERACTION-MATRIX.md\nANTAGONISTS-OVERVIEW.md\nBRIGANDS.md\nCORVUS-LIBERATOR.md\nCULTURAL-GATEKEEPERS.md\nDESPERATE-ENEMIES.md\nENVIRONMENTAL-THREATS.md\nFATE-MISTAKE-ENEMIES.md\nHEARTLAND-SYSTEM.md\nMAGICAL-BEASTS.md\nMENTOR-RIVALS.md\nPOLITICAL-INTRIGUE.md\nSERAPHINE-HEALER-TORTURER.md\nTHE-POSSESSOR.md\nTRADITIONALISTS.md\nUNREACHABLE-MASTERS.md\nVARRO.md\nVOID-COVENANT.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"beginning-middle-end\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\beginning-middle-end\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\beginning-middle-end` which has the following structure: ```\nyoutube videos that help in this section.md\nbeginning-arc/\n\tarc.md\n\tTHE-UNSEEN-SEED.md\nend-arc/\n\tarc.md\n\tTHE-LAST-VIGIL.md\nmiddle-arc/\n\tarc.md\n\tTHE-FROSTFANG-CRUCIBLE.md\n\tTOURNAMENT-ARC.md\nrcs/\n\tantagonists/\n\t\tCULTURAL-GATEKEEPERS.md\n\t\tHEARTLAND-SYSTEM.md\n\t\tMAGICAL-BEASTS.md\n\t\tVARRO.md\n```\n</attachment>\n<attachment id=\"chapters\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\chapters\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\chapters` which has the following structure: ```\n01-02-ENRICHMENT-GUIDE.md\n01-tavern-kid-draft.md\n01-tavern-kid-outline.md\n01-tavern-kid.md\n02-chain-in-the-dark-draft.md\n02-chain-in-the-dark-outline.md\n02-chain-in-the-dark.md\n03-academy-gates-draft.md\n03-academy-gates-outline.md\n03-academy-gates.md\n04-frostfang-incident-draft.md\n04-frostfang-incident-enriched.md\n04-frostfang-incident-FULL.md\n04-frostfang-incident-outline.md\n04-frostfang-incident.md\n05-last-vigil-draft.md\n05-last-vigil-enriched.md\n05-last-vigil-outline.md\n05-last-vigil.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"characters\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters` which has the following structure: ```\nyoutube videos that help in this section.md\nallies/\n\tADVENTURERS.md\n\tTAVERN-REGULARS.md\nantagonists/\n\tCASPIAN-VANE.md\n\tCASSIUS-VENN-HEALER-TORTURER.md\n\tCORVIN-ASHFORD.md\n\tCULTURAL-GATEKEEPERS.md\n\tHEARTLAND-SYSTEM.md\n\tKAEL-MERIDIAN.md\n\tMAGICAL-BEASTS.md\n\tSERAPHINE-MOROZ.md\n\tSTORMCALLER.md\n\tTERRAK-STONESHAPER.md\n\tVARRO.md\n\tcaspian-vane/\n\tcassius-venn/\n\tcorvin-ashford/\n\tcorvus-ashford/\n\tkael-meridian/\n\tkethis-stormbound/\n\t\tABILITIES.md\n\t\tBACKSTORY.md\n\t\tCHARACTER-ARC.md\n\t\tCHARACTER.md\n\t\tINTEGRATION.md\n\t\tREADME.md\n\tseraphine-moroz/\n\tstormcaller/\n\tterrak-stoneshaper/\n\tthe-possessor/\n\tvarro/\nfamily/\n\tESHARA-KORV.md\n\tMARKOS-ENHANCED.md\n\tMARKOS-KORV.md\n\tMIRA-KORV.md\n\teshara-korv/\n\tmarkos-korv/\n\tmira-korv/\ngroups/\n\tREFUGEE-CIRCLE.md\n\tTOWN-MILITIA.md\nmain/\n\tAISEN-KORV.md\n\tabilities/\n\t\tABILITY-PROGRESSION-BY-CHAPTER.md\n\t\tCONSOLIDATION-ROADMAP.md\n\t\tPERSONALITY-FOLLOW-THROUGH-AUDIT.md\n\t\tQUICK-START-WRITING-GUIDE.md\n\t\tREADME.md\n\taisen-korv/\nmentors/\n\tKESSLER-VALDUK.md\n\tLYSANDER-OF-TWELVE-HARMONIES.md\n\tODAN-AMARESH.md\n\tRIKU-HAMASAKI.md\n\tkessler-valduk/\n\tlysander-of-harmonies/\n\todan-amaresh/\n\triku-hamasaki/\nother/\n\tTAVERN-ANIMALS.md\n\tTRAVELING-MERCHANTS.md\nside/\n\tACADEMY-FRIENDS.md\n\tKAELEN-THORNWOOD.md\n\tRIN-SHIRAKAWA.md\n\tRIVAL-STUDENTS.md\n```\n</attachment>\n<attachment id=\"allies\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\allies\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\allies` which has the following structure: ```\nADVENTURERS.md\nTAVERN-REGULARS.md\n```\n</attachment>\n<attachment id=\"antagonists-1\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists` which has the following structure: ```\nCASPIAN-VANE.md\nCASSIUS-VENN-HEALER-TORTURER.md\nCORVIN-ASHFORD.md\nCULTURAL-GATEKEEPERS.md\nHEARTLAND-SYSTEM.md\nKAEL-MERIDIAN.md\nMAGICAL-BEASTS.md\nSERAPHINE-MOROZ.md\nSTORMCALLER.md\nTERRAK-STONESHAPER.md\nVARRO.md\ncaspian-vane/\ncassius-venn/\ncorvin-ashford/\ncorvus-ashford/\nkael-meridian/\nkethis-stormbound/\n\tABILITIES.md\n\tBACKSTORY.md\n\tCHARACTER-ARC.md\n\tCHARACTER.md\n\tINTEGRATION.md\n\tREADME.md\nseraphine-moroz/\nstormcaller/\nterrak-stoneshaper/\nthe-possessor/\nvarro/\n```\n</attachment>\n<attachment id=\"caspian-vane\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\caspian-vane\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\caspian-vane` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"cassius-venn\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\cassius-venn\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\cassius-venn` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"corvin-ashford\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\corvin-ashford\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\corvin-ashford` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"corvus-ashford\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\corvus-ashford\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\corvus-ashford` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"kael-meridian\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kael-meridian\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kael-meridian` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"kethis-stormbound\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\kethis-stormbound\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\kethis-stormbound` which has the following structure: ```\nABILITIES.md\nBACKSTORY.md\nCHARACTER-ARC.md\nCHARACTER.md\nINTEGRATION.md\nREADME.md\n```\n</attachment>\n<attachment id=\"seraphine-moroz\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\seraphine-moroz\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\seraphine-moroz` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"stormcaller\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\stormcaller\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\stormcaller` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"terrak-stoneshaper\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\terrak-stoneshaper\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\terrak-stoneshaper` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"the-possessor\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\the-possessor\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\the-possessor` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"varro\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\antagonists\\\\varro\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\antagonists\\varro` which has the following structure: ```\n\n```\n</attachment>\n<attachment id=\"family\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\family\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\family` which has the following structure: ```\nESHARA-KORV.md\nMARKOS-ENHANCED.md\nMARKOS-KORV.md\nMIRA-KORV.md\neshara-korv/\nmarkos-korv/\nmira-korv/\n```\n</attachment>\n<attachment id=\"groups\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\groups\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\groups` which has the following structure: ```\nREFUGEE-CIRCLE.md\nTOWN-MILITIA.md\n```\n</attachment>\n<attachment id=\"main\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\main\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\main` which has the following structure: ```\nAISEN-KORV.md\nabilities/\n\tABILITY-PROGRESSION-BY-CHAPTER.md\n\tCONSOLIDATION-ROADMAP.md\n\tPERSONALITY-FOLLOW-THROUGH-AUDIT.md\n\tQUICK-START-WRITING-GUIDE.md\n\tREADME.md\naisen-korv/\n```\n</attachment>\n<attachment id=\"mentors\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\mentors\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\mentors` which has the following structure: ```\nKESSLER-VALDUK.md\nLYSANDER-OF-TWELVE-HARMONIES.md\nODAN-AMARESH.md\nRIKU-HAMASAKI.md\nkessler-valduk/\nlysander-of-harmonies/\nodan-amaresh/\nriku-hamasaki/\n```\n</attachment>\n<attachment id=\"other\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\other\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\other` which has the following structure: ```\nTAVERN-ANIMALS.md\nTRAVELING-MERCHANTS.md\n```\n</attachment>\n<attachment id=\"side\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\characters\\\\side\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\characters\\side` which has the following structure: ```\nACADEMY-FRIENDS.md\nKAELEN-THORNWOOD.md\nRIN-SHIRAKAWA.md\nRIVAL-STUDENTS.md\n```\n</attachment>\n<attachment id=\"conflict\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\conflict\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\conflict` which has the following structure: ```\nANOMALIES-FRAMEWORK.md\nCASPIAN-VANE-INTEGRATION.md\nCORVIN-ASHFORD-INTEGRATION.md\nKAEL-MERIDIAN-INTEGRATION.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"consistency\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\consistency\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\consistency` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"culture\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\culture\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\culture` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"ecology\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\ecology\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\ecology` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"hierarchies\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\hierarchies\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\hierarchies` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"magic-system\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\magic-system\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\magic-system` which has the following structure: ```\nBLOOD-MAGIC-VAMPIRISM.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"notes\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\notes\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\notes` which has the following structure: ```\nblended-sensing-system.md\nchain-techniques-structured.md\nchain-techniques.md\ncharacters.md\ncombos-structured.md\ncombos.md\ncultural-knowledge-systems.md\nexpanded-learning-arc.md\nhunting-skills.md\nlearning-arc.md\nmechanics.md\nnations-sketch.md\nphysics-principles-structured.md\nphysics-principles.md\nprotagonist-abilities.md\nrandom-events.md\nspear-techniques.md\ntelekinesis-techniques.md\nworldbuilding.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"outline\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\outline\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\outline` which has the following structure: ```\narc-overview.md\nBEGINNING-MIDDLE-END-ARC.md\ndeath-scene.md\nFROSTFANG-INCIDENT-OUTLINE.md\nSCENE-BY-SCENE-BREAKDOWN.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"pacing\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\pacing\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\pacing` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"profiles\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\profiles\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\profiles` which has the following structure: ```\nCHARACTER-DIALOGUE-VOICE-GUIDE.md\nCHARACTER-INTERACTION-MATRIX.md\nCHARACTER-INTERACTION-SPREADSHEET.md\nDIALOGUE-SAMPLES-KEY-RELATIONSHIPS.md\nMENTORS.md\nPROTAGONIST-AISEN.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"story\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\story\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\story` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"structure\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\structure\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\structure` which has the following structure: ```\nAISEN-DIFFERENTIATION-FRAMEWORK.md\nAISEN-POWER-PROGRESSION.md\nCHAPTERS-4-25-POV-ROADMAP.md\nCLASS-PREJUDICE-POTENTIAL-NARRATIVE-ARC.md\nCLASS-STRUGGLE-PREJUDICE-FRAMEWORK.md\nGODWAR-TERRITORY-CONTEXT.md\nINTEGRATION-DIFFERENTIATION-POWER-GODWAR.md\nNARRATIVE-ARCHITECTURE-MULTI-POV-SYSTEM.md\nNETWORK-NARRATIVE-ARCHITECTURE.md\nPOTENTIAL-VS-CHOICE.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"style\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\style\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\style` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"supporting-cast\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\supporting-cast\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\supporting-cast` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"technology\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\technology\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\technology` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"theme\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\theme\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\theme` which has the following structure: ```\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"timelines\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\timelines\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\timelines` which has the following structure: ```\nLIFE-TIMELINE.md\nyoutube videos that help in this section.md\n```\n</attachment>\n<attachment id=\"world\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\world\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\world` which has the following structure: ```\nyoutube videos that help in this section.md\necology/\nevents/\ngeography/\nhistory/\nnations/\nsociety/\ntechnology/\n```\n</attachment>\n<attachment id=\"worldbuilding\" folderPath=\"c:\\\\Users\\\\PCGAME\\\\Desktop\\\\story&universes\\\\chain-weapon-story\\\\worldbuilding\">\nThe user attached the folder `c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding` which has the following structure: ```\nANOMALY-THEORY.md\nASYMMETRIC-WARFARE.md\nCHAIN-SPEAR-CHRONICLES-BIBLE.md\nCOSMOLOGY-GEOGRAPHY-TIMELINE.md\nCULTURAL-ENCOUNTERS.md\nCULTURAL-SPECIALIZATIONS.md\nDEEP-HISTORY-HIDDEN-AGENDAS.md\nECONOMIC-FOUNDATION.md\nENEMY-ARCHETYPES.md\nPOLITICAL-CURRENTS.md\nPOWER-SYSTEMS-AND-CULTURES.md\nPRESSURE-THEORY-TELEKINESIS.md\nSABOTAGE-AND-MIND-GAMES.md\nSOCIAL-DYNAMICS-NOBILITY-POLITICS.md\nSTORY-INCOMPLETENESS-AUDIT.md\nTHE-CRUCIBLE-OF-THE-ACADEMY.md\nyoutube videos that help in this section.md\n```\n</attachment>\n</attachments>\n<context>\nThe current date is March 29, 2026.\nTerminals:\nTerminal: PowerShell Extension\nTerminal: powershell\n\n</context>\n<editorContext>\nThe user's current file is c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story\\worldbuilding\\THE-CRUCIBLE-OF-THE-ACADEMY.md. \n</editorContext>\n<reminderInstructions>\nWhen using the replace_string_in_file tool, include 3-5 lines of unchanged code before and after the string you want to replace, to make it unambiguous which part of the file should be edited.\nFor maximum efficiency, whenever you plan to perform multiple independent edit operations, invoke them simultaneously using multi_replace_string_in_file tool rather than sequentially. This will greatly improve user's cost and time efficiency leading to a better user experience. Do not announce which tool you're using (for example, avoid saying \"I'll implement all the changes using multi_replace_string_in_file\").\nDo NOT create a new markdown file to document each change or summarize your work unless specifically requested by the user.\n\n</reminderInstructions>\n<userRequest>\nBut what is your story about ??\r\n\r\ngive me a quick summary in one text \n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Windows\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- c:\\Users\\PCGAME\\Desktop\\story&universes\\chain-weapon-story \nI am working in a workspace that has the following structure:\n```\nchain-diagram.md\nCHARACTER-ARC-FRAMEWORK.md\nCOMPREHENSIVE-WRITING-STRATEGY.md\nfirst-arc-test.md\nIMPROVEMENTS-QUICK-CHECKLIST.md\nIMPROVEMENTS-SUMMARY.md\nREADME.md\nROADMAP.md\nsetup.sh\nSTORY-IMPROVEMENTS-AUDIT.md\nSTORY-OVERVIEW.md\ntimeline.md\nwriting-dashboard.md\nWRITING-PRIORITY-CHAPTERS-4-25.md\nantagonists/\n\tANTAGONIST-DEVELOPMENT-PRIORITY-ROADMAP.md\n\tANTAGONIST-INTEGRATION-MAP.md\n\tANTAGONIST-INTERACTION-MATRIX.md\n\tANTAGONISTS-OVERVIEW.md\n\tBRIGANDS.md\n\tCORVUS-LIBERATOR.md\n\tCULTURAL-GATEKEEPERS.md\n\tDESPERATE-ENEMIES.md\n\tENVIRONMENTAL-THREATS.md\n\tFATE-MISTAKE-ENEMIES.md\n\tHEARTLAND-SYSTEM.md\n\tMAGICAL-BEASTS.md\n\tMENTOR-RIVALS.md\n\tPOLITICAL-INTRIGUE.md\n\tSERAPHINE-HEALER-TORTURER.md\n\tTHE-POSSESSOR.md\n\tTRADITIONALISTS.md\n\tUNREACHABLE-MASTERS.md\n\tVARRO.md\n\tVOID-COVENANT.md\n\tyoutube videos that help in this section.md\nbeginning-middle-end/\n\tyoutube videos that help in this section.md\n\tbeginning-arc/\n\tend-arc/\n\tmiddle-arc/\n\trcs/\nchapters/\n\t01-02-ENRICHMENT-GUIDE.md\n\t01-tavern-kid-draft.md\n\t01-tavern-kid-outline.md\n\t01-tavern-kid.md\n\t02-chain-in-the-dark-draft.md\n\t02-chain-in-the-dark-outline.md\n\t02-chain-in-the-dark.md\n\t03-academy-gates-draft.md\n\t03-academy-gates-outline.md\n\t03-academy-gates.md\n\t04-frostfang-incident-draft.md\n\t04-frostfang-incident-enriched.md\n\t04-frostfang-incident-FULL.md\n\t04-frostfang-incident-outline.md\n\t04-frostfang-incident.md\n\t05-last-vigil-draft.md\n\t05-last-vigil-enriched.md\n\t05-last-vigil-outline.md\n\t05-last-vigil.md\n\tyoutube videos that help in this section.md\ncharacters/\n\tyoutube videos that help in this section.md\n\tallies/\n\tantagonists/\n\tfamily/\n\tgroups/\n\tmain/\n\tmentors/\n\tother/\n\tside/\nconflict/\n\tANOMALIES-FRAMEWORK.md\n\tCASPIAN-VANE-INTEGRATION.md\n\tCORVIN-ASHFORD-INTEGRATION.md\n\tKAEL-MERIDIAN-INTEGRATION.md\n\tyoutube videos that help in this section.md\nconsistency/\n\t...\nculture/\n\t...\necology/\n\t...\nhierarchies/\nmagic-system/\nnotes/\noutline/\npacing/\nprofiles/\nstory/\nstructure/\nstyle/\nsupporting-cast/\ntechnology/\ntheme/\ntimelines/\nworld/\nworldbuilding/\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n<userMemory>\nNo user preferences or notes saved yet. Use the memory tool to store persistent notes under /memories/.\n</userMemory>\n<sessionMemory>\nSession memory (/memories/session/) is empty. No session notes have been created yet.\n</sessionMemory>\n<repoMemory>\nThe following files exist in your repository memory (/memories/repo/). These are scoped to the current workspace. Use the memory tool to read them if needed.\n\n/memories/repo/cultural-knowledge-framework.md\n/memories/repo/narrative-core-themes.md\n/memories/repo/organization-guidelines.md\n/memories/repo/structure.md\n</repoMemory>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "cacheKey": "file:///c%3A/Users/PCGAME/Desktop/story%26universes/chain-weapon-story",
+          "promptTokens": 39490,
+          "outputTokens": 705,
+          "toolCallRounds": [
+            {
+              "response": "# Your Story: Quick Summary\n\n**\"The Chain Weapon Story\"** is a fantasy novel about **Aisen Korv**, an ordinary tavern-keeper's son who becomes extraordinary not through destiny or magic, but through **failure, observation, and synthesis**.\n\nHe learns to fight from guards, picks up magic from reluctant teachers, and invents a versatile chain weapon by combining physics, hunting wisdom, and fragments of knowledge from six different cultures. He has no special bloodline, no plot armor, no chosen-one prophecy—just adaptability and stubborn pragmatism.\n\nThe story spans from his childhood watching adventurers in a border tavern, through Academy years filled with over-powered anomalies and political intrigue, into adulthood where he faces impossible odds. But here's the twist: **he dies before the story ends**, and the world continues without him.\n\n**Core theme**: In a world full of people with narrative shortcuts (reincarnators, transmigrators, ancient powers), the only real advantage is being ordinary enough to adapt to *anything*. The story asks: what makes a life meaningful if you're never the chosen one, never the legend, never destined for glory?\n\n**In one sentence**: An unspecial kid in a world of anomalies builds mastery through limitation, and proves that ordinary people matter—even when their story ends.",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "62f90595-5a1e-45a0-99c4-acd65d8fe3ea",
+              "thinking": {
+                "id": "thinking_0",
+                "text": "The user is asking for a quick summary of their story in one text. They've given me a massive workspace with extensive worldbuilding, character development, and story outlines. Let me look at what I have from the attachments and context.\n\nFrom the attachments and workspace structure, I can see:\n\n**Core Story Concept** (from README.md):\n- Fantasy story about an ordinary protagonist with a versatile chain spear\n- A world where physics and magic coexist\n- Randomness shapes the narrative\n- Main character: Tavern owner's son, learns spear, then magic, becomes a jack-of-some-trades\n- No plot armor, real consequences, world continues after MC's death\n\n**More Details** (from various attachments):\n- Protagonist: Aisen Korv\n- Born in a tavern in a border region\n- Not special, not chosen, not a hero with plot armor\n- Learns through failure and observation\n- Mixed heritage (Valdimereaan father, Umara mother)\n- Dies before the story ends\n- The world continues after his death\n\n**The 5-Chapter Arc** (from multiple files):\n1. Chapter 1: The Tavern Kid - childhood/origin\n2. Chapter 2: Chain in the Dark - learning/early training\n3. Chapter 3: Academy Gates - entering the academy\n4. Chapter 4: Frostfang Incident - major confrontation\n5. Chapter 5: Last Vigil - decision point/ending\n\n**Themes:**\n- Ordinariness in an extraordinary world\n- Learning through synthesis of different cultural traditions\n- Physics-based approach to problem-solving\n- Consequences matter, death is real\n- Anti-chosen-one narrative\n\nLet me provide a concise, punchy summary that captures the essence.",
+                "encrypted": "EsYNCkgIDBABGAIqQMjvYOpkeA4/ZDcjsZpcP44OLOjP5eY6wHNNaI1SFnfRezSWyYuF0gRujNNW8Y/tTtf9XtWOR7TnIFB0Z0lmUJ4SDMM/rtrdmeaduzpP0xoMPVzdJzv8ra8iUpQcIjAK0mu45/3o1hUa0L9rwyJ/PVKlpe38YlURwaqX6EY0wCIVeX9GNeeAnCWtojFoHE4qqwzSGN2e/+/Pqb0Ehxb2KnRqn/AoqAyxsInt18DlUgd+/3h/Fz6KUSqO2xLP25m+iPJru3pECxiqRlocSjMjK/X134QH/e5moHaEyBF19D/+VvGt3CtVoaFHuVW7TZOcZLXd7RA3f2bVq8sJQVSsJO56UVnY979XKmiwGL0zfgBdi0WzKToQZ0b4fzWXBjZHuRPBLT/jWCYc/ec1Btui+FySzWIaucJHaytlgLYFV9emkjS6zUyqyoVVJbs0iOeW4IqaN/+rwuEvtUUSNGDWPaTtqIRdvEI8iXsD5AAYTwI1iKrVElb8zj7tsVTTub9X9+Sh9zeAuuUVRTbti1085Z9yFg6PqSOGFU78UNe8uY0tGSFDZHkM4JfL1wzm2Uqkxsir4BpOLSflKl/KbH6jwv9CL0amNmcsUv8ZgtlHwBBzzq4GtI6G5gTH9GHC+velomvelFcT8YBV38Fm5rk6bHTkPkm8MYfe7GyZgS3lkky846RgSvyc2PAac4RptVb8B1nfz1K+EPDbXqZdbCVuFGr5UzBs6VcrfnE1AlPFGFe64y4318gw5MI+Y7t2UMhr/HzFmSSCV1umH3Se14lXQsJXBOCE5ubZkDRV0tNbDVBjuEujvAjBZCxF6vlRylQedlPxZ+ruDgv3WgcANO0Etv1qlyR5K6Hy+37qp5WgS68fJpr2iBZM6nRKWkeEeh6DBMPvMyZDmky8qOgNhksnmkuhlHS2rnALLrg600sXe9CPfRBEijOph/LyYziijrrhX8CAKZQkDukx7g7TPxX7QCtUzatUFxhbzvf6uad0y7TJXGxecGYdcc8CONe1dRYy19VrapZ9ob7PswGHoSDhmegFaBtNRg1V0nkGBCW9zE/bGrFSfiJWhzmlcSNdIxi6ie8mbCOK4bCAH4Mz3sXMhx/M5yZ5rnlBG+xb0953bJpfAO1flL4rn57j3vc31wOC+lZIpj/0HGPGlr18/r2HfAUdHwAwyH7hUfry8CP7Drm/2qnSMzRjMN6yzPl08658i+oOPjRLJr1y0Fwd8jBkP5lWjBUPqvjvNhbW+jxW6fObxEwjOJfJAVhSZai8/kHpZqF3EPcHUmpNhfyuU4CGQX49/87MHDcNdnEUrKbcZ2pHxOHn4zYRFQOeIuMw+iZlRyfrfDKGcmVwgx0TYWEhhivUkCCa0RWbh52VrUQ2AiW4+51O3bZg6gWFBSc+tG5KfpaRr6bCUNMKbVIeu/wRU+ye3+TCuBwIkCIlRRqkQ6wKscV9RBXInS+1e7bJpCrYRZhf8ja0TU622jpR/ynvlWyqUCArXy9DfNzkK0PPBMHrRVoXeSjle0ufzc78Ya+o0OLnVAkGJaofkbhXbDD7gLaQfGWPbpkTLy+G0yNmQ0ln2aLbsFXZerDtNNxxae1Uqrq16NXyOD31d6rmu9HI3bfT3EnLMZdsWb9Yj5FxWOaZsrrCWCEsKx/1rYQokiqPIuCjHm0hR9D5YPNyZzZpoQ097oI5FdnL8jWche7lMMFJhM1SvrsYZ3eR3V7MvXiCOOWQJL/Vp/jAvrKU8FEjlUFTHCkEzoJ4sBo9X+V5ld3+8j289Qi+mVvC7IMyk11BK8r3aASvIMxFVwh+I8qau6X109i3RHSuDsx2LAPa1eTGNqdogpRMZd1IkTxmBZrBfC/NlAiApxCfQgfEhg9W5iaXe3n1wLry+CuXKetJvobUqshpj2/horDDc+SgH7v1m6YYVfQ2qEbmFaS00b+KtlCp3wssDKCsdxT9eV2hdqDOOiQCUQfqFHyUFwKoBzrRKVNYsCrDTwVIkn3S0Dfy7UjVWyQyolbIS6G+3Qs7wLJUkxMgtRYvd4eQS7pZUk9VX6Er7Ja6z1KH3ZMx30lWSYNGXJMB9jNlGwLfOW84LhM5YpVVSki1+DKS3pRI3x/PN2dQp51Llv69uNzavfb26BYF00JgCKwBx+qq3qTDD3vVmR+nwJxgCaeRmQtPQDHe1JD6VlGiHSI3z1pBJFbvVWWML0O+Z0nmOJUj0ev/vOG3iS73MbL1Vb9E1qp+k/F/3EDXBGMgMs7cdEnrNWssOD65T1NcqYIRnwmofNqHolLJDuhGCVAGNSaTv2sdGAE=",
+                "tokens": 0
+              },
+              "timestamp": 1774819259013
+            }
+          ],
+          "resolvedModel": "claude-haiku-4-5-20251001",
+          "modelMessageId": "da70d75b-76af-4145-b540-c01b8169122b",
+          "responseId": "512b2a07-b15d-4f58-b6e5-8dbd6cb80204",
+          "sessionId": "068d860d-75f5-430c-b70e-827d3b8475ed",
+          "agentId": "github.copilot.editsAgent"
+        },
+        "details": "Claude Haiku 4.5 • 1x"
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "modelState": {
+        "value": 1,
+        "completedAt": 1774819259030
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timeSpentWaiting": 1774819249575
+    }
+  ]
+}

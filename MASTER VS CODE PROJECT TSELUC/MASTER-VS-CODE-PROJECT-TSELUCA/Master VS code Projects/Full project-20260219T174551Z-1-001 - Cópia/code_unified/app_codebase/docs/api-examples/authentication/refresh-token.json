@@ -1,0 +1,55 @@
+{
+  "endpoint": "POST /api/auth/refresh",
+  "description": "Refresh expired access token using refresh token",
+  "method": "POST",
+  "url": "http://localhost:3000/api/auth/refresh",
+  "summary": "Get new access token",
+  
+  "request": {
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    },
+    "body": {
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjUxMzI0NjAwfQ.signature"
+    }
+  },
+  
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": true,
+      "message": "Token refreshed successfully",
+      "data": {
+        "tokens": {
+          "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImVtYWlsIjoidXNlckBleGFtcGxlLmNvbSIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjQ2NTQxNTAwfQ.new-signature",
+          "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1MGU4NDAwLWUyOWItNDFkNC1hNzE2LTQ0NjY1NTQ0MDAwMCIsImlhdCI6MTY0NjU0MDYwMCwiZXhwIjoxNjUxMzI0NjAwfQ.new-signature",
+          "accessTokenExpiry": 900,
+          "refreshTokenExpiry": 604800
+        }
+      }
+    }
+  },
+  
+  "notes": [
+    "Use this when accessToken expires (after 15 minutes)",
+    "refreshToken is valid for 7 days",
+    "Both tokens are refreshed with new values",
+    "Use new accessToken for subsequent API calls",
+    "When refreshToken expires, user must login again"
+  ],
+  
+  "usage": {
+    "flow": [
+      "1. Login → Get accessToken + refreshToken",
+      "2. Use accessToken for 15 minutes",
+      "3. When accessToken expires (401 response), call this endpoint",
+      "4. Get new accessToken, continue using API",
+      "5. After 7 days, refreshToken expires, must login again"
+    ]
+  }
+}

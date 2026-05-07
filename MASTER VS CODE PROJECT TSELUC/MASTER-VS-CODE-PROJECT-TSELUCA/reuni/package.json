@@ -1,0 +1,15 @@
+{
+  "name": "extracao-powerbi",
+  "version": "1.0.0",
+  "description": "Extração de dados do Power BI com Puppeteer",
+  "main": "extrair.js",
+  "scripts": {
+    "start": "node extrair.js"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2",
+    "puppeteer": "^24.37.5"
+  },
+  "author": "",
+  "license": "ISC"
+}

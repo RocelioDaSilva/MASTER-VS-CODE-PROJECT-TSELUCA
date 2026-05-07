@@ -1,0 +1,287 @@
+{
+  "summary": {
+    "repo_root": "C:\\Users\\PCGAME\\Desktop\\Master VS CODE PROJECTS\\THEMITSCIENCEPAPER^2\\MIT-SCIENCE-PAPER-MVP-2-GROUP",
+    "excluded": [
+      ".git",
+      ".venv",
+      "node_modules",
+      "repo_admin/reorg_archives"
+    ],
+    "scanned_files_count": 907,
+    "duplicate_groups_all": 63,
+    "duplicate_groups_tracked": 229
+  },
+  "duplicates_all": {
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": [
+      "repo_admin/reorg_archives/duplicates_by_hash/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/code_unified/app_codebase/geesp-angola/tests.log",
+      "repo_admin/reorg_archives/duplicates_by_hash/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/manuscript_unified/science_manuscript/manuscript/SOL.bbl",
+      "repo_admin/reorg_archives/duplicates_by_hash/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/MIT-SCIENCE-PAPER/Full project/02_Code/geesp-angola/backend/dashboard/components_consolidated.tmp",
+      "MIT-SCIENCE-PAPER/Full project/Coding parts/startofthecode"
+    ],
+    "57d7cb9cf32a09a5c10cd6949e3f99e1c08afcf320f26af34d3a21b41e3a615d": [
+      "repo_admin/reorg_archives/duplicates_by_hash/57d7cb9cf32a09a5c10cd6949e3f99e1c08afcf320f26af34d3a21b41e3a615d/code_unified/app_codebase/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/metadata.json",
+      "repo_admin/reorg_archives/duplicates_by_hash/57d7cb9cf32a09a5c10cd6949e3f99e1c08afcf320f26af34d3a21b41e3a615d/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/metadata.json",
+      "_old_information/google_ai_studio_app/metadata.json",
+      "repo_admin/reorg_archives/duplicates_by_hash/57d7cb9cf32a09a5c10cd6949e3f99e1c08afcf320f26af34d3a21b41e3a615d/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/metadata.json"
+    ],
+    "737170d836a596e2656f4f89947c71f5e96e61d0ba359af9c0944019a680fa6b": [
+      "repo_admin/reorg_archives/duplicates_by_hash/737170d836a596e2656f4f89947c71f5e96e61d0ba359af9c0944019a680fa6b/code_unified/app_codebase/geesp-angola/ARCHIVED_MERGES/nevermindu_backup_20260307/src/constants.ts",
+      "repo_admin/reorg_archives/duplicates_by_hash/737170d836a596e2656f4f89947c71f5e96e61d0ba359af9c0944019a680fa6b/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/constants.ts",
+      "_old_information/google_ai_studio_app/src/constants.ts",
+      "repo_admin/reorg_archives/duplicates_by_hash/737170d836a596e2656f4f89947c71f5e96e61d0ba359af9c0944019a680fa6b/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/src/constants.ts"
+    ],
+    "982b48af56b45894ffc5042d39303a0a141143753ee83377ef0d7f6fe4298b3c": [
+      "repo_admin/reorg_archives/duplicates_by_hash/982b48af56b45894ffc5042d39303a0a141143753ee83377ef0d7f6fe4298b3c/manuscript_unified/science_manuscript/manuscript/figures/mapa_aptidao_integrada.pdf",
+      "manuscript_unified/submission_package/figuras/mapa_aptidao_integrada.pdf"
+    ],
+    "86f24637a70bec844529d1dbfe5eafb069f51b962f86a562928d47847aeeda33": [
+      "repo_admin/reorg_archives/duplicates_by_hash/86f24637a70bec844529d1dbfe5eafb069f51b962f86a562928d47847aeeda33/manuscript_unified/science_manuscript/manuscript/figures/mapa_distanciarede.pdf",
+      "manuscript_unified/submission_package/figuras/mapa_distanciarede.pdf"
+    ],
+    "a0504408ca21127150ac467dec3cff762b9d621f15a8a6b902e94a6aba002b3f": [
+      "repo_admin/reorg_archives/duplicates_by_hash/a0504408ca21127150ac467dec3cff762b9d621f15a8a6b902e94a6aba002b3f/manuscript_unified/science_manuscript/manuscript/figures/mapa_irradiacao.pdf",
+      "manuscript_unified/submission_package/figuras/mapa_irradiacao.pdf"
+    ],
+    "f3ba549d5682cb521593723fb43eec7c025e98f0e2b58aea85964ebb0c368803": [
+      "repo_admin/reorg_archives/duplicates_by_hash/f3ba549d5682cb521593723fb43eec7c025e98f0e2b58aea85964ebb0c368803/manuscript_unified/science_manuscript/manuscript/figures/mapa_populacao.pdf",
+      "manuscript_unified/submission_package/figuras/mapa_populacao.pdf"
+    ],
+    "e6761fc510e2e800109040011984984ea11e065aa599f1225653b7c04d34976a": [
+      "repo_admin/reorg_archives/duplicates_by_hash/e6761fc510e2e800109040011984984ea11e065aa599f1225653b7c04d34976a/manuscript_unified/science_manuscript/manuscript/figures/photo_solartainer_mali.jpg",
+      "manuscript_unified/science_manuscript/manuscript/figures/solartainer_mali.jpg"
+    ],
+    "aea91df7a74000bf747911138fdcec76cd868c0f3ad09300c0de9e5d3d5cbe11": [
+      "repo_admin/reorg_archives/duplicates_by_hash/aea91df7a74000bf747911138fdcec76cd868c0f3ad09300c0de9e5d3d5cbe11/manuscript_unified/submission_package/figuras/mapa_aptidao_integrada.aux",
+      "repo_admin/reorg_archives/duplicates_by_hash/aea91df7a74000bf747911138fdcec76cd868c0f3ad09300c0de9e5d3d5cbe11/manuscript_unified/submission_package/figuras/mapa_distanciarede.aux",
+      "repo_admin/reorg_archives/duplicates_by_hash/aea91df7a74000bf747911138fdcec76cd868c0f3ad09300c0de9e5d3d5cbe11/manuscript_unified/submission_package/figuras/mapa_irradiacao.aux",
+      "manuscript_unified/submission_package/figuras/mapa_populacao.aux"
+    ],
+    "6ff101fb2612edb9f14664ded241195ecc3e58581b49ad778a9c79cf0c908b6f": [
+      "MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/GEESP-COMPLETION-SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/6ff101fb2612edb9f14664ded241195ecc3e58581b49ad778a9c79cf0c908b6f/_old_information/legacy_mit_science_paper/documentation/technical/archive/GEESP-COMPLETION-SUMMARY.md"
+    ],
+    "88dc92fec4f80b9f96ae43f7378392ca8c67245238a4d7d3b8005a20971e3f8b": [
+      "MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/IMPROVEMENTS_SUMMARY_FEB8.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/88dc92fec4f80b9f96ae43f7378392ca8c67245238a4d7d3b8005a20971e3f8b/_old_information/legacy_mit_science_paper/documentation/technical/archive/IMPROVEMENTS_SUMMARY_FEB8.md"
+    ],
+    "dc8b724c664337b0ab24faa06b7932a50cd8656ea4a8c3feb664fadbc83f0b6e": [
+      "MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/PLANO_EXECUCAO_72H.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/dc8b724c664337b0ab24faa06b7932a50cd8656ea4a8c3feb664fadbc83f0b6e/_old_information/legacy_mit_science_paper/documentation/technical/archive/PLANO_EXECUCAO_72H.md"
+    ],
+    "38ad16bd1cbcd644f03de9d6c25f00e85d623680108d1dbaac390182f89c6593": [
+      "MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/README-COMPLETION.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/38ad16bd1cbcd644f03de9d6c25f00e85d623680108d1dbaac390182f89c6593/_old_information/legacy_mit_science_paper/documentation/technical/archive/README-COMPLETION.md"
+    ],
+    "05f0fe4df1ef4f7b1cbd12823408e5a83a8068a6e8c5056f19107cea9c3b3a38": [
+      "MIT-SCIENCE-PAPER/Full project/03_Documentation/technical/archive/REPRODUCIBILITY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/05f0fe4df1ef4f7b1cbd12823408e5a83a8068a6e8c5056f19107cea9c3b3a38/_old_information/legacy_mit_science_paper/documentation/technical/archive/REPRODUCIBILITY.md"
+    ],
+    "e49b9dfe0168a10158aea5632620eb5bb5f6220659ffadd4fe464fac58db441e": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/apply_new_structure.py",
+      "repo_admin/reorg_archives/duplicates_by_hash/e49b9dfe0168a10158aea5632620eb5bb5f6220659ffadd4fe464fac58db441e/_old_information/legacy_mit_science_paper/archive_snapshots/archive/apply_new_structure.py"
+    ],
+    "b3c6306481fed8ad33ac7f18af28dcc178fc9c1917751c97fafdb61628866fc0": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/ARCHIVE_INDEX.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/b3c6306481fed8ad33ac7f18af28dcc178fc9c1917751c97fafdb61628866fc0/_old_information/legacy_mit_science_paper/archive_snapshots/archive/ARCHIVE_INDEX.md"
+    ],
+    "43254b6de1bebe36611afb7c7ff3696fefcb8dbb6bea1d7fa6cb4f392d3fc63c": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/REORGANIZATION_LOG.txt",
+      "repo_admin/reorg_archives/duplicates_by_hash/43254b6de1bebe36611afb7c7ff3696fefcb8dbb6bea1d7fa6cb4f392d3fc63c/_old_information/legacy_mit_science_paper/archive_snapshots/archive/REORGANIZATION_LOG.txt"
+    ],
+    "d29ae1da40b7bbe8b0047bd45578dabc399495c8c5ebc3820ffd709a54abc4e4": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/REORGANIZATION_SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/d29ae1da40b7bbe8b0047bd45578dabc399495c8c5ebc3820ffd709a54abc4e4/_old_information/legacy_mit_science_paper/archive_snapshots/archive/REORGANIZATION_SUMMARY.md"
+    ],
+    "1501b00a716cad7e6001f9344a09f53bbe9ea5d7f7f212929c98190d04d28629": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/reorganize_comprehensive.py",
+      "repo_admin/reorg_archives/duplicates_by_hash/1501b00a716cad7e6001f9344a09f53bbe9ea5d7f7f212929c98190d04d28629/_old_information/legacy_mit_science_paper/archive_snapshots/archive/reorganize_comprehensive.py"
+    ],
+    "7095280b5c0ea40441ffe11a93b7e170220cb95922b90da3fa69896becfacdb3": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/reorganize_project.py",
+      "repo_admin/reorg_archives/duplicates_by_hash/7095280b5c0ea40441ffe11a93b7e170220cb95922b90da3fa69896becfacdb3/_old_information/legacy_mit_science_paper/archive_snapshots/archive/reorganize_project.py"
+    ],
+    "4d2ae5b66b99f0099dc0e225b1af52f3be391842712baaa93ac7893dc86945c0": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/requirements_root_backup.txt",
+      "repo_admin/reorg_archives/duplicates_by_hash/4d2ae5b66b99f0099dc0e225b1af52f3be391842712baaa93ac7893dc86945c0/_old_information/legacy_mit_science_paper/archive_snapshots/archive/requirements_root_backup.txt"
+    ],
+    "953bc9171513114b19efbe8699b3c49f9e4d1485714932e18ccf28c689d7b936": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/STRUCTURE_CHANGE_LOG.txt",
+      "repo_admin/reorg_archives/duplicates_by_hash/953bc9171513114b19efbe8699b3c49f9e4d1485714932e18ccf28c689d7b936/_old_information/legacy_mit_science_paper/archive_snapshots/archive/STRUCTURE_CHANGE_LOG.txt"
+    ],
+    "e1f066d119b1272ce65d283bbb728afa5c70be05a22fbac442a44cabf3d0743e": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/CARTA_SUBMISSAO.docx",
+      "repo_admin/reorg_archives/duplicates_by_hash/e1f066d119b1272ce65d283bbb728afa5c70be05a22fbac442a44cabf3d0743e/_old_information/legacy_mit_science_paper/archive_snapshots/archive/BACKUP_SNAPSHOTS/submission_backup/CARTA_SUBMISSAO.docx"
+    ],
+    "2d2d6c98b7014bd6f461b743d02331095d0d8e2c87debe56967800bf0de646a9": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/BACKUP_SNAPSHOTS/submission_backup/README.txt",
+      "repo_admin/reorg_archives/duplicates_by_hash/2d2d6c98b7014bd6f461b743d02331095d0d8e2c87debe56967800bf0de646a9/_old_information/legacy_mit_science_paper/archive_snapshots/archive/BACKUP_SNAPSHOTS/submission_backup/README.txt"
+    ],
+    "a7c7ec84ba1365a6b2ff5a16764e643bd131ee4af826f5e6160205d000928acd": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile.log",
+      "repo_admin/reorg_archives/duplicates_by_hash/a7c7ec84ba1365a6b2ff5a16764e643bd131ee4af826f5e6160205d000928acd/MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile2.log"
+    ],
+    "76823499975081750785a6e8d835c6da59ab43b635bc232d1eb552a3628da982": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile_pass1.log",
+      "repo_admin/reorg_archives/duplicates_by_hash/76823499975081750785a6e8d835c6da59ab43b635bc232d1eb552a3628da982/MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile_pass2.log",
+      "repo_admin/reorg_archives/duplicates_by_hash/76823499975081750785a6e8d835c6da59ab43b635bc232d1eb552a3628da982/MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/compile_pass3.log"
+    ],
+    "2686a265c9339893781d33913be5ed6066a4527f948314afcd2e2db0b89d1593": [
+      "repo_admin/reorg_archives/duplicates_by_hash/2686a265c9339893781d33913be5ed6066a4527f948314afcd2e2db0b89d1593/MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/papier.tex",
+      "repo_admin/reorg_archives/duplicates_by_hash/2686a265c9339893781d33913be5ed6066a4527f948314afcd2e2db0b89d1593/_old_information/legacy_mit_science_paper/archive_snapshots/archive/OLD_VERSIONS/old_manuscripts/papier.tex",
+      "_old_information/manuscript_variants/old_manuscripts/papier.tex"
+    ],
+    "7ab84502e12f00fb8ec04411240e3f2d7b14cb3f593ef890724a4b77d5fb2c4c": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/Refer\u00eancias",
+      "_old_information/legacy_mit_science_paper/archive_snapshots/archive/OLD_VERSIONS/old_manuscripts/Refer\u00eancias",
+      "_old_information/manuscript_variants/old_manuscripts/Refer\u00eancias"
+    ],
+    "3bde068cdcea1e450f526c0567751a1fa6fcb798d8aa62a8136043ee35b040b2": [
+      "repo_admin/reorg_archives/duplicates_by_hash/3bde068cdcea1e450f526c0567751a1fa6fcb798d8aa62a8136043ee35b040b2/MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOLV2IMPROVBYPT.TEX",
+      "repo_admin/reorg_archives/duplicates_by_hash/3bde068cdcea1e450f526c0567751a1fa6fcb798d8aa62a8136043ee35b040b2/_old_information/legacy_mit_science_paper/archive_snapshots/archive/OLD_VERSIONS/old_manuscripts/SOLV2IMPROVBYPT.TEX",
+      "_old_information/manuscript_variants/old_manuscripts/SOLV2IMPROVBYPT.TEX"
+    ],
+    "576f8a29a5b3a600a64e0d0896bbcaf35fd2b5e4247db8415f439a6497cff438": [
+      "repo_admin/reorg_archives/duplicates_by_hash/576f8a29a5b3a600a64e0d0896bbcaf35fd2b5e4247db8415f439a6497cff438/MIT-SCIENCE-PAPER/Full project/08_Archive/archive/OLD_VERSIONS/old_manuscripts/SOL_backup_20260207_230841.tex",
+      "repo_admin/reorg_archives/duplicates_by_hash/576f8a29a5b3a600a64e0d0896bbcaf35fd2b5e4247db8415f439a6497cff438/_old_information/legacy_mit_science_paper/archive_snapshots/archive/OLD_VERSIONS/old_manuscripts/SOL_backup_20260207_230841.tex",
+      "_old_information/manuscript_variants/old_manuscripts/SOL_backup_20260207_230841.tex"
+    ],
+    "9d8c0f6c88d31ca04f9db738c23627451ed9d95e499dfe47764bceddbd363b2c": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/geesp-angola-fixes/phase2_unicode_logging_fix.py",
+      "repo_admin/reorg_archives/duplicates_by_hash/9d8c0f6c88d31ca04f9db738c23627451ed9d95e499dfe47764bceddbd363b2c/_old_information/legacy_mit_science_paper/archive_snapshots/geesp-angola-fixes/phase2_unicode_logging_fix.py"
+    ],
+    "72255608b8cb277c6a365e5e27eca3163009e7fd4d351dee1733d949d12916a6": [
+      "repo_admin/reorg_archives/duplicates_by_hash/72255608b8cb277c6a365e5e27eca3163009e7fd4d351dee1733d949d12916a6/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/ARCHITECTURE_REFERENCE.md",
+      "_old_information/google_ai_studio_app/ARCHITECTURE_REFERENCE.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/72255608b8cb277c6a365e5e27eca3163009e7fd4d351dee1733d949d12916a6/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/ARCHITECTURE_REFERENCE.md"
+    ],
+    "0d248e815151234543e057f17add2cc86fd40ca54ff1e9a5610398fbc3a4a569": [
+      "repo_admin/reorg_archives/duplicates_by_hash/0d248e815151234543e057f17add2cc86fd40ca54ff1e9a5610398fbc3a4a569/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/ENHANCEMENT_SUMMARY.md",
+      "_old_information/google_ai_studio_app/ENHANCEMENT_SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/0d248e815151234543e057f17add2cc86fd40ca54ff1e9a5610398fbc3a4a569/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/ENHANCEMENT_SUMMARY.md"
+    ],
+    "32a69da023acbd3708c55b1fad6c073b40396c88287b643728768e29d947f285": [
+      "repo_admin/reorg_archives/duplicates_by_hash/32a69da023acbd3708c55b1fad6c073b40396c88287b643728768e29d947f285/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/IMPLEMENTATION_GUIDE.md",
+      "_old_information/google_ai_studio_app/IMPLEMENTATION_GUIDE.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/32a69da023acbd3708c55b1fad6c073b40396c88287b643728768e29d947f285/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/IMPLEMENTATION_GUIDE.md"
+    ],
+    "3e9fc8f0069e4c97371d1d6aaf61b59abf945a98f2d2b62d2761e0b4b6aa903a": [
+      "repo_admin/reorg_archives/duplicates_by_hash/3e9fc8f0069e4c97371d1d6aaf61b59abf945a98f2d2b62d2761e0b4b6aa903a/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/QUICK_START.md",
+      "_old_information/google_ai_studio_app/QUICK_START.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/3e9fc8f0069e4c97371d1d6aaf61b59abf945a98f2d2b62d2761e0b4b6aa903a/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/QUICK_START.md"
+    ],
+    "09a788bbc0baceb62df75748976233b8ecba7168d6a763a78abbe26bc2652a26": [
+      "repo_admin/reorg_archives/duplicates_by_hash/09a788bbc0baceb62df75748976233b8ecba7168d6a763a78abbe26bc2652a26/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/server.ts",
+      "_old_information/google_ai_studio_app/server.ts",
+      "repo_admin/reorg_archives/duplicates_by_hash/09a788bbc0baceb62df75748976233b8ecba7168d6a763a78abbe26bc2652a26/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/server.ts"
+    ],
+    "1a5884a9ed6d2e13c726e1566064d5b3a9149af5a2d6b72f8127306d9db0341a": [
+      "repo_admin/reorg_archives/duplicates_by_hash/1a5884a9ed6d2e13c726e1566064d5b3a9149af5a2d6b72f8127306d9db0341a/MIT-SCIENCE-PAPER/Full project/08_Archive/google-ai-studio-app/src/types.ts",
+      "_old_information/google_ai_studio_app/src/types.ts",
+      "repo_admin/reorg_archives/duplicates_by_hash/1a5884a9ed6d2e13c726e1566064d5b3a9149af5a2d6b72f8127306d9db0341a/_old_information/legacy_mit_science_paper/archive_snapshots/google-ai-studio-app/src/types.ts"
+    ],
+    "97ed7c80b8d28ecb047dca9b39d97a90af0916d87a430b09f7f64f7499466223": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_ANALYSIS_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/97ed7c80b8d28ecb047dca9b39d97a90af0916d87a430b09f7f64f7499466223/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CODE_ANALYSIS_REPORT.md"
+    ],
+    "df72989aa7a261459e9514fda468db498b6e94ea78d34a4274ea148f47669e9a": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_CONSOLIDATION_ANALYSIS.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/df72989aa7a261459e9514fda468db498b6e94ea78d34a4274ea148f47669e9a/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CODE_CONSOLIDATION_ANALYSIS.md"
+    ],
+    "4417e70630766c9b8f18f56731e48ca3a457693a9d7bc2354f681ca3459ab76c": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_CONSOLIDATION_IMPLEMENTATION_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/4417e70630766c9b8f18f56731e48ca3a457693a9d7bc2354f681ca3459ab76c/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CODE_CONSOLIDATION_IMPLEMENTATION_REPORT.md"
+    ],
+    "22067fd2edeccd043c266878da17c003e57b95e33755930bb49c24f761209039": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_HARMONY_AUDIT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/22067fd2edeccd043c266878da17c003e57b95e33755930bb49c24f761209039/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CODE_HARMONY_AUDIT.md"
+    ],
+    "b46723f3970cc1d86dbaeffd99b3c0bc5dbd2ba5a8037c4eacf7760a2796d369": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CODE_REVIEW_COMPREHENSIVE.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/b46723f3970cc1d86dbaeffd99b3c0bc5dbd2ba5a8037c4eacf7760a2796d369/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CODE_REVIEW_COMPREHENSIVE.md"
+    ],
+    "cbcd383a239b08414704029ba1c3314f721a16106af4333c8bb0c8b945706e33": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_COMPLETE.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/cbcd383a239b08414704029ba1c3314f721a16106af4333c8bb0c8b945706e33/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CONSOLIDATION_COMPLETE.md"
+    ],
+    "3fbd19269fba74af3b0096271cd3ddc092f1f216d89cbd89ef798c883f1f193e": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_COMPLETION_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/3fbd19269fba74af3b0096271cd3ddc092f1f216d89cbd89ef798c883f1f193e/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CONSOLIDATION_COMPLETION_REPORT.md"
+    ],
+    "bc397a26d02b25663b0e2994d4b274e05728e38c14f1bfdbc5293a9b829f7c24": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_INDEX.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/bc397a26d02b25663b0e2994d4b274e05728e38c14f1bfdbc5293a9b829f7c24/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CONSOLIDATION_INDEX.md"
+    ],
+    "f90c4e785e8e5d66f219e313755bc56ebd7b28a5f9fb6985d10828cf33fe713f": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/CONSOLIDATION_VISUAL_SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/f90c4e785e8e5d66f219e313755bc56ebd7b28a5f9fb6985d10828cf33fe713f/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/CONSOLIDATION_VISUAL_SUMMARY.md"
+    ],
+    "a9e24bfe75c6de9eb2aaa3d8ee4a9f35c43aada57f5a2a1d9d7cdda3f1568b4e": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/HARMONY_TESTING_SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/a9e24bfe75c6de9eb2aaa3d8ee4a9f35c43aada57f5a2a1d9d7cdda3f1568b4e/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/HARMONY_TESTING_SUMMARY.md"
+    ],
+    "86a8409713cc9b03c7de579941bc550fc317f495b418c2e4e0d896c6144d6899": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/IMPLEMENTATION_COMPARISON_AND_MERGE_STRATEGY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/86a8409713cc9b03c7de579941bc550fc317f495b418c2e4e0d896c6144d6899/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/IMPLEMENTATION_COMPARISON_AND_MERGE_STRATEGY.md"
+    ],
+    "79903d1ff61c5f7a56c10d234ce51e5d88449741d6ba0696f04fab0bdb984680": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/INDUSTRY_STANDARDS_AND_BEST_PRACTICES.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/79903d1ff61c5f7a56c10d234ce51e5d88449741d6ba0696f04fab0bdb984680/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/INDUSTRY_STANDARDS_AND_BEST_PRACTICES.md"
+    ],
+    "67d12b09df28b2b9506cf614b748f717ca7a47a20795753f532f721302b2bcd4": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE2_COMPLETION_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/67d12b09df28b2b9506cf614b748f717ca7a47a20795753f532f721302b2bcd4/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE2_COMPLETION_REPORT.md"
+    ],
+    "a54f6456cb1d8afb74932b1b453c9c4d9d1333081859b2d69828efa930cdc60c": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE2_FINAL_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/a54f6456cb1d8afb74932b1b453c9c4d9d1333081859b2d69828efa930cdc60c/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE2_FINAL_REPORT.md"
+    ],
+    "436499c233614cfa4f9f0b39b158ea29dcd64c20d68e8c694b774286c9fbbcf8": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE2_IMPORT_CENTRALIZATION_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/436499c233614cfa4f9f0b39b158ea29dcd64c20d68e8c694b774286c9fbbcf8/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE2_IMPORT_CENTRALIZATION_REPORT.md"
+    ],
+    "30857e3c0df9c8cae8d98a2db2c6af067d98900c4b6c45f77027b4d8998ef186": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_ACTUAL_COMPLETION_SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/30857e3c0df9c8cae8d98a2db2c6af067d98900c4b6c45f77027b4d8998ef186/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE3A_ACTUAL_COMPLETION_SUMMARY.md"
+    ],
+    "9ee11b0a6fe0b62e1daf5a0a856ab901897802445cd5d216e6eaaa5c74c3b57a": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_COMPLETION_CARD.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/9ee11b0a6fe0b62e1daf5a0a856ab901897802445cd5d216e6eaaa5c74c3b57a/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE3A_COMPLETION_CARD.md"
+    ],
+    "7b7c8406054909dd68c81de8242d876f1fcc19e09f958dbafeff6561d6145f12": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_REFACTORING_STATUS.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/7b7c8406054909dd68c81de8242d876f1fcc19e09f958dbafeff6561d6145f12/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE3A_REFACTORING_STATUS.md"
+    ],
+    "f48a686140b8d3adc813d44e1466925383f33025404a4eb1df0fab1fc2606ddf": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3A_UNIT_TEST_EXPANSION_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/f48a686140b8d3adc813d44e1466925383f33025404a4eb1df0fab1fc2606ddf/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE3A_UNIT_TEST_EXPANSION_REPORT.md"
+    ],
+    "d08fedf437999d7a249881bccc4ae9592a43b32b1e714e84bfe06ee5273a0aee": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3B_REFACTORING_PROGRESS.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/d08fedf437999d7a249881bccc4ae9592a43b32b1e714e84bfe06ee5273a0aee/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE3B_REFACTORING_PROGRESS.md"
+    ],
+    "2e91f464f88a17a4243c68211418774ab906f312cab6c117d3c693a78fc4900e": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE3C_PERFORMANCE_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/2e91f464f88a17a4243c68211418774ab906f312cab6c117d3c693a78fc4900e/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE3C_PERFORMANCE_REPORT.md"
+    ],
+    "c7992799e7b2151501296198b0ce0b0482bbcc9166704f6838c81067561a9047": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE4_TYPE_SAFETY_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/c7992799e7b2151501296198b0ce0b0482bbcc9166704f6838c81067561a9047/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE4_TYPE_SAFETY_REPORT.md"
+    ],
+    "1458d7fcb78f0154c15c79c4d5a71d48daebc76013e2c544ada0462885eefad5": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE5_ADVANCED_FEATURES_REPORT.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/1458d7fcb78f0154c15c79c4d5a71d48daebc76013e2c544ada0462885eefad5/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE5_ADVANCED_FEATURES_REPORT.md"
+    ],
+    "cd965e5c3dab4930b6fe54fc62723e318f39b9fb36bd6a75df93b220a6070379": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PHASE_7_OPTIMIZATION_GUIDE.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/cd965e5c3dab4930b6fe54fc62723e318f39b9fb36bd6a75df93b220a6070379/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PHASE_7_OPTIMIZATION_GUIDE.md"
+    ],
+    "35adb513634df740f6de12725bd5bb6e0b2f68b834dd79c14191b3d57cdc7fca": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PROJECT_WIDE_REORGANIZATION_COMPLETION_SUMMARY.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/35adb513634df740f6de12725bd5bb6e0b2f68b834dd79c14191b3d57cdc7fca/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PROJECT_WIDE_REORGANIZATION_COMPLETION_SUMMARY.md"
+    ],
+    "289423293daa34a42807155ac1f11a47b8b9c9f5719a17c4c87796db8d3aab5a": [
+      "MIT-SCIENCE-PAPER/Full project/08_Archive/legacy-documentation/PROJECT_WIDE_REORGANIZATION_PLAN.md",
+      "repo_admin/reorg_archives/duplicates_by_hash/289423293daa34a42807155ac1f11a47b8b9c9f5719a17c4c87796db8d3aab5a/_old_information/legacy_mit_science_paper/archive_snapshots/legacy-documentation/PROJECT_WIDE_REORGANIZATION_PLAN.md"
+    ]
+  }
+}

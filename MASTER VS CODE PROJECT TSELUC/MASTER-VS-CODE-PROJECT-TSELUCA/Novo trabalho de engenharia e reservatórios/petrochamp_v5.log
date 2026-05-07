@@ -1,0 +1,34 @@
+2026-01-22 00:48:51,928 - __main__ - INFO - ============================================================
+2026-01-22 00:48:51,929 - __main__ - INFO - INICIANDO PETROCHAMP v5.0
+2026-01-22 00:48:51,929 - __main__ - INFO - ============================================================
+2026-01-22 00:48:52,129 - __main__ - CRITICAL - Erro crítico: bad option "-width": must be -after, -anchor, -before, -expand, -fill, -in, -ipadx, -ipady, -padx, -pady, or -side
+Traceback (most recent call last):
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 1041, in main
+    app = PetroChampUI()
+          ^^^^^^^^^^^^^^
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 661, in __init__
+    self._create_interface()
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 712, in _create_interface
+    self._create_economic_tab(econ_tab)
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 791, in _create_economic_tab
+    tk.Label(frame, text=f"{label}:").pack(side=tk.LEFT, width=20)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2471, in pack_configure
+    self.tk.call(
+_tkinter.TclError: bad option "-width": must be -after, -anchor, -before, -expand, -fill, -in, -ipadx, -ipady, -padx, -pady, or -side
+2026-01-22 00:49:01,146 - __main__ - INFO - ============================================================
+2026-01-22 00:49:01,146 - __main__ - INFO - INICIANDO PETROCHAMP v5.0
+2026-01-22 00:49:01,147 - __main__ - INFO - ============================================================
+2026-01-22 00:49:01,330 - __main__ - CRITICAL - Erro crítico: bad option "-width": must be -after, -anchor, -before, -expand, -fill, -in, -ipadx, -ipady, -padx, -pady, or -side
+Traceback (most recent call last):
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 1041, in main
+    app = PetroChampUI()
+          ^^^^^^^^^^^^^^
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 661, in __init__
+    self._create_interface()
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 712, in _create_interface
+    self._create_economic_tab(econ_tab)
+  File "c:\Users\rocel\OneDrive\Desktop\Novo trabalho de engenharia e reservatórios\sucesso1\improvement v4\improv4_refactored.py", line 791, in _create_economic_tab
+    tk.Label(frame, text=f"{label}:").pack(side=tk.LEFT, width=20)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2471, in pack_configure
+    self.tk.call(
+_tkinter.TclError: bad option "-width": must be -after, -anchor, -before, -expand, -fill, -in, -ipadx, -ipady, -padx, -pady, or -side

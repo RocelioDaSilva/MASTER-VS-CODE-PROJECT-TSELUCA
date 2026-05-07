@@ -1,0 +1,47 @@
+# PetroChamp Advanced v2.0 - Dependências
+
+# Análise de dados
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualização
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# UI
+tkinter-tools>=0.1.0  # Opcional para temas
+
+# Entrada/Saída de dados
+openpyxl>=3.6.0  # Excel
+xlrd>=2.0.0      # Excel (leitura)
+
+# Persistência
+# (JSON e Pickle são stdlib, não precisam instalar)
+
+# Logging e debugging
+loguru>=0.5.3  # Opcional para logging mais avançado
+
+# Testes (desenvolvimento)
+pytest>=6.2.0
+pytest-cov>=2.12.0
+
+# Linting e formatação (desenvolvimento)
+black>=21.0
+flake8>=3.9.0
+pylint>=2.8.0
+mypy>=0.900
+
+# Documentação (opcional)
+Sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.2
+
+# Performance (opcional)
+numba>=0.54.0  # Compilação JIT para cálculos
+
+# Web API (para futuro)
+# Flask>=2.0.0
+# SQLAlchemy>=1.4.0
+
+# Relatórios (para futuro)
+# reportlab>=3.6.0
+# weasyprint>=54.0

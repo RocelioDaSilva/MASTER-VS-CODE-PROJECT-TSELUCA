@@ -1,0 +1,172 @@
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{parskip}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{hanging}
+
+% Fonte padrão do Windows (Arial)
+\setmainfont{Arial}[
+  Ligatures=TeX,
+  Scale=MatchLowercase
+]
+
+% Cores SPE
+\definecolor{spered}{RGB}{230, 0, 0}
+\definecolor{spedark}{RGB}{0, 40, 80}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+\definecolor{boxblue}{RGB}{220, 240, 255}
+\definecolor{boxgreen}{RGB}{230, 255, 230}
+\definecolor{boxyellow}{RGB}{255, 255, 200}
+\definecolor{boxorange}{RGB}{255, 235, 200}
+\definecolor{boxpurple}{RGB}{240, 220, 255}
+
+% Configuração de títulos
+\titleformat{\section}{\large\bfseries\color{spedark}}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+% Configuração base do tcolorbox
+\tcbset{
+  colback=white,
+  colframe=spedark,
+  arc=2mm,
+  boxrule=0.5pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  fonttitle=\bfseries\small\centering,  % Título centrado
+  coltitle=white,
+  colbacktitle=spedark,
+  titlerule=0pt,                         % Remove linha extra se houver
+  before title={\hspace{0pt}},            % Ajuste fino
+}
+
+% Listas compactas
+\setlist{nosep, leftmargin=*, before=\vspace{2pt}, after=\vspace{2pt}, itemsep=2pt}
+
+% Cabeçalho
+\title{\vspace{-1cm}\Huge\bfseries\color{spedark} Plano de Atividades \\[0.2cm] \Large Capítulo Estudantil SPE do ISPTEC}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\vspace{-0.8cm}
+
+\begin{center}
+  \small\textcolor{spedark}{\textbf{Propostas para 2025 -- baseadas em boas práticas de capítulos SPE internacionais e adaptadas à realidade angolana.}}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{multicols}{2}
+
+% ==================== COLUNA 1 ====================
+
+\tcbset{colback=boxblue}
+\begin{tcolorbox}[title={\large\color{spedark}📚 Educacionais e Técnicos}]
+  \begin{itemize}
+    \item \textbf{Workshops temáticos mensais:} Exploração de petróleo, produção, refino, sustentabilidade, IA aplicada. Ministrados por estudantes finalistas ou docentes.
+    \item \textbf{Ciclo de palestras “SPE Talks”:} Convidar engenheiros da Sonangol, Chevron, TotalEnergies para partilhar experiências e tendências do setor.
+    \item \textbf{Visitas técnicas:} Programar idas à Refinaria de Luanda, campos onshore (ex.: Cabo Ledo) e estaleiros navais.
+    \item \textbf{PetroBowl interno:} Competição de perguntas e respostas sobre engenharia petrolífera, estilo quiz, com prémios simbólicos.
+    \item \textbf{Sessões de software técnico:} Introdução ao Petrel, Eclipse, Python para modelagem de reservatórios.
+    \item \textbf{Clube de leitura de papers SPE:} Encontros quinzenais para discutir artigos científicos atuais.
+  \end{itemize}
+\end{tcolorbox}
+
+\tcbset{colback=boxgreen}
+\begin{tcolorbox}[title={\large\color{spedark}🤝 Networking e Integração}]
+  \begin{itemize}
+    \item \textbf{Boas-vindas semestral:} Icebreakers, apresentação do board, coffee break com música angolana.
+    \item \textbf{Encontro com alumni:} Profissionais formados no ISPTEC partilham percursos e dicas.
+    \item \textbf{Parceria com outros capítulos:} Eventos conjuntos com UAN, UEA, e internacionalmente com Brasil e Nigéria (webinars).
+    \item \textbf{Mentoria entre pares:} Alunos mais velhos acompanham caloiros em grupos pequenos.
+    \item \textbf{Networking dinner:} Jantar temático com profissionais da indústria em Luanda.
+    \item \textbf{LinkedIn boost:} Sessão prática de otimização de perfis e conexões estratégicas.
+  \end{itemize}
+\end{tcolorbox}
+
+\tcbset{colback=boxyellow}
+\begin{tcolorbox}[title={\large\color{spedark}💰 Captação de Recursos}]
+  \begin{itemize}
+    \item \textbf{Mensalidades simbólicas:} 5.000–10.000 Kz/ano por membro ativo.
+    \item \textbf{Patrocínios empresariais:} Propostas para Sonangol, TotalEnergies, Chevron, BAI.
+    \item \textbf{Grants da SPE:} Candidaturas anuais a \emph{Student Chapter Grants} (até USD 1.000).
+    \item \textbf{Venda de merchandise:} Camisetas, canecas, pins com logótipo do capítulo.
+    \item \textbf{Crowdfunding:} Campanhas na plataforma Kuenda para projetos específicos (ex.: laboratório virtual).
+    \item \textbf{Feijoada solidária:} Evento gastronómico aberto à comunidade académica.
+  \end{itemize}
+\end{tcolorbox}
+
+% ==================== COLUNA 2 ====================
+\columnbreak
+
+\tcbset{colback=boxorange}
+\begin{tcolorbox}[title={\large\color{spedark}🌱 Social e Ambiental}]
+  \begin{itemize}
+    \item \textbf{Limpeza de praias:} Ação de voluntariado na praia de Luanda, em parceria com ONGs locais.
+    \item \textbf{Oficinas de energia solar:} Ensinar comunidades do Bengo a montar pequenos painéis solares.
+    \item \textbf{Campanha de reciclagem:} Recolha de plástico no campus, venda para recicladores.
+    \item \textbf{Dia da Sustentabilidade:} Palestras e exposições sobre ESG e transição energética em Angola.
+    \item \textbf{Plantar árvores:} Parceria com o governo provincial para reflorestamento urbano.
+    \item \textbf{Palestras em escolas:} Levar noções de energia e ambiente a estudantes do ensino médio.
+  \end{itemize}
+\end{tcolorbox}
+
+\tcbset{colback=boxpurple}
+\begin{tcolorbox}[title={\large\color{spedark}🚀 Desenvolvimento de Carreira}]
+  \begin{itemize}
+    \item \textbf{Feira de estágios:} Convidar empresas para apresentar vagas e recrutar no campus.
+    \item \textbf{Workshop de CV e entrevistas:} Dicas práticas com profissionais de RH da indústria.
+    \item \textbf{Programa de mentoria profissional:} Engenheiros experientes acompanham alunos finalistas.
+    \item \textbf{Simulação de processos seletivos:} Dinâmicas de grupo e cases reais.
+    \item \textbf{Certificações SPE:} Apoio na preparação para o exame de certificação (PEC).
+    \item \textbf{Trilhas de carreira:} Painéis com profissionais de diferentes áreas (upstream, midstream, downstream, renováveis).
+  \end{itemize}
+\end{tcolorbox}
+
+\tcbset{colback=lightgray}
+\begin{tcolorbox}[title={\large\color{spedark}📱 Digitais e Inovação}]
+  \begin{itemize}
+    \item \textbf{Podcast “PetroCast”:} Entrevistas com profissionais e professores, disponível no Spotify.
+    \item \textbf{Desafios online:} Quizzes sobre energia no Instagram e TikTok, com prémios.
+    \item \textbf{Visitas virtuais:} Utilizar vídeos 360° ou YouTube para mostrar instalações petrolíferas.
+    \item \textbf{Plataforma de cursos:} Compilar materiais gratuitos (SPE, Coursera, Petrobras) num Google Classroom.
+    \item \textbf{Aplicativo do capítulo:} Desenvolvido por alunos de Informática com agenda, recursos e fórum.
+    \item \textbf{Hackathon de energia:} Competição de ideias para soluções energéticas em Angola.
+  \end{itemize}
+\end{tcolorbox}
+
+\end{multicols}
+
+\vspace{0.3cm}
+
+% Calendário semestral detalhado
+
+
+\vspace{0.2cm}
+
+\begin{center}
+  \footnotesize\textcolor{gray}{\textit{Ideias recolhidas de capítulos SPE da Universidade de Houston, Instituto Superior Técnico (Portugal), Universidade de Lagos (Nigéria) e adaptadas ao contexto do ISPTEC.}}
+\end{center}
+
+\vspace{0.1cm}
+
+\begin{center}
+  \footnotesize\textcolor{spedark}{\textbf{Próximos passos:} O board irá priorizar as atividades com base nos recursos disponíveis e feedback dos membros.}
+\end{center}
+
+\begin{center}
+  \footnotesize\textcolor{gray}{\textbf{Feito por:} Rocélio Da Silva.}
+\end{center}
+
+\end{document}

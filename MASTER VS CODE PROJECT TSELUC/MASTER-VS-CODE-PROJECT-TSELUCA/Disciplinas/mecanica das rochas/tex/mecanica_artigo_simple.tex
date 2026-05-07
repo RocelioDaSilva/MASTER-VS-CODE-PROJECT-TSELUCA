@@ -1,0 +1,373 @@
+% Documento LaTeX para Mecânica das Rochas - Versão Simplificada
+\documentclass[12pt,a4paper,twoside]{book}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm, headheight=15pt}
+
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Configuracao de cores
+\definecolor{darkblue}{rgb}{0.1,0.1,0.5}
+\hypersetup{colorlinks=true, linkcolor=darkblue, urlcolor=darkblue}
+
+% Cabecalho e rodape
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\rightmark}
+\fancyhead[LO,RE]{\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\setlength{\headheight}{15.04742pt}
+
+% Titulo
+\title{\huge \textbf{Mecanica das Rochas} \\
+        \large Curso de Licenciatura em Engenharia de Petroles \\
+        \normalsize 3.º Ano}
+\author{Autor: Felisberto Queta}
+\date{\today}
+
+\begin{document}
+
+% Capa
+\maketitle
+
+% Indice
+\tableofcontents
+\newpage
+
+% ============================================================================
+% CAPITULO 1 - INTRODUCAO A MECANICA DAS ROCHAS
+% ============================================================================
+\chapter{Introducao a Mecanica das Rochas}
+
+\section{Definicao e Conceitos Fundamentais}
+
+\textbf{Mecanica das Rochas} e uma disciplina da engenharia civil que se ocupa do estudo teorico 
+e pratico das propriedades das rochas e das suas respostas quando submetidas a uma perturbacao 
+aplicada. Estas respostas sao chamadas deformacoes que se podem manifestar em forma de:
+
+\begin{itemize}
+    \item \textbf{Juntas ou diaclases}: Fracturacao sem deslocamento percetivel dos blocos.
+    \item \textbf{Falhas}: Torcao com deslocamento relativo de blocos um em relacao ao plano de fractura.
+    \item \textbf{Dobras}: Flexao, encurtamento acentuado e deformacao interna da rocha.
+\end{itemize}
+
+\section{O Papel do Engenheiro de Petroleo}
+
+Durante suas atividades profissionais, o engenheiro de petroleo lida com:
+\begin{itemize}
+    \item Exploracao e producao de hidrocarbonetos
+    \item Gestao da comercializacao e transporte de hidrocarbonetos
+    \item Prospeccao e pesquisa de bacias sedimentares com potencial economico
+    \item Acompanhamento da producao de derivados do petroleo
+\end{itemize}
+
+Para isso, necessita de conhecimentos em:
+\begin{itemize}
+    \item Geologia
+    \item Geofisica
+    \item Petrofisica
+    \item \textbf{Mecanica das Rochas}
+\end{itemize}
+
+\subsection{O Conceito de Geomecanica}
+
+\textbf{Geomecanica} e a disciplina que procura integrar Geologia, Geofisica, Petrofisica e 
+Mecanica das Rochas, munindo o engenheiro de petroleo de habilidades e competencias para melhor 
+compreender suas atividades e as de seus colegas em outras areas.
+
+\subsection{Consequencias da Falta de Dominio em Geomecanica}
+
+Quando o engenheiro nao domina adequadamente os conceitos de geomecanica, podem ocorrer:
+\begin{itemize}
+    \item Desmoronamento das paredes do poco
+    \item Explosao de plataforma (blowout) devido ao vazamento de fluidos
+    \item Descoberta de pocos secos
+\end{itemize}
+
+\section{Objetivos Gerais da Disciplina}
+
+\begin{enumerate}
+    \item Compreender os principais conceitos de Mecanica das Rochas e sua importancia nos varios 
+    setores, principalmente na industria petrolífera.
+    \item Identificar os diferentes tipos de rochas e diferencia-las de acordo com suas caracteristicas.
+    \item Determinar as propriedades fisicas e mecanicas de uma rocha.
+    \item Compreender e aplicar as nocoes sobre estado de tensao, resistencia e deformabilidade 
+    nos macos rochosos.
+    \item Perceber os tipos de descontinuidades e sua importancia no comportamento de macos rochosos.
+    \item Perceber a importancia do estudo do comportamento das rochas no entendimento das estruturas 
+    da Terra, na economia dos paises e na preservacao do ambiente.
+    \item Realizar classificacao geomecanica e descricao dos macos rochosos.
+\end{enumerate}
+
+\section{Aplicacoes na Industria Petrolifera}
+
+\subsection{1. Analise de Bacias}
+
+Compreende o estudo da:
+\begin{itemize}
+    \item Origem das bacias
+    \item Evolucao das bacias
+    \item Inversao de bacias
+\end{itemize}
+
+\subsection{2. Perfuracao de Pocos}
+
+E necessario:
+\begin{itemize}
+    \item Analise de tensoes in situ para prever colapsos e perdas de fluido
+    \item Determinacao da pressao ideal da lama de perfuracao
+    \item Modelagem do comportamento geomecanico do poco
+\end{itemize}
+
+\section{Aplicacoes na Engenharia Civil}
+
+\subsection{Tuneis e Galerias Subterraneas}
+
+O estudo da estabilidade de macos rochosos e essencial para a construcao de:
+\begin{itemize}
+    \item Tuneis rodoviarios
+    \item Tuneis ferroviarios
+    \item Tuneis metroviarios
+\end{itemize}
+
+\subsection{Fundacoes de Grandes Estruturas}
+
+Projetos de barragens, pontes e edificios exigem analise detalhada das condicoes do maco rochoso 
+para garantir seguranca.
+
+\subsection{Taludes e Encostas}
+
+A estabilizacao de encostas e cortes rochosos e essencial para prevenir deslizamentos em:
+\begin{itemize}
+    \item Rodovias
+    \item Ferrovias
+    \item Terrenos em geral
+\end{itemize}
+
+\section{Aplicacoes na Engenharia de Minas}
+
+A Mecanica das Rochas permite compreender o comportamento das rochas em diferentes condicoes de 
+carregamento, contribuindo para a seguranca e eficiencia das operacoes mineiras.
+
+\subsection{Areas Principais de Aplicacao}
+
+\begin{enumerate}
+    \item Estabilidade de Escavacoes
+    \item Dimensionamento de Suporte
+    \item Fragmentacao e Perfuracao de Rochas
+    \item Controlo de Pressoes e Deformacoes
+    \item Drenagem e Controlo de Agua
+    \item Planeamento e Recuperacao
+\end{enumerate}
+
+% ============================================================================
+% CAPITULO 2 - ROCHAS, CONCEITOS E CARACTERISTICAS
+% ============================================================================
+\chapter{Rochas, Conceitos e Caracteristicas}
+
+\section{Definicao de Rochas}
+
+\textbf{Rochas} sao materiais solidos, consolidados e constituidos naturalmente por um ou mais 
+minerais, com caracteristicas fisicas e mecanicas especificas para cada tipo.
+
+\section{Formacao das Rochas}
+
+As rochas formam-se atraves de diferentes processos da geodinamica interna e externa:
+\begin{itemize}
+    \item \textbf{Magmatismo}: Formacao de rochas igneas ou magmaticas
+    \item \textbf{Sedimentacao e Diagenese}: Formacao de rochas sedimentares
+    \item \textbf{Metamorfismo}: Formacao de rochas metamorficas
+\end{itemize}
+
+\section{Tipos de Rochas}
+
+As rochas podem classificar-se em tres grupos principais baseado na sua composicao, textura e 
+caracteristicas geneticas.
+
+\subsection{Rochas Igneas (Magmaticas)}
+
+Formam-se a partir da cristalizacao do magma e constituem cerca de 20\% de todas as rochas.
+
+\subsubsection{Rochas Plutonicas (Intrusivas)}
+
+Quando o magma arrefece-se lentamente em profundidade:
+\begin{itemize}
+    \item \textbf{Textura}: Faneritica (graos grandes e bem formados)
+    \item \textbf{Exemplos}: Granitos, Gabros, Sienitos, Dioritos
+\end{itemize}
+
+\subsubsection{Rochas Vulcanicas (Extrusivas)}
+
+Quando o magma arrefece-se rapidamente a superfície:
+\begin{itemize}
+    \item \textbf{Textura Vitrea}: Material vitreo sem cristais (ex: Obsidiana)
+    \item \textbf{Textura Afanitica}: Cristais muito finos (ex: Riólitos, Basaltos)
+\end{itemize}
+
+\subsection{Rochas Metamorficas}
+
+Resultam da transformacao mecanica, termica e quimica de rochas pre-existentes. Constituem cerca 
+de 14\% de todas as rochas.
+
+\subsubsection{Tipos de Metamorfismo}
+
+\begin{itemize}
+    \item \textbf{Metamorfismo Regional}: Abrange extensas areas, particularmente em zonas de 
+    formacao de cadeias de montanha.
+    
+    \item \textbf{Metamorfismo de Contacto}: Limitado ao contacto entre a litologia presente 
+    e a intrusao de magma.
+\end{itemize}
+
+\subsection{Rochas Sedimentares}
+
+Constituem cerca de 66\% de todas as rochas da crusta terrestre. Resultam do transporte, deposicao 
+e consolidacao de sedimentos.
+
+\subsubsection{Classificacao das Rochas Sedimentares}
+
+\begin{enumerate}
+    \item \textbf{Rochas Sedimentares Clasticas}: Resultam do transporte, deposicao e consolidacao 
+    de sedimentos provenientes da erosao de rochas pre-existentes.
+    
+    \item \textbf{Rochas Sedimentares Quimiogenicas}: Formadas pela precipitacao quimica de minerais 
+    da agua.
+    
+    \item \textbf{Rochas Sedimentares Biogenicas}: Formam-se a partir da acumulacao de materia organica.
+\end{enumerate}
+
+\subsubsection{Importancia na Industria de Petroleo}
+
+\begin{itemize}
+    \item \textbf{Arenito}: Rocha-reservatorio preferida (alta porosidade)
+    \item \textbf{Folhelho}: Rocha geradora de petroleo
+    \item \textbf{Evaporito}: Rocha selante
+    \item \textbf{Calcario}: Rocha geradora e reservatorio
+\end{itemize}
+
+\section{Caracteristicas Principais das Rochas por Tipo}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Caracteristica} & \textbf{Magmaticas} & \textbf{Metamorficas} & \textbf{Sedimentares} \\
+\hline
+\textbf{Aspecto} & Macico e compacto & Macico ou foliado & Em camadas, friáveis \\
+\hline
+\textbf{Textura} & Graos interconectados & Graos interconectados & Graos nao imbricados \\
+& sem orientacao & com orientacao & com poros \\
+\hline
+\textbf{Forma} & Formas irregulares & Formas irregulares & Arredondadas/ovuladas \\
+\hline
+\end{tabular}
+\caption{Caracteristicas principais das rochas}
+\label{tab:rochas}
+\end{table}
+
+\section{Solos}
+
+\subsection{Definicao}
+
+\textbf{Solos} sao agregados de graos minerais nao consolidados encontrados na superfície terrestre 
+que nao oferecem resistencia a escavacao mecanica.
+
+\subsection{Classificacao de Solos}
+
+\begin{itemize}
+    \item \textbf{Solos Residuais}: Resultantes da meteoricao da rocha sem transporte
+    \item \textbf{Solos Sedimentares}: Resultantes de meteoricao, transporte e deposicao
+\end{itemize}
+
+\subsection{Diferencas entre Rochas e Solos}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Rochas} & \textbf{Solos} \\
+\hline
+Modulos de deformacao altos & Modulos de deformacao baixos \\
+\hline
+Elevada coesao interna & Coesao baixa ou nula \\
+\hline
+Elevados valores de resistencia a tracao & Baixa resistencia a tracao \\
+\hline
+Baixa permeabilidade & Alta permeabilidade \\
+\hline
+\end{tabular}
+\caption{Diferencas entre rochas e solos}
+\label{tab:rochas_solos}
+\end{table}
+
+\section{Macos Rochosos}
+
+\subsection{Definicao}
+
+Um \textbf{maco rochoso} e uma porcao definida de uma ou mais formacoes geologicas, caracterizada 
+por suas rochas e descontinuidades.
+
+\subsection{Caracteristicas Principais}
+
+\begin{itemize}
+    \item \textbf{Descontinuidade}: Qualquer plano que separa os blocos da matriz rochosa.
+    \item \textbf{Anisotropia}: Comportamento diferente conforme a direcao considerada.
+    \item \textbf{Heterogeneidade}: Materiais com caracteristicas distintas.
+    \item \textbf{Matriz Rochosa}: Material isento de descontinuidades.
+\end{itemize}
+
+\subsection{Tipos de Macos}
+
+\begin{itemize}
+    \item \textbf{Maco Intacto}: Continuo, isotropico, homogeneo
+    \item \textbf{Maco Descontinuo}: Fracturado, anisotropico, heterogeneo
+\end{itemize}
+
+\subsection{Fatores Geologicos Determinantes}
+
+\begin{enumerate}
+    \item Litologia e Propriedades da Matriz Rochosa
+    \item Grau de Alteracao ou Meteoricao
+    \item Estructura Geologica e Descontinuidades
+    \item Estado de Esforcos
+    \item Condicoes Hidrogeologicas
+\end{enumerate}
+
+\newpage
+
+% ============================================================================
+% ANEXOS - INCLUIR PDFs
+% ============================================================================
+\appendix
+\chapter{Documentos Originais}
+
+Os documentos originais em formato PDF estao incluidos abaixo como referencia visual.
+
+\section{Apresentacao e Introducao a Mecanica das Rochas 2025/2026}
+
+\includepdf[pages=-,landscape=false,scale=0.85]{referências para o estudo/1. Apresentação e Introdução a Mecânica das Rochas 2025_2026 (Parte 1).pdf}
+
+\section{Introducao a Mecanica das Rochas 2025 (Completo)}
+
+\includepdf[pages=-,landscape=false,scale=0.85]{referências para o estudo/1. Introdução à Mecânica das Rochas 2025_Completo.pdf}
+
+\section{Rochas, Conceitos e Caracteristicas 2025}
+
+\includepdf[pages=-,landscape=false,scale=0.85]{referências para o estudo/2. Rochas, conceitos e características_MR 1_2025.pdf}
+
+\section{Apresentacao e Introducao 2024}
+
+\includepdf[pages=-,landscape=false,scale=0.85]{referências para o estudo/Apresentação e Introdução da Mecânica das Rochas 2024.pdf}
+
+\section{Apresentacao e Introducao 2024 (Duplicado)}
+
+\includepdf[pages=-,landscape=false,scale=0.85]{referências para o estudo/Apresentação e Introdução da Mecânica das Rochas 2024 (1).pdf}
+
+\end{document}

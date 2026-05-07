@@ -1,0 +1,134 @@
+% -*- latex -*-
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\geometry{margin=2.5cm}
+
+\title{Mecânica das Rochas — Resumo para Estudo}
+\author{Gerado automaticamente}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Resumo conciso dos conceitos essenciais em Mecânica das Rochas e Geomecânica, destinado a estudo e revisão: definições, ensaios, critérios de ruptura, classificações e aplicações em perfuração e produção.
+\end{abstract}
+\tableofcontents
+\newpage
+
+\section{Introdução}
+Este documento reúne definições, conceitos práticos e procedimentos de referência para estudar os tópicos presentes nas fichas de revisão (Anki). O objetivo é fornecer uma leitura compacta e exemplos que permitam consolidar os conceitos-chave.
+
+\section{Conceitos fundamentais}
+\subsection{Mecânica das Rochas}
+Mecânica das Rochas é o estudo teórico e prático das propriedades das rochas e suas respostas (deformações) a perturbações externas. Em perfuração e produção, serve para prever estabilidade de poços, riscos de kick/blowout e perda de circulação.
+
+\subsection{Geomecânica}
+Geomecânica integra Geologia, Geofísica e Petrofísica para avaliar problemas geomecânicos e reduzir riscos operacionais. Apoia o projeto de janelas de perfuração, seleção de revestimentos e mitigação de sanding e reativação de falhas.
+
+\section{Descontinuidades e estruturas}
+\subsection{Juntas (diáclases)}
+Fracturação sem deslocamento perceptível dos blocos. Influenciam permeabilidade e caminhos preferenciais para fluidos.
+
+\subsection{Falhas}
+Fratura com deslocamento relativo de blocos ao longo de um plano de fractura. Podem ser reativadas quando o estado de tensões muda; avaliação via critérios de ruptura é essencial.
+
+\subsection{Dobras}
+Deformação interna com flexão e encurtamento das camadas rochosas; alteram geometria de reservatórios e distribuições de tensões.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/Apresentao_e_Introduo_da_Mecnica_das_Rochas_2024_p10_img1.png}
+  \caption{Exemplo de descontinuidades e dobras (fonte: materiais do curso).}
+  \label{fig:dobras}
+\end{figure}
+
+\section{Propriedades e tensões}
+\subsection{Poro-pressão}
+Pressão dos fluidos nos poros das rochas, $p_p$. Afeta estabilidade de poços; a tensão efetiva de Terzaghi simplificada é:
+$$\sigma' = \sigma - p_p$$
+onde $\sigma$ é a tensão total e $\sigma'$ a tensão efetiva.
+
+\subsection{Janela de perfuração segura}
+Intervalo entre pressão de poro (limite inferior) e pressão de fratura (limite superior). A coluna de fluido deve manter pressão de fundo $p_{bf}$ tal que
+$$p_{p} < p_{bf} < p_{f}$$
+Manter dentro desta janela evita colapso (baixo) e perdas de circulação (alto).
+
+\section{Problemas operacionais}
+\subsection{Sanding (produção de areia)}
+Perda de material do reservatório quando as tensões do fluxo excedem a resistência do meio; promove perda de integridade do poço e equipamento. Mitigações: reduzir taxa de produção, instalar telas, ajustar completamento.
+
+\subsection{Formações pressurizadas (kick)}
+Causa: poro-pressão superior à pressão exercida pela coluna de fluido. Soluções: aumentar peso da lama, circulações de controle, instalação de casing, procedimentos de kick control.
+
+\section{Critérios de ruptura}
+\subsection{Critério de Mohr–Coulomb}
+Expressa o equilíbrio entre tensão normal e cisalhante na superfície de ruptura:
+$$\tau = c + \sigma_n \tan\phi$$
+onde $\tau$ é a tensão de cisalhamento na falha, $c$ coesão, $\sigma_n$ tensão normal e $\phi$ ângulo de atrito interno. Usado para avaliar reativação de falhas e segurança de taludes/poços.
+
+\section{Ensaios de campo e laboratório}
+\begin{itemize}[noitemsep]
+  \item \textbf{SPT (Standard Penetration Test)}: fornece valor $N$ que correlaciona com resistência e parâmetros geotécnicos.
+  \item \textbf{CPT (Cone Penetration Test)}: mede $q_c$ (resistência de ponta) e $f_s$ (força de atrito), usado para perfil contínuo do solo/formaç\~oes não consolidadas.
+  \item \textbf{Ensaio de carga em placa}: avalia resposta à carga superficial e capacidade local.
+  \item \textbf{Ensaio de consolidação}: em laboratório determina compressibilidade e coeficiente de consolidação ($C_v$).
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{images/Apresentao_e_Introduo_da_Mecnica_das_Rochas_2024_p11_img1.png}
+  \caption{Ilustração de ensaios de penetração (SPT/CPT) e esquema de amostragem.}
+  \label{fig:ensaios}
+\end{figure}
+
+\section{Classificação de sedimentos e formas de grão}
+\subsection{Escala de Wentworth}
+Usada para classificar grãos por di\^ametro: lama (<0.002 mm), silte (0.002--0.06 mm), areia (0.06--2 mm), cascalho (>2 mm).
+\subsection{Zingg e Sneed \& Folk}
+Análises de forma e esfericidade: relações entre maiores (L), intermedi\'arios (I) e menores (S) e índices como $I/L$ e $S/I$ usados para classificar forma (esferoidal, alongado, lamelar). Sneed \& Folk usam $S/L$ e $(L-I)/(L-S)$ para esfericidade.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.65\textwidth]{images/Apresentao_e_Introduo_da_Mecnica_das_Rochas_2024_p15_img3.png}
+  \caption{Diagrama de classificação de forma (exemplo de Zingg).}
+  \label{fig:zingg}
+\end{figure}
+\section{Classifica\c{c}\~oes ISRM}
+Graus de altera\c{c}\~ao: A1 (rocha s\~a) a A5 (completamente alterada/solo residual). Usado na caracteriza\c{c}\~ao geomec\^anica.
+
+\section{Exemplos e c\'alculos}
+\subsection{Linha A (IP) — Exemplo}
+Linha A de plasticidade indica valores de $IP$ aproximados por:
+$$ IP_{LinhaA} = 0.73\,(LL - 20) $$
+Ex.: para $LL=30\%$, $IP = 0.73\times(30-20)=7.3\%$.
+
+\subsection{C\'alculo simples de I/L e S/I}
+Ex.: $L=3.89\,$mm, $I=2.69\,$mm, $S=2.00\,$mm.
+$$I/L=\dfrac{2.69}{3.89}=0.69,\qquad S/I=\dfrac{2.00}{2.69}=0.74.$$ 
+Classificar pela posi\c{c}\~ao no diagrama de Zingg.
+
+\section{Boas pr\'aticas e recomenda\c{c}\~oes}
+\begin{itemize}[noitemsep]
+  \item Sempre estimar poro-press\~ao e press\~ao de fratura antes da perfura\c{c}\~ao.
+  \item Projetar janelas de perfura\c{c}\~ao com margem de seguran\c{c}a e procedimento de circulação de kick.
+  \item Monitorizar sinais de sanding e ajustar produ\c{c}\~ao rapidamente.
+  \item Integrar dados geof\'isicos, petrof\'isicos e ensaios de campo para uma avalia\c{c}\~ao geomec\^anica robusta.
+\end{itemize}
+
+\section{Refer\^encias selecionadas}
+\begin{thebibliography}{9}
+\bibitem{jaeger} J. C. Jaeger, N. G. W. Cook, and R. Zimmermann.\textit{Fundamentals of Rock Mechanics}.
+\bibitem{hoek} E. Hoek \& J. W. Bray.\textit{Rock Slope Engineering}.
+\bibitem{brady} B. H. G. Brady \& E. T. Brown.\textit{Rock Mechanics for Underground Mining}.
+\end{thebibliography}
+
+\end{document}

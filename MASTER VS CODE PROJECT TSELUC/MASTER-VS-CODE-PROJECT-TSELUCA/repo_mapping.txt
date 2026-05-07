@@ -1,0 +1,29 @@
+﻿
+Folder: Disciplinas -> Repo: Disciplinas
+{"name":"Disciplinas","sshUrl":"git@github.com:RocelioDaSilva/Disciplinas.git","url":"https://github.com/RocelioDaSilva/Disciplinas","visibility":"PRIVATE"}
+Folder: Future Planning -> Repo: Future-Planning
+{"name":"Future-Planning","sshUrl":"git@github.com:RocelioDaSilva/Future-Planning.git","url":"https://github.com/RocelioDaSilva/Future-Planning","visibility":"PRIVATE"}
+Folder: idea -> Repo: idea
+  not found
+Folder: MIT SCIENCE PAPER -> Repo: MIT-SCIENCE-PAPER
+{"name":"mit-science-paper","sshUrl":"git@github.com:RocelioDaSilva/mit-science-paper.git","url":"https://github.com/RocelioDaSilva/mit-science-paper","visibility":"PRIVATE"}
+Folder: mycv -> Repo: mycv
+{"name":"mycv","sshUrl":"git@github.com:RocelioDaSilva/mycv.git","url":"https://github.com/RocelioDaSilva/mycv","visibility":"PRIVATE"}
+Folder: organization -> Repo: organization
+  not found
+Folder: petroleum market research -> Repo: petroleum-market-research
+  not found
+Folder: SPE(propostas de actividades breakdown) -> Repo: SPE-propostas-de-actividades-breakdown-
+{"name":"SPE-propostas-de-actividades-breakdown-","sshUrl":"git@github.com:RocelioDaSilva/SPE-propostas-de-actividades-breakdown-.git","url":"https://github.com/RocelioDaSilva/SPE-propostas-de-actividades-breakdown-","visibility":"PUBLIC"}
+Folder: story&universes -> Repo: story-universes
+  not found
+Folder: THEMITSCIENCEPAPER^2 -> Repo: THEMITSCIENCEPAPER-2
+  not found
+Folder: trading app -> Repo: trading-app
+{"name":"mixa-machine","sshUrl":"git@github.com:RocelioDaSilva/mixa-machine.git","url":"https://github.com/RocelioDaSilva/mixa-machine","visibility":"PRIVATE"}
+Folder: walkie talkie reporter -> Repo: walkie-talkie-reporter
+  not found
+Folder: website building -> Repo: website-building
+{"name":"website-building","sshUrl":"git@github.com:RocelioDaSilva/website-building.git","url":"https://github.com/RocelioDaSilva/website-building","visibility":"PRIVATE"}
+Folder: what was left -> Repo: what-was-left
+  not found
