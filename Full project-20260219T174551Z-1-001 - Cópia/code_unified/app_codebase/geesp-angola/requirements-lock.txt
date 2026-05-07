@@ -1,0 +1,69 @@
+# ============================================================================
+# GEESP-Angola: Locked Dependencies for Reproducible Builds
+# Generated for Python 3.11+
+# Usage: pip install -r requirements-lock.txt
+# ============================================================================
+
+# Core Data Processing
+numpy==1.26.4
+pandas==2.2.1
+scipy==1.13.0
+scikit-learn==1.4.2
+
+# Geospatial & Remote Sensing
+rasterio==1.3.9
+geopandas==0.14.3
+shapely==2.0.4
+pyproj==3.6.1
+rioxarray==0.15.5
+
+# Google Earth Engine
+earthengine-api==0.1.388
+
+# Visualization & Dashboard
+streamlit==1.32.2
+folium==0.14.0
+streamlit-folium==0.20.0
+matplotlib==3.8.3
+plotly==5.18.0
+seaborn==0.13.1
+
+# Tabular Data & Reports
+openpyxl==3.11.0
+python-docx==0.8.11
+reportlab==4.0.9
+
+# Web Framework
+fastapi==0.109.2
+uvicorn==0.27.0
+
+# Utilities
+requests==2.32.5
+python-dotenv==1.0.0
+pyyaml==6.0.1
+tqdm==4.66.2
+Pillow==10.2.0
+SQLAlchemy==2.0.25
+
+# Development & Testing
+jupyter==1.0.0
+ipython==8.21.0
+black==24.2.0
+flake8==7.0.0
+isort==5.13.2
+pytest==7.4.4
+pytest-cov==4.1.0
+mypy==1.8.0
+
+# Optional: Type stubs
+types-PyYAML==6.0.1
+types-requests==2.32.0
+
+# Optional: Pre-commit
+pre-commit==3.6.0
+
+# Database (if using)
+alembic==1.13.1
+
+# Monitoring & Logging
+python-json-logger==2.0.7
