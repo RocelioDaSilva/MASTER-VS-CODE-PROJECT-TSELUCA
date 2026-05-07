@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600">
+  <rect width="1200" height="600" fill="#ffffff"/>
+  <g font-family="Arial" font-size="24">
+    <text x="40" y="40" fill="#000">Köppen–Geiger climate classification (placeholder)</text>
+  </g>
+  <g>
+    <rect x="40" y="80" width="220" height="120" fill="#e60000"/>
+    <rect x="280" y="80" width="220" height="120" fill="#ff7f00"/>
+    <rect x="520" y="80" width="220" height="120" fill="#ffff00"/>
+    <rect x="760" y="80" width="220" height="120" fill="#00b050"/>
+    <rect x="1000" y="80" width="120" height="120" fill="#0070c0"/>
+  </g>
+  <text x="40" y="230" font-size="16" fill="#333">Note: replace with Köppen–Geiger map (CC BY-SA) from Wikimedia Commons for publication.</text>
+</svg>

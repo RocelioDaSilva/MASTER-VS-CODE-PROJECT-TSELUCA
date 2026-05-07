@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="800" height="80" role="img" aria-labelledby="sceneLabel">
+  <title id="sceneLabel">Scene Header</title>
+  <defs>
+    <linearGradient id="ribbon" x1="0" x2="1">
+      <stop offset="0" stop-color="var(--accent)"/>
+      <stop offset="1" stop-color="var(--accent-2)"/>
+    </linearGradient>
+  </defs>
+  <style>
+    :root{--fg:#fff;--accent:#6b3e26;--accent-2:#c79a7a;}
+    svg{font-family: "Georgia", serif;}
+    .ribbon{fill:url(#ribbon); rx:6;}
+    .label{font-size:18px; fill:var(--fg); font-weight:700;}
+  </style>
+  <rect x="0" y="12" width="800" height="56" rx="8" class="ribbon"/>
+  <text x="40" y="48" class="label">SCENE 01 — The Alley</text>
+</svg>

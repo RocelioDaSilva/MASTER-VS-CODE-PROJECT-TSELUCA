@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:15-3.4
+    environment:
+      POSTGRES_DB: geesp
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  app:
+    build: .
+    environment:
+      - STREAMLIT_APP="Full project/Coding parts/geesp-angola/geesp_unified_app.py"
+      - PGHOST=db
+      - PGUSER=postgres
+      - PGPASSWORD=postgres
+      - PGDATABASE=geesp
+    ports:
+      - 8501:8501
+    depends_on:
+      - db
+    volumes:
+      - ./:/app:rw
+
+volumes:
+  db_data:

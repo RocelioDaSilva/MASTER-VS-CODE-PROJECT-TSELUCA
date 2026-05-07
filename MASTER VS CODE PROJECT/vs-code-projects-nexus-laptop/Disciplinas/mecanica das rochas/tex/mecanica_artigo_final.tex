@@ -1,0 +1,1001 @@
+% Documento LaTeX para Mecânica das Rochas
+\documentclass[12pt,a4paper,twoside]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf-8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm, headheight=15pt}
+
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+
+% Configuração de cores
+\definecolor{darkblue}{rgb}{0.1,0.1,0.5}
+\hypersetup{colorlinks=true, linkcolor=darkblue, urlcolor=darkblue}
+
+% Cabeçalho e rodapé
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\rightmark}
+\fancyhead[LO,RE]{\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% Título
+\title{\huge \textbf{Mecânica das Rochas} \\
+        \large Curso de Licenciatura em Engenharia de Petróleos \\
+        \normalsize 3º Ano}
+\author{Autor: Felisberto Queta}
+\date{\today}
+
+\begin{document}
+
+% Capa
+\maketitle
+
+% Índice
+\tableofcontents
+\newpage
+
+% ============================================================================
+% CAPÍTULO 1 - INTRODUÇÃO À MECÂNICA DAS ROCHAS
+% ============================================================================
+\chapter{Introdução à Mecânica das Rochas}
+
+\section{Definição e Conceitos Fundamentais}
+
+\textbf{Mecânica das Rochas} é uma disciplina da engenharia civil que se ocupa do estudo teórico 
+e prático das propriedades das rochas e das suas respostas quando submetidas a uma perturbação 
+aplicada. Estas respostas são chamadas deformações que se podem manifestar em forma de:
+
+\begin{itemize}
+    \item \textbf{Juntas ou diáclases}: Fracturação sem deslocamento perceptível dos blocos.
+    \item \textbf{Falhas}: Torção com deslocamento relativo de blocos um em relação ao plano de fractura.
+    \item \textbf{Dobras}: Flexão, encurtamento acentuado e deformação interna da rocha.
+\end{itemize}
+
+\section{O Papel do Engenheiro de Petróleo}
+
+Durante suas atividades profissionais, o engenheiro de petróleo lida com:
+\begin{itemize}
+    \item Exploração e produção de hidrocarbonetos
+    \item Gestão da comercialização e transporte de hidrocarbonetos
+    \item Prospecção e pesquisa de bacias sedimentares com potencial económico
+    \item Acompanhamento da produção de derivados do petróleo
+\end{itemize}
+
+Para isso, necessita de conhecimentos em:
+\begin{itemize}
+    \item Geologia
+    \item Geofísica
+    \item Petrofísica
+    \item \textbf{Mecânica das Rochas}
+\end{itemize}
+
+\subsection{O Conceito de Geomecânica}
+
+\textbf{Geomecânica} é a disciplina que procura integrar Geologia, Geofísica, Petrofísica e 
+Mecânica das Rochas, munindo o engenheiro de petróleo de habilidades e competências para melhor 
+compreender suas atividades e as de seus colegas em outras áreas.
+
+\subsection{Consequências da Falta de Domínio em Geomecânica}
+
+Quando o engenheiro não domina adequadamente os conceitos de geomecânica, podem ocorrer:
+\begin{itemize}
+    \item Desmoronamento das paredes do poço
+    \item Explosão de plataforma (blowout) devido ao vazamento de fluidos
+    \item Descoberta de poços secos
+\end{itemize}
+
+Estes problemas estão geralmente associados a:
+\begin{itemize}
+    \item Poro-pressão inadequada
+    \item Zonas de fraqueza não identificadas
+    \item Falhas geológicas não mapeadas
+\end{itemize}
+
+\section{Objetivos Gerais da Disciplina}
+
+\begin{enumerate}
+    \item Compreender os principais conceitos de Mecânica das Rochas e sua importância nos vários 
+    setores, principalmente na indústria petrolífera.
+    \item Identificar os diferentes tipos de rochas e diferenciá-las de acordo com suas características.
+    \item Determinar as propriedades físicas e mecânicas de uma rocha.
+    \item Compreender e aplicar as noções sobre estado de tensão, resistência e deformabilidade 
+    nos maciços rochosos.
+    \item Perceber os tipos de descontinuidades e sua importância no comportamento de maciços rochosos.
+    \item Perceber a importância do estudo do comportamento das rochas no entendimento das estruturas 
+    da Terra, na economia dos países e na preservação do ambiente.
+    \item Realizar classificação geomecânica e descrição dos maciços rochosos.
+\end{enumerate}
+
+\section{Objetivos e Áreas de Aplicação}
+
+\subsection{Objetivo Geral da Disciplina}
+
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das rochas, para 
+aplicação na perfuração de poços.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item \textbf{Caracterizar o comportamento mecânico das rochas}: entender suas propriedades 
+    físicas e mecânicas sob diferentes condições de pressão e temperatura.
+    
+    \item \textbf{Prever a estabilidade dos poços}: evitar colapsos e perdas de circulação durante 
+    a perfuração.
+    
+    \item \textbf{Mitigar riscos geomecânicos}: minimizar problemas como fraturamento indesejado, 
+    arenização e subsidência.
+    
+    \item \textbf{Otimizar a recuperação de petróleo}: aplicar conceitos de geomecânica para 
+    maximizar a extração de hidrocarbonetos.
+    
+    \item \textbf{Reduzir custos operacionais}: prevenir falhas estruturais e evitar gastos 
+    desnecessários com reparos e interrupções.
+    
+    \item \textbf{Garantir a segurança das operações}: evitar acidentes relacionados à instabilidade 
+    das formações.
+\end{itemize}
+
+\subsection{Objeto de Estudo}
+
+As rochas e maciços rochosos constituem o objeto principal de estudo desta disciplina.
+
+\section{Disciplinas Relacionadas}
+
+\subsection{Interação com Outras Disciplinas}
+
+\begin{itemize}
+    \item \textbf{Geologia Estrutural}: Estuda as estruturas geológicas que ocorrem na litosfera.
+    \item \textbf{Mecânica dos Solos}: Estuda as características físicas e mecânicas dos maciços terrosos.
+\end{itemize}
+
+\subsection{Disciplinas na Indústria de Petróleo}
+
+\begin{itemize}
+    \item \textbf{Geologia do Petróleo}: Estuda a origem, formação e distribuição das rochas-reservatório.
+    \item \textbf{Geofísica}: Usa métodos sísmicos e de perfis de poço para caracterizar formações rochosas.
+    \item \textbf{Engenharia de Perfuração}: Analisa a estabilidade do poço e os impactos da 
+    perfuração nas rochas.
+    \item \textbf{Engenharia de Reservatórios}: Estuda o comportamento dos fluidos e a compactação 
+    da rocha devido à depleção.
+    \item \textbf{Petrofísica}: Avalia propriedades como porosidade, permeabilidade e tensão das rochas.
+    \item \textbf{Fraturamento Hidráulico}: Relacionado à propagação de fraturas na formação para 
+    otimizar a produção.
+\end{itemize}
+
+\section{Aplicações na Engenharia Civil e Infraestrutura}
+
+\subsection{Túneis e Galerias Subterrâneas}
+
+O estudo da estabilidade de maciços rochosos é essencial para a construção de:
+\begin{itemize}
+    \item Túneis rodoviários
+    \item Túneis ferroviários
+    \item Túneis metroviários
+\end{itemize}
+
+A orientação das camadas rochosas em relação ao túnel afeta diretamente sua estabilidade:
+\begin{itemize}
+    \item \textbf{Túnel perpendicular}: Camadas correm perpendicular ao túnel
+    \item \textbf{Túnel paralelo}: Camadas correm paralelas ao túnel
+\end{itemize}
+
+\subsection{Fundações de Grandes Estruturas}
+
+Projetos de barragens, pontes e edifícios exigem análise detalhada das condições do maciço rochoso 
+para garantir segurança, incluindo o estudo da competência do terreno.
+
+\subsubsection{Processo de Estudo}
+
+\begin{enumerate}
+    \item \textbf{Levantamento Geológico e Geotécnico}:
+    \begin{itemize}
+        \item Estudo da topografia e relevo
+        \item Identificação de áreas sujeitas a erosão e deslizamentos
+        \item Mapeamento geológico detalhado
+        \item Investigação de falhas geológicas, fraturas e dobras
+        \item Estudo da hidrogeologia e nível do lençol freático
+    \end{itemize}
+    
+    \item \textbf{Ensaios em Campo e Laboratório}:
+    \begin{itemize}
+        \item Sondagem a percussão (SPT)
+        \item Ensaio de penetração de cone (CPT)
+        \item Ensaio de carga em placa
+        \item Ensaio de consolidação
+        \item Análise granulométrica
+        \item Limites de Atterberg
+        \item Ensaio de resistência ao cisalhamento
+    \end{itemize}
+    
+    \item \textbf{Análise da Capacidade de Suporte}:
+    \begin{itemize}
+        \item Determinação do tipo de fundação adequado
+        \item Avaliação da estabilidade
+        \item Estudo das deformações possíveis
+        \item Modelagem computacional
+    \end{itemize}
+    
+    \item \textbf{Medidas de Estabilização}:
+    \begin{itemize}
+        \item Compactação do solo
+        \item Drenagem adequada
+        \item Muros de contenção
+        \item Reforço com geossintéticos
+        \item Monitoramento contínuo
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Tipos de Fundações}
+
+\begin{itemize}
+    \item \textbf{Fundações Rasas (Superficiais)}: Sapatas, blocos
+    \item \textbf{Fundações Profundas}: Estacas, tubulões (ex: plataformas petrolíferas)
+    \item \textbf{Fundações Especiais}: Túneis e outras estruturas especiais
+\end{itemize}
+
+\subsubsection{Problemas das Fundações}
+
+\begin{itemize}
+    \item \textbf{Recalque Uniforme}: Toda a obra desce como um corpo rígido, mantendo estabilidade 
+    horizontal e vertical. Pode causar problemas nas ligações com via pública.
+    
+    \item \textbf{Recalque Diferencial de Corpo Rígido}: Parte da estrutura fica mais rebaixada, 
+    podendo haver distorção angular e esforços estruturais não previstos.
+    
+    \item \textbf{Recalque Diferencial com Distorção}: Diferentes partes sofrem recalques desiguais, 
+    resultando em deformações, fissuras e possível colapso estrutural.
+\end{itemize}
+
+\subsection{Taludes e Encostas}
+
+A estabilização de encostas e cortes rochosos é essencial para prevenir deslizamentos em:
+\begin{itemize}
+    \item Rodovias
+    \item Ferrovias
+    \item Terrenos em geral
+\end{itemize}
+
+Os deslizamentos podem ocorrer por:
+\begin{itemize}
+    \item Tombamento
+    \item Flexão
+    \item Deslizamento em cunha
+    \item Deslizamento em plano
+\end{itemize}
+
+\subsubsection{Medidas de Contenção}
+
+\begin{itemize}
+    \item Muros de arrimo
+    \item Muros de gabião
+    \item Quebra-mares
+    \item Grampeamento do solo
+    \item Remoção e preenchimento de geomateriais
+\end{itemize}
+
+\section{Aplicações na Engenharia de Minas}
+
+A Mecânica das Rochas permite compreender o comportamento das rochas em diferentes condições de 
+carregamento, contribuindo para a segurança e eficiência das operações mineiras.
+
+\subsection{Áreas Principais de Aplicação}
+
+\begin{enumerate}
+    \item \textbf{Estabilidade de Escavações}: Análise de taludes em minas a céu aberto e projeto 
+    de túneis garantindo suporte adequado às tensões naturais da rocha.
+    
+    \item \textbf{Dimensionamento de Suporte}: 
+    \begin{itemize}
+        \item Métodos de suporte (tirantes, concreto projetado, malhas metálicas)
+        \item Otimização de suportes para redução de custos
+        \item Métodos numéricos e analíticos para previsão de colapsos
+    \end{itemize}
+    
+    \item \textbf{Fragmentação e Perfuração}: Seleção de técnicas adequadas de desmonte controlado 
+    para minimizar vibrações e impactos ambientais.
+    
+    \item \textbf{Controlo de Pressões e Deformações}: Monitoramento contínuo de deformações e 
+    redistribuição de tensões.
+    
+    \item \textbf{Drenagem e Controlo de Água}: Estudo da permeabilidade das rochas e planejamento 
+    de sistemas de drenagem.
+    
+    \item \textbf{Planeamento e Recuperação}: Análise de riscos de subsidência e recuperação ambiental 
+    de minas desativadas.
+\end{enumerate}
+
+\subsection{Missões Principais da Mecânica das Rochas em Minas}
+
+\begin{enumerate}
+    \item \textbf{Destruir a Rocha de Maneira Eficiente}:
+    \begin{itemize}
+        \item Perfuração otimizada
+        \item Escavação controlada
+        \item Detonação adequada
+        \item Fragmentação secundária eficiente
+        \item Abertura de túneis
+        \item Trituração e moagem
+    \end{itemize}
+    
+    \item \textbf{Tornar as Estruturas Rochosas Seguras}:
+    \begin{itemize}
+        \item Planejamento da mina
+        \item Design da disposição
+        \item Estabilidade de taludes
+        \item Controle de colapsos
+        \item Proteção do teto
+        \item Reforço da rocha
+        \item Segurança na mineração
+        \item Controle de vibração
+        \item Proteção ambiental
+    \end{itemize}
+\end{enumerate}
+
+Se essas duas missões forem cumpridas com sucesso e as operações forem bem gerenciadas, alcançam-se:
+\begin{itemize}
+    \item Alta recuperação de minério
+    \item Baixa diluição
+    \item Maior lucro
+    \item Menos acidentes
+    \item Menor impacto ambiental
+\end{itemize}
+
+\section{Aplicações na Engenharia Ambiental e Energia}
+
+\subsection{Gestão de Resíduos e Armazenamento Subterrâneo}
+
+A Mecânica das Rochas é essencial para garantir a segurança e sustentabilidade de projetos de 
+energia, armazenamento de resíduos e proteção ambiental.
+
+\subsubsection{Armazenamento de CO\textsubscript{2}}
+
+\textbf{CCS (Captura e Armazenamento de Carbono)}:
+\begin{itemize}
+    \item Seleção de formações geológicas adequadas
+    \item Injeção segura de CO\textsubscript{2}
+    \item Redução de emissões de gases do efeito estufa
+\end{itemize}
+
+\subsubsection{Armazenamento de Resíduos Nucleares}
+
+\begin{itemize}
+    \item Avaliação da estabilidade de cavernas
+    \item Análise de formações rochosas
+    \item Descarte seguro de rejeitos radioativos
+\end{itemize}
+
+\subsection{Energia Geotérmica}
+
+\begin{itemize}
+    \item \textbf{Análise de Reservatórios}: Estudo da condutividade térmica e permeabilidade
+    \item \textbf{Fraturamento}: Aumento de permeabilidade com técnicas similares ao fraturamento hidráulico
+    \item \textbf{Monitoramento}: Prevenção de sismicidade induzida
+\end{itemize}
+
+\subsection{Estabilidade de Barragens e Usinas Hidroelétricas}
+
+\begin{itemize}
+    \item Análise da rocha de fundação
+    \item Avaliação de resistência e permeabilidade
+    \item Prevenção de erosão e vazamentos
+    \item Estudo de impactos ambientais
+\end{itemize}
+
+\subsection{Energia Eólica e Solar em Terrenos Rochosos}
+
+\begin{itemize}
+    \item Fundação de turbinas eólicas
+    \item Fundação de painéis solares
+    \item Avaliação da capacidade de suporte
+    \item Monitoramento de assentamentos
+\end{itemize}
+
+\subsection{Proteção contra Desastres Naturais}
+
+\begin{itemize}
+    \item Monitoramento de escorregamentos e deslizamentos
+    \item Aplicação de sensores
+    \item Modelagem geomecânica
+    \item Análise de subsidência em minas abandonadas
+\end{itemize}
+
+\section{Aplicações na Indústria Petrolífera}
+
+A aplicação da Mecânica das Rochas na indústria de petróleo é fundamental para todas as fases 
+da exploração e produção.
+
+\subsection{1. Análise de Bacias}
+
+Compreende o estudo da:
+\begin{itemize}
+    \item Origem das bacias
+    \item Evolução das bacias
+    \item Inversão de bacias
+\end{itemize}
+
+A Mecânica das Rochas é útil no estudo das alterações no regime de tensões das formações geológicas, 
+influenciando a:
+\begin{itemize}
+    \item Geração de hidrocarbonetos
+    \item Migração de fluidos
+    \item Acumulação de óleo e gás
+\end{itemize}
+
+\subsection{2. Perfuração de Poços}
+
+É necessário:
+\begin{itemize}
+    \item Análise de tensões in situ para prever colapsos e perdas de fluido
+    \item Determinação da pressão ideal da lama de perfuração
+    \item Modelagem do comportamento geomecânico do poço
+\end{itemize}
+
+Quando a rocha é removida durante a perfuração, tensões passam a atuar na parede do poço tendendo 
+a restabelecer um novo equilíbrio, causando desmoronamentos se não for utilizado fluido de perfuração 
+com peso adequado.
+
+Um apropriado entendimento do estado de tensão em subsuperfície torna-se extremamente necessário 
+e permite ao engenheiro de petróleo estimar ou calcular parâmetros estáveis para um projeto de perfuração.
+
+\subsubsection{Exemplos de Problemas de Instabilidade de Poço}
+
+\begin{itemize}
+    \item \textbf{Perfuração de Formações Pressurizadas}: Quando a poro-pressão é maior que a pressão 
+    do fluido de perfuração, ocorrem explosões de cascalhos (kicks).
+    
+    \item \textbf{Perfuração de Formações Fracas ou Fracturadas}: Ação mecânica do fluido causa 
+    desabamentos. Solução: controle de vibração da coluna.
+    
+    \item \textbf{Acunhamento da Coluna}: Cimento mole ou formações facilmente laváveis. Solução: aumento 
+    gradativo do peso do fluido ou assentamento de novo revestimento.
+    
+    \item \textbf{Formações Móveis}: Rochas de menor densidade tendem a se mover. Solução: redução de 
+    rotação e peso sobre broca.
+    
+    \item \textbf{Ação Mecânica da Coluna}: Encontro com camadas mais duras. Solução: variação de 
+    parâmetros de perfuração.
+    
+    \item \textbf{Formações Reativas ao Fluido}: Fragilizam e desabam. Solução: uso de fluidos inertes.
+    
+    \item \textbf{Colapso do Revestimento}: Erro de projeto ou pressão inadequada do anular. Solução: 
+    ajustes no fluido e estabilização mecânica.
+    
+    \item \textbf{Formação de "Wash Outs"}: Alargamentos do poço por ação do fluido. Solução: controle 
+    de velocidade e reologia.
+    
+    \item \textbf{Instabilidade de Poços Inclinados}: Estrato com menor elasticidade. Solução: aumento 
+    de peso do fluido ou planejamento de desvio (side track).
+\end{itemize}
+
+\subsection{3. Reativação de Falhas em Reservatórios}
+
+As falhas em um reservatório podem:
+\begin{itemize}
+    \item Atuar como selantes permitindo acumulação de hidrocarbonetos
+    \item Atuar como caminho de migração se reativadas
+\end{itemize}
+
+O engenheiro de petróleo precisa estimar o risco de reativação usando critérios como Mohr-Coulomb.
+
+\subsection{4. Análise de Permeabilidade}
+
+Para que a extração de hidrocarbonetos ocorra, é necessário fluxo de fluidos através da rocha.
+
+\textbf{Lei de Darcy}: A permeabilidade é diretamente proporcional aos vazios. Quanto mais permeável 
+a formação, maior será o fluxo de hidrocarbonetos e maior a produção.
+
+Para análise completa devem ser considerados efeitos geomecânicos como:
+\begin{itemize}
+    \item Compactação
+    \item Tensões horizontais
+    \item Deformabilidade do reservatório
+\end{itemize}
+
+\subsection{5. Estimulação de Poços}
+
+A estimulação de poços inclui técnicas para:
+\begin{itemize}
+    \item Maximizar a produção
+    \item Aumentar a produtividade da formação
+    \item Criar canais condutivos
+    \item Corrigir danos causados na perfuração
+\end{itemize}
+
+Deve ser precedida de estudo geomecânico para:
+\begin{itemize}
+    \item Evitar perda de controlo do fraturamento
+    \item Prevenir danos ao reservatório
+    \item Minimizar efeitos negativos
+\end{itemize}
+
+\subsection{6. Métodos de Recuperação e EOR}
+
+Os métodos mais avançados de recuperação requerem análise detalhada do comportamento mecânico.
+
+\subsubsection{Estimulação com Ácido}
+
+\begin{itemize}
+    \item \textbf{Acidificação Matricial}: Ácido injetado abaixo da pressão de fraturamento, 
+    dissolvendo material que restringe escoamento.
+    
+    \item \textbf{Acidificação por Fratura}: Ácido bombeado acima da pressão de fraturamento, 
+    aumentando permeabilidade com geração de fraturas.
+    
+    \item \textbf{Limpeza de Incrustações}: Misturas de HCl para limpar carbonatos, ferrugem 
+    e outros resíduos.
+\end{itemize}
+
+\newpage
+
+% ============================================================================
+% CAPÍTULO 2 - ROCHAS, CONCEITOS E CARACTERÍSTICAS
+% ============================================================================
+\chapter{Rochas, Conceitos e Características}
+
+\section{Definição de Rochas}
+
+\textbf{Rochas} são materiais sólidos, consolidados e constituídos naturalmente por um ou mais 
+minerais, com características físicas e mecânicas específicas para cada tipo.
+
+\section{Formação das Rochas}
+
+As rochas formam-se através de diferentes processos da geodinâmica interna e externa:
+\begin{itemize}
+    \item \textbf{Magmatismo}: Formação de rochas ígneas ou magmáticas
+    \item \textbf{Sedimentação e Diagênese}: Formação de rochas sedimentares
+    \item \textbf{Metamorfismo}: Formação de rochas metamórficas
+\end{itemize}
+
+\section{Características das Rochas}
+
+As rochas podem conter muitos espaços vazios ou ser completamente sólidas:
+\begin{itemize}
+    \item \textbf{Rochas Porosas}: Contêm muitos espaços vazios
+    \item \textbf{Rochas Impermeáveis}: Vazios não conectados entre si
+    \item \textbf{Rochas Permeáveis}: Vazios conectados permitindo fluxo
+\end{itemize}
+
+Estas características dependem de como as rochas se formaram e dos processos geológicos que sofreram.
+
+\section{Tipos de Rochas}
+
+As rochas podem classificar-se em três grupos principais baseado na sua composição, textura e 
+características genéticas.
+
+\subsection{Rochas Ígneas (Magmáticas)}
+
+Formam-se a partir da cristalização do magma e constituem cerca de 20\% de todas as rochas.
+
+\subsubsection{Rochas Plutônicas (Intrusivas)}
+
+Quando o magma arrefece-se lentamente em profundidade:
+\begin{itemize}
+    \item \textbf{Textura}: Fanerítica (grãos grandes e bem formados)
+    \item \textbf{Exemplos}: Granitos, Gabros, Sienitos, Dioritos
+\end{itemize}
+
+\subsubsection{Rochas Vulcânicas (Extrusivas)}
+
+Quando o magma arrefece-se rapidamente à superfície:
+\begin{itemize}
+    \item \textbf{Textura Vítrea}: Material vítreo sem cristais (ex: Obsidiana)
+    \item \textbf{Textura Afanítica}: Cristais muito finos (ex: Riólitos, Basaltos)
+\end{itemize}
+
+\subsubsection{Sequência de Cristalização}
+
+Durante o processo de cristalização do magma:
+\begin{enumerate}
+    \item Primeiros a cristalizar: Minerais máficos (escuros) como Biotite, Anfíbola, Olivina, Piroxena
+    \item Últimos a cristalizar: Minerais félsicos (claros) como Quartzo, Feldspato, Plagioclases, Muscovite
+\end{enumerate}
+
+\subsubsection{Série de Diferenciação}
+
+Da máfica para a félsica:
+\begin{itemize}
+    \item Peridotito (ultra-máfico)
+    \item Gabro
+    \item Diorito
+    \item Granodiorito
+    \item Granito
+\end{itemize}
+
+\subsection{Rochas Metamórficas}
+
+Resultam da transformação mecânica, térmica e química de rochas pré-existentes. Constituem cerca 
+de 14\% de todas as rochas.
+
+Ocorrem quando rochas atingem grandes profundidades em condições de elevada pressão e temperatura.
+
+\subsubsection{Tipos de Metamorfismo}
+
+\begin{itemize}
+    \item \textbf{Metamorfismo Regional}: Abrange extensas áreas, particularmente em zonas de formação 
+    de cadeias de montanha. Resulta de compressão e aumento de pressão.
+    
+    \item \textbf{Metamorfismo de Contacto (Local)}: Limitado ao contacto entre a litologia presente 
+    e a intrusão de magma. O aumento de temperatura causa recristalização dos minerais.
+\end{itemize}
+
+\subsubsection{Exemplos de Rochas Metamórficas}
+
+\begin{itemize}
+    \item Xistos
+    \item Gnaisse
+    \item Migmatito
+    \item E outras rochas metamórficas foliadas
+\end{itemize}
+
+\paragraph{Nota sobre Rochas Ígneas e Metamórficas na Indústria de Petróleo}
+
+Estas rochas não estão envolvidas na origem de petróleo como rocha geradora. Entretanto, podem servir 
+como reservatórios quando:
+\begin{itemize}
+    \item Altamente fracturadas
+    \item Adquiriram porosidade por intemperismo
+    \item Foram submetidas a eventos tectônicos que criaram armadilhas para acumulação de óleo
+\end{itemize}
+
+\subsection{Rochas Sedimentares}
+
+Constituem cerca de 66\% de todas as rochas da crusta terrestre. Resultam do transporte, deposição 
+e consolidação de sedimentos provenientes de:
+\begin{itemize}
+    \item Erosão de rochas pré-existentes
+    \item Precipitação química de substâncias
+    \item Matéria orgânica
+\end{itemize}
+
+São o tipo rochoso mais importante na área petrolífera.
+
+\subsubsection{Classificação das Rochas Sedimentares}
+
+\begin{enumerate}
+    \item \textbf{Rochas Sedimentares Clásticas}: Resultam do transporte, deposição e consolidação 
+    de sedimentos provenientes da erosão de rochas pré-existentes.
+    
+    \item \textbf{Rochas Sedimentares Quimiogênicas}: Formadas pela precipitação química de minerais 
+    da água.
+    
+    \item \textbf{Rochas Sedimentares Biogênicas}: Formam-se a partir da acumulação de matéria orgânica 
+    (restos vegetais e/ou animais).
+\end{enumerate}
+
+\subsubsection{Rochas Sedimentares Clásticas}
+
+Qualquer rocha exposta à superfície terrestre está sujeita à ação de agentes de meteorização 
+(água, vento, gravidade, mudança de temperatura), que desagregam a rocha em fragmentos menores 
+chamados clastos ou detritos.
+
+\textbf{Fatores que determinam as características dos sedimentos}:
+\begin{itemize}
+    \item Tipo de agente de transporte (rio, mar, vento, gravidade)
+    \item Modo de transporte (dissolução, suspensão, saltação, rolamento)
+    \item Tempo de transporte (lento ou rápido)
+    \item Sentido e frequência da atuação dos agentes
+\end{itemize}
+
+\textbf{Tipo mais comum}: Arenito, formado pela acumulação de partículas do tamanho de areia.
+
+A importância do arenito:
+\begin{itemize}
+    \item Pode conter espaços porosos grandes e interconectados
+    \item Pode armazenar quantidades significativas de hidrocarbonetos
+    \item Encontrado em deltas de rios, ambientes marinhos rasos, regiões desérticas
+\end{itemize}
+
+\subsubsection{Rochas Sedimentares Quimiogênicas}
+
+Formadas pela precipitação de minerais:
+\begin{itemize}
+    \item \textbf{Calcário}: Importante como rocha reservatório e geradora de petróleo
+    \item \textbf{Dolomite}: Similares ao calcário em application
+    \item \textbf{Evaporitos}: Sal-gema, gesso (atuam como rochas selantes)
+\end{itemize}
+
+Os evaporitos podem:
+\begin{itemize}
+    \item Atuar como rochas selantes para reservatórios de petróleo
+    \item Prevenir migração de óleo e gás
+    \item Ser rochas geradoras importantes de matéria orgânica
+\end{itemize}
+
+\subsubsection{Rochas Sedimentares Biogênicas}
+
+Incluem:
+\begin{itemize}
+    \item \textbf{Carvão}: Importante fonte de energia, formado pelo acúmulo de matéria vegetal
+    \item \textbf{Folhelho/Xisto Betuminoso}: Importante rocha geradora de petróleo
+\end{itemize}
+
+O folhelho é importante porque contém matéria orgânica que pode ser convertida em óleo e gás 
+por maturação térmica.
+
+\subsubsection{Classificação Textural das Rochas Sedimentares}
+
+O tamanho das partículas varia conforme:
+\begin{itemize}
+    \item Força da corrente de transporte
+    \item Topografia do terreno (maior topografia = maior energia)
+    \item Distância de transporte
+\end{itemize}
+
+\paragraph{Formas das Partículas}
+
+\begin{itemize}
+    \item \textbf{Partículas Angulares}: Perto de sua origem
+    \item \textbf{Partículas Esféricas e Lisas}: Indicam transporte por correntes
+\end{itemize}
+
+\subsubsection{Ambientes Sedimentares}
+
+Os agentes de transporte definem diferentes ambientes:
+\begin{itemize}
+    \item Marinho
+    \item Fluvial (rio)
+    \item Glaciar
+    \item Eólico (vento)
+    \item Fluvio-marinho
+\end{itemize}
+
+\subsubsection{Aplicação na Indústria de Petróleo}
+
+\begin{itemize}
+    \item \textbf{Arenito}: Rocha-reservatório preferida (alta porosidade e permeabilidade)
+    \item \textbf{Folhelho}: Rocha geradora de petróleo
+    \item \textbf{Evaporito}: Rocha selante
+    \item \textbf{Calcário}: Rocha geradora e reservatório
+    \item \textbf{Conglomerado}: Fornece caminhos para fluxo de óleo e gás
+\end{itemize}
+
+\section{Características Principais das Rochas por Tipo}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Característica} & \textbf{Magmáticas} & \textbf{Metamórficas} & \textbf{Sedimentares} \\
+\hline
+\textbf{Aspecto} & Maciço e compacto & Maciço ou foliado & Em camadas, friáveis \\
+\hline
+\textbf{Textura} & Grãos interconectados & Grãos interconectados & Grãos não imbricados \\
+& sem orientação & com orientação & com poros \\
+\hline
+\textbf{Forma} & Formas irregulares & Formas irregulares & Arredondadas/ovuladas \\
+\hline
+\end{tabular}
+\caption{Características principais das rochas}
+\label{tab:rochas}
+\end{table}
+
+\section{Solos}
+
+\subsection{Definição}
+
+\textbf{Solos} são agregados de grãos minerais não consolidados encontrados na superfície terrestre 
+que não oferecem resistência à escavação mecânica e que quando em contacto prolongado com a água 
+perdem toda a resistência.
+
+\subsection{Classificação de Solos}
+
+\begin{itemize}
+    \item \textbf{Solos Residuais ou "in situ"}: Resultantes da meteorização da rocha sem transporte 
+    das partículas
+    \item \textbf{Solos Sedimentares ou Transportados}: Resultantes de meteorização, transporte e 
+    deposição num local diferente de origem
+\end{itemize}
+
+\subsection{Diferenças entre Rochas e Solos}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Rochas} & \textbf{Solos} \\
+\hline
+Módulos de deformação altos & Módulos de deformação baixos \\
+\hline
+Elevada coesão interna & Coesão baixa ou nula \\
+\hline
+Elevados valores de resistência à tração & Baixa resistência à tração \\
+\hline
+Baixa permeabilidade & Alta permeabilidade \\
+\hline
+Geram superfícies de fratura & Deformam-se ductilmente \\
+\hline
+\end{tabular}
+\caption{Diferenças entre rochas e solos}
+\label{tab:rochas_solos}
+\end{table}
+
+\subsection{Influência das Condições in situ}
+
+\begin{itemize}
+    \item \textbf{Maciços Rochosos}: Submetidos a tensões naturais relacionadas com esforços tectônicos
+    \item \textbf{Solos}: Sujeitos a esforços in situ relativamente baixos devido a forças litostáticas
+\end{itemize}
+
+\subsection{Grau de Alteração da Rocha}
+
+A classificação ISRM (1978) define os seguintes graus:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Sigla} & \textbf{Denominação} & \textbf{Característica} \\
+\hline
+A1 & Rocha Sã & Sem quaisquer sinais de alteração \\
+\hline
+A2 & Pouco Alterada & Sinais de alteração apenas nas descontinuidades \\
+\hline
+A3 & Medianamente Alterada & Alguma resistência, fragmentos não quebrados com mão \\
+\hline
+A4 & Muito Alterada & Enfraquecida, fragmentos facilmente quebrados \\
+\hline
+A5 & Completamente Alterada & Decomposta, textura original ainda visível \\
+\hline
+\end{tabular}
+\caption{Grau de alteração da rocha (ISRM, 1978)}
+\label{tab:alteracao}
+\end{table}
+
+\section{Maciços Rochosos}
+
+\subsection{Definição}
+
+Um \textbf{maciço rochoso} é uma porção definida de uma ou mais formações geológicas, caracterizada 
+por suas rochas e descontinuidades.
+
+A rocha é um material componente do maciço rochoso, enquanto o maciço é composto pela matriz rochosa 
+e pelas descontinuidades que a separam.
+
+\subsection{Características Principais}
+
+\begin{itemize}
+    \item \textbf{Descontinuidade}: Qualquer plano que separa os blocos da matriz rochosa. Essas 
+    descontinuidades conferem ao maciço um carácter descontínuo, anisotrópico e heterogêneo.
+    
+    \item \textbf{Anisotropia}: Característica própria de certos materiais comportarem-se de modo 
+    diferente conforme a direção considerada.
+    
+    \item \textbf{Heterogeneidade}: Materiais formados por elementos com características distintas.
+    
+    \item \textbf{Matriz Rochosa}: Material rochoso isento de descontinuidades, ou blocos de rocha intacta.
+\end{itemize}
+
+\subsection{Tipos de Maciços}
+
+\begin{itemize}
+    \item \textbf{Maciço Intacto}: Contínuo, isotrópico, homogêneo
+    \item \textbf{Maciço Descontínuo}: Fracturado, anisotrópico, heterogêneo
+\end{itemize}
+
+\subsection{Fatores Geológicos Determinantes}
+
+Os fatores geológicos que determinam o comportamento e as propriedades mecânicas dos maciços 
+rochosos incluem:
+
+\begin{enumerate}
+    \item \textbf{A Litologia e Propriedades da Matriz Rochosa}
+    \item \textbf{O Grau de Alteração ou Meteorização}
+    \item \textbf{A Estructura Geológica e as Descontinuidades}
+    \item \textbf{O Estado de Esforços a que o Material é Submetido}
+    \item \textbf{As Condições Hidrogeológicas}
+\end{enumerate}
+
+\subsection{Influência da Água e Meteorização}
+
+\subsubsection{Influência da Água}
+
+A água presente nos maciços rochosos:
+\begin{itemize}
+    \item Reduz a resistência
+    \item Gera pressões no interior
+    \item Altera as propriedades mecânicas
+    \item Dificulta escavações superficiais e subterrâneas
+\end{itemize}
+
+Para avaliar a influência da água devem ser estudadas:
+\begin{itemize}
+    \item Características de permeabilidade
+    \item Fluxo dos maciços rochosos
+\end{itemize}
+
+\subsubsection{Influência da Meteorização}
+
+A meteorização é o processo mais importante tempo-dependente, resultando em:
+\begin{itemize}
+    \item Desintegração do material rochoso
+    \item Decomposição gradual
+    \item Afetação fundamental de rochas argilosas
+\end{itemize}
+
+Podem ocorrer também processos de:
+\begin{itemize}
+    \item ``Inchamento'' ou expansibilidade
+    \item Libertação de tensões
+    \item Reações químicas
+\end{itemize}
+
+\section{Estudo do Comportamento dos Maciços Rochosos}
+
+Para prever o comportamento dos maciços rochosos quando solicitados por ações que alteram as 
+condições iniciais, devem ser utilizadas:
+
+\begin{enumerate}
+    \item \textbf{Métodos Geofísicos e Geológicos}:
+    \begin{itemize}
+        \item Métodos diretos
+        \item Métodos indirectos
+    \end{itemize}
+    
+    \item \textbf{Estudos Laboratoriais}:
+    \begin{itemize}
+        \item Resistência dos materiais
+        \item Propriedades físicas e mecânicas
+    \end{itemize}
+    
+    \item \textbf{Ferramentas de Análise}:
+    \begin{itemize}
+        \item Ensaios in situ
+        \item Critérios de resistência empíricos
+        \item Modelação computacional
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Ensaios de Laboratório}
+
+Os ensaios de laboratório permitem quantificar:
+\begin{itemize}
+    \item A natureza da rocha
+    \item A resistência à ruptura
+    \item A deformação a curto e longo prazo
+    \item O comportamento face à meteorização
+    \item A influência da água no comportamento
+    \item O comportamento ao longo do tempo
+\end{itemize}
+
+\newpage
+
+% ============================================================================
+% ANEXOS - INCLUIR PDFs COMO IMAGENS
+% ============================================================================
+\appendix
+\chapter{Documentos Originais}
+
+Os documentos originais em formato PDF estão incluídos abaixo como referência visual.
+
+\section{Apresentação e Introdução a Mecânica das Rochas 2025/2026 (Parte 1)}
+
+\includepdf[pages=-,landscape=false,scale=0.9]{referências para o estudo/1. Apresentação e Introdução a Mecânica das Rochas 2025_2026 (Parte 1).pdf}
+
+\section{Introdução à Mecânica das Rochas 2025 (Completo)}
+
+\includepdf[pages=-,landscape=false,scale=0.9]{referências para o estudo/1. Introdução à Mecânica das Rochas 2025_Completo.pdf}
+
+\section{Rochas, Conceitos e Características 2025}
+
+\includepdf[pages=-,landscape=false,scale=0.9]{referências para o estudo/2. Rochas, conceitos e características_MR 1_2025.pdf}
+
+\section{Apresentação e Introdução da Mecânica das Rochas 2024}
+
+\includepdf[pages=-,landscape=false,scale=0.9]{referências para o estudo/Apresentação e Introdução da Mecânica das Rochas 2024.pdf}
+
+\section{Apresentação e Introdução da Mecânica das Rochas 2024 (Duplicado)}
+
+\includepdf[pages=-,landscape=false,scale=0.9]{referências para o estudo/Apresentação e Introdução da Mecânica das Rochas 2024 (1).pdf}
+
+\end{document}

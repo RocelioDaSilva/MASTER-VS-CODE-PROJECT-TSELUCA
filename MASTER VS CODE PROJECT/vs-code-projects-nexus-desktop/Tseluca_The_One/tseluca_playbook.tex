@@ -1,0 +1,590 @@
+\documentclass[11pt,openany]{book}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{fontspec}
+% Prefer TeX Gyre fonts if available; otherwise fall back to standard LaTeX fonts
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+
+% Set fonts when available, else use safe LaTeX package fallbacks
+\IfFontExistsTF{TeX Gyre Pagella}{%
+  \setmainfont{TeX Gyre Pagella}%
+}{%
+  \usepackage{mathpazo}% Palatino-like fallback
+}
+\IfFontExistsTF{TeX Gyre Heros}{%
+  \setsansfont{TeX Gyre Heros}%
+}{%
+  \usepackage{helvet}% Helvetica fallback for sans-serif
+  \renewcommand{\sfdefault}{phv}% set helvet as sans default
+}
+
+\definecolor{Ink}{HTML}{1F2933}
+\definecolor{DeepSea}{HTML}{0B3C5D}
+\definecolor{Accent}{HTML}{D97706}
+\definecolor{Soft}{HTML}{F5F8FA}
+
+\color{Ink}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=DeepSea,
+  urlcolor=Accent,
+  pdftitle={Tseluca Offshore Playbook},
+  pdfauthor={Petroleum Engineering Market Prospects}
+}
+
+\setlist[itemize]{itemsep=0.35em, topsep=0.35em, leftmargin=1.6em}
+\setlist[enumerate]{itemsep=0.35em, topsep=0.35em, leftmargin=1.8em}
+
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\bfseries\color{DeepSea}}
+  {\filleft\fontsize{42}{42}\selectfont\color{Accent}\thechapter}
+  {0.8ex}
+  {\titlerule[0.9pt]\vspace{0.8ex}\filright\Huge}
+  [\vspace{0.6ex}\titlerule]
+
+\titlespacing*{\chapter}{0pt}{-6pt}{22pt}
+
+\titleformat{\section}
+  {\normalfont\sffamily\bfseries\Large\color{DeepSea}}
+  {\thesection}
+  {0.7em}
+  {}
+
+\titleformat{\subsection}
+  {\normalfont\sffamily\bfseries\color{DeepSea}}
+  {\thesubsection}
+  {0.6em}
+  {}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\sffamily\small\color{DeepSea}Tseluca Offshore Playbook}
+\fancyhead[LO,RE]{\sffamily\small\color{Ink}\leftmark}
+\fancyfoot[C]{\sffamily\small\thepage}
+\setlength{\headheight}{14pt}
+\raggedbottom
+
+\title{Tseluca Offshore Playbook\\\large What To Do, Where To Do It, and How To Get Hired Fast}
+\author{Built for ISPTEC Student Execution}
+\date{April 2026}
+
+\begin{document}
+
+\frontmatter
+\begin{titlepage}
+\thispagestyle{empty}
+\colorbox{Soft}{
+  \parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+    \vspace{1.1cm}
+    {\sffamily\bfseries\LARGE\color{DeepSea}TSELUCA OFFSHORE PLAYBOOK\par}
+    \vspace{0.35cm}
+    {\sffamily\large\color{Ink}What To Do, Where To Do It, and How To Get Hired Fast\par}
+    \vspace{0.75cm}
+    {\sffamily\color{Accent}\rule{0.32\textwidth}{1.4pt}\par}
+    \vspace{0.85cm}
+    {\large\bfseries Built for ISPTEC Student Execution\par}
+    \vspace{0.3cm}
+    {April 2026\par}
+    \vspace{1.0cm}
+    \textbf{Purpose}\par
+    A practical execution book for offshore FIFO employability,\\
+    petroleum-focused technical growth, and salary progression\\
+    in Angola and regional markets.
+    \vspace{1.2cm}
+  }
+}
+\vfill
+{\small\color{Ink}Repository: petroleum-engineering-market-prospects}
+\end{titlepage}
+
+\chapter*{How To Use This Book}
+This book is an execution manual for one goal: get into a petroleum-focused offshore rotational role quickly, with a strong salary path and low unemployment risk after graduation.
+
+Use this method:
+\begin{enumerate}
+  \item Read Chapters 1 to 3 in one sitting.
+  \item Build your personal checklist from Chapters 4 to 7.
+  \item Execute weekly using Chapter 8 scorecards.
+  \item Review and update your plan every Sunday.
+\end{enumerate}
+
+\tableofcontents
+
+\mainmatter
+
+\chapter{Your Goal and Best Strategy}
+
+\section{Your stated target}
+\begin{itemize}
+  \item Work offshore in FIFO rotation lifestyle.
+  \item Earn good salary with upward trajectory.
+  \item Avoid long unemployment after graduation.
+  \item Stay in petroleum-engineering-focused roles.
+\end{itemize}
+
+\section{Best combined route from repository guidance}
+\begin{enumerate}
+  \item Pick one primary technical path: Drilling or Production/FPSO.
+  \item Complete mobilization certifications early.
+  \item Apply in waves to multiple companies in parallel.
+  \item Enter via high-employability routes first (service companies, then operators/FPSO).
+  \item Build technical depth and move up by proven performance.
+\end{enumerate}
+
+\section{Career architecture}
+\begin{itemize}
+  \item Stage 0: final year and graduation launch.
+  \item Stage 1: first role (0 to 6 months after graduation).
+  \item Stage 2: specialization growth (Years 1 to 2).
+  \item Stage 3: salary acceleration (Years 2 to 5).
+  \item Stage 4: premium offshore technical roles (Year 5+).
+\end{itemize}
+
+\chapter{What To Do First: 90-Day Launch Plan}
+
+\section{Days 1 to 15}
+\begin{itemize}
+  \item Choose primary path: Drilling or Production/FPSO.
+  \item Choose backup path: HSE-support or Completions-support.
+  \item Build target company sheet (minimum 20 companies).
+  \item Open certification savings plan and fund it monthly.
+  \item Join SPE student membership.
+\end{itemize}
+
+\section{Days 16 to 45}
+\begin{itemize}
+  \item Complete offshore medical.
+  \item Book OPITO BOSIET with HUET.
+  \item Start IWCF Level 1 preparation.
+  \item Build CV and LinkedIn profile (Portuguese and English ready).
+\end{itemize}
+
+\section{Days 46 to 75}
+\begin{itemize}
+  \item Complete BOSIET/HUET.
+  \item Complete H2S awareness (if required by targets).
+  \item Complete IWCF Level 1.
+  \item Build first technical mini-project (Excel or Python).
+\end{itemize}
+
+\section{Days 76 to 90}
+\begin{itemize}
+  \item Submit first application wave (10 to 15 strong applications).
+  \item Run mock interviews weekly.
+  \item Attend one SPE/ANPG/company networking event.
+  \item Start NEBOSH IGC if budget and role strategy support it.
+\end{itemize}
+
+\chapter{Certifications: What, Where, and How}
+
+\section{Priority order}
+\begin{enumerate}
+  \item Offshore medical certificate.
+  \item OPITO BOSIET with HUET.
+  \item IWCF Level 1.
+  \item H2S Awareness (based on project and employer).
+  \item NEBOSH IGC (strong multiplier, especially for HSE-linked roles).
+  \item IWCF Level 2 (often best with company sponsorship after hiring).
+\end{enumerate}
+
+\section{Angola and regional Africa location map}
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\rowcolors{2}{Soft}{white}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.19\textwidth} >{\raggedright\arraybackslash}p{0.31\textwidth} >{\raggedright\arraybackslash}p{0.25\textwidth} >{\raggedright\arraybackslash}p{0.19\textwidth}}
+\toprule
+\rowcolor{DeepSea!14}
+\textbf{Certification} & \textbf{Angola (Primary)} & \textbf{Africa Backup} & \textbf{Verify On} \\
+\midrule
+Offshore Medical & Clinica Multiperfil, Hospital Sagrada Esperanca, International SOS Angola & South Africa occupational health providers; Nigeria offshore-medical providers & Employer approved list \\
+OPITO BOSIET/HUET & PETROTEC (Luanda), ICAT (Luanda; verify current status) & Nigeria (Lagos), South Africa (Cape Town/Johannesburg), Namibia (limited market) & OPITO approved listings \\
+H2S Awareness & PETROTEC or employer induction programs & Nigeria/South Africa safety providers & Employer acceptance \\
+IWCF Level 1/2 & Angola centers in IWCF pathways (live check needed) & Nigeria and South Africa IWCF centers & IWCF center directory \\
+NEBOSH IGC & Usually online from accredited partners while based in Angola & South Africa/Nigeria providers & NEBOSH learning partners \\
+IOSH Managing Safely & Online accredited providers & South Africa/Nigeria providers & IOSH provider directory \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\section{Direct certification links (clickable)}
+Use these official directories and providers to find current approved centers and register safely.
+
+\begin{itemize}
+  \item OPITO approved training providers: \url{https://www.opito.com/find-a-training-provider}
+  \item IWCF accredited training and exam centers: \url{https://www.iwcf.org/find-centres/}
+  \item NEBOSH learning partners: \url{https://www.nebosh.org.uk/study-with-us/find-learning-partner/}
+  \item IOSH training provider network: \url{https://iosh.com/training/}
+  \item SPE membership and resources: \url{https://www.spe.org/en/membership/}
+  \item Astutis (NEBOSH/IOSH online courses): \url{https://www.astutis.com/}
+  \item British Safety Council courses: \url{https://www.britsafe.org/training-and-learning/}
+\end{itemize}
+
+Angola and regional institutions to monitor:
+\begin{itemize}
+  \item ANPG (events and industry ecosystem): \url{https://anpg.co.ao/}
+  \item Sonangol careers and announcements: \url{https://www.sonangol.co.ao/}
+\end{itemize}
+
+\section{Anti-scam quality checks before payment}
+\begin{itemize}
+  \item Verify accreditation on the official awarding body website.
+  \item Confirm exact certificate title and validity in writing.
+  \item Confirm target employer acceptance before payment.
+  \item Confirm all fees (tuition, exam, practical, re-sit, travel).
+  \item Review cancellation and refund policy.
+\end{itemize}
+
+\chapter{Skills: What To Develop and How To Develop It}
+
+\section{Technical skill stack}
+\begin{itemize}
+  \item Well control logic and barriers.
+  \item Drilling fundamentals: fluids, ECD, casing and cementing basics.
+  \item FPSO process and production troubleshooting.
+  \item Formation evaluation basics and production data interpretation.
+\end{itemize}
+
+\section{Execution method}
+\begin{enumerate}
+  \item Study 6 to 8 hours per week.
+  \item Solve 2 technical problem sets per week.
+  \item Build one concept sheet per week from memory.
+  \item Explain one technical topic each week in English.
+  \item Build mini-project artifacts that prove competence.
+\end{enumerate}
+
+\section{Mini-project ideas}
+\begin{itemize}
+  \item Drilling dashboard: mud weight, ECD, pressure margins.
+  \item Production dashboard: rate tracking, decline trend, anomaly notes.
+  \item Interview brief: one page case with diagnosis and recommendation.
+\end{itemize}
+
+\section{Where to learn abilities (free and paid links)}
+\subsection{Free and low-cost technical learning}
+\begin{itemize}
+  \item SPE webinars and technical content: \url{https://www.spe.org/en/training/}
+  \item OnePetro paper library (abstracts and papers): \url{https://onepetro.org/}
+  \item NPTEL engineering courses: \url{https://nptel.ac.in/}
+  \item MIT OpenCourseWare engineering: \url{https://ocw.mit.edu/}
+  \item Schlumberger Oilfield Glossary: \url{https://glossary.slb.com/}
+  \item Halliburton technical resources: \url{https://www.halliburton.com/}
+\end{itemize}
+
+\subsection{Paid structured courses}
+\begin{itemize}
+  \item PetroSkills (drilling, production, reservoir, completions): \url{https://www.petroskills.com/}
+  \item OETC (industry training catalog): \url{https://www.oetc.com/}
+  \item Coursera energy and data courses: \url{https://www.coursera.org/}
+  \item Udemy technical tools (Excel/Python): \url{https://www.udemy.com/}
+\end{itemize}
+
+\chapter{Job Targeting for Fast Employability}
+
+\section{Company sequence for your goal}
+\begin{enumerate}
+  \item Service companies first for entry speed and structured training.
+  \item Operators and FPSO owners in parallel for higher long-term ceiling.
+  \item Use referrals and networking while applying broadly.
+\end{enumerate}
+
+\section{Application wave model}
+\begin{itemize}
+  \item Wave size: 10 to 15 applications.
+  \item Timing: submit within 2 weeks.
+  \item Follow-up: 7 to 10 days after application.
+  \item Iterate CV and interview answers after each wave.
+\end{itemize}
+
+\section{Direct application links}
+\begin{itemize}
+  \item TotalEnergies careers: \url{https://careers.totalenergies.com/}
+  \item Chevron careers: \url{https://careers.chevron.com/}
+  \item Eni careers: \url{https://www.eni.com/en-IT/careers.html}
+  \item SLB careers: \url{https://careers.slb.com/}
+  \item Halliburton careers: \url{https://jobs.halliburton.com/}
+  \item Baker Hughes careers: \url{https://careers.bakerhughes.com/}
+  \item TechnipFMC careers: \url{https://careers.technipfmc.com/}
+  \item Subsea7 careers: \url{https://careers.subsea7.com/}
+  \item Oceaneering careers: \url{https://careers.oceaneering.com/}
+  \item Weatherford careers: \url{https://jobs.weatherford.com/}
+  \item SBM Offshore careers: \url{https://www.sbmoffshore.com/careers/}
+  \item Yinson careers: \url{https://www.yinson.com/careers/}
+  \item Azule Energy careers: \url{https://www.azule-energy.com/careers}
+\end{itemize}
+
+\section{Documents to keep ready}
+\begin{itemize}
+  \item Passport or national ID.
+  \item Degree/transcript or enrollment proof.
+  \item Offshore medical certificate.
+  \item BOSIET/HUET certificate.
+  \item H2S and IWCF certificates.
+  \item CV in PDF and LinkedIn link.
+  \item Reference list (2 to 3 contacts).
+\end{itemize}
+
+\chapter{Interview and Offer Strategy}
+
+\section{Technical interview preparation}
+Focus areas:
+\begin{itemize}
+  \item Well control basics and pressure logic.
+  \item Drilling fluid fundamentals and ECD reasoning.
+  \item Production basics: IPR/VLP concepts and troubleshooting thinking.
+  \item Offshore safety behavior and incident prevention mindset.
+\end{itemize}
+
+\section{Behavioral interview preparation}
+\begin{itemize}
+  \item Teamwork under fatigue and shift pressure.
+  \item Communication in multicultural offshore crews.
+  \item Safety-first decisions when production pressure exists.
+  \item Learning speed and humility in field operations.
+\end{itemize}
+
+\section{Offer evaluation checklist}
+\begin{itemize}
+  \item Rotation pattern and on/off days.
+  \item Base pay + offshore allowances + total package.
+  \item Certification sponsorship and training roadmap.
+  \item Scope of technical work and growth path.
+  \item Team quality and mentorship access.
+\end{itemize}
+
+\chapter{Weekly Operating System}
+
+\section{Weekly scorecard}
+Score each item from 0 to 1.
+\begin{itemize}
+  \item 6 to 8 hours technical study completed.
+  \item 2 problem sets completed.
+  \item 3 networking actions completed.
+  \item 5 quality applications or 2 referral actions completed.
+  \item 1 interview practice completed.
+  \item 1 certification savings transfer completed.
+\end{itemize}
+
+Interpretation:
+\begin{itemize}
+  \item 5/6 = strong week.
+  \item 6/6 = elite week.
+\end{itemize}
+
+\section{Monthly review}
+\begin{enumerate}
+  \item Which actions produced interviews?
+  \item Which gaps blocked progress?
+  \item Which certificate or skill must move up in priority?
+  \item What is the next 30-day objective?
+\end{enumerate}
+
+\chapter{12-Month Roadmap}
+
+\section{Months 1 to 3}
+\begin{itemize}
+  \item Finalize path and budget.
+  \item Complete medical and book BOSIET/HUET.
+  \item Launch networking and profile positioning.
+\end{itemize}
+
+\section{Months 4 to 6}
+\begin{itemize}
+  \item Complete BOSIET/HUET and IWCF L1.
+  \item Complete first portfolio artifact.
+  \item Run first major application waves.
+\end{itemize}
+
+\section{Months 7 to 9}
+\begin{itemize}
+  \item Tighten interview performance.
+  \item Expand applications and referral channels.
+  \item Add second portfolio artifact.
+\end{itemize}
+sz
+\section{Months 10 to 12}
+\begin{itemize}
+  \item Convert interviews to offers.
+  \item Choose role with best growth and training profile.
+  \item Prepare for mobilization and offshore transition.
+\end{itemize}
+
+\backmatter
+
+\chapter*{Closing Note}
+The strongest pattern across this repository is simple: people who execute consistently win.
+
+You do not need a perfect plan. You need a clear path, valid certifications, technical proof of competence, and weekly discipline.
+
+Start now. Keep score weekly. Iterate monthly. Apply in waves. Build relationships through real performance.
+
+That is how you get offshore fast and grow into high-compensation petroleum roles.
+ 
+% ------------------------- Relat\'orio Consolidado Inserido -------------------------
+\chapter*{Relat\'orio Consolidado: Planeamento de Carreira Offshore}
+\addcontentsline{toc}{chapter}{Relat\'orio Consolidado: Planeamento de Carreira Offshore}
+
+\section*{Resumo executivo}
+Este relat\'orio consolida o plano de carreira offshore para entrada em Produ\c{c}\~ao (FPSO) ou Perfura\c{c}\~ao (Drilling) desde Maio/2026 at\'e Julho/2028, incluindo proje\c{c}\~oes financeiras (em kwanzas AOA), cronograma mensal de certifica\c{c}\~oes, sugest\~oes de fornecedores em Angola, lista de cargos-alvo, uma cole\c{c}\~ao de mini-projetos pr\'aticos para o seu portf\'olio e passos para migra\c{c}\~ao internacional.
+
+\subsection*{Principais conclus\~oes}
+\begin{itemize}
+  \item Or\'camento acumulado dispon\'ivel at\'e Jul/2028: 3.200.000 AOA.
+  \item Prioridade t\'ipica: Exame M\'edico Offshore, OPITO BOSIET/HUET, IWCF L1, H2S, seguido de um curso core (IWCF L2 para perfura\c{c}\~ao ou OPITO Processing para produ\c{c}\~ao).
+  \item Recomenda\c{c}\~ao estrat\'egica: Come\c{c}ar por Produ\c{c}\~ao para maior estabilidade; manter a op\c{c}\~ao de migrar para Perfura\c{c}\~ao ap\'os 3--5 anos se desejar maior remunera\c{c}\~ao.
+\end{itemize}
+
+\section{Or\'camento e proje\c{c}\~ao financeira (AOA)}
+\subsection{Rendimento e soma acumulada}
+\begin{itemize}
+  \item Maio/2026 (m\'es inicial): 210.000 AOA.
+  \item Junho/2026 a Julho/2028 (26 meses): 115.000 AOA por m\^es.
+  \item Total acumulado at\'e Julho/2028: 3.200.000 AOA.
+\end{itemize}
+
+\subsection{Desagregamento m\'es a m\'es}
+\begin{itemize}
+  \item Maio/2026: saldo 210.000 AOA.
+  \item Junho/2026: saldo 325.000 AOA.
+  \item Julho/2026: realizar Exame M\'edico Offshore (105.000 AOA) -- saldo 335.000 AOA.
+  \item Agosto/2026: IWCF Level 1 (185.000 AOA) -- saldo 265.000 AOA.
+  \item Set/2026 -- Mar/2027: poupan\c{c}a para BOSIET.
+  \item Abr/2027: OPITO BOSIET/HUET (1.110.000 AOA) -- saldo ap\'os compra ~75.000 AOA.
+  \item Mai/2027: H2S Awareness (85.000 AOA) -- saldo ap\'os compra ~105.000 AOA.
+  \item Jun/2027 -- Jan/2028: poupar para curso core (IWCF L2 ou OPITO Processing).
+  \item Fev/2028: curso core (aprox. 1.200.000--1.300.000 AOA) -- pequeno ajuste de fluxo previsto.
+  \item Jul/2028: saldo final estimado ~570.000 AOA (reserva para imprevistos).
+\end{itemize}
+
+\section{Escolha estrat\'egica: Produ\c{c}\~ao vs Perfura\c{c}\~ao}
+\subsection{Resumo}
+Produ\c{c}\~ao (FPSO): maior estabilidade e maior n\'umero de vagas em Angola; ideal para come\c{c}ar.
+
+Perfura\c{c}\~ao (Drilling): maior potencial de remunera\c{c}\~ao a longo prazo, mas trabalho por campanhas e maior volatilidade.
+
+\subsection{Recomenda\c{c}\~ao}
+Come\c{c}ar por Produ\c{c}\~ao para ganhar experi\^encia e estabilidade; manter as certifica\c{c}\~oes transversais e considerar migra\c{c}\~ao para Perfura\c{c}\~ao ap\'os 3--5 anos se desejar maximizar ganhos.
+
+\section{Lista completa de certifica\c{c}\~oes (prioridade e estimativas)}
+\subsection{Base comum (obrigat\'oria)}
+\begin{itemize}
+  \item Offshore Medical Certificate --- 105.000 AOA (validade: 2 anos).
+  \item OPITO BOSIET with HUET --- 1.110.000 AOA (validade: 4 anos).
+  \item H2S Awareness --- 85.000 AOA (validade: 1--2 anos).
+  \item IWCF Level 1 --- 185.000 AOA (investimento de base, sem expira\c{c}\~ao pr\'atica de conte\u{u}do).
+\end{itemize}
+
+\subsection{Cursos core por caminho}
+\begin{itemize}
+  \item Produ\c{c}\~ao: OPITO Oil \& Gas Processing Operations --- ~1.300.000 AOA.
+  \item Perfura\c{c}\~ao: IWCF Level 2 --- ~1.200.000 AOA.
+\end{itemize}
+
+\subsection{Multiplicadores (ap\'os contrata\c{c}\~ao)}
+\begin{itemize}
+  \item NEBOSH IGC --- ~1.150.000 AOA (forte diferencial para fun\c{c}\~oes HSE e supervis\~ao).
+  \item IWCF Levels 3 e 4 --- custos elevados e normalmente patrocinados pela empresa.
+\end{itemize}
+
+\section{Cronograma t\'atico (m\'es a m\'es)}
+\begin{enumerate}
+  \item Maio/2026: abrir conta de poupan\c{c}a para certifica\c{c}\~oes; juntar 210.000 AOA.
+  \item Jun/2026: consolidar poupan\c{c}as (saldo 325.000 AOA).
+  \item Jul/2026: Exame M\'edico Offshore (105.000 AOA).
+  \item Ago/2026: IWCF Level 1 (185.000 AOA).
+  \item Set/2026--Mar/2027: poupan\c{c}a para BOSIET.
+  \item Abr/2027: OPITO BOSIET/HUET (1.110.000 AOA).
+  \item Mai/2027: H2S Awareness (85.000 AOA).
+  \item Jun/2027--Jan/2028: poupan\c{c}a para curso core.
+  \item Fev/2028: curso core (IWCF L2 ou OPITO Processing).
+  \item Mar--Jul/2028: candidaturas em ondas e prepara\c{c}\~ao para entrevistas.
+\end{enumerate}
+
+\section{Fornecedores e verifica\c{c}\~oes (Angola e links oficiais)}
+\begin{itemize}
+  \item OPITO: verifique centros aprovados em \url{https://www.opito.com/find-a-training-provider}.
+  \item IWCF: lista de centros em \url{https://www.iwcf.org/find-centres/}.
+  \item NEBOSH: learning partners em \url{https://www.nebosh.org.uk/study-with-us/find-learning-partner/}.
+  \item Sugest\~oes locais: OMITC Academy, PETROTEC, CFWC (INP), International SOS, Cl\'inica Multiperfil.
+\end{itemize}
+
+\section{Posi\c{c}\~oes-alvo e canais de recrutamento}
+\subsection{Produ\c{c}\~ao / FPSO}
+Engenheiro de Produ\c{c}\~ao, Process Field Engineer, Facilities Engineer, Operations Engineer, FPSO Cargo Supervisor.
+
+\subsection{Perfura\c{c}\~ao}
+Drilling Engineer, Directional Driller Specialist, MPD Supervisor, Project Drilling Engineer, Graduate Trainee.
+
+\subsection{Canais}
+LinkedIn (configurar alertas), Jobartis, Careerjet Angola, AngoVagas, p\'aginas de carreira das empresas e recrutadoras (Airswift, CA Global).
+
+\section{Prepar\'acao para candidaturas e entrevistas}
+\begin{itemize}
+  \item Organizar pasta digital com CV (PT/EN), certificados, diploma e refer\^encias.
+  \item Aplicar em ondas: 10--15 candidaturas por ciclo; acompanhar em 7--10 dias.
+  \item Preparar exemplos t\'ecnicos (mini-projeto no GitHub) para demonstra\c{c}\~ao pr\'atica.
+  \item Treinar respostas comportamentais com STAR (Situa\c{c}\~ao, Tarefa, A\c{c}\~ao, Resultado).
+\end{itemize}
+
+\section{Escada de carreira detalhada}
+\subsection{Produ\c{c}\~ao}
+\begin{itemize}
+  \item Trainee / Estagi\'ario: 0--12 meses -- Medical, BOSIET, H2S, IWCF L1 (usd equivalentes variam conforme empresa).
+  \item J\'unior: 1--3 anos -- OPITO Processing (aumenta empregabilidade).
+  \item Pleno: 3--6 anos -- NEBOSH IGC recomendado.
+  \item S\'enior / L\'ider: 6--10 anos -- especializa\c{c}\~oes FPSO.
+\end{itemize}
+
+\subsection{Perfura\c{c}\~ao}
+\begin{itemize}
+  \item Trainee: 0--12 meses -- base (Medical, BOSIET, H2S, IWCF L1).
+  \item J\'unior/Field Engineer: 1--3 anos -- IWCF Level 2.
+  \item Pleno/S\'enior: 3--10 anos -- IWCF L3/L4, MPD; progress\~ao r\'apida com experi\^encia em campanha.
+\end{itemize}
+
+\section{Mini-projetos pr\'aticos (portf\'olio) -- prioridades e ferramentas}
+Sugest\~oes de projetos com alto impacto para entrevistas:
+\begin{enumerate}
+  \item Decline Curve Analysis App (Streamlit + Plotly): upload de CSV, ajuste de curvas, cen\'arios de previs\~ao.
+  \item Dashboard de Performance de Po\c{c}os (Power BI): KPIs, anomalias, drill-down por po\c{c}o.
+  \item Nodal Analysis Interativo (Python): calcula ponto de opera\c{c}\~ao e sensitivity analysis.
+  \item Predi\c{c}\~ao de ROP (XGBoost): modelo ML com feature engineering sobre dados abertos.
+  \item Checklist digital de inspe\c{c}\~ao (Streamlit): fotos, logs, export CSV/relat\'orio.
+\end{enumerate}
+
+Documente tudo no GitHub, inclua README completo, GIFs e um pitch de 2 minutos para cada projeto.
+
+\section{Migra\c{c}\~ao internacional e valida\c{c}\~oes}
+\subsection{Pilares de valida\c{c}\~ao}
+OPITO BOSIET/HUET, IWCF (levels), NEBOSH IGC, diploma reconhecido e flu\^encia em ingl\^es (TOEIC/IELTS) s\~ao os principais elementos que validam o seu perfil fora de Angola.
+
+\subsection{Roteiro de migra\c{c}\~ao}
+\begin{enumerate}
+  \item Consolidar experi\^encia local (3--5 anos) em projetos com empresas multinacionais.
+  \item Atualizar CV e LinkedIn em ingl\^es; construir network e seguir recrutadoras internacionais.
+  \item Procurar vagas com sponsorship e preparar tradu\c{c}\~oes juramentadas do diploma quando necess\'ario.
+\end{enumerate}
+
+\section{Pr\'oximos passos inmediatos (checklist)}
+\begin{itemize}
+  \item Abrir conta de poupan\c{c}a dedicada.
+  \item Atualizar CV e LinkedIn (PT/EN); inscrever-se na SPE.
+  \item Agendar exame m\'edico para Julho/2026.
+  \item Iniciar estudo IWCF Level 1 e criar primeiro mini-projeto (dashboard de produ\c{c}\~ao).
+\end{itemize}
+
+\section*{Conclus\~ao}
+Este relat\'orio reune todo o trabalho e as decis\~oes praticas: or\'camento, cronograma, lista de certifica\c{c}\~oes, fornecedores, vagas, mini-projetos e plano de migra\c{c}\~ao internacional. Execute os passos em ordem, mantenha disciplina de poupan\c{c}a e prove continuamente suas habilidades com projetos pr\'aticos. Boa sorte — avise-me quando quiser que eu gere o PDF final e fa\c{c}a o commit e push das altera\c{c}\~oes.
+
+% ------------------------- Fim do Relat\'orio Inserido -------------------------
+
+\end{document}

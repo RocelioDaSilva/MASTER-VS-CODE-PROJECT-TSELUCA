@@ -1,0 +1,82 @@
+{
+  "mapa_irradiacao": {
+    "descricao": "Irradia\u00e7\u00e3o Solar - Hu\u00edla, Angola",
+    "unidade": "kWh/m\u00b2/dia",
+    "min": 5.5,
+    "max": 6.400000095367432,
+    "media": 6.038494110107422,
+    "resolucao_pixels": "300x280",
+    "shape": [
+      280,
+      300
+    ]
+  },
+  "mapa_populacao": {
+    "descricao": "Densidade Populacional (Luzes Noturnas)",
+    "unidade": "nanoWatts/cm\u00b2/sr",
+    "min": 10.0,
+    "max": 70.80415344238281,
+    "media": 16.49553871154785,
+    "resolucao_pixels": "300x280",
+    "shape": [
+      280,
+      300
+    ]
+  },
+  "mapa_distancia_rede": {
+    "descricao": "Dist\u00e2ncia \u00e0 Rede El\u00e9trica Existente",
+    "unidade": "km",
+    "min": 0.0,
+    "max": 45.0,
+    "media": 29.848684310913086,
+    "resolucao_pixels": "300x280",
+    "shape": [
+      280,
+      300
+    ]
+  },
+  "mapa_declividade": {
+    "descricao": "Declividade do Terreno",
+    "unidade": "graus",
+    "min": 0.06377863883972168,
+    "max": 30.0,
+    "media": 16.50929069519043,
+    "resolucao_pixels": "300x280",
+    "shape": [
+      280,
+      300
+    ]
+  },
+  "mapa_ndvi": {
+    "descricao": "NDVI - \u00cdndice de Vegeta\u00e7\u00e3o",
+    "unidade": "adimensional",
+    "min": 0.02560761570930481,
+    "max": 0.699999988079071,
+    "media": 0.47305625677108765,
+    "resolucao_pixels": "300x280",
+    "shape": [
+      280,
+      300
+    ]
+  },
+  "mapa_aptidao_integrada": {
+    "descricao": "Mapa de Aptid\u00e3o Integrada (Resultado MCDA)",
+    "unidade": "[0,1]",
+    "min": 0.13397936522960663,
+    "max": 0.7110936045646667,
+    "media": 0.4156549870967865,
+    "resolucao_pixels": "300x280",
+    "shape": [
+      280,
+      300
+    ],
+    "metodo": "Weighted Overlay (AHP + MCDA)",
+    "pesos": {
+      "irradiacao": 0.25,
+      "populacao": 0.25,
+      "distancia_rede": 0.2,
+      "declividade": 0.15,
+      "ndvi": 0.15
+    }
+  }
+}

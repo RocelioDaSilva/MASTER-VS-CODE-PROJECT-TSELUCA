@@ -1,0 +1,69 @@
+{
+  "endpoint": "POST /api/calculate-financial-metrics",
+  "description": "Calculate ROI, LCOE, and payback period for communities",
+  "method": "POST",
+  "url": "http://localhost:3000/api/calculate-financial-metrics",
+  "summary": "Compute financial analysis",
+  
+  "request": {
+    "headers": {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    },
+    "body": {
+      "scenarios": [
+        {
+          "name": "Luanda High Potential",
+          "ghi": 5.5,
+          "terrain": 0.15,
+          "population_rank": 0.95,
+          "grid_distance_km": 25,
+          "ndvi": 0.3,
+          "nightlights": 0.8
+        }
+      ],
+      "financial_config": {
+        "capex_per_mw": 1500000,
+        "opex_annual": 50000,
+        "lifetime_years": 25,
+        "discount_rate": 0.08,
+        "annual_production_kwh": 1800000
+      },
+      "power_capacity_mw": 10
+    }
+  },
+  
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "success": true,
+      "message": "Financial metrics calculated",
+      "data": {
+        "results": [
+          {
+            "name": "Luanda High Potential",
+            "lcoe": 0.083,
+            "roi_percentage": 18.5,
+            "payback_years": 5.4,
+            "total_investment": 15000000,
+            "annual_revenue": 216000,
+            "npv": 850000,
+            "irr": 0.185
+          }
+        ]
+      }
+    }
+  },
+  
+  "notes": [
+    "LCOE = Levelized Cost of Energy ($/kWh)",
+    "ROI = Return on Investment (%)",
+    "Payback = Years to recover initial investment",
+    "All monetary values in USD",
+    "Rates are for Angolan context (2026)"
+  ]
+}

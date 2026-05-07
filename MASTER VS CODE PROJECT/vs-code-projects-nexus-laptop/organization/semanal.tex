@@ -1,0 +1,853 @@
+\documentclass[a4paper,11pt]{article}
+
+% ─── Packages ───────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\newcommand{\faHome}{$\blacksquare$}
+\newcommand{\faLanguage}{[FR]}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+% titlesec removed
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+% microtype removed for compatibility
+\usepackage{parskip}
+\usepackage{amssymb}
+\usepackage{wasysym}
+
+% ─── Cores ──────────────────────────────────────────────────────────────────
+\definecolor{dark}{HTML}{1a1a2e}
+\definecolor{accent}{HTML}{e94560}
+\definecolor{mid}{HTML}{16213e}
+\definecolor{light}{HTML}{0f3460}
+\definecolor{gold}{HTML}{f5a623}
+\definecolor{silver}{HTML}{c0c0c0}
+\definecolor{green}{HTML}{27ae60}
+\definecolor{softbg}{HTML}{f4f6fb}
+\definecolor{tabhead}{HTML}{2c3e50}
+\definecolor{cardio}{HTML}{e74c3c}
+\definecolor{forca}{HTML}{2980b9}
+\definecolor{intenso}{HTML}{8e44ad}
+\definecolor{recovery}{HTML}{27ae60}
+\definecolor{along}{HTML}{f39c12}
+\definecolor{graytext}{HTML}{555555}
+
+% ─── Estilo de página ────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\small\color{graytext}\textbf{ROCÉLIO} \quad Cronograma 2026 · Plano de Alto Desempenho}
+\fancyfoot[C]{\small\color{graytext}\thepage}
+
+% ─── Formatação de secções ───────────────────────────────────────────────────
+\newcommand{\mysection}[1]{%
+  \vspace{16pt}
+  \noindent\colorbox{dark}{\parbox{\linewidth}{\color{white}\large\bfseries\quad #1}}
+  \vspace{8pt}\par
+}
+\newcommand{\mysubsection}[1]{%
+  \vspace{10pt}
+  \noindent\colorbox{light}{\parbox{\linewidth}{\color{white}\normalsize\bfseries\quad #1}}
+  \vspace{5pt}\par
+}
+
+% ─── Caixas personalizadas ───────────────────────────────────────────────────
+\tcbset{
+  pilarbox/.style={
+    enhanced, sharp corners,
+    colback=dark, colframe=accent, coltitle=white,
+    fonttitle=\bfseries\large,
+    boxrule=2pt, left=8pt, right=8pt, top=6pt, bottom=6pt,
+    drop shadow
+  },
+  daybox/.style={
+    enhanced, sharp corners,
+    colback=softbg, colframe=dark,
+    fonttitle=\bfseries,
+    boxrule=1pt, left=8pt, right=8pt, top=5pt, bottom=5pt,
+  },
+  metricbox/.style={
+    enhanced, sharp corners,
+    colback=dark, colframe=accent,
+    fonttitle=\bfseries, coltitle=white,
+    coltext=white,
+    boxrule=1.5pt, left=6pt, right=6pt, top=5pt, bottom=5pt,
+  }
+}
+
+% ─── Comando de badge colorido ───────────────────────────────────────────────
+\newcommand{\badge}[2]{%
+  \colorbox{#1}{\color{white}\footnotesize\textbf{\strut\;#2\;}}%
+}
+
+\newcommand{\kpi}[3]{%
+  \begin{tcolorbox}[metricbox, title=#1]
+    \centering\LARGE\textbf{#2}\\[2pt]\small #3
+  \end{tcolorbox}%
+}
+
+% ════════════════════════════════════════════════════════════════════════════
+\begin{document}
+\thispagestyle{empty}
+
+% ─── CAPA ────────────────────────────────────────────────────────────────────
+\pagecolor{dark}
+\color{white}
+
+\vspace*{2cm}
+\begin{center}
+  {\fontsize{48}{52}\selectfont\bfseries\color{accent} ROCÉLIO}\\[6pt]
+  {\Large\color{silver} CRONOGRAMA 2026 · Plano de Alto Desempenho}\\[30pt]
+  {\normalsize\color{silver} Fitness \quad·\quad Académico \quad·\quad Francês}
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{center}
+\begin{tikzpicture}
+  \draw[accent, line width=1.5pt] (0,0) -- (14,0);
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+% KPIs da capa
+\begin{center}
+\begin{tabular}{ccc}
+  \begin{minipage}{4cm}
+    \centering
+    \begin{tcolorbox}[metricbox, width=4cm]
+      \centering
+      {\Large\bfseries FITNESS}\\[4pt]
+      {\color{accent}\huge\bfseries 95 → 75}\\
+      {\small quilos em 2026}\\[2pt]
+      {\color{accent}\bfseries $-$20 kg}
+    \end{tcolorbox}
+  \end{minipage}
+  &
+  \begin{minipage}{4cm}
+    \centering
+    \begin{tcolorbox}[metricbox, width=4cm]
+      \centering
+      {\Large\bfseries FRANCÊS}\\[4pt]
+      {\color{accent}\huge\bfseries A0 → B1}\\
+      {\small CEFR · 200--240 horas}\\[2pt]
+      {\color{gold}\bfseries Alliance Française}
+    \end{tcolorbox}
+  \end{minipage}
+  &
+  \begin{minipage}{4cm}
+    \centering
+    \begin{tcolorbox}[metricbox, width=4cm]
+      \centering
+      {\Large\bfseries ACADÉMICO}\\[4pt]
+      {\color{accent}\huge\bfseries APROVAÇÃO}\\
+      {\small RMAT \& GEOEST}\\[2pt]
+      {\color{gold}\bfseries Exames Universitários}
+    \end{tcolorbox}
+  \end{minipage}
+\end{tabular}
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{center}
+\begin{tikzpicture}
+  \draw[accent, line width=1.5pt] (0,0) -- (14,0);
+\end{tikzpicture}
+\end{center}
+
+\vspace{1cm}
+
+% Pilar Central
+\begin{tcolorbox}[pilarbox, title={$\bigstar$ O PILAR CENTRAL}, width=\textwidth]
+  \centering
+  {\large Estar em \textbf{CASA às 18:50} para o treino das \textbf{19:00}}\\[6pt]
+  {\small Qualquer horário não especificado = universidade, transporte ou actividades.}\\[4pt]
+  {\color{accent}\bfseries Este bloco de treino é inegociável. O dia é construído à volta dele.}
+\end{tcolorbox}
+
+\newpage
+\pagecolor{white}
+\color{dark}
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Índice de Conteúdos}
+
+\vspace{8pt}
+
+\begin{multicols}{2}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item Visão Geral Semanal
+  \item Horário Estudantil — Aulas Semanais
+  \item Cronograma Diário Detalhado
+  \item Plano de Francês — A0 até B1
+  \item Ganhos do Cardio \& Números-Chave
+  \item Marcos Mensais 2026
+  \item Nutrição e Recuperação
+  \item Fundamentação Científica
+  \item Checklist Semanal — Tracker de Consistência
+\end{enumerate}
+\end{multicols}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Visão Geral Semanal}
+
+\vspace{6pt}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{>{\bfseries\centering}p{1.2cm} >{\centering}p{3.2cm} >{\centering}p{2.2cm} >{\centering}p{1.6cm} >{\centering}p{1.8cm} >{\centering\arraybackslash}p{2.2cm}}
+\rowcolor{tabhead}
+\color{white}\textbf{DIA} &
+\color{white}\textbf{TREINO} &
+\color{white}\textbf{HORÁRIO} &
+\color{white}\textbf{DURAÇÃO} &
+\color{white}\textbf{LOCAL} &
+\color{white}\textbf{GANHO} \\
+\rowcolor{softbg}
+SEG & Full Body Força & 19:00--20:15 & 75 min & Casa & \faHome \\
+TER & Alongamento Activo & 18:30--19:00 & 30 min & Casa & \faHome \\
+\rowcolor{softbg}
+QUA & Full Body Intenso & 19:00--20:15 & 75 min & Casa & \faHome \\
+QUI & \badge{cardio}{CARDIO 10 km} & 14:00--15:30 & 75 min & Rua & \textbf{2.000 kzs} \\
+\rowcolor{softbg}
+SEX & Full Body Recovery & 19:00--20:15 & 75 min & Casa & \faHome \\
+SAB & \badge{cardio}{CARDIO 10 km} & 14:00--15:30 & 75 min & Rua & \textbf{2.000 kzs} \\
+\rowcolor{softbg}
+DOM & \badge{cardio}{CARDIO 10 km} & 14:00--15:30 & 75 min & Rua & \textbf{2.000 kzs} \\
+\midrule
+\multicolumn{2}{l}{\textbf{SEMANA}} & & \textbf{480 min} & & \textbf{6.000 kzs} \\
+\multicolumn{5}{l}{\textbf{MÊS}} & \textbf{25.800 kzs} \\
+\end{tabularx}
+
+\vspace{18pt}
+
+% Gráfico de horários semanal
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=14cm, height=7cm,
+  xmin=0.5, xmax=7.5,
+  ymin=5.5, ymax=22,
+  ytick={6,8,10,12,14,16,18,20,22},
+  yticklabels={6h,8h,10h,12h,14h,16h,18h,20h,22h},
+  xtick={1,2,3,4,5,6,7},
+  xticklabels={SEG,TER,QUA,QUI,SEX,SAB,DOM},
+  axis lines=left,
+  grid=both, grid style={line width=0.3pt, draw=gray!20},
+  tick style={draw=none},
+  ylabel style={color=graytext},
+  xlabel style={color=graytext},
+  yticklabel style={color=graytext, font=\footnotesize},
+  xticklabel style={color=dark, font=\bfseries\footnotesize},
+  ymajorgrids=true,
+  y dir=reverse,
+]
+  % SEG - Força 19-20:15
+  \addplot[fill=forca!80, draw=forca, opacity=0.9] coordinates {(0.6,19) (1.4,19) (1.4,20.25) (0.6,20.25)} -- cycle;
+  % TER - Alongamento 18:30-19
+  \addplot[fill=along!80, draw=along, opacity=0.9] coordinates {(1.6,18.5) (2.4,18.5) (2.4,19) (1.6,19)} -- cycle;
+  % QUA - Intenso 19-20:15
+  \addplot[fill=intenso!80, draw=intenso, opacity=0.9] coordinates {(2.6,19) (3.4,19) (3.4,20.25) (2.6,20.25)} -- cycle;
+  % QUI - Cardio 14-15:30
+  \addplot[fill=cardio!80, draw=cardio, opacity=0.9] coordinates {(3.6,14) (4.4,14) (4.4,15.5) (3.6,15.5)} -- cycle;
+  % SEX - Recovery 19-20:15
+  \addplot[fill=recovery!80, draw=recovery, opacity=0.9] coordinates {(4.6,19) (5.4,19) (5.4,20.25) (4.6,20.25)} -- cycle;
+  % SAB - Cardio 14-15:30
+  \addplot[fill=cardio!80, draw=cardio, opacity=0.9] coordinates {(5.6,14) (6.4,14) (6.4,15.5) (5.6,15.5)} -- cycle;
+  % DOM - Cardio 14-15:30
+  \addplot[fill=cardio!80, draw=cardio, opacity=0.9] coordinates {(6.6,14) (7.4,14) (7.4,15.5) (6.6,15.5)} -- cycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+% Legenda
+\begin{center}
+\begin{tabular}{ccccc}
+  \badge{forca}{Força} &
+  \badge{intenso}{Intenso} &
+  \badge{recovery}{Recovery} &
+  \badge{along}{Alongamento} &
+  \badge{cardio}{Cardio} \\
+\end{tabular}
+\end{center}
+
+\vspace{14pt}
+
+\mysubsection{Metas SMART — Métricas de Sucesso}
+
+\vspace{6pt}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{2.8cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}\textbf{Pilar} &
+\color{white}\textbf{Meta Específica} \\
+\rowcolor{softbg}
+FITNESS & Atingir 75 kg (perda de 20 kg em 12 meses) a $\sim$ 1,7 kg/mês \\
+FRANCÊS & Alcançar nível B1 (CEFR) em 240 horas até Dezembro \\
+\rowcolor{softbg}
+ACADÉMICO & Aprovação em RMAT e GEOEST nos exames semestrais (>10 valores) \\
+CONSISTÊNCIA & 85\% de aderência semanal (5 de 6 hábitos diários) \\
+\end{tabularx}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Horário Estudantil — Aulas Semanais}
+
+\vspace{6pt}
+
+\textbf{Estrutura de 3 Tempos de Manhã + Aulas de Tarde}
+
+\vspace{8pt}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{>{\bfseries\centering}p{2.2cm} >{\centering}p{1.3cm} >{\centering}p{1.3cm} >{\centering}p{1.3cm} >{\centering}p{1.3cm} >{\centering}p{1.3cm} >{\centering}p{1.3cm} >{\centering\arraybackslash}p{1.3cm}}
+\rowcolor{tabhead}
+\color{white}\textbf{Horário} &
+\color{white}\textbf{DOM} &
+\color{white}\textbf{SEG} &
+\color{white}\textbf{TER} &
+\color{white}\textbf{QUA} &
+\color{white}\textbf{QUI} &
+\color{white}\textbf{SEX} &
+\color{white}\textbf{SÁB} \\
+\rowcolor{blue!15}
+\textit{\small TEMPO 1} & & & & & & & \\
+7:30--9:00 & & & & MR & & & \\
+\rowcolor{blue!10}
+\textit{\small TEMPO 2} & & & & & & & \\
+9:00--10:30 & & MR & ER I & & ER I & & \\
+\rowcolor{blue!15}
+\textit{\small TEMPO 3} & & & & & & & \\
+10:45--12:15 & & RMAT & RMAT & & & & \\
+\rowcolor{red!10}
+\textit{\small TARDE} & & & & & & & \\
+14:30--16:15 & & & & & & GEOEST & \\
+\rowcolor{red!15}
+16:15--17:45 & & & GEOEST & & & & \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tcolorbox}[enhanced, colback=softbg, colframe=dark, sharp corners, left=6pt, right=6pt, top=6pt, bottom=6pt, boxrule=1pt]
+  \textbf{Legenda da Estrutura:}
+  \begin{itemize}[leftmargin=0.5em, itemsep=2pt, topsep=3pt, partopsep=0pt]
+    \item \textbf{3 Tempos de Manhã:} Tempo 1 (7:30--9:00) | Tempo 2 (9:00--10:30) | Tempo 3 (10:45--12:15)
+    \item \textbf{Aulas Agrupadas:} MR (SEG 9:00--10:30 + QUA 7:30--9:00) | ER I (TER + QUI ambas 9:00--10:30) | RMAT (SEG + TER ambas 10:45--12:15) | GEOEST (TER 16:15--17:45 + SEX 14:30--16:15)
+    \item \textbf{Cor Azul:} Blocos de manhã | \textbf{Cor Vermelha:} Blocos de tarde
+  \end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Cronograma Diário Detalhado}
+
+\vspace{6pt}
+
+% SEGUNDA
+\begin{tcolorbox}[daybox, title={\badge{forca}{SEGUNDA} \quad Full Body Força + Artigo Científico}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Aulas:} MR (9:00--10:30) · RMAT (10:45--12:15)
+    \item \textbf{Artigo Científico:} 12:15--13:15 (1h entre aulas)
+    \item \textbf{Saída universidade:} até 17:45 \quad \textbf{Chegada a casa:} 18:50 (30 min margem)
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=forca!10, colframe=forca, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{TREINO: 19:00--20:15 \;|\; Calistenia Full Body \;|\; 75 min}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+% TERÇA
+\begin{tcolorbox}[daybox, title={\badge{along}{TERÇA} \quad Dia Longo + Alongamento}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Aulas:} ER I (9h--10:45) · RMAT (10:45--11:30) · GEOEST (16:15--17:45)
+    \item \textbf{Saída:} 17:45 exacto \quad \textbf{Chegada:} 18:30
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=along!10, colframe=along, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{APENAS ALONGAMENTO: 18:30--19:00 \;|\; 30 min activos}
+  \end{tcolorbox}
+  \vspace{4pt}
+  {\small\color{graytext}\textit{Dia académico longo — preservar energia. Alongamento é recuperação activa, não é opcional.}}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+% QUARTA
+\begin{tcolorbox}[daybox, title={\badge{intenso}{QUARTA} \quad Full Body Intenso + Competição Académica}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Aulas:} MR (7:30--9:00)
+    \item \textbf{Preparação Competição:} 10:00--11:00 (1h treino específ. académica)
+    \item \textbf{Rest do dia:} Disponível para estudo, Anki e Francês
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=intenso!10, colframe=intenso, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{TREINO: 19:00--20:15 \;|\; Full Body INTENSO \;|\; 75 min}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+% QUINTA
+\begin{tcolorbox}[daybox, title={\badge{cardio}{QUINTA} \quad CARDIO DAY + Artigo Científico}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Aulas:} ER I (9h--10:45)
+    \item \textbf{Chegada a casa:} 11:30
+    \item \textbf{Artigo Científico:} 11:30--12:30 (1h entre aulas e treino)
+    \item \textbf{Prep/Almoço:} 12:30--14:00
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=cardio!10, colframe=cardio, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{TREINO: CARDIO 10 km \;|\; 14:00--15:30 \;|\; 2.000 kzs por sessão}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+% SEXTA
+\begin{tcolorbox}[daybox, title={\badge{recovery}{SEXTA} \quad Full Body Recovery}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Aulas:} GEOEST (14:30--16:15)
+    \item \textbf{Saída:} 16:45 \quad \textbf{Chegada:} 17:30 (90 min de prep)
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=recovery!10, colframe=recovery, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{TREINO: 19:00--20:15 \;|\; Full Body Recovery \;|\; 75 min}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+% SÁBADO
+\begin{tcolorbox}[daybox, title={\badge{cardio}{SÁBADO} \quad CARDIO DAY + Competição}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Manhã:} Livre (7h--14h) · Estudo: Francês + Anki
+    \item \textbf{Preparação Competição:} 10:00--11:00 (1h treino específ. académica)
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=cardio!10, colframe=cardio, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{TREINO: CARDIO 10 km \;|\; 14:00--15:30 \;|\; 2.000 kzs}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+% DOMINGO
+\begin{tcolorbox}[daybox, title={\badge{cardio}{DOMINGO} \quad CARDIO DAY}]
+  \begin{itemize}[leftmargin=1em, itemsep=2pt]
+    \item \textbf{Manhã:} Livre (7h--14h) · Noite: Planeamento + Anki
+  \end{itemize}
+  \vspace{4pt}
+  \begin{tcolorbox}[enhanced, colback=cardio!10, colframe=cardio, sharp corners, boxrule=1pt, left=5pt]
+    \textbf{TREINO: CARDIO 10 km \;|\; 14:00--15:30 \;|\; 2.000 kzs}
+  \end{tcolorbox}
+\end{tcolorbox}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Plano de Francês — A0 até B1}
+
+\vspace{6pt}
+
+\begin{tcolorbox}[enhanced, colback=mid!90, colframe=light, coltext=white, sharp corners, title={\faLanguage\quad Roteiro Linguístico 2026}, fonttitle=\bfseries\large]
+  \begin{multicols}{2}
+    \textbf{Meta:} Nível B1 (CEFR) em Francês\\
+    \textbf{Horas necessárias:} 200--240 horas\\
+    \textbf{Estudo diário:} 45--60 min/dia\\
+    \textbf{Prazo:} 10--12 meses
+
+    \columnbreak
+
+    \textbf{Ferramentas principais:}
+    \begin{itemize}[leftmargin=1em, itemsep=1pt]
+      \item Anki — cartões Spaced Repetition
+      \item Pimsleur / Assimil — input auditivo
+      \item Duolingo Pro — vocabulário diário
+      \item RFI / TV5Monde — imersão real
+      \item iTalki — conversação com nativos
+    \end{itemize}
+  \end{multicols}
+\end{tcolorbox}
+
+\vspace{10pt}
+
+\textbf{Fases de Progressão:}
+
+\vspace{6pt}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{>{\bfseries\centering\arraybackslash}p{2cm} >{\centering\arraybackslash}p{2.5cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}Nível & \color{white}Período & \color{white}Foco \\
+\rowcolor{softbg}
+A1 & Jan--Fev & Fonética e básico \\
+A2 & Mar--Mai & Gramática essencial \\
+\rowcolor{softbg}
+B1$^{-}$ & Jun--Ago & Leitura e escrita \\
+B1 & Set--Dez & Fluência oral \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tcolorbox}[enhanced, colback=gold!10, colframe=gold, sharp corners, title={SRS — Intervalos Pimsleur (1967)}, fonttitle=\bfseries]
+  5s $\to$ 25s $\to$ 2min $\to$ 10min $\to$ 1h $\to$ 5h $\to$ 1d $\to$ 5d $\to$ 25d $\to$ 4 meses
+\end{tcolorbox}
+
+\vspace{12pt}
+
+\textbf{Sessão de Estudo Diária — Estrutura Recomendada:}
+
+\vspace{6pt}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.5cm} >{\centering\arraybackslash}p{2cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}Bloco & \color{white}Duração & \color{white}Actividade \\
+\rowcolor{softbg}
+Anki (revisão) & 15 min & Revisão de cartões vencidos + 15--20 cartões novos \\
+Input auditivo & 20 min & Pimsleur ou podcast em Francês \\
+\rowcolor{softbg}
+Gramática & 15 min & 1 ponto gramatical + 3 frases escritas \\
+Imersão & 10 min & Notícia RFI ou clip TV5Monde \\
+\end{tabularx}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Ganhos do Cardio \& Números-Chave}
+
+\vspace{10pt}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  ybar,
+  width=12cm, height=7cm,
+  bar width=2.5cm,
+  symbolic x coords={Semana, Mês, Trimestre, Anual},
+  xtick=data,
+  ymin=0, ymax=120000,
+  ytick={0,30000,60000,90000,120000},
+  yticklabels={0,30k,60k,90k,120k},
+  ylabel={Kwanzas (kzs)},
+  ylabel style={color=graytext, font=\bfseries},
+  xticklabel style={font=\bfseries, color=dark},
+  axis lines=left,
+  grid=both, grid style={gray!20, line width=0.3pt},
+  nodes near coords,
+  nodes near coords style={font=\bfseries\small, color=dark},
+  every node near coord/.append style={yshift=2pt},
+]
+  \addplot[fill=accent!80, draw=accent] coordinates {
+    (Semana, 6000)
+    (Mês, 25800)
+    (Trimestre, 77400)
+    (Anual, 309600)
+  };
+\end{axis}
+\end{tikzpicture}
+
+{\small\color{graytext}\textit{Projecção Financeira — Actividade de Cardio 10 km à 2.000€/sessão}}
+\end{center}
+
+\vspace{14pt}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{4.5cm} >{\centering\arraybackslash}p{3cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}Métrica & \color{white}Valor & \color{white}Notas \\
+\rowcolor{softbg}
+Treinos por semana & 6 sessões & 3 força + 3 cardio \\
+Cardio por semana & 30 km & 3 × 10 km \\
+\rowcolor{softbg}
+Ganho cardio/semana & 6.000 kzs & 1.000 kzs / 5 km \\
+Ganho por mês & 25.800 kzs & 6.000 × 4,3 semanas \\
+\rowcolor{softbg}
+Ganho por trimestre & 77.400 kzs & 25.800 × 3 meses \\
+Ganho anual & 309.600 kzs & 77.400 × 4 trimestres \\
+\rowcolor{softbg}
+Sono diário & 7--9 horas & \textbf{NÃO NEGOCIÁVEL} \\
+Proteína/refeição & 30--35 g & 5 refeições por dia \\
+\rowcolor{softbg}
+Exercício total/sem. & 480 min & 8 horas semanais \\
+Estudo Francês/dia & 45--60 min & SRS + imersão \\
+\rowcolor{softbg}
+Horas p/ atingir B1 & 200--240 h & CEFR / Alliance Française \\
+\end{tabularx}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Marcos Mensais 2026 — Progressão de Metas}
+
+\vspace{8pt}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{>{\bfseries\centering}p{1.5cm} >{\centering}p{2.2cm} >{\centering}p{2.2cm} >{\centering}p{2.2cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}\textbf{Mês} &
+\color{white}\textbf{Peso} &
+\color{white}\textbf{Francês} &
+\color{white}\textbf{Cardio} &
+\color{white}\textbf{Checkpoint Académico} \\
+\rowcolor{softbg}
+\textbf{JAN} & 95 → 92 kg & A0 → A1- & 120 km (4.800€) & Diagnosticar fraquezas RMAT \\
+\textbf{FEV} & 92 → 89 kg & A1- → A1+ & 120 km (4.800€) & Mini-teste RMAT \\
+\rowcolor{softbg}
+\textbf{MAR} & 89 → 86 kg & A1+ → A2- & 120 km (4.800€) & Revisão GEOEST \\
+\textbf{ABR} & 86 → 83 kg & A2- → A2 & 120 km (4.800€) & Exercícios RMAT \\
+\rowcolor{softbg}
+\textbf{MAI} & 83 → 80 kg & A2 → A2+ & 120 km (4.800€) & Revisão GEOEST \\
+\textbf{JUN} & 80 → 78 kg & A2+ → B1- & 120 km (4.800€) & Preparação exame S1 \\
+\rowcolor{softbg}
+\textbf{JUL} & 78 → 76 kg & B1- → B1 & 120 km (4.800€) & Pausa académica \\
+\textbf{AGO} & 76 → 75 kg & B1 · Consolidação & 120 km (4.800€) & Preparação S2 \\
+\rowcolor{softbg}
+\multicolumn{5}{c}{\cellcolor{tabhead}\color{white}\textbf{Meta Final: 75 kg · Nível B1 · 4 trimestres · Promoção académica}} \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tcolorbox}[enhanced, colback=gold!10, colframe=gold, sharp corners, boxrule=1.5pt, left=8pt, right=8pt, top=6pt, bottom=6pt]
+  {\small\color{dark}
+    \textbf{Princípio de Progressão:} Cada mês reduz 2--3 kg de peso corporal e eleva uma sub-unidade de CEFR. Qualquer desvio $>$ 0,5 kg trigera ajuste de calorias na semana seguinte.
+  }
+\end{tcolorbox}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Nutrição e Recuperação — Pilares de Progressão}
+
+\vspace{8pt}
+
+\mysubsection{Macronutrientes — Distribuição Diária}
+
+\vspace{6pt}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.5cm} >{\centering\arraybackslash}p{2.5cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}\textbf{Macronutriente} &
+\color{white}\textbf{Meta Diária} &
+\color{white}\textbf{Fontes Recomendadas} \\
+\rowcolor{softbg}
+Proteína & 150--170 g & Ovos, frango, iogurte, leguminosas \\
+Carboidratos & 250--300 g & Aveia, arroz integral, batata-doce \\
+\rowcolor{softbg}
+Gorduras & 50--65 g & Azeite, abacate, nozes, peixe \\
+Fibra & 30+ g & Vegetais, leguminosas, grãos inteiros \\
+\rowcolor{softbg}
+Calorias (défice) & 2.200--2.400 kcal & $-$300 a $-$500 kcal vs. manutenção \\
+\end{tabularx}
+
+\vspace{10pt}
+
+\mysubsection{Ciclo de Sono — Não Negociável}
+
+\vspace{6pt}
+
+\begin{tcolorbox}[enhanced, colback=forca!10, colframe=forca, sharp corners, boxrule=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt]
+  \textbf{Sono ideal:} 7h 30min--9h por noite. Dormir entre as 21:00--22:00 e acordar 6:30--7:00.
+  
+  \vspace{4pt}
+  
+  \textbf{Razão científica:} Ciclos REM completos (90 min cada) = pico de hormona de crescimento = mobilização preferencial de gordura visceral.
+\end{tcolorbox}
+
+\vspace{10pt}
+
+\mysubsection{Protocolo de Recuperação Pós-Treino}
+
+\vspace{6pt}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.5cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}\textbf{Fase} &
+\color{white}\textbf{Ação} \\
+\rowcolor{softbg}
+0--5 min pós-treino & Alongamento dinâmico (braços, pernas) \\
+5--30 min & Duche morna + refeição com 30g proteína + carbos \\
+\rowcolor{softbg}
+2--4 horas & Mobilidade / alongamento fixo \\
+\end{tabularx}
+
+\newpage
+
+% ════════════════════════════════════════════════════════════════════════════
+\mysection{Fundamentação Científica}
+
+\vspace{8pt}
+
+\begin{multicols}{2}
+
+\textbf{\color{forca}Perda de Peso e Composição}
+
+\begin{itemize}[leftmargin=1em, itemsep=4pt]
+  \item \textbf{Sono e Gordura (Nedeltcheva 2010)} —
+    7--9h de sono = 2× mais perda de gordura. 1 semana de sono reduzido corta a mobilização de gordura em 55\%.
+
+  \item \textbf{Gordura Visceral} —
+    Cardio + défice calórico = mobilização preferencial de gordura visceral vs.\ subcutânea.
+
+  \item \textbf{Calistenia (2017)} —
+    Comprovada para força, postura e composição corporal sem equipamento.
+\end{itemize}
+
+\columnbreak
+
+\textbf{\color{light}Aprendizagem de Francês}
+
+\begin{itemize}[leftmargin=1em, itemsep=4pt]
+  \item \textbf{CEFR Framework} —
+    200--240 horas para B1 em Francês. (Goethe-Institut \& Alliance Française)
+
+  \item \textbf{Testing Effect} —
+    Active Recall = 2--3× melhor retenção que revisão passiva. (50+ estudos desde 1909)
+
+  \item \textbf{Spaced Repetition (Pimsleur 1967)} —
+    Intervalos graduados = 2× mais retenção a longo prazo.
+
+  \item \textbf{Input Compreensível (Krashen)} —
+    Imersão em material i+1 acelera a aquisição natural.
+\end{itemize}
+
+\end{multicols}
+
+\vspace{14pt}
+
+\vspace{18pt}
+
+% ─── Plano de Contingência ────────────────────────────────────────────────
+\mysection{Estratégia de Contingência — Ajustes \& Recuperação}
+
+\vspace{8pt}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{2.8cm} >{\arraybackslash}X}
+\rowcolor{tabhead}
+\color{white}\textbf{Cenário} &
+\color{white}\textbf{Protocolo de Resposta} \\
+\rowcolor{softbg}
+Doença / Febre & Descansar 2--3 dias. Manter Anki. Retomar treino leve. \\
+Lesão menor & Modificar exercício (ex: flexões nos joelhos). Alongamento 15 min. \\
+\rowcolor{softbg}
+Aula extra / Imprevisto & Cardio de 5 km a corrida (30 min) em qualquer hora. \\
+Peso estagnado 2 sem. & -200 kcal extras ou +2 km cardio / semana. \\
+\rowcolor{softbg}
+Atraso francês 1 semana & Intensificar Anki +10 cartões novos. Adicionar podcast. \\
+Sem acesso à Academia & Aumentar repetições de calistenia em casa. \\
+\end{tabularx}
+
+\newpage
+
+% ─── Artigo Científico & Preparação para Competição Académica 2026 ───────────
+\mysection{Artigo Científico \& Preparação para Competição Académica 2026}
+
+\vspace{8pt}
+
+\subsubsection*{\Large\textbf{Protocolo de Leitura \& Escrita Científica (1h/dia)}}
+
+\begin{tcolorbox}[enhanced, frame hidden, rounded corners, colback=colmain!8, colframe=colmain!60, boxrule=2pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxsep=4pt, arc=8pt, outer arc=8pt]
+\begin{itemize}[before=\setlength\parindent{0pt}, label=\color{colmain}{\(\bullet\)}, itemsep=6pt, topsep=4pt]
+  \item \textbf{Sessão Diária (1h)}: Segunda 12:15--13:15, Quinta 11:30--12:30
+  \begin{itemize}[label=\textcolor{colmain}{–}, itemsep=4pt]
+    \item \textbf{Revisão} (10 min): Releitura de conceitos-chave e anotações da sessão anterior
+    \item \textbf{Escrita Focada} (40 min): Seções principais do artigo em blocos de 20 min + pausa 5 min
+    \item \textbf{Edição \& Melhorias} (10 min): Revisão rápida, correções e estrutura de frases
+  \end{itemize}
+  \item \textbf{Métricas}: 50--60 linhas/sessão (2-3 páginas/semana)
+  \item \textbf{Deadline}: 31 de Maio (finalização antes da competição)
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{10pt}
+
+\subsubsection*{\Large\textbf{Preparação para Competição Académica (Junho 2026)}}
+
+\vspace{6pt}
+
+\begin{tcolorbox}[enhanced, frame hidden, rounded corners, colback=coral!5, colframe=coral!50, boxrule=2pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxsep=4pt, arc=8pt, outer arc=8pt]
+\begin{itemize}[before=\setlength\parindent{0pt}, label=\color{coral}{\(\bullet\)}, itemsep=6pt, topsep=4pt]
+  \item \textbf{Estrutura Treino}: 3 sessões/semana (segunda 10:00--11:00, quarta 10:00--11:00, sábado 10:00--11:00)
+  \item \textbf{Fases de Preparação}:
+  \begin{itemize}[label=\textcolor{coral}{◆}, itemsep=4pt]
+    \item \textbf{Base (janeirO/Abril)}: Consolidação de conteúdos, problemas-tipo, trabalhos anteriores
+    \item \textbf{Intensificação (Maio)}: Simulações cronometradas, competições secundárias, análise de estratégias
+    \item \textbf{Taper (1--15 Junho)}: Revisão final, descanso estratégico, familiarização com formato
+    \item \textbf{Competição (d.v. Junho)}: Execução máxima, consistência, gestão de tempo
+  \end{itemize}
+  \item \textbf{Recursos}: Plataforma oficial, problemas resolvidos, vídeos tutoriais, grupo de estudo
+  \item \textbf{Meta}: Colocação top-10\% do ranking nacional
+\end{itemize}
+\end{tcolorbox}
+
+\vspace{14pt}
+
+% ─── Checklist Semanal ───────────────────────────────────────────────────────
+\mysection{Checklist Semanal — Tracker de Consistência}
+
+\vspace{8pt}
+
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\textwidth}{>{\arraybackslash}X *{7}{>{\centering\arraybackslash}p{1.05cm}}}
+\rowcolor{tabhead}
+\color{white}\textbf{Hábito} &
+\color{white}\textbf{S} & \color{white}\textbf{T} & \color{white}\textbf{Q} &
+\color{white}\textbf{Q} & \color{white}\textbf{S} & \color{white}\textbf{S} & \color{white}\textbf{D} \\
+\rowcolor{softbg}
+Treino (força ou cardio) & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+Francês (45 min) & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+\rowcolor{softbg}
+Anki (revisão diária) & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+Sono 7--9h & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+\rowcolor{softbg}
+Proteína 30g × 5 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+Estudo RMAT / GEOEST & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ \\
+\rowcolor{softbg}
+Entrada em casa: 18:50 & $\square$ & $\square$ & $\square$ & $\square$ & $\square$ & -- & -- \\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tcolorbox}[enhanced, colback=softbg, colframe=dark, sharp corners, left=6pt, right=6pt, top=4pt, bottom=4pt, boxrule=0.5pt]
+  {\small\color{graytext}
+    \textbf{Ritmo Meta:} Mínimo 5/6 hábitos [\checkmark] por dia (85\% de aderência). Fim de semana: 4/5 hábitos.
+  }
+\end{tcolorbox}
+
+\vspace{20pt}
+
+% ─── Rodapé final ────────────────────────────────────────────────────────────
+\begin{tcolorbox}[pilarbox, title={}]
+  \centering
+  {\large\bfseries COMEÇAR SEGUNDA-FEIRA — 19:00}\\[6pt]
+  {\normalsize Chegar às 18:50 · Treinar 19:00--20:15 · Dormir às 21:00+}\\[8pt]
+  {\color{accent}\bfseries Este cronograma é IMUTÁVEL. Não mude os horários. A consistência é o único caminho.}\\[10pt]
+  {\small\color{silver} Fitness · Francês · RMAT · GEOEST — 2026 · Versão 2.1}
+\end{tcolorbox}
+
+\end{document}

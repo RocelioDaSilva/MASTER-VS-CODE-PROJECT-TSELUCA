@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 60" width="800" height="60" role="img" aria-labelledby="subLabel">
+  <title id="subLabel">Subheader</title>
+  <style>
+    :root{--fg:#222;--accent:#6b3e26;}
+    svg{font-family: Georgia, serif;}
+    .text{font-size:20px; fill:var(--fg); font-style:italic;}
+    .dot{fill:var(--accent);}
+  </style>
+  <text x="40" y="36" class="text">Section — Memory</text>
+  <circle cx="24" cy="30" r="4" class="dot"/>
+</svg>

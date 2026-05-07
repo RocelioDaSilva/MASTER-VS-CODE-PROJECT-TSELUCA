@@ -1,0 +1,38 @@
+[2026-02-10 22:35:40] ======================================================================
+[2026-02-10 22:35:40] COMPREHENSIVE PROJECT REORGANIZATION
+[2026-02-10 22:35:40] ======================================================================
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] PHASE 1: Consolidating Archives
+[2026-02-10 22:35:40] ----------------------------------------------------------------------
+[2026-02-10 22:35:40] SUBMISSION_READY/ not found (may already be archived)
+[2026-02-10 22:35:40] writing/ not found (may already be archived)
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] PHASE 2: Organizing Root-Level Files
+[2026-02-10 22:35:40] ----------------------------------------------------------------------
+[2026-02-10 22:35:40] MOVED: REORGANIZATION_LOG.txt -> ARCHIVE/REORGANIZATION_LOG.txt
+[2026-02-10 22:35:40] MOVED: REORGANIZATION_SUMMARY.md -> ARCHIVE/REORGANIZATION_SUMMARY.md
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] PHASE 3: Checking for Nested Directories
+[2026-02-10 22:35:40] ----------------------------------------------------------------------
+[2026-02-10 22:35:40] WARNING: Found nested 'Full project' directory at: C:\Users\rocel\OneDrive\Desktop\MIT SCIENCE PAPER\Full project\Full project
+[2026-02-10 22:35:40] This may be a duplicate - consider reviewing contents
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] PHASE 4: Updating Path References
+[2026-02-10 22:35:40] ----------------------------------------------------------------------
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] PHASE 5: Final Cleanup
+[2026-02-10 22:35:40] ----------------------------------------------------------------------
+[2026-02-10 22:35:40] MOVED: reorganize_project.py -> ARCHIVE/reorganize_project.py
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] ======================================================================
+[2026-02-10 22:35:40] REORGANIZATION COMPLETE
+[2026-02-10 22:35:40] ======================================================================
+[2026-02-10 22:35:40] Files/Directories moved: 3
+[2026-02-10 22:35:40] Files with paths updated: 0
+[2026-02-10 22:35:40] Log file: C:\Users\rocel\OneDrive\Desktop\MIT SCIENCE PAPER\Full project\REORGANIZATION_LOG.txt
+[2026-02-10 22:35:40] 
+[2026-02-10 22:35:40] Root level should now be clean with only:
+[2026-02-10 22:35:40]   - README.md (main entry)
+[2026-02-10 22:35:40]   - run_geesp_app.bat (app launcher)
+[2026-02-10 22:35:40]   - reorganize_comprehensive.py (can be archived after review)
+[2026-02-10 22:35:40] 

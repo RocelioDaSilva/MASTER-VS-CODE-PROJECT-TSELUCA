@@ -1,0 +1,378 @@
+# Kubernetes Deployment Manifests for GEESP-Angola
+# Usage: kubectl apply -f k8s/geesp-app-deployment.yaml
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: geesp-production
+  labels:
+    name: geesp-production
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: geesp-app-config
+  namespace: geesp-production
+data:
+  REGION: "production"
+  LOG_LEVEL: "INFO"
+  STREAMLIT_SERVER_PORT: "8501"
+  STREAMLIT_LOGGER_LEVEL: "info"
+  # Database connection (host will use Service DNS)
+  DATABASE_HOST: "postgres.geesp-production.svc.cluster.local"
+  DATABASE_PORT: "5432"
+  DATABASE_NAME: "geesp_production"
+  # Redis
+  REDIS_HOST: "redis.geesp-production.svc.cluster.local"
+  REDIS_PORT: "6379"
+  # Monitoring
+  PROMETHEUS_ENABLED: "true"
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: geesp-database-credentials
+  namespace: geesp-production
+type: Opaque
+data:
+  # Base64 encoded (echo -n 'password' | base64)
+  # In production, use sealed-secrets or external-secrets
+  db-user: Z2Vlc3BfYXBw  # geesp_app
+  db-password: c2VjdXJlX2RiX3Bhc3N3b3JkX2hlcmU=  # secure_db_password_here
+  redis-password: cmVkaXNfc2VjdXJlX3Bhc3N3b3JkX2hlcmU=  # redis_secure_password_here
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: geesp-registry-credentials
+  namespace: geesp-production
+type: docker.io/docker
+data:
+  # Replace with actual credentials
+  .dockerconfigjson: eyJhdXRocyI6eyJyZWdpc3RyeS5leGFtcGxlLmNvbSI6eyJhdXRoIjoiZXhhbXBsZTpleGFtcGxlIn19fQo=
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geesp-app
+  namespace: geesp-production
+  labels:
+    app: geesp-app
+    component: frontend
+    version: v1
+spec:
+  replicas: 3  # Run 3 pods for high availability
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: geesp-app
+  template:
+    metadata:
+      labels:
+        app: geesp-app
+        component: frontend
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8501"
+        prometheus.io/path: "/metrics"
+    spec:
+      serviceAccountName: geesp-app
+      imagePullSecrets:
+        - name: geesp-registry-credentials
+      
+      containers:
+      - name: geesp-app
+        image: geesp-app:latest
+        imagePullPolicy: Always
+        
+        ports:
+        - name: streamlit
+          containerPort: 8501
+          protocol: TCP
+        
+        # Environment variables from ConfigMap and Secrets
+        envFrom:
+        - configMapRef:
+            name: geesp-app-config
+        
+        env:
+        - name: DATABASE_USER
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: db-user
+        - name: DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: db-password
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: geesp-database-credentials
+              key: redis-password
+        
+        # Resource requests and limits
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+        
+        # Health checks
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: streamlit
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        
+        readinessProbe:
+          httpGet:
+            path: /readyz
+            port: streamlit
+            scheme: HTTP
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 2
+        
+        # Volume mounts
+        volumeMounts:
+        - name: app-data
+          mountPath: /app/data
+        - name: cache
+          mountPath: /tmp/cache
+        
+        # Security context
+        securityContext:
+          runAsNonRoot: true
+          runAsUser: 1000
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+              - ALL
+          readOnlyRootFilesystem: false
+      
+      # Init container to wait for database
+      initContainers:
+      - name: wait-for-db
+        image: busybox:1.35
+        command:
+        - sh
+        - -c
+        - |
+          until nc -z postgres.geesp-production.svc.cluster.local 5432; do
+            echo "Waiting for PostgreSQL..."
+            sleep 2
+          done
+      
+      # Volumes
+      volumes:
+      - name: app-data
+        persistentVolumeClaim:
+          claimName: geesp-app-data
+      - name: cache
+        emptyDir:
+          sizeLimit: 1Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: geesp-app-data
+  namespace: geesp-production
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: geesp-app
+  namespace: geesp-production
+  labels:
+    app: geesp-app
+spec:
+  type: LoadBalancer  # Change to ClusterIP if using Ingress
+  ports:
+  - name: streamlit
+    port: 8501
+    targetPort: 8501
+    protocol: TCP
+  selector:
+    app: geesp-app
+
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: geesp-app-hpa
+  namespace: geesp-production
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: geesp-app
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: geesp-app-pdb
+  namespace: geesp-production
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: geesp-app
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: geesp-app
+  namespace: geesp-production
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: geesp-app-role
+  namespace: geesp-production
+rules:
+- apiGroups: [""]
+  resources: ["configmaps"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: geesp-app-rolebinding
+  namespace: geesp-production
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: geesp-app-role
+subjects:
+- kind: ServiceAccount
+  name: geesp-app
+  namespace: geesp-production
+
+---
+# Optional: Ingress for HTTP routing
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: geesp-app-ingress
+  namespace: geesp-production
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - geesp-app.example.com
+    secretName: geesp-app-tls
+  rules:
+  - host: geesp-app.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: geesp-app
+            port:
+              number: 8501
+
+---
+# NetworkPolicy for security
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: geesp-app-network-policy
+  namespace: geesp-production
+spec:
+  podSelector:
+    matchLabels:
+      app: geesp-app
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: nginx-ingress
+    ports:
+    - protocol: TCP
+      port: 8501
+  egress:
+  # Allow DNS
+  - to:
+    - namespaceSelector: {}
+    ports:
+    - protocol: UDP
+      port: 53
+  # Allow traffic to database
+  - to:
+    - podSelector:
+        matchLabels:
+          app: postgres
+    ports:
+    - protocol: TCP
+      port: 5432
+  # Allow traffic to Redis
+  - to:
+    - podSelector:
+        matchLabels:
+          app: redis
+    ports:
+    - protocol: TCP
+      port: 6379
+  # Allow external HTTPS
+  - to:
+    - namespaceSelector: {}
+    ports:
+    - protocol: TCP
+      port: 443

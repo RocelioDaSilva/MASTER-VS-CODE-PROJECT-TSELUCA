@@ -1,0 +1,413 @@
+{
+  "audit_date": "2026-03-07",
+  "audit_time": "00:08:42",
+  "total_files_analyzed": 159,
+  "summary_by_language": {
+    ".bat": {
+      "count": 6,
+      "total_lines": 250,
+      "avg_lines_per_file": 42
+    },
+    ".json": {
+      "count": 22,
+      "total_lines": 7845,
+      "avg_lines_per_file": 357
+    },
+    ".py": {
+      "count": 98,
+      "total_lines": 20683,
+      "avg_lines_per_file": 211
+    },
+    ".sh": {
+      "count": 6,
+      "total_lines": 772,
+      "avg_lines_per_file": 129
+    },
+    ".ts": {
+      "count": 10,
+      "total_lines": 2117,
+      "avg_lines_per_file": 212
+    },
+    ".tsx": {
+      "count": 9,
+      "total_lines": 1787,
+      "avg_lines_per_file": 199
+    },
+    ".yaml": {
+      "count": 2,
+      "total_lines": 707,
+      "avg_lines_per_file": 354
+    },
+    ".yml": {
+      "count": 6,
+      "total_lines": 664,
+      "avg_lines_per_file": 111
+    }
+  },
+  "summary_by_category": {
+    "Frontend - Config": {
+      "count": 13,
+      "total_lines": 8369,
+      "avg_lines_per_file": 644
+    },
+    "Archive": {
+      "count": 39,
+      "total_lines": 6084,
+      "avg_lines_per_file": 156
+    },
+    "GEE Integration": {
+      "count": 13,
+      "total_lines": 4071,
+      "avg_lines_per_file": 313
+    },
+    "Utilities - Core": {
+      "count": 9,
+      "total_lines": 3246,
+      "avg_lines_per_file": 361
+    },
+    "Root/Config": {
+      "count": 27,
+      "total_lines": 3066,
+      "avg_lines_per_file": 114
+    },
+    "Frontend - Components": {
+      "count": 7,
+      "total_lines": 1281,
+      "avg_lines_per_file": 183
+    },
+    "Tests": {
+      "count": 14,
+      "total_lines": 1258,
+      "avg_lines_per_file": 90
+    },
+    "API": {
+      "count": 3,
+      "total_lines": 1148,
+      "avg_lines_per_file": 383
+    },
+    "Maps/Visualization": {
+      "count": 3,
+      "total_lines": 1141,
+      "avg_lines_per_file": 380
+    },
+    "Monitoring": {
+      "count": 2,
+      "total_lines": 983,
+      "avg_lines_per_file": 492
+    },
+    "Integration": {
+      "count": 2,
+      "total_lines": 875,
+      "avg_lines_per_file": 438
+    },
+    "Dashboard": {
+      "count": 2,
+      "total_lines": 762,
+      "avg_lines_per_file": 381
+    },
+    "Data Models": {
+      "count": 2,
+      "total_lines": 471,
+      "avg_lines_per_file": 236
+    },
+    "UI Pages": {
+      "count": 6,
+      "total_lines": 430,
+      "avg_lines_per_file": 72
+    },
+    "UI Utils": {
+      "count": 7,
+      "total_lines": 404,
+      "avg_lines_per_file": 58
+    },
+    "Frontend - Routes": {
+      "count": 1,
+      "total_lines": 382,
+      "avg_lines_per_file": 382
+    },
+    "Frontend - Middleware": {
+      "count": 1,
+      "total_lines": 300,
+      "avg_lines_per_file": 300
+    },
+    "UI Components": {
+      "count": 5,
+      "total_lines": 292,
+      "avg_lines_per_file": 58
+    },
+    "Migrations": {
+      "count": 2,
+      "total_lines": 227,
+      "avg_lines_per_file": 114
+    },
+    "Frontend - Services": {
+      "count": 1,
+      "total_lines": 35,
+      "avg_lines_per_file": 35
+    }
+  },
+  "archive_summary": {
+    "total_archive_files": 39,
+    "total_archive_lines": 6084,
+    "percentage_of_codebase": 17.5
+  },
+  "consolidation_groups": [
+    {
+      "category": "Archive Files",
+      "files": [
+        {
+          "path": "geesp-angola/code/_archive/orphaned/database_integration.py",
+          "size": 663,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/validation/validators.py",
+          "size": 601,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/utilities/utils_from_scripts.py",
+          "size": 536,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/orphaned/k8s_metrics.py",
+          "size": 463,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/orphaned/cog_generator.py",
+          "size": 456,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/utilities/config_utilities.py",
+          "size": 334,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/phase_history/phase3a_test_runner.py",
+          "size": 268,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/phase_history/phase3a_r_test_runner.py",
+          "size": 259,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/build_and_verification/verify_phase1.py",
+          "size": 228,
+          "status": "DELETE"
+        },
+        {
+          "path": "geesp-angola/code/_archive/phase_history/phase2_import_analysis.py",
+          "size": 217,
+          "status": "DELETE"
+        }
+      ],
+      "recommendation": "These 39 archived files (6084 lines) are obsolete. Review and delete.",
+      "estimated_recovery": 6084
+    },
+    {
+      "category": "Test Files",
+      "file_count": 14,
+      "total_lines": 1258,
+      "recommendation": "Consolidate test suite into unified test runner. Currently 14 test files with 1258 lines."
+    },
+    {
+      "category": "Utility Modules",
+      "file_count": 16,
+      "total_lines": 3650,
+      "recommendation": "Review 16 utility files for consolidation. Some functions may be duplicated across validation.py, config_manager.py, data_processing.py, etc."
+    }
+  ],
+  "estimated_consolidation": {
+    "files_to_delete": 39,
+    "files_to_merge": 16,
+    "files_to_keep": 120,
+    "estimated_lines_to_eliminate": 6584
+  },
+  "top_files_by_size": [
+    {
+      "path": "nevermindu/package-lock.json",
+      "name": "package-lock.json",
+      "lines": 6099,
+      "size_kb": 211.87,
+      "extension": ".json",
+      "category": "Frontend - Config",
+      "purpose": "Utility module"
+    },
+    {
+      "path": "geesp-angola/utils/constants.py",
+      "name": "constants.py",
+      "lines": 882,
+      "size_kb": 30.24,
+      "extension": ".py",
+      "category": "Utilities - Core",
+      "purpose": "GEESP-Angola: Centralized Constants and Configuration"
+    },
+    {
+      "path": "geesp-angola/monitoring/monitoring_app.py",
+      "name": "monitoring_app.py",
+      "lines": 828,
+      "size_kb": 24.74,
+      "extension": ".py",
+      "category": "Monitoring",
+      "purpose": "GEESP-Angola: Sistema de Monitoramento P\u00f3s-Implementa\u00e7\u00e3o"
+    },
+    {
+      "path": "geesp-angola/dashboard/app.py",
+      "name": "app.py",
+      "lines": 761,
+      "size_kb": 25.6,
+      "extension": ".py",
+      "category": "Dashboard",
+      "purpose": "GEESP-Angola: Dashboard Interativo"
+    },
+    {
+      "path": "geesp-angola/code/_archive/orphaned/database_integration.py",
+      "name": "database_integration.py",
+      "lines": 663,
+      "size_kb": 21.64,
+      "extension": ".py",
+      "category": "Archive",
+      "purpose": "Database Integration for GEESP-Angola"
+    },
+    {
+      "path": "geesp-angola/k8s/geesp-deployment.yaml",
+      "name": "geesp-deployment.yaml",
+      "lines": 616,
+      "size_kb": 15.32,
+      "extension": ".yaml",
+      "category": "Root/Config",
+      "purpose": "Utility module"
+    },
+    {
+      "path": "geesp-angola/code/_archive/validation/validators.py",
+      "name": "validators.py",
+      "lines": 601,
+      "size_kb": 19.17,
+      "extension": ".py",
+      "category": "Archive",
+      "purpose": "GEESP-Angola: Input Validation Module"
+    },
+    {
+      "path": "nevermindu/src/swagger.ts",
+      "name": "swagger.ts",
+      "lines": 597,
+      "size_kb": 16.11,
+      "extension": ".ts",
+      "category": "Frontend - Config",
+      "purpose": "Utility module"
+    },
+    {
+      "path": "geesp-angola/scripts/maps/generate_maps.py",
+      "name": "generate_maps.py",
+      "lines": 589,
+      "size_kb": 19.07,
+      "extension": ".py",
+      "category": "Maps/Visualization",
+      "purpose": "GEESP-Angola: Map Generation Module"
+    },
+    {
+      "path": "geesp-angola/scripts/gee/earth_engine_integration.py",
+      "name": "earth_engine_integration.py",
+      "lines": 560,
+      "size_kb": 19.39,
+      "extension": ".py",
+      "category": "GEE Integration",
+      "purpose": "Enhanced Google Earth Engine Integration with Batch Processing & Scheduling"
+    },
+    {
+      "path": "geesp-angola/tests/test_database_models.py",
+      "name": "test_database_models.py",
+      "lines": 537,
+      "size_kb": 15.94,
+      "extension": ".py",
+      "category": "Tests",
+      "purpose": "Database Model Tests"
+    },
+    {
+      "path": "geesp-angola/code/_archive/utilities/utils_from_scripts.py",
+      "name": "utils_from_scripts.py",
+      "lines": 536,
+      "size_kb": 15.95,
+      "extension": ".py",
+      "category": "Archive",
+      "purpose": "GEESP-Angola: Utility Functions"
+    },
+    {
+      "path": "nevermindu/server.ts",
+      "name": "server.ts",
+      "lines": 536,
+      "size_kb": 16.25,
+      "extension": ".ts",
+      "category": "Frontend - Config",
+      "purpose": "Utility module"
+    },
+    {
+      "path": "geesp-angola/scripts/maps/enhanced_maps_to_pdf.py",
+      "name": "enhanced_maps_to_pdf.py",
+      "lines": 518,
+      "size_kb": 16.91,
+      "extension": ".py",
+      "category": "Maps/Visualization",
+      "purpose": "Enhanced PDF Map Generation with Styling, Metadata, and Cartographic Elements"
+    },
+    {
+      "path": "geesp-angola/scripts/api/api.py",
+      "name": "api.py",
+      "lines": 509,
+      "size_kb": 17.72,
+      "extension": ".py",
+      "category": "API",
+      "purpose": "FastAPI REST API for GEESP-Angola MCDA Analysis"
+    },
+    {
+      "path": "geesp-angola/scripts/performance.py",
+      "name": "performance.py",
+      "lines": 496,
+      "size_kb": 16.4,
+      "extension": ".py",
+      "category": "GEE Integration",
+      "purpose": "GEESP-Angola: Performance Utilities"
+    },
+    {
+      "path": "nevermindu/src/App.tsx",
+      "name": "App.tsx",
+      "lines": 496,
+      "size_kb": 22.57,
+      "extension": ".tsx",
+      "category": "Frontend - Config",
+      "purpose": "Utility module"
+    },
+    {
+      "path": "geesp-angola/utils/data_processing.py",
+      "name": "data_processing.py",
+      "lines": 489,
+      "size_kb": 13.3,
+      "extension": ".py",
+      "category": "Utilities - Core",
+      "purpose": "GEESP-Angola: Unified Data Processing Module"
+    },
+    {
+      "path": "geesp-angola/scripts/api/batch_mcda_api.py",
+      "name": "batch_mcda_api.py",
+      "lines": 487,
+      "size_kb": 16.07,
+      "extension": ".py",
+      "category": "API",
+      "purpose": "Batch MCDA API Endpoint"
+    },
+    {
+      "path": "geesp-angola/scripts/lcoe_calculator.py",
+      "name": "lcoe_calculator.py",
+      "lines": 478,
+      "size_kb": 17.34,
+      "extension": ".py",
+      "category": "GEE Integration",
+      "purpose": "GEESP-Angola: LCOE (Levelized Cost of Electricity) Calculator"
+    }
+  ]
+}

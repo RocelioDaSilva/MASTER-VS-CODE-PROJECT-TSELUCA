@@ -1,0 +1,147 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Ahmed 2010]{ahmed2010}
+\abntrefinfo{Ahmed}{AHMED}{2010}
+{AHMED, T. \textbf{Reservoir Engineering Handbook}. 4th. ed. [S.l.]: Gulf
+  Professional Publishing, 2010.}
+
+\bibitem[Alyafei 2019]{alyafei2019}
+\abntrefinfo{Alyafei}{ALYAFEI}{2019}
+{ALYAFEI, N. \textbf{Microscopic Properties of Reservoir Rocks}. [S.l.]: Qatar
+  University, 2019.}
+
+\bibitem[Aziz e Settari 1979]{aziz1979}
+\abntrefinfo{Aziz e Settari}{AZIZ; SETTARI}{1979}
+{AZIZ, K.; SETTARI, A. \textbf{Petroleum Reservoir Simulation}. [S.l.]: Applied
+  Science Publishers, 1979.}
+
+\bibitem[Bachu 2000]{bachu2000}
+\abntrefinfo{Bachu}{BACHU}{2000}
+{BACHU, S. Sequestration of co2 in geological media: Criteria and approach for
+  site selection in response to climate change.
+\textbf{Energy Conversion and Management}, v.~41, n.~9, p. 953--970, 2000.}
+
+\bibitem[Bourdet, Ayoub e Pirard 1989]{bourdet1989}
+\abntrefinfo{Bourdet, Ayoub e Pirard}{BOURDET; AYOUB; PIRARD}{1989}
+{BOURDET, D.; AYOUB, J.~A.; PIRARD, Y.~M. Use of pressure derivative in
+  well-test interpretation.
+\textbf{SPE Formation Evaluation}, v.~4, n.~2, p. 293--302, 1989.}
+
+\bibitem[{BP} 2023]{bp2023}
+\abntrefinfo{{BP}}{{BP}}{2023}
+{{BP}. \textbf{Statistical Review of World Energy}. 2023. Online.
+Acesso em: 30 mar. 2026.
+Dispon{\'\i}vel em: \url{https://www.bp.com}.}
+
+\bibitem[Craft, Hawkins e Terry 1991]{craft1991}
+\abntrefinfo{Craft, Hawkins e Terry}{CRAFT; HAWKINS; TERRY}{1991}
+{CRAFT, B.~C.; HAWKINS, M.~F.; TERRY, R.~E. \textbf{Applied Petroleum Reservoir
+  Engineering}. 2nd. ed. New Jersey: Prentice Hall, 1991.}
+
+\bibitem[Dake 1994]{dake1994}
+\abntrefinfo{Dake}{DAKE}{1994}
+{DAKE, L.~P. \textbf{Fundamentals of Reservoir Engineering}. Amsterdam:
+  Elsevier, 1994.}
+
+\bibitem[Dake 2014]{dake2014}
+\abntrefinfo{Dake}{DAKE}{2014}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{The Practice of Reservoir Engineering}.
+  Revised. [S.l.]: Elsevier, 2014.}
+
+\bibitem[Havlena e Odeh 1963]{havlena1963}
+\abntrefinfo{Havlena e Odeh}{HAVLENA; ODEH}{1963}
+{HAVLENA, D.; ODEH, A.~S. The material balance as an equation of a straight
+  line.
+\textbf{Journal of Petroleum Technology}, v.~15, n.~8, p. 896--900, 1963.}
+
+\bibitem[Javadpour 2009]{javadpour2009}
+\abntrefinfo{Javadpour}{JAVADPOUR}{2009}
+{JAVADPOUR, F. Nanopores and apparent permeability of gas flow in mudrocks
+  (shales and siltstone).
+\textbf{Journal of Canadian Petroleum Technology}, v.~48, n.~8, p. 16--21,
+  2009.}
+
+\bibitem[Lake 2007]{lake2007}
+\abntrefinfo{Lake}{LAKE}{2007}
+{LAKE, L.~W. \textbf{Enhanced Oil Recovery}. 1st. ed. Richardson, TX: Society
+  of Petroleum Engineers, 2007.}
+
+\bibitem[McCain 1990]{mccain1990}
+\abntrefinfo{McCain}{MCCAIN}{1990}
+{MCCAIN, W.~D. \textbf{The Properties of Petroleum Fluids}. 2nd. ed. [S.l.]:
+  PennWell Books, 1990.}
+
+\bibitem[Mungan 2019]{mungan2019}
+\abntrefinfo{Mungan}{MUNGAN}{2019}
+{MUNGAN, N. \textbf{Reservoir Simulation and Management}. Cham: Springer,
+  2019.}
+
+\bibitem[Muskat 1949]{muskat1949}
+\abntrefinfo{Muskat}{MUSKAT}{1949}
+{MUSKAT, M. \textbf{Physical Principles of Oil Production}. [S.l.]:
+  McGraw-Hill, 1949.}
+
+\bibitem[Peaceman 1977]{peaceman1977}
+\abntrefinfo{Peaceman}{PEACEMAN}{1977}
+{PEACEMAN, D.~W. \textbf{Fundamentals of Numerical Reservoir Simulation}.
+  [S.l.]: Elsevier, 1977.}
+
+\bibitem[Ramos 2016]{ramos2016}
+\abntrefinfo{Ramos}{RAMOS}{2016}
+{RAMOS, G. A.~R. \textbf{Fundamentos Computacionais em Engenharia de
+  Petróleo}. Luanda: ISPTEC, 2016.}
+
+\bibitem[Ramos 2020]{ramos2020}
+\abntrefinfo{Ramos}{RAMOS}{2020}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Engenharia de Reservatórios: Métodos
+  Analíticos e Computacionais}. Luanda: ISPTEC, 2020.}
+
+\bibitem[Rosa, Carvalho e Xavier 2006]{rosa2006}
+\abntrefinfo{Rosa, Carvalho e Xavier}{ROSA; CARVALHO; XAVIER}{2006}
+{ROSA, A.~J.; CARVALHO, R.~S.; XAVIER, J. A.~D. \textbf{Engenharia de
+  Reservatórios de Petróleo}. Rio de Janeiro: Interciência, 2006.}
+
+\bibitem[{Society of Petroleum Engineers} 2015]{spe2015}
+\abntrefinfo{{Society of Petroleum Engineers}}{{Society of Petroleum
+  Engineers}}{2015}
+{{Society of Petroleum Engineers}. \textbf{Petroleum Engineering Handbook}.
+  Richardson, TX: SPE, 2015. Dispon{\'\i}vel em: \url{https://www.spe.org}.}
+
+\bibitem[Terry, Rogers e Craft 2015]{terry2015}
+\abntrefinfo{Terry, Rogers e Craft}{TERRY; ROGERS; CRAFT}{2015}
+{TERRY, R.~E.; ROGERS, J.~B.; CRAFT, B.~C. \textbf{Applied Petroleum Reservoir
+  Engineering}. 3rd. ed. [S.l.]: Pearson, 2015.}
+
+\bibitem[{U.S. Energy Information Administration} 2023]{eia2023}
+\abntrefinfo{{U.S. Energy Information Administration}}{{U.S. Energy Information
+  Administration}}{2023}
+{{U.S. Energy Information Administration}. \textbf{Petroleum and Other
+  Liquids}. 2023. Online.
+Acesso em: 30 mar. 2026.
+Dispon{\'\i}vel em: \url{https://www.eia.gov}.}
+
+\bibitem[{Wikipedia}]{wikipediaPetroleumHistory}
+\abntrefinfo{{Wikipedia}}{{Wikipedia}}{a}
+{{Wikipedia}. \textbf{History of the Petroleum Industry}. Online.
+Acesso em: 30 mar. 2026.
+Dispon{\'\i}vel em:
+  \url{https://en.wikipedia.org/wiki/History\_of\_the\_petroleum\_industry}.}
+
+\bibitem[{Wikipedia}]{wikipediaReservoirEngineering}
+\abntrefinfo{{Wikipedia}}{{Wikipedia}}{b}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Reservoir Engineering}. Online.
+Acesso em: 30 mar. 2026.
+Dispon{\'\i}vel em:
+  \url{https://en.wikipedia.org/wiki/Reservoir\_engineering}.}
+
+\bibitem[Yergin 1991]{yergin1991}
+\abntrefinfo{Yergin}{YERGIN}{1991}
+{YERGIN, D. \textbf{The Prize: The Epic Quest for Oil, Money, and Power}.
+  [S.l.]: Simon \& Schuster, 1991.}
+
+\end{thebibliography}

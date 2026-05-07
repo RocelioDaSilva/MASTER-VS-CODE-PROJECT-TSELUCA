@@ -1,0 +1,89 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}Roadmap Visual — Caminho para B1}{4}{section.1}%
+\contentsline {section}{\numberline {2}Progressão de Horas Investidas}{4}{section.2}%
+\contentsline {section}{\numberline {3}Estrutura Gramatical Francesa — Visão Geral}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Partes do Discurso (Parts of Speech)}{5}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Substantivos (Noms)}{5}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Artigos (Articles)}{5}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Adjetivos (Adjectifs)}{5}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Verbos (Verbes)}{6}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Pronomes (Pronoms)}{6}{subsubsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.2}Tempos Verbais Essenciais}{6}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}PRÉSENT (Presente)}{6}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}PASSÉ COMPOSÉ (Perfeito)}{6}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}IMPARFAIT (Pretérito Imperfeito)}{6}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}FUTUR SIMPLE (Futuro Simples)}{6}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}CONDITIONNEL (Condicional)}{7}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}SUBJONCTIF (Subjuntivo)}{7}{subsubsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.3}Estrutura da Frase}{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Ordem das Palavras}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Negação}{7}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Palavras Interrogativas}{7}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Concordância de Gênero e Número}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Preposições (Prépositions)}{8}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Plano de Aulas Detalhado Semana a Semana (16 Semanas)}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Mês 1: Présent (Semanas 1–4)}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Mês 2: Passado (Semanas 5–8)}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Mês 3: Futuro, Condicional e Subjuntivo (Semanas 9–12)}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Mês 4: Consolidação B1 (Semanas 13–16)}{12}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Programa Estruturado de 4 Semanas (Intensivo)}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Semana 1: Fundações}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Semana 2: Comunicação Essencial}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Semana 3: Gramática e Adjetivos}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Semana 4: Integração e Fluência}{13}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Os 100 Verbos Mais Usados em Francês}{14}{section.6}%
+\contentsline {section}{\numberline {7}Os 100 Verbos Mais Usados — Quick Reference}{15}{section.7}%
+\contentsline {section}{\numberline {8}As 100 Palavras Mais Usadas em Francês}{15}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Verbos e Palavras Essenciais (1-50)}{15}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Substantivos e Descritores Comuns (51-100)}{16}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Exercícios Diários de Prática}{17}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Conjunto 3: Conjugação de Avoir}{18}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Conjunto 4: Artigos (le, la, les)}{18}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Conjunto 5: Tradução}{18}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Drill 1: Verbos Regulares -ER}{18}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Drill 2: Concordância de Adjetivos}{18}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Drill 3: Negação (Ne...Pas)}{19}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Drill 4: Formação de Perguntas}{19}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Drill 5: Contrações}{19}{subsection.9.8}%
+\contentsline {section}{\numberline {10}Construção de Vocabulário por Tema}{19}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Tema 1: Comida (Nourriture)}{19}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Tema 2: Família (Famille)}{19}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Tema 3: Casa (Pièces)}{19}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Tema 4: Roupa (Vêtements)}{19}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Prática de Conversação}{20}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Cenário 1: Encontro}{20}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Cenário 2: Café}{20}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Cenário 3: Direções}{20}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Exercícios de Tradução}{20}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Fácil}{20}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Médio}{20}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Avançado}{21}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Notas Culturais}{21}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Regiões Francófonas}{21}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Etiqueta}{21}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Dicas de Estudo}{21}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Métodos}{21}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Truques de Memória}{22}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Erros Comuns}{22}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Rotina Diária}{22}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Metas Semanais}{22}{subsection.14.5}%
+\contentsline {section}{\numberline {15}Avaliação de Progresso — Benchmarking}{23}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Teste Inicial - Baseline (Data: \_\_\_/\_\_\_/\_\_\_)}{23}{subsection.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.1}1. Vocabulário Básico (A1)}{23}{subsubsection.15.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.2}2. Compreensão (Listening A1)}{23}{subsubsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.3}3. Fala Básica}{23}{subsubsection.15.1.3}%
+\contentsline {subsubsection}{\numberline {15.1.4}4. Conversação Simples}{24}{subsubsection.15.1.4}%
+\contentsline {subsection}{\numberline {15.2}Progressão Mensal}{24}{subsection.15.2}%
+\contentsline {subsubsection}{\numberline {15.2.1}Mês 1 (Data: \_\_\_/\_\_\_/\_\_\_)}{24}{subsubsection.15.2.1}%
+\contentsline {subsubsection}{\numberline {15.2.2}Mês 2 (Data: \_\_\_/\_\_\_/\_\_\_)}{24}{subsubsection.15.2.2}%
+\contentsline {subsubsection}{\numberline {15.2.3}Mês 3 (Data: \_\_\_/\_\_\_/\_\_\_)}{24}{subsubsection.15.2.3}%
+\contentsline {subsection}{\numberline {15.3}Indicadores de Progresso}{24}{subsection.15.3}%
+\contentsline {section}{\numberline {16}Listas de Palavras Similares (Cognatos)}{25}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Cognatos Perfeitos (Escrita Idêntica ou Quase Idêntica)}{25}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Padrões de Conversão Mais Comuns}{25}{subsection.16.2}%
+\contentsline {subsubsection}{\numberline {16.2.1}Português -ção $\to $ Français -tion}{25}{subsubsection.16.2.1}%
+\contentsline {subsubsection}{\numberline {16.2.2}Português -dade $\to $ Français -té}{26}{subsubsection.16.2.2}%
+\contentsline {subsubsection}{\numberline {16.2.3}Português -vel $\to $ Français -ble}{26}{subsubsection.16.2.3}%
+\contentsline {subsection}{\numberline {16.3}Falsos Amigos (Faux Amis) — Cuidado!}{26}{subsection.16.3}%
+\contentsline {section}{\numberline {17}Recursos Recomendados}{26}{section.17}%
+\contentsline {section}{\numberline {18}Conselhos Finais}{27}{section.18}%

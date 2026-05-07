@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corhed - Gestão de Meios de Pagamento e Soluções para Bancos</title>
+    <meta name="description" content="Corhed oferece soluções especializadas em gestão de meios de pagamento eletrónica e venda de consumíveis para bancos e instituições financeiras.">
+    <meta name="keywords" content="gestão meios pagamento, pagamento eletrónico, venda consumíveis, soluções bancárias, fintech, bancos, cartões, terminais, POS">
+    <meta name="author" content="Corhed - Comércio e Serviços LDA">
+    <meta property="og:title" content="Corhed - Gestão de Meios de Pagamento e Soluções para Bancos">
+    <meta property="og:description" content="Soluções especializadas em gestão de meios de pagamento eletrónica e venda de consumíveis para bancos e instituições financeiras.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="corhed-logo.png" type="image/png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6; color: #333; overflow-x: hidden;
+        }
+
+        /* === LOADING SCREEN === */
+        .loading {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, #1F4E79 0%, #2E6FA8 100%);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 9999; transition: opacity 0.5s ease;
+        }
+        .loading.hidden { opacity: 0; pointer-events: none; }
+        .spinner {
+            width: 60px; height: 60px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid #C00000;
+            border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* === HEADER === */
+        header {
+            background-color: #1F4E79; color: white; padding: 1rem 0;
+            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+        .header-content {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            display: flex; align-items: center; gap: 0.5rem;
+            font-size: 1.8rem; font-weight: bold; letter-spacing: 1px;
+        }
+        .logo img { width: 38px; height: auto; display: block; }
+        .logo span { color: white; }
+        nav { display: flex; gap: 2rem; list-style: none; }
+        nav a { color: white; text-decoration: none; transition: color 0.3s; font-weight: 500; }
+        nav a:hover { color: #C00000; }
+        .mobile-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .mobile-menu span { width: 25px; height: 3px; background: white; border-radius: 3px; transition: 0.3s; }
+
+        /* === HERO === */
+        .hero {
+            background: linear-gradient(135deg, #1F4E79 0%, #2E6FA8 100%);
+            color: white; padding: 8rem 2rem; text-align: center;
+            min-height: 600px; display: flex; align-items: center; justify-content: center;
+        }
+        .hero-content { max-width: 800px; animation: fadeInUp 0.8s ease; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 700; }
+        .hero p { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.95; }
+
+        /* === BUTTONS === */
+        .cta-button {
+            display: inline-block; background-color: #C00000; color: white;
+            padding: 1rem 2.5rem; text-decoration: none; border-radius: 5px;
+            font-weight: bold; transition: all 0.3s; border: 2px solid #C00000;
+            cursor: pointer; font-size: 1rem;
+        }
+        .cta-button:hover {
+            background-color: transparent;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(192,0,0,0.3);
+        }
+        .cta-button-secondary {
+            background-color: transparent; border: 2px solid white; margin-left: 1rem;
+        }
+        .cta-button-secondary:hover { background-color: white; color: #1F4E79; }
+
+        /* === SECTIONS === */
+        .services { max-width: 1200px; margin: 4rem auto; padding: 0 2rem; }
+        .section-title {
+            text-align: center; font-size: 2.5rem; margin-bottom: 3rem;
+            color: #1F4E79; font-weight: 700;
+        }
+        .section-subtitle { text-align: center; font-size: 1.1rem; color: #7A7A7A; margin-bottom: 2rem; }
+
+        /* === SERVICE CARDS === */
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; margin-bottom: 3rem;
+        }
+        .service-card {
+            background: white; padding: 2rem; border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s;
+            text-align: center; border-top: 4px solid #1F4E79;
+            animation: fadeInUp 0.6s ease forwards; opacity: 0;
+        }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
+        .service-card h3 { color: #1F4E79; margin-bottom: 1rem; font-size: 1.5rem; }
+        .service-card p { color: #7A7A7A; line-height: 1.8; margin-bottom: 1.5rem; }
+        .service-icon {
+            width: 60px; height: 60px; background-color: #C00000;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 1rem; font-size: 2rem; color: white;
+        }
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(6) { animation-delay: 0.6s; }
+
+        /* === ABOUT === */
+        .about-corhed { background-color: #f8f9fa; padding: 4rem 2rem; margin: 3rem 0; }
+        .about-content { max-width: 1200px; margin: 0 auto; }
+        .about-text {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 2rem; align-items: center;
+        }
+        .about-text h3 { color: #1F4E79; font-size: 2rem; margin-bottom: 1.5rem; }
+        .about-text p { color: #7A7A7A; margin-bottom: 1rem; line-height: 1.8; }
+        .about-list { list-style: none; margin-top: 1.5rem; }
+        .about-list li { color: #333; padding: 0.5rem 0 0.5rem 1.5rem; position: relative; }
+        .about-list li:before { content: "✓"; position: absolute; left: 0; color: #C00000; font-weight: bold; }
+        .about-image {
+            background: linear-gradient(135deg, #1F4E79 0%, #2E6FA8 100%);
+            height: 300px; border-radius: 8px; display: flex;
+            align-items: center; justify-content: center;
+            color: white; font-size: 3rem; text-align: center;
+        }
+
+        /* === STATS === */
+        .stats { max-width: 1200px; margin: 4rem auto; padding: 0 2rem; }
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;
+        }
+        .stat-card {
+            background: white; padding: 2rem; border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;
+            border-left: 4px solid #C00000;
+        }
+        .stat-number { font-size: 2.5rem; color: #C00000; font-weight: bold; margin-bottom: 0.5rem; }
+        .stat-label { color: #1F4E79; font-size: 1rem; font-weight: 600; }
+
+        /* === WHY US === */
+        .why-us { background-color: #f8f9fa; padding: 4rem 2rem; margin: 3rem 0; }
+        .why-us-content { max-width: 1200px; margin: 0 auto; }
+        .why-us-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem; margin-top: 2rem;
+        }
+        .why-us-card {
+            background: white; padding: 2rem; border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center;
+        }
+        .why-us-card h4 { color: #1F4E79; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .why-us-card p { color: #7A7A7A; font-size: 0.95rem; }
+
+        /* === PROCESS === */
+        .process { max-width: 1200px; margin: 4rem auto; padding: 0 2rem; }
+        .process-timeline {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem; margin-top: 2rem;
+        }
+        .process-step {
+            text-align: center; padding: 2rem; background: white;
+            border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .step-number {
+            background-color: #C00000; color: white; width: 50px; height: 50px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: bold; font-size: 1.5rem; margin: 0 auto 1rem;
+        }
+        .process-step h4 { color: #1F4E79; margin-bottom: 0.5rem; }
+        .process-step p { color: #7A7A7A; font-size: 0.95rem; }
+
+        /* === TESTIMONIALS === */
+        .testimonials { background-color: #f8f9fa; padding: 4rem 2rem; margin: 3rem 0; }
+        .testimonials-content { max-width: 1200px; margin: 0 auto; }
+        .testimonials-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; margin-top: 2rem;
+        }
+        .testimonial-card {
+            background: white; padding: 2rem; border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-left: 4px solid #C00000;
+        }
+        .stars { color: #C00000; margin-bottom: 1rem; font-size: 1.2rem; }
+        .testimonial-text { color: #7A7A7A; margin-bottom: 1rem; font-style: italic; }
+        .testimonial-author { color: #1F4E79; font-weight: 600; }
+        .testimonial-role { color: #999; font-size: 0.9rem; }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            background: linear-gradient(135deg, #1F4E79 0%, #2E6FA8 100%);
+            color: white; padding: 3rem 2rem; text-align: center; margin: 4rem 0; border-radius: 8px;
+        }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta-section p { font-size: 1.1rem; margin-bottom: 2rem; }
+
+        /* === NEWSLETTER === */
+        .newsletter {
+            background: linear-gradient(135deg, #1F4E79 0%, #2E6FA8 100%);
+            padding: 4rem 2rem; text-align: center; color: white;
+        }
+        .newsletter-content { max-width: 600px; margin: 0 auto; }
+        .newsletter h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .newsletter p { margin-bottom: 2rem; opacity: 0.9; }
+        .newsletter-form { display: flex; gap: 1rem; max-width: 500px; margin: 0 auto; }
+        .newsletter-input { flex: 1; padding: 0.8rem 1rem; border: none; border-radius: 4px; font-size: 1rem; }
+        .newsletter-submit {
+            background-color: #C00000; color: white; border: none;
+            padding: 0.8rem 1.5rem; border-radius: 4px; cursor: pointer;
+            font-weight: bold; transition: background-color 0.3s;
+        }
+        .newsletter-submit:hover { background-color: #8B0000; }
+
+        /* === CONTACT === */
+        .contact { max-width: 1200px; margin: 4rem auto; padding: 0 2rem; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+        .contact-info h3 { color: #1F4E79; margin-bottom: 1.5rem; font-size: 1.3rem; }
+        .contact-item { margin-bottom: 1.5rem; }
+        .contact-item strong { color: #1F4E79; display: block; margin-bottom: 0.5rem; }
+        .contact-item p { color: #7A7A7A; margin: 0; }
+        .contact-item a { color: #C00000; text-decoration: none; font-weight: 500; }
+        .contact-item a:hover { text-decoration: underline; }
+
+        /* === FORM === */
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: #1F4E79; font-weight: 500; }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;
+            font-family: inherit; font-size: 1rem; transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            outline: none; border-color: #1F4E79; box-shadow: 0 0 5px rgba(31,78,121,0.2);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-submit {
+            background-color: #C00000; color: white; padding: 1rem 2rem;
+            border: none; border-radius: 4px; font-weight: bold;
+            cursor: pointer; font-size: 1rem; transition: background-color 0.3s; width: 100%;
+        }
+        .form-submit:hover { background-color: #8B0000; }
+
+        /* === FOOTER === */
+        footer { background-color: #1F4E79; color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        .footer-content { max-width: 1200px; margin: 0 auto; }
+        .footer-links { margin-bottom: 1rem; }
+        .footer-links a { color: white; text-decoration: none; margin: 0 1rem; transition: color 0.3s; }
+        .footer-links a:hover { color: #C00000; }
+        .footer-social { margin-bottom: 1rem; }
+        .footer-social a { font-size: 1.5rem; margin: 0 0.5rem; opacity: 0.85; transition: opacity 0.3s; }
+        .footer-social a:hover { opacity: 1; }
+        .footer-copyright { color: #ccc; font-size: 0.9rem; border-top: 1px solid #2E6FA8; padding-top: 1rem; margin-top: 1rem; }
+
+        /* === BACK TO TOP === */
+        .back-to-top {
+            position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px;
+            background-color: #C00000; color: white; border: none; border-radius: 50%;
+            cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 1000;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background-color: #8B0000; transform: translateY(-2px); }
+
+        /* === ANIMATIONS === */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            nav {
+                display: none; flex-direction: column; gap: 1rem;
+                position: absolute; top: 60px; left: 0; right: 0;
+                background-color: #1F4E79; padding: 1rem; z-index: 99;
+            }
+            nav.active { display: flex; }
+            .mobile-menu { display: flex; }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .hero { padding: 4rem 1rem; min-height: auto; }
+            .cta-button-secondary { display: block; margin: 1rem 0 0; }
+            .contact-grid, .about-text { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .why-us-grid { grid-template-columns: repeat(2, 1fr); }
+            .section-title { font-size: 2rem; }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-submit { width: 100%; }
+            .back-to-top { bottom: 20px; right: 20px; width: 45px; height: 45px; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.5rem; }
+            .section-title { font-size: 1.5rem; }
+            .why-us-grid { grid-template-columns: 1fr; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div class="loading" id="loading"><div class="spinner"></div></div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../assets/img/corhed-logo.png" alt="Corhed logo" onerror="this.style.display='none'">
+                <span>CORHED</span>
+            </div>
+            <nav id="nav-menu">
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre</a>
+                <a href="#why-us">Por Que Nos Escolher</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu-btn">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Soluções Especializadas para Instituições Bancárias</h1>
+            <p>Gestão completa de meios de pagamento eletrónica e venda de consumíveis para bancos e instituições financeiras</p>
+            <a href="#contact" class="cta-button">Fale Conosco Agora</a>
+            <a href="#services" class="cta-button cta-button-secondary">Ver Soluções</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2 class="section-title">Nossas Soluções</h2>
+        <p class="section-subtitle">Soluções especializadas em gestão de meios de pagamento e serviços para instituições bancárias</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💳</div>
+                <h3>Gestão de Meios de Pagamento Eletrónica</h3>
+                <p>Soluções completas para gestão de cartões, terminais POS, sistemas de pagamento e infraestrutura financeira.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📄</div>
+                <h3>Venda de Consumíveis</h3>
+                <p>Fornecimento e gestão de consumíveis bancários, papel térmico, fitas, envelopes e materiais operacionais.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔒</div>
+                <h3>Segurança e Compliance</h3>
+                <p>Implementação de protocolos de segurança, conformidade PCI DSS e proteção contra fraudes financeiras.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Análise e Relatórios</h3>
+                <p>Relatórios detalhados de transações, análise de performance e métricas de eficiência operacional.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Manutenção e Suporte</h3>
+                <p>Serviço técnico especializado, manutenção preventiva e suporte 24/7 para equipamentos bancários.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <h3>Consultoria Estratégica</h3>
+                <p>Orientação especializada para otimização de processos bancários e implementação de novas tecnologias.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-corhed" id="about">
+        <div class="about-content">
+            <h2 class="section-title">Sobre a Corhed</h2>
+            <div class="about-text">
+                <div>
+                    <h3>Especialistas em Soluções para Instituições Bancárias</h3>
+                    <p>A Corhed é uma empresa especializada em soluções para o setor bancário, oferecendo gestão completa de meios de pagamento eletrónica e venda de consumíveis para bancos e instituições financeiras.</p>
+                    <p>Com anos de experiência no mercado financeiro, desenvolvemos soluções personalizadas que garantem eficiência operacional, segurança e conformidade com as regulamentações do setor.</p>
+                    <ul class="about-list">
+                        <li>Especialização em meios de pagamento eletrónicos</li>
+                        <li>Experiência comprovada com instituições bancárias</li>
+                        <li>Suporte técnico especializado 24/7</li>
+                        <li>Conformidade com normas PCI DSS e regulamentações</li>
+                        <li>Parcerias estratégicas com fornecedores líderes</li>
+                    </ul>
+                </div>
+                <div class="about-image">🏦 CORHED</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <h2 class="section-title">Nosso Impacto no Setor Bancário</h2>
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-number">50+</div><div class="stat-label">Bancos Parceiros</div></div>
+            <div class="stat-card"><div class="stat-number">15+</div><div class="stat-label">Anos de Experiência</div></div>
+            <div class="stat-card"><div class="stat-number">99.9%</div><div class="stat-label">Uptime dos Sistemas</div></div>
+            <div class="stat-card"><div class="stat-number">24/7</div><div class="stat-label">Suporte Técnico</div></div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us" id="why-us">
+        <div class="why-us-content">
+            <h2 class="section-title">Por Que Escolher a Corhed</h2>
+            <div class="why-us-grid">
+                <div class="why-us-card"><h4>✓ Especialização Bancária</h4><p>Equipe com profundo conhecimento do setor financeiro e bancário</p></div>
+                <div class="why-us-card"><h4>✓ Conformidade Total</h4><p>Soluções certificadas e em conformidade com regulamentações bancárias</p></div>
+                <div class="why-us-card"><h4>✓ Segurança Máxima</h4><p>Protocolos de segurança de nível bancário para proteção de dados</p></div>
+                <div class="why-us-card"><h4>✓ Suporte 24/7</h4><p>Atendimento técnico contínuo para instituições financeiras</p></div>
+                <div class="why-us-card"><h4>✓ Tecnologia de Ponta</h4><p>Soluções modernas com as últimas tecnologias do mercado</p></div>
+                <div class="why-us-card"><h4>✓ Resultados Comprovados</h4><p>Histórico de sucesso com as maiores instituições bancárias</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process">
+        <h2 class="section-title">Nosso Processo</h2>
+        <p class="section-subtitle">Metodologia especializada para implementação de soluções bancárias</p>
+        <div class="process-timeline">
+            <div class="process-step"><div class="step-number">1</div><h4>Avaliação e Diagnóstico</h4><p>Análise completa da infraestrutura atual e necessidades específicas da instituição</p></div>
+            <div class="process-step"><div class="step-number">2</div><h4>Planejamento Estratégico</h4><p>Desenvolvimento de plano detalhado com soluções personalizadas</p></div>
+            <div class="process-step"><div class="step-number">3</div><h4>Implementação Segura</h4><p>Implantação gradual com testes rigorosos e backup completo</p></div>
+            <div class="process-step"><div class="step-number">4</div><h4>Suporte e Monitoramento</h4><p>Acompanhamento contínuo e suporte técnico especializado 24/7</p></div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2 class="section-title">O Que Nossos Parceiros Dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"A Corhed revolucionou nossa gestão de meios de pagamento. A eficiência e segurança dos sistemas implementados superaram nossas expectativas."</p>
+                    <p class="testimonial-author">Dra. Maria Silva</p>
+                    <p class="testimonial-role">Diretora de TI, Banco Nacional</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"O suporte 24/7 e a qualidade dos consumíveis fornecidos pela Corhed garantem a continuidade das nossas operações bancárias."</p>
+                    <p class="testimonial-author">Carlos Santos</p>
+                    <p class="testimonial-role">Gerente de Operações, Banco Regional</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"A expertise da Corhed em soluções de pagamento nos permitiu expandir nossos serviços digitais com total segurança e conformidade regulatória."</p>
+                    <p class="testimonial-author">Ana Costa</p>
+                    <p class="testimonial-role">Diretora de Inovação, FinTech Bank</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>Pronto para Modernizar Seus Serviços Bancários?</h2>
+        <p>Entre em contato hoje e descubra como podemos otimizar sua gestão de meios de pagamento</p>
+        <a href="#contact" class="cta-button">Agende uma Consultoria</a>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Fique por Dentro das Inovações em Pagamentos</h2>
+            <p>Receba atualizações sobre novas tecnologias, regulamentações e melhores práticas para instituições bancárias</p>
+            <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                <input type="email" class="newsletter-input" placeholder="Seu e-mail institucional" required>
+                <button type="submit" class="newsletter-submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <div class="contact-item"><strong>📧 Email</strong><p><a href="mailto:contato@corhed.com">contato@corhed.com</a></p></div>
+                <div class="contact-item"><strong>📞 Telefone</strong><p><a href="tel:+55113000-0000">(11) 3000-0000</a></p></div>
+                <div class="contact-item"><strong>📍 Endereço</strong><p>São Paulo, SP — Brasil</p></div>
+                <div class="contact-item"><strong>🕐 Horário</strong><p>Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p></div>
+            </div>
+            <div>
+                <h3 style="color:#1F4E79;margin-bottom:1.5rem;">Envie uma Mensagem</h3>
+                <form method="POST" action="#" onsubmit="handleSubmit(event)">
+                    <div class="form-group"><label for="name">Nome Completo *</label><input type="text" id="name" name="name" required></div>
+                    <div class="form-group"><label for="email">E-mail *</label><input type="email" id="email" name="email" required></div>
+                    <div class="form-group"><label for="company">Empresa / Instituição</label><input type="text" id="company" name="company"></div>
+                    <div class="form-group">
+                        <label for="service">Serviço de Interesse *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="pagamento">Gestão de Meios de Pagamento Eletrónica</option>
+                            <option value="consumiveis">Venda de Consumíveis</option>
+                            <option value="seguranca">Segurança e Compliance</option>
+                            <option value="analise">Análise e Relatórios</option>
+                            <option value="manutencao">Manutenção e Suporte</option>
+                            <option value="consultoria">Consultoria Estratégica</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label for="message">Mensagem *</label><textarea id="message" name="message" required></textarea></div>
+                    <button type="submit" class="form-submit">Enviar Mensagem</button>
+                </form>
+                <p style="color:#7A7A7A;font-size:0.9rem;margin-top:1rem;text-align:center;">✓ Responderemos em até 24 horas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre</a>
+                <a href="#why-us">Por Que Nos Escolher</a>
+                <a href="#contact">Contato</a>
+                <a href="../template/legal/privacy-policy.html">Política de Privacidade</a>
+                <a href="../template/legal/terms-and-conditions.html">Termos de Uso</a>
+            </div>
+            <div class="footer-copyright">&copy; 2026 Corhed - Comércio e Serviços LDA. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', () => {
+            setTimeout(() => document.getElementById('loading').classList.add('hidden'), 800);
+        });
+
+        // Mobile menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const nav = document.getElementById('nav-menu');
+        menuBtn.addEventListener('click', () => { nav.classList.toggle('active'); menuBtn.classList.toggle('active'); });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('active'); menuBtn.classList.remove('active'); }));
+
+        // Back to top
+        const btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => btt.classList.toggle('show', window.pageYOffset > 300));
+        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const t = document.querySelector(a.getAttribute('href'));
+                if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+
+        // Form submit
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Obrigado por entrar em contato! Responderemos em breve.');
+            e.target.reset();
+        }
+
+        // Newsletter
+        function handleNewsletter(e) {
+            e.preventDefault();
+            alert('Inscrição realizada com sucesso!');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>

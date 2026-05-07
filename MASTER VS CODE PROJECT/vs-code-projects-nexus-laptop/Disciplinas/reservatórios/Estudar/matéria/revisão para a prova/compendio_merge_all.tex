@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{article}
+% Compêndio merge — inclui todos os MD relevantes como blocos verbatim
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Termes}
+\usepackage[brazilian]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\title{Compêndio Completo (merge automático)}
+\author{Gerado automaticamente}
+\date{Gerado em 2026-04-22}
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+% --- Banco de questões (matriz completa)
+\section{Banco de questões — Matriz completa}
+\VerbatimInput{prova_banco_questoes_toda_matriz.md}
+\clearpage
+
+% --- Banco de questões (capítulos 1–4)
+\section{Banco de questões — Capítulos 1–4}
+\VerbatimInput{prova_banco_questoes_cap1-4.md}
+\clearpage
+
+% --- V/F Capítulo 1
+\section{V/F — Capítulo 1}
+\VerbatimInput{provas_vf_cap1.md}
+\clearpage
+
+% --- Cálculo / Prático Capítulo 2
+\section{Cálculo / Prático — Capítulo 2}
+\VerbatimInput{provas_calc_cap2.md}
+\clearpage
+
+% --- Cálculo / Prático Capítulo 3
+\section{Cálculo / Prático — Capítulo 3}
+\VerbatimInput{provas_calc_cap3.md}
+\clearpage
+
+% --- Dissertação Capítulo 4
+\section{Dissertação / Redação — Capítulo 4}
+\VerbatimInput{provas_dissertacao_cap4.md}
+\clearpage
+
+% --- Exercícios resolvidos
+\section{Exercícios Resolvidos}
+\VerbatimInput{exercicios_resolvidos.md}
+\clearpage
+
+% --- Exemplos resolvidos (Cap 3, prático)
+\section{Exemplo resolvido — Capítulo 3 (prático)}
+\VerbatimInput{calc_cap3_pratico_resolvido.md}
+\clearpage
+
+% --- Afirmações prontas V/F (Cap1)
+\section{Afirmações V/F prontas — Capítulo 1}
+\VerbatimInput{cap1_vf_afirmacoes.md}
+\clearpage
+
+% --- Compressibilidade Z (cheatsheet)
+\section{Compressibilidade (Z) — Cheatsheet}
+\VerbatimInput{compressibilidade_Z_cheatsheet.md}
+\clearpage
+
+% --- Dissertação (texto pronto)
+\section{Textos de Dissertação — Capítulo 4}
+\VerbatimInput{dissertacao_cap4.md}
+\clearpage
+
+% --- Gabarito / Rubricas
+\section{Gabarito e Rubricas}
+\VerbatimInput{exame_gabarito.md}
+\clearpage
+
+% --- Resumos detalhados
+\section{Resumos por capítulo — Versões detalhadas}
+\VerbatimInput{resumo_capitulos_ultra_detalhado.md}
+\clearpage
+\VerbatimInput{resumo_capitulos.md}
+\clearpage
+
+% --- Observações finais
+\section*{Observações}
+Este ficheiro agrupa, sem conversão, todo o conteúdo Markdown relevante presente na pasta de revisão.  
+Opções futuras: converter os blocos verbatim em LaTeX nativo, deduplicar automaticamente e ajustar formatação matemática.
+
+\end{document}

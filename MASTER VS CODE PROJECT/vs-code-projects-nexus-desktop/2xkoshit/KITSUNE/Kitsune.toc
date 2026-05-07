@@ -1,0 +1,75 @@
+\contentsline {chapter}{\numberline {1}How to Use This Master Guide}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Reading This Guide}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Guide Structure}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Skill Level Recommendations}{5}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Champion Overview}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Who is Ahri?}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Playstyle Comparison}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Strengths and Weaknesses}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Move List Reference}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Notation Guide}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Normal Moves}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Ground Normals}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Air Normals}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Key Ground Normal Properties}{10}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Command Normals}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Special Moves}{11}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Special Move Quick Reference}{12}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Supers and Ultimate}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Assist Moves}{12}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Frame Data and Practical Application}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Normal Moves Frame Data}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Projectile Timing}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Reading Frame Data}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Practical Frame Notes}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Supers \& Ultimate Frame Data}{15}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Punish Windows}{15}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Unique Mechanics}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Air Dash System}{16}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Baiting Anti-Airs}{16}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Air Dash in Combos}{16}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Spirit Rush --- Omnidirectional Dashes}{17}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Ground Directions}{17}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Air Directions}{17}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Foxfire Rekka System}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Orb Arc (2S1) and Wall Bounces}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Bounce! Overhead and Air Dash Cancels}{18}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Wakeup Oki with Stalking Dart}{18}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Neutral Game}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Core Neutral Pillars}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Key Neutral Buttons}{21}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Playstyle-Specific Applications}{21}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Handling Anti-Airs}{21}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Air-to-Air Superiority}{22}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Mixup System and Oki}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Strike-Throw Mix}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}High/Low with Bounce! Overhead}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Air Dash and Spirit Rush Mixups}{24}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Falling Spark Ambiguous Crossups}{24}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Wakeup Oki Strategy}{24}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Combo Guide}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Combo Overview}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Beginner Combos}{26}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Intermediate Combos}{26}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Advanced Combos}{26}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Combo Ender Options}{27}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Matchup Strategies}{28}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Playstyle Matchup Recommendations}{28}{section.9.1}%
+\contentsline {section}{\numberline {9.2}vs. Rushdowns}{28}{section.9.2}%
+\contentsline {section}{\numberline {9.3}vs. Zoners}{29}{section.9.3}%
+\contentsline {section}{\numberline {9.4}vs. Grapplers}{29}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Team Compositions}{30}{chapter.10}%
+\contentsline {section}{\numberline {10.1}What Ahri Wants in a Partner}{30}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Best Team Pairings}{30}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Using Ahri as Assist}{31}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Forward Assist (Spirit Rush)}{31}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Back Assist (Orb Rain)}{31}{subsection.10.3.2}%
+\contentsline {section}{\numberline {10.4}Assist Coverage Chart}{31}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Gameplan Summary by Role}{32}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Advanced Concepts}{33}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Air Mobility Mastery}{33}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Season 1 Patch Summary (Version 1.1.3)}{33}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Decision Tree: Which Option to Use}{34}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Common Mistakes}{34}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Upcoming Content and Future Patches}{35}{section.11.5}%
+\contentsfinish 

@@ -1,0 +1,25 @@
+# Ignore GitHub workflows and metadata
+.github/
+
+# Ignore git bundle files
+*.bundle
+
+# VS Code workspace file
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+# Virtualenvs
+.venv/
+venv/
+
+# Environment files
+.env
+
+# Logs
+*.log

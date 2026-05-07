@@ -1,0 +1,22 @@
+<svg width="2400" height="400" viewBox="0 0 2400 400" xmlns="http://www.w3.org/2000/svg">
+<rect width="2400" height="400" fill="#FFE5B4"/>
+<polygon points="0,300 500,240 1100,280 1700,240 2400,280 2400,400 0,400" fill="#F4A261"/>
+<polygon points="0,360 700,300 1500,280 2400,330 2400,400 0,400" fill="#E76F51"/>
+</svg>
+  <defs>
+    <linearGradient id="bg11" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F6FFFF"/><stop offset="55%" stop-color="#488878"/><stop offset="100%" stop-color="#0D2222"/></linearGradient>
+    <filter id="fd11" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.010 0.020" numOctaves="4" seed="10011" result="nz"/><feDisplacementMap in="SourceGraphic" in2="nz" scale="60" xChannelSelector="R" yChannelSelector="G"/></filter>
+    <radialGradient id="vg11" cx="50%" cy="50%" r="74%"><stop offset="0%" stop-color="transparent"/><stop offset="100%" stop-color="#091818" stop-opacity="0.30"/></radialGradient>
+  </defs>
+  <rect width="2400" height="400" fill="url(#bg11)"/>
+  <circle cx="1276" cy="103" r="61" fill="#FFFFFF" opacity="0.74"/>
+  <polygon points="0,400 0,334 141,322 282,363 423,338 564,314 705,340 847,335 988,336 1129,346 1270,329 1411,320 1552,348 1694,317 1835,351 1976,343 2117,345 2258,331 2400,369 2400,400" fill="#D8F0E8"/>
+  <polygon points="0,400 0,263 141,292 282,271 423,272 564,311 705,305 847,304 988,264 1129,283 1270,281 1411,264 1552,287 1694,284 1835,262 1976,297 2117,271 2258,308 2400,276 2400,400" fill="#90C8B0"/>
+  <polygon points="0,400 0,227 141,209 282,244 423,219 564,222 705,246 847,244 988,242 1129,238 1270,243 1411,216 1552,238 1694,228 1835,236 1976,235 2117,218 2258,217 2400,226 2400,400" fill="#488878"/>
+  <polygon points="0,400 0,188 141,158 282,186 423,183 564,179 705,185 847,186 988,182 1129,160 1270,177 1411,166 1552,172 1694,185 1835,169 1976,170 2117,180 2258,168 2400,168 2400,400" fill="#285858"/>
+  <polygon points="0,400 0,121 141,118 282,108 423,106 564,115 705,123 847,121 988,126 1129,130 1270,119 1411,117 1552,124 1694,120 1835,130 1976,125 2117,115 2258,107 2400,123 2400,400" fill="#102828"/>
+  <polygon points="0,400 0,62 141,56 282,59 423,67 564,68 705,65 847,60 988,63 1129,65 1270,62 1411,58 1552,58 1694,71 1835,60 1976,69 2117,64 2258,68 2400,63 2400,400" fill="#D8F0E8"/>
+  <g id="trees"><polygon points="2274,48 2268,67 2280,67" fill="#071212"/><polygon points="1913,28 1901,65 1925,65" fill="#071212"/><polygon points="1490,40 1484,58 1496,58" fill="#071212"/><polygon points="1548,21 1536,58 1560,58" fill="#071212"/><polygon points="2205,33 2194,66 2216,66" fill="#071212"/><polygon points="767,37 759,63 775,63" fill="#071212"/><polygon points="2169,46 2163,65 2175,65" fill="#071212"/><polygon points="2179,26 2166,66 2192,66" fill="#071212"/><polygon points="1852,43 1846,61 1858,61" fill="#071212"/><polygon points="1477,27 1467,58 1487,58" fill="#071212"/><polygon points="1824,38 1817,61 1831,61" fill="#071212"/><polygon points="1392,20 1380,58 1404,58" fill="#071212"/><polygon points="926,32 916,62 936,62" fill="#071212"/><polygon points="717,47 712,64 722,64" fill="#071212"/><polygon points="1979,38 1969,69 1989,69" fill="#071212"/><polygon points="563,43 555,68 571,68" fill="#071212"/><polygon points="2062,35 2052,66 2072,66" fill="#071212"/><polygon points="1187,49 1182,64 1192,64" fill="#071212"/><polygon points="239,28 229,58 249,58" fill="#071212"/><polygon points="942,32 932,62 952,62" fill="#071212"/><polygon points="1703,38 1693,70 1713,70" fill="#071212"/><polygon points="1217,31 1207,63 1227,63" fill="#071212"/></g>
+  <rect width="2400" height="400" fill="#E2FCF3" filter="url(#fd11)" opacity="0.28"/>
+  <rect width="2400" height="400" fill="url(#vg11)"/>
+</svg>

@@ -1,0 +1,985 @@
+% !TeX program = xelatex
+% !TeX options = -shell-escape -buf-size=500000
+% !TeX encoding = UTF-8
+%
+% ╔══════════════════════════════════════════════════════════════════════════╗
+% ║                                                                        ║
+% ║   ANPG CONTEÚDO LOCAL — PROFESSIONAL DATA REPORT                       ║
+% ║   Complete Data Export from Power BI Dashboard                         ║
+% ║                                                                        ║
+% ║   Source:     https://anpg.co.ao/conteudo-local/                       ║
+% ║   Refresh:    2026-04-10                                               ║
+% ║   Records:    81,215 rows · 3,595 companies · 20 categories            ║
+% ║                                                                        ║
+% ╚══════════════════════════════════════════════════════════════════════════╝
+%
+% ────────────────────────────────────────────────────────────────────────────
+% DESIGN RATIONALE
+% ────────────────────────────────────────────────────────────────────────────
+%
+% This template transforms a 1 300-page Power BI data export into a
+% structured, navigable, professional report suitable for executive review,
+% technical analysis, and archival.  Key design decisions:
+%
+% 1. DOCUMENT CLASS: report — not article.
+%    article's \section is the top-level heading → inadequate for 1 300 pp.
+%    report provides \part + \chapter + \section hierarchy.
+%    openany: no blank even-sided pages (pure data document, not a novel).
+%    twoside: alternating inner/outer margins for print / bindability;
+%    running headers switch between recto and verso pages.
+%
+% 2. FOUR-PART STRUCTURE
+%    The data naturally divides into four logical volumes:
+%      Part I   — Overview & Legal Framework (chapters 1–4, ~160 lines)
+%      Part II  — Service & Goods Taxonomy  (chapter 5, 20 sections)
+%      Part III — Company Directory          (chapter 6, 1 massive table)
+%      Part IV  — Company–Activity Cross-Ref (chapter 7, 803 sub-tables)
+%    \part pages create visual "breathing room" in the 1 300-page document
+%    and segment the TOC into navigable groups.
+%
+% 3. HEADING MAPPING (Markdown → LaTeX)
+%    # (headingOne)   → suppressed    (title already on cover page)
+%    ## (headingTwo)   → \chapter*    (7 main data sections)
+%    ### (headingThree) → \section*   (categories, subsections)
+%    #### (headingFour) → \subsection* (803 activity listings)
+%    Star variants avoid double-numbering (markdown headings embed their
+%    own numbers like "1. Key Statistics", "5. COMPLETE SERVICE…").
+%    \addcontentsline ensures TOC and PDF bookmarks are still generated.
+%
+% 4. ASYMMETRIC MARGINS (twoside)
+%    Inner margin (binding) = 2.8 cm; outer = 2.0 cm.
+%    Professional print output if bound, while maximising column width
+%    for data-dense tables.
+%
+% 5. TABLE STRATEGY
+%    The markdown package renders pipe tables as longtable with booktabs.
+%    Zebra striping via \rowcolors resets at each longtable (etoolbox hook).
+%    Tables rendered at \small to maximise column width.
+%    \sloppy + \emergencystretch handle long Portuguese company names.
+%
+% 6. COLOUR PALETTE — anchored to ANPG's institutional identity:
+%    anpgBlue (#003D6B) — headings, structural elements, links
+%    anpgGold (#D4A843) — decorative accents, part labels
+%    tableStripe (#EBF0F5) — blue-tinted alternating table rows
+%    Regime colours: green (E), amber (P), blue (C)
+%
+% 7. EXECUTIVE SUMMARY
+%    A pre-data chapter with KPI boxes and pgfplots charts.
+%    KPI values are \newcommand macros — easy to update manually or
+%    by running  python preprocess-anpg-data.py  (generates kpi-values.tex).
+%
+% 8. PORTUGUESE LANGUAGE SUPPORT
+%    babel[portuguese] ensures correct hyphenation (crucial for long
+%    Portuguese words like "Decomissionamento") and date formatting.
+%
+% 9. TOC DEPTH = 1
+%    Printed TOC shows \part + \chapter + \section (~56 entries).
+%    Including \subsection would add 803+ entries → unusable.
+%    PDF bookmarks show ALL levels (bookmarksdepth=4) for sidebar navigation.
+%
+% 10. FONTS
+%    Times New Roman (body) — formal, government-standard, full Unicode.
+%    Arial (headings) — clean contrast with body text.
+%    Consolas (mono) — for NIF codes and technical identifiers.
+%
+% ALTERNATIVE WORKFLOWS (see also preprocess-anpg-data.py):
+%    A. Keep \markdownInput (current, simplest).
+%    B. Convert .md → .tex via Python for full per-table control
+%       (landscape, sparklines, custom column widths).
+%    C. Split .md into per-chapter files for selective compilation.
+%
+% ────────────────────────────────────────────────────────────────────────────
+% BUILD INSTRUCTIONS
+% ────────────────────────────────────────────────────────────────────────────
+%
+% Two passes required (TOC + bookmarks):
+%
+%   xelatex -buf-size=500000 --shell-escape anpg-local-content-full-data.tex
+%   xelatex -buf-size=500000 --shell-escape anpg-local-content-full-data.tex
+%
+% NOTE: -buf-size=500000 is required because the markdown package
+% generates the 3 596-row Company Directory table as a single
+% 306K-character line, exceeding TeX's default 200K buffer.
+%
+% OPTIONAL — pre-extract KPIs (generates kpi-values.tex):
+%   python preprocess-anpg-data.py
+%
+% DEPENDENCIES:
+%   XeLaTeX · shell-escape · MiKTeX or TeX Live
+%   System fonts: Times New Roman, Arial, Consolas
+%   Source:       anpg-local-content-full-data.md (same directory)
+%
+% ────────────────────────────────────────────────────────────────────────────
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  DOCUMENT CLASS
+% ══════════════════════════════════════════════════════════════════════════
+\documentclass[
+    a4paper,
+    11pt,
+    openany,        % no blank pages before chapters
+    twoside,        % asymmetric margins for binding / recto-verso headers
+]{report}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  PAGE GEOMETRY  (asymmetric for binding)
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage[
+    a4paper,
+    inner=2.8cm,        % wider binding margin
+    outer=2.0cm,
+    top=2.5cm,
+    bottom=2.5cm,
+    headheight=15pt,
+    marginparwidth=1.5cm,
+]{geometry}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  LANGUAGE  (Portuguese primary — correct hyphenation & date formatting)
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage[english,main=portuguese]{babel}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  FONTS  (XeLaTeX / LuaLaTeX / pdfLaTeX fallback)
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{iftex}
+\ifXeTeX
+    \usepackage{fontspec}
+    \defaultfontfeatures{Ligatures=TeX}
+    \setmainfont{Times New Roman}
+    \setsansfont{Arial}
+    \setmonofont{Consolas}[Scale=0.88]
+\else\ifLuaTeX
+    \usepackage{fontspec}
+    \defaultfontfeatures{Ligatures=TeX}
+    \setmainfont{Times New Roman}
+    \setsansfont{Arial}
+    \setmonofont{Consolas}[Scale=0.88]
+\else
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+\fi\fi
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  COLOUR PALETTE
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage[table,dvipsnames]{xcolor}
+
+% ANPG corporate-inspired palette
+\definecolor{anpgBlue}{HTML}{003D6B}        % deep petroleum blue
+\definecolor{anpgDarkBlue}{HTML}{002244}     % part headings
+\definecolor{anpgGold}{HTML}{D4A843}         % warm gold accent
+\definecolor{anpgGray}{HTML}{F5F5F5}         % light background
+\definecolor{tableStripe}{HTML}{EBF0F5}      % blue-tinted table stripe
+\definecolor{linkBlue}{HTML}{1A5276}         % hyperlink tint
+\definecolor{ruleGray}{HTML}{CCCCCC}         % decorative rules
+
+% Regime indicator colours
+\definecolor{regimeE}{HTML}{1B7340}          % Exclusividade — green
+\definecolor{regimeP}{HTML}{B8860B}          % Preferência   — dark goldenrod
+\definecolor{regimeC}{HTML}{2E6EA6}          % Concorrência  — steel blue
+
+% KPI box colours
+\definecolor{kpiBoxBg}{HTML}{F8FBFD}         % very light blue fill
+\definecolor{kpiBoxBorder}{HTML}{B8D4E8}     % soft blue border
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  TABLES
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{pdflscape}      % \begin{landscape} — rotated pages in PDF viewer
+
+% Slightly open rows for data-dense pages
+\renewcommand{\arraystretch}{1.20}
+
+% Caption styling — small sans-serif, blue label
+\captionsetup{
+    font={small,sf},
+    labelfont={bf,color=anpgBlue},
+    skip=8pt,
+    format=hang,
+}
+
+% Zebra striping — reset at the start of every longtable
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{%
+    \rowcolors{2}{tableStripe}{white}%
+    \small%
+}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  GRAPHICS & CHARTS
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning}
+
+% Sparklines note:  For mini in-cell charts, add \usepackage{sparklines}
+% and pre-process the Markdown tables into LaTeX with the Python script
+% (preprocess-anpg-data.py) to inject \begin{sparkline} environments.
+% This is an optional refinement beyond the markdown-input workflow.
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  URLS & LINKS
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{xurl}          % breakable URLs at any character
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  MICROTYPOGRAPHY
+% ══════════════════════════════════════════════════════════════════════════
+\IfFileExists{microtype.sty}{%
+    \usepackage[protrusion=true,expansion=false]{microtype}%
+}{}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  HEADERS & FOOTERS  (recto / verso differentiated)
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{fancyhdr}
+
+% Body page style
+\fancypagestyle{body}{%
+    \fancyhf{}%
+    \renewcommand{\headrulewidth}{0.4pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+    % Even (verso/left): chapter title on left
+    \fancyhead[LE]{\small\sffamily\textcolor{anpgBlue}{\leftmark}}%
+    % Odd (recto/right): section title on right
+    \fancyhead[RO]{\small\sffamily\textcolor{anpgBlue}{\rightmark}}%
+    % Opposite corners: fixed label
+    \fancyhead[RE,LO]{\small\sffamily\textcolor{anpgBlue}{ANPG Conteúdo Local}}%
+    % Footer: centred page number + date stamp in corners
+    \fancyfoot[C]{\small\sffamily\thepage}%
+    \fancyfoot[LE,RO]{\footnotesize\sffamily\textcolor{ruleGray}{Abril 2026}}%
+}
+
+% Plain style — chapter opening pages (no header, centred page number)
+\fancypagestyle{plain}{%
+    \fancyhf{}%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+    \fancyfoot[C]{\small\sffamily\thepage}%
+}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  SECTION HEADING STYLES
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{titlesec}
+
+% Part — gold rules framing the part number, title in blue below
+\titleformat{\part}[display]
+    {\centering\normalfont\Huge\bfseries\sffamily\color{anpgBlue}}
+    {\vspace*{3cm}{\color{anpgGold}\titlerule[2.5pt]}\vspace{8pt}%
+     {\Large\textcolor{anpgGold}{Parte~\thepart}}\vspace{8pt}%
+     {\color{anpgGold}\titlerule[2.5pt]}}
+    {20pt}
+    {}
+    [\thispagestyle{empty}]
+
+% Chapter — double rule + gold label
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries\sffamily\color{anpgBlue}}
+    {\titlerule[2.5pt]\vspace{2pt}\titlerule[0.8pt]\vspace{6pt}%
+     \Large\textcolor{anpgGold}{Capítulo~\thechapter}}
+    {0pt}
+    {\vspace{8pt}\Huge}
+    [\vspace{6pt}{\color{ruleGray}\titlerule[0.8pt]}]
+
+% Chapter* (unnumbered) — single rule, no "Capítulo N" label
+\titleformat{name=\chapter,numberless}
+    {\normalfont\huge\bfseries\sffamily\color{anpgBlue}}
+    {}
+    {0pt}
+    {\vspace{8pt}}
+    [\vspace{4pt}{\color{ruleGray}\titlerule[0.8pt]}]
+
+% Section — blue with underline
+\titleformat{\section}
+    {\normalfont\Large\bfseries\sffamily\color{anpgBlue}}
+    {\thesection}{0.8em}{}
+    [{\color{ruleGray}\titlerule[0.4pt]}]
+
+% Section* (unnumbered)
+\titleformat{name=\section,numberless}
+    {\normalfont\Large\bfseries\sffamily\color{anpgBlue}}
+    {}
+    {0pt}
+    {}
+    [{\color{ruleGray}\titlerule[0.4pt]}]
+
+% Subsection — lighter blue
+\titleformat{\subsection}
+    {\normalfont\large\bfseries\sffamily\color{anpgBlue!80!black}}
+    {\thesubsection}{0.7em}{}
+
+% Subsection* (unnumbered)
+\titleformat{name=\subsection,numberless}
+    {\normalfont\large\bfseries\sffamily\color{anpgBlue!80!black}}
+    {}
+    {0pt}
+    {}
+
+% Subsubsection
+\titleformat{\subsubsection}
+    {\normalfont\normalsize\bfseries\sffamily}
+    {\thesubsubsection}{0.6em}{}
+
+% Spacing: {left}{before}{after}
+\titlespacing*{\chapter}{0pt}{0pt}{24pt}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+\titlespacing*{\subsection}{0pt}{16pt}{8pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{5pt}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  TABLE OF CONTENTS STYLING
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{titletoc}
+
+% Part — prominent, dark blue
+\titlecontents{part}[0em]
+    {\addvspace{18pt}\bfseries\Large\sffamily\color{anpgDarkBlue}}
+    {\contentslabel{2.5em}}{}
+    {}
+
+% Chapter — bold blue with dot leaders
+\titlecontents{chapter}[0em]
+    {\addvspace{8pt}\bfseries\sffamily\color{anpgBlue}}
+    {\contentslabel{1.8em}}{}
+    {\titlerule*[8pt]{.}\contentspage}
+
+% Section — indented, regular weight
+\titlecontents{section}[1.5em]
+    {\addvspace{2pt}\sffamily}
+    {\contentslabel{2.8em}}{}
+    {\titlerule*[6pt]{.}\contentspage}
+
+% Subsection — further indented, small (not printed by default)
+\titlecontents{subsection}[3.8em]
+    {\small\sffamily}
+    {\contentslabel{3.5em}}{}
+    {\titlerule*[5pt]{.}\contentspage}
+
+% Printed TOC depth: part + chapter + section (~56 entries)
+\setcounter{tocdepth}{1}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  LISTS
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=1.5em}
+\setlist[itemize]{label=\textcolor{anpgBlue}{\textbullet}}
+\setlist[description]{style=nextline,leftmargin=2cm,font=\sffamily\bfseries\color{anpgBlue}}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  HYPERLINKS & PDF METADATA
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage[
+    colorlinks=true,
+    linkcolor=anpgBlue,
+    urlcolor=linkBlue,
+    citecolor=anpgBlue,
+    breaklinks,
+]{hyperref}
+\usepackage{bookmark}
+
+\hypersetup{
+    pdftitle  = {ANPG Conteúdo Local — Relatório Completo de Dados},
+    pdfauthor = {Extracção automatizada — Abril 2026},
+    pdfsubject= {Registo, certificação e classificação de conteúdo local
+                 de 3\,595 empresas no sector petrolífero angolano},
+    pdfkeywords={ANPG, Conteúdo Local, Angola, petróleo, Power BI,
+                 Decreto 86/18, Decreto 271/20},
+}
+
+% PDF bookmarks: show ALL levels for sidebar navigation
+% (even though printed TOC only shows down to \section)
+\bookmarksetup{depth=4}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  MARKDOWN PACKAGE  (content import — needs --shell-escape)
+% ══════════════════════════════════════════════════════════════════════════
+\usepackage[pipeTables]{markdown}
+
+% HEADING RENDERER CUSTOMISATION
+%
+% Strategy: use star (*) variants for all headings to avoid double-numbering
+% (the Markdown source already embeds numbers: "## 1. Key Statistics", etc.).
+% Manual \addcontentsline ensures TOC + PDF bookmarks are generated.
+% \markboth / \markright feed the running headers (fancyhdr).
+%
+% \part boundaries are injected at strategic chapter indices to create
+% the four-volume structure documented in the Design Rationale above.
+
+\newcounter{mdchapter}
+
+% # Title → suppressed (already on cover page / executive summary)
+\def\markdownRendererHeadingOne#1{}
+
+% ## → \chapter* with \part injection
+\def\markdownRendererHeadingTwo#1{%
+    \stepcounter{mdchapter}%
+    \ifnum\value{mdchapter}=1\relax
+        \part{Visão Geral e Enquadramento Legal}%
+    \fi
+    \ifnum\value{mdchapter}=5\relax
+        \part{Taxonomia de Serviços e Bens}%
+    \fi
+    \ifnum\value{mdchapter}=6\relax
+        \part{Directório de Empresas}%
+    \fi
+    \ifnum\value{mdchapter}=7\relax
+        \part{Referência Cruzada Empresa–Actividade}%
+    \fi
+    \chapter*{#1}%
+    \addcontentsline{toc}{chapter}{#1}%
+    \markboth{#1}{#1}%
+}
+
+% ### → \section*
+\def\markdownRendererHeadingThree#1{%
+    \section*{#1}%
+    \addcontentsline{toc}{section}{#1}%
+    \markright{#1}%
+}
+
+% #### → \subsection* (not in printed TOC; appears in PDF bookmarks)
+\def\markdownRendererHeadingFour#1{%
+    \subsection*{#1}%
+    \addcontentsline{toc}{subsection}{#1}%
+}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  KPI PLACEHOLDER COMMANDS
+% ══════════════════════════════════════════════════════════════════════════
+% Update these manually or regenerate with:
+%   python preprocess-anpg-data.py   →   kpi-values.tex
+% ──────────────────────────────────────────────────────────────────────────
+
+% Registration pipeline
+\newcommand{\kpiRegistered}{2\,534}
+\newcommand{\kpiVisited}{1\,054}
+\newcommand{\kpiCertified}{1\,199}
+\newcommand{\kpiTotalDB}{3\,595}
+
+% Data volume
+\newcommand{\kpiMappings}{81\,215}
+\newcommand{\kpiCategories}{20}
+\newcommand{\kpiActivities}{397}
+
+% Company types
+\newcommand{\kpiSCA}{2\,076}
+\newcommand{\kpiSE}{893}
+\newcommand{\kpiSCDA}{624}
+
+% Local content proxy
+\newcommand{\kpiAngolan}{2\,662}
+\newcommand{\kpiAngolanPct}{74{,}0\,\%}
+\newcommand{\kpiForeignPct}{26{,}0\,\%}
+\newcommand{\kpiCertifiedPct}{33{,}4\,\%}
+
+% Top nationalities (for charts)
+\newcommand{\kpiUK}{173}
+\newcommand{\kpiUS}{100}
+\newcommand{\kpiFR}{85}
+\newcommand{\kpiUAE}{80}
+\newcommand{\kpiPT}{69}
+
+% Load auto-generated overrides if the Python script has been run
+\IfFileExists{kpi-values.tex}{\input{kpi-values.tex}}{}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  CUSTOM ENVIRONMENTS & COMMANDS
+% ══════════════════════════════════════════════════════════════════════════
+
+% KPI highlight box (used in Executive Summary dashboard grid)
+\newcommand{\kpibox}[3]{%
+    % #1 = number, #2 = label, #3 = sublabel
+    \begin{tikzpicture}
+    \node[
+        draw=kpiBoxBorder,
+        fill=kpiBoxBg,
+        rounded corners=4pt,
+        minimum width=4.0cm,
+        minimum height=2.4cm,
+        inner sep=8pt,
+        align=center,
+    ] {
+        {\fontsize{22}{26}\selectfont\bfseries\sffamily\textcolor{anpgBlue}{#1}}\\[4pt]
+        {\small\sffamily #2}\\[1pt]
+        {\scriptsize\sffamily\textcolor{gray}{#3}}
+    };
+    \end{tikzpicture}%
+}
+
+% Regime legend (inline colour-coded labels)
+\newcommand{\regE}{\textcolor{regimeE}{\textbf{[E]}}}
+\newcommand{\regP}{\textcolor{regimeP}{\textbf{[P]}}}
+\newcommand{\regC}{\textcolor{regimeC}{\textbf{[C]}}}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  PARAGRAPH & LINE-BREAKING TUNING
+% ══════════════════════════════════════════════════════════════════════════
+\sloppy
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+\setlength{\emergencystretch}{3em}
+
+
+% ╔══════════════════════════════════════════════════════════════════════════╗
+% ║                         DOCUMENT BEGINS                                ║
+% ╚══════════════════════════════════════════════════════════════════════════╝
+
+\begin{document}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  COVER PAGE
+% ══════════════════════════════════════════════════════════════════════════
+\begin{titlepage}
+\newgeometry{margin=2.5cm}
+\thispagestyle{empty}
+
+\begin{center}
+
+\vspace*{1.5cm}
+
+% ── Top decorative rules ──
+{\color{anpgBlue}\rule{\linewidth}{3pt}}
+\vspace{2pt}
+{\color{anpgGold}\rule{\linewidth}{1pt}}
+
+\vspace{1.8cm}
+
+% ── LOGO PLACEHOLDER ──
+% Replace 'anpg-logo.png' with the actual ANPG logo file.
+% Uncomment when the logo is available:
+% \includegraphics[width=5cm]{anpg-logo.png}\par\vspace{0.8cm}
+
+{\fontsize{42}{48}\selectfont\bfseries\sffamily\textcolor{anpgBlue}{ANPG}}
+
+\vspace{0.3cm}
+
+{\fontsize{24}{30}\selectfont\sffamily\textcolor{anpgBlue}{Conteúdo Local}}
+
+\vspace{0.8cm}
+
+{\color{anpgGold}\rule{0.5\linewidth}{2pt}}
+
+\vspace{1cm}
+
+{\Large\sffamily Relatório Completo de Dados\\[6pt]
+ Extraído do Painel Power~BI}
+
+\vspace{2cm}
+
+% ── Key figures box ──
+\fcolorbox{anpgBlue}{kpiBoxBg}{%
+\begin{minipage}{0.80\linewidth}
+\centering\sffamily
+\vspace{14pt}
+{\large\bfseries\textcolor{anpgBlue}{Dados em Destaque}}\\[12pt]
+\begin{tabular}{r@{\hspace{10pt}}l@{\qquad}r@{\hspace{10pt}}l}
+    \textcolor{anpgBlue}{\textbf{\kpiTotalDB}}   & empresas no sistema &
+    \textcolor{anpgBlue}{\textbf{\kpiCategories}} & categorias de serviços \\[4pt]
+    \textcolor{anpgBlue}{\textbf{\kpiMappings}}   & mapeamentos empresa–actividade &
+    \textcolor{anpgBlue}{\textbf{\kpiActivities}} & actividades distintas \\[4pt]
+    \textcolor{anpgBlue}{\textbf{\kpiRegistered}} & empresas registadas &
+    \textcolor{anpgBlue}{\textbf{\kpiCertified}}  & empresas certificadas \\
+\end{tabular}
+\vspace{14pt}
+\end{minipage}%
+}
+
+\vspace{1.8cm}
+
+{\large\sffamily Extracção automatizada — Abril 2026}
+
+\vspace{0.4cm}
+
+{\sffamily\textit{Última actualização dos dados: 10 de Abril de 2026}}
+
+\vspace{0.6cm}
+
+{\small\sffamily Fonte: \url{https://anpg.co.ao/conteudo-local/}}
+
+\vfill
+
+% ── Bottom decorative rules ──
+{\color{anpgGold}\rule{\linewidth}{1pt}}
+\vspace{2pt}
+{\color{anpgBlue}\rule{\linewidth}{3pt}}
+
+\vspace{0.6cm}
+
+{\footnotesize\sffamily\textcolor{gray}{%
+    Base legal: Decreto Presidencial 86/18 (Conteúdo Local)
+    \quad·\quad Decreto Presidencial Nº\,271/20 (Registo e Certificação)}}
+
+\end{center}
+
+\restoregeometry
+\end{titlepage}
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  FRONT MATTER  (roman page numbers — pre-data content)
+% ══════════════════════════════════════════════════════════════════════════
+\pagenumbering{roman}
+\pagestyle{body}
+
+
+% ── Legal Notice ─────────────────────────────────────────────────────────
+\chapter*{Nota Legal}
+\addcontentsline{toc}{chapter}{Nota Legal}
+\markboth{Nota Legal}{Nota Legal}
+
+Este documento foi gerado automaticamente a partir dos dados públicos
+disponíveis no painel Power~BI de Conteúdo Local da ANPG
+(\url{https://anpg.co.ao/conteudo-local/}).
+
+Os dados aqui apresentados são de natureza pública e destinam-se a fins
+de análise, investigação e referência técnica.
+A informação é apresentada tal como foi extraída, sem modificações ao
+conteúdo original.
+
+\begin{description}
+    \item[Decreto Presidencial 86/18]
+        Regime Jurídico do Conteúdo Local no Sector Petrolífero.
+    \item[Decreto Presidencial Nº\,271/20]
+        Registo e Certificação de Empresas para o Sector Petrolífero em Angola.
+\end{description}
+
+A ANPG publica anualmente as listas de bens e serviços a contratar pelos
+operadores e associados sob os regimes de:
+
+\begin{itemize}
+    \item \regE{} \textbf{Exclusividade} — contratação exclusiva a empresas
+          locais/angolanas
+    \item \regP{} \textbf{Preferência} — preferência para empresas locais
+    \item \regC{} \textbf{Concorrência} — concurso aberto
+\end{itemize}
+
+\clearpage
+
+
+% ── How to Read This Document ────────────────────────────────────────────
+\chapter*{Como Utilizar Este Documento}
+\addcontentsline{toc}{chapter}{Como Utilizar Este Documento}
+\markboth{Como Utilizar Este Documento}{Como Utilizar Este Documento}
+
+Este relatório está organizado em \textbf{quatro partes}:
+
+\begin{description}
+    \item[Parte~I — Visão Geral e Enquadramento Legal]
+        Estatísticas-chave, enquadramento legal, estrutura do formulário de
+        registo e modelo de dados do Power~BI.  Ideal para compreender o
+        contexto antes de consultar os dados detalhados.
+
+    \item[Parte~II — Taxonomia de Serviços e Bens]
+        As \kpiCategories{} categorias de serviços e bens com as respectivas
+        actividades, tipo (serviço/bem) e regime (Exclusividade, Preferência
+        ou Concorrência).  Utilize esta parte para identificar nichos de
+        mercado e oportunidades de conteúdo local.
+
+    \item[Parte~III — Directório de Empresas]
+        Listagem completa das \kpiTotalDB{} empresas, ordenadas
+        alfabeticamente, com NIF, tipo de sociedade, estado de certificação
+        e nacionalidade.
+
+    \item[Parte~IV — Referência Cruzada Empresa–Actividade]
+        Os \kpiMappings{} registos que ligam cada empresa às actividades
+        em que está inscrita.  Organizado por Categoria → Actividade →
+        Empresas.  Utilize esta parte para pesquisar concorrentes ou
+        parceiros por área de serviço.
+\end{description}
+
+\medskip
+
+\noindent\textbf{Navegação:}
+Utilize o \textbf{Índice} (página seguinte) para navegar entre partes e
+capítulos.  No leitor de PDF, os \textbf{marcadores laterais} (bookmarks)
+incluem todos os níveis, permitindo saltar directamente para qualquer
+actividade individual.
+
+\clearpage
+
+
+% ── Executive Summary ────────────────────────────────────────────────────
+\chapter*{Sumário Executivo}
+\addcontentsline{toc}{chapter}{Sumário Executivo}
+\markboth{Sumário Executivo}{Sumário Executivo}
+
+% ─── KPI Dashboard: 6 key metrics in a 3×2 grid ───
+\begin{center}
+\vspace{0.3cm}
+
+\kpibox{\kpiTotalDB}{Empresas no Sistema}{total na base de dados}%
+\hfill
+\kpibox{\kpiRegistered}{Registadas}{\kpiAngolanPct{} angolanas}%
+\hfill
+\kpibox{\kpiCertified}{Certificadas}{\kpiCertifiedPct{} do total}%
+
+\vspace{0.8cm}
+
+\kpibox{\kpiMappings}{Mapeamentos}{empresa–actividade}%
+\hfill
+\kpibox{\kpiCategories}{Categorias}{de serviços e bens}%
+\hfill
+\kpibox{\kpiActivities}{Actividades}{distintas registadas}%
+
+\vspace{0.3cm}
+\end{center}
+
+
+% ─── Chart 1: Company Status Breakdown ───
+\vspace{0.8cm}
+\noindent\textbf{\sffamily\large\textcolor{anpgBlue}{%
+    Distribuição por Estado de Certificação}}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xbar,
+    width=0.80\textwidth,
+    height=7cm,
+    bar width=12pt,
+    xlabel={\sffamily Número de empresas},
+    xlabel style={font=\small\sffamily},
+    xmin=0, xmax=1850,
+    symbolic y coords={%
+        {Outros},
+        {Recusado},
+        {Condicionado},
+        {Aprovado},
+        {Aprovado (Int.)},
+        {Certificado}%
+    },
+    ytick=data,
+    yticklabel style={font=\small\sffamily},
+    xticklabel style={font=\small\sffamily},
+    nodes near coords,
+    nodes near coords style={font=\small\sffamily\bfseries,color=anpgBlue},
+    every axis plot/.append style={fill=anpgBlue!70,draw=anpgBlue},
+    enlarge y limits=0.15,
+    grid=major,
+    grid style={gray!20},
+    axis line style={gray!50},
+]
+\addplot coordinates {
+    (130,{Outros})
+    (114,{Recusado})
+    (430,{Condicionado})
+    (475,{Aprovado})
+    (859,{Aprovado (Int.)})
+    (1587,{Certificado})
+};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+{\small\sffamily\textcolor{gray}{%
+    «Outros» agrupa: Pré~Triagem (112), Triagem (11),
+    Em~Certificação (4+2+1).}}
+
+
+% ─── Chart 2: Company Types ───
+\vspace{0.8cm}
+\noindent\textbf{\sffamily\large\textcolor{anpgBlue}{%
+    Distribuição por Tipo de Sociedade}}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xbar,
+    width=0.62\textwidth,
+    height=4cm,
+    bar width=16pt,
+    xlabel={\sffamily Número de empresas},
+    xlabel style={font=\small\sffamily},
+    xmin=0,
+    symbolic y coords={SCDA, SE, SCA},
+    ytick=data,
+    yticklabel style={font=\sffamily},
+    xticklabel style={font=\small\sffamily},
+    nodes near coords,
+    nodes near coords style={font=\sffamily\bfseries,color=anpgBlue},
+    every axis plot/.append style={fill=anpgGold!80!anpgBlue,draw=anpgBlue!60},
+    enlarge y limits=0.35,
+    axis line style={gray!50},
+]
+\addplot coordinates {
+    (624,SCDA)
+    (893,SE)
+    (2076,SCA)
+};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\small\sffamily
+\textbf{SCA} — Sociedade Comercial Angolana \quad
+\textbf{SE} — Sociedade Estrangeira \quad
+\textbf{SCDA} — Sociedade Comercial de Direito Angolano
+\end{center}
+
+
+% ─── Chart 3: Top 10 Service Categories by Volume ───
+\vspace{0.8cm}
+\noindent\textbf{\sffamily\large\textcolor{anpgBlue}{%
+    Top~10 Categorias por Volume de Registos}}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    xbar,
+    width=0.80\textwidth,
+    height=9.5cm,
+    bar width=10pt,
+    xlabel={\sffamily Mapeamentos empresa–actividade},
+    xlabel style={font=\small\sffamily},
+    xmin=0,
+    symbolic y coords={%
+        {Formação},
+        {Suporte Operações},
+        {Engenharia},
+        {Inspecção/Testes},
+        {Consultoria},
+        {Fabricação},
+        {Logísticos},
+        {HSE},
+        {Perfuração},
+        {Apoio Geral},
+        {TIC}%
+    },
+    ytick=data,
+    yticklabel style={font=\scriptsize\sffamily},
+    xticklabel style={font=\small\sffamily},
+    nodes near coords,
+    nodes near coords style={font=\tiny\sffamily\bfseries,color=anpgBlue},
+    every axis plot/.append style={fill=anpgBlue!55,draw=anpgBlue!80},
+    enlarge y limits=0.08,
+    grid=major,
+    grid style={gray!15},
+    axis line style={gray!50},
+]
+\addplot coordinates {
+    (4788,{Formação})
+    (4490,{Suporte Operações})
+    (5492,{Engenharia})
+    (5943,{Inspecção/Testes})
+    (3987,{Consultoria})
+    (3985,{Fabricação})
+    (3882,{Logísticos})
+    (3892,{HSE})
+    (8141,{Perfuração})
+    (10433,{Apoio Geral})
+    (10441,{TIC})
+};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+{\small\sffamily\textcolor{gray}{%
+    As 20 categorias completas com totais detalhados encontram-se na
+    Parte~II (Capítulo~5).}}
+
+
+% ─── Local Content Overview ───
+\vspace{1cm}
+\noindent\textbf{\sffamily\large\textcolor{anpgBlue}{%
+    Indicadores de Conteúdo Local}}
+
+\vspace{0.4cm}
+
+\begin{center}
+\begin{tabular}{lrl}
+\toprule
+\textbf{Indicador} & \textbf{Valor} & \textbf{Nota} \\
+\midrule
+Empresas angolanas (SCA+SCDA)
+    & \kpiAngolan{}
+    & \kpiAngolanPct{} do total \\
+Empresas estrangeiras (SE)
+    & \kpiSE{}
+    & \kpiForeignPct{} do total \\
+Empresas certificadas
+    & \kpiCertified{}
+    & \kpiCertifiedPct{} taxa de certificação \\
+Categorias de serviços
+    & \kpiCategories{}
+    & abrangendo \kpiActivities{} actividades \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+
+{\small\sffamily\textcolor{gray}{%
+    Nota: os indicadores acima são derivados da contagem directa dos
+    registos no Power~BI.  As métricas de receita, colaboradores e
+    percentagem de conteúdo local por empresa estão disponíveis nas
+    tabelas «Factual de Conteúdo Local» e «Factual Contabilidade» do
+    modelo de dados (Capítulo~4).}}
+
+\clearpage
+
+
+% ── Table of Contents ────────────────────────────────────────────────────
+\tableofcontents
+
+\clearpage
+
+
+% ══════════════════════════════════════════════════════════════════════════
+%  MAIN CONTENT  (arabic page numbers — raw data from Power BI)
+% ══════════════════════════════════════════════════════════════════════════
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ── DATA INPUT ───────────────────────────────────────────────────────────
+% The Markdown file is ingested below.  Custom heading renderers (defined
+% in the preamble) map ## → \chapter*, ### → \section*, #### → \subsection*
+% and inject \part boundaries at chapters 1, 5, 6, and 7.
+%
+% ALTERNATIVE WORKFLOW:
+% If you convert the Markdown to LaTeX fragments using the preprocessing
+% script, replace the line below with:
+%   \input{anpg-local-content-data.tex}
+% and gain per-table control (landscape, sparklines, custom column widths).
+% ─────────────────────────────────────────────────────────────────────────
+
+\markdownInput{anpg-local-content-full-data.md}
+
+
+\end{document}

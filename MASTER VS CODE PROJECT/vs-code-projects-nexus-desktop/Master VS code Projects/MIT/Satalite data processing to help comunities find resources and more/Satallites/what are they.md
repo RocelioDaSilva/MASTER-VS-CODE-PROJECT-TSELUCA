@@ -1,0 +1,1 @@
+An **artificial satellite** is a human-made object intentionally placed into orbit around Earth (or another body). It has a **bus** (the platform: power, structure, computers, comms, thermal control) and a **payload** (the instruments — cameras, antennas, sensors).

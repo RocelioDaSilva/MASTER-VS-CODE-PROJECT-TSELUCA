@@ -1,0 +1,52 @@
+\contentsline {chapter}{\numberline {1}The Tavern Opens}{8}{}%
+\contentsline {chapter}{\numberline {2}Caspian's First Visit}{19}{}%
+\contentsline {chapter}{\numberline {3}The Robbery \& First Kill}{27}{}%
+\contentsline {chapter}{\numberline {4}Harald's Training Oath}{35}{}%
+\contentsline {chapter}{\numberline {5}Elara's Ambush \& Care}{42}{}%
+\contentsline {chapter}{\numberline {6}Tarovin's Candle Demonstration}{49}{}%
+\contentsline {chapter}{\numberline {7}Winter Snow \& Caspian Returns}{54}{}%
+\contentsline {chapter}{\numberline {8}Kaelen \& The Flower Grove}{55}{}%
+\contentsline {chapter}{\numberline {9}Tarovin's Formal Apprenticeship}{60}{}%
+\contentsline {chapter}{\numberline {10}Corvin Glimpsed at Border}{62}{}%
+\contentsline {chapter}{\numberline {11}The First Synthesis Moment}{64}{}%
+\contentsline {chapter}{\numberline {12}The Amara Caravan Meeting}{67}{}%
+\contentsline {chapter}{\numberline {13}Academy Arrival}{71}{}%
+\contentsline {chapter}{\numberline {14}Kaelen at the Academy}{75}{}%
+\contentsline {chapter}{\numberline {15}Rin's Secret Mission}{78}{}%
+\contentsline {chapter}{\numberline {16}The Opportunity Assembly}{81}{}%
+\contentsline {chapter}{\numberline {17}First Limit-Break Witness}{90}{}%
+\contentsline {chapter}{\numberline {18}Aisen's Chain Weapon Testing}{108}{}%
+\contentsline {chapter}{\numberline {19}The Library Discovery}{124}{}%
+\contentsline {chapter}{\numberline {20}Kaelen \& Rin's Garden Meeting}{136}{}%
+\contentsline {chapter}{\numberline {21}The Refugee Crisis Report}{147}{}%
+\contentsline {chapter}{\numberline {22}Naia's Limit-Break}{151}{}%
+\contentsline {chapter}{\numberline {23}The Mysterious Professor}{171}{}%
+\contentsline {chapter}{\numberline {24}Amara's Intelligence Report}{175}{}%
+\contentsline {chapter}{\numberline {25}The Approaching Tide}{191}{}%
+\contentsline {chapter}{\numberline {26}Conscription \& Separation}{194}{}%
+\contentsline {chapter}{\numberline {27}The Border Camp Reality}{198}{}%
+\contentsline {chapter}{\numberline {28}Corvin's Presence}{213}{}%
+\contentsline {chapter}{\numberline {29}The Refugee Village Burning}{225}{}%
+\contentsline {chapter}{\numberline {30}Communication Through Channels}{242}{}%
+\contentsline {chapter}{\numberline {31}The First Anti-Covenant Action}{246}{}%
+\contentsline {chapter}{\numberline {32}Lucius Varro's Warning}{267}{}%
+\contentsline {chapter}{\numberline {33}The Archive Revelation}{278}{}%
+\contentsline {chapter}{\numberline {34}The Ritual Discovery}{291}{}%
+\contentsline {chapter}{\numberline {35}Information Explosion}{303}{}%
+\contentsline {chapter}{\numberline {36}Covenant Counter-Strike}{315}{}%
+\contentsline {chapter}{\numberline {37}The Academy Purge}{318}{}%
+\contentsline {chapter}{\numberline {38}The Mentor's Sacrifice}{320}{}%
+\contentsline {chapter}{\numberline {39}Covenant Headquarters Confrontation}{331}{}%
+\contentsline {chapter}{\numberline {40}Seraphine's Isolation}{335}{}%
+\contentsline {chapter}{\numberline {41}Caspian's Choice}{348}{}%
+\contentsline {chapter}{\numberline {42}Corvin's Reckoning}{368}{}%
+\contentsline {chapter}{\numberline {43}Varro's Fragmented Truth}{384}{}%
+\contentsline {chapter}{\numberline {44}The Death \& Immediate Aftermath}{398}{}%
+\contentsline {chapter}{\numberline {45}The Network Reconvenes}{418}{}%
+\contentsline {chapter}{\numberline {46}Refugees Hear of Aisen's Death}{421}{}%
+\contentsline {chapter}{\numberline {47}Amara Becomes Keeper}{424}{}%
+\contentsline {chapter}{\numberline {48}Kaelen's Garden}{426}{}%
+\contentsline {chapter}{\numberline {49}Elara's Ruling}{428}{}%
+\contentsline {chapter}{\numberline {50}Final Micro-Scene Recurrence}{431}{}%
+\contentsline {chapter}{\numberline {51}The World Years Later}{434}{}%
+\contentsline {chapter}{\numberline {52}Final Coda}{436}{}%

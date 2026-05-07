@@ -1,0 +1,95 @@
+%! TEX program = xelatex
+\documentclass[12pt, twoside, openright]{book}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% PACKAGES & SETUP
+% ═══════════════════════════════════════════════════════════════════════════
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Colors matching the HTML aesthetic
+\usepackage[dvipsnames,svgnames]{xcolor}
+\definecolor{parchment}{HTML}{f5ede0}
+\definecolor{parchmentdark}{HTML}{e8d9c4}
+\definecolor{ink}{HTML}{1a1410}
+\definecolor{inkfaded}{HTML}{3d3028}
+\definecolor{sepia}{HTML}{7a5c3a}
+\definecolor{sepiafade}{HTML}{b89070}
+\definecolor{sepiapale}{HTML}{d4b896}
+\definecolor{gold}{HTML}{c8a84b}
+\definecolor{goldlight}{HTML}{e5c97a}
+\definecolor{chapterstripe}{HTML}{2a1f14}
+\definecolor{stripeaccent}{HTML}{8b6840}
+\definecolor{border}{HTML}{9a7a58}
+
+% Page layout
+\usepackage[inner=1.2in, outer=0.8in, top=0.8in, bottom=0.8in]{geometry}
+
+% Typography
+\usepackage{lettrine}
+\usepackage{setspace}
+\setstretch{1.85}
+
+% Headers and footers
+\usepackage{fancyhdr}
+
+% Graphics for chapter stripe
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usetikzlibrary{calc}
+
+% Chapter styling
+\usepackage{titlesec}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% PAGE COLORS & STYLING
+% ═══════════════════════════════════════════════════════════════════════════
+
+\pagecolor{parchment}
+\color{inkfaded}
+
+% Custom page style
+\fancypagestyle{bookpage}{%
+  \fancyhf{}
+  \fancyhead[LE]{\small\color{sepiapale}\thepage}
+  \fancyhead[RO]{\small\color{sepiapale}\thepage}
+  \fancyfoot[C]{\small\color{sepiapale}\textit{Embers of the Forsaken Keep}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.5pt}
+  \renewcommand{\footrule}{\color{border}\vskip-\footruleskip\hrule width\headwidth height 0.5pt\vskip\footruleskip}
+}
+
+\pagestyle{bookpage}
+
+% Add chapter stripe to pages
+\usepackage{atbegshi}
+\AtBeginShipout{%
+  \AtBeginShipoutUpperLeft{%
+    \begin{tikzpicture}[remember picture, overlay]
+      % Dark stripe on left
+      \fill[chapterstripe] (current page.north west) rectangle ([xshift=0.2in]current page.south west);
+      % Accent border
+      \draw[stripeaccent, line width=2pt] ([xshift=0.2in]current page.north west) -- ([xshift=0.2in]current page.south west);
+    \end{tikzpicture}%
+  }%
+}
+
+% ═══════════════════════════════════════════════════════════════════════════
+% CHAPTER STYLING
+% ═══════════════════════════════════════════════════════════════════════════
+
+\titleformat{\chapter}[display]
+  {\centering}
+  {\small\color{sepiapale}\MakeUppercase{Chapter \thechapter}}
+  {0.8em}
+  {\Large\color{ink}\bfseries}
+  [{\vspace{0.3em}\centering\color{gold}\large \fleuron\vspace{0.5em}}]
+
+\titlespacing*{\chapter}{0pt}{1em}{1.5em}
+
+% Fleuron ornament
+\newcommand{\fleuron}{\dagger}
+
+% ═══════════════════════════════════════════════════════════════════════════

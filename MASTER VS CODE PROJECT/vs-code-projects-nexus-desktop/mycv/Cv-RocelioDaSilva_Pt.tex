@@ -1,0 +1,283 @@
+% ============================================================
+%  Curriculum Vitae — Rocélio da Silva
+%  v4 PT — Versão em Português: larger type, looser leading, clearer hierarchy
+% ============================================================
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0pt]{geometry}
+\usepackage{array,tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{pagecolor}
+\usepackage{amssymb}
+
+\usetikzlibrary{calc}
+
+\definecolor{sidebarBg}{HTML}{580000}
+\definecolor{mainBg}{HTML}{7A0000}
+\definecolor{cvgold}{HTML}{D4AF37}
+\definecolor{cvgoldlt}{HTML}{EDD87A}
+\definecolor{cvwhite}{HTML}{F7F2E8}
+\definecolor{cvmuted}{HTML}{D8CCBA}
+
+\pagecolor{mainBg}
+\color{cvwhite}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+
+\hypersetup{colorlinks=true, urlcolor=cvgoldlt, linkcolor=cvgoldlt}
+
+\let\tbf\textbf
+\renewcommand{\textbf}[1]{{\bfseries\color{cvgold}#1}}
+
+\newcommand{\sideSection}[1]{%
+  \vspace{7pt}%
+  {\bfseries\color{cvgold}\small\MakeUppercase{#1}}%
+  \par\vspace{1pt}%
+  {\color{cvgold}\rule{\linewidth}{0.55pt}}%
+  \par\vspace{1pt}%
+}
+
+\newcommand{\mainSection}[1]{%
+  \vspace{1pt}%
+  {\bfseries\color{cvgold}\large\MakeUppercase{#1}}%
+  \par\vspace{0pt}%
+  {\color{cvgold}\rule{\linewidth}{0.9pt}}%
+  \par\vspace{1pt}%
+}
+
+\newcommand{\expEntry}[3]{%
+  {\bfseries\color{cvgold}\normalsize #1}\par\vspace{1pt}%
+  {\color{cvmuted}\small #2 \hfill \textit{\color{cvgoldlt}#3}}\par\vspace{1pt}%
+}
+
+\setlist[itemize]{
+  itemsep=1pt,
+  topsep=1pt,
+  leftmargin=1.3em,
+  label={\color{cvgold}\small$\blacklozenge$}
+}
+
+\begin{document}
+
+\noindent
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[sidebarBg]
+    (current page.north west)
+    rectangle
+    ([xshift=0.295\paperwidth] current page.south west);
+  \draw[cvgold, line width=1.5pt]
+    ([xshift=0.295\paperwidth] current page.north west)
+    -- ([xshift=0.295\paperwidth] current page.south west);
+\end{tikzpicture}
+
+% ============================================================
+%  LEFT SIDEBAR
+% ============================================================
+\noindent
+\begin{minipage}[t]{0.283\paperwidth}
+  \color{cvwhite}
+  \setlength{\parskip}{3pt}
+  \hspace*{10pt}%
+  \begin{minipage}[t]{\dimexpr\linewidth-18pt}
+
+    \vspace{5pt}
+    \begin{center}
+      \IfFileExists{photo.png}{%
+        \begin{tikzpicture}
+          \clip (0,0) circle (0.72in);
+          \node[inner sep=0pt] at (0,0)
+            {\includegraphics[width=1.44in,height=1.44in,keepaspectratio]{photo.png}};
+          \draw[cvgold, line width=2pt] (0,0) circle (0.72in);
+        \end{tikzpicture}%
+      }{%
+        \begin{tikzpicture}
+          \fill[cvgold] (0,0) circle (0.72in);
+          \draw[cvwhite!40, line width=1.2pt] (0,0) circle (0.72in);
+          \node[font=\bfseries\LARGE, text=sidebarBg] at (0,0) {RS};
+        \end{tikzpicture}%
+      }
+      \par\vspace{2pt}
+      {\large\bfseries\color{cvgold} Rocélio da Silva}\par\vspace{2pt}
+      {\small\color{cvmuted} Offshore \& Engenharia Upstream}\par\vspace{2pt}
+      {\color{cvgold}\rule{0.70\linewidth}{0.5pt}}
+    \end{center}
+
+    \sideSection{Contact}
+    {\small
+      \textbf{Tel\,} \color{cvwhite}+244 924 010 222\par\vspace{2pt}
+      \textbf{Email\,} \href{mailto:rocelioinc@gmail.com}{\color{cvgoldlt}rocelioinc@gmail.com}\par\vspace{2pt}
+      \textbf{Local\,} \color{cvwhite}Benfica, Luanda\par
+    }
+
+    \sideSection{Education}
+    {\small
+      \textbf{ISPTEC}\par
+      \color{cvwhite}B.Sc. Eng. de Petróleos\par
+      \textit{\color{cvgoldlt}2022 – Presente · 3.º Ano}\par\vspace{2pt}
+      \textbf{CEPI}\par
+      \color{cvwhite}Diploma Secundário\par
+      \textit{\color{cvgoldlt}2020 -- 2022}\par
+    }
+
+    \sideSection{Languages}
+    {\small
+      \begin{tabular}{@{}l@{\hspace{6pt}}r@{}}
+        \textbf{Português} & \color{cvwhite}Nativo \\[3pt]
+        \textbf{Inglês}    & \color{cvgoldlt}TOEFL 99 \\
+      \end{tabular}
+    }
+
+    \sideSection{Technical Skills}
+    {\small
+      \begin{itemize}[leftmargin=1em]
+        \item Python -- Pandas, Matplotlib
+        \item Calc. Factor Z (Pitzer, Papay)
+        \item Selecção de Métodos EOR
+        \item Reservatórios \& Poços
+        \item Fluidos de Perfuração Offshore
+        \item GIS basico $\cdot$ Blender 3-D
+        \item C,\; HTML / CSS
+      \end{itemize}
+    }
+
+    \sideSection{Leadership}
+    {\small
+      \begin{itemize}[leftmargin=1em]
+        \item Membership Chairperson
+        \item Gestão de Eventos
+        \item Comunicação Técnica
+        \item Trabalho em Equipa
+      \end{itemize}
+    }
+
+    \sideSection{Affiliations}
+    {\small
+      \textbf{SPE} -- Soc. de Engenheiros de Petróleos\par
+      \textit{\color{cvgoldlt}Membro Estudantil}\par\vspace{2pt}
+      \textbf{MIT Global Classroom}\par
+      \textit{\color{cvgoldlt}Participante, 2025}\par
+    }
+
+    \vspace{2pt}
+    \begin{center}
+      {\color{cvgold}\rule{0.55\linewidth}{0.4pt}}\par\vspace{2pt}
+      {\color{cvgoldlt}\small\itshape Referências disponíveis a pedido}
+    \end{center}
+
+  \end{minipage}
+\end{minipage}%
+%
+% ============================================================
+%  RIGHT MAIN
+% ============================================================
+\hspace*{10pt}%
+\begin{minipage}[t]{\dimexpr 0.705\paperwidth - 26pt}
+  \color{cvwhite}
+  \setlength{\parskip}{1pt}
+  \setstretch{1.03}
+
+  \vspace{5pt}
+
+  \begin{tikzpicture}
+    \node[inner sep=0pt, anchor=west] (title) at (0,0)
+      {\parbox{\linewidth}{%
+        {\huge\bfseries\color{cvgold} ROCÉLIO DA SILVA}\\[2pt]
+        {\normalsize\color{cvmuted}
+          Offshore \& Engenharia Upstream $\cdot$ Membro SPE $\cdot$ Luanda, Angola}%
+      }};
+    \draw[cvgold, line width=0.7pt]
+      ([yshift=-4pt] title.south west) -- ([yshift=-4pt] title.south east);
+  \end{tikzpicture}
+
+  \mainSection{Profile}
+  \setstretch{1.05}
+  Estudante do 3.o ano de Engenharia de Petroleos no ISPTEC com forte vocação para
+  operações \textbf{offshore} e desenvolvimento de software técnico para a indústria
+  petrolífera. Líder da equipa ISPTEC no PetroChamp, Membership Chairperson do SPE
+  Student Chapter e participante do MIT Global Classroom (2025). Desenvolve ferramentas
+  Python para cálculos de engenharia de reservatórios (factor Z, EOR). Fluente em
+  Inglês (TOEFL~99) e comprometido com excelência técnica em mercados emergentes.
+  \setstretch{1.05}
+
+  \mainSection{Professional Experience}
+
+  \expEntry{Membership Chairperson -- SPE Student Chapter}%
+           {ISPTEC / Society of Petroleum Engineers}%
+           {2026 – Presente}
+  \begin{itemize}
+    \item Lidera recrutamento, engagement e retenção de membros.
+    \item Coordena seminários técnicos e promove networking indústria-academia.
+  \end{itemize}
+
+  \vspace{2pt}
+  \expEntry{Secretário de Assuntos Académicos}%
+           {AEISPTEC -- Associação de Estudantes do ISPTEC}%
+           {2022 – 2025}
+  \begin{itemize}
+    \item Coordenou eventos académicos e actividades departamentais.
+    \item Geriu comunicações e documentação académica dos estudantes.
+    \item Serviu de liaison entre a liderança académica e o corpo estudantil.
+  \end{itemize}
+
+  \mainSection{Key Projects}
+
+  \textbf{Estudo de Viabilidade Solar Comunitária -- MIT–ISPTEC (2025)}\par
+  {\color{cvgoldlt}\small MIT Global Classroom $\cdot$ Iniciativa de Acesso à Energia em Angola}
+  \begin{itemize}
+    \item Selecção de locais óptimos via análise GIS e modelagem de procura energética.
+    \item Apresentou resultados a stakeholders internacionais e à liderança do ISPTEC.
+    \item Impacto directo na estratégia de energia para comunidades desfavorecidas em Angola.
+  \end{itemize}
+
+  \vspace{2pt}
+  \textbf{Calculadora Factor Z \& Ferramenta EOR -- Python (2024–2025)}\par
+  {\color{cvgoldlt}\small Engenharia de Software $\cdot$ ISPTEC}
+  \begin{itemize}
+    \item Calculadora Python do factor Z (Pitzer–Curl, Papay) para condições de reservatório.
+    \item Módulo de selecção de método EOR: análise multicritério (WAG, polímeros, CO₂ flooding).
+    \item CLI interactiva; exportação CSV e gráficos Matplotlib.
+  \end{itemize}
+
+  \mainSection{Achievements \& Recognition}
+
+  \renewcommand{\arraystretch}{1.40}
+  \begin{tabular}{@{} p{0.06\linewidth} p{0.88\linewidth} @{}}
+    {\bfseries\color{cvgold}2025} &
+      \textbf{PetroChamp -- Líder de Equipa ISPTEC}: Liderou a equipa ISPTEC na competição técnica PetroChamp, demonstrando excelência académica e liderança sob pressão.\\
+    {\bfseries\color{cvgold}2025} &
+      \textbf{Orador \& Anfitrião} -- Semana Académica de Geociências (ISPTEC); coordenou oradores multinacionais.\\
+    {\bfseries\color{cvgold}2025} &
+      \textbf{MIT Global Classroom} -- Solar Comunitário; estudo apresentado a colaboradores internacionais.\\
+    {\bfseries\color{cvgold}2022} &
+      \textbf{TOEFL 99/120} -- Proficiência avançada em Inglês; habilitou colaborações SPE e MIT.\\
+  \end{tabular}
+  \renewcommand{\arraystretch}{1}
+
+  \mainSection{Career Objectives}
+  \setstretch{1.05}
+  Procuro uma posição em \textbf{operações offshore} ou upstream onde possa combinar
+  competências em engenharia de reservatórios, desenvolvimento de software técnico
+  (Python) e liderança de equipas para contribuir para operações eficientes e
+  sustentáveis em Angola e na África Subsariana.
+  \setstretch{1.05}
+
+  \vspace{2pt}
+  \begin{tikzpicture}
+    \draw[cvgold, line width=0.6pt] (0,0) -- (\linewidth,0);
+    \node[anchor=east, font=\small\itshape, text=cvgoldlt]
+      at (\linewidth, 5pt) {Engenharia de Petróleos $\cdot$ Angola $\cdot$ 2025};
+  \end{tikzpicture}
+
+\end{minipage}
+
+\end{document}

@@ -1,0 +1,261 @@
+\documentclass[12pt,a4paper]{report}
+% PACOTES
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\titleformat{\chapter}
+  {\normalfont\bfseries\fontsize{14}{16}\selectfont}
+  {\thechapter.}{1em}{}
+% FORMATAÇÃO ABNT
+\geometry{
+left=3cm,
+right=2cm,
+top=3cm,
+bottom=2cm
+}
+
+\onehalfspacing
+\setlength{\parindent}{1.25cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+
+\usepackage{hyperref}
+\begin{document}
+
+% ================= CAPA =================
+\begin{titlepage}
+\centering
+{\large INSTITUTO SUPERIOR POLITÉCNICO DE TECNOLOGIAS E CIÊNCIAS}\\[2cm]
+{\large ENGENHARIA DE PETRÓLEO}\\[2cm]
+{\large CRISTINA TEMBO BONGUE}\\[4cm]
+
+{\LARGE \textbf{HISTÓRIA DA ENGENHARIA DE RESERVATÓRIOS}}\\[6cm]
+
+Luanda\\
+2026
+\end{titlepage}
+
+% ================= FOLHA DE ROSTO =================
+\begin{titlepage}
+\centering
+
+{\large CRISTINA TEMBO BONGUE}\\[4cm]
+
+{\LARGE \textbf{HISTÓRIA DA ENGENHARIA DE RESERVATÓRIOS}}\\[5cm]
+
+Trabalho apresentado ao curso de Engenharia de Petróleo da ISPTEC, como requisito parcial para obtenção do grau de Engenheiro, com enfoque na evolução histórica da engenharia de reservatórios\\[6cm]
+
+Luanda\\
+2026
+\end{titlepage}
+
+% ================= RESUMO =================
+\pagenumbering{roman} % inicia numeração romana
+\setcounter{page}{1}  % começa do i
+
+\chapter*{Resumo}
+A engenharia de reservatórios constitui uma área fundamental da indústria petrolífera, responsável pela análise, gestão e otimização da produção de hidrocarbonetos em reservatórios subterrâneos. Este trabalho aborda a evolução histórica dessa disciplina, desde as primeiras práticas empíricas associadas à exploração inicial do petróleo até ao desenvolvimento de métodos científicos e tecnológicos avançados. Inicialmente, a produção baseava-se na energia natural dos reservatórios, sem compreensão adequada dos seus mecanismos internos. Com o avanço do conhecimento científico, destacando-se a aplicação da Lei de Darcy, a engenharia de reservatórios consolidou-se como uma área técnica essencial.
+Ao longo do tempo, foram desenvolvidos métodos mais eficientes de recuperação de petróleo, incluindo técnicas primárias, secundárias e avançadas, que permitiram aumentar significativamente o fator de recuperação dos reservatórios. Paralelamente, a introdução da simulação numérica e a integração de dados geológicos e geofísicos contribuíram para uma melhor previsão do comportamento dos reservatórios.
+O estudo também analisa os desafios atuais enfrentados pela engenharia de reservatórios, como a exploração de campos maduros, a complexidade geológica e as exigências ambientais. Por fim, são discutidas as perspetivas futuras, marcadas pela transformação digital, uso de inteligência artificial e pela crescente necessidade de soluções sustentáveis. Conclui-se que a engenharia de reservatórios evoluiu de uma prática empírica para uma disciplina altamente tecnológica, desempenhando um papel crucial na gestão eficiente dos recursos energéticos.
+\addcontentsline{toc}{chapter}{Resumo}
+sumário
+\thispagestyle{plain}
+
+
+
+% ================= ABSTRACT =================
+\chapter*{Abstract}
+Reservoir engineering is a fundamental field within the petroleum industry, responsible for the analysis, management, and optimization of hydrocarbon production from subsurface reservoirs. This study examines the historical evolution of reservoir engineering, from early empirical practices associated with initial oil exploitation to the development of advanced scientific and technological methods. Initially, oil production relied solely on natural reservoir energy, with limited understanding of subsurface dynamics. With the advancement of scientific knowledge, particularly the application of Darcy’s Law, reservoir engineering became established as a key technical discipline.
+Over time, more efficient oil recovery methods were developed, including primary, secondary, and enhanced recovery techniques, significantly improving reservoir recovery factors. In addition, the introduction of numerical simulation and the integration of geological and geophysical data have enhanced the ability to predict reservoir behavior.
+This study also addresses current challenges in reservoir engineering, such as mature field management, geological complexity, and environmental constraints. Finally, future perspectives are discussed, highlighting digital transformation, artificial intelligence, and the growing need for sustainable solutions. It is concluded that reservoir engineering has evolved from an empirical practice into a highly technological discipline, playing a crucial role in the efficient management of energy resources.
+
+\addcontentsline{toc}{chapter}{Abstract}
+
+
+% ================= SUMÁRIO =================
+\tableofcontents
+\newpage
+
+% ================= NUMERAÇÃO ARÁBICA =================
+\pagenumbering{arabic}
+
+% ================= 1. INTRODUÇÃO =================
+\chapter{INTRODUÇÃO}
+A indústria petrolífera tem desempenhado um papel central no desenvolvimento económico e tecnológico mundial, sendo o petróleo uma das principais fontes de energia utilizadas desde o século XIX. Nesse contexto, a engenharia de reservatórios destaca-se como uma área essencial, responsável pela análise e gestão dos reservatórios de hidrocarbonetos, com o objetivo de maximizar a produção e garantir a exploração eficiente dos recursos naturais.
+A origem dessa disciplina está diretamente relacionada com o crescimento da indústria petrolífera, cujo marco inicial é frequentemente associado à perfuração do primeiro poço de petróleo comercial por Edwin Drake, em 1859, nos Estados Unidos. A partir desse momento, a exploração de petróleo intensificou-se, inicialmente de forma empírica, sem conhecimento aprofundado sobre o comportamento dos reservatórios.
+Com o avanço da ciência e da tecnologia, especialmente ao longo do século XX, a engenharia de reservatórios evoluiu significativamente, passando a incorporar princípios da física, matemática e geociências. A aplicação de conceitos fundamentais, como a Lei de Darcy, permitiu compreender o fluxo de fluidos em meios porosos, estabelecendo as bases para o desenvolvimento de métodos analíticos e numéricos mais precisos.
+Além disso, o desenvolvimento de técnicas de recuperação de petróleo, incluindo métodos primários, secundários e avançados, contribuiu para aumentar significativamente o fator de recuperação dos reservatórios. A introdução da simulação numérica e a integração de dados geológicos e geofísicos também desempenharam um papel crucial na melhoria da gestão dos campos petrolíferos.
+Atualmente, a engenharia de reservatórios enfrenta desafios relevantes, como a exploração de campos maduros, a complexidade dos sistemas geológicos e as crescentes exigências ambientais. Ao mesmo tempo, novas tecnologias, como a inteligência artificial e a análise de grandes volumes de dados, abrem perspectivas promissoras para o futuro da área.
+Diante desse contexto, o presente trabalho tem como objetivo analisar a evolução histórica da engenharia de reservatórios, abordando a origem da indústria petrolífera, o desenvolvimento dos métodos de recuperação de petróleo, bem como os desafios atuais e as perspectivas futuras da área. A relevância deste estudo reside na compreensão da importância dessa disciplina para a gestão eficiente e sustentável dos recursos energéticos.
+
+
+\chapter{OBJECTIVOS}
+
+\section{Objectivo Geral}
+Analisar a evolução histórica da engenharia de reservatórios, considerando a necessidade de compreender o desenvolvimento da indústria petrolífera, por meio do estudo da sua origem, dos métodos de recuperação de petróleo e dos desafios atuais, para contribuir na compreensão da sua importância na otimização da produção e na gestão sustentável dos recursos energéticos.
+\section{Objectivos Específicos}
+Descrever a origem da indústria petrolífera e os seus primeiros processos de exploração, visando contextualizar o surgimento da engenharia de reservatórios;
+\vspace{0,5cm}
+Explicar a evolução da engenharia de reservatórios ao longo do tempo, de modo a evidenciar os principais avanços científicos e tecnológicos da área;
+\vspace{0,5cm}
+Caracterizar os métodos de recuperação de petróleo, com o intuito de demonstrar a sua importância no aumento do fator de recuperação;
+\vspace{0,5cm}
+Identificar os desafios atuais enfrentados pela engenharia de reservatórios, para compreender as limitações e exigências da indústria na atualidade;
+\vspace{0,5cm}
+Avaliar as perspectivas futuras da engenharia de reservatórios, com vista a destacar o papel da inovação tecnológica e da sustentabilidade no setor energético.
+
+
+% ================= 3. DESENVOLVIMENTO =================
+\chapter{DESENVOLVIMENTO}
+
+\section{Origem da Indústria Petrolífera}
+
+A indústria petrolífera tem as suas origens em práticas antigas de utilização do petróleo em estado natural, muito antes da sua exploração comercial em larga escala. Civilizações da região da Mesopotâmia utilizavam o betume para fins diversos, como impermeabilização de embarcações, construção civil e aplicações medicinais. No Egito antigo, o petróleo também era empregado no processo de mumificação, evidenciando o seu valor desde tempos remotos.
+
+Registos históricos indicam que na China, por volta do século IV, já se utilizavam técnicas rudimentares de perfuração com tubos de bambu para extrair petróleo e gás natural. Paralelamente, a região de Baku, no atual Azerbaijão, destacou-se como um dos primeiros centros de produção petrolífera, com exploração contínua ao longo dos séculos.
+
+Contudo, a indústria petrolífera moderna teve início em 1859, com a perfuração do primeiro poço de petróleo comercial por Edwin Drake, em Titusville, nos Estados Unidos. Este marco histórico estabeleceu as bases para a exploração sistemática do petróleo e deu origem a uma nova era energética.
+
+A partir desse momento, o petróleo passou a desempenhar um papel fundamental como fonte de energia, inicialmente substituindo o óleo de baleia na iluminação (querosene) e, posteriormente, impulsionando o desenvolvimento industrial com a invenção do motor de combustão interna. No final do século XIX e início do século XX, surgiram grandes companhias petrolíferas, como a Standard Oil, fundada por John D. Rockefeller, que contribuíram significativamente para a expansão global da indústria.
+
+Ao longo do século XX, a exploração petrolífera expandiu-se para várias regiões do mundo, incluindo o Médio Oriente, América Latina e África, com destaque para países como Angola. Esse crescimento intensificou a necessidade de desenvolvimento de técnicas avançadas para exploração e produção, dando origem à engenharia de reservatórios como área essencial da indústria petrolífera.
+
+\chapter{Evolução Histórica da Engenharia de Reservatórios}
+
+A engenharia de reservatórios evoluiu significativamente ao longo do tempo, acompanhando o crescimento da indústria petrolífera e a necessidade de otimizar a produção de hidrocarbonetos. Inicialmente, a exploração era conduzida de forma empírica, sem base científica consolidada, resultando em baixa eficiência e rápida exaustão dos reservatórios.
+
+A partir da década de 1920, começaram a ser aplicados princípios científicos ao estudo dos reservatórios, marcando o início da engenharia de reservatórios como disciplina. Um dos marcos fundamentais foi a aplicação da Lei de Darcy, que permitiu compreender o fluxo de fluidos em meios porosos, estabelecendo bases teóricas para a análise do comportamento dos reservatórios.
+
+Entre as décadas de 1950 e 1970, houve um avanço significativo no desenvolvimento de métodos analíticos, como o balanço de materiais e a análise de testes de pressão. Esses métodos permitiram estimar reservas e prever o desempenho dos reservatórios com maior precisão, contribuindo para uma gestão mais eficiente dos campos petrolíferos.
+
+Com o advento da computação, a partir da década de 1970, iniciou-se a era da simulação numérica de reservatórios. Modelos matemáticos passaram a ser utilizados para representar o comportamento dinâmico dos fluidos no subsolo, possibilitando a previsão de cenários de produção e a implementação de técnicas de recuperação secundária, como a injeção de água e gás.
+
+Nas décadas seguintes, especialmente a partir de 1990, a engenharia de reservatórios beneficiou-se da integração de dados geológicos, geofísicos e de produção, permitindo a construção de modelos tridimensionais mais realistas. O uso de softwares especializados tornou-se fundamental para o planeamento e gestão de reservatórios complexos.
+
+Atualmente, a engenharia de reservatórios encontra-se na era digital, caracterizada pela aplicação de tecnologias avançadas, como inteligência artificial e análise de grandes volumes de dados. Além disso, técnicas de recuperação avançada de petróleo (EOR) têm sido amplamente utilizadas para maximizar a extração de hidrocarbonetos. Paralelamente, há uma crescente preocupação com a sustentabilidade e a redução dos impactos ambientais associados à exploração petrolífera.
+
+Dessa forma, a evolução da engenharia de reservatórios reflete a transição de uma prática empírica para uma disciplina altamente tecnológica e multidisciplinar, essencial para garantir a eficiência, segurança e sustentabilidade na produção de petróleo e gás.
+
+\chapter{Evolução dos Métodos de Recuperação de Petróleo}
+
+
+A recuperação de petróleo refere-se ao conjunto de técnicas utilizadas para extrair hidrocarbonetos dos reservatórios subterrâneos de forma economicamente viável. Ao longo da história da indústria petrolífera, esses métodos evoluíram significativamente, acompanhando os avanços tecnológicos e a necessidade de maximizar o fator de recuperação dos reservatórios.
+
+Inicialmente, a produção de petróleo era realizada apenas com base na energia natural do reservatório, num processo conhecido como recuperação primária. Nessa fase, os mecanismos naturais, como a expansão dos fluidos, a presença de gás dissolvido e o empuxo de água, eram responsáveis por deslocar o petróleo até a superfície. Contudo, esse método permitia recuperar apenas uma pequena fração do volume original de petróleo, geralmente inferior a 30\%, evidenciando a necessidade de técnicas mais eficientes.
+
+Com o avanço da engenharia de reservatórios no início do século XX, foram desenvolvidas técnicas de recuperação secundária, com o objetivo de manter ou aumentar a pressão do reservatório. Entre os métodos mais utilizados destacam-se a injeção de água e a injeção de gás, que promovem o deslocamento do petróleo remanescente em direção aos poços produtores. Esses métodos passaram a ser amplamente aplicados a partir das décadas de 1940 e 1950, aumentando significativamente a eficiência da produção.
+
+Posteriormente, surgiram os métodos de recuperação avançada de petróleo, conhecidos como EOR (Enhanced Oil Recovery), que visam extrair o petróleo residual que permanece no reservatório após as fases primária e secundária. Esses métodos baseiam-se na alteração das propriedades físicas e químicas dos fluidos ou do próprio reservatório.
+
+Entre as principais técnicas destacam-se:
+\begin{itemize}
+    \item Injeção de vapor, utilizada para reduzir a viscosidade de óleos pesados;
+    \item Injeção de polímeros, que melhora a eficiência de varrido do fluido injetado;
+    \item Injeção de surfactantes, que reduz a tensão interfacial entre o óleo e a água;
+    \item Injeção de dióxido de carbono (CO$_2$), que melhora a mobilidade do petróleo.
+\end{itemize}
+
+A partir da década de 1970, com o desenvolvimento da simulação numérica de reservatórios, tornou-se possível modelar e prever o desempenho desses métodos com maior precisão, permitindo a sua aplicação de forma mais eficiente e economicamente viável. Além disso, o avanço das tecnologias de monitorização e aquisição de dados contribuiu para otimizar os processos de recuperação.
+
+
+
+\chapter{Desafios Atuais e Futuro da Engenharia de Reservatórios}
+
+A engenharia de reservatórios desempenha um papel fundamental na indústria petrolífera moderna, sendo responsável pela gestão eficiente da produção de hidrocarbonetos. No entanto, esta área enfrenta atualmente diversos desafios decorrentes de fatores técnicos, económicos e ambientais, que exigem soluções inovadoras e sustentáveis.
+
+Um dos principais desafios está relacionado com a maturidade dos campos petrolíferos. Muitos dos reservatórios em produção encontram-se em fase avançada de exploração, apresentando declínio natural de pressão e redução das taxas de produção. Nesses casos, torna-se essencial a aplicação de técnicas avançadas de recuperação de petróleo.
+
+Outro desafio significativo refere-se à crescente complexidade dos reservatórios, incluindo ambientes como águas profundas, reservatórios fraturados e formações de baixa permeabilidade. Esses cenários exigem modelos mais sofisticados e maior integração de dados.
+
+Além disso, a volatilidade dos preços do petróleo influencia diretamente as decisões de investimento na indústria, exigindo maior eficiência operacional.
+
+A questão ambiental também se destaca, com a necessidade de reduzir emissões de gases de efeito estufa. Tecnologias como captura e armazenamento de carbono (CCS) têm sido exploradas.
+
+No contexto africano, especialmente em Angola, existem desafios adicionais como desenvolvimento tecnológico e formação de profissionais qualificados.
+A questão ambiental também se destaca, com a necessidade de reduzir emissões de gases de efeito estufa. Tecnologias como captura e armazenamento de carbono (CCS) têm sido exploradas.
+
+No contexto africano, especialmente em Angola, existem desafios adicionais como desenvolvimento tecnológico e formação de profissionais qualificados.
+
+\chapter{Perspectivas Futuras}
+
+O futuro da engenharia de reservatórios está ligado à transformação digital. O uso de inteligência artificial, aprendizagem automática e Big Data tem melhorado a caracterização dos reservatórios.
+
+A simulação continuará evoluindo, e tecnologias como gémeos digitais (digital twins) permitirão melhor monitorização.
+
+Além disso, há expansão para novas áreas:
+\begin{itemize}
+    \item Armazenamento geológico de carbono;
+    \item Produção de hidrogénio;
+    \item Energia geotérmica.
+\end{itemize}
+
+Dessa forma, o engenheiro de reservatórios tende a tornar-se mais multidisciplinar, integrando conhecimentos de energia, ambiente e tecnologia.
+
+
+% ================= 4. METODOLOGIA =================
+\chapter{METODOLOGIA}
+O presente trabalho caracteriza-se como uma pesquisa qualitativa e bibliográfica, com abordagem descritiva e exploratória, tendo como objetivo compreender a evolução histórica da engenharia de reservatórios e sua importância na indústria petrolífera. Essa abordagem permite analisar criticamente informações já publicadas, identificar padrões de desenvolvimento tecnológico e contextualizar os avanços históricos da área.
+A coleta de dados foi realizada a partir de fontes secundárias, incluindo livros técnicos, artigos científicos, publicações acadêmicas, relatórios técnicos de empresas do setor petrolífero e bases de dados digitais confiáveis. Foram selecionadas fontes que abordam a origem da indústria petrolífera, a evolução da engenharia de reservatórios, os métodos de recuperação de petróleo e os desafios atuais e futuros da área, garantindo um panorama abrangente e consistente.
+Para a análise das informações, foi utilizada a análise qualitativa de conteúdo, permitindo sintetizar e interpretar os dados de forma crítica e estruturada. Esse procedimento possibilitou identificar os principais marcos históricos, as técnicas desenvolvidas ao longo do tempo e as tendências tecnológicas que moldaram a engenharia de reservatórios.
+Além disso, as informações foram organizadas de forma lógica e cronológica, permitindo apresentar a evolução da área desde os métodos iniciais de exploração do petróleo até os desafios atuais e as perspectivas futuras. A sistematização dos dados buscou assegurar coerência teórica e permitir que os objetivos do trabalho fossem atingidos de maneira clara e fundamentada.
+Importante ressaltar que o estudo não envolveu coleta de dados primários nem experimentação prática, sendo totalmente baseado em pesquisa documental. Essa escolha metodológica se justifica pela natureza histórica do tema, que exige análise crítica de registros e publicações existentes para compreender a evolução da engenharia de reservatórios e suas aplicações atuais.
+Dessa forma, a metodologia adotada demonstra-se adequada para atingir os objetivos propostos, oferecendo rigor científico, confiabilidade e consistência teórica ao desenvolvimento do trabalho.
+
+
+
+% ================= 5. CONCLUSÃO =================
+\chapter{Conclusão}
+A análise histórica da engenharia de reservatórios permite compreender a evolução da indústria petrolífera desde os seus primórdios até os desafios e perspectivas contemporâneas. Observa-se que, inicialmente, a exploração do petróleo era realizada de forma empírica, baseada na energia natural dos reservatórios, com baixo aproveitamento do recurso. Com o desenvolvimento científico e tecnológico ao longo do século XX, a engenharia de reservatórios consolidou-se como uma disciplina essencial, incorporando princípios da física, matemática e geociências, além de métodos analíticos e numéricos que possibilitaram uma gestão mais eficiente dos campos petrolíferos.
+A evolução dos métodos de recuperação de petróleo — da produção primária à recuperação avançada — demonstra o esforço contínuo da engenharia de reservatórios em aumentar o fator de recuperação, reduzir perdas e otimizar a produção. A introdução da simulação numérica, a integração de dados geológicos e geofísicos e o uso de tecnologias digitais têm transformado a prática profissional, permitindo previsões mais precisas e decisões estratégicas fundamentadas.
+Atualmente, a engenharia de reservatórios enfrenta desafios complexos, incluindo a exploração de campos maduros, a gestão de reservatórios geologicamente complexos e a necessidade de práticas ambientalmente sustentáveis. Ao mesmo tempo, o futuro da área é promissor, com a aplicação de inteligência artificial, análise de grandes volumes de dados e tecnologias de recuperação avançada alinhadas à transição energética e à sustentabilidade.
+Diante disso, conclui-se que a engenharia de reservatórios evoluiu de uma prática empírica para uma disciplina altamente tecnológica e multidisciplinar, desempenhando um papel fundamental na eficiência da produção de hidrocarbonetos e na gestão sustentável dos recursos energéticos. O estudo histórico desta área não apenas evidencia os avanços alcançados, mas também ressalta a importância da inovação contínua para enfrentar os desafios presentes e futuros da indústria petrolífera.
+
+
+
+% ================= 6. REFERÊNCIAS =================
+\addcontentsline{toc}{chapter}{Referências Bibliográficas}
+
+\begin{thebibliography}{99}
+
+\bibitem{Dake1994}
+DAKE, L. P. \textit{Fundamentals of Reservoir Engineering}. Amsterdam: Elsevier, 1994.
+
+\bibitem{Ahmed2010}
+AHMED, T. \textit{Reservoir Engineering Handbook}. 4. ed. Oxford: Gulf Professional Publishing, 2010.
+
+\bibitem{Craft1991}
+CRAFT, B. C.; HAWKINS, M. F.; TENG, T. \textit{Applied Petroleum Reservoir Engineering}. 2. ed. New Jersey: Prentice Hall, 1991.
+
+\bibitem{Lake2007}
+LAKE, L. W. \textit{Enhanced Oil Recovery}. New Jersey: Prentice Hall, 2007.
+
+\bibitem{Mungan2019}
+MUNGAN, N. \textit{Reservoir Simulation and Management}. Cham: Springer, 2019.
+
+\bibitem{SPE2015}
+SOCIETY OF PETROLEUM ENGINEERS. \textit{Petroleum Engineering Handbook}. Richardson: SPE, 2015.\url{https://www.spe.org}. 
+\bibitem{BP2023}
+BP. \textit{Statistical Review of World Energy}. 2023.\url{https://www.bp.com}. Acesso em: 30 mar. 2026.
+
+\bibitem{EIA2023}
+U.S. ENERGY INFORMATION ADMINISTRATION (EIA). \textit{Petroleum and Other Liquids}. 2023. Disponível em: \url{https://www.eia.gov}
+\bibitem{WikipediaReservoir}
+WIKIPIDEA.  \textit{Reservoir Engineering} Disponível em: \url{https://en.wikipedia.org/wiki/Reservoir_engineering} 
+
+\bibitem{WikipediaPetroleum}
+WIKIPEDIA. \textit{History of the Petroleum Industry}. \url{https://en.wikipedia.org/wiki/History_of_the_petroleum_industry}. Acesso em: 30 mar. 2026.
+
+\end{thebibliography}
+
+\end{document}

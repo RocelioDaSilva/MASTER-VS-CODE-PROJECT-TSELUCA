@@ -1,0 +1,77 @@
+# Prometheus Configuration for GEESP-Angola
+# File: monitoring/prometheus.yml
+
+global:
+  scrape_interval: 15s                  # Default interval between scrapes
+  evaluation_interval: 15s              # Default interval for rule evaluation
+  external_labels:
+    monitor: 'geesp-angola-monitoring'
+  # Slack webhook for notifications (optional)
+  # slack_api_url: 'https://hooks.slack.com/services/YOUR/WEBHOOK/URL'
+
+# Alert manager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+
+# Load rules once and periodically evaluate them
+rule_files:
+  - '/etc/prometheus/alert_rules.yml'
+
+# Scrape configurations
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # GEESP Application (Streamlit with metrics)
+  - job_name: 'geesp-app'
+    static_configs:
+      - targets: ['geesp-app:8501']
+    metrics_path: '/metrics'
+    scrape_interval: 10s
+    scrape_timeout: 5s
+
+  # PostgreSQL Database
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres-exporter:9187']
+    scrape_interval: 15s
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'postgres:5432'
+
+  # Redis Cache
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis-exporter:8001']
+    scrape_interval: 15s
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'redis:6379'
+
+  # Node metrics (host system)
+  - job_name: 'node'
+    static_configs:
+      - targets: ['node-exporter:9100']
+    scrape_interval: 30s
+
+  # Docker container metrics
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+    scrape_interval: 30s
+
+  # Optional: External monitoring endpoints
+  - job_name: 'external-api'
+    scrape_interval: 60s
+    static_configs:
+      - targets: ['api.geesp.external:443']
+    scheme: https
+    tls_config:
+      insecure_skip_verify: true

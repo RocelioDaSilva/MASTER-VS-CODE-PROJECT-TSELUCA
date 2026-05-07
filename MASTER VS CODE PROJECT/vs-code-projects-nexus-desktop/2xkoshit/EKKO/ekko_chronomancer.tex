@@ -1,0 +1,1362 @@
+\documentclass[12pt, a4paper]{report}
+
+% Packages
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\setlength{\headheight}{25pt}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes, shadows, calc}
+
+% Graphics path configuration
+\graphicspath{{./images/}{./images/notation/}{./images/moves/}{./images/combos/}}
+
+% Custom figure environment for game screenshots
+\usepackage{caption}
+\captionsetup{labelsep=colon, font=small, labelfont={color=ekkoBlue, bf}}
+
+% Colour Palette
+\definecolor{ekkoBlue}{HTML}{00D4FF}
+\definecolor{ekkoPurple}{HTML}{6C3CE1}
+\definecolor{ekkoDark}{HTML}{0D0D1A}
+\definecolor{ekkoAccent}{HTML}{A0F0FF}
+\definecolor{ekkoGold}{HTML}{FFD700}
+\definecolor{ekkoRed}{HTML}{FF4444}
+\definecolor{ekkoGreen}{HTML}{44FF88}
+\definecolor{ekkoGray}{HTML}{B0B8CC}
+\definecolor{sectionbg}{HTML}{111133}
+\definecolor{tablehead}{HTML}{1A1A3E}
+\definecolor{tablerow}{HTML}{0F0F28}
+\definecolor{tablerowalt}{HTML}{15153A}
+\definecolor{tipbg}{HTML}{0A2040}
+\definecolor{warnbg}{HTML}{2A0A0A}
+
+\pagecolor{ekkoDark}
+\color{white}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{ekkoBlue}{\small\textbf{EKKO -- THE BOY WHO SHATTERED TIME}}}
+\fancyhead[R]{\textcolor{ekkoGray}{\small 2XKO Comprehensive Guide}}
+\fancyfoot[C]{\textcolor{ekkoGray}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{ekkoBlue}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section formatting
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{ekkoBlue}}
+  {\textcolor{ekkoBlue}{\chaptertitlename\ \thechapter}}{10pt}
+  {\Huge\color{ekkoBlue}\MakeUppercase}
+  [\vspace{2pt}\textcolor{ekkoGold}{\titlerule[2pt]}]
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{ekkoBlue}}
+  {\textcolor{ekkoGold}{\thesection}}{1em}{}
+  [\textcolor{ekkoGold}{\titlerule[0.8pt]}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{ekkoGold}}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{ekkoGray}}
+  {\thesubsubsection}{1em}{}
+
+% tcolorbox styles
+\tcbuselibrary{skins, breakable}
+
+\newtcolorbox{tipbox}[1][]{
+  colback=tipbg, colframe=ekkoBlue, coltitle=ekkoBlue, coltext=white,
+  fonttitle=\bfseries, title=TIP, #1, breakable, enhanced
+}
+
+\newtcolorbox{warnbox}[1][]{
+  colback=warnbg, colframe=ekkoRed, coltitle=ekkoRed, coltext=white,
+  fonttitle=\bfseries, title=WARNING, #1, breakable, enhanced
+}
+
+\newtcolorbox{combobox}[2][]{
+  colback=sectionbg, colframe=ekkoBlue, coltitle=white, coltext=white,
+  fonttitle=\bfseries, title=#2, #1, breakable, enhanced
+}
+
+\newtcolorbox{matchupbox}[2][]{
+  colback=tablerow, colframe=ekkoGold, coltitle=ekkoGold, coltext=white,
+  fonttitle=\bfseries, title=#2, #1, breakable, enhanced
+}
+
+% 2XKO Button System using SVG notation images
+% Uses stylized button graphics from images/notation/ folder
+
+\newcommand{\btnL}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{L.svg}}\hspace{0.08em}}
+\newcommand{\btnM}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{M.svg}}\hspace{0.08em}}
+\newcommand{\btnH}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{H.svg}}\hspace{0.08em}}
+\newcommand{\btnS}[1]{%
+  \ifnum#1=1%
+    \raisebox{-0.2em}{\includegraphics[height=1.1em]{S1.svg}}%
+  \else\ifnum#1=2%
+    \raisebox{-0.2em}{\includegraphics[height=1.1em]{S2.svg}}%
+  \fi\fi%
+  \hspace{0.08em}%
+}
+\newcommand{\btnT}{\tikz[baseline=(char.base)]{\node[draw=ekkoGreen!60, line width=1.2pt, fill=tablerow, inner sep=4pt, text=ekkoGreen, font=\bfseries, rounded corners=2pt] (char) {T};}\hspace{0.08em}}
+
+\newcommand{\dirDown}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{down.svg}}\hspace{0.08em}}
+\newcommand{\dirForward}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{forward.svg}}\hspace{0.08em}}
+\newcommand{\dirBack}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{back.svg}}\hspace{0.08em}}
+\newcommand{\dirUp}{\raisebox{-0.2em}{\includegraphics[height=1.1em]{up.svg}}\hspace{0.08em}}
+
+\newcommand{\plus}{\raisebox{-0.15em}{\includegraphics[height=0.9em]{plus.svg}}\hspace{0.1em}}
+\newcommand{\arrow}{\textbf{\textcolor{ekkoGold}{$>$}}\hspace{0.1em}}
+
+% Visual notation rendering
+\newcommand{\notation}[1]{{\small\texttt{\textcolor{ekkoBlue}{#1}}}}
+\newcommand{\movename}[1]{\textbf{\textcolor{ekkoGold}{#1}}}
+\newcommand{\advantage}[1]{\textcolor{ekkoGreen}{\textbf{#1}}}
+\newcommand{\disadvantage}[1]{\textcolor{ekkoRed}{\textbf{#1}}}
+\newcommand{\champ}[1]{\textcolor{ekkoAccent}{\textbf{#1}}}
+
+% Placeholder for missing images
+\newcommand{\imagePlaceholder}[1]{%
+  \fbox{\begin{minipage}{0.95\textwidth}%
+    \centering%
+    \textcolor{ekkoGray}{\small[Image: #1]}%
+  \end{minipage}}%
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=ekkoBlue,
+  urlcolor=ekkoAccent,
+  pdftitle={Ekko -- Complete 2XKO Guide},
+}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\fontsize{48}{56}\selectfont\bfseries\textcolor{ekkoBlue}{EKKO}}\\[0.5em]
+  {\Large\textcolor{ekkoPurple}{\textit{The Boy Who Shattered Time}}}\\[0.3em]
+  {\small\textcolor{ekkoGray}{Archetype: \textbf{Mixup} $\mid$ Region: \textbf{Zaun}}}\\[3em]
+  \textcolor{ekkoPurple}{\rule{0.8\linewidth}{2pt}}\\[2em]
+  {\Huge\bfseries\textcolor{white}{COMPLETE GUIDE}}\\[1em]
+  {\large\textcolor{ekkoGray}{Frame Data $\cdot$ Combos $\cdot$ Mixups $\cdot$ Matchups $\cdot$ Team Synergies}}\\[3em]
+  \textcolor{ekkoPurple}{\rule{0.8\linewidth}{2pt}}\\[2em]
+  {\normalsize\textcolor{ekkoGray}{
+    Sources: Mobalytics.gg $\cdot$ Games.gg $\cdot$ 2xko.wiki $\cdot$ 2xko.riotgames.com\\
+    Season 1 (Version 1.1.3) --- March 2026
+  }}\\[3em]
+  \vfill
+  {\small\textcolor{ekkoPurple}{``It's my time.'' --- Ekko}}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+%======================================================
+\chapter{Champion Overview}
+%======================================================
+
+\section{Who is Ekko?}
+
+Ekko is a prodigy from the rough streets of Zaun who manipulates time using his own invention, the \textbf{Z-Drive}. In 2XKO he occupies the \textbf{Mixup archetype}, thriving on pressure and burst mobility. Unlike characters who rely on raw power, Ekko rewrites the rules of each engagement through temporal tricks---afterimages, looping projectiles, and position-swapping teleports.
+
+His kit rewards creative thinking, adaptation on the fly, and deep knowledge of the opponent's defensive habits. He can play the role of an aggressive rushdown fighter \textit{or} a patient zone-controller depending on his Timewinder and afterimage state.
+
+\section{Strengths and Weaknesses}
+
+\begin{multicols}{2}
+
+\subsection*{\textcolor{ekkoGreen}{Strengths}}
+\begin{itemize}[leftmargin=*]
+  \item Huge arsenal of mixup tools --- opponents rarely know which direction to block
+  \item Extremely versatile: rushdown \textit{and} zoning are both viable
+  \item Fast, far-reaching Forward Assist hard to react to
+  \item Outstanding okizeme with Timewinder oki setups
+  \item Great team support --- both assists are highly effective in neutral and combos
+  \item Good meter gain, especially from Chronobreak loops
+  \item High creativity and room for player expression
+  \item Punishing counterplay against parry with S2 Hold bait
+\end{itemize}
+
+\columnbreak
+
+\subsection*{\textcolor{ekkoRed}{Weaknesses}}
+\begin{itemize}[leftmargin=*]
+  \item Loses poke battle against true zoners
+  \item High skill floor AND ceiling
+  \item Short normal range --- must stay extremely close
+  \item Anti-air is genuinely poor; \notation{2H} is unreliable
+  \item Temporal Slip (\notation{6S1}) has a gap and is punishable on block
+  \item Cannot Replay out of failed throws (Season 1 nerf)
+  \item Backdash slowed in Season 1 --- retreat is less evasive
+\end{itemize}
+
+\end{multicols}
+
+%======================================================
+\chapter{Move List Reference}
+%======================================================
+
+\section{Notation Guide}
+
+\begin{tipbox}
+Ekko guides use \textbf{numpad notation}. Think of a numpad: 5 = neutral, 6 = forward, 4 = back, 2 = down, 8 = up, 9 = up-forward (jump). \notation{jc.} = jump cancel, \notation{[X]} = hold input, \notation{r.} = rewind follow-up.
+\end{tipbox}
+
+% 2XKO Button Notation Reference
+\begin{center}
+\fbox{\begin{minipage}{0.95\textwidth}
+  \centering
+  \textcolor{ekkoBlue}{\textbf{2XKO Button Notation Reference}}\\[0.3em]
+  \small
+  \begin{tabular}{cc|cc}
+  \btnL & \btnM & \btnH & \btnT \\
+  Light & Medium & Heavy & Throw \\[0.3em]
+  \btnS{1} & \btnS{2} & \dirDown & \dirForward \\
+  Super 1 & Super 2 & Down & Forward \\[0.3em]
+  \dirBack & \dirUp & \plus & \arrow \\
+  Back & Up & Plus & Next \\
+  \end{tabular}
+\end{minipage}}
+\end{center}
+
+\begin{center}
+\begin{tabular}{C{2.5cm} L{10cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Symbol}} & \textcolor{ekkoBlue}{\textbf{Meaning}} \\
+\rowcolor{tablerow}\notation{>} & Cancel/chain from previous move \\
+\rowcolor{tablerowalt}\notation{,} & Link previous to next \\
+\rowcolor{tablerow}\notation{\textasciitilde} & Follow-up/cancel into multi-stage move \\
+\rowcolor{tablerowalt}\notation{dl./delay} & Delay the following move \\
+\rowcolor{tablerow}\notation{j.} & Jumping attack \\
+\rowcolor{tablerowalt}\notation{jc.} & Jump cancel \\
+\rowcolor{tablerow}\notation{land} & Must land before continuing \\
+\rowcolor{tablerowalt}\notation{[X]} & Hold input X \\
+\rowcolor{tablerow}\notation{r.S2} & Rewind to normal Afterimage \\
+\rowcolor{tablerowalt}\notation{r.2S2} & Time's Up rewind \\
+\end{tabular}
+\end{center}
+
+\section{Normal Moves}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.6cm} L{4.5cm} L{7cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Name}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5L} & Standing Light & 6f startup; fastest poke \\
+\rowcolor{tablerowalt}\notation{2L} & Crouching Light & 7f startup; good chain starter \\
+\rowcolor{tablerow}\notation{5M} & Standing Medium & 10f; main combo tool \\
+\rowcolor{tablerowalt}\notation{2M} & Crouching Medium & 10f; lower hitbox option \\
+\rowcolor{tablerow}\notation{5H} & Standing Heavy & 13f; \advantage{+1} on hit \\
+\rowcolor{tablerowalt}\notation{2H} & Crouching Heavy & 13f; launches; advancing anti-air \\
+\rowcolor{tablerow}\notation{66H} & Step Up (run H) & 13f; \advantage{+10} on hit, \advantage{+1} on block \\
+\end{tabularx}
+\end{center}
+
+% Game Demonstration Images - Normal Moves
+\subsection{Move Demonstrations}
+
+\begin{center}
+\begin{tabular}{C{4.5cm} C{4.5cm}}
+\textcolor{ekkoGray}{\small Ekko's 5L (Light)} & \textcolor{ekkoGray}{\small Ekko's 5H (Heavy)} \\
+\imagePlaceholder{ekko-5l-light} & \imagePlaceholder{ekko-5h-heavy} \\
+\textcolor{ekkoPurple}{\small Replace with game screenshot} & \textcolor{ekkoPurple}{\small Replace with game screenshot} \\[1em]
+\textcolor{ekkoGray}{\small Ekko's 66H (Step Up)} & \textcolor{ekkoGray}{\small Ekko's 2H (Anti-air)} \\
+\imagePlaceholder{ekko-66h-stepup} & \imagePlaceholder{ekko-2h-antiair} \\
+\textcolor{ekkoPurple}{\small Replace with game screenshot} & \textcolor{ekkoPurple}{\small Replace with game screenshot} \\
+\end{tabular}
+\end{center}
+
+\section{Command Normals}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.6cm} L{4cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Name}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{3L} & Heel Tap & Quick longer-range LOW. 9f startup; 15f hitstun (Season 1 buff). Best low poke. \\
+\rowcolor{tablerowalt}\notation{3M} & Flip It & Overhead. 22f startup; \advantage{+5} hit, \disadvantage{$-$3} block. Combo-able with Volatile Afterimage active only. \\
+\rowcolor{tablerow}\notation{66H} & Step Up & H while running. Scaling now +1 instead of +3. Strong pressure extender. \\
+\end{tabularx}
+\end{center}
+
+\section{Special Moves}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2cm} L{4.2cm} L{7.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Name}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5S1 / j.S1} & Timewinder & Primary neutral projectile. Slows near max range; Time-slow on hit. AIR OK. Can be batted with H. \\
+\rowcolor{tablerowalt}\notation{2S1} & Timewinder Toss & Arcing lob; ideal for oki setups. \\
+\rowcolor{tablerow}\notation{6S1} & Temporal Slip & 3-hit advancing strike. \textbf{Gap between hits 2--3.} Punishable on block by mediums. \\
+\rowcolor{tablerowalt}\notation{5S2 / j.S2} & Chronostrike & Creates Afterimage; teleports back with attack. HOLD for Volatile Afterimage. AIR OK. \\
+\rowcolor{tablerow}\notation{6S2} & Chronostrike Forward & Creates a \textit{new} clone rather than returning to existing one. \\
+\rowcolor{tablerowalt}\notation{3S2} & Chronostrike Down-Forward & Clone with downward arc; jump-cancelable on hit. \\
+\rowcolor{tablerow}\notation{2S2 (Volatile)} & Chronobreak & OTG pickup; wall bounce for corner carry. Air/ground. Only with Volatile Afterimage. \\
+\rowcolor{tablerowalt}\notation{r.S2} & Replay & Follow-up to normal Afterimage. \\
+\rowcolor{tablerow}\notation{r.2S2} & Time's Up! & Follow-up; hold back to move backwards. 50/50 with Temporal Slip hit 3. \\
+\end{tabularx}
+\end{center}
+
+% Special Move Demonstrations
+\subsection{Key Special Move Gameplay}
+
+\begin{center}
+\begin{tabular}{C{4.5cm} C{4.5cm}}
+\textcolor{ekkoGray}{\small Timewinder (S1)} & \textcolor{ekkoGray}{\small Chronostrike (S2)} \\
+\imagePlaceholder{ekko-timewinder} & \imagePlaceholder{ekko-chronostrike} \\
+\textcolor{ekkoPurple}{\small Replace with game screenshot} & \textcolor{ekkoPurple}{\small Replace with game screenshot} \\[1em]
+\textcolor{ekkoGray}{\small Afterimage Rewind} & \textcolor{ekkoGray}{\small Chronobreak OTG} \\
+\imagePlaceholder{ekko-afterimage} & \imagePlaceholder{ekko-chronobreak} \\
+\textcolor{ekkoPurple}{\small Replace with game screenshot} & \textcolor{ekkoPurple}{\small Replace with game screenshot} \\
+\end{tabular}
+\end{center}
+
+\section{Throw}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.6cm} L{4cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Name}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{6T} & Forward Throw & Hard knockdown; enables corner Timewinder trap. \\
+\rowcolor{tablerowalt}\notation{2T} & Tag Launcher & 12f startup; launches for team extension. \\
+\end{tabularx}
+\end{center}
+
+\section{Supers and Ultimate}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2.4cm} L{4.2cm} L{7.2cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Name}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{S1+L/M/H} & Mega Timewinder & Enhanced projectile; boomerangs midscreen. First hit now causes damage scaling (Season 1). Continues traveling when parried. \\
+\rowcolor{tablerowalt}\notation{S2+L/M/H} & Tangled Timeline & Grants Volatile Afterimage for 5 moves (install super). Core for highest-damage routes. \\
+\rowcolor{tablerow}\notation{S1+S2} & Attempt \#37 (3 bars) & Massive damage. Counter-hit grants bonus damage. Blockstun reduced 6f in Season 1. \\
+\end{tabularx}
+\end{center}
+
+\section{Assist Moves}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{1.8cm} L{4.5cm} L{7.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Name}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{T} & Chronostrike Assist & Quick strike. Startup now 19f (was 17f). No longer gapless when doubled. Range and hitbox reduced. \\
+\rowcolor{tablerowalt}\notation{4T} & Timewinder Assist & Projectile with slow. Startup now 22f (was 16f). Best at max range for Time-slow control. \\
+\rowcolor{tablerow}\notation{2T} & Mega Timewinder Assist & Enhanced Timewinder for stronger space control. \\
+\end{tabularx}
+\end{center}
+
+%======================================================
+\chapter{Frame Data}
+%======================================================
+
+\section{Normal Moves Frame Data Table}
+
+All values reflect Season 1 (Version 1.1.3, March 2026). 60fps; 1 frame $\approx$ 16.67ms.
+
+\begin{center}
+\begin{tabular}{C{2cm} C{2cm} C{2.5cm} C{2.5cm} L{5cm}}
+\rowcolor{tablehead}
+\textcolor{ekkoBlue}{\textbf{Move}} &
+\textcolor{ekkoBlue}{\textbf{Startup}} &
+\textcolor{ekkoBlue}{\textbf{On Hit}} &
+\textcolor{ekkoBlue}{\textbf{On Block}} &
+\textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}\notation{5L} & 6 & \advantage{+0} & \disadvantage{$-$1} & Fastest normal; go-to pressure button \\
+\rowcolor{tablerowalt}\notation{2L} & 7 & \disadvantage{$-$1} & \disadvantage{$-$2} & Safe poke; low option \\
+\rowcolor{tablerow}\notation{3L} & 9 & \disadvantage{$-$1} & \disadvantage{$-$2} & Heel Tap LOW; longer range; 15f hitstun \\
+\rowcolor{tablerowalt}\notation{5M} & 10 & \disadvantage{$-$4} & \disadvantage{$-$5} & Punishable on block; use mid-string only \\
+\rowcolor{tablerow}\notation{2M} & 10 & \disadvantage{$-$2} & \disadvantage{$-$3} & Slightly safer medium \\
+\rowcolor{tablerowalt}\notation{3M} & 22 & \advantage{+5} & \disadvantage{$-$3} & Overhead; combo-able with Volatile Afterimage \\
+\rowcolor{tablerow}\notation{5H} & 13 & \advantage{+1} & \disadvantage{$-$3} & Solid advancing poke \\
+\rowcolor{tablerowalt}\notation{2H} & 13 & Launch & \disadvantage{$-$5} & Anti-air; lingering hurtbox during recovery \\
+\rowcolor{tablerow}\notation{66H} & 13 & \advantage{+10} & \advantage{+1} & Step Up; only plus on block normal \\
+\rowcolor{tablerowalt}\notation{2T} & 12 & Launch & \disadvantage{$-$6} & Tag Launcher \\
+\end{tabular}
+\end{center}
+
+\section{Reading the Frame Data}
+
+\begin{tipbox}
+\textbf{Startup:} Frames before the attack becomes active. Lower = faster.\\[0.3em]
+\textbf{On Hit:} \advantage{Positive values} = your turn to continue pressure. \disadvantage{Negative} = opponent acts first.\\[0.3em]
+\textbf{On Block:} \disadvantage{$-6$ or less} = punishable by light attacks. \disadvantage{$-3$ to $-5$} = punishable by fast moves. \disadvantage{$-1$ to $-2$} = mostly safe.\\[0.3em]
+\textbf{Launch} = sends opponent airborne; enables air combo.
+\end{tipbox}
+
+\section{Practical Frame Data Notes}
+
+\begin{itemize}
+  \item \movename{5L} at \disadvantage{$-$1} on block is safe --- always safe to throw out.
+  \item \movename{5M} at \disadvantage{$-$5} on block is punishable --- never end block strings with this.
+  \item \movename{66H (Step Up)} at \advantage{+1} on block is Ekko's only plus on block normal --- frame trap after this.
+  \item \movename{3M (Flip It)} at \advantage{+5} on hit: massive advantage --- confirm into combo when Volatile Afterimage is active.
+  \item \movename{Temporal Slip (6S1)}: gap between hits 2 and 3 can be parried, and it is punishable by most medium attacks on block. Never throw out raw.
+  \item \movename{2H} has a lingering hurtbox during recovery frames --- whiffing this in neutral is dangerous.
+\end{itemize}
+
+%======================================================
+\chapter{Unique Mechanics}
+%======================================================
+
+\section{Afterimage System}
+
+\subsection{Normal Afterimage (Uncharged S2)}
+
+Using \notation{5S2}, \notation{3S2}, or \notation{j.6S2} creates a \textbf{normal Afterimage} at Ekko's position, then teleports him back.
+Follow-up options:
+\begin{itemize}
+  \item \movename{r.S2 (Replay)} --- teleports back to the afterimage with an attack
+  \item \movename{r.2S2 (Time's Up!)} --- returns with downward launcher; hold back to retreat instead
+\end{itemize}
+
+% Afterimage Mechanics Visual
+\begin{center}
+\fbox{\begin{minipage}{0.7\textwidth}
+  \centering
+  \textcolor{ekkoGold}{\textbf{Afterimage Rewind Examples}}\\[0.3em]
+  \imagePlaceholder{ekko-afterimage-examples}
+\end{minipage}}
+\end{center}
+
+\subsection{Volatile Afterimage (Hold S2 until frame 18+)}
+
+Holding \notation{S2} to at least frame 18 charges a \textbf{Volatile Afterimage}, unlocking:
+\begin{itemize}
+  \item \movename{Chronoswitch} --- teleport without attacking, maintaining neutral position
+  \item \movename{Chronobreak (2S2)} --- OTG pickup with wall bounce for corner carry
+  \item \movename{Flip It (3M)} becomes combo-able into full routes
+  \item Essential for all of Ekko's highest-damage sequences
+\end{itemize}
+
+\begin{tipbox}
+\textbf{Down S2 (2S2/3S2)} is the fastest and safest way to set up a Volatile Afterimage. It is also \textbf{projectile-invulnerable} --- it passes through Jinx rockets and other projectiles.
+\end{tipbox}
+
+\subsection{Afterimage Cancel}
+
+Once any S2 Special or S2 Super has been used, virtually every move can be cancelled into an Afterimage follow-up. This makes opponents extremely hesitant to use Parry or Pushblock --- they cannot be certain whether Ekko will attack or rewind.
+
+\section{Timewinder Mechanics}
+
+\subsection{Distance-Dependent Properties}
+
+\begin{itemize}
+  \item \textbf{Early/close hit:} Standard juggle for basic conversions
+  \item \textbf{Max-distance (slowed):} Applies a \textbf{Time-slow reaction} --- gives a generous window to follow up for a big combo (Ekko or Assist)
+\end{itemize}
+
+% Timewinder Gameplay Visual
+\begin{center}
+\imagePlaceholder{ekko-timewinder-mechanics - Timewinder distance-dependent properties}
+\end{center}
+
+\subsection{Batting Timewinder}
+
+Heavy buttons can redirect the Timewinder mid-flight:
+\begin{itemize}
+  \item \notation{H} --- launches it forward
+  \item \notation{2H} --- sends it upward in an arc
+  \item \notation{3H} --- arcing downward trajectory
+\end{itemize}
+
+\begin{tipbox}
+\textbf{Mirror Matchup:} You can hit an opponent's Timewinder back at them with your own heavy attacks to redirect it. This does \textbf{NOT} work with the Mega Timewinder Super.
+\end{tipbox}
+
+\section{Air Hop}
+
+Ekko's Air Hop (\notation{L+M} or \notation{66} in the air) is a unique \textbf{forward-only short hop}. It cannot be performed backwards. Use it to:
+\begin{itemize}
+  \item Bait out anti-airs in neutral before confirming on the opponent
+  \item Cross up opponents and sandwich with Assist
+  \item Mix empty jump into throw, jump H, or Air Hop cross-up to confuse defensive options
+\end{itemize}
+
+%======================================================
+\chapter{Neutral Game}
+%======================================================
+
+\section{Core Neutral Pillars}
+
+\begin{enumerate}
+  \item \textbf{Timewinder control} --- force opponents to respect the screen at all ranges
+  \item \textbf{Clone threat} --- a Volatile Afterimage's mere presence changes opponent defensive habits
+  \item \textbf{Mobility and positioning} --- Air Hop and dash to maintain optimal spacing
+\end{enumerate}
+
+\section{Key Neutral Buttons}
+
+\begin{itemize}
+  \item \movename{5S1 (Timewinder)} --- primary space control; throw at max range for Time-slow reaction
+  \item \movename{5L} --- fastest check; interrupt opponent movement
+  \item \movename{3L (Heel Tap)} --- longer-range low; superior poke versus \notation{2L}
+  \item \movename{5H} --- solid advancing poke; \advantage{+1} on hit
+  \item \movename{66H (Step Up)} --- \advantage{+10} on hit, \advantage{+1} on block; best pressure button
+  \item \movename{j.H} --- jump-in; mix with empty jumps to condition anti-airs
+\end{itemize}
+
+\section{Timewinder Okizeme}
+
+After hard knockdowns and Limit Strikes, use \notation{2S1} to lob a Timewinder that floats down onto the waking opponent.
+
+\subsection{Corner Throw Oki Trap}
+\begin{enumerate}
+  \item Land \movename{Forward Throw} in the corner
+  \item Immediately input \notation{2S1}
+  \item Timewinder traps opponent --- they cannot Getup Attack; it hits and slows them even if Ekko is hit
+  \item Free mixup: choose tick-throw, left/right with \notation{2S2}, block string into overhead, or Assist sandwich
+\end{enumerate}
+
+\begin{tipbox}
+Cycling through different oki patterns conditions opponents to freeze on wakeup. Then punish with the overhead.
+\end{tipbox}
+
+\section{Approach Tactics}
+
+\begin{itemize}
+  \item \textbf{Roll:} Invincibility frames allow passing through horizontal projectiles to close distance
+  \item \textbf{Air Timewinder:} Jump and throw \notation{j.S1} to beat grounded anti-airs
+  \item \textbf{Down S2 crossup:} Projectile-invulnerable; crosses up at close range before Assist arrives
+  \item \textbf{Timewinder cover:} Fire \notation{2S1} then dash forward --- opponent blocked the projectile while you close in
+\end{itemize}
+
+%======================================================
+\chapter{Mixup System}
+%======================================================
+
+\section{Core Mixup Tools}
+
+\subsection{S2 HOLD vs. Immediate S2}
+
+\movename{Chronostrike} can be held for Volatile Afterimage or released immediately, creating a commitment guessing game:
+
+\begin{itemize}
+  \item Release immediately: Attacks come out; blocking opponent takes the hit
+  \item Hold: Bait the Parry, then punish with \notation{2S2} Chronobreak
+\end{itemize}
+
+On block, \movename{S2 Hold} crosses Ekko behind the opponent. His \notation{5L} is fast enough to contest reversals:
+
+\begin{center}
+\begin{tabular}{C{3cm} C{3cm} C{7cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Situation}} & \textcolor{ekkoBlue}{\textbf{Result}} & \textcolor{ekkoBlue}{\textbf{Opponents}} \\
+\rowcolor{tablerow}Ekko \notation{5L} after cross & \textbf{TRADE} & Jinx, Warwick \\
+\rowcolor{tablerowalt}Ekko \notation{5L} after cross & \textbf{WIN} & Braum, Blitzcrank, Darius, Illaoi \\
+\end{tabular}
+\end{center}
+
+\subsection{Down S2 Sandwich}
+
+\begin{enumerate}
+  \item Begin charging \notation{2S2}
+  \item Call Tag Assist
+  \item Ekko crosses the opponent \textit{before} the Assist arrives
+  \item Opponent must block in the opposite direction --- nearly unreactable left-right
+\end{enumerate}
+
+\subsection{Flip It Overhead (3M)}
+
+Flip It is reactable on its own (22f startup). In blockstrings and with Assist pressure, it becomes deadly. Conditioning sequence:
+\begin{enumerate}
+  \item Multiple block strings with \notation{2L}, \notation{3L} (condition to crouch-block)
+  \item Land \movename{Flip It} when they expect low
+  \item With Volatile Afterimage active: confirm into full combo
+\end{enumerate}
+
+\subsection{Temporal Slip 50/50}
+
+The gap between Temporal Slip hits 2 and 3 enables:
+\begin{itemize}
+  \item Normal Afterimage active: use \movename{Time's Up!} to catch Parry attempts
+  \item Hold Down-Back during gap: disengage, making hit 3 a frame trap
+  \item This 50/50: \textit{Time's Up vs. Temporal hit 3}
+\end{itemize}
+
+\begin{warnbox}
+Temporal Slip on block is punishable by most mediums. Never use raw in block strings without afterimage backup.
+\end{warnbox}
+
+\section{Jump Mixup Triangle}
+
+\begin{center}
+\begin{tabular}{L{4.5cm} L{4.5cm} L{4.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Option}} & \textcolor{ekkoBlue}{\textbf{Beats}} & \textcolor{ekkoBlue}{\textbf{Loses to}} \\
+\rowcolor{tablerow}Empty jump into throw & Crouch blocking & Reversal or throw tech \\
+\rowcolor{tablerowalt}Jump \notation{j.H} & Reversals / stand-block & Well-timed anti-air \\
+\rowcolor{tablerow}Jump into Air Hop (cross-up) & Anti-air timing & Quick block change \\
+\end{tabular}
+\end{center}
+
+\section{Corner Throw Trap Full Sequence}
+
+\begin{enumerate}
+  \item Land \movename{Forward Throw} in corner
+  \item Input \notation{2S1} immediately --- Timewinder floats down on wakeup
+  \item Opponent cannot Getup Attack
+  \item Choose: low, overhead, left/right, tick throw, or Assist sandwich
+  \item On hit: confirm into combo; on miss: reset the loop
+\end{enumerate}
+
+%======================================================
+\chapter{Combo Guide}
+%======================================================
+
+\section{Pulse Fuse Combos (Beginner)}
+
+Triggered by the \textbf{Pulse Fuse}; no strict timing required.
+
+% Combo Reference Guide Header
+\begin{center}
+\imagePlaceholder{ekko-combo-structure - Combo flow diagram}
+\end{center}
+
+\begin{combobox}[]{Pulse Combo --- Ground Starters}
+\begin{tabular}{L{7cm} C{1.8cm} C{2cm}}
+\rowcolor{tablehead}\textcolor{white}{\textbf{Visual Input}} & \textcolor{ekkoBlue}{\textbf{Dmg}} & \textcolor{ekkoBlue}{\textbf{Diff}} \\
+\rowcolor{tablerow}\dirDown\btnL\ \arrow\ \dirDown\btnM\ \arrow\ \dirDown\btnH\ \arrow\ \dirUp\dirForward\ \arrow\ \dirUp\btnL\ \arrow\ \dirUp\btnM\ \arrow\ \dirUp\btnH\ \arrow\ \dirUp\btnS{1} & 237 & Very Easy \\
+\rowcolor{tablerowalt}\dirDown\btnM\ \arrow\ \dirDown\btnH\ \arrow\ \btnS{2}\,\small$\sim$\btnS{2}\ \arrow\ \dirDown\dirDown\btnS{1} & 358 & Very Easy \\
+\rowcolor{tablerow}\dirDown\btnH\ \arrow\ \dirForward\btnS{1}\ \arrow\ \dirDown\dirDown\btnS{1}\plus\btnS{2} & 439 & Very Easy \\
+\end{tabular}
+\end{combobox}
+
+\begin{combobox}[]{Pulse Combo --- Air Starters}
+\begin{tabular}{L{7cm} C{1.8cm} C{2cm}}
+\rowcolor{tablehead}\textcolor{white}{\textbf{Visual Input}} & \textcolor{ekkoBlue}{\textbf{Dmg}} & \textcolor{ekkoBlue}{\textbf{Diff}} \\
+\rowcolor{tablerow}\dirUp\btnL\ \arrow\ \dirUp\btnM\ \arrow\ \dirUp\btnH\ \arrow\ \dirUp\btnS{1} & 181 & Very Easy \\
+\rowcolor{tablerowalt}\dirUp\btnM\ \arrow\ \dirUp\btnH\ \arrow\ \dirUp\btnS{2}\ \arrow\ \small land\ \arrow\ \dirForward\btnS{1}\ \arrow\ \dirDown\dirDown\btnS{1} & 338 & Easy \\
+\rowcolor{tablerow}\dirUp\btnH\ \arrow\ \dirUp\btnS{2}\,\small$\sim$\btnS{2}\ \arrow\ \small land\ \arrow\ \dirDown\dirDown\btnS{1}\plus\btnS{2} & 464 & Very Easy \\
+\end{tabular}
+\end{combobox}
+
+\section{Beginner Combos}
+
+\begin{combobox}[]{Beginner --- S1 Super Finisher (anywhere)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirDown\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirDown\btnH \arrow \small jc. \arrow \dirUp\btnM \arrow \dirUp\btnH \arrow \dirUp\btnS{1} \arrow \btnS{1}\plus\btnL
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{5L > 5M > 5H > 2H > jc. > j.M > j.H > j.S1 > S1+L}
+  \item Works everywhere on screen.
+  \item At midscreen: Mega Timewinder boomerangs back; extend with \notation{j.H}.
+  \item Without meter: end with \notation{6S2} instead for oki reset.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-s1-finisher}
+
+\end{combobox}
+
+\begin{combobox}[]{Beginner --- S2 Super Finisher (anywhere)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirDown\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirForward\btnS{2} \arrow \dirDown\btnS{1} \arrow \dirUp\dirForward\btnS{2} \arrow \small land \arrow \dirDown\dirDown\btnS{1}
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{5L > 5M > 5H > 6S2 > 2S1 > j.6S2 > land > 22S1}
+  \item Primary meterless BnB.
+  \item The Limit Strike gives time to set up Tangled Timeline or \notation{2S2} Volatile pressure.
+  \item \textbf{Hold forward} during the final air S2 or Ekko rewinds away from the opponent.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-s2-finisher}
+
+\end{combobox}
+
+\begin{combobox}[]{Beginner --- Timewinder Confirm (anywhere)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirDown\btnS{1} \arrow \small dash \arrow \dirDown\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirDown\btnH \arrow \small jc. \arrow \dirUp\btnM \arrow \dirUp\btnH \arrow \dirUp\btnS{1}
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{5S1 (distance/slow hit) > dash > 5L > 5M > 5H > 2H > jc. > j.M > j.H > j.S1}
+  \item Time-slow reaction gives a generous follow-up window.
+  \item Practice dashing forward and confirming with \notation{5L} on reaction.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-timewinder-confirm}
+
+\end{combobox}
+
+\section{Intermediate Combos}
+
+\begin{combobox}[]{Intermediate --- 3L Starter (anywhere)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirDown\dirForward\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \btnS{2} \arrow \dirDown\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirDown\dirForward\btnH \arrow \dirUp\dirForward \arrow \dirUp\btnH
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{3L > 5M > 5H > S2{\textasciitilde}S2 > 2L > 5M > 5H > 3H > 9 > j.H > j.S2 > 5H > 3H > 9 > j.H > j.S2 > 2S1}
+  \item Starts from Heel Tap low poke; confirms into rewind chain.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-3l-starter}
+
+\end{combobox}
+
+\begin{combobox}[]{Intermediate --- 2L Starter (corner)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirDown\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirDown\dirForward\btnH \arrow \dirUp\dirForward \arrow \dirUp\dirDown\btnH \arrow \small 66 \arrow \dirUp\dirDown\btnH \arrow \dirUp\dirDown\btnS{2} \arrow \dirDown\btnH \arrow \btnT
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{2L > 5M > 5H > 3H > 9 > j.5H > 66 > j.5H > j.5S2 > 5H > T}
+  \item Corner-specific. The dash cancel (\notation{66}) after the first airborne \notation{j.H} is the key timing.
+  \item Ends with Tag Launcher for partner extension.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-2l-corner}
+
+\end{combobox}
+
+\begin{combobox}[]{Intermediate --- Overhead into Volatile (anywhere)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\btnS{2}\plus\btnL \arrow \dirDown\dirForward\btnM \arrow \small r.\btnS{2} \arrow \dirDown\btnH \arrow \dirDown\btnH \arrow \small jc. \arrow \dirUp\btnM \arrow \dirUp\btnH \arrow \dirUp\dirForward\btnS{2}
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{S2+L (install) > 3M > r.S2 > 5H > 2H > jc. > j.M > j.H > j.6[S2] > 2S2 > 3H > jc. > j.H > j.S2}
+  \item Requires Tangled Timeline installed to make Flip It combo-able.
+  \item Volatile Afterimage from charged air S2 feeds the Chronobreak OTG pickup.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-overhead-volatile}
+
+\end{combobox}
+
+\section{Advanced Combos}
+
+\begin{combobox}[]{Advanced --- 6T Starter (anywhere)}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirForward\btnT \arrow \btnT \arrow \small 66 \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirDown\dirForward\btnS{1} \arrow \dirDown\dirDown\btnS{1} \arrow \btnS{1} \arrow \dirDown\dirForward\btnS{2}
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{6T > T > 66 > 5M > 5H > 3S1 > 22S1 > S1 > 3S2 > 3H > 9 > j.[H] > j.2S1 > S2 > 3H > 9 > j.H > j.S2 > 5H > T}
+  \item Solo conversion from Forward Throw using Chronobreak OTG.
+  \item Charged airborne H (\notation{j.[H]}) before \notation{j.2S1} is the high-damage battery segment.
+  \item Ends with Tag Launcher for further partner extension.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-6t-starter}
+
+\end{combobox}
+
+\begin{combobox}[]{Advanced --- Corner Ult Finisher}
+
+\begin{center}
+\small\textcolor{ekkoGray}{\textbf{Combo Input Sequence:}}\\[0.3em]
+\fbox{\begin{minipage}{0.85\textwidth}
+\centering
+\dirDown\btnL \arrow \dirDown\btnM \arrow \dirDown\btnH \arrow \dirDown\dirForward\btnS{2} \arrow \dirDown\btnH \arrow \small jc. \arrow \dirUp\btnM \arrow \dirUp\btnH \arrow \dirUp\dirForward\btnS{2} \arrow \small land \arrow \dirDown\btnS{2} \arrow \dirDown\btnH \arrow \btnS{1}\plus\btnS{2}
+\end{minipage}}
+\end{center}
+
+\begin{itemize}
+  \item \notation{5L > 5M > 5H > 3S2 > 2H > jc. > j.M > j.H > j.6[S2] > land > 2S2 > 5H > S1+S2 (Ultimate)}
+  \item Corner-specific high-damage ender.
+  \item After final \notation{j.H} alternates: \notation{S1+L} Super, \notation{T} Tag Launcher, or \notation{2H > j.S2} oki.
+\end{itemize}
+
+\textcolor{ekkoPurple}{\textit{Visual Reference:}} \imagePlaceholder{combo-ekko-corner-ult}
+
+\end{combobox}
+
+\section{Corner Carry Routing}
+
+\begin{tipbox}
+Use \movename{Chronobreak (2S2)} wall bounce to send opponents into the corner. Adding \notation{6S2} (new clone forward) mid-combo carries the opponent across the screen before the wall bounce.
+\end{tipbox}
+
+\begin{itemize}
+  \item After launcher: \notation{jc. > j.M > j.H > j.6[S2] (charged)} then \notation{2S2} on landing for wall bounce
+  \item Mega Timewinder at midscreen boomerangs and allows \notation{j.H} extension into corner
+  \item After corner tag combos: always end with \notation{2S1} Toss for oki trap setup
+\end{itemize}
+
+\section{Limit Break / Limit Strike Extensions}
+
+After Limit Strikes, the freeze window allows:
+\begin{itemize}
+  \item \notation{2S1} immediately after the freeze to place a Timewinder for oki on wakeup
+  \item \notation{S2+L} (Tangled Timeline) during the Limit Strike animation to enter the next round with Volatile Afterimage already installed
+  \item Full Volatile Afterimage charge setup in the open frame window
+\end{itemize}
+
+%======================================================
+\chapter{Archetype Matchup Strategies}
+%======================================================
+
+\section{vs. Zoners}
+
+Zoners control fullscreen and beat Ekko in the poke war. He must get in to win.
+
+\begin{matchupbox}[]{Strategy vs. Zoners}
+\begin{itemize}
+  \item \textbf{Examples:} Jinx, Teemo
+  \item \textbf{Down S2 projectile invulnerability:} \notation{2S2} passes through most projectiles to close distance.
+  \item \textbf{Roll approach:} Invincibility frames let you pass through horizontal projectiles.
+  \item \textbf{Don't fight at fullscreen:} You lose the poke war. Get a knockdown and lock them into oki.
+  \item \textbf{Forward Assist:} \notation{T} travels far quickly, covering your approach from behind.
+  \item \textbf{Punish whiffed projectiles hard:} Many zoner projectiles have high end lag.
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. Rushdowns}
+
+Rushdown players want to stay in your face constantly.
+
+\begin{matchupbox}[]{Strategy vs. Rushdowns}
+\begin{itemize}
+  \item \textbf{Examples:} Vi, Darius
+  \item \textbf{Anti-air consistently:} \notation{2H} into Limit Strike oki; reward yourself for anti-airs.
+  \item \textbf{Parry bait:} S2 Hold/Release mixup counters aggressive players who Parry constantly.
+  \item \textbf{Timewinder to decelerate pace:} A well-placed Timewinder forces them to respect the screen.
+  \item \textbf{Back Throw:} Put them at fullscreen; combo into oki setup.
+  \item \textbf{Backdash:} Create space and re-establish Timewinder control.
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. Grapplers}
+
+Grapplers are deadly at close range; Ekko's mobility is his escape.
+
+\begin{matchupbox}[]{Strategy vs. Grapplers}
+\begin{itemize}
+  \item \textbf{Examples:} Darius, Blitzcrank
+  \item \textbf{Never stay at throw range:} Maintain poke distance at all times.
+  \item \textbf{Heel Tap pressure:} \notation{3L} reaches far enough to poke without entering grab range.
+  \item \textbf{Punish whiff grabs hard:} High end lag on grab whiffs means full BnB punish.
+  \item \textbf{Air Hop to bait:} Hop over grab attempts and punish on landing.
+  \item \textbf{Chronostrike crossup:} Push them to the corner where Ekko controls the game.
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. Defensive / Turtle}
+
+\begin{matchupbox}[]{Strategy vs. Defensive Playstyles}
+\begin{itemize}
+  \item \textbf{Timewinder:} Force reactions; punish defensive responses.
+  \item \textbf{Overhead conditioning:} Repeated low pressure, then Flip It when they crouch-block.
+  \item \textbf{Tick throws:} Against opponents who respect blockstrings, mix in tick throws constantly.
+  \item \textbf{Corner oki loop:} Extremely oppressive against turtles who won't risk reversals.
+\end{itemize}
+\end{matchupbox}
+
+%======================================================
+\chapter{Individual Champion Matchups}
+%======================================================
+
+\section{vs. \champ{Ahri}}
+
+\begin{matchupbox}[]{Ekko vs. Ahri --- Slightly Disadvantageous}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Fast consistent Orb projectile starts the poke war
+  \item Foxfire dash punishes whiffs quickly
+  \item Good mobility contests Ekko's approach angles
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Use \notation{2S2} (projectile-invulnerable) to go through her orbs
+  \item Time Air Hop approaches to avoid orb trajectories
+  \item Corner oki loop shuts down her mobility once landed
+  \item Anti-air with \notation{2H} on aerial dash approaches; leads to strong oki
+  \item Forward Assist covers her escape dashes
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Blitzcrank}}
+
+\begin{matchupbox}[]{Ekko vs. Blitzcrank --- Favourable}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Rocket Grab from fullscreen; one hit is massive damage
+  \item Power Fist overhead; unblockable while crouching
+  \item Static Field knockback disrupts pressure
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Never stand still at fullscreen; Rocket Grab hits stationary targets
+  \item \notation{S2 Hold} WINS vs. Blitzcrank \notation{5L} on crossup
+  \item Timewinder forces Blitzcrank to navigate it with slow movement
+  \item Full BnB punish on any Rocket Grab whiff
+  \item Air Hop over his head and avoids most of his ground toolkit
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Braum}}
+
+\begin{matchupbox}[]{Ekko vs. Braum --- Slightly Favourable}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Unbreakable shield deflects Timewinder; disrupts oki and neutral
+  \item Stand Behind Me dash repositions quickly
+  \item Slow but large hitbox normals
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item \notation{S2 Hold} WINS vs. Braum \notation{5L} on crossup
+  \item Bait shield activation; punish when it is down
+  \item Slow movement makes Air Hop crossups very effective
+  \item \notation{3L} Heel Tap pokes under his large body
+  \item Corner trap is especially devastating; he struggles to escape
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Darius}}
+
+\begin{matchupbox}[]{Ekko vs. Darius --- Slightly Favourable}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Apprehend pull punishes whiffed normals from mid-range
+  \item Noxian Guillotine massive damage at 5 stacks
+  \item Hemorrhage chip means every hit hurts
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Never throw out normals from pull range
+  \item \notation{3L} Heel Tap pokes outside of Apprehend range
+  \item \notation{S2 Hold} WINS vs. Darius \notation{5L} on crossup
+  \item When Darius has stacks: Pushblock and reset to neutral rather than contesting
+  \item Air Hop over Apprehend attempts and punish on landing
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Illaoi}}
+
+\begin{matchupbox}[]{Ekko vs. Illaoi --- Slightly Favourable}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Harsh Lesson huge damage; lingering tentacle hitboxes on screen
+  \item Armoured slam attacks resist pressure strings
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Timewinder forces Illaoi to navigate with slow movement
+  \item \notation{S2 Hold} WINS vs. Illaoi \notation{5L} on crossup
+  \item Air Hop approaches confuse her grounded hitboxes
+  \item Avoid Temporal Slip on armoured moves; she absorbs and punishes
+  \item Corner Timewinder oki: she cannot Getup Attack through it
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Jinx}}
+
+\begin{matchupbox}[]{Ekko vs. Jinx --- Disadvantageous}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Fishbones rockets control fullscreen and the air
+  \item Flame Chompers trap the ground
+  \item S2 Hold only \textit{trades} with Jinx \notation{5L} on crossup (not a clean win)
+  \item Mega Death Rocket punishes afterimage setups from fullscreen
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item \notation{2S2} is \textbf{projectile-invulnerable}: go through rockets to close distance
+  \item Stay airborne on approach to avoid Flame Chompers
+  \item Air Timewinder catches her on the ground while you are safe in the air
+  \item Get a knockdown; Ekko's oki is where he wins this matchup
+  \item Call Chronostrike Assist forward to force two simultaneous threats
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Teemo}}
+
+\begin{matchupbox}[]{Ekko vs. Teemo --- Disadvantageous}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Noxious Trap mushrooms zone the entire screen
+  \item Toxic Shot poison chip accumulates over the round
+  \item Move Quick speed buff makes him hard to corner
+  \item Blinding Dart removes Ekko's ability to land normals
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Respect mushroom placement; do not walk into them on approach
+  \item Air Timewinder from above avoids ground traps
+  \item \notation{2S2} projectile invulnerability goes through Toxic Shot
+  \item Ekko's oki traps are devastating once you land a hit; focus on getting that first opening
+  \item During Blinding Dart, Volatile Afterimage follow-ups are unaffected --- continue the combo
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Vi}}
+
+\begin{matchupbox}[]{Ekko vs. Vi --- Roughly Even}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Vault Breaker armoured gap-closer punishes cautious play
+  \item Excessive Force (explosion) big damage on full confirm
+  \item Strong anti-air capability
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Bait Vault Breaker and punish on whiff; significant end lag
+  \item Avoid predictable jumps; use empty hop to bait her anti-air
+  \item Roll to pass through charged Vault Breakers
+  \item Timewinder oki interrupts Vi's offensive patterns on wakeup
+  \item \notation{2S2} passes through Vault Breaker armour
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Warwick}}
+
+\begin{matchupbox}[]{Ekko vs. Warwick --- Slightly Disadvantageous}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Infinite Duress grab Ultimate ignores block; must tech or jump
+  \item Primal Howl fear interrupts Ekko's aggressive pressure strings
+  \item S2 Hold only \textit{trades} with Warwick \notation{5L} on crossup
+  \item Fury mechanic blocks all chip damage
+  \item Blood Hunt speed buff at opponent low HP is terrifying
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Use Timewinder to force reactions; deny his close-range game
+  \item Avoid raw Chronostrike at close range; he can Primal Howl interrupt
+  \item Do not attempt chip-kill strategies; Fury blocks chip
+  \item At crossup: take the trade, then continue with \notation{5L > BnB}
+  \item Corner Timewinder oki: his large body makes Timewinder easy to hit
+\end{itemize}
+\end{matchupbox}
+
+\section{vs. \champ{Yasuo}}
+
+\begin{matchupbox}[]{Ekko vs. Yasuo --- Even to Slightly Disadvantageous}
+\textbf{Key Threats:}
+\begin{itemize}
+  \item Wind Wall (B.S2) blocks ALL of Ekko's projectiles including Timewinder and Mega Timewinder
+  \item Last Breath combo off knockups is enormous damage
+  \item Strong crossup game of his own
+\end{itemize}
+\textbf{Counter-strategy:}
+\begin{itemize}
+  \item Track Wind Wall cooldown; when it expires go aggressive with Timewinder immediately
+  \item Wind Wall now has reduced duration and increased cooldown (Season 1 nerf)
+  \item Do not jump into Last Breath range when airborne from launcher
+  \item \notation{2S2} to go under or through Steel Tempest
+  \item Afterimage setups confuse Yasuo's crossup reads; S2 Hold/Release baits his parry
+\end{itemize}
+\end{matchupbox}
+
+%======================================================
+\chapter{Team Compositions and Synergies}
+%======================================================
+
+\section{What Ekko Wants in a Partner}
+
+\begin{itemize}
+  \item Cover his weak anti-air game
+  \item Extend combo potential with strong assist links
+  \item Complement mixup pressure with threatening assists
+  \item Help close distance against zoners
+\end{itemize}
+
+\section{Best Teams Overview}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{2.5cm} C{2.5cm} L{9cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Ekko}} & \textcolor{ekkoBlue}{\textbf{Partner}} & \textcolor{ekkoBlue}{\textbf{Synergy}} \\
+\rowcolor{tablerow}Ekko & Vi & Mobile duo; strong corner carry and mix-ups; SonicFox's main team \\
+\rowcolor{tablerowalt}Ekko & Warwick & Wounded synergy; high damage; comeback potential \\
+\rowcolor{tablerow}Ekko & Ahri & Dual projectile system; Ahri covers Ekko's approach routes \\
+\rowcolor{tablerowalt}Ekko & Yasuo & Yasuo assists extend Ekko's combos perfectly; dominant duo \\
+\rowcolor{tablerow}Ekko & Jinx & Zoning + mixup complement; Jinx range covers Ekko's shortcomings \\
+\end{tabularx}
+\end{center}
+
+\section{Ekko / Vi}
+
+\subsection{Why This Team Works}
+
+Both are fast and mobile; both excel in the corner. Their combined speed and combo potential make them one of the highest-output mobile duos in the game. This is also the team of SonicFox (2nd DreamHack Atlanta).
+
+\subsection{Role Distribution}
+
+\begin{itemize}
+  \item \textbf{Ekko (Point):} Use Timewinder to control space; land a hit; enter oki loop
+  \item \textbf{Vi (Assist/Anchor):} Vault Breaker assist with armour covers Ekko's approach; on tag-in, Vi closes distance independently
+\end{itemize}
+
+\subsection{Combo Synergy}
+
+\begin{combobox}[]{Team Combo: Ekko/Vi (anywhere)}
+\begin{itemize}
+  \item \notation{5L > 5M > 5H > T (Tag Launcher) > [Vi air combo] > Handshake Tag back to Ekko > j.H > j.6[S2] > 2S2 > BnB ender}
+  \item Tag Launcher allows Vi to extend the air combo and build meter before handing back.
+  \item Vi's Excessive Force explosion can be OTG'd with Ekko's \notation{2S2} on re-entry.
+\end{itemize}
+\end{combobox}
+
+\subsection{Neutral Strategy}
+
+\begin{itemize}
+  \item Vi Forward Assist for armoured gap closing while Ekko controls with Timewinder
+  \item Sandwich: Ekko crosses up with \notation{2S2}, call Vi forward assist --- Vi comes from the original side while Ekko is behind the opponent
+  \item After Limit Strike: both characters have devastating corner-carry extensions
+\end{itemize}
+
+\subsection{Defensive Strategy}
+
+\begin{itemize}
+  \item Vi's Vault Breaker (charged) has armour --- use as a reversal option after Pushblock
+  \item Tag to Vi when Ekko is at low HP for higher raw damage
+  \item Vi's anti-air is better than Ekko's; use Vi Assist to cover aerial approaches
+\end{itemize}
+
+\section{Ekko / Warwick}
+
+\subsection{Why This Team Works}
+
+Warwick's \textbf{Wounded} mechanic activates at low HP, providing significant power boosts. Combined with Ekko's setup-heavy kit, this creates a late-game comeback threat.
+
+\subsection{Role Distribution}
+
+\begin{itemize}
+  \item \textbf{Ekko (Point):} Set up clones, Timewinder oki, land the first hit advantage
+  \item \textbf{Warwick (Anchor):} Benefits from Wounded at low HP; Blood Hunt speed buff as anchor is terrifying
+\end{itemize}
+
+\subsection{Combo Synergy}
+
+\begin{combobox}[]{Team Combo: Ekko/Warwick (corner)}
+\begin{itemize}
+  \item \notation{5L > 5M > 5H > 2S1 (Timewinder trap) > 2T (Tag Launcher) > [Warwick air combo] > Warwick Ultimate > Tag back Ekko > 2S2 OTG > BnB}
+  \item Warwick's grab Ultimate creates an unblockable situation during the freeze animation.
+  \item After the Ultimate freeze, Ekko re-enters with \notation{2S2} for continued pressure.
+\end{itemize}
+\end{combobox}
+
+\subsection{Neutral Strategy}
+
+\begin{itemize}
+  \item Warwick Assist adds pressure during Ekko's Timewinder oki loops
+  \item Primal Howl assist interrupts opponents who try to counter-poke Ekko's strings
+  \item Sandwich: Warwick Assist + Ekko Down S2 crossup for an almost unreactable left-right
+\end{itemize}
+
+\section{Ekko / Ahri}
+
+\subsection{Why This Team Works}
+
+Ahri covers Ekko's biggest weakness: zoning and space control. Her Orb projectile can complement Ekko's Timewinder for a multi-projectile pressure system at different heights.
+
+\subsection{Role Distribution}
+
+\begin{itemize}
+  \item \textbf{Ekko (Point or Flex):} Close range pressure, mixups, corner oki
+  \item \textbf{Ahri (Assist/Point):} Orb of Deception covers Ekko's approach; Spirit Rush dash for mobility
+\end{itemize}
+
+\subsection{Combo Synergy}
+
+\begin{combobox}[]{Team Combo: Ekko/Ahri (anywhere)}
+\begin{itemize}
+  \item \notation{5L > 5M > 5H > T (call Ahri) > Ahri j.Orb > 66 Handshake Tag to Ekko > j.H > j.6S2 > BnB}
+  \item Ahri's air orb creates a unique hitbox angle Ekko cannot replicate alone.
+  \item Handshake Tag returns Ekko perfectly into forward air clone position.
+\end{itemize}
+\end{combobox}
+
+\subsection{Neutral Strategy}
+
+\begin{itemize}
+  \item Throw Timewinder + call Ahri Orb assist simultaneously: two projectiles at different screen heights
+  \item Ahri Charm assist after Ekko blockstring forces difficult guard situation
+  \item If Ekko is losing to a zoner, tag to Ahri who can out-zone most characters
+  \item After Time-slow reaction: Ahri re-enters with Spirit Rush for high-damage conversion
+\end{itemize}
+
+\section{Fuse Recommendations}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{C{3cm} C{2cm} L{8.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Fuse}} & \textcolor{ekkoBlue}{\textbf{Rating}} & \textcolor{ekkoBlue}{\textbf{Notes}} \\
+\rowcolor{tablerow}Pulse & \textcolor{ekkoGreen}{\textbf{Best}} & Long combo chains; Pulse rewards Ekko's chain-heavy style with no strict timing \\
+\rowcolor{tablerowalt}Burst & \textcolor{ekkoGold}{\textbf{Good}} & High-damage shorter confirms; complements S2 Super install routes \\
+\rowcolor{tablerow}Double Down & \textcolor{ekkoRed}{\textbf{Weak}} & S2 Super is already an install; no extra benefit. S1 combos do not need Double Down either. \\
+\end{tabularx}
+\end{center}
+
+\section{Using Ekko as Assist}
+
+\subsection{Forward Assist (My Time! --- Forward T)}
+
+Primary and most used assist. Chronostrike travels a long distance across the screen:
+\begin{itemize}
+  \item Covers point champion's approach and block strings
+  \item On hit: \textbf{Handshake Tag} to Ekko and confirm into full combo
+  \item Hard to react to due to travel distance and speed
+\end{itemize}
+
+\subsection{Back Assist (Timewinder --- Back T)}
+
+Use at \textit{maximum range only}. When the slow hits, Time-slow reaction enables a huge combo. When it misses, the lingering projectile still controls the screen:
+\begin{itemize}
+  \item Forces opponent to play around the slow-field
+  \item Enables long-range tag combo from the Time-slow reaction
+  \item Blocks Getup Attacks during point champion oki
+\end{itemize}
+
+%======================================================
+\chapter{Advanced Concepts and Tips}
+%======================================================
+
+\section{Afterimage Cancel Deep Dive}
+
+With an Afterimage active, virtually every move can be cancelled into follow-ups. This fundamentally changes how opponents approach defense:
+
+\begin{itemize}
+  \item Normal move $\to$ Replay (attack from the afterimage side)
+  \item Normal move $\to$ Time's Up! (rewind with launcher, adjustable direction)
+  \item Block string pause $\to$ teleport to bait Parry $\to$ punish
+  \item Bait the Pushblock, then teleport past it for a punish
+\end{itemize}
+
+\section{Training Mode Optimization}
+
+\begin{tipbox}
+Enable frame data visualization in 2XKO's training mode to see startup, active, and recovery frames in real-time. Visualize hitboxes (red) and hurtboxes (green), and check frame advantage after each interaction. This is the fastest route to locking in combo links and finding unsafe moves.
+\end{tipbox}
+
+\section{Common Mistakes to Avoid}
+
+\begin{itemize}
+  \item \textbf{Over-relying on anti-air:} \notation{2H} is poor --- position to avoid needing it.
+  \item \textbf{Forgetting Forward input for new clone:} \notation{6S2} creates a new clone; \notation{S2} / back \notation{S2} returns to an existing one.
+  \item \textbf{Ignoring range limitations:} Ekko's buttons are short. Never out-poke range-dominant characters.
+  \item \textbf{Wasting Volatile Afterimage charges:} Tangled Timeline gives 5 moves; spend them on overheads, OTG pickups, and high-damage enders.
+  \item \textbf{Temporal Slip in raw pressure:} Always have an Afterimage out before using \notation{6S1} in blockstrings.
+  \item \textbf{Trying to Replay out of failed throws:} This no longer works (Season 1 nerf). Adjust throw-pressure patterns.
+\end{itemize}
+
+\section{Season 1 Patch Notes Summary (Version 1.1.3)}
+
+\begin{itemize}
+  \item \movename{Backdash} slowed for Ekko (and Ahri, Warwick, Vi, Yasuo) --- retreat is more honest
+  \item \movename{Heel Tap (3L)} hitstun $+$2 frames (was 13, now 15); less pushback on hit --- better low confirm
+  \item \movename{Step Up (66H)} scaling: $+$1 per use instead of $+$3 --- better combo filler
+  \item \movename{Replay out of failed throw} removed --- no longer a low-commitment strike-throw
+  \item \movename{Chronostrike Assist} startup 17f $\to$ 19f; no longer gapless when doubled; range, hitbox, and distance all reduced
+  \item \movename{Timewinder Assist} startup 16f $\to$ 22f; less dominant at space control
+  \item \movename{Attempt \#37 (Ultimate)} blockstun reduced by 6f --- less safe on block
+  \item \movename{Chronobreak} meter gain reduced from 10 to 8 per use
+  \item \movename{Mega Timewinder} first hit now causes damage scaling --- less damage off stray hits
+  \item \movename{Flip It (3M)} hitstun decreased on interrupt --- now only combos into \notation{5L} on interrupt
+  \item \movename{M range} slightly decreased
+\end{itemize}
+
+%======================================================
+\chapter{Quick Reference}
+%======================================================
+
+\section{Essential Inputs Cheat Sheet}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{L{4.5cm} L{2.5cm} L{6.5cm}}
+\rowcolor{tablehead}\textcolor{ekkoBlue}{\textbf{Action}} & \textcolor{ekkoBlue}{\textbf{Input}} & \textcolor{ekkoBlue}{\textbf{Use Case}} \\
+\rowcolor{tablerow}Long-range low poke & \notation{3L} & Heel Tap; go-to safe neutral poke \\
+\rowcolor{tablerowalt}Overhead (with clone) & \notation{3M} & Flip It; open crouch-blocking opponents \\
+\rowcolor{tablerow}Timewinder (neutral) & \notation{5S1} & Fullscreen control \\
+\rowcolor{tablerowalt}Timewinder Toss (oki) & \notation{2S1} & Oki setup from jump/arc \\
+\rowcolor{tablerow}Temporal Slip & \notation{6S1} & Advancing strike; use with afterimage backup \\
+\rowcolor{tablerowalt}Clone (normal) & \notation{S2} & Teleport back; standard pressure \\
+\rowcolor{tablerow}Clone (volatile / hold) & \notation{[S2]} & Unlocks OTG and overhead combos \\
+\rowcolor{tablerowalt}Clone crossup & \notation{2S2} & Projectile-invulnerable; crosses at close range \\
+\rowcolor{tablerow}OTG pickup & \notation{2S2} & With Volatile Afterimage only \\
+\rowcolor{tablerowalt}Air Hop & \notation{L+M} (air) & Forward only; bait anti-airs \\
+\rowcolor{tablerow}S1 Super & \notation{S1+L/M/H} & Mega Timewinder; midscreen boomerang \\
+\rowcolor{tablerowalt}S2 Super (install) & \notation{S2+L/M/H} & Tangled Timeline; 5 Volatile charges \\
+\rowcolor{tablerow}Ultimate (3 bars) & \notation{S1+S2} & Attempt \#37; massive damage \\
+\end{tabularx}
+\end{center}
+
+\section{Tiered Gameplan Checklist}
+
+\subsection*{Beginner Goals}
+\begin{itemize}
+  \item Learn Pulse Fuse combos (no strict timing required)
+  \item Practice Timewinder at max distance for Time-slow confirms
+  \item Get comfortable with basic \notation{S2} $\to$ \notation{r.S2} Replay sequence
+\end{itemize}
+
+\subsection*{Intermediate Goals}
+\begin{itemize}
+  \item Land Heel Tap (\notation{3L}) into combo consistently
+  \item Execute corner Timewinder oki trap after Forward Throw
+  \item Learn S2 Hold vs. Release parry-bait mixup
+  \item Incorporate \notation{2S2} crossup into Assist sandwich
+  \item Start conditioning opponents for Flip It overhead
+\end{itemize}
+
+\subsection*{Advanced Goals}
+\begin{itemize}
+  \item Convert off Forward Throw solo via Chronobreak OTG
+  \item Perform full Tangled Timeline install combo with all 5 charges expended
+  \item Execute Down S2 + Assist sandwich for the true left-right
+  \item Optimise corner carry with charged air S2 wall bounce sequences
+  \item React-confirm to Timewinder distance hits for extended conversions
+  \item Exploit Temporal Slip 50/50 with Time's Up! under advanced pressure
+\end{itemize}
+
+\vfill
+\begin{center}
+\textcolor{ekkoPurple}{\rule{0.6\linewidth}{1pt}}\\[1em]
+\textcolor{ekkoGray}{\small This guide compiles information from Mobalytics.gg, Games.gg, 2xko.wiki, wiki.play2xko.com, and the official Riot Games 2XKO champion page. Data reflects Season 1, Version 1.1.3 (March 2026). Game data is subject to change with future patches.}\\[0.5em]
+\textcolor{ekkoPurple}{\rule{0.6\linewidth}{1pt}}
+\end{center}
+
+\end{document}

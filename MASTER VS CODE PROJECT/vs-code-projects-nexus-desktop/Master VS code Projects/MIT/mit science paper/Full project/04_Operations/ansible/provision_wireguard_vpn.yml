@@ -1,0 +1,434 @@
+---
+# Ansible Playbook: WireGuard VPN Infrastructure Provisioning
+# Purpose: Automate deployment of WireGuard VPN gateway and client configuration
+# Usage: ansible-playbook provision_wireguard_vpn.yml --vault-password-file=~/.vault_password
+#
+# Prerequisites:
+#  - Ansible 2.9+ installed
+#  - SSH access to gateway host (sudo privileges)
+#  - Vault password file for encrypted credentials
+#  - Inventory file: inventory/production.ini with [vpn_gateway] and [vpn_clients] groups
+
+- name: "WireGuard VPN Infrastructure Provisioning"
+  hosts: vpn_gateway
+  become: yes
+  vars_files:
+    - "vars/vpn_config.yml"
+    - "secrets/vpn_secrets.yml"  # Encrypted with ansible-vault
+  
+  tasks:
+    
+    # ============================================================================
+    # SECTION 1: PRE-FLIGHT CHECKS
+    # ============================================================================
+    
+    - name: "Pre-flight: Check OS compatibility"
+      assert:
+        that:
+          - ansible_os_family in [ "Debian", "Red Hat", "Ubuntu" ]
+        fail_msg: "WireGuard playbook supports Ubuntu/Debian/RHEL only"
+    
+    - name: "Pre-flight: Verify root or sudo access"
+      command: "sudo whoami"
+      register: sudo_check
+      changed_when: false
+    
+    - name: "Pre-flight: Install required packages"
+      package:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - wireguard
+        - wireguard-tools
+        - net-tools
+        - openssl
+        - qrencode  # For generating QR codes for client configs
+      when: ansible_os_family == "Debian"
+    
+    # ============================================================================
+    # SECTION 2: NETWORK CONFIGURATION
+    # ============================================================================
+    
+    - name: "Network: Create WireGuard directory"
+      file:
+        path: /etc/wireguard
+        state: directory
+        mode: '0700'
+        owner: root
+        group: root
+    
+    - name: "Network: Enable IP forwarding"
+      sysctl:
+        name: net.ipv4.ip_forward
+        value: '1'
+        sysctl_set: yes
+        state: present
+        reload: yes
+    
+    - name: "Network: Generate server keypair"
+      shell: |
+        wg genkey | tee /etc/wireguard/server_privatekey | wg pubkey > /etc/wireguard/server_publickey
+      args:
+        creates: /etc/wireguard/server_privatekey
+    
+    - name: "Network: Read server private key"
+      slurp:
+        src: /etc/wireguard/server_privatekey
+      register: server_privatekey
+    
+    - name: "Network: Create WireGuard interface config (wg0.conf)"
+      template:
+        src: "templates/wireguard_server.conf.j2"
+        dest: /etc/wireguard/wg0.conf
+        owner: root
+        group: root
+        mode: '0600'
+      notify: "Restart WireGuard"
+    
+    - name: "Network: Enable and start WireGuard"
+      systemd:
+        name: wg-quick@wg0
+        enabled: yes
+        state: started
+    
+    # ============================================================================
+    # SECTION 3: FIREWALL RULES (UFW)
+    # ============================================================================
+    
+    - name: "Firewall: Install UFW (if not present)"
+      package:
+        name: ufw
+        state: present
+    
+    - name: "Firewall: Enable UFW"
+      ufw:
+        state: enabled
+    
+    - name: "Firewall: Allow SSH for remote access"
+      ufw:
+        rule: allow
+        port: '22'
+        proto: tcp
+        comment: "SSH access"
+    
+    - name: "Firewall: Allow WireGuard traffic"
+      ufw:
+        rule: allow
+        port: "{{ wg_port | default('51820') }}"
+        proto: udp
+        comment: "WireGuard VPN"
+    
+    - name: "Firewall: Allow HTTP/HTTPS (for status page, optional)"
+      ufw:
+        rule: allow
+        port: "{{ item }}"
+        proto: tcp
+        comment: "Web traffic for VPN dashboard"
+      loop:
+        - '80'
+        - '443'
+    
+    - name: "Firewall: Configure NAT rules for VPN traffic"
+      iptables:
+        table: nat
+        chain: POSTROUTING
+        out_interface: "{{ ansible_default_ipv4.interface }}"
+        jump: MASQUERADE
+        source: "10.0.0.0/24"
+        comment: "WireGuard NAT"
+        state: present
+    
+    - name: "Firewall: Save iptables rules (persistent)"
+      shell: "iptables-save > /etc/iptables/rules.v4"
+      changed_when: false
+    
+    # ============================================================================
+    # SECTION 4: CLIENT KEY GENERATION & PROVISIONING
+    # ============================================================================
+    
+    - name: "Clients: Create clients directory"
+      file:
+        path: /etc/wireguard/clients
+        state: directory
+        mode: '0700'
+    
+    - name: "Clients: Generate keypairs for each VPN client"
+      include_tasks: tasks/generate_client_keys.yml
+      loop: "{{ vpn_clients }}"
+      loop_control:
+        loop_var: client_item
+      vars:
+        client_name: "{{ client_item.name }}"
+        client_allowed_ip: "{{ client_item.allowed_ip }}"
+    
+    - name: "Clients: Generate peer entries for wg0.conf update"
+      shell: |
+        wg set wg0 peer $(cat /etc/wireguard/clients/{{ item.name }}_publickey) \
+          allowed-ips {{ item.allowed_ip }} persistent-keepalive 25
+      loop: "{{ vpn_clients }}"
+      when: item.enabled | default(true)
+    
+    - name: "Clients: Display client provisioning commands"
+      debug:
+        msg: |
+          CLIENT PROVISIONING SUMMARY:
+          ==============================
+          
+          To provision a client, run:
+          
+            scp -r /etc/wireguard/clients/{{ item.name }}* \
+              {{ item.username }}@{{ item.device_ip }}:/etc/wireguard/
+          
+          Then on the client device:
+            
+            sudo chmod 600 /etc/wireguard/{{ item.name }}.conf
+            sudo wg-quick up {{ item.name }}
+      loop: "{{ vpn_clients }}"
+      when: item.enabled | default(true)
+    
+    # ============================================================================
+    # SECTION 5: MONITORING & LOGGING
+    # ============================================================================
+    
+    - name: "Monitoring: Create WireGuard status script"
+      copy:
+        dest: /usr/local/bin/wg-status
+        content: |
+          #!/bin/bash
+          # WireGuard VPN Status Monitoring Script
+          echo "=== WireGuard Interface Status ==="
+          wg show
+          
+          echo ""
+          echo "=== Network Statistics ==="
+          ip link show wg0
+          
+          echo ""
+          echo "=== Active Peers ==="
+          wg show wg0 peers | wc -l
+          echo "peers connected"
+        mode: '0755'
+    
+    - name: "Monitoring: Setup syslog collection for WireGuard"
+      lineinfile:
+        path: /etc/rsyslog.d/30-wireguard.conf
+        line: ":programname, isequal, \"kernel\" :action(type=\"omfile\" file=\"/var/log/wireguard.log\")"
+        create: yes
+      notify: "Restart rsyslog"
+    
+    - name: "Monitoring: Create alert script for disconnected clients"
+      copy:
+        dest: /usr/local/bin/wg-check-clients
+        content: |
+          #!/bin/bash
+          # Alert if WireGuard clients disconnect
+          wg show wg0 latest-handshakes | while read pubkey timestamp; do
+              current_time=$(date +%s)
+              last_handshake=$((current_time - timestamp))
+              
+              if [ $last_handshake -gt 300 ]; then
+                  echo "WARNING: Client $pubkey has not handshaken in ${last_handshake}s" >&2
+              fi
+          done
+        mode: '0755'
+    
+    # ============================================================================
+    # SECTION 6: BACKUP & DOCUMENTATION
+    # ============================================================================
+    
+    - name: "Backup: Create backup directory"
+      file:
+        path: "/var/backups/wireguard"
+        state: directory
+        mode: '0700'
+    
+    - name: "Backup: Create scheduled backup of WireGuard config"
+      cron:
+        name: "Backup WireGuard configuration"
+        hour: "2"
+        minute: "0"
+        job: "tar -czf /var/backups/wireguard/wg0_$(date +\\%Y\\%m\\%d).tar.gz /etc/wireguard/"
+        state: present
+    
+    - name: "Documentation: Generate runbook"
+      copy:
+        dest: "/root/WIREGUARD_RUNBOOK.md"
+        content: |
+          # WireGuard VPN Runbook
+          
+          ## Quick Commands
+          
+          ### View VPN Status
+          ```bash
+          wg show
+          /usr/local/bin/wg-status
+          ```
+          
+          ### Add New Client
+          ```bash
+          cd /etc/wireguard
+          wg genkey | tee clients/{{ new_client_name }}_privatekey | wg pubkey > clients/{{ new_client_name }}_publickey
+          
+          # Update wg0.conf with peer entry and reload
+          wg set wg0 peer $(cat clients/{{ new_client_name }}_publickey) \
+            allowed-ips 10.0.0.X/32 persistent-keepalive 25
+          ```
+          
+          ### Remove Client
+          ```bash
+          wg set wg0 peer $(cat clients/{{ client_name }}_publickey) remove
+          rm clients/{{ client_name }}_*
+          ```
+          
+          ### Restart VPN
+          ```bash
+          sudo wg-quick down wg0
+          sudo wg-quick up wg0
+          ```
+          
+          ### Monitor Client Connections
+          ```bash
+          watch -n5 'wg show'
+          /usr/local/bin/wg-check-clients
+          ```
+          
+          ### View Logs
+          ```bash
+          tail -f /var/log/wireguard.log
+          journalctl -u wg-quick@wg0 -f
+          ```
+          
+          ## Troubleshooting
+          
+          **Clients can't connect:**
+          - Check firewall: `sudo ufw status`
+          - Check WireGuard is running: `sudo systemctl status wg-quick@wg0`
+          - Verify public key on client matches server config
+          
+          **High latency:**
+          - Check persistent-keepalive setting (should be 25)
+          - Monitor server load: `top`, `vmstat 1`
+          
+          **Peers offline:**
+          - Run `/usr/local/bin/wg-check-clients` to identify stale connections
+          - Restart client VPN service
+        mode: '0600'
+    
+    # ============================================================================
+    # SECTION 7: SECURITY HARDENING
+    # ============================================================================
+    
+    - name: "Security: Restrict WireGuard config permissions"
+      file:
+        path: "{{ item }}"
+        mode: '0600'
+        owner: root
+        group: root
+      loop:
+        - /etc/wireguard/wg0.conf
+        - /etc/wireguard/server_privatekey
+    
+    - name: "Security: Disable root login via SSH"
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "^#?PermitRootLogin"
+        line: "PermitRootLogin no"
+      notify: "Restart SSH"
+    
+    - name: "Security: Enable SSH key authentication only"
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "^#?PasswordAuthentication"
+        line: "PasswordAuthentication no"
+      notify: "Restart SSH"
+    
+    - name: "Security: Setup fail2ban to protect SSH"
+      package:
+        name: fail2ban
+        state: present
+    
+    - name: "Security: Enable fail2ban"
+      systemd:
+        name: fail2ban
+        enabled: yes
+        state: started
+    
+  # ============================================================================
+  # HANDLERS
+  # ============================================================================
+  
+  handlers:
+    
+    - name: "Restart WireGuard"
+      systemd:
+        name: wg-quick@wg0
+        state: restarted
+    
+    - name: "Restart rsyslog"
+      systemd:
+        name: rsyslog
+        state: restarted
+    
+    - name: "Restart SSH"
+      systemd:
+        name: ssh
+        state: restarted
+
+
+# ============================================================================
+# STAGE 2: CONFIGURE VPN CLIENTS
+# ============================================================================
+
+- name: "WireGuard Client Configuration"
+  hosts: vpn_clients
+  become: yes
+  vars_files:
+    - "vars/vpn_config.yml"
+    - "secrets/vpn_secrets.yml"
+  
+  tasks:
+    
+    - name: "Client: Install WireGuard tools"
+      package:
+        name:
+          - wireguard
+          - wireguard-tools
+        state: present
+      when: ansible_os_family == "Debian"
+    
+    - name: "Client: Create WireGuard directory"
+      file:
+        path: /etc/wireguard
+        state: directory
+        mode: '0700'
+    
+    - name: "Client: Deploy client config from gateway"
+      synchronize:
+        src: "/etc/wireguard/clients/{{ inventory_hostname }}.conf"
+        dest: "/etc/wireguard/{{ inventory_hostname }}.conf"
+        rsync_opts:
+          - "--chmod=600"
+      delegate_to: "{{ groups['vpn_gateway'][0] }}"
+    
+    - name: "Client: Enable WireGuard interface"
+      systemd:
+        name: "wg-quick@{{ inventory_hostname }}"
+        enabled: yes
+        state: started
+    
+    - name: "Client: Verify VPN connection"
+      shell: "ip addr show up | grep 10.0.0"
+      register: vpn_check
+      retries: 3
+      delay: 5
+    
+    - name: "Client: Report connection status"
+      debug:
+        msg: |
+          VPN CONNECTED
+          
+          Client: {{ inventory_hostname }}
+          Assigned IP: {{ vpn_check.stdout_lines[0] if vpn_check.stdout_lines else 'PENDING' }}
+          
+          Test connectivity:
+            ping -c 1 10.0.0.1  (gateway)

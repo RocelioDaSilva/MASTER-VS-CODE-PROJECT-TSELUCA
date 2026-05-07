@@ -1,0 +1,23 @@
+Task_ID,Task_Name,Phase,Start_Date,End_Date,Duration_Days,Responsável,Status,Percent_Complete,Dependencies,Notes
+T1,Submissão Revista,1A,12-Feb-2026,12-Feb-2026,0,Rocélio + Co-authors,Not Started,0%,NENHUM (FIRST TASK),🔴 CRITICAL - 13:00 SHARP DEADLINE
+T2,Carta MINEA Finalização,1A,9-Feb-2026,11-Feb-2026,3,Rocélio,Not Started,0%,NENHUM,Print + signature collection
+T3,Conselhos Comunitários Confirmação,1A,9-Feb-2026,14-Feb-2026,6,Rocélio + Eng. Campo,Not Started,0%,T1,Schedule 15-16 Feb meetings
+T4,GANNT Finalizado & Exportado,1A,10-Feb-2026,12-Feb-2026,3,Rocélio,Not Started,0%,T1,Export to Excel + Asana share
+T5,Protocolo Consentimento Pronto,1A,12-Feb-2026,14-Feb-2026,3,Rocélio,Not Started,0%,T3,Community consent documentation
+T6,Proposta Financiamento Distribuição,1B,15-Feb-2026,22-Feb-2026,8,Rocélio,Not Started,0%,T1,Contact: AfDB/World Bank/GCF/DFID
+T7,Protocolo Baseline Survey Review,1B,15-Feb-2026,20-Feb-2026,6,Rocélio + MIT Advisor,Not Started,0%,NENHUM,Prepare for IRB submission
+T8,Matriz Risco Monitoramento Início,1B,13-Feb-2026,20-Feb-2026,8,Rocélio,Not Started,0%,T4,Weekly risk reviews begin
+T9,Plano Capacitação Finalizado,1B,18-Feb-2026,22-Feb-2026,5,Eng. Campo,Not Started,0%,NENHUM,60-hour training curriculum
+T10,Protocolo M&E Detalhado,1B,20-Feb-2026,25-Feb-2026,6,MIT Advisor,Not Started,0%,NENHUM,12 KPI framework
+T11,Especificação Equipamento Final,1B,15-Feb-2026,20-Feb-2026,6,Eng. Campo,Not Started,0%,NENHUM,Detailed tech specs for licitação
+T12,Submissão Protocolo IRB,1C,14-Feb-2026,25-Feb-2026,12,Rocélio,Not Started,0%,T7,Target approval 25 Feb
+T13,Licitação Fornecedor Processo,1C,18-Feb-2026,28-Feb-2026,11,Rocélio + Eng. Campo,Not Started,0%,T11,Request 3+ equipment quotes
+T14,Encomenda Equipamento (PO),1C,28-Feb-2026,28-Feb-2026,0,Rocélio,Not Started,0%,T13,Place formal purchase order
+T15,Inspeção Equipamento Chegada,1C,1-Mar-2026,12-Mar-2026,12,Eng. Campo,Not Started,0%,T14,Quality check + test before deployment
+T16,Treinamento Equipa Campo,1C,5-Mar-2026,15-Mar-2026,11,Eng. Campo,Not Started,0%,T9,Equipment + safety training
+T17,Baseline Survey Logística Final,2,10-Mar-2026,18-Mar-2026,9,Rocélio + Eng. Campo,Not Started,0%,T15,Schedules + budget finalization
+T18,Equipamento + Equipa Campo Pronta,2,15-Mar-2026,17-Mar-2026,3,Rocélio,Not Started,0%,T16,Final checklist before field start
+T19,Baseline Survey Cacula (5 dias),2,18-May-2026,22-May-2026,5,Eng. Campo + Team,Not Started,0%,T18,GHI radiação + GPS + entrevistas
+T20,Baseline Survey Humpata (5 dias),2,23-May-2026,27-May-2026,5,Eng. Campo + Team,Not Started,0%,T19,GHI radiação + GPS + entrevistas
+T21,Baseline Survey Quilengues (5 dias),2,28-May-2026,1-Jun-2026,5,Eng. Campo + Team,Not Started,0%,T20,GHI radiação + GPS + entrevistas
+T22,Análise Dados Baseline Completa,2,2-Jun-2026,15-Jun-2026,14,MIT Advisor,Not Started,0%,T21,Data validation + mapping

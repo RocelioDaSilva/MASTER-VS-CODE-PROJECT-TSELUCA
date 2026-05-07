@@ -1,0 +1,20 @@
+# Google Alerts RSS Feeds — Petroleum Engineering Market Research
+#
+# Add your Google Alerts RSS feed URLs below (one per line).
+# Lines starting with # are comments.
+#
+# HOW TO GET RSS URLS:
+#   1. Go to https://www.google.com/alerts
+#   2. Create an alert with your search query
+#   3. Set "Deliver to" → "RSS feed"
+#   4. Click "Create Alert"
+#   5. Copy the RSS feed URL and paste it here
+#
+# You can also add non-Google RSS feeds (Rigzone, OilPrice, etc.)
+#
+# ── EXAMPLE FEEDS (replace with your actual URLs) ──
+# https://www.google.com/alerts/feeds/XXXXXXXX/YYYYYYYY
+#
+# ── INDUSTRY NEWS FEEDS ──
+# https://www.rigzone.com/news/rss/country_angola.aspx
+# https://oilprice.com/rss/main

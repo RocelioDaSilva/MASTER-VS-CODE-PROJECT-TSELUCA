@@ -1,0 +1,46 @@
+%! TEX program = xelatex
+% possibletemplate.tex — example using cwbook.cls and the Chain-Weapon roster
+\documentclass{cwbook}
+
+% Document configuration
+\SetTotalChapters{52}
+\SetAnchorPOV{Aisen}
+% default environment for this chapter
+\ENV{dungeon}{wasteland}
+
+\begin{document}
+
+\chapter{Ash and Iron}
+
+% Print the roster for reference
+\PrintRoster
+
+% Anchor POV (Aisen)
+\UsePOV{Aisen}
+\TopLandscape
+
+Aisen moved through the ruined corridor. Every step echoed like a warning. The stone smelled of iron and old vows.
+
+He found Lyra waiting at a broken brazier, her hands steady as if she had never trembled.
+
+\shift
+
+% Caspian (interaction-driven shift)
+\UsePOV{Caspian}
+\TopLandscape
+
+Caspian watched from the stairwell — a silhouette without a past that did not need one.
+
+He slipped away before any clean answer could form.
+
+\shift
+
+% Ser Corvin
+\UsePOV{Corvin}
+\TopLandscape
+
+Ser Corvin steadied his spear and kept his oath in the hollow of his chest.
+
+\BottomLandscape
+
+\end{document}

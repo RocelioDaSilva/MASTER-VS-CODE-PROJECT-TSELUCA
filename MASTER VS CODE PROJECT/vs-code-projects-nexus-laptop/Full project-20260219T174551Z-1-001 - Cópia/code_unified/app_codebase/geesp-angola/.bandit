@@ -1,0 +1,32 @@
+# ============================================================================
+# BANDIT SECURITY SCANNER CONFIGURATION
+# Configures security scanning to exclude test files and known patterns
+# ============================================================================
+
+[bandit]
+# Exclude test files and directories
+exclude_dirs = ['.venv', 'venv', 'tests', 'notebooks']
+# Specific files to exclude
+skips = []
+# Tests to skip (by ID)
+tests = []# Define tests to run (if empty, all enabled by default)
+
+[bandit.assert_used]
+# Skip checking for assert_used in tests
+skips = ['tests/*']
+
+[bandit.hardcoded_sql_string]
+# Skip checking for hardcoded SQL in tests
+skips = ['tests/*']
+
+[bandit.exec_used]
+# Skip checking for exec in tests
+skips = ['tests/*']
+
+[bandit.subprocess_popen_with_shell_equals_true]
+# B602 - Check for subprocess with shell=True
+severity = 'MEDIUM'
+
+# Report settings
+[bandit.output]
+format = 'json'

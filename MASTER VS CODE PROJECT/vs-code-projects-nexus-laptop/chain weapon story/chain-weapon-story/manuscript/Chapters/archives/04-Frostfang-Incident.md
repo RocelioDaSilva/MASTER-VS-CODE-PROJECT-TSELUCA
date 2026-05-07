@@ -1,0 +1,68 @@
+---
+Title: The Frostfang Crucible
+ChapterID: "04B"
+POV: Aisen
+Age: 17
+Status: Draft
+Word Count: ~2,800
+Tags: [frostfang, field-trial, chain-spear, telekinesis, MU-costs, Master-Wei, political-fallout]
+Notes: "Merged from 04-Frostfang-Incident.md + 04-Frostfang-Incident-Expanded.md on 2026-04-12. The Expanded variant (institutional/Varro perspective with Marta casualty) is archived below the main prose as an alternate-POV draft."
+updated: 2026-04-16
+---
+
+# Chapter 04 — The Frostfang Crucible
+**Anchor:** Academy field trial at Frostfang; silt-lattice rupture during Resonance Trial; rescue and political fallout.
+
+Aisen had known that mountain mornings cut sharper than any blade; he had the weather‑sense of a boy who'd slept beneath eaves and watched the frost slide off iron. The students—white‑gloved sons and daughters of men who sat on war maps—moved like props against the ridge, eager to be seen. He kept his hood low, the leather of his gauntlet dry, the chain wrapped three times round his forearm. He had told them not to come. Aisen had said this once, twice, and it ate at him that they heard him as they would hear a footnote in someone else's sermon.
+
+They pushed farther than the guidebook allowed. The ridge turned from firm shale into wind‑polished collars of ice. Frostflower spikes, tinted a faint blue, crowded the path. The first mistake wasn’t theirs so much as the air’s: a seam of the earth sighed and exhaled cold—an old ley whisper that made crystals sing a fraction out of phase. Aisen felt it first in his right thumb, a tiny thread of wrongness threading his skin. Boundary sense: twenty centimetres to the left, a pressure spike under the snow.
+
+Edrin laughed and stamped his boots louder. The Heartland boy's breath made a white mask; rank braided medals caught the weak light. He shoved open a pouch and wagged a knife like a token of security. "We press on, guide. You do the maps; we do the glory."
+
+It was a single misstep—an overconfident planted boot that slid where packed powder gave way. The slope peeled out under two men in a single, disgraced scrape. They vanished in a small roar of displaced ice. For a moment the world narrowed to the smell of cold metal and the feel of the chain against his palms. Then the sound changed: not just earth moving, but something enormous exhaling, like a bell struck under water. The faint white bloom that lived around his chain hummed.
+
+He moved before thinking of the MU count. He moved because a child in a cloak was falling into nothing.
+
+Toggle three segments, he told himself. One after another, fingers working the rings in a practiced rhythm. The telekinetic overhead was a hard coin in his throat—he paid the toll: 4 MU for each telekinetic toggle of a five‑link module. Segments arced out of their neutral line and, for a dozen heartbeats, the spear became a short whip with a living weight. He sent the detached tip like a noose, the chain a soft bite that took one shoulder and turned it. He could feel the rope of telekinetic tether, the delicate thread between thought and metal—make it hold, make it hold.
+
+It held, but the ground did not. The ridge crumpled like a misbound book. Aisen had to do more: find purchase, find a brace. He threw the core shaft into the slope, locked two more segments rigid with a ring pulse, and braced like a man wedged under a falling door. Toggle costs: 3×4 MU = 12 MU. Create tether to the detached segment: 3 MU. He had burned a thirtieth of his pool and the air still wanted blood.
+
+A beast moved through the drift like wind made flesh—ribs sheathed in cracked ice, a maw that breathed shards. The Frostfang did not hunt like a predator tuned to meat; it hunted for the small, wrong noises that indicated living heat. It found them. It found the noble son, chest opened like a flower, and the sound of a life going out was a loud, wet thing.
+
+He could not save Edrin. He could not make a law of the world that would hold the boy's ribs where they should be. He could only choose who else to carry.
+
+They retreated on handholds and telekinetic punctuation. He navigated the group by white noise and soft tugs—micro pushes, a trajectory curve to steer a student's thrown spear around a spike, a torque twist to turn a falling man so he missed an overhang. Each small miracle was a price: 1 MU a push, 3 MU for a nudge in midflight. He kept the tether while pulling others away; maintain cost crept like cold—0.4 MU/min per tether—little flecks of effort falling away.
+
+They got six of them back. Three did not. The trail back to the Academy was a chute of silence and a weight that sat on the tongue. Master Wei met them at the gate two hours later, spectacles fogged with travel and sleep. He did not look at the medals. He looked at the map Aisen had drawn by blood and frost and said, quietly, "You warned them."
+
+That was the seed for everything that followed: the lecture halls and the gossip, the quick letters written by hands that would become weapons, the court that would want a scapegoat. Edrin's father carried the boy home with the fury of a god denied his harvest. Papers changed hands and a dossier was opened. A much smaller, private event threaded itself through Aisen's days—Amara working the market, mining memory for the night's bargains; Lysandra swearing she had no hand in what had been planted among the reserve crates.
+
+He slept in pieces after that. In dreams the chain unravelled and looped around his throat like an accusation. In the mornings he found his hands still curled around the ring, as if he had been toggling in his sleep.
+
+At the inquiry, when men asked why he had let noble sons climb into that seam, Master Wei held up an old note from a field exam: Aisen had annotated a map weeks before, marking a narrow seam as unstable. The note smelled faintly of smoke. The Council swallowed. That single act—Master Wei's voice in a full room—kept Aisen from being thrown out. It did not stop the politics that would follow.
+
+He learned a hard thing on the ridge: you could save a shape with mana, but you could not fix a world that believed itself elsewhere.
+
+---
+
+## Archived: Alternate Institutional-POV Draft (from 04-Frostfang-Incident-Expanded.md)
+
+> *This version emphasizes the Academy's institutional perspective, with Varro as the authority figure and Marta as the casualty. Preserved for potential multi-POV expansion or Varro subplot development.*
+
+They called it a field calibration. Officially it was the Resonance Trial: students paired off, given a site with an anomalous flux trace, and asked to map, stabilize, and extract a small slate of samples. It was a ritual that sounded academic on paper and lethal in practice.
+
+He knew the mountain as an old bruise on the map: Frostfang, a ridge where ice gathered in teeth and wind ate at the edges of footholds. A week of unseasonable thaw had exposed veins of silt-lattice the masters had never seen before. Professor Maren's notes had said 'instability' in a hand that trembled with restraint. The provost had still signed the release.
+
+Varro chose the team like a man arranging trophies. He had influence and a grin that smelled of wine. "A chance for commoners to prove their worth," he said, and the Hall of the Common Stave hummed with complicated hunger. The expedition left in a swirl of banners and disclaimers. The protagonist—Aisen—was there because Varro needed a guide and because Harald's letter had opened a door no money could fit.
+
+It was the third hour when the silt quivered. A student with a soft mouth named Marta bent to take a swab. Her hands were steady; she had impressed tutors in the symposium. She hummed the standard clearance phrase and the probe sank into the ground and found something that was not stone.
+
+The field flared. It did not behave like a proper flux return. It oscillated and then thudded, a message in a language none of them read. The masters shouted. Cameras tilted. The trial was supposed to teach caution; instead it taught immediacy.
+
+Varro's instinct was to command, not to listen. He called for a full sample and the formation to hold. Aisen called for distance. The two impulses collided—authority pushing forward, practice pulling back. The ground under Marta's feet shed. She was a voice and then not.
+
+In the next moments Aisen did only what came easiest to him: he covered, he redirected, he used the only tools he trusted—chain and the small, honed telekinesis that a cleric had started in him in the tavern years ago. He thought in vectors. Where a powerful mage might have grabbed the world and thrown it aside, he picked words and edges: *a pull here, a nudge there*.
+
+The aftermath smelt of melted grease and bitter wine. Evidence would be scrubbed and filmed and argued. The Provost whispered in two languages, and Master Wei shuffled paperwork with hands that trembled like anyone else's. There would be a hearing. There would be a scapegoat. There would be tapes.
+
+The diplomatic scandal would ripple; politicians would argue about provenance and patrons and whether the academy should have been allowed to hold a trial in a thaw. For him there was something else: a sharpened certainty that the world would take your best if you let it be spectacle, and that sometimes the only answer to showmanship was patient, ugly work.

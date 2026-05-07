@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#003366">
+    <meta name="description" content="YourBusiness — Professional consulting, analytics, technical support, digital solutions, and more. Expert guidance tailored to your business.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="YourBusiness – Professional Business Solutions">
+    <meta property="og:description" content="Expert consulting, analytics, technical support, and digital solutions to help your business grow.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourbusiness.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YourBusiness – Professional Business Solutions">
+    <meta name="twitter:description" content="Expert consulting, analytics, technical support, and digital solutions to help your business grow.">
+    <meta name="twitter:image" content="https://yourbusiness.com/assets/img/og-image.png">
+    <meta property="og:image" content="https://yourbusiness.com/assets/img/og-image.png">
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://yourbusiness.com/">
+    <title>YourBusiness – Professional Business Solutions</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "YourBusiness",
+        "url": "https://yourbusiness.com",
+        "logo": "https://yourbusiness.com/assets/img/og-image.png",
+        "description": "Professional consulting, analytics, technical support, digital solutions, and more.",
+        "telephone": "+12345678900",
+        "email": "info@yourbusiness.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Business Street",
+            "addressLocality": "City",
+            "addressRegion": "State",
+            "postalCode": "12345",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://linkedin.com",
+            "https://facebook.com"
+        ],
+        "foundingDate": "2020",
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "minValue": 15
+        }
+    }
+    </script>
+    <style>
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #003366 0%, #004d99 50%, #0066cc 100%);
+            color: #fff;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        .hero-content { max-width: 860px; margin: 0 auto; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,.3); line-height: 1.2; }
+        .hero p { font-size: 1.25rem; margin-bottom: 2rem; opacity: .95; }
+
+        /* Stats Bar */
+        .stats-bar { background: #002855; color: #fff; padding: 2rem; }
+        .stats-bar-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 1.5rem; text-align: center; }
+        .stat-item h3 { font-size: 2rem; color: #ff4444; }
+        .stat-item p { font-size: .9rem; opacity: .85; }
+
+        /* Services */
+        .services-section { max-width: 1200px; margin: 5rem auto; padding: 0 2rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 2rem; margin-bottom: 3rem; }
+        .service-card { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,.08); transition: all .3s; border-left: 4px solid #ff0000; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,51,102,.15); }
+        .service-card h3 { color: #003366; margin-bottom: .75rem; font-size: 1.3rem; }
+        .service-card p { color: #666; line-height: 1.8; font-size: .95rem; }
+        .services-cta { text-align: center; margin-top: 1rem; }
+
+        /* Why Us */
+        .why-us { background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%); padding: 5rem 2rem; }
+        .why-us-inner { max-width: 1200px; margin: 0 auto; }
+        .why-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 2rem; margin-top: 1rem; }
+        .why-card { background: #fff; padding: 1.75rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.06); border-top: 3px solid #003366; }
+        .why-card .why-icon { font-size: 2rem; margin-bottom: .75rem; }
+        .why-card h3 { color: #003366; margin-bottom: .5rem; }
+        .why-card p { color: #666; font-size: .95rem; }
+
+        /* Contact */
+        .contact-section { background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%); padding: 5rem 2rem; }
+        .contact-section-inner { max-width: 1200px; margin: 0 auto; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 2rem; margin-bottom: 2.5rem; }
+        .contact-item { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.05); text-align: center; }
+        .contact-item h3 { color: #003366; margin-bottom: .5rem; }
+        .contact-item p { color: #555; font-size: 1rem; }
+        .contact-item a { color: #ff0000; text-decoration: none; font-weight: bold; transition: color .3s; }
+        .contact-item a:hover { color: #003366; }
+        .contact-form-box { background: #fff; padding: 2.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,.08); max-width: 640px; margin: 0 auto; }
+        .contact-form-box h2 { color: #003366; margin-bottom: 1.5rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <header role="banner">
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="YourBusiness Home">YourBusiness</a>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-label="Hero">
+            <div class="hero-content">
+                <h1>Professional Business Solutions</h1>
+                <p>Delivering excellence through innovative services and dedicated support for businesses of all sizes.</p>
+                <a href="contact.html" class="cta-button">Get a Free Consultation</a>
+            </div>
+        </section>
+
+        <section class="stats-bar" aria-label="Key statistics">
+            <div class="stats-bar-inner">
+                <div class="stat-item"><h3>500+</h3><p>Satisfied Clients</p></div>
+                <div class="stat-item"><h3>6+</h3><p>Years in Business</p></div>
+                <div class="stat-item"><h3>15+</h3><p>Expert Team Members</p></div>
+                <div class="stat-item"><h3>95%</h3><p>Client Satisfaction</p></div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services" aria-labelledby="services-heading">
+            <h2 class="section-title" id="services-heading">Our Services</h2>
+            <div class="services-grid">
+                <article class="service-card fade-in">
+                    <h3>🔧 Consulting Services</h3>
+                    <p>Expert guidance to optimize your business operations and increase efficiency. Our consultants bring years of industry experience to help you reach your goals.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <h3>📊 Business Analytics</h3>
+                    <p>Data-driven insights to make informed decisions. We analyze your business metrics to identify opportunities for growth and improvement.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <h3>🛠️ Technical Support</h3>
+                    <p>Reliable technical assistance 24/7. Our team is ready to resolve any issues quickly and efficiently to minimize downtime.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <h3>📱 Digital Solutions</h3>
+                    <p>Custom digital strategies tailored to your business needs. From web development to mobile apps, we create solutions that work.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <h3>💼 Project Management</h3>
+                    <p>Professional project coordination ensuring timely delivery and quality results. We manage every aspect of your project lifecycle.</p>
+                </article>
+                <article class="service-card fade-in">
+                    <h3>🎯 Marketing Strategy</h3>
+                    <p>Comprehensive marketing solutions to boost your brand visibility. We develop strategies that reach your target audience effectively.</p>
+                </article>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="cta-button">View All Services &amp; Pricing</a>
+            </div>
+        </section>
+
+        <section class="why-us" aria-labelledby="why-heading">
+            <div class="why-us-inner">
+                <h2 class="section-title" id="why-heading">Why Choose Us?</h2>
+                <div class="why-grid">
+                    <div class="why-card fade-in"><div class="why-icon">✅</div><h3>Proven Track Record</h3><p>Years of successful projects and satisfied clients across multiple industries.</p></div>
+                    <div class="why-card fade-in"><div class="why-icon">🎓</div><h3>Expert Team</h3><p>Skilled professionals with deep industry knowledge and hands-on experience.</p></div>
+                    <div class="why-card fade-in"><div class="why-icon">🧩</div><h3>Custom Solutions</h3><p>Tailored services designed to fit your unique needs, goals, and budget.</p></div>
+                    <div class="why-card fade-in"><div class="why-icon">💬</div><h3>Transparent Communication</h3><p>Clear communication and regular updates throughout every engagement.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="testimonials-inner">
+                <h2 class="section-title" id="testimonials-heading">What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="testimonial-text">Working with YourBusiness transformed our operations. Their consulting team identified inefficiencies we'd overlooked for years and delivered a clear roadmap for growth.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">JR</div>
+                            <div class="testimonial-info">
+                                <strong>James R.</strong>
+                                <span>CEO, Tech Solutions Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="testimonial-text">The analytics service gave us incredible insights into our customer behavior. We've seen a 40% increase in conversions since implementing their recommendations.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">ML</div>
+                            <div class="testimonial-info">
+                                <strong>Maria L.</strong>
+                                <span>Marketing Director, RetailPro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="testimonial-text">Their technical support team is outstanding. Response times are lightning fast and they've helped us maintain 99.9% uptime across all our systems.</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar" aria-hidden="true">DK</div>
+                            <div class="testimonial-info">
+                                <strong>David K.</strong>
+                                <span>CTO, CloudFirst Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+            <div class="contact-section-inner">
+                <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-item"><h3>📞 Phone</h3><p><a href="tel:+12345678900">+1 (234) 567-8900</a></p></div>
+                    <div class="contact-item"><h3>📧 Email</h3><p><a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></p></div>
+                    <div class="contact-item"><h3>📍 Address</h3><p>123 Business Street<br>City, State 12345</p></div>
+                </div>
+                <div class="contact-form-box">
+                    <h2>Send Us a Message</h2>
+                    <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+                    <form id="contactForm" novalidate data-endpoint="">
+                        <div class="form-group">
+                            <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                            <span class="field-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                            <span class="field-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="field-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" placeholder="Tell us about your needs…" required></textarea>
+                            <span class="field-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                                <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                I agree to the <a href="legal/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
+                            </label>
+                            <span class="field-error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">YourBusiness</a>
+                <p>Professional services company dedicated to delivering high-quality solutions for businesses of all sizes.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="legal/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="legal/cookie-policy.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+12345678900">+1 (234) 567-8900</a></li>
+                    <li><a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 YourBusiness. All rights reserved.</p>
+            <p>
+                <a href="legal/privacy-policy.html">Privacy</a> &middot;
+                <a href="legal/terms-and-conditions.html">Terms</a> &middot;
+                <a href="legal/cookie-policy.html">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="cookieBanner" role="dialog" aria-label="Cookie consent">
+        <p>We use cookies to improve your experience. Read our <a href="legal/cookie-policy.html">Cookie Policy</a>.</p>
+        <div class="cookie-actions">
+            <button id="cookieAccept" class="cookie-accept">Accept</button>
+            <button id="cookieDecline" class="cookie-decline">Decline</button>
+        </div>
+    </div>
+
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+    <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

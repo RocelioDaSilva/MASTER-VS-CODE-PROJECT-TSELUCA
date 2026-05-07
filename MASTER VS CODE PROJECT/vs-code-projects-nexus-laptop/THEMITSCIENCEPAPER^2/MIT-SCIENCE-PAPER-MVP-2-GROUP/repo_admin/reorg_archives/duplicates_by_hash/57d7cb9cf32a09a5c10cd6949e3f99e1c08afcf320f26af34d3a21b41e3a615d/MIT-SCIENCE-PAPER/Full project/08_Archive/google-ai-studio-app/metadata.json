@@ -1,0 +1,5 @@
+{
+  "name": "GEESP-Angola Energy Suitability Assessment",
+  "description": "A comprehensive dashboard for assessing solar energy suitability in Angola communities using MCDA and LCOE analysis.",
+  "requestFramePermissions": ["geolocation"]
+}

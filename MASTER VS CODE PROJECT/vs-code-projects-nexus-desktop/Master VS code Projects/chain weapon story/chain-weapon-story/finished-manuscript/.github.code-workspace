@@ -1,0 +1,107 @@
+{
+	"folders": [
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "../.obsidian"
+		},
+		{
+			"path": "../.smart-env"
+		},
+		{
+			"path": "../AI"
+		},
+		{
+			"path": "../assets"
+		},
+		{
+			"path": "../audits"
+		},
+		{
+			"path": "../chatsbyjson"
+		},
+		{
+			"path": "../culture"
+		},
+		{
+			"path": "../documentation"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../finished-manuscript-reorg"
+		},
+		{
+			"path": "../friend-review-package"
+		},
+		{
+			"path": "../full"
+		},
+		{
+			"path": "../magic-system"
+		},
+		{
+			"path": "../manuscript"
+		},
+		{
+			"path": "../notes"
+		},
+		{
+			"path": "../outputs"
+		},
+		{
+			"path": "../pacing"
+		},
+		{
+			"path": "../profiles"
+		},
+		{
+			"path": "../project-management"
+		},
+		{
+			"path": "../reconstruction-of-the-past"
+		},
+		{
+			"path": "../reference"
+		},
+		{
+			"path": "../release-package"
+		},
+		{
+			"path": "../scripts"
+		},
+		{
+			"path": "../story"
+		},
+		{
+			"path": "../structure"
+		},
+		{
+			"path": "../style"
+		},
+		{
+			"path": "../Templates"
+		},
+		{
+			"path": "../tests"
+		},
+		{
+			"path": "../timelines"
+		},
+		{
+			"path": "../tools"
+		},
+		{
+			"path": "../world"
+		},
+		{
+			"path": "../worldbuilding"
+		},
+		{
+			"path": "../writingtutorials"
+		}
+	],
+	"settings": {}
+}
