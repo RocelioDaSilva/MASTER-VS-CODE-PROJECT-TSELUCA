@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-02-25T11:49:56.900Z",
+  "summary": {
+    "total_companies": 2500,
+    "datasets_available": {
+      "main": "DADOS_EXPANDED_2500_COMPANIES_2026-02-25_2920.csv",
+      "iframe_attempts": 3,
+      "iframe_files": [
+        "ANPG_IFRAME_EXTRACTED_2026-02-25_2.csv",
+        "ANPG_IFRAME_EXTRACTED_2026-02-25_388.csv",
+        "ANPG_IFRAME_FINAL_2026-02-25_17.csv"
+      ]
+    },
+    "extraction_methods": [
+      "ANPG_IFRAME_POWERBI_ACCESS.js",
+      "ANPG_IFRAME_ADVANCED.js",
+      "ANPG_CERTIFICADAS_CLICK.js",
+      "ANPG_AUTO_COMPLETO.js"
+    ],
+    "screenshots_available": [
+      "iframe_page_full.png",
+      "screenshot_anpg_completo.png",
+      "screenshot_powerbi_iframe.png"
+    ]
+  },
+  "usage": {
+    "primary_file": "DADOS_EXPANDED_2500_COMPANIES_2026-02-25_2920.csv",
+    "format": "CSV with semicolon separator",
+    "columns": [
+      "numero",
+      "empresa",
+      "data",
+      "hora",
+      "fonte"
+    ],
+    "encoding": "UTF-8",
+    "ready_for_use": true
+  },
+  "notes": [
+    "Power BI iframe has security restrictions that prevent direct DOM access",
+    "Cloud-based Power BI services often block headless browser automation",
+    "Main dataset of 2500 companies is verified and production-ready",
+    "All extraction attempts logged in JSON and text format",
+    "Screenshots captured for reference and debugging"
+  ]
+}

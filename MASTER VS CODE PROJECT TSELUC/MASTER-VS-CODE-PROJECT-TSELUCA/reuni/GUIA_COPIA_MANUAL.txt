@@ -1,0 +1,181 @@
+═══════════════════════════════════════════════════════════════════════════════
+📋 GUIA: COPIAR NOMES DE EMPRESAS VIA CONTEXT MENU
+═══════════════════════════════════════════════════════════════════════════════
+
+Você quer extrair nomes de empresas manualmente do site ANPG usando context menus 
+(right-click). Este guia explica como fazer isso.
+
+───────────────────────────────────────────────────────────────────────────────
+🎯 OPÇÕES DISPONÍVEIS:
+───────────────────────────────────────────────────────────────────────────────
+
+OPÇÃO 1: Script que abre browser e monitora clipboard
+────────────────────────────────────────────────────
+Comando: node ANPG_MANUAL_COPY_VIA_CONTEXT_MENU.js
+
+Como funciona:
+1. Abre o navegador na página ANPG
+2. Você navega e expande categorias manualmente
+3. Você faz RIGHT-CLICK nos nomes das empresas
+4. O script detecta quando você copia (Ctrl+C)
+5. Monitora a área de transferência
+6. Salva automaticamente em CSV
+
+Passos:
+1. Execute: node ANPG_MANUAL_COPY_VIA_CONTEXT_MENU.js
+2. Navegador abre automaticamente
+3. Você trabalha normalmente fazendo click + copiar
+4. Pressione Ctrl+C aqui quando terminar
+5. Files criados automaticamente
+
+───────────────────────────────────────────────────────────────────────────────
+
+OPÇÃO 2: Script interativo para colar nomes
+────────────────────────────────
+Comando: node PASTE_COMPANY_NAMES.js
+
+Como funciona:
+1. Script fica aguardando você colar nomes
+2. Você copia empresas do navegador (Ctrl+C no browser)
+3. Vem para este terminal e cola (Ctrl+V)
+4. Pressiona ENTER
+5. Repete até terminar
+6. Digita "pronto" para finalizar
+7. Arquivo CSV salvo automaticamente
+
+Passos:
+1. Execute: node PASTE_COMPANY_NAMES.js
+2. O script pede nomes de empresas
+3. Cole cada nome (Ctrl+V no terminal)
+4. Pressione ENTER após cada nome
+5. Quando terminar, digite "pronto"
+6. Files criados automaticamente
+
+───────────────────────────────────────────────────────────────────────────────
+📝 PROCESSO MANUAL PASSO A PASSO:
+───────────────────────────────────────────────────────────────────────────────
+
+Para OPÇÃO 2 (mais fácil):
+
+1. Abra o site ANPG em um navegador normal
+   URL: https://anpg.co.ao/conteudo-local/
+
+2. Aguarde Power BI carregar
+
+3. Clique no "+" para expandir categorias
+
+4. Encontre uma empresa pelo nome
+
+5. OPÇÃO A - Right-Click + Copy:
+   • Clique com botão DIREITO no nome
+   • Selecione "Copiar" no menu
+   • Ctrl+C no Windows
+
+6. OPÇÃO B - Selecionar + Copy:
+   • Clique 3x no nome para selecionar
+   • Ctrl+C para copiar
+
+7. Switch para PowerShell/Terminal:
+   • Alt+Tab faz isso rapidamente
+
+8. Execute node PASTE_COMPANY_NAMES.js
+
+9. Cole o nome que copiou:
+   • Cmd+V no PowerShell
+
+10. Veja a confirmação "✅ Adicionado"
+
+11. Repita de novo:
+    • Alt+Tab para voltar ao browser
+    • Encontre próximo nome
+    • Right-Click → Copy (Ctrl+C)
+    • Alt+Tab paravoltarpara terminal
+    • Ctrl+V para colar
+    • ENTER
+
+12. Quando terminar:
+    • Volta ao terminal
+    • Digite "pronto" e ENTER
+    • Arquivo CSV é criado!
+
+───────────────────────────────────────────────────────────────────────────────
+✨ RECURSOS DOS SCRIPTS:
+───────────────────────────────────────────────────────────────────────────────
+
+Ambos os scripts:
+✅ Removem duplicatas automaticamente
+✅ Eliminam espaços extras
+✅ Geram CSV limpo e organizado
+✅ Geram JSON com metadata
+✅ Salvam timestamp
+✅ Mostram resumo final
+✅ Contam empresas únicas
+
+Arquivos criados:
+• EMPRESAS_COPIADAS_YYYY-MM-DD.csv  ← Use este arquivo
+• EMPRESAS_COPIADAS_YYYY-MM-DD.json ← Metadata
+
+───────────────────────────────────────────────────────────────────────────────
+🚀 RECOMENDAÇÃO:
+───────────────────────────────────────────────────────────────────────────────
+
+Comece assim:
+
+1. Execute o script de colagem:
+   > node PASTE_COMPANY_NAMES.js
+
+2. Em outro terminal, abra o navegador com ANPG:
+   > start https://anpg.co.ao/conteudo-local/
+
+3. Use Alt+Tab para alternar entre eles
+
+4. Vá copiando nomes e colando no script
+
+5. Muito rápido e eficiente!
+
+───────────────────────────────────────────────────────────────────────────────
+⏱️ TEMPO ESTIMADO:
+───────────────────────────────────────────────────────────────────────────────
+
+Para 100 empresas: ~15-20 minutos
+Para 500 empresas: ~1-1.5 horas
+Para 1000 empresas: ~2-3 horas
+
+Atalhos que aceleram:
+• Alt+Tab = rápido switch entre windows
+• Ctrl+C / Ctrl+V = copy/paste
+• Triple-click = seleciona linha inteira
+• Right-Click = context menu
+
+═══════════════════════════════════════════════════════════════════════════════
+📞 PRÓXIMOS PASSOS QUANDO TERMINAR:
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Script cria CSV automaticamente
+
+2. Você terá arquivo: EMPRESAS_COPIADAS_YYYY-MM-DD.csv
+
+3. Posso:
+   ✅ Validar dados
+   ✅ Remover caracteres inválidos
+   ✅ Adicionar NIFs (Números de Identificação Fiscal)
+   ✅ Organizar por categoria
+   ✅ Exportar em outros formatos (Excel, JSON, SQL)
+   ✅ Importar em banco de dados
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 ESTÁ PRONTO PARA COMEÇAR?
+
+Escolha uma opção:
+
+A) Automatizado com Navigator (mais fácil):
+   > node ANPG_MANUAL_COPY_VIA_CONTEXT_MENU.js
+
+B) Interativo com Terminal (mais control):
+   > node PASTE_COMPANY_NAMES.js
+
+C) Apenas manual (sem scripts):
+   Abra browser, copie, organize depois
+
+═══════════════════════════════════════════════════════════════════════════════

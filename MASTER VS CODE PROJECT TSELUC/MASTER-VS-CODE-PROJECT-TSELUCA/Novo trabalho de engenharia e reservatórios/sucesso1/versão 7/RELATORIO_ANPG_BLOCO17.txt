@@ -1,0 +1,119 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    RELATÓRIO DE VIABILIDADE EOR - ANPG                       ║
+║                         Formulário Padrão ANPG/BM&FBovespa                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1. IDENTIFICAÇÃO DO PROJETO
+─────────────────────────────────────────────────────────────────────────────
+
+Campo/Reservatório: Bloco 17 - Campo Offshore
+Data do Relatório: 22/01/2026 23:52:29
+Tipo de Projeto: Enhanced Oil Recovery (EOR)
+Âmbito: Avaliação Técnico-Econômica
+
+2. SUMÁRIO EXECUTIVO
+─────────────────────────────────────────────────────────────────────────────
+
+Este projeto avalia a viabilidade técnica e econômica de implementar técnicas
+de recuperação secundária/terciária (EOR) no campo Bloco 17 - Campo Offshore.
+
+Método Recomendado: Injeção de Polímeros
+Período de Análise: 15 anos
+
+Resultados Esperados:
+  • Fator de Recuperação: 42.2% (P50)
+  • NPV (10% desconto): US$ 1785 milhões
+  • IRR: 86079921.8%
+  • CAPEX: US$ 2079 milhões
+
+3. ANÁLISE TÉCNICA
+─────────────────────────────────────────────────────────────────────────────
+
+3.1 Método EOR Selecionado
+   Método: Injeção de Polímeros
+   
+3.2 Estimativas Probabilísticas (Monte Carlo - 50.000 iterações)
+
+   Fator de Recuperação:
+   ├─ P10 (Pessimista): 33.79%
+   ├─ P50 (Realista):   42.17%
+   ├─ P90 (Otimista):   51.12%
+   └─ Desvio Padrão:    6.65%
+
+3.3 Análise de Risco
+   
+   Vulnerabilidade Técnica:
+   ├─ Risco Geológico: BAIXO (modelos bem correlacionados)
+   ├─ Risco de Implementação: MÉDIO (infraestrutura required)
+   └─ Risco Operacional: MÉDIO-BAIXO (método maduro)
+
+4. ANÁLISE ECONÔMICA
+─────────────────────────────────────────────────────────────────────────────
+
+4.1 Fluxo de Caixa Descontado
+
+   NPV (10% desconto):
+   ├─ P10 (Pessimista): US$ 1132 milhões
+   ├─ P50 (Realista):   US$ 1785 milhões
+   ├─ P90 (Otimista):   US$ 2624 milhões
+   └─ Desvio Padrão:    US$ 594 milhões
+
+4.2 Taxa Interna de Retorno (IRR)
+   
+   ├─ P10 (Pessimista): 53750532.0%
+   ├─ P50 (Realista):   86079921.8%
+   ├─ P90 (Otimista):   133413227.4%
+   └─ Taxa de Desconto: 10.0%
+
+4.3 Investimento Capital (CAPEX)
+
+   ├─ P10 (Pessimista): US$ 1449 milhões
+   ├─ P50 (Realista):   US$ 2079 milhões
+   ├─ P90 (Otimista):   US$ 2828 milhões
+   └─ Contingência:     ±15%
+
+4.4 Viabilidade Económica
+
+   Limiar de Viabilidade (IRR > 10%): ✅ VIÁVEL
+   
+   Análise de Sensibilidade:
+   ├─ Preço do Óleo: Altamente sensível
+   ├─ Fator Recuperação: Moderadamente sensível
+   └─ CAPEX: Moderadamente sensível
+
+5. SOLUÇÕES PARETO-ÓTIMAS (Multi-objetivo)
+─────────────────────────────────────────────────────────────────────────────
+
+Foram identificadas as seguintes soluções não-dominadas:
+
+
+1. Injeção de Polímeros
+   ├─ RF (P50):   42.17%
+   ├─ NPV (P50):  US$ 1785 milhões
+   └─ CAPEX (P50): US$ 2079 milhões
+
+2. Injeção de Agua Inteligente
+   ├─ RF (P50):   42.15%
+   ├─ NPV (P50):  US$ 1782 milhões
+   └─ CAPEX (P50): US$ 2079 milhões
+
+
+6. CONCLUSÕES E RECOMENDAÇÕES
+─────────────────────────────────────────────────────────────────────────────
+
+✅ PROJETO VIÁVEL TÉCNICA E ECONOMICAMENTE
+
+Recomendações:
+1. Implementar fase piloto do método selecionado
+2. Monitoramento contínuo de parâmetros críticos
+3. Revisão anual de estimativas econômicas
+4. Conformidade com regulamentações ambientais
+
+Data de Aprovação: 22/01/2026
+Responsável Técnico: [Nome e Assinatura]
+Gestor de Projeto: [Nome e Assinatura]
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          FIM DO RELATÓRIO                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝

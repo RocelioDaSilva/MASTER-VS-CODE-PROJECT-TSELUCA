@@ -1,0 +1,159 @@
+% !TeX program = xelatex
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, top=2cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{portuguese}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=false,pdfborder={0 0 0},
+  pdftitle={Analise SWOT -- Engenharia de Reservatorios 1}}
+
+\definecolor{forcas}{HTML}{0F6E56}
+\definecolor{forcasLight}{HTML}{E1F5EE}
+\definecolor{opor}{HTML}{185FA5}
+\definecolor{oporLight}{HTML}{E6F1FB}
+\definecolor{fraq}{HTML}{854F0B}
+\definecolor{fraqLight}{HTML}{FAEEDA}
+\definecolor{amea}{HTML}{993C1D}
+\definecolor{ameaLight}{HTML}{FAECE7}
+\definecolor{axisColor}{HTML}{444441}
+\definecolor{titleBg}{HTML}{2C2C2A}
+\definecolor{pageGray}{HTML}{F1EFE8}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\textcolor{axisColor}{Análise SWOT}}
+\fancyhead[C]{\small\textcolor{axisColor}{\textit{Engenharia de Reservatórios 1}}}
+\fancyhead[R]{\small\textcolor{axisColor}{Rocélio Da Silva}}
+\fancyfoot[C]{\small\textcolor{axisColor}{\thepage}}
+\fancyfoot[R]{\small\textcolor{axisColor}{Perspectiva: Sucesso na aprovação}}
+
+% Estilo das caixas com margens horizontais largas
+\tcbset{
+  swotbox/.style={
+    enhanced, boxrule=0.6pt, arc=8pt,
+    fonttitle=\bfseries\small, coltitle=white,
+    top=6pt, bottom=6pt,
+    left=18pt, right=18pt,            % margens horizontais internas generosas
+    toptitle=4pt, bottomtitle=4pt,
+    valign=top, height fill,          % preenche a altura, conteúdo alinhado ao topo
+  }
+}
+
+% Lista com espaçamento elástico para preencher verticalmente a caixa
+\newlist{swotlist}{itemize}{1}
+\setlist[swotlist]{
+  label=\textbullet,
+  leftmargin=0.8em,
+  labelsep=0.5em,
+  itemsep=2pt plus 2pt,    % espaço entre itens pode aumentar para ocupar a altura
+  parsep=0pt,
+  topsep=2pt,
+  partopsep=0pt,
+  before={\setlength{\parindent}{0pt}\setlength{\parskip}{0pt}},
+}
+
+\raggedbottom
+
+\begin{document}
+\pagecolor{pageGray}
+
+% ------------------ TÍTULO ------------------
+\newsavebox{\titlebox}
+\begin{lrbox}{\titlebox}
+\begin{tcolorbox}[enhanced, colback=titleBg, colframe=titleBg, arc=10pt, boxrule=0pt,
+  top=10pt, bottom=10pt, left=14pt, right=14pt]
+  \centering
+  {\Large\bfseries\color{white} ANÁLISE SWOT}\\[4pt]
+  {\normalsize\color{white!80!titleBg}
+    Unidade Curricular de \textbf{Engenharia de Reservatórios 1}}\\[2pt]
+  {\small\color{white!60!titleBg}
+    Docente: Dr. Geraldo Ramos $\bullet$ Discente: Rocélio Da Silva}
+\end{tcolorbox}
+\end{lrbox}
+
+% Medir altura do título
+\newlength{\titleheight}
+\setlength{\titleheight}{\ht\titlebox}
+\addtolength{\titleheight}{\dp\titlebox}
+\addtolength{\titleheight}{4pt}
+
+% Calcular altura restante para a grelha
+\newlength{\gridheight}
+\setlength{\gridheight}{\dimexpr\textheight - \titleheight - 2\baselineskip\relax}
+\newlength{\rowheight}
+\setlength{\rowheight}{\dimexpr0.5\gridheight - 4pt\relax}
+
+% Imprimir título
+\usebox{\titlebox}
+\vfill
+
+% ------------------ GRELHA 2x2 ------------------
+\noindent
+\begin{tabularx}{\textwidth}{@{} X @{\hspace{8pt}} X @{}}
+  % Forças
+  \begin{tcolorbox}[swotbox,
+    title={FORÇAS (Strengths)},
+    colback=forcasLight, colframe=forcas, colbacktitle=forcas,
+    height=\rowheight]
+    \begin{swotlist}
+      \item \textbf{Professor Dr. Geraldo Ramos é muito experiente:} conhece bem a disciplina e já leccionou várias vezes.
+      \item \textbf{Conteúdo didático disponibilizado regularmente:} todo o material é colocado à disposição no unimestre.
+      \item \textbf{Aulas frequentes:} acontecem duas vezes por semana, ajudando a manter o ritmo de estudos para a disciplina.
+    \end{swotlist}
+  \end{tcolorbox}
+  &
+  % Oportunidades
+  \begin{tcolorbox}[swotbox,
+    title={OPORTUNIDADES (Opportunities)},
+    colback=oporLight, colframe=opor, colbacktitle=opor,
+    height=\rowheight]
+    \begin{swotlist}
+      \item \textbf{Biblioteca de excelência:} a do ISPTEC é uma das melhores do país, com amplo catálogo de recursos físicos e digitais.
+      \item \textbf{Acesso a materiais complementares:} livros, artigos e outros materiais que ajudam a aprofundar os temas,incluindo livros escritos pelo docente, permitindo uma ferramenta extra para a compreensão da disciplina.
+    \end{swotlist}
+  \end{tcolorbox} \\[8pt]
+  % Fraquezas
+  \begin{tcolorbox}[swotbox,
+    title={FRAQUEZAS (Weaknesses)},
+    colback=fraqLight, colframe=fraq, colbacktitle=fraq,
+    height=\rowheight]
+    \begin{swotlist}
+      \item \textbf{Complexidade da matéria:} conteúdo difícil de entender em alguns pontos, a quantidade de conhecimento de base necessário é maior comparada a outras disciplinas do mesmo semestre.
+      \item \textbf{Risco de assimilação incompleta:} pode passar muita coisa sem que eu perceba que não entendi direito,e sem revisões constantes a situação agrava-se.
+    \end{swotlist}
+  \end{tcolorbox}
+  &
+  % Ameaças
+  \begin{tcolorbox}[swotbox,
+    title={AMEAÇAS (Threats)},
+    colback=ameaLight, colframe=amea, colbacktitle=amea,
+    height=\rowheight]
+    \begin{swotlist}
+      \item \textbf{Responsabilidades concorrentes:} trabalho, família e outras obrigações às vezes atrapalham os horários de estudo, falta de energia atrasa diversos projectos e sessões de estudo, imprevistos agravam a situação.
+      \item \textbf{Gestão do tempo:} preciso organizar melhor, senão fica difícil concluir os trabalhos a tempo,priorizar ainda mais os meus estudos.
+    \end{swotlist}
+  \end{tcolorbox} \\
+\end{tabularx}
+
+\vfill
+
+% ------------------ RODAPÉ ------------------
+\noindent{\footnotesize\textcolor{axisColor!80}{%
+  Análise centrada no sucesso individual na disciplina. %
+  \hfill
+  ISPTEC -- 2025%
+}}
+
+\end{document}

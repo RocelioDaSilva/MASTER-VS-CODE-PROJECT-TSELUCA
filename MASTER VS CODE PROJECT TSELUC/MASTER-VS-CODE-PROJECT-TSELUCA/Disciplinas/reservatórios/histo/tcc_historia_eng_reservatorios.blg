@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tcc_historia_eng_reservatorios.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-num.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: referencias.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Warning--campo year vazio ou faltando em wikipediaReservoirEngineering
+Warning--campo year vazio ou faltando em wikipediaPetroleumHistory
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-num.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 29 entries,
+            6714 wiz_defined-function locations,
+            1355 strings with 12431 characters,
+and the built_in function-call counts, 19957 in all, are:
+= -- 1663
+> -- 518
+< -- 27
++ -- 233
+- -- 160
+* -- 1254
+:= -- 2664
+add.period$ -- 108
+call.type$ -- 29
+change.case$ -- 244
+chr.to.int$ -- 64
+cite$ -- 31
+duplicate$ -- 1139
+empty$ -- 1682
+format.name$ -- 807
+if$ -- 4800
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 547
+newline$ -- 144
+num.names$ -- 116
+pop$ -- 772
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 1099
+stack$ -- 1
+substring$ -- 707
+swap$ -- 484
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 160
+width$ -- 0
+write$ -- 387
+(There were 2 warnings)

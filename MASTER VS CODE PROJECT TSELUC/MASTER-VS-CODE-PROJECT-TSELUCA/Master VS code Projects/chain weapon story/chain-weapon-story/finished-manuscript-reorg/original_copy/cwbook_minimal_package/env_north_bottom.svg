@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="n2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c0d7e6"/>
+      <stop offset="1" stop-color="#9fbfda"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="url(#n2)"/>
+  <g fill="#9ab7c7" opacity="0.9">
+    <path d="M0,110 Q120,86 240,110 Q360,92 480,110 Q600,88 720,110 Q840,90 960,110 Q1080,86 1200,110 L1200,120 L0,120 Z"/>
+    <g fill="#ffffff" opacity="0.12">
+      <ellipse cx="300" cy="98" rx="12" ry="4"/>
+      <ellipse cx="540" cy="96" rx="10" ry="3"/>
+      <ellipse cx="860" cy="99" rx="14" ry="4"/>
+    </g>
+  </g>
+  <text x="1188" y="112" font-family="serif" font-size="10" fill="#6b94a7" text-anchor="end" opacity="0.8">NORTHERN WASTES · SNOW</text>
+</svg>

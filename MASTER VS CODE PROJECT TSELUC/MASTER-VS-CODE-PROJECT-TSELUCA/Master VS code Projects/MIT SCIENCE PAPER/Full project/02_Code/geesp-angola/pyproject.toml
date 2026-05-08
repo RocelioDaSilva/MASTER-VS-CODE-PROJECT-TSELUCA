@@ -1,0 +1,21 @@
+[project]
+name = "geesp-angola"
+version = "0.1.0"
+description = "GEESP-Angola: Map generation and MCDA/LCOE analysis"
+authors = [ { name="GEESP Team" } ]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-q --tb=short"
+filterwarnings = ["ignore::DeprecationWarning"]

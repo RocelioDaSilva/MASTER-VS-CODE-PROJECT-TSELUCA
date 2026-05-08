@@ -1,0 +1,4894 @@
+## Arquivo: 1. Apresentação e Introdução a Mecânica das Rochas 2025_2026 (Parte 1).pdf
+
+Autor:
+Área:
+MECÂNICA DAS ROCHAS
+Curso de Licenciatura em Engenharia de Petróleos
+3 º Ano
+1Felisberto Queta
+2025/2026
+Autor:
+Ano Académico:
+APRESENTAÇÃO DA DISCIPLINA 2
+Felisberto Queta
+2025/2026
+O QUE FAZ UM ENGENHEIRO DE PETRÓLEO? 
+ Acompanha 
+a produção de derivados 
+do petróleo
+ Explora e produz 
+hidrocarbonetos
+ Gerencia a  comercialização 
+e transporte de 
+hidrocarbonetos
+ Prospecta e pesquisa 
+bacias sedimentares com 
+potencial económico
+Querendo dizer que no decurso das suas
+actividades, o engenheiro de petróleos irá
+lidar com situações que exigirão um
+conhecimento sobre:
+Geologia, Geofísica, Petrofísica e
+Mecânica das Rochas.
+Para minimizar este problema, surge a
+Geomecânica que procura integrar estas
+disciplinas a fim de munir o engenheiro de
+petróleo de habilidades e competências para
+melhor compreender as suas actividades e a
+de seus colegas que actuam noutras áreas.
+Autor:
+Ano Académico:
+3
+Felisberto Queta
+2025/2026
+ Desmoronamento das paredes do poço
+ Encontrar um poço seco
+O QUE ACONTECE QUANDO O ENGENHEIRO NÃO TEM DOMÍNIO DA GEOMECÂNICA? 
+ Explosão de plataforma (blowout) devido 
+ao vazamento de fluidos
+Poro-pressâo Zona de 
+fraqueza
+Falhas 
+geológicas
+APRESENTAÇÃO DA DISCIPLINA
+Autor:
+Ano Académico:
+4
+Felisberto Queta
+2025/2026
+Objectivos Gerais da disciplina
+Compreender os principais conceitos de Mecânica das Rochas e sua importância nos 
+vários sectores da vida, principalmente na indústria petrolífera;
+Identificar os diferentes tipos de rochas e diferenciá-las de acordo com as suas 
+características;
+Determinar as propriedades físicas e mecânicas de uma rocha;
+Compreender e aplicar as noções sobre estado de tensão,  resistência e 
+deformabilidade nos maciços rochosos. 
+Perceber os tipos de descontinuidades e sua importância no comportamento de 
+maciços rochosos; 
+Perceber a importância do estudo do comportamento das rochas, no entendimento 
+das estruturas da Terra, na economia dos países e na preservação do ambiente
+Fazer a classificar geomecânica e a descrição dos maciços rochosos.
+1º
+2º
+3º
+4º
+5º
+6º
+7º
+APRESENTAÇÃO DA DISCIPLINA
+Autor:
+Ano Académico:
+Programa analítico da cadeira de Mecânica das Rochas 5
+Felisberto Queta
+2024/2025
+Período Nome Créditos C.H.T 
+6º Mecânica das Rochas 4 64
+C.H.Sem. (2) Teóricas (2) Teórico-Práticas 
+Distribuição da carga horária
+Carga horária total Carga horária teórica Carga horária prática Carga horária 
+semanal 
+64 30 54 8
+Duração do Ano Lectivo
+Início da disciplina Término da disciplina
+09/03/2026 Segunda-feira 23/06/2026 Sexta-feira
+Objectivo do Curso
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das
+rochas, para aplicação na perfuração de poços.
+Autor:
+Ano Académico:
+CONTEÚDO PROGRAMÁTICO 6
+Felisberto Queta
+2025/2026
+Capítulo 1 – Introdução à mecânica das rochas 
+Capítulo 2 – Rochas, solos, maciços rochosos
+Capítulo 3 - Propriedades físicas e mecânicas das rochas 
+Capítulo 4 – Propriedades de resistência e deformabilidade de rochas
+Capítulo 6 – Propriedades de resistência de descontinuidades
+Capítulo 7 – Classificações geomecânicas
+Capítulo 5 – Tensões e deformações nas rochas
+Autor:
+Ano Académico:
+REFERÊNCIAS BIBLIOGRÁFICAS 7
+Felisberto Queta
+2025/2026
+1 – VALLEJO G.LUIS L. et. al (2002); Ingeniería geológica. PEARSON EDUCACION, Madrid.
+2 – FIORIA. Pio, CARMIGNANI L. (2015). Fundamentos de mecanica dos solos e das rochas: 
+aplicações na estabilidade de taludes. Oficina de Textos, São Paulo.
+3 – THOMAS, J. EDUARDO (2021). Fundamentos de Engenharia de Petróleo. Petrobas. Rio de 
+Janeiro.
+4 - SCHÖN, J. H. (2014). Propriedades físicas das rochas aplicadas à engenharia: Fundamentos 
+teóricos e práticos. Elsevier, 496p.
+5 – AADNØY, B. S. e LOOYEH, M. R. E. (2013). Mecânica de rochas aplicada. Elsevier, 2013.
+6 - GOODMAN, R. E. (1989) Introduction to a Rock Mechanics, John Wiley & Son.
+7 - JAEGER, J. C. ; COOK, N; ZIMMERMAN, R. G. W. (2007). Fundamentals of Rock Mechanics, 
+Wiley-Blackwell.
+Autor:
+Ano Académico:
+8
+Felisberto Queta
+2025/2026
+QUA QUI SEX SAB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER
+30
+0
+4
+1
+3
+15
+11
+16
+34
+48
+1 16 29 308
+7
+4
+9
+6
+F
+9 15
+2
+26
+31
+26
+2417
+14
+23
+22
+19
+24
+21
+19
+7
+5
+15
+12
+17
+14
+127
+7
+12 21 2213 14 15
+7 82
+6 7
+9
+5
+5
+2
+10
+9 10
+10
+5
+18
+6
+11
+1612
+12 13 14 15
+13 14 158 9 11
+9 10 22 23 24
+3019 20
+17 18 19
+17 18 19 20 21
+21
+23 24 25 26 27 2822
+25 26 27
+27 28 20
+10 11
+24
+42
+56
+16
+13 16 17 21 22
+2619 20
+2824 25 26
+30
+23 24
+27 29
+12
+26
+44
+20
+F 28
+25
+30
+27
+25
+29
+27 3028
+31
+22
+18
+10 11 12
+14 15
+15
+8
+8 9 10
+1ª Prova parcelar 
+11
+8
+16 176
+3 4
+6
+MARÇO
+ABRIL
+7 8
+1
+3
+4
+2 3
+MAIO
+1 2 3
+3 F 5
+3 4 5 6JANEIRO
+FEVEREIRO
+JULHO
+JUNHO
+Período Provas Parcelares
+Pausa e Feriados
+Período Lectivo
+Exames de Recurso2ª chamada da 1ª Prova parcelar 
+2ª Prova parcelar Exames de Recurso
+Exames Semestrais
+2ª chamada da 2ª Prova parcelar 
+ISPTEC - CALENDÁRIO  ACADÉMICO 2025/2026  MECÂNICA DAS ROCHAS
+5 6 8 12 13
+28 29
+QUA
+2625
+1 2
+F
+2
+16 20
+Publicação dos Resultados dos 
+Exames
+3130
+17 18 29
+4
+4
+20
+38
+52
+0
+14
+11
+16
+13
+Exames Semestral
+13
+25
+20
+22
+21
+18
+23
+20
+18
+0
+22 24
+27 28 29
+21
+Autor:
+Ano Académico:
+9
+Felisberto Queta
+2025/2026
+C
+APÍTULO 1 
+–
+INTRODUÇÃO À MECÂNICA 
+DAS ROCHAS
+
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 10
+Felisberto Queta
+2025/2026
+Neste capítulo vamos procurar entender os seguintes aspectos:
+1.1. Principais conceitos e definições de Mecânica das Rochas;
+1.2. Objetivos e campos de aplicação da Mecânica das Rochas;
+1.3. Aplicação da Mecânica das Rochas na indústria petrolífera.
+Espera-se que no final deste Capítulo vocês sejam capazes de:
+1º Perceber o conceito de Mecânica das Rochas; 
+3º Compreender a aplicação da Mecânica das Rochas na indústria petrólífera;
+2º Compreender as áreas de actuação da disciplina;
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 11
+1.1 - Principais conceitos e definições 
+Mecânica das Rochas (definição)
+Juntas ou diáclases Falhas Dobras
+Fracturação sem 
+deslocamento perceptível dos 
+blocos.
+Torção com deslocamento 
+relativo de blocos um em 
+relação ao plano de fractura.
+Flexão,  encurtamento
+acentuado e deformação
+interna da rocha.
+É uma disciplina da engenharia civil que se ocupa do estudo teórico e prático das propriedades das
+rochas e das suas respostas quando submetidas a uma perturbação aplicada. Estas respostas são
+chamadas deformações que se podem manifestar em forma de:
+Autor:
+Ano Académico:
+12
+Felisberto Queta
+2025/2026
+ Objectivo da disciplina:
+1.2 – Objectivos e áreas de Aplicação
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das rochas, para aplicação na perfuração
+de poços.
+ Objectivos específicos relação:
+• Caracterizar o comportamento
+mecânico das rochas
+entender suas propriedades físicas e mecânicas sob diferentes condições de
+pressão e temperatura.
+• Prever a estabilidade dos poços: evitar colapsos e perdas de circulação durante a perfuração
+ Objecto de estudo:
+Rochas e maciços rochosos
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+• Mitigar riscos geomecânicos: minimizar problemas como fraturamento indesejado, arenização e subsidência
+• Optimizar a recuperação de petróleo: aplicar conceitos de geomecânica para maximizar a extração de
+hidrocarbonetos.
+• Reduzir custos operacionais: prevenir falhas estruturais e evitar gastos desnecessários com reparos e
+interrupções
+• Garantir a segurança das operações: evitar acidentes relacionados à instabilidade das formações.
+Autor:
+Ano Académico:
+13
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+ Disciplinas em estreita relação:
+• Geologia Estrutural: Estuda as estruturas geológicas que ocorrem na litosfera.
+• Mecânica dos solos: Estuda as características físicas e mecânicas dos maciços terrosos.
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Disciplinas em estreita relação na indústria de petróleo:
+• Geologia do Petróleo : Estuda a origem, a formação e a distribuição das rochas-reservatório.
+• Geofísica: Usa métodos sísmicos e de perfis de poço para caracterizar formações rochosas.
+•Engenharia de
+Perfuração:
+Analisa a estabilidade do poço e os impactos da perfuração nas rochas
+•Engenharia de
+Reservatórios:
+Estuda o comportamento dos fluidos e a compactação da rocha devido à depleção (queda
+da pressão dos fluidos).
+• Petrofísica: Avalia propriedades como porosidade, permeabilidade e tensão das rochas.
+•Fraturamento Hidráulico Relacionado à propagação de fracturas na formação para optimizar a produção..
+Autor:
+Ano Académico:
+14
+Felisberto Queta
+2025/2026
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Túneis e galerias
+subterrâneas
+Estudo da estabilidade de maciços rochosos para a construção de túneis rodoviários,
+ferroviários e metroviários.
+Túnel perpendicular à direcção das 
+camadas
+Túnel paralelo à direcção das 
+camadas
+Suporte Externo Suporte Interno
+Túnel em rocha 
+sedimentar
+Túnel em rocha 
+cristalina
+Autor:
+Ano Académico:
+15
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+Projetos de barragens, pontes, edifícios que exigem análise
+das condições do maciço rochoso para garantir segurança.
+Para o efeito é preciso estudar a competência do terreno.
+Fundação de ponte (sapatas) Fundação de plataforma (estacas)
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Como fazer o estudo?
+1. Levantamento Geológico e Geotécnico
+Estudo da topografia
+• Avaliação do relevo e inclinação do terreno.
+• Identificação de áreas sujeitas a erosão e deslizamentos
+Mapeamento geológico
+• Identificação dos tipos de solos e rochas presentes no local.
+• Análise da presença de falhas geológicas, fraturas e dobras
+
+Autor:
+Ano Académico:
+16
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Hidrogeologia
+• Investigação do nível do lençol freático.
+• Estudo da permeabilidade do solo e do fluxo de águas 
+subterrâneas
+1. Levantamento Geológico e Geotécnico
+Ensaios de Campo
+• Sondagem a percussão (SPT – Standard Penetration Test).
+• Ensaio de penetração de cone (CPT – Cone Penetration
+Test)
+• Ensaio de carga em placa
+• Ensaio de consolidação
+2. Ensaios em campo e laboratório
+• Determinação do tipo de fundação mais adequado (superficial ou 
+profunda).
+• Avaliação da estabilidade do solo e das rochas para suportar 
+estruturas.
+• Estudo das deformações do solo que podem comprometer a 
+estrutura.
+• Modelagem computacional para prever a resposta do terreno às 
+cargas aplicadas.
+• Fundações Rasas (Superficiais).
+• Fundações Profundas (e.g. plataformas petrolíferas fixas)
+• Fundações Especiais (e.g. túneis, )
+3. Análise da Capacidade de Suporte e Estabilidade
+4. Escolha das Fundações Adequadas
+• Compactação do solo para aumentar sua densidade e 
+resistência.
+• Drenagem adequada para evitar erosão e recalques.
+• Muros de contenção em terrenos inclinados.
+• Reforço com geossintéticos para melhorar a estabilidade.
+• Monitoramento contínuo para prevenir deformações estruturais
+5. Medidas de Estabilização e Prevenção de ProblemasEnsaios de Laboratório
+• Análise granulométrica
+• Limites de Atterberg (plasticidade do solo)
+• Compactação (Proctor Normal e Modificado)
+• Resistência ao cisalhamento (Ensaio de corte direto e 
+triaxial)
+• Ensaios de adensamento
+Autor:
+Ano Académico:
+17
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+(b) Recalque diferencial de corpo 
+rígido; 
+(c) Recalque diferencial com 
+distorção. (a) Recalque uniforme; 
+O uniforme acontece quando todos os 
+pontos da fundação apresentam o mesmo 
+grau de recalque e toda a obra desce como 
+um corpo rígido, mantendo a estabilidade 
+horizontal e vertical. A estrutura não sofre 
+nenhum dano, mas podem ocorrer problemas 
+nas ligações com a via pública (entrada de 
+água, esgoto, cabos enterrados, acesso de 
+veículos, entre outros).
+Esse fenômeno ocorre quando uma 
+parte da estrutura fica mais rebaixada 
+que a outra, podendo haver ou não uma 
+distorção angular. Portanto, essa 
+condição resulta em esforços estruturais 
+não previstos, o que pode culminar na 
+ruína da obra, em casos extremos. Vale 
+lembrar que nem todas as rachaduras e 
+fissuras provêm de recalque.
+Ocorre quando diferentes partes da 
+estrutura sofrem recalques desiguais, 
+resultando em deformações, fissuras e 
+até risco de colapso estrutural em 
+casos extremos. Pode ser devido a 
+diferença na resistência, 
+compressibilidade, humidade, 
+carregamento desigual na estrutura, 
+rebaixamento do lençol freático, etc. 
+Problemas das fundações:
+Fonte: Veloso 
+e Lopes
+Autor:
+Ano Académico:
+18
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Taludes e encostas:
+Estabilização de encostas e cortes rochosos em rodovias e ferrovias para prevenir
+deslizamentos, seja por tombamento, flexão, em cunha ou em plano e arranja as medidas de
+contenção.
+Exercício: das figuras ao lado direito,
+qual delas é mais propensa a problemas
+de estabilidade?
+Muros
+de
+gabião
+Quebra-
+mares
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Camadas mergulham em
+sentido contrário ao talude
+Camadas mergulham no
+sentido do talude
+Talude natural
+Corte do talude e
+preenchimento da base
+Remoção e preenchimento
+de geomateriais
+Muros
+de
+arrimo
+Grampeamento
+do solo
+Exemplos de
+Medidas de
+contenção:
+Autor:
+Ano Académico:
+19
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Análise de estabilidade de taludes em minas a céu aberto para evitar
+desmoronamentos.
+Projectos de túneis e galerias subterrâneas, garantindo que suportem as 
+tensões naturais da rocha.
+A Mecânica das Rochas permite compreender o comportamento das rochas em diferentes condições de carregamento, 
+contribuindo para a segurança e eficiência das operações mineiras. Sua aplicação dá-se nas seguintes áreas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Estabilidade de escavações subterrâneas e 
+a céu aberto
+2. Dimensionamento de suporte e reforço.
+3. Fragmentação e perfuração de rochas Selecção de técnicas adequadas de desmonte controlado para minimizar 
+vibrações e impactos ambientais.
+Definição de métodos de suporte (tirantes, concreto projectado e malhas
+metálicas) para prevenir desabamentos.
+Aplicação de modelos geomecânicos para optimizar o uso de suportes e 
+reduzir custos operacionais.
+Uso de métodos numéricos e analíticos para prever colapsos e projectar
+reforços.
+Cálculo de resistência da rocha para optimizar os processos de 
+perfuração edesmontecom explosivos.
+Autor:
+Ano Académico:
+20
+Felisberto Queta
+2025/026
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Monitoramento de deformações e redistribuição de tensões em áreas 
+mineralizadas.
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+4. Controlo de pressões e deformações em 
+maciços rochosos.
+5. Drenagem e controlo de água
+6. Planeamento e recuperação de áreas 
+mineralizadas.
+Uso da Mecânica das Rochas na recuperação ambiental de minas 
+desativadas.
+Uso da modelagens para prever a evoluçºao dos maciços após o 
+fechamento da mina.
+Estudo da permeabilidade das rochas para evitar infiltrações e
+problemas de drenagens.
+Planeamento de sistemas de rebaixamento do lençol freático para 
+manter a estabilidade da mina.
+Análise de riscos de subsidência em minas subterrãneas
+Autor:
+Ano Académico:
+21
+Felisberto Queta
+2025/2026
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+envolve perfuração, escavação, detonação, fragmentação secundária,
+abertura de túneis, trituração e moagem.
+Envolve o planeamento da mina, design da disposição, estabilidade de 
+taludes, controle de colapsos, proteção do teto, reforço da rocha, 
+segurança na mineração, controle de vibração e proteção ambiental.
+A mecânica das rochas tem duas missões principais na engenharia de minas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Destruir a rocha de maneira eficiente
+2. Tornar as estruturas rochosas seguras.
+Se essas duas missões forem cumpridas com sucesso e as operações forem bem gerenciadas, os melhores resultados na 
+mineração serão alcançados, como alta recuperação de minério, baixa diluição, maior lucro, menos acidentes e menor 
+impacto ambiental.
+alta recuperação de 
+minério, baixa 
+diluição, maior lucro, 
+menos acidentes e 
+menor impacto 
+ambiental.
+Escavação, detonação, 
+fragmentação 
+secundária, abertura de 
+túneis, trituração e 
+moagem.
+Planeamento da mina, 
+design da disposição, 
+estabilidade de taludes, 
+controle de colapsos, 
+proteção do teto, reforço 
+da rocha, evento 
+sísmico, segurança na 
+mineração, controlo de 
+vibração e proteção 
+ambiental.
+Autor:
+Ano Académico:
+22
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+1. Gestão de Resíduos e Armazenamento subterrâneo
+É essencial para garantir a segurança e a sustentabilidade de projectos relacionados à produção de energia,
+armazenamento de resíduos e protecção do meio ambiente. Seu uso permite minimizar os impactos ambientais, aumentar a
+eficiência dos recursos naturais e evitar desastres geotécnicos. Suas principais aplicações incluem:
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Armazenamento de CO₂ (CCS – Captura e Armazenamento de Carbono):
+Seleção de formações geológicas adequadas para injeção segura de CO₂, reduzindo emissões de gases do efeito estufa.
+Armazenamento de Resíduos Nucleares:
+Avaliação da estabilidade de cavernas e formações rochosas para descarte seguro de rejeitos radioativos.
+2. Energia Geotérmica
+Análise de Reservatórios Geotérmicos:
+Estudo da condutividade térmica e da permeabilidade das rochas para otimizar a extração de calor.
+Fraturamento para Aumento de Permeabilidade:
+Aplicação de técnicas similares ao fraturamento hidráulico para aumentar a eficiência dos sistemas geotérmicos.
+Disposição de Resíduos Industriais:
+Uso de camadas impermeáveis de rocha para evitar contaminação do solo e lençóis freáticos.
+Monitoramento de Sismicidade Induzida:
+Prevenção de pequenos terremotos gerados por operações geotérmicas.
+Autor:
+Ano Académico:
+23
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+3. Estabilidade das barragens e Usinas Hidroeléctricas
+4. Energia Eólica e Solar em terrenos rochosos
+Análise da rocha de fundação:
+Avaliação da resistência e permeabilidade das rochas antes da construção de barragens.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Prevenção da erosão e vazamentos:
+Monitoramento de fracturas e falhas geológicas que possam comprometer a segurança de barragens.
+Estudo do impacto ambiental:
+Previsão de impactos geotécnicos e ambientais antes da construção de hidroeléctricas.
+Fundação de turbinas eólicas e painéis solares:
+Avaliação da capacidade de suporte do solo para garantir estabilidade estrutural.
+Monitoramento de Assentamentos:
+Prevenção de recalques diferenciais em terrenos irregulares.
+5. Protecção contra desastres naturais
+Monitoramento de escorregamentos e deslizamentos de terra:
+Aplicação de sensores e modelagem geomecânica para prever e evitar deslizamentos de encostas.
+Monitoramento de Assentamentos:
+Análise da subsidência em minas ambandonadas para evitar colapsos e impactos ambientais..
+
+---
+
+## Arquivo: 1. Introdução à Mecânica das Rochas 2025_Completo.pdf
+
+Autor:
+Ano Académico:
+9
+Felisberto Queta
+2025/2026
+C
+APÍTULO 1 
+–
+INTRODUÇÃO À MECÂNICA 
+DAS ROCHAS
+
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 10
+Felisberto Queta
+2025/2026
+Neste capítulo vamos procurar entender os seguintes aspectos:
+1.1. Principais conceitos e definições de Mecânica das Rochas;
+1.2. Objetivos e campos de aplicação da Mecânica das Rochas;
+1.3. Aplicação da Mecânica das Rochas na indústria petrolífera.
+Espera-se que no final deste Capítulo vocês sejam capazes de:
+1º Perceber o conceito de Mecânica das Rochas; 
+3º Compreender a aplicação da Mecânica das Rochas na indústria petrólífera;
+2º Compreender as áreas de actuação da disciplina;
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 11
+1.1 - Principais conceitos e definições 
+Mecânica das Rochas (definição)
+Juntas ou diáclases Falhas Dobras
+Fracturação sem 
+deslocamento perceptível dos 
+blocos.
+Torção com deslocamento 
+relativo de blocos um em 
+relação ao plano de fractura.
+Flexão,  encurtamento
+acentuado e deformação
+interna da rocha.
+É uma disciplina da engenharia civil que se ocupa do estudo teórico e prático das propriedades das
+rochas e das suas respostas quando submetidas a uma perturbação aplicada. Estas respostas são
+chamadas deformações que se podem manifestar em forma de:
+Autor:
+Ano Académico:
+12
+Felisberto Queta
+2025/2026
+ Objectivo da disciplina:
+1.2 – Objectivos e áreas de Aplicação
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das rochas, para aplicação na perfuração
+de poços.
+ Objectivos específicos relação:
+• Caracterizar o comportamento
+mecânico das rochas
+entender suas propriedades físicas e mecânicas sob diferentes condições de
+pressão e temperatura.
+• Prever a estabilidade dos poços: evitar colapsos e perdas de circulação durante a perfuração
+ Objecto de estudo:
+Rochas e maciços rochosos
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+• Mitigar riscos geomecânicos: minimizar problemas como fraturamento indesejado, arenização e subsidência
+• Optimizar a recuperação de petróleo: aplicar conceitos de geomecânica para maximizar a extração de
+hidrocarbonetos.
+• Reduzir custos operacionais: prevenir falhas estruturais e evitar gastos desnecessários com reparos e
+interrupções
+• Garantir a segurança das operações: evitar acidentes relacionados à instabilidade das formações.
+Autor:
+Ano Académico:
+13
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+ Disciplinas em estreita relação:
+• Geologia Estrutural: Estuda as estruturas geológicas que ocorrem na litosfera.
+• Mecânica dos solos: Estuda as características físicas e mecânicas dos maciços terrosos.
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Disciplinas em estreita relação na indústria de petróleo:
+• Geologia do Petróleo : Estuda a origem, a formação e a distribuição das rochas-reservatório.
+• Geofísica: Usa métodos sísmicos e de perfis de poço para caracterizar formações rochosas.
+•Engenharia de
+Perfuração:
+Analisa a estabilidade do poço e os impactos da perfuração nas rochas
+•Engenharia de
+Reservatórios:
+Estuda o comportamento dos fluidos e a compactação da rocha devido à depleção (queda
+da pressão dos fluidos).
+• Petrofísica: Avalia propriedades como porosidade, permeabilidade e tensão das rochas.
+•Fraturamento Hidráulico Relacionado à propagação de fracturas na formação para optimizar a produção..
+Autor:
+Ano Académico:
+14
+Felisberto Queta
+2025/2026
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Túneis e galerias
+subterrâneas
+Estudo da estabilidade de maciços rochosos para a construção de túneis rodoviários,
+ferroviários e metroviários.
+Túnel perpendicular à direcção das 
+camadas
+Túnel paralelo à direcção das 
+camadas
+Suporte Externo Suporte Interno
+Túnel em rocha 
+sedimentar
+Túnel em rocha 
+cristalina
+Autor:
+Ano Académico:
+15
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+Projetos de barragens, pontes, edifícios que exigem análise
+das condições do maciço rochoso para garantir segurança.
+Para o efeito é preciso estudar a competência do terreno.
+Fundação de ponte (sapatas) Fundação de plataforma (estacas)
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Como fazer o estudo?
+1. Levantamento Geológico e Geotécnico
+Estudo da topografia
+• Avaliação do relevo e inclinação do terreno.
+• Identificação de áreas sujeitas a erosão e deslizamentos
+Mapeamento geológico
+• Identificação dos tipos de solos e rochas presentes no local.
+• Análise da presença de falhas geológicas, fracturas e 
+dobras.
+
+Autor:
+Ano Académico:
+16
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Hidrogeologia
+• Investigação do nível do lençol freático.
+• Estudo da permeabilidade do solo e do fluxo de águas 
+subterrâneas
+1. Levantamento Geológico e Geotécnico
+Ensaios de Campo
+• Sondagem a percussão (SPT – Standard Penetration Test).
+• Ensaio de penetração de cone (CPT – Cone Penetration
+Test)
+• Ensaio de carga em placa
+• Ensaio de consolidação
+2. Ensaios em campo e laboratório
+• Determinação do tipo de fundação mais adequado (superficial ou 
+profunda).
+• Avaliação da estabilidade do solo e das rochas para suportar 
+estruturas.
+• Estudo das deformações do solo que podem comprometer a 
+estrutura.
+• Modelagem computacional para prever a resposta do terreno às 
+cargas aplicadas.
+• Fundações Rasas (Superficiais).
+• Fundações Profundas (e.g. plataformas petrolíferas fixas)
+• Fundações Especiais (e.g. túneis, )
+3. Análise da Capacidade de Suporte e Estabilidade
+4. Escolha das Fundações Adequadas
+• Compactação do solo para aumentar sua densidade e 
+resistência.
+• Drenagem adequada para evitar erosão e recalques.
+• Muros de contenção em terrenos inclinados.
+• Reforço com geossintéticos para melhorar a estabilidade.
+• Monitoramento contínuo para prevenir deformações estruturais.
+5. Medidas de Estabilização e Prevenção de ProblemasEnsaios de Laboratório
+• Análise granulométrica
+• Limites de Atterberg (plasticidade do solo)
+• Compactação (Proctor Normal e Modificado)
+• Resistência ao cisalhamento (Ensaio de corte direto e 
+triaxial)
+• Ensaios de consolidação.
+Autor:
+Ano Académico:
+17
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+(b) Recalque diferencial de corpo 
+rígido; 
+(c) Recalque diferencial com 
+distorção. (a) Recalque uniforme; 
+O uniforme acontece quando todos os 
+pontos da fundação apresentam o mesmo 
+grau de recalque e toda a obra desce como 
+um corpo rígido, mantendo a estabilidade 
+horizontal e vertical. A estrutura não sofre 
+nenhum dano, mas podem ocorrer problemas 
+nas ligações com a via pública (entrada de 
+água, esgoto, cabos enterrados, acesso de 
+veículos, entre outros).
+Esse fenômeno ocorre quando uma 
+parte da estrutura fica mais rebaixada 
+que a outra, podendo haver ou não uma 
+distorção angular. Portanto, essa 
+condição resulta em esforços estruturais 
+não previstos, o que pode culminar na 
+ruína da obra, em casos extremos. Vale 
+lembrar que nem todas as rachaduras e 
+fissuras provêm de recalque.
+Ocorre quando diferentes partes da 
+estrutura sofrem recalques desiguais, 
+resultando em deformações, fissuras e 
+até risco de colapso estrutural em 
+casos extremos. Pode ser devido a 
+diferença na resistência, 
+compressibilidade, humidade, 
+carregamento desigual na estrutura, 
+rebaixamento do lençol freático, etc. 
+Problemas das fundações:
+Fonte: Veloso 
+e Lopes
+Autor:
+Ano Académico:
+18
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Taludes e encostas:
+Estabilização de encostas e cortes rochosos em rodovias e ferrovias para prevenir
+deslizamentos, seja por tombamento, flexão, em cunha ou em plano e arranja as
+medidas de contenção.
+Exercício: das figuras ao lado direito,
+qual delas é mais propensa a problemas
+de estabilidade?
+Muros
+de
+gabião
+Quebra-
+mares
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Camadas mergulham em
+sentido contrário ao talude
+Camadas mergulham no
+sentido do talude
+Talude natural
+Corte do talude e
+preenchimento da base
+Remoção e preenchimento
+de geomateriais
+Muros
+de
+arrimo
+Grampeamento
+do solo
+Exemplos de
+Medidas de
+contenção:
+Autor:
+Ano Académico:
+19
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Análise de estabilidade de taludes em minas a céu aberto para evitar
+desmoronamentos.
+Projectos de túneis e galerias subterrâneas, garantindo que suportem as 
+tensões naturais da rocha.
+A Mecânica das Rochas permite compreender o comportamento das rochas em diferentes condições de carregamento, 
+contribuindo para a segurança e eficiência das operações mineiras. Sua aplicação dá-se nas seguintes áreas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Estabilidade de escavações subterrâneas e 
+a céu aberto
+2. Dimensionamento de suporte e reforço.
+3. Fragmentação e perfuração de rochas Selecção de técnicas adequadas de desmonte controlado para minimizar 
+vibrações e impactos ambientais.
+Definição de métodos de suporte (tirantes, concreto projectado e malhas
+metálicas) para prevenir desabamentos.
+Aplicação de modelos geomecânicos para optimizar o uso de suportes e 
+reduzir custos operacionais.
+Uso de métodos numéricos e analíticos para prever colapsos e projectar
+reforços.
+Cálculo de resistência da rocha para optimizar os processos de 
+perfuração edesmontecom explosivos.
+Autor:
+Ano Académico:
+20
+Felisberto Queta
+2025/026
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Monitoramento de deformações e redistribuição de tensões em áreas 
+mineralizadas.
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+4. Controlo de pressões e deformações em 
+maciços rochosos.
+5. Drenagem e controlo de água
+6. Planeamento e recuperação de áreas 
+mineralizadas.
+Uso da Mecânica das Rochas na recuperação ambiental de minas 
+desativadas.
+Uso da modelagens para prever a evoluçºao dos maciços após o 
+fechamento da mina.
+Estudo da permeabilidade das rochas para evitar infiltrações e
+problemas de drenagens.
+Planeamento de sistemas de rebaixamento do lençol freático para 
+manter a estabilidade da mina.
+Análise de riscos de subsidência em minas subterrãneas
+Autor:
+Ano Académico:
+21
+Felisberto Queta
+2025/2026
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+envolve perfuração, escavação, detonação, fragmentação secundária,
+abertura de túneis, trituração e moagem.
+Envolve o planeamento da mina, design da disposição, estabilidade de 
+taludes, controle de colapsos, proteção do teto, reforço da rocha, 
+segurança na mineração, controle de vibração e proteção ambiental.
+A mecânica das rochas tem duas missões principais na engenharia de minas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Destruir a rocha de maneira eficiente
+2. Tornar as estruturas rochosas seguras.
+Se essas duas missões forem cumpridas com sucesso e as operações forem bem gerenciadas, os melhores resultados na 
+mineração serão alcançados, como alta recuperação de minério, baixa diluição, maior lucro, menos acidentes e menor 
+impacto ambiental.
+alta recuperação de 
+minério, baixa 
+diluição, maior lucro, 
+menos acidentes e 
+menor impacto 
+ambiental.
+Escavação, detonação, 
+fragmentação 
+secundária, abertura de 
+túneis, trituração e 
+moagem.
+Planeamento da mina, 
+design da disposição, 
+estabilidade de taludes, 
+controle de colapsos, 
+proteção do teto, reforço 
+da rocha, evento 
+sísmico, segurança na 
+mineração, controlo de 
+vibração e proteção 
+ambiental.
+Autor:
+Ano Académico:
+22
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+1. Gestão de Resíduos e Armazenamento subterrâneo
+É essencial para garantir a segurança e a sustentabilidade de projectos relacionados à produção de energia,
+armazenamento de resíduos e protecção do meio ambiente. Seu uso permite minimizar os impactos ambientais, aumentar a
+eficiência dos recursos naturais e evitar desastres geotécnicos. Suas principais aplicações incluem:
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Armazenamento de CO₂ (CCS – Captura e Armazenamento de Carbono):
+Seleção de formações geológicas adequadas para injeção segura de CO₂, reduzindo emissões de gases do efeito estufa.
+Armazenamento de Resíduos Nucleares:
+Avaliação da estabilidade de cavernas e formações rochosas para descarte seguro de rejeitos radioativos.
+2. Energia Geotérmica
+Análise de Reservatórios Geotérmicos:
+Estudo da condutividade térmica e da permeabilidade das rochas para otimizar a extração de calor.
+Fraturamento para Aumento de Permeabilidade:
+Aplicação de técnicas similares ao fraturamento hidráulico para aumentar a eficiência dos sistemas geotérmicos.
+Disposição de Resíduos Industriais:
+Uso de camadas impermeáveis de rocha para evitar contaminação do solo e lençóis freáticos.
+Monitoramento de Sismicidade Induzida:
+Prevenção de pequenos terremotos gerados por operações geotérmicas.
+Autor:
+Ano Académico:
+23
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+3. Estabilidade das barragens e Usinas Hidroeléctricas
+4. Energia Eólica e Solar em terrenos rochosos
+Análise da rocha de fundação:
+Avaliação da resistência e permeabilidade das rochas antes da construção de barragens.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Prevenção da erosão e vazamentos:
+Monitoramento de fracturas e falhas geológicas que possam comprometer a segurança de barragens.
+Estudo do impacto ambiental:
+Previsão de impactos geotécnicos e ambientais antes da construção de hidroeléctricas.
+Fundação de turbinas eólicas e painéis solares:
+Avaliação da capacidade de suporte do solo para garantir estabilidade estrutural.
+Monitoramento de Assentamentos:
+Prevenção de recalques diferenciais em terrenos irregulares.
+5. Protecção contra desastres naturais
+Monitoramento de escorregamentos e deslizamentos de terra:
+Aplicação de sensores e modelagem geomecânica para prever e evitar deslizamentos de encostas.
+Monitoramento de Assentamentos:
+Análise da subsidência em minas ambandonadas para evitar colapsos e impactos ambientais..
+Autor:
+Ano Académico:
+24
+Felisberto Queta
+2025/2026
+
+ Âmbitos de aplicação na indústria petrolífera:
+1. Análise de Bacias
+2. Perfuração de Poços
+Compreende o estudo da origem, evolução e inversão de bacias. A aplicação da Mecânica das Rochas é útil no estudo das
+alterações no regime de tensões das formações geológicas influenciando a geração, migração, e acumulação de
+hidrocarbonetos.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Análise de tensões in situ para prever colapsos e perdas de fluido.
+Determinar a pressão ideal da lama de perfuração.
+Modelar o comportamento geomecânico do poço
+Quando a rocha é removida durante a perfuração, tensões passam a actuar na parede do poço tendendo a restabelecer um 
+novo equilíbrio, causando então desmoronamentos se não for utilizado fluido de perfuração com peso adequado para conter 
+o colapso da rocha. Um apropriado entendimento do estado de tensão em subsuperfície torna-se extremamente necessário 
+e permite ao engenheiro de petróleo estimar ou calcular parâmetros estáveis para um projecto de perfuração. Ele aplica a 
+Mecânica das Rocha para:
+Influencia directamente a perfuração, a produção e a segurança das operações. O conhecimento adquirido auxilia
+na mitigação de riscos operacionais, na optimização da recuperação de petróleo e na tomada de decisões para
+exploração eficiente dos reservatórios. As suas aplicações incluem:
+Autor:
+Ano Académico:
+25
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+ Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Causado devido a acção mecânica 
+da coluna de perfuração, pasta de 
+cimento mole ou contaminada ou 
+ainda a existência de formações 
+muito moles facilmente laváveis pelo 
+fluido de perfuração.
+Solução: Parar a perfuração e circular 
+para limpeza do poço enquanto aumenta 
+gradativamente o peso do fluido de 
+perfuração. Caso não seja possível 
+aumentar o peso do fluido de perfuração, 
+uma nova coluna de revestimento deverá 
+ser assentada.
+Ocorre quando a poro-pressão é maior do 
+que a pressão exercida pelo fluido de 
+perfuração, a força criada da formação 
+para o poço vence a resistência coesiva da 
+rocha e faz explodir os cascalhos para o 
+poço sobrecarregando o anular podendo 
+prender a coluna de perfuração.
+Perfuração de
+Formações
+Pressurizadas
+Perfuração de
+Formações
+Fracas ou
+Fracturadas
+Quando uma determinada rocha encaixante 
+é muito frágil, a acção mecânica do fluido de 
+perfuração pode fazer com que ela 
+simplesmente desabe para dentro do poço. 
+O uso de PWD (Pressure While Drilling) 
+esteja sendo utilizada irá registar um 
+aumento da pressão de bombeio.
+Solução: Circular para limpeza e prosseguir 
+a perfuração com controle da vibração da 
+coluna para evitar quebra nessa região.
+Solução: Trabalhar na coluna para 
+limpeza do poço e seguir a 
+perfuração com cuidado até todo 
+BHA (Bottom Hole Assembly) passar 
+pela sapata.
+Acunhamento
+da Coluna de
+Perfuração por
+Cimento 
+Autor:
+Ano Académico:
+26
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+2. Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Ocorre quando a densidade de um 
+estrato de rocha (geralmente de base 
+salina ou folhelhos móveis) é menor do 
+que a densidade da rocha encaixante, a 
+rocha de menor densidade tende a 
+mover-se para uma posição de equilíbrio 
+que ao ser perfurada flui para o poço.
+Solução:Diminuir a rotação da coluna e 
+diminuir o peso sobre broca
+Quando intercalações mais duras do que o 
+previsto são encontradas, os parâmetros 
+de perfuração são variados na tentativa de 
+cortar a rocha. Nesses casos pode-se 
+comprimir a coluna ou usar altas 
+velocidades de rotação que podem fazer 
+com que a coluna de perfuração entre em 
+ressonância interagindo contra as paredes 
+do poço e provocando desmoronamentos.
+Acção Mecânica
+da Coluna de
+Perfuração na
+Formação
+Pefuração de 
+Formações 
+Reativas ao 
+Fluido de 
+Perfuração
+Formações reactivas ao fluido de perfuração 
+fragilizam e desabam para o poço formando 
+regiões alargadas. Antes da descida de 
+revestimentos o poço deve ser bem 
+condicionado pois podem topar 
+principalmente em trechos de “build up” ou 
+“drop off” de poços desviados.
+Solução: Usar fluido de perfuração inerte 
+(exemplo: óleos sintéticos ou mineral, 
+fluidos base de salmoura, gás seco, etc.).
+Solução: Aumentar o peso do fluido 
+de perfuração se possível ou 
+assentar uma coluna de 
+revestimento extra..
+Pefuração de 
+Formações 
+Móveis
+
+Autor:
+Ano Académico:
+27
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+2. Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Ocorre porque houve erro de projecto ao 
+não prever correctamente a pressão do 
+anular, pela existência de rochas no anular 
+com alto grau de mobilidade, pela expansão 
+térmica do fluido de perfuração confinado no 
+anular e etc.
+Será dificil pescar a coluna de perfuração e 
+geralmente faz-se “back off” (desfazer a 
+conexão entre dois tubos da coluna de 
+perfuração) e abandona-se o trecho de poço 
+abaixo do revestimento colapsado.
+Solução: Ajustes no fluido de perfuração, 
+controlo hidráulico do poço, minimizar a 
+vibração da coluna de perfuração, 
+estabilização mecânica do poço, etc.
+“Wash outs” são alargamentos do poço 
+produzidos pela acção do fluido de perfuração 
+(alta velocidade do fluido, uso de fluidos 
+muitos agressivos, baixa reologia do fluido) 
+sobre formações inconsolidadas.
+Na perfuração direcional produz-se “wash 
+outs” devido a vibrações excessivas, desvio do 
+poço e o uso de trépanos inadequados.
+Formação de 
+“wash outs”
+Instabilidade de 
+Poços Inclinados
+Nesse exemplo foi encontrado um estrato de 
+rocha encaixado com menor elasticidade e o 
+peso de fluido é insuficiente para manter as 
+paredes do poço estabilizadas.
+Solução: Aumentar o peso do fluido de 
+perfuração. Fazer repassamentos (corrigir o 
+problema de estreitamento ou a rugosidade) do 
+estrato com menor elasticidade e circular para 
+limpar o poço enquanto aumenta-se o peso do 
+fluido de perfuração.
+Solução: Planejar “side track ” (desvio 
+do poço).
+Colapso do 
+Revestimento
+
+Autor:
+Ano Académico:
+28
+Felisberto Queta
+2025/2026
+
+ Âmbitos de aplicação na indústria petrolífera:
+3. Reactivação de falhas em reservatórios
+As falhas em um reservatório de petróleo podem representar uma ambiguidade.
+Se, por um lado, tais falhas actuam como selantes permitindo a acumulação de hidrocarbonetos, por outro lado, 
+elas podem actuar como o caminho de migração desses fluidos, se reactivadas.
+O engenheiro de petróleo precisa estimar o risco de reativação dessas falhas e, por isso, usa os critérios de falha 
+de Mohr-Coulomb.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS 
+ROCHAS     
+4. Análise de Permeabilidade
+Para que a extração de hidrocarbonetos ocorra é preciso que haja fluxo de fluidos através da rocha. Darcy [1856]
+constatou que a permeabilidade é directamente proporcional aos vazios. Ou seja, quanto mais permeável é a
+formação, maior será o fluxo de hidrocarbonetos e consequentemente, maior a produção.
+Para uma análise completa da porosidade e da permeabilidade absoluta, alguns efeitos geomecânicos como a
+compactação e tensões horizontais devem ser levados em conta.
+O estudo da relação entre a extração de fluido e a deformabilidade do reservatório traz uma visão mais
+abrangente dos fenômenos físicos que ocorrem em reservatórios deformáveis.
+Autor:
+Ano Académico:
+29
+Felisberto Queta
+1.3 – Aplicação da Mecânica das Rochas na indústria petrolífera
+SISTEMA PETROLÍFERO
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Autor:
+Ano Académico:
+30
+Felisberto Queta
+5. Estimulação de Poços:
+A estimulação de poços é caracterizada por uma série de técnicas que têm como principal objectivo maximizar a
+produção de um poço, aumentando a produtividade da formação pela criação de canais condutivos ou correção
+de danos causados durante a perfuração e completação.
+Tais técnicas devem ser antecedidas de um estudo geomecânico, para evitar perda de controlo do fracturamento,
+além de eventuais danos e efeitos negativos ao reservatório.
+6. Métodos de Recuperação de Hidrocarbonetos e Enhaced Oil Recovery (EOR)
+O uso de critérios de falha, como o de Mohr-Coulomb, mostra a iminência do risco de reativação de
+falhas. Os métodos mais avançados de recuperação requerem uma análise mais detalhada do
+comportamento mecânico da região.
+1.3 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Um ácido é injetado (HCl
+para formações 
+carbonatadas ou mistura de 
+HCl e HF para dissolver 
+formações argilosas ou 
+siliciosas) abaixo da 
+pressão de fraturamento
+da formação e dissolve o 
+material na formação que 
+está restringindo o 
+escoamento, ou a própria 
+formação, criando novos 
+caminhos para alcançar o 
+poço.
+O ácido é 
+bombeado acima 
+da pressão de 
+fraturamento da 
+formação, que 
+além de aumentar 
+a permeabilidade 
+local com geração 
+de fraturas.
+Misturas de ácido 
+clorídrico (HCl) para 
+limpar incrustações, 
+como carbonato de 
+cálcio (CaCO3), 
+ferrugem e outros 
+resíduos que 
+restringem o 
+escoamento no 
+poço.
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 31
+Felisberto Queta
+2023/2024
+1. O que é a mecânica das rochas?
+a) O estudo do comportamento das rochas sob diferentes condições de carga e ambiente
+b) O estudo das fundações de edifícios
+c) O estudo de solos para terraplenagem
+d) O estudo do impacto ambiental das construções
+3. O ensaio de compressão uniaxial em rochas é utilizado para determinar:
+a) A densidade da rocha
+b) A resistência ao cisalhamento
+c) O módulo de elasticidade e resistência à compressão da rocha
+d) O teor de umidade da rocha
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia Civil
+2. A abrangência da Geologia inclui o estudo de:
+A) Rochas, minerais, fósseis e processos geológicos.
+B) Núcleo, Litosfera, atmosfera.
+C) Apenas os continentes.
+D) Da formação das montanhas.
+4. Em túneis escavados em maciços rochosos, qual método é frequentemente utilizado para garantir estabilidade?
+a) Solo grampeado
+b) Concreto armado
+c) Método de suporte primário com concreto projetado e tirantes
+d) Fundações profundas
+5. Em taludes rochosos instáveis, qual técnica pode ser usada para estabilização?
+a) Uso de vegetação para controle da erosão
+b) Injeção de cimento para aumentar a coesão
+c) Uso de tirantes e chumbadores para reforço estrutural
+d) Todas as anteriores
+6. Em projetos de plataformas petrolíferas sobre maciços rochosos, qual factor é essencial para a segurança estrutural?
+a) O peso da plataforma
+b) A permeabilidade e resistência da fundação rochosa
+c) A cor das rochas
+d) A profundidade da plataforma
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 32
+Felisberto Queta
+2023/2024
+1. O que a mecânica das rochas estuda na engenharia de minas?
+a) O comportamento das rochas frente a escavações e esforços mecânicos
+b) A composição química dos minerais
+c) O impacto ambiental da mineração
+d) A eficiência dos equipamentos de perfuração
+3. Qual dos seguintes fatores pode influenciar a estabilidade de taludes em minas a céu aberto?
+a) A presença de descontinuidades no maciço rochoso
+b) A quantidade de minério disponível na jazida
+c) A profundidade do lençol freático
+d) Apenas a resistência à compressão da rocha
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Minas
+2. Qual o principal objetivo da mecânica das rochas na mineração subterrânea?
+a) Determinar a vida útil dos equipamentos de perfuração
+b) Garantir a estabilidade das cavidades escavadas e prevenir colapsos
+c) Reduzir os custos operacionais das minas
+d) Controlar a qualidade do minério extraído
+4. Em minas subterrâneas, qual método é frequentemente usado para reforçar maciços rochosos?
+a) Injeção de cal para estabilizar solos
+b) Uso de concreto armado para suporte primário
+c) Aplicação de tirantes e concreto projetado
+d) Uso de fundações profundas para sustentação das
+5. O que pode causar instabilidade nos taludes de minas a céu aberto?
+a) Chuvas intensas e infiltração de água
+b) Vibrações causadas por detonações
+c) Presença de fraturas e falhas no maciço rochoso
+d) Todas as anteriores
+6. Qual dos seguintes métodos é utilizado para análise de tensões in situ em maciços rochosos?
+a) Ensaio de permeabilidade
+b) Técnica de overcoring
+c) Método de CBR (California Bearing Ratio)
+d) Ensaio de limite de Atterberg
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 33
+Felisberto Queta
+2023/2024
+1. Qual é a principal aplicação da mecânica das rochas na engenharia de petróleo?
+a) Avaliação da estabilidade de taludes em minas
+b) Análise do comportamento das formações rochosas durante a perfuração e produção de petróleo
+c) Determinação da composição química do petróleo
+d) Estudo da resistência de materiais metálicos usados em oleoduto
+3. Qual é o principal objetivo da mecânica das rochas em poços de petróleo?
+a) Garantir a estabilidade do poço e evitar colapsos na formação rochosa
+b) Melhorar a eficiência do refino do petróleo
+c) Analisar a qualidade do óleo extraído
+d) Reduzir a corrosão de tubos de perfuração
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Petróleo
+2. O que significa a sigla "RRT" (Reservoir Rock Testing) na engenharia de petróleo?
+a) Teste de resistência à compressão das rochas
+b) Teste de rochas para avaliação de reservatórios de petróleo
+c) Método de análise química de fluidos de perfuração
+d) Técnica de extração aprimorada de petróleo
+4. Qual dos seguintes parâmetros é fundamental para a análise de estabilidade de um poço de petróleo?
+a) Permeabilidade da formação
+b) Gradiente de fraturamento da rocha
+c) Teor de enxofre do petróleo
+d) Temperatura ambiente do local de extração
+5. O módulo de Young de uma rocha é usado para determinar:
+a) A resistência ao cisalhamento do fluido de perfuração
+b) O comportamento elástico da rocha sob tensão
+c) A quantidade de petróleo presente na formação
+d) A densidade do óleo extraído
+6. O que pode causar instabilidade no poço de petróleo durante a perfuração?
+a) Tensões excessivas na formação rochosa
+b) Pressão inadequada do fluido de perfuração
+c) Presença de fraturas naturais na rocha
+d) Todas as anteriores
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 34
+Felisberto Queta
+2023/2024
+7. A "Janela de Perfuração Segura" refere-se a:
+a) O intervalo de pressões em que a perfuração pode ser realizada sem colapsos ou perdas de circulação
+b) O tempo necessário para concluir a perfuração de um poço
+c) A profundidade máxima permitida para um poço de petróleo
+d) O limite de temperatura que uma broca pode suportar
+9. Na perfuração de formações instáveis, uma técnica comum para evitar desmoronamento da parede do poço é:
+a) A injeção de cimento na formação
+b) O uso de fluidos de perfuração balanceados para estabilizar as tensões na rocha
+c) O aumento da taxa de extração do petróleo
+d) A realização de testes sísmicos constantes
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Petróleo
+8. Qual fenômeno ocorre quando a pressão de poros de uma rocha excede a resistência da formação?
+a) Colapso do poço
+b) Kick (entrada indesejada de fluidos no poço)
+c) Rockburst
+d) Redução da viscosidade do petróleo
+10. Qual dos seguintes fenômenos pode indicar instabilidade geomecânica em poços de petróleo?
+a) Formação de cavidades ou colapsos no poço
+b) Pressão constante no poço durante a perfuração
+c) Produção de petróleo sem areia
+d) Redução do índice de anisotropia da rocha
+11. O que é a "pressão de poro" em uma formação petrolífera?
+a) A pressão exercida pelos fluidos contidos nos espaços porosos da rocha
+b) A pressão atmosférica que age na superfície do reservatório
+c) A força aplicada pela broca de perfuração na rocha
+d) A resistência mecânica da rocha à compressão
+12. Qual é a função principal do fluido de perfuração em relação à mecânica das rochas?
+a) Reduzir o atrito entre a broca e a rocha
+b) Manter a estabilidade do poço e controlar a pressão da formação
+c) Dissolver hidrocarbonetos para facilitar a extração
+d) Melhorar a qualidade do petróleo extraído
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 35
+Felisberto Queta
+2025/2026
+13. O que pode ocorrer se a pressão do fluido de perfuração for muito maior que a pressão de fraturamento da 
+rocha?
+a) Fraturamento indesejado da formação e perda de circulação
+b) Aumento da eficiência da extração
+c) Redução do teor de água no petróleo
+d) Melhoria da porosidade do reservatório
+15. Quando ocorre o fenômeno de "sanding" (produção de areia) em reservatórios?
+a) Quando a rocha do reservatório é fraca e sofre erosão devido ao fluxo de fluidos
+b) Quando há excesso de pressão na formação
+c) Quando a temperatura do petróleo é muito alta
+d) Quando a permeabilidade da rocha é muito baixa
+Quiz: Aplicação da Mecânica das Rochas na Engenharia de Petróleo
+14. O que são tensões horizontais e verticais in situ em uma formação rochosa?
+a) Tensões naturais da crosta terrestre que influenciam a estabilidade de poços e fraturamento hidráulico
+b) Pressões induzidas pelo fluido de perfuração
+c) Movimentos sísmicos locais causados pela extração de petróleo
+d) Variações de temperatura que afetam a rocha
+Autor:
+Ano Académico:
+REFERENCIAS BIBLIOGRÁFICAS 36
+Felisberto Queta
+2024/2025
+1. Jaeger, J.C., Cook, N.G.W., & Zimmerman, R.W. (2007). Fundamentals of Rock Mechanics (4ª edição). 
+Wiley-Blackwell
+• Este livro aborda a mecânica das rochas de maneira geral, com ênfase em sua aplicação prática na 
+engenharia geotécnica e em projetos de infraestrutura. Ele detalha como as propriedades das rochas 
+influenciam o comportamento estrutural em obras subterrâneas e em fundações.
+2. Goodman, R.E. (1989). Introduction to Rock Mechanics (2ª edição). Wiley.
+• Goodman oferece uma introdução abrangente à mecânica das rochas, cobrindo teoria e práticas 
+aplicadas, com exemplos de engenharia que envolvem a construção de túneis, fundações e outras obras 
+civis que dependem da estabilidade das rochas.
+3. Brady, B. H. G., & Brown, E. T. (2005). Rock Mechanics for Underground Mining (3rd ed.). Springer.
+• Este livro é um clássico na área de mecânica das rochas e cobre aspectos fundamentais que também 
+são aplicáveis à indústria de petróleo, como comportamento das rochas sob tensão e deformação.
+4. Lee, V. John. (1982). Applied Petroleum Reservoir Engineering. Prentice Hall
+• Este livro fornece uma análise detalhada sobre engenharia de reservatórios e aborda conceitos 
+importantes de mecânica das rochas no contexto da produção de petróleo e gás.
+5. Cui, Z. & Dey, S. (2019). Rock Mechanics and Engineering (Vol. 1). CRC Press.
+• Este volume fornece uma cobertura abrangente dos princípios de mecânica das rochas e sua aplicação 
+em diversos setores, incluindo a indústria petrolífera
+
+---
+
+## Arquivo: 2. Rochas, conceitos e características_MR 1_2025.pdf
+
+Autor:
+Ano Académico:
+37
+Felisberto Queta
+2025/2026
+C
+APÍTULO 2 
+–
+ROCHAS, CONCEITOS E 
+CARACTERÍSTICAS
+
+Autor:
+Ano Académico:
+38
+Felisberto Queta
+2025/2026
+Neste capítulo vamos procurar entender os seguintes aspectos:
+2.1. Principais conceitos de Rochas;
+2.2. Tipos de rocha;
+2.3. Processos de formação;
+Espera-se que no final deste Capítulo vocês sejam capazes de:
+1º Perceber o conceito de Rochas; 
+3º Diferenciar rochas, solos e maciços rochosos.
+2º Compreender os tipos de rochas e suas características;
+2.4. Rochas e sua relação com solos e maciços rochosos.
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS 39
+Felisberto Queta
+Ciclo das rochas ou petrológico
+Autor:
+Ano Académico:
+40
+Felisberto Queta
+2025/2026
+Formação das rochas
+Algumas rochas podem conter muitos espaços vazios e outras não.
+Quando as rochas contém muito espaços vazios, denominam-se porosas.
+Estes vazios podem estar isolados ou conectados entre si. Quanto os vazios
+não estão conectados entre si, diz-se que a rocha é impermeável.
+Rochas (definição)
+Materiais sólidos, consolidados
+e constituídos naturalmente
+por um ou mais minerais, com
+características físicas e
+mecânicas específicas para
+cada tipo.
+As rochas formam-se devido à
+diferentes processos da
+geodinâmica interna e da
+geodinâmica externa, dentre
+os quais, destacam-se: o
+magmatismos (rochas ígneas
+ou magmáticas), a
+sedimentação e diagênese
+(rochas sedimentares), e
+metamorfismo (rochas
+metamórficas)
+2.1 – PRINCIPAIS CONCEITOS DE ROCHAS E SUAS CARACTERÍSTICAS
+Tanto as rochas porosas, como as rochas impermeáveis dependem de
+como são formadas e dos processos geológicos que sofreram ao longo do
+tempo.
+Não porosas e
+impermeáveis.
+Pouco porosas e
+pouco permeáveis
+Tipos de rochas
+As rochas podem classificar-se, com base na sua composição, textura e 
+características genéticas, pelos seguintes grupos:
+Rochas ígneas Rochas metamórficas
+ Rochas sedimentares
+Porosas e
+Permeáveis
+Porosas e
+Permeáveis
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+41
+Felisberto Queta
+2025/2026
+• Rochas ígneas (magmáticas):
+Quando o magma arrefece-se lentamente e em profundidade: rochas plutónicas (intrusivas);
+O resfriamento lento resulta em cristais de granulometria grossa (textura fanerítica). Exemplos são: 
+granitos, gabros, sienitos, dioritos e outros.
+Formam-se a partir da cristalização do magma e constituem cerca de 20% de todas as rochas.
+CAPÍTULO 2.2 – TIPOS DE ROCHAS
+Quando este arrefece-se rapidamente e à superfície: rochas vulcânicas (extrusivas).
+O rápido resfriamento resulta em material vítreo (textura vítrea) ou cristalino de granulometria fina 
+(textura afanítica). Exemplos são: obsidiana, riólitos, basaltos e outros.
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Durante o processo de cristalização, os minerais escuros, máficos como biotite, anfíbola, olivina e piroxena
+que contêm as menores quantidades de sílica, são os primeiros a  cristalizarem-se ao passo que, os minerais
+claros “félsicos” ricos em sílica como quartzo, feldspato potássico, plagioclases e muscovite são os
+últimos a cristalizarem-se
+Granito
+ Granodiorito
+ Diorito
+ Gabro
+ Peridotito
+Autor:
+Ano Académico:
+42
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas metamórficas:
+Constituem cerca de 14% de todas as rochas. Resultam da transformação mecânica, térmica e 
+química de rochas pré-existentes. Estas transformações ocorrem quando essas rochas atingem 
+grandes profundidades em condições de elevada pressão e temperatura.
+Nota: As rochas ígneas e metamórficas não estão envolvidas na origem de petróleo como rocha geradora. Em alguns casos, elas 
+servem como reservatórios, ou partes de reservatórios, quando estão altamente fracturadas ou tenham adquirido porosidade por 
+intemperismo antes do soterramento e formação da armadilha para acumulação do óleo por eventos tectônicos.
+Existem dois (2) principais tipos de metamorfismo: 
+Ocorre quando o magma ascende e entra em contacto 
+com outras rochas pré-existentes provocando o seu 
+aquecimento para formar a auréola de metamorfismo. 
+Nessa zona, o aumento de temperatura provoca uma 
+recristalização dos minerais.
+Metamorfismo Regional: abrange extensas 
+áreas, regiões de formação de cadeias de montanha, 
+daí o seu nome.
+Metamorfismo local: se limita ao contacto entre a 
+litologia presente (rocha pré-existente) e a intrusão do 
+magma. O seu tipo mais conhecido é o metamorfismo 
+de contacto.
+Ocorre quando as rochas são comprimidas nos 
+limites convergentes das placas litosféricas ou nas 
+bacias de sedimentação. Nessa zona, o aumento da 
+pressão vai provocar uma compactação e 
+reorientação dos minerais da rocha encaixante 
+(original).
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+43
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas metamórficas:
+Exemplo da ocorrência do 
+Metamorfismo regional: 
+Exemplo da ocorrência do 
+Metamorfismo de contacto: 
+
+Autor:
+Ano Académico:
+44
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas metamórficas:
+ARGILA
+Autor:
+Ano Académico:
+45
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas metamórficas:
+
+Autor:
+Ano Académico:
+46
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: 
+Constituem cerca de 66% de todas as rochas da crusta terrestre.
+Resultam do transporte, deposição e consolidação dos sedimentos, provenientes da erosão de 
+rochas pré-existentes, da precipitação química de substâncias, ou de matéria orgânica. Sendo, 
+portanto, o tipo rochoso mais importante na área petrolífera. 
+Rochas sedimentares 
+Clásticas: 
+Rochas sedimentares 
+Quimiogênicas: 
+Rochas sedimentares 
+Biogénicas: 
+• Tipos de Rochas Sedimentares: 
+Resultam do transporte, deposição e consolidação dos sedimentos, 
+provenientes da erosão de rochas pré-existentes.
+Resultam da precipitação química de substâncias.
+Formam-se a partir da acumulação de matéria orgânica ( restos vegetais 
+e/ou animais).
+Autor:
+Ano Académico:
+47
+Felisberto Queta
+2024/2025
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: Rochas sedimentares Clásticas: 
+Qualquer rocha exposta à superfície terrestre, está sujeita a acção
+de um agente de meteorização (água, vento, gravidade, mudança
+de temperatura, alívio de pressão, etc.) cujo o objetivo é
+desagradar a rocha em fragmentos cada vez menores chamados
+clastos ou detritos, e depositá-los no nível de base de erosão ou
+bacias de sedimentação.
+O tipo de agente de transporte (rio, mar, vento, gravidade), o
+modo de transporte (dissolução, suspensão, saltação, rolamento e
+tração), o tempo de transporte (lento ou rápido) e o sentido e a
+frequência da actuação dos agentes (ocasional ou regular) irá
+determinar a forma, o tamanho dos sedimentos, o local em que
+serão depositados e as estratificações que irão formar.
+Os sedimentos depositados sobre bacias de sedimentação dão
+origem, com o passar do tempo, a camadas ou estratos
+sedimentares. Os estratos sedimentares podem apresentar
+diferenças na espessura, na cor, litologia, textura e na estrutura.
+Podem ainda apresentar-se na posição horizontal, inclinados ou
+entrecruzados.
+Tempo
+Autor:
+Ano Académico:
+48
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: Rochas sedimentares Clásticas: 
+Estes tipos de rochas são particularmente importantes para a
+formação e extração de hidrocarbonetos. Isso porque elas
+podem fornecer as condições necessárias para a criação de
+jazidas de petróleo e gás. As rochas sedimentares clásticas
+podem conter poros e fracturas que permitem o acúmulo de
+óleo e gás, formando reservatórios. O tamanho e a forma
+desses poros e fracturas são influenciados pelo tamanho do
+grão e classificação do sedimento, bem como pelo grau de
+cimentação entre os grãos.
+O tipo mais comum de rocha sedimentar clástica é o arenito,
+formado a partir da acumulação de partículas do tamanho de
+areia. O arenito é particularmente importante para a formação
+e extração de petróleo porque pode conter espaços porosos
+grandes e interconectados que podem conter quantidades
+significativas de hidrocarbonetos. Os reservatórios de arenito
+podem ser encontrados em uma variedade de configurações
+geológicas, incluindo deltas de rios, ambientes marinhos
+rasos e regiões desérticas.
+
+Autor:
+Ano Académico:
+49
+Felisberto Queta
+2023/2024
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: Rochas sedimentares Quimiogênicas : 
+Essas rochas são formadas pela precipitação de minerais da
+água e podem incluir rochas como calcário, dolomite e
+evaporitos. O calcário e a dolomite são particularmente
+importantes para a formação e extração de petróleo porque
+podem actuar como rochas reservatório devido as suas
+fracturas e espaços porosos, bem como rochas geradoras, pois
+podem ser ricas em matéria orgânica que pode ser convertida
+em hidrocarbonetos.
+Os evaporitos são formados pela evaporação da água do mar
+ou outras soluções salinas e podem incluir rochas como sal-
+gema e gesso. Os evaporitos podem actuar como rochas
+selantes para reservatórios de petróleo, impedindo que óleo e
+gás migrem para fora do reservatório. Eles também podem ser
+rochas geradoras importantes, pois podem conter matéria
+orgânica que ficou presa nas camadas evaporíticas.
+Calcário
+Calcário 
+batrioidal
+Travertino
+Halite
+Gesso
+Autor:
+Ano Académico:
+50
+Felisberto Queta
+2025/2026
+Tipos de rochas (continuação)
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: Rochas sedimentares Biogénicas: 
+Essas rochas podem incluir rochas como carvão e folhelho
+(xisto betuminoso). O carvão é uma importante fonte de 
+energia e é formado a partir do acúmulo e soterramento de 
+matéria vegetal ao longo de milhões de anos. O folhelho 
+(shale) é outra importante rocha geradora de petróleo, pois 
+contém matéria orgânica que pode ser convertida em óleo e gás 
+por meio da maturação térmica.
+Em conclusão, o tipo de rocha sedimentar é importante para a
+formação e extração de petróleo. O arenito costuma ser a
+rocha-reservatório preferida devido à sua alta porosidade e
+permeabilidade, enquanto o folhelho pode actuar como
+geradora e o evaporito como selante. O calcário pode
+contribuir para a formação (rocha geradora) e armazenamento
+(rocha reservatório) de petróleo, e o conglomerado pode
+fornecer caminhos para o fluxo de petróleo e gás. Compreender
+as propriedades e a distribuição de diferentes rochas
+sedimentares é essencial para o sucesso da exploração e
+produção de petróleo.
+
+Autor:
+Ano Académico:
+51
+Felisberto Queta
+2025/2026
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: 
+Cascalho Arenito Arenito siltoso Carbonatos fracturados Argilito Gnaisse
+Escoamento rápido Escoamento 
+moderado
+Escoamento 
+lento
+Impermeável
+Escoamento 
+rápido á moderado
+A capacidade dessas rochas em armazenar fluidos depende de sua porosidade, permeabilidade e 
+saturação de fluidos. 
+As imagens abaixo ilustram como diferentes tipos de rochas podem ser usadas como rochas 
+reservátório em função dos seus espaços vazios e da conecção existente entre eles.
+Autor:
+Ano Académico:
+52
+Felisberto Queta
+2024/2025
+2.2 – TIPOS DE ROCHAS
+• Rochas sedimentares: 
+Ambientes sedimentares: 
+Agente
+Mar
+Rio
+Glaciar
+Vento
+Rio e mar
+Glaciar
+Vento
+Autor:
+Ano Académico:
+53
+Felisberto Queta
+2023/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+
+Autor:
+Ano Académico:
+54
+Felisberto Queta
+2025/2026
+Principais características das rochas
+Características
+Aspecto
+Textura
+Forma
+MAGMÁTICAS
+Maciço e compacto
+Grãos geralmente 
+interconectados e sem 
+orientação
+Formas irregulares
+METAMÓRFICAS
+Maciço ou foliado
+Grãos geralmente 
+interconectados com 
+orientação
+Formas irregulares
+SEDIMENTARES
+Em camadas, friáveis e riscáveis 
+com o canivete
+Grãos não imbricados, com 
+poros ou cimento sem orientação
+Formas arredondadas ou 
+ovuladas, algumas vezes 
+angulosas
+2.2 – TIPOS DE ROCHAS
+Autor:
+Ano Académico:
+55
+Felisberto Queta
+2025/2026
+Principais características das rochas
+2.2 – TIPOS DE ROCHAS
+Rocha ígnea Rocha sedimentar Rocha metamórfica 
+Observação no 
+microscópio óptico
+Observação em 
+amostra de mão 
+4/1/2026
+Sienito Granito Gabro 
+Xisto Gnaisse Migmatito 
+Calcário conquífero Conglomerado Argilito 
+Exemplos de amostras de rochas
+• Rochas 
+sedimentares; 
+• Rochas 
+metamórficas:
+• Rochas ígneas 
+(magmáticas):
+Obsidiana 
+CAPÍTULO 2.2 – TIPOS DE ROCHAS
+2. ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+57
+Felisberto Queta
+2025/2026
+Actividade 1 – Classifique os maciços rochosos abaixo:
+a) b) c)
+e)d)c)
+Metamórfica Ignea 
+Metamórfica Ignea Sedimentar 
+Sedimentar 
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+58
+2025/2026
+São agregados de grãos minerais não consolidados encontrados na superfície terrestre que não oferecem 
+resistência à escavação mecânica e que quando em contacto prolongado com a água perdem toda a resistência.
+Solos
+Definição (engenharia civil):
+Quando são resultantes da meteorização,
+transporte e deposição dos materiais num
+local diferente do seu de origem, denominam-
+se
+Quando são resultantes da meteorização da
+rocha sem o transporte das partículas,
+denominam-se
+ Rocha-mãe
+Solos residuais ou “in situ”
+solos sedimentares ou transportados
+Camadas
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+CAPÍTULO 2.3 – SOLOS 
+Autor:
+Ano Académico:
+59
+Felisberto Queta
+2025/2026
+De acordo com as propriedades físicas e mecânicas, as principais características que 
+diferenciam as rochas dos solos são as seguintes:
+• Módulos de deformação altos em comparação com os solos; 
+• Geração de superficies de fractura nos processos de deformação;
+• Baixa permeabilidade em comparação com os solos.  
+• Elevada coesão interna das rochas;
+• Elevados valores de resistência a tração.
+Em relação às condições e características in situ, a diferença entre solos e maciços rochosos é 
+que estes últimos, estão sobmetidos à tensões naturais relacionadas com esforços tectónicos, ao
+passo que os solos estão sujeitos a esforços in situ relativamente baixos devido à forças
+litostáticas. 
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+CAPÍTULO 2.3 – SOLOS 
+Autor:
+Ano Académico:
+60
+Felisberto Queta
+2025/2026
+Grau de alteração da rocha ( ISRM, 1978)
+Sigla Denominação Característica da rocha
+A5 Completamente
+alterada Decomposta, mas a textura original é ainda visivel. 
+A4 Muita alterada Enfraquecida pela meteorização, os fragmentos são 
+facilmente quebrados
+A3
+Medianamente
+alterada
+Possui alguma resistência, mas os fragmentos não 
+são quebrados com mão
+A2 Pouco alterada Sinais de alteração apenas nas imediações das 
+descontinuidades
+A1 Rocha Sã Sem quaisquer sinais de alteração
+Nem sempre é clara a fronteira que delimita a utilização dos termos “rocha” e “solo”.
+Um critério largamente utilizado na Geologia Aplicada para o estabelecimento dos limites entre 
+solo e rocha é através de um perfil de alteração de rocha ( ISRM, 1978). 
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+CAPÍTULO 2.3 – SOLOS 
+Autor:
+Ano Académico:
+61
+Felisberto Queta
+Porção definida de uma ou mais 
+formações geológicas, caracterizada 
+por suas rochas e descontinuidades.
+Maciço rochoso
+Rocha
+Maciço rochoso (definição)
+A rocha é um material
+componente do maciço
+rochoso.
+ Descontinuidade:
+ Anisotropia:
+ Heterogeneidade:
+ Matriz rochosa:
+característica própria de certos materiais se comportarem de modo 
+diferente, conforme a direcção considerada.
+CAPÍTULO 2.4 – MACIÇOS ROCHOSOS 
+As principais características de um
+maciço rochoso são:
+Essas descontinuidades separam as 
+rochas dos maciços rochosos e 
+conferem aos maciços rochosos um 
+carácter descontínuo e anisotrópico e 
+heterogênio.
+qualquer plano que separa os blocos da matriz rochosa num maciço rochoso.
+é o material rochoso isento de discontinuidades, ou blocos de rocha intacta.
+materias formados por elementos com características distintas.
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+62
+Felisberto Queta
+2025/2026
+Exemplo de maciço rochoso contínuo (intacto), 
+isotrópico e homegênia.
+Exemplo de maciço rochoso (descontínuo) 
+fracturado, anisotrópico e heterogênio.
+Actividade 2 - Classifique 
+os seguintes maciços:
+• Descontínuidade;
+• Anisotrópia;
+• Heterogeneidade.
+Maciço intacto, 
+homogênio e 
+isotrópico
+Maciço 
+descontínuo, 
+heterogênio e 
+anisotrópico
+CAPÍTULO 2.4 – MACIÇOS ROCHOSOS 
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+63
+Maciço rochoso brando com camadas dispostas 
+horizontalmente e com poucos planos de 
+descontinuidade.
+Maciço rochoso formado por rochas duras com 
+camadas comprimidas e afectadas por muitos 
+planos de descontinuidada.
+Os factores geológicos que determinam o comportamento e as propriedades mecânicas dos 
+maciços rochosos são:
+ As condições hidrogeológicas.
+ A estructura geológica e as discontinuidades.
+ O estado de esforços a que o material é submetido.
+ O grau de alteração ou meteorização. A litologia e propriedades da matriz rochosa.
+CAPÍTULO 2.4 – MACIÇOS ROCHOSOS 
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+64
+Felisberto Queta
+2025/2026
+A água presente nos maciços rochosos reduz a sua resistência, gera pressões no interior dos
+mesmos e altera as suas propriedades, dificultando as escavações superficiais e subterrâneas. Para
+avaliar a influência da água devem ser estudadas as características da permeabilidade e o fluxo dos
+maciços rochosos.
+As propriedades do meio rochoso devem ser avaliadas atendendo ás condições da água subterrânea.
+A meteorização, da qual resulta a desintegração e decomposição do material rochoso, é o mais
+importante dos processos tempo-dependentes, afectando fundamentalmente as rochas argilosas.
+Podem também ocorrer processos de “inchamento” ou expansibilidade nalguns tipos de rochas,
+devido a libertação de tensões e a reacções químicas.
+Influência da água e da meteorização no comportamento dos maciços rochosos
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+CAPÍTULO 2.4 – MACIÇOS ROCHOSOS 
+Autor:
+Ano Académico:
+65
+Felisberto Queta
+2025/2026
+Para prever a comportamento dos maciços rochosos, quando solicitados por acções que se 
+prevêem alterar as condições iniciais, devem ser estudadas as suas propriedades globais e o seu 
+comportamento, mediante a aplicação dos métodos de geofísicos e geológicos (directos e 
+indirectos) e estudos laboratoriais de resistência dos materiais.
+Os resultados dos ensaios in situ (directos e indirectos) e de laboratório, em conjunto com as 
+análises, a aplicação dos critérios de resistência empíricos e da modelação, são as ferramentas de 
+que dispõe a Mecânica das Rochas para determinar as propriedades geomecânicas necessárias ao 
+estudo e à previsão do comportamento das rochas e dos maciços rochosos.
+Os ensaios de laboratório permitem quantificar as propriedades físicas e mecânicas da
+matriz rochosa definidoras do seu comportamento mecânico:
+CAPÍTULO 2.4 – MACIÇOS ROCHOSOS 
+ A deformação a curto e a longo prazo;
+ A natureza da rocha;
+ A resistência à ruptura;
+ O comportamento face à meteorização;
+ A influência da água no comportamento;
+ O comportamento ao longo do tempo.
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+Autor:
+Ano Académico:
+66
+Felisberto Queta
+2025/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+De acordo com a textura, as rochas sedimentares são classificadas conforme indicado abaixo:
+Classificação textural das partículas das rochas  
+
+Autor:
+Ano Académico:
+67
+Felisberto Queta
+2025/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+O tamanho das partículas é a característica principal que permite distinguir os vários tipos de rochas
+sedimentares detríticas, é indicativo de sua fonte (origem), dureza e modo de transporte. Por
+exemplo, as correntes de água e vento distribuem as partículas por tamanhos: quanto maior for a
+força da corrente, maior será o tamanho das partículas. Esta energia varia em função da topografia,
+quanto maior for a topografia do terreno, maior será a energia da corrente.
+Conglomerados Brechas
+Determinação das partículas das rochas  
+Partículas angulares permanecem perto de sua fonte de origem, enquanto partículas esféricas e lisas 
+indicam transporte por correntes. 
+
+Autor:
+Ano Académico:
+68
+Felisberto Queta
+2025/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+A tabela abaixo apresenta as diferentes formas das partículas em função do tipo de agente de
+transporte.
+Classificação quanto a forma das partículas   
+Agente
+Mar
+Rio
+Glaciar
+Vento
+Rio e mar
+Glaciar
+Vento
+Autor:
+Ano Académico:
+69
+Felisberto Queta
+2025/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+Classificação da forma segundo Zingg (1935)
+Para a determinação da forma dos grãos, 
+Zingg (1935) propôs a relação entre os 
+diâmetros dos grãos: 
+- L (diâmetro maior), 
+- I (diâmetro intermédio) e 
+- S (diâmetro curto)
+EXEMPLO 4:
+Determinar a forma do grão 
+com o seguinte diâmetro:
+Diâmetro maior (L): 2,3 mm
+Diâmetro intermédio (l): 1,8 mm 
+Diâmetro curto (S) :1.5mm:
+I/L = 0.78 mm
+S/I = 0.83 mm
+Classificação quanto a forma das partículas (continuação)   
+Autor:
+Ano Académico:
+70
+Felisberto Queta
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+Classificação quanto a esfericidade das partículas 
+A esfericidade e o arredondamento das partículas são dois atributos importantes que afectam as
+propriedades petrofísicas das rochas e, consequentemente, podem ser usados ​​para explicar as
+diferenças entre as rochas e suas propriedades. Por exemplo, esses dois atributos controlam o grau
+de compactação e, portanto, podem explicar as diferenças entre rochas que têm a mesma história
+sedimentar, mas diferem em porosidade e permeabilidade
+Alguns autores definem seis (6) graus de arredondamento:
+O grau de arredondamento é uma função da maturidade da partícula. As partículas são mais 
+angulares perto de sua fonte logo após a gênese e adquirem maior arredondamento por abrasão 
+durante o transporte para uma bacia deposicional.
+Autor:
+Ano Académico:
+71
+Felisberto Queta
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+Determinação da esfericidade das partículas  
+Existem 10 classes de
+forma dos grãos:
+- C: compacta;
+- CP: compacta escamosa;
+- CB: compacta folhosa;
+- CE: compacta alongada
+- P: escamosa;
+- B: folhosa ou bandeada
+- E: alongada
+- VP: muito escamosa;
+- VB: muito folhosa;
+- VE: muito alongada
+(FINO) (LAMINADO) (ALONGADO)
+EXEMPLO 5:
+Determinar a 
+esfericidade do grão 
+com o seguinte 
+diâmetro:
+Diâmetro maior (L): 
+4,12 mm
+Diâmetro intermédio 
+(l): 2,83 mm 
+Diâmetro curto (S)
+:1,75 mm:
+S/L = 0,42 mm
+((L-I)/(L-S)) = ((1.29)/(2,37))=0,54
+A esfericidade é uma medida de quão perto
+uma partícula se aproxima da forma de uma
+esfera. O arredondamento é uma medida da
+curvatura, ou nitidez, da partícula. O método
+aceito para calcular a circularidade de uma
+partícula é o de observar a partícula como um
+objecto bidimensional e obter a razão entre
+S/L vs ((L-I)/(L-S))
+Autor:
+Ano Académico:
+72
+Felisberto Queta
+2025/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+Classificação do tamanho das partículas
+Quanto ao tamanho as partículas podem ser:
+Autor:
+Ano Académico:
+73
+Felisberto Queta
+2025/2026
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+Permite determinar em quantidade percentual, a distribuição por tamanho das partículas que
+constituem um solo.
+Para partículas com dimensões superiores a 0.06 ou 0.075 mm usa-se o método da Peneiração
+Para partículas com dimensões inferiores a 0.06 ou 0.075 mm usa-se o método da Sedimentação
+ANÁLISE GRANULOMÉTRICA DOS SOLOS (ASTM D422)
+Peneiração: dimensões de particulas Sedimentação: deposição em suspensão
+Classificação quanto ao tamanho das partículas  
+Autor:
+Ano Académico:
+74
+Felisberto Queta
+• Rochas sedimentares: 
+2.2 – TIPOS DE ROCHAS
+ANÁLISE GRANULOMÉTRICA DOS SOLOS (ASTM D422)
+Determinação das partículas das rochas  
+Classificação Unificada dos solos (ASTM D 2487- 85) : Areia siltosa ou argilosa (SM ou SC)
+Classificação da SATCC: Areia siltosa ou argilosa (A-2): Material bom a regular
+20%
+20%
+60%
+Sedimentação Peneiração
+EXEMPLO 6:
+Recolheu-se uma amostra de 
+solo com a seguinte 
+composição granulométrica
+Argila : 20%
+Silte : 20% 
+Areia : 60%:
+CRITÉRIO DE CLASSIFICAÇÃO DOS SOLOS (ASTM, 1983)
+GRANULOMETRIA POR SEDIMENTAÇÃO
+AULA DE LABORATÓRIO 1(GRANULOMETRIA P/ 
+SEDIMENTAÇÃO)
+
+Autor:
+Ano Académico:
+76
+Felisberto Queta
+RECAPITULAÇÃO
+R: Materiais sólidos, consolidados e constituídos naturalmente por um ou mais minerais, com 
+características físicas e mecânicas específicas para cada tipo. 
+1 – O que são rochas? 
+2 – Como se formam?
+R: Através de processos magmáticos, sedimentares e metamórficos por meio do ciclo da rochas
+3 – Quais são os tipos de rochas e como diferenciá-los?
+Características
+Aspecto
+Textura
+Forma
+Maciço e compacto
+Grãos geralmente 
+interconectados e sem 
+orientação
+Formas irregulares
+Maciço ou foliado
+Grãos geralmente 
+interconectados com orientação
+Formas irregulares
+Em camadas, friáveis e riscáveis com 
+o canivete
+Grãos não imbricados, com poros ou
+cimento sem orientação
+Formas arredondadas ou ovuladas, 
+algumas vezes angulosas
+Magmáticas Metamórficas Sedimentares
+4 – O que são maciços rochosos?
+R: Porções definidas de uma ou mais formações geológicas, caracterizada por suas rochas e 
+descontinuidades.
+CAPÍTULO 2 
+–
+ ROCHAS, CONCEITOS E CARACTERÍSTICAS
+
+---
+
+## Arquivo: Apresentação e Introdução da Mecânica das Rochas 2024 (1).pdf
+
+Autor:
+Área:
+MECÂNICA DAS ROCHAS
+Curso de Licenciatura em Engenharia de Petróleos
+3 º Ano
+1Felisberto Queta
+2024/2025
+Autor:
+Ano Académico:
+APRESENTAÇÃO DA DISCIPLINA 2
+Felisberto Queta
+2024/2025
+O QUE FAZ UM ENGENHEIRO DE PETRÓLEO? 
+ Acompanha 
+a produção de derivados 
+do petróleo
+ Explora e produz 
+hidrocarbonetos
+ Gerencia a  comercialização 
+e transporte de 
+hidrocarbonetos
+ Prospecta e pesquisa 
+bacias sedimentares com 
+potencial económico
+Querendo dizer que no decurso das suas
+actividades, o engenheiro de petróleo irá lidar
+com situações que exigirão um conhecimento
+sobre:
+Geologia, Geofísica, Petrofísica e
+Mecânica das Rochas.
+Para minimizar este problema, surge a
+Geomecânica que procura integrar estas
+disciplinas a fim de munir o engenheiro de
+petróleo de habilidades e competências para
+melhor compreender as suas actividades e a
+de seus colegas que actuam noutras áreas.
+Autor:
+Ano Académico:
+3
+Felisberto Queta
+2024/2025
+ Desmoronamento das paredes do poço
+ Encontrar um poço seco
+O QUE ACONTECE QUANDO O ENGENHEIRO NÃO TEM DOMÍNIO DA GEOMECÂNICA? 
+ Explosão de plataforma devido ao 
+vazamento de fluidos
+Poro-pressâo Zona de 
+fraqueza
+Falhas 
+geológicas
+APRESENTAÇÃO DA DISCIPLINA
+Autor:
+Ano Académico:
+4
+Felisberto Queta
+2024/2025
+Objectivos Gerais da disciplina
+Compreender os principais conceitos de Mecânica das Rochas e sua importância nos 
+vários sectores da vida, principalmente na indústria petrolífera;
+Identificar os diferentes tipos de rochas e diferenciá-las de acordo com as suas 
+características;
+Determinar as propriedades físicas e mecânicas de uma rocha;
+Compreender e aplicar as noções sobre estado de tensão,  resistência e 
+deformabilidade nos maciços rochosos. 
+Perceber os tipos de descontinuidades e sua importância no comportamento de 
+maciços rochosos; 
+Perceber a importância do estudo do comportamento das rochas, no entendimento 
+das estruturas da Terra, na economia dos países e na preservação do ambiente
+Fazer a classificar geomecânica e a descrição dos maciços rochosos.
+1º
+2º
+3º
+4º
+5º
+6º
+7º
+APRESENTAÇÃO DA DISCIPLINA
+Autor:
+Ano Académico:
+Programa analítico da cadeira de Mecânica das Rochas 5
+Felisberto Queta
+2024/2025
+Período Nome Créditos C.H.T 
+6º Mecânica das Rochas 4 64
+C.H.Sem. (2) Teóricas (2) Teórico-Práticas 
+Distribuição da carga horária
+Carga horária total Carga horária teórica Carga horária prática Carga horária 
+semanal 
+64 30 54 8
+Duração do Ano Lectivo
+Início da disciplina Término da disciplina
+04/03/2024 Segunda-feira 21/06/2024 Sexta-feira
+Objectivo do Curso
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das
+rochas, para aplicação na perfuração de poços.
+Autor:
+Ano Académico:
+CONTEÚDO PROGRAMÁTICO 6
+Felisberto Queta
+2024/2025
+Capítulo 1 – Introdução à mecânica das rochas 
+Capítulo 2 – Rochas, solos, maciços rochosos
+Capítulo 3 - Propriedades físicas e mecânicas das rochas 
+Capítulo 4 – Propriedades de resistência e deformabilidade de rochas
+Capítulo 6 – Propriedades de resistência de descontinuidades
+Capítulo 7 – Classificações geomecânicas
+Capítulo 5 – Tensões e deformações nas rochas
+Autor:
+Ano Académico:
+REFERÊNCIAS BIBLIOGRÁFICAS 7
+Felisberto Queta
+2024/2025
+1 – VALLEJO G.LUIS L. et. al (2002); Ingeniería geológica. PEARSON EDUCACION, Madrid.
+2 – FIORIA. Pio, CARMIGNANI L. (2015). Fundamentos de mecanica dos solos e das rochas: 
+aplicações na estabilidade de taludes. Oficina de Textos, São Paulo.
+3 – THOMAS, J. EDUARDO (2021). Fundamentos de Engenharia de Petróleo. Petrobas. Rio de 
+Janeiro.
+4 - SCHÖN, J. H. (2014). Propriedades físicas das rochas aplicadas à engenharia: Fundamentos 
+teóricos e práticos. Elsevier, 496p.
+5 – AADNØY, B. S. e LOOYEH, M. R. E. (2013). Mecânica de rochas aplicada. Elsevier, 2013.
+6 - GOODMAN, R. E. (1989) Introduction to a Rock Mechanics, John Wiley & Son.
+7 - JAEGER, J. C. ; COOK, N; ZIMMERMAN, R. G. W. (2007). Fundamentals of Rock Mechanics, 
+Wiley-Blackwell.
+Autor:
+Ano Académico:
+8
+Felisberto Queta
+2024/2025
+QUA QUI SEX SAB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER
+10
+12
+9 17
+7 2214
+26
+21
+23
+22
+19
+24
+21
+19
+0
+Publicação dos Resultados dos 
+Exames
+31
+27 28
+21
+30
+18 19 20
+5
+4
+20
+42
+58
+0
+15
+12
+17
+14
+ISPTEC - CALENDÁRIO  ACADÉMICO 2024/2025  MECÂNICA DAS ROCHAS
+6 7 8 9 13 14
+28 29
+QUA
+2726
+Exames Semestral
+Exames Semestrais Exames de Recurso2ª chamada da 1ª Prova parcelar 
+2ª Prova parcelar Exames de Recurso
+Período Provas Parcelares
+Pausa e Feriados
+Período Lectivo
+F
+MAIO
+2 3 4 5
+1
+3 4 5 6JANEIRO
+FEVEREIR
+O
+JULHO
+JUNHO
+3
+4 5
+54
+0
+1
+7
+MARÇO
+ABRIL
+8 9 10
+2
+19
+11 12 13
+15 16
+16
+9
+9 10 11
+1ª Prova parcelar 2ª chamada da 2ª Prova parcelar 
+12
+8
+31
+24 25
+28 30
+12
+26
+50
+21
+24 29
+26
+31
+28
+26
+30
+28 3029
+17 18
+4
+23 24 25 28 29 30
+11 12
+24
+46
+62
+17
+14 17 18 22 23
+16 20 21
+19 20 F 22 23 2418 25 26
+25 26 279 10 22 23 24
+20 21
+275
+3 4
+16
+1 10 11
+11
+6
+19
+7
+11 17 18 19
+128
+12 13 14 15
+9 10 11 13 14 15 16
+20 21
+29 3025 26 27
+F 5
+28 29 30
+6 7
+6
+5
+38
+3
+6 7 17
+4
+3
+4 22 2314 15 16
+7 82
+2 3
+27
+27
+2518
+15
+1 24
+23
+20
+25
+22
+20
+8
+6
+16
+13
+18
+15
+138
+8
+13
+52
+1 2
+10 16
+34
+3
+Autor:
+Ano Académico:
+9
+Felisberto Queta
+2024/2025
+C
+APÍTULO 1 
+–
+INTRODUÇÃO À MECÂNICA 
+DAS ROCHAS
+
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 10
+Felisberto Queta
+2024/2025
+Neste capítulo vamos procurar entender os seguintes aspectos:
+1.1. Principais conceitos e definições de Mecânica das Rochas;
+1.2. Objetivos e campos de aplicação da Mecânica das Rochas;
+1.3. Aplicação da Mecânica das Rochas na indústria petrolífera.
+Espera-se que no final deste Capítulo vocês sejam capazes de:
+1º Perceber o conceito de Mecânica das Rochas; 
+3º Compreender a aplicação da Mecânica das Rochas na indústria petrólífera;
+2º Compreender as áreas de actuação da disciplina;
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 11
+1.1 - Principais conceitos e definições 
+Mecânica das Rochas (definição)
+Juntas ou diáclases Falhas Dobras
+Fracturação sem 
+deslocamento perceptível dos 
+blocos.
+Torção com deslocamento 
+relativo de blocos um em 
+relação ao plano de fractura.
+Flexão,  encurtamento
+acentuado e deformação
+interna da rocha.
+É uma disciplina da engenharia civil que se ocupa do estudo teórico e prático das propriedades das
+rochas e das suas respostas quando submetidas a uma perturbação aplicada. Estas respostas são
+chamadas deformações que se podem manifestar em forma de:
+Autor:
+Ano Académico:
+12
+Felisberto Queta
+2024/2025
+ Objectivo da disciplina:
+1.2 – Objectivos e áreas de Aplicação
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das rochas, para aplicação na perfuração
+de poços.
+ Objectivos específicos relação:
+• Caracterizar o comportamento
+mecânico das rochas
+entender suas propriedades físicas e mecânicas sob diferentes condições de
+pressão e temperatura.
+• Prever a estabilidade dos poços: evitar colapsos e perdas de circulação durante a perfuração
+ Objecto de estudo:
+Rochas e maciços rochosos
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+• Mitigar riscos geomecânicos: minimizar problemas como fraturamento indesejado, arenização e subsidência
+• Otimizar a recuperação de petróleo: aplicar conceitos de geomecânica para maximizar a extração de
+hidrocarbonetos.
+• Reduzir custos operacionais: prevenir falhas estruturais e evitar gastos desnecessários com reparos e
+interrupções
+• Garantir a segurança das operações: evitar acidentes relacionados à instabilidade das formações.
+Autor:
+Ano Académico:
+13
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+ Disciplinas em estreita relação:
+• Geologia Estrutural: Estuda as estruturas geológicas que ocorrem na litosfera.
+• Mecânica dos solos: Estuda as características físicas e mecânicas dos maciços terrosos.
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Disciplinas em estreita relação na indústria de petróleo:
+• Geologia do Petróleo : Estuda a origem, a formação e a distribuição das rochas-reservatório..
+• Geofísica: Usa métodos sísmicos e de perfis de poço para caracterizar formações rochosas.
+•Engenharia de
+Perfuração:
+Analisa a estabilidade do poço e os impactos da perfuração nas rochas
+•Engenharia de
+Reservatórios:
+Estuda o comportamento dos fluidos e a compactação da rocha devido à depleção.
+• Petrofísica: Avalia propriedades como porosidade, permeabilidade e tensão das rochas.
+•Fraturamento Hidráulico Relacionado à propagação de fraturas na formação para otimizar a produção..
+Autor:
+Ano Académico:
+14
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Túneis e galerias
+subterrâneas
+Estudo da estabilidade de maciços rochosos para a construção de túneis rodoviários,
+ferroviários e metroviários.
+Túnel perpendicular à direcção das 
+camadas
+Túnel paralelo à direcção das 
+camadas
+Suporte Externo Suporte Interno
+Túnel em rocha 
+sedimentar
+Túnel em rocha 
+cristalina
+Autor:
+Ano Académico:
+15
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+Projetos de barragens, pontes, edifícios que exigem análise
+das condições do maciço rochoso para garantir segurança.
+Para o efeito é preciso estudar a competência do terreno.
+Fundação de ponte (sapatas) Fundação de plataforma (estacas)
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Como fazer o estudo?
+1. Levantamento Geológico e Geotécnico
+Estudo da topografia
+• Avaliação do relevo e inclinação do terreno.
+• Identificação de áreas sujeitas a erosão e deslizamentos
+Mapeamento geológico
+• Identificação dos tipos de solos e rochas presentes no local.
+• Análise da presença de falhas geológicas, fraturas e dobras
+
+Autor:
+Ano Académico:
+16
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Hidrogeologia
+• Investigação do nível do lençol freático.
+• Estudo da permeabilidade do solo e do fluxo de águas 
+subterrâneas
+1. Levantamento Geológico e Geotécnico
+Ensaios de Campo
+• Sondagem a percussão (SPT – Standard Penetration Test).
+• Ensaio de penetração de cone (CPT – Cone Penetration
+Test)
+• Ensaio de carga em placa
+• Ensaio de consolidação
+2. Ensaios em campo e laboratório
+• Determinação do tipo de fundação mais adequado (superficial ou 
+profunda).
+• Avaliação da estabilidade do solo e das rochas para suportar 
+estruturas.
+• Estudo das deformações do solo que podem comprometer a 
+estrutura.
+• Modelagem computacional para prever a resposta do terreno às 
+cargas aplicadas.
+• Fundações Rasas (Superficiais).
+• Fundações Profundas (e.g. plataformas petrolíferas fixas)
+• Fundações Especiais (e.g. túneis, )
+3. Análise da Capacidade de Suporte e Estabilidade
+4. Escolha das Fundações Adequadas
+• Compactação do solo para aumentar sua densidade e 
+resistência.
+• Drenagem adequada para evitar erosão e recalques.
+• Muros de contenção em terrenos inclinados.
+• Reforço com geossintéticos para melhorar a estabilidade.
+• Monitoramento contínuo para prevenir deformações estruturais
+5. Medidas de Estabilização e Prevenção de ProblemasEnsaios de Laboratório
+• Análise granulométrica
+• Limites de Atterberg (plasticidade do solo)
+• Compactação (Proctor Normal e Modificado)
+• Resistência ao cisalhamento (Ensaio de corte direto e 
+triaxial)
+• Ensaios de adensamento
+Autor:
+Ano Académico:
+17
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+(b) Recalque diferencial de 
+corpo rígido; 
+(c) Recalque diferencial com 
+distorção. (a) Recalque uniforme; 
+O uniforme acontece quando todos os 
+pontos da fundação apresentam o mesmo 
+grau de recalque e toda a obra desce como 
+um corpo rígido, mantendo a estabilidade 
+horizontal e vertical. A estrutura não sofre 
+nenhum dano, mas podem ocorrer problemas 
+nas ligações com a via pública (entrada de 
+água, esgoto, cabos enterrados, acesso de 
+veículos, entre outros).
+Esse fenômeno ocorre quando uma 
+parte da estrutura fica mais rebaixada 
+que a outra, podendo haver ou não uma 
+distorção angular. Portanto, essa 
+condição resulta em esforços estruturais 
+não previstos, o que pode culminar na 
+ruína da obra, em casos extremos. Vale 
+lembrar que nem todas as rachaduras e 
+fissuras provêm de recalque.
+A condição em que a obra 
+afunda de forma desigual, 
+o que implica dizer que as 
+medidas angulares do 
+recalque não são as 
+mesmas em diferentes 
+pontos da estrutura, o que 
+resulta em sua 
+deformação.
+Problemas das fundações:
+Fonte: Veloso e Lopes
+Autor:
+Ano Académico:
+18
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Taludes e encostas:
+Estabilização de encostas e cortes rochosos em rodovias e ferrovias para prevenir
+deslizamentos, seja por tombamento, flexão, em cunha ou em plano e arranja as medidas de
+contenção.
+Exercício: das figuras ao lado direito,
+qual delas é mais propensa a problemas
+de estabilidade?
+Muros
+de
+gabião
+Quebra-
+mares
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Camadas mergulham em
+sentido contrário ao talude
+Camadas mergulham no
+sentido do talude
+Talude natural
+Corte do talude e
+preenchimento da base
+Remoção e preenchimento
+de geomateriais
+Muros
+de
+arrimo
+Grampeamento
+do solo
+Exemplos de
+Medidas de
+contenção:
+Autor:
+Ano Académico:
+19
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Análise de estabilidade de taludes em minas a céu aberto para evitar
+desmoronamentos.
+Projectos de túneis e galerias subterrâneas, garantindo que suportem as 
+tensões naturais da rocha.
+A Mecânica das Rochas permite compreender o comportamento das rochas em diferentes condições de carregamento, 
+contribuindo para a segurança e eficiência das operações mineiras. Sua aplicação dá-se nas seguintes áreas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Estabilidade de escavações subterrâneas e 
+a céu aberto
+2. Dimensionamento de suporte e reforço.
+3. Fragmentação e perfuração de rochas Selecção de técnicas adequadas de desmonte controlado para minimizar 
+vibrações e impactos ambientais.
+Definição de métodos de suporte (tirantes, concreto projectado e malhas
+metálicas) para prevenir desabamentos.
+Aplicação de modelos geomecânicos para optimizar o uso de suportes e 
+reduzir custos operacionais.
+Uso de métodos numéricos e analíticos para prever colapsos e projectar
+reforços.
+Cálculo de resistência da rocha para optimizar os processos de 
+perfuração edesmontecom explosivos.
+Autor:
+Ano Académico:
+20
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Monitoramento de deformações e redistribuição de tensões em áreas 
+mineralizadas.
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+4. Controlo de pressões e deformações em 
+maciços rochosos.
+5. Drenagem e controlo de água
+6. Planeamento e recuperação de áreas 
+mineralizadas.
+Uso da Mecânica das Rochas na recuperação ambiental de minas 
+desativadas.
+Uso da modelagens para prever a evoluçºao dos maciços após o 
+fechamento da mina.
+Estudo da permeabilidade das rochas para evitar infiltrações e
+problemas de drenagens.
+Planeamento de sistemas de rebaixamento do lençol freático para 
+manter a estabilidade da mina.
+Análise de riscos de subsidência em minas subterrãneas
+Autor:
+Ano Académico:
+21
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+envolve perfuração, escavação, detonação, fragmentação secundária,
+abertura de túneis, trituração e moagem.
+Envolve o planeamento da mina, design da disposição, estabilidade de 
+taludes, controle de colapsos, proteção do teto, reforço da rocha, 
+segurança na mineração, controle de vibração e proteção ambiental.
+A mecânica das rochas tem duas missões principais na engenharia de minas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Destruir a rocha de maneira eficiente
+2. Tornar as estruturas rochosas seguras.
+Se essas duas missões forem cumpridas com sucesso e as operações forem bem gerenciadas, os melhores resultados na 
+mineração serão alcançados, como alta recuperação de minério, baixa diluição, maior lucro, menos acidentes e menor 
+impacto ambiental.
+alta recuperação de 
+minério, baixa 
+diluição, maior lucro, 
+menos acidentes e 
+menor impacto 
+ambiental.
+Escavação, detonação, 
+fragmentação 
+secundária, abertura de 
+túneis, trituração e 
+moagem.
+Planeamento da mina, 
+design da disposição, 
+estabilidade de taludes, 
+controle de colapsos, 
+proteção do teto, reforço 
+da rocha, evento 
+sísmico, segurança na 
+mineração, controlo de 
+vibração e proteção 
+ambiental.
+Autor:
+Ano Académico:
+22
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+1. Gestão de Resíduos e Armazenamento subterrâneo
+É essencial para garantir a segurança e a sustentabilidade de projectos relacionados à produção de energia,
+armazenamento de resíduos e protecção do meio ambiente. Seu uso permite minimizar os impactos ambientais, aumentar a
+eficiência dos recursos naturais e evitar desastres geotécnicos. Suas principais aplicações incluem:
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Armazenamento de CO₂ (CCS – Captura e Armazenamento de Carbono):
+Seleção de formações geológicas adequadas para injeção segura de CO₂, reduzindo emissões de gases do efeito estufa.
+Armazenamento de Resíduos Nucleares:
+Avaliação da estabilidade de cavernas e formações rochosas para descarte seguro de rejeitos radioativos.
+2. Energia Geotérmica
+Análise de Reservatórios Geotérmicos:
+Estudo da condutividade térmica e da permeabilidade das rochas para otimizar a extração de calor.
+Fraturamento para Aumento de Permeabilidade:
+Aplicação de técnicas similares ao fraturamento hidráulico para aumentar a eficiência dos sistemas geotérmicos.
+Disposição de Resíduos Industriais:
+Uso de camadas impermeáveis de rocha para evitar contaminação do solo e lençóis freáticos.
+Monitoramento de Sismicidade Induzida:
+Prevenção de pequenos terremotos gerados por operações geotérmicas.
+Autor:
+Ano Académico:
+23
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+3. Estabilidade das barragens e Usinas Hidroeléctricas
+4. Energia Eólica e Solar em terrenos rochosos
+Análise da rocha de fundação:
+Avaliação da resistência e permeabilidade das rochas antes da construção de barragens.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Prevenção da erosão e vazamentos:
+Monitoramento de fracturas e falhas geológicas que possam comprometer a segurança de barragens.
+Estudo do impacto ambiental:
+Previsão de impactos geotécnicos e ambientais antes da construção de hidroeléctricas.
+Fundação de turbinas eólicas e painéis solares:
+Avaliação da capacidade de suporte do solo para garantir estabilidade estrutural.
+Monitoramento de Assentamentos:
+Prevenção de recalques diferenciais em terrenos irregulares.
+5. Protecção contra desastres naturais
+Monitoramento de escorregamentos e deslizamentos de terra:
+Aplicação de sensores e modelagem geomecânica para prever e evitar deslizamentos de encostas.
+Monitoramento de Assentamentos:
+Análise da subsidência em minas ambandonadas para evitar colapsos e impactos ambientais..
+Autor:
+Ano Académico:
+24
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+1. Análise de Bacias
+2. Perfuração de Poços
+Compreende o estudo da origem, evolução e inversão de bacias. A aplicação da Mecânica das Rochas é útil no estudo das
+alterações no regime de tensões das formações geológicas influenciando a geração, migração, e acumulação de
+hidrocarbonetos.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Análise de tensões in situ para prever colapsos e perdas de fluido.
+Determinar a pressão ideal da lama de perfuração.
+Modelar o comportamento geomecânico do poço
+Quando a rocha é removida durante a perfuração, tensões passam a actuar na parede do poço tendendo a restabelecer um 
+novo equilíbrio, causando então desmoronamentos se não for utilizado fluido de perfuração com peso adequado para conter 
+o colapso da rocha. Um apropriado entendimento do estado de tensão em subsuperfície torna-se extremamente necessário 
+e permite ao engenheiro de petróleo estimar ou calcular parâmetros estáveis para um projecto de perfuração. Ele a 
+Mecânica das Rocha para:
+Influencia directamente a perfuração, a produção e a segurança das operações. O conhecimento adquirido auxilia
+na mitigação de riscos operacionais, na optimização da recuperação de petróleo e na tomada de decisões para
+exploração eficiente dos reservatórios. As suas aplicações incluem:
+Autor:
+Ano Académico:
+25
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+ Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Causado devido a acção mecânica 
+da coluna de perfuração, pasta de 
+cimento mole ou contaminada ou 
+ainda a existência de formações 
+muito moles facilmente laváveis pelo 
+fluido de perfuração.
+Solução: Parar a perfuração e circular 
+para limpeza do poço enquanto aumenta 
+gradativamente o peso do fluido de 
+perfuração. Caso não seja possível 
+aumentar o peso do fluido de perfuração, 
+uma nova coluna de revestimento deverá 
+ser assentada.
+Ocorre quando a poro-pressão é maior do 
+que a pressão exercida pelo fluido de 
+perfuração, a força criada da formação 
+para o poço vence a resistência coesiva da 
+rocha e faz explodir os cascalhos para o 
+poço sobrecarregando o anular podendo 
+prender a coluna de perfuração.
+Perfuração de
+Formações
+Pressurizadas
+Perfuração de
+Formações
+Fracas ou
+Fracturadas
+Quando uma determinada rocha encaixante 
+é muito frágil, a acção mecânica do fluido de 
+perfuração pode fazer com que ela 
+simplesmente desabe para dentro do poço. 
+O uso de PWD (Pressure While Drilling) 
+esteja sendo utilizada irá registar um 
+aumento da pressão de bombeio.
+Solução: Circular para limpeza e prosseguir 
+a perfuração com controle da vibração da 
+coluna para evitar quebra nessa região.
+Solução: Trabalhar coluna para 
+limpeza do poço e seguir a 
+perfuração com cuidado até todo 
+BHA (Bottom Hole Assembly) passar 
+pela sapata.
+Acunhamento
+da Coluna de
+Perfuração por
+Cimento 
+Autor:
+Ano Académico:
+26
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+2. Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Ocorre quando a densidade de um 
+estrato de rocha (geralmente de base 
+salina ou folhelhos móveis) é menor do 
+que a densidade da rocha encaixante, a 
+rocha de menor densidade tende a 
+mover-se para uma posição de equilíbrio 
+que ao ser perfurada flui para o poço.
+Solução:Diminuir a rotação da coluna e 
+diminuir o peso sobre broca
+Quando intercalações mais duras do que o 
+previsto são encontradas, os parâmetros 
+de perfuração são variados na tentativa de 
+cortar a rocha. Nesses casos pode-se 
+comprimir a coluna ou usar altas 
+velocidades de rotação que podem fazer 
+com que a coluna de perfuração entre em 
+ressonância interagindo contra as paredes 
+do poço e provocando desmoronamentos.
+Acção Mecânica
+da Coluna de
+Perfuração na
+Formação
+Pefuração de 
+Formações 
+Reativas ao 
+Fluido de 
+Perfuração
+Formações reactivas ao fluido de perfuração 
+fragilizam e desabam para o poço formando 
+regiões alargadas. Antes da descida de 
+revestimentos o poço deve ser bem 
+condicionado pois podem topar 
+principalmente em trechos de “build up” ou 
+“drop off” de poços desviados.
+Solução: Usar fluido de perfuração inerte 
+(exemplo: óleos sintéticos ou minreal, 
+fluidos base de salmoura, gás seco, etc.).
+Solução: Aumentar o peso do fluido 
+de perfuração se possível ou 
+assentar uma coluna de 
+revestimento extra..
+Pefuração de 
+Formações 
+Móveis
+
+Autor:
+Ano Académico:
+27
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+2. Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Ocorre porque houve erro de projecto ao 
+não prever correctamente a pressão do 
+anular, pela existência de rochas no anular 
+com alto grau de mobilidade, pela expansão 
+térmica do fluido de perfuração confinado no 
+anular e etc.
+Será dificil pescar a coluna de perfuração e 
+geralmente faz-se “back off” (desfazer a 
+conexão entre dois tubos da coluna de 
+perfuração) e abandona-se o trecho de poço 
+abaixo do revestimento colapsado.
+Solução: Ajustes no fluido de perfuração, 
+controlo hidráulico do poço, minimizar a 
+vibração da coluna de perfuração, 
+estabilização mecânica do poço, etc.
+“Wash outs” são alargamentos do poço 
+produzidos pela acção do fluido de perfuração 
+(alta velocidade do fluido, uso de fluidos 
+muitos agressivos, baixa reologia do fluido) 
+sobre formações inconsolidadas. Na perfuração 
+direcional produz-se “wash outs” devido a 
+vibrações excessivas, desvio do poço e o uso de 
+trépanos inadequados.
+Formação de 
+“wash outs”
+Instabilidade de 
+Poços Inclinados
+Nesse exemplo foi encontrado um estrato de 
+rocha encaixado com menor elasticidade e o 
+peso de fluido é insuficiente para manter as 
+paredes do poço estabilizadas.
+Solução: Aumentar o peso do fluido de 
+perfuração. Fazer repassamentos (corrigir o 
+problema de estreitamento ou a rugosidade) do 
+estrato com menor elasticidade e circular para 
+limpar o poço enquanto aumenta-se o peso do 
+fluido de perfuração.
+Solução: Planejar “side track ” (desvio 
+do poço).
+Colapso do 
+Revestimento
+
+Autor:
+Ano Académico:
+28
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+3. Reactivação de falhas em reservatórios
+As falhas em um reservatório de petróleo podem representar uma ambiguidade.
+Se, por um lado, tais falhas actuam como selantes permitindo a acumulação de hidrocarbonetos, por outro lado, 
+elas podem actuar como o caminho de migração desses fluidos, se reactivadas.
+O engenheiro de petróleo precisa estimar o risco de reativação dessas falhas e, por isso, usa os critérios de falha 
+de Mohr-Coulomb.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+4. Análise de Permeabilidade
+Para que a extração de hidrocarbonetos ocorra é preciso que haja fluxo de fluidos através da rocha. Darcy [1856]
+constatou que a permeabilidade é directamente proporcional aos vazios. Ou seja, quanto mais permeável é a
+formação, maior será o fluxo de hidrocarbonetos e consequentemente, maior a produção.
+Para uma análise completa da porosidade e da permeabilidade absoluta, alguns efeitos geomecânicos como a
+compactação e tensões horizontais devem ser levados em conta.
+O estudo da relação entre a extração de fluido e a deformabilidade do reservatório traz uma visão mais
+abrangente dos fenômenos físicos que ocorrem em reservatórios deformáveis.
+Autor:
+Ano Académico:
+29
+Felisberto Queta
+1.3 – Aplicação da Mecânica das Rochas na indústria petrolífera
+SISTEMA PETROLÍFERO
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Autor:
+Ano Académico:
+30
+Felisberto Queta
+5. Estimulação de Poços:
+A estimulação de poços é caracterizada por uma série de técnicas que têm como principal objectivo maximizar a
+produção de um poço, aumentando a produtividade da formação pela criação de canais condutivos ou correção
+de danos causados durante a perfuração e completação.
+Tais técnicas devem ser antecedidas de um estudo geomecânico, para evitar perda de controlo do fracturamento,
+além de eventuais danos e efeitos negativos ao reservatório.
+6. Métodos de Recuperação de Hidrocarbonetos e Enhaced Oil Recovery (EOR)
+O uso de critérios de falha, como o de Mohr-Coulomb, mostra a iminência do risco de reativação de
+falhas. Os métodos mais avançados de recuperação requerem uma análise mais detalhada do
+comportamento mecânico da região.
+1.3 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+O ácido é injetado 
+abaixo da pressão de 
+fraturamento da 
+formação e dissolve o 
+material na formação 
+que está restringindo 
+o escoamento, ou a 
+própria formação, 
+criando novos 
+caminhos para 
+alcançar o poço
+O ácido é 
+bombeado acima 
+da pressão de 
+fraturamento da 
+formação, que 
+além de aumentar 
+a permeabilidade 
+local com geração 
+de fraturas
+misturas de ácido 
+clorídrico (HCl) para 
+limpar incrustações, 
+como carbonato de 
+cálcio (CaCO3), 
+ferrugem e outros 
+resíduos que 
+restringem o 
+escoamento no 
+poço.
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 31
+Felisberto Queta
+2023/2024
+1. O que é a mecânica das rochas?
+a) O estudo do comportamento das rochas sob diferentes condições de carga e ambiente
+b) O estudo das fundações de edifícios
+c) O estudo de solos para terraplenagem
+d) O estudo do impacto ambiental das construções
+3. O ensaio de compressão uniaxial em rochas é utilizado para determinar:
+a) A densidade da rocha
+b) A resistência ao cisalhamento
+c) O módulo de elasticidade e resistência à compressão da rocha
+d) O teor de umidade da rocha
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia Civil
+2. Qual é o principal objetivo da mecânica das rochas na engenharia civil?
+a) Analisar a resistência das estruturas metálicas
+b) Avaliar o comportamento das rochas em escavações, túneis e taludes
+c) Determinar o impacto ambiental das construções
+d) Melhorar a resistência do concreto
+4. Em túneis escavados em maciços rochosos, qual método é frequentemente utilizado para garantir estabilidade?
+a) Solo grampeado
+b) Concreto armado
+c) Método de suporte primário com concreto projetado e tirantes
+d) Fundações profundas
+5. Em taludes rochosos instáveis, qual técnica pode ser usada para estabilização?
+a) Uso de vegetação para controle da erosão
+b) Injeção de cimento para aumentar a coesão
+c) Uso de tirantes e chumbadores para reforço estrutural
+d) Todas as anteriores
+6. Em projetos de plataformas petrolíferas sobre maciços rochosos, qual factor é essencial para a segurança estrutural?
+a) O peso da plataforma
+b) A permeabilidade e resistência da fundação rochosa
+c) A cor das rochas
+d) A profundidade da plataforma
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 32
+Felisberto Queta
+2023/2024
+1. O que a mecânica das rochas estuda na engenharia de minas?
+a) O comportamento das rochas frente a escavações e esforços mecânicos
+b) A composição química dos minerais
+c) O impacto ambiental da mineração
+d) A eficiência dos equipamentos de perfuração
+3. Qual dos seguintes fatores pode influenciar a estabilidade de taludes em minas a céu aberto?
+a) A presença de descontinuidades no maciço rochoso
+b) A quantidade de minério disponível na jazida
+c) A profundidade do lençol freático
+d) Apenas a resistência à compressão da rocha
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Minas
+2. Qual o principal objetivo da mecânica das rochas na mineração subterrânea?
+a) Determinar a vida útil dos equipamentos de perfuração
+b) Garantir a estabilidade das cavidades escavadas e prevenir colapsos
+c) Reduzir os custos operacionais das minas
+d) Controlar a qualidade do minério extraído
+4. Em minas subterrâneas, qual método é frequentemente usado para reforçar maciços rochosos?
+a) Injeção de cal para estabilizar solos
+b) Uso de concreto armado para suporte primário
+c) Aplicação de tirantes e concreto projetado
+d) Uso de fundações profundas para sustentação das
+5. O que pode causar instabilidade nos taludes de minas a céu aberto?
+a) Chuvas intensas e infiltração de água
+b) Vibrações causadas por detonações
+c) Presença de fraturas e falhas no maciço rochoso
+d) Todas as anteriores
+6. Qual dos seguintes métodos é utilizado para análise de tensões in situ em maciços rochosos?
+a) Ensaio de permeabilidade
+b) Técnica de overcoring
+c) Método de CBR (California Bearing Ratio)
+d) Ensaio de limite de Atterberg
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 33
+Felisberto Queta
+2023/2024
+1. Qual é a principal aplicação da mecânica das rochas na engenharia de petróleo?
+a) Avaliação da estabilidade de taludes em minas
+b) Análise do comportamento das formações rochosas durante a perfuração e produção de petróleo
+c) Determinação da composição química do petróleo
+d) Estudo da resistência de materiais metálicos usados em oleoduto
+3. Qual é o principal objetivo da mecânica das rochas em poços de petróleo?
+a) Garantir a estabilidade do poço e evitar colapsos na formação rochosa
+b) Melhorar a eficiência do refino do petróleo
+c) Analisar a qualidade do óleo extraído
+d) Reduzir a corrosão de tubos de perfuração
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Petróleo
+2. O que significa a sigla "RRT" (Reservoir Rock Testing) na engenharia de petróleo?
+a) Teste de resistência à compressão das rochas
+b) Teste de rochas para avaliação de reservatórios de petróleo
+c) Método de análise química de fluidos de perfuração
+d) Técnica de extração aprimorada de petróleo
+4. Qual dos seguintes parâmetros é fundamental para a análise de estabilidade de um poço de petróleo?
+a) Permeabilidade da formação
+b) Gradiente de fraturamento da rocha
+c) Teor de enxofre do petróleo
+d) Temperatura ambiente do local de extração
+5. O módulo de Young de uma rocha é usado para determinar:
+a) A resistência ao cisalhamento do fluido de perfuração
+b) O comportamento elástico da rocha sob tensão
+c) A quantidade de petróleo presente na formação
+d) A densidade do óleo extraído
+6. O que pode causar instabilidade no poço de petróleo durante a perfuração?
+a) Tensões excessivas na formação rochosa
+b) Pressão inadequada do fluido de perfuração
+c) Presença de fraturas naturais na rocha
+d) Todas as anteriores
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 34
+Felisberto Queta
+2023/2024
+7. A "Janela de Perfuração Segura" refere-se a:
+a) O intervalo de pressões em que a perfuração pode ser realizada sem colapsos ou perdas de circulação
+b) O tempo necessário para concluir a perfuração de um poço
+c) A profundidade máxima permitida para um poço de petróleo
+d) O limite de temperatura que uma broca pode suportar
+9. Na perfuração de formações instáveis, uma técnica comum para evitar desmoronamento da parede do poço é:
+a) A injeção de cimento na formação
+b) O uso de fluidos de perfuração balanceados para estabilizar as tensões na rocha
+c) O aumento da taxa de extração do petróleo
+d) A realização de testes sísmicos constantes
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Petróleo
+8. Qual fenômeno ocorre quando a pressão de poros de uma rocha excede a resistência da formação?
+a) Colapso do poço
+b) Kick (entrada indesejada de fluidos no poço)
+c) Rockburst
+d) Redução da viscosidade do petróleo
+10. Qual dos seguintes fenômenos pode indicar instabilidade geomecânica em poços de petróleo?
+a) Formação de cavidades ou colapsos no poço
+b) Pressão constante no poço durante a perfuração
+c) Produção de petróleo sem areia
+d) Redução do índice de anisotropia da rocha
+11. O que é a "pressão de poro" em uma formação petrolífera?
+a) A pressão exercida pelos fluidos contidos nos espaços porosos da rocha
+b) A pressão atmosférica que age na superfície do reservatório
+c) A força aplicada pela broca de perfuração na rocha
+d) A resistência mecânica da rocha à compressão
+12. Qual é a função principal do fluido de perfuração em relação à mecânica das rochas?
+a) Reduzir o atrito entre a broca e a rocha
+b) Manter a estabilidade do poço e controlar a pressão da formação
+c) Dissolver hidrocarbonetos para facilitar a extração
+d) Melhorar a qualidade do petróleo extraído
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 35
+Felisberto Queta
+2023/2024
+13. O que pode ocorrer se a pressão do fluido de perfuração for muito maior que a pressão de fraturamento da 
+rocha?
+a) Fraturamento indesejado da formação e perda de circulação
+b) Aumento da eficiência da extração
+c) Redução do teor de água no petróleo
+d) Melhoria da porosidade do reservatório
+15. Quando ocorre o fenômeno de "sanding" (produção de areia) em reservatórios?
+a) Quando a rocha do reservatório é fraca e sofre erosão devido ao fluxo de fluidos
+b) Quando há excesso de pressão na formação
+c) Quando a temperatura do petróleo é muito alta
+d) Quando a permeabilidade da rocha é muito baixa
+Quiz: Aplicação da Mecânica das Rochas na Engenharia de Petróleo
+14. O que são tensões horizontais e verticais in situ em uma formação rochosa?
+a) Tensões naturais da crosta terrestre que influenciam a estabilidade de poços e fraturamento hidráulico
+b) Pressões induzidas pelo fluido de perfuração
+c) Movimentos sísmicos locais causados pela extração de petróleo
+d) Variações de temperatura que afetam a rocha
+Autor:
+Ano Académico:
+REFERENCIAS BIBLIOGRÁFICAS 36
+Felisberto Queta
+2024/2025
+1. Jaeger, J.C., Cook, N.G.W., & Zimmerman, R.W. (2007). Fundamentals of Rock Mechanics (4ª edição). 
+Wiley-Blackwell
+• Este livro aborda a mecânica das rochas de maneira geral, com ênfase em sua aplicação prática na 
+engenharia geotécnica e em projetos de infraestrutura. Ele detalha como as propriedades das rochas 
+influenciam o comportamento estrutural em obras subterrâneas e em fundações.
+2. Goodman, R.E. (1989). Introduction to Rock Mechanics (2ª edição). Wiley.
+• Goodman oferece uma introdução abrangente à mecânica das rochas, cobrindo teoria e práticas 
+aplicadas, com exemplos de engenharia que envolvem a construção de túneis, fundações e outras obras 
+civis que dependem da estabilidade das rochas.
+3. Brady, B. H. G., & Brown, E. T. (2005). Rock Mechanics for Underground Mining (3rd ed.). Springer.
+• Este livro é um clássico na área de mecânica das rochas e cobre aspectos fundamentais que também 
+são aplicáveis à indústria de petróleo, como comportamento das rochas sob tensão e deformação.
+4. Lee, V. John. (1982). Applied Petroleum Reservoir Engineering. Prentice Hall
+• Este livro fornece uma análise detalhada sobre engenharia de reservatórios e aborda conceitos 
+importantes de mecânica das rochas no contexto da produção de petróleo e gás.
+5. Cui, Z. & Dey, S. (2019). Rock Mechanics and Engineering (Vol. 1). CRC Press.
+• Este volume fornece uma cobertura abrangente dos princípios de mecânica das rochas e sua aplicação 
+em diversos setores, incluindo a indústria petrolífera
+
+---
+
+## Arquivo: Apresentação e Introdução da Mecânica das Rochas 2024.pdf
+
+Autor:
+Área:
+MECÂNICA DAS ROCHAS
+Curso de Licenciatura em Engenharia de Petróleos
+3 º Ano
+1Felisberto Queta
+2024/2025
+Autor:
+Ano Académico:
+APRESENTAÇÃO DA DISCIPLINA 2
+Felisberto Queta
+2024/2025
+O QUE FAZ UM ENGENHEIRO DE PETRÓLEO? 
+ Acompanha 
+a produção de derivados 
+do petróleo
+ Explora e produz 
+hidrocarbonetos
+ Gerencia a  comercialização 
+e transporte de 
+hidrocarbonetos
+ Prospecta e pesquisa 
+bacias sedimentares com 
+potencial económico
+Querendo dizer que no decurso das suas
+actividades, o engenheiro de petróleo irá lidar
+com situações que exigirão um conhecimento
+sobre:
+Geologia, Geofísica, Petrofísica e
+Mecânica das Rochas.
+Para minimizar este problema, surge a
+Geomecânica que procura integrar estas
+disciplinas a fim de munir o engenheiro de
+petróleo de habilidades e competências para
+melhor compreender as suas actividades e a
+de seus colegas que actuam noutras áreas.
+Autor:
+Ano Académico:
+3
+Felisberto Queta
+2024/2025
+ Desmoronamento das paredes do poço
+ Encontrar um poço seco
+O QUE ACONTECE QUANDO O ENGENHEIRO NÃO TEM DOMÍNIO DA GEOMECÂNICA? 
+ Explosão de plataforma devido ao 
+vazamento de fluidos
+Poro-pressâo Zona de 
+fraqueza
+Falhas 
+geológicas
+APRESENTAÇÃO DA DISCIPLINA
+Autor:
+Ano Académico:
+4
+Felisberto Queta
+2024/2025
+Objectivos Gerais da disciplina
+Compreender os principais conceitos de Mecânica das Rochas e sua importância nos 
+vários sectores da vida, principalmente na indústria petrolífera;
+Identificar os diferentes tipos de rochas e diferenciá-las de acordo com as suas 
+características;
+Determinar as propriedades físicas e mecânicas de uma rocha;
+Compreender e aplicar as noções sobre estado de tensão,  resistência e 
+deformabilidade nos maciços rochosos. 
+Perceber os tipos de descontinuidades e sua importância no comportamento de 
+maciços rochosos; 
+Perceber a importância do estudo do comportamento das rochas, no entendimento 
+das estruturas da Terra, na economia dos países e na preservação do ambiente
+Fazer a classificar geomecânica e a descrição dos maciços rochosos.
+1º
+2º
+3º
+4º
+5º
+6º
+7º
+APRESENTAÇÃO DA DISCIPLINA
+Autor:
+Ano Académico:
+Programa analítico da cadeira de Mecânica das Rochas 5
+Felisberto Queta
+2024/2025
+Período Nome Créditos C.H.T 
+6º Mecânica das Rochas 4 64
+C.H.Sem. (2) Teóricas (2) Teórico-Práticas 
+Distribuição da carga horária
+Carga horária total Carga horária teórica Carga horária prática Carga horária 
+semanal 
+64 30 54 8
+Duração do Ano Lectivo
+Início da disciplina Término da disciplina
+04/03/2024 Segunda-feira 21/06/2024 Sexta-feira
+Objectivo do Curso
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das
+rochas, para aplicação na perfuração de poços.
+Autor:
+Ano Académico:
+CONTEÚDO PROGRAMÁTICO 6
+Felisberto Queta
+2024/2025
+Capítulo 1 – Introdução à mecânica das rochas 
+Capítulo 2 – Rochas, solos, maciços rochosos
+Capítulo 3 - Propriedades físicas e mecânicas das rochas 
+Capítulo 4 – Propriedades de resistência e deformabilidade de rochas
+Capítulo 6 – Propriedades de resistência de descontinuidades
+Capítulo 7 – Classificações geomecânicas
+Capítulo 5 – Tensões e deformações nas rochas
+Autor:
+Ano Académico:
+REFERÊNCIAS BIBLIOGRÁFICAS 7
+Felisberto Queta
+2024/2025
+1 – VALLEJO G.LUIS L. et. al (2002); Ingeniería geológica. PEARSON EDUCACION, Madrid.
+2 – FIORIA. Pio, CARMIGNANI L. (2015). Fundamentos de mecanica dos solos e das rochas: 
+aplicações na estabilidade de taludes. Oficina de Textos, São Paulo.
+3 – THOMAS, J. EDUARDO (2021). Fundamentos de Engenharia de Petróleo. Petrobas. Rio de 
+Janeiro.
+4 - SCHÖN, J. H. (2014). Propriedades físicas das rochas aplicadas à engenharia: Fundamentos 
+teóricos e práticos. Elsevier, 496p.
+5 – AADNØY, B. S. e LOOYEH, M. R. E. (2013). Mecânica de rochas aplicada. Elsevier, 2013.
+6 - GOODMAN, R. E. (1989) Introduction to a Rock Mechanics, John Wiley & Son.
+7 - JAEGER, J. C. ; COOK, N; ZIMMERMAN, R. G. W. (2007). Fundamentals of Rock Mechanics, 
+Wiley-Blackwell.
+Autor:
+Ano Académico:
+8
+Felisberto Queta
+2024/2025
+QUA QUI SEX SAB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER QUA QUI SEX SÁB DOM SEG TER
+10
+12
+9 17
+7 2214
+26
+21
+23
+22
+19
+24
+21
+19
+0
+Publicação dos Resultados dos 
+Exames
+31
+27 28
+21
+30
+18 19 20
+5
+4
+20
+42
+58
+0
+15
+12
+17
+14
+ISPTEC - CALENDÁRIO  ACADÉMICO 2024/2025  MECÂNICA DAS ROCHAS
+6 7 8 9 13 14
+28 29
+QUA
+2726
+Exames Semestral
+Exames Semestrais Exames de Recurso2ª chamada da 1ª Prova parcelar 
+2ª Prova parcelar Exames de Recurso
+Período Provas Parcelares
+Pausa e Feriados
+Período Lectivo
+F
+MAIO
+2 3 4 5
+1
+3 4 5 6JANEIRO
+FEVEREIR
+O
+JULHO
+JUNHO
+3
+4 5
+54
+0
+1
+7
+MARÇO
+ABRIL
+8 9 10
+2
+19
+11 12 13
+15 16
+16
+9
+9 10 11
+1ª Prova parcelar 2ª chamada da 2ª Prova parcelar 
+12
+8
+31
+24 25
+28 30
+12
+26
+50
+21
+24 29
+26
+31
+28
+26
+30
+28 3029
+17 18
+4
+23 24 25 28 29 30
+11 12
+24
+46
+62
+17
+14 17 18 22 23
+16 20 21
+19 20 F 22 23 2418 25 26
+25 26 279 10 22 23 24
+20 21
+275
+3 4
+16
+1 10 11
+11
+6
+19
+7
+11 17 18 19
+128
+12 13 14 15
+9 10 11 13 14 15 16
+20 21
+29 3025 26 27
+F 5
+28 29 30
+6 7
+6
+5
+38
+3
+6 7 17
+4
+3
+4 22 2314 15 16
+7 82
+2 3
+27
+27
+2518
+15
+1 24
+23
+20
+25
+22
+20
+8
+6
+16
+13
+18
+15
+138
+8
+13
+52
+1 2
+10 16
+34
+3
+Autor:
+Ano Académico:
+9
+Felisberto Queta
+2024/2025
+C
+APÍTULO 1 
+–
+INTRODUÇÃO À MECÂNICA 
+DAS ROCHAS
+
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 10
+Felisberto Queta
+2024/2025
+Neste capítulo vamos procurar entender os seguintes aspectos:
+1.1. Principais conceitos e definições de Mecânica das Rochas;
+1.2. Objetivos e campos de aplicação da Mecânica das Rochas;
+1.3. Aplicação da Mecânica das Rochas na indústria petrolífera.
+Espera-se que no final deste Capítulo vocês sejam capazes de:
+1º Perceber o conceito de Mecânica das Rochas; 
+3º Compreender a aplicação da Mecânica das Rochas na indústria petrólífera;
+2º Compreender as áreas de actuação da disciplina;
+Autor:
+Ano Académico:
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS 11
+1.1 - Principais conceitos e definições 
+Mecânica das Rochas (definição)
+Juntas ou diáclases Falhas Dobras
+Fracturação sem 
+deslocamento perceptível dos 
+blocos.
+Torção com deslocamento 
+relativo de blocos um em 
+relação ao plano de fractura.
+Flexão,  encurtamento
+acentuado e deformação
+interna da rocha.
+É uma disciplina da engenharia civil que se ocupa do estudo teórico e prático das propriedades das
+rochas e das suas respostas quando submetidas a uma perturbação aplicada. Estas respostas são
+chamadas deformações que se podem manifestar em forma de:
+Autor:
+Ano Académico:
+12
+Felisberto Queta
+2024/2025
+ Objectivo da disciplina:
+1.2 – Objectivos e áreas de Aplicação
+Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das rochas, para aplicação na perfuração
+de poços.
+ Objectivos específicos relação:
+• Caracterizar o comportamento
+mecânico das rochas
+entender suas propriedades físicas e mecânicas sob diferentes condições de
+pressão e temperatura.
+• Prever a estabilidade dos poços: evitar colapsos e perdas de circulação durante a perfuração
+ Objecto de estudo:
+Rochas e maciços rochosos
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+• Mitigar riscos geomecânicos: minimizar problemas como fraturamento indesejado, arenização e subsidência
+• Otimizar a recuperação de petróleo: aplicar conceitos de geomecânica para maximizar a extração de
+hidrocarbonetos.
+• Reduzir custos operacionais: prevenir falhas estruturais e evitar gastos desnecessários com reparos e
+interrupções
+• Garantir a segurança das operações: evitar acidentes relacionados à instabilidade das formações.
+Autor:
+Ano Académico:
+13
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+ Disciplinas em estreita relação:
+• Geologia Estrutural: Estuda as estruturas geológicas que ocorrem na litosfera.
+• Mecânica dos solos: Estuda as características físicas e mecânicas dos maciços terrosos.
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Disciplinas em estreita relação na indústria de petróleo:
+• Geologia do Petróleo : Estuda a origem, a formação e a distribuição das rochas-reservatório..
+• Geofísica: Usa métodos sísmicos e de perfis de poço para caracterizar formações rochosas.
+•Engenharia de
+Perfuração:
+Analisa a estabilidade do poço e os impactos da perfuração nas rochas
+•Engenharia de
+Reservatórios:
+Estuda o comportamento dos fluidos e a compactação da rocha devido à depleção.
+• Petrofísica: Avalia propriedades como porosidade, permeabilidade e tensão das rochas.
+•Fraturamento Hidráulico Relacionado à propagação de fraturas na formação para otimizar a produção..
+Autor:
+Ano Académico:
+14
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Túneis e galerias
+subterrâneas
+Estudo da estabilidade de maciços rochosos para a construção de túneis rodoviários,
+ferroviários e metroviários.
+Túnel perpendicular à direcção das 
+camadas
+Túnel paralelo à direcção das 
+camadas
+Suporte Externo Suporte Interno
+Túnel em rocha 
+sedimentar
+Túnel em rocha 
+cristalina
+Autor:
+Ano Académico:
+15
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+Projetos de barragens, pontes, edifícios que exigem análise
+das condições do maciço rochoso para garantir segurança.
+Para o efeito é preciso estudar a competência do terreno.
+Fundação de ponte (sapatas) Fundação de plataforma (estacas)
+ Áreas de actuação na Engenharia Civil e 
+Infraestrutura:
+Como fazer o estudo?
+1. Levantamento Geológico e Geotécnico
+Estudo da topografia
+• Avaliação do relevo e inclinação do terreno.
+• Identificação de áreas sujeitas a erosão e deslizamentos
+Mapeamento geológico
+• Identificação dos tipos de solos e rochas presentes no local.
+• Análise da presença de falhas geológicas, fraturas e dobras
+
+Autor:
+Ano Académico:
+16
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Hidrogeologia
+• Investigação do nível do lençol freático.
+• Estudo da permeabilidade do solo e do fluxo de águas 
+subterrâneas
+1. Levantamento Geológico e Geotécnico
+Ensaios de Campo
+• Sondagem a percussão (SPT – Standard Penetration Test).
+• Ensaio de penetração de cone (CPT – Cone Penetration
+Test)
+• Ensaio de carga em placa
+• Ensaio de consolidação
+2. Ensaios em campo e laboratório
+• Determinação do tipo de fundação mais adequado (superficial ou 
+profunda).
+• Avaliação da estabilidade do solo e das rochas para suportar 
+estruturas.
+• Estudo das deformações do solo que podem comprometer a 
+estrutura.
+• Modelagem computacional para prever a resposta do terreno às 
+cargas aplicadas.
+• Fundações Rasas (Superficiais).
+• Fundações Profundas (e.g. plataformas petrolíferas fixas)
+• Fundações Especiais (e.g. túneis, )
+3. Análise da Capacidade de Suporte e Estabilidade
+4. Escolha das Fundações Adequadas
+• Compactação do solo para aumentar sua densidade e 
+resistência.
+• Drenagem adequada para evitar erosão e recalques.
+• Muros de contenção em terrenos inclinados.
+• Reforço com geossintéticos para melhorar a estabilidade.
+• Monitoramento contínuo para prevenir deformações estruturais
+5. Medidas de Estabilização e Prevenção de ProblemasEnsaios de Laboratório
+• Análise granulométrica
+• Limites de Atterberg (plasticidade do solo)
+• Compactação (Proctor Normal e Modificado)
+• Resistência ao cisalhamento (Ensaio de corte direto e 
+triaxial)
+• Ensaios de adensamento
+Autor:
+Ano Académico:
+17
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Fundações de grandes estruturas
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+(b) Recalque diferencial de 
+corpo rígido; 
+(c) Recalque diferencial com 
+distorção. (a) Recalque uniforme; 
+O uniforme acontece quando todos os 
+pontos da fundação apresentam o mesmo 
+grau de recalque e toda a obra desce como 
+um corpo rígido, mantendo a estabilidade 
+horizontal e vertical. A estrutura não sofre 
+nenhum dano, mas podem ocorrer problemas 
+nas ligações com a via pública (entrada de 
+água, esgoto, cabos enterrados, acesso de 
+veículos, entre outros).
+Esse fenômeno ocorre quando uma 
+parte da estrutura fica mais rebaixada 
+que a outra, podendo haver ou não uma 
+distorção angular. Portanto, essa 
+condição resulta em esforços estruturais 
+não previstos, o que pode culminar na 
+ruína da obra, em casos extremos. Vale 
+lembrar que nem todas as rachaduras e 
+fissuras provêm de recalque.
+A condição em que a obra 
+afunda de forma desigual, 
+o que implica dizer que as 
+medidas angulares do 
+recalque não são as 
+mesmas em diferentes 
+pontos da estrutura, o que 
+resulta em sua 
+deformação.
+Problemas das fundações:
+Fonte: Veloso e Lopes
+Autor:
+Ano Académico:
+18
+Felisberto Queta
+2024/2025
+1.2 – Objectivos e áreas de Aplicação
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Taludes e encostas:
+Estabilização de encostas e cortes rochosos em rodovias e ferrovias para prevenir
+deslizamentos, seja por tombamento, flexão, em cunha ou em plano e arranja as medidas de
+contenção.
+Exercício: das figuras ao lado direito,
+qual delas é mais propensa a problemas
+de estabilidade?
+Muros
+de
+gabião
+Quebra-
+mares
+ Áreas de actuação na Engenharia Civil e Infraestrutura:
+Camadas mergulham em
+sentido contrário ao talude
+Camadas mergulham no
+sentido do talude
+Talude natural
+Corte do talude e
+preenchimento da base
+Remoção e preenchimento
+de geomateriais
+Muros
+de
+arrimo
+Grampeamento
+do solo
+Exemplos de
+Medidas de
+contenção:
+Autor:
+Ano Académico:
+19
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Análise de estabilidade de taludes em minas a céu aberto para evitar
+desmoronamentos.
+Projectos de túneis e galerias subterrâneas, garantindo que suportem as 
+tensões naturais da rocha.
+A Mecânica das Rochas permite compreender o comportamento das rochas em diferentes condições de carregamento, 
+contribuindo para a segurança e eficiência das operações mineiras. Sua aplicação dá-se nas seguintes áreas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Estabilidade de escavações subterrâneas e 
+a céu aberto
+2. Dimensionamento de suporte e reforço.
+3. Fragmentação e perfuração de rochas Selecção de técnicas adequadas de desmonte controlado para minimizar 
+vibrações e impactos ambientais.
+Definição de métodos de suporte (tirantes, concreto projectado e malhas
+metálicas) para prevenir desabamentos.
+Aplicação de modelos geomecânicos para optimizar o uso de suportes e 
+reduzir custos operacionais.
+Uso de métodos numéricos e analíticos para prever colapsos e projectar
+reforços.
+Cálculo de resistência da rocha para optimizar os processos de 
+perfuração edesmontecom explosivos.
+Autor:
+Ano Académico:
+20
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+Monitoramento de deformações e redistribuição de tensões em áreas 
+mineralizadas.
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+4. Controlo de pressões e deformações em 
+maciços rochosos.
+5. Drenagem e controlo de água
+6. Planeamento e recuperação de áreas 
+mineralizadas.
+Uso da Mecânica das Rochas na recuperação ambiental de minas 
+desativadas.
+Uso da modelagens para prever a evoluçºao dos maciços após o 
+fechamento da mina.
+Estudo da permeabilidade das rochas para evitar infiltrações e
+problemas de drenagens.
+Planeamento de sistemas de rebaixamento do lençol freático para 
+manter a estabilidade da mina.
+Análise de riscos de subsidência em minas subterrãneas
+Autor:
+Ano Académico:
+21
+Felisberto Queta
+2024/025
+
+ Âmbitos de aplicação na Engenharia de Minas
+:
+envolve perfuração, escavação, detonação, fragmentação secundária,
+abertura de túneis, trituração e moagem.
+Envolve o planeamento da mina, design da disposição, estabilidade de 
+taludes, controle de colapsos, proteção do teto, reforço da rocha, 
+segurança na mineração, controle de vibração e proteção ambiental.
+A mecânica das rochas tem duas missões principais na engenharia de minas:
+1.3 – Aplicação da Mecânica das Rochas na Engenharia de Minas
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+1. Destruir a rocha de maneira eficiente
+2. Tornar as estruturas rochosas seguras.
+Se essas duas missões forem cumpridas com sucesso e as operações forem bem gerenciadas, os melhores resultados na 
+mineração serão alcançados, como alta recuperação de minério, baixa diluição, maior lucro, menos acidentes e menor 
+impacto ambiental.
+alta recuperação de 
+minério, baixa 
+diluição, maior lucro, 
+menos acidentes e 
+menor impacto 
+ambiental.
+Escavação, detonação, 
+fragmentação 
+secundária, abertura de 
+túneis, trituração e 
+moagem.
+Planeamento da mina, 
+design da disposição, 
+estabilidade de taludes, 
+controle de colapsos, 
+proteção do teto, reforço 
+da rocha, evento 
+sísmico, segurança na 
+mineração, controlo de 
+vibração e proteção 
+ambiental.
+Autor:
+Ano Académico:
+22
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+1. Gestão de Resíduos e Armazenamento subterrâneo
+É essencial para garantir a segurança e a sustentabilidade de projectos relacionados à produção de energia,
+armazenamento de resíduos e protecção do meio ambiente. Seu uso permite minimizar os impactos ambientais, aumentar a
+eficiência dos recursos naturais e evitar desastres geotécnicos. Suas principais aplicações incluem:
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Armazenamento de CO₂ (CCS – Captura e Armazenamento de Carbono):
+Seleção de formações geológicas adequadas para injeção segura de CO₂, reduzindo emissões de gases do efeito estufa.
+Armazenamento de Resíduos Nucleares:
+Avaliação da estabilidade de cavernas e formações rochosas para descarte seguro de rejeitos radioativos.
+2. Energia Geotérmica
+Análise de Reservatórios Geotérmicos:
+Estudo da condutividade térmica e da permeabilidade das rochas para otimizar a extração de calor.
+Fraturamento para Aumento de Permeabilidade:
+Aplicação de técnicas similares ao fraturamento hidráulico para aumentar a eficiência dos sistemas geotérmicos.
+Disposição de Resíduos Industriais:
+Uso de camadas impermeáveis de rocha para evitar contaminação do solo e lençóis freáticos.
+Monitoramento de Sismicidade Induzida:
+Prevenção de pequenos terremotos gerados por operações geotérmicas.
+Autor:
+Ano Académico:
+23
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação 
+na Engenharia Ambiental e Energia:
+3. Estabilidade das barragens e Usinas Hidroeléctricas
+4. Energia Eólica e Solar em terrenos rochosos
+Análise da rocha de fundação:
+Avaliação da resistência e permeabilidade das rochas antes da construção de barragens.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Prevenção da erosão e vazamentos:
+Monitoramento de fracturas e falhas geológicas que possam comprometer a segurança de barragens.
+Estudo do impacto ambiental:
+Previsão de impactos geotécnicos e ambientais antes da construção de hidroeléctricas.
+Fundação de turbinas eólicas e painéis solares:
+Avaliação da capacidade de suporte do solo para garantir estabilidade estrutural.
+Monitoramento de Assentamentos:
+Prevenção de recalques diferenciais em terrenos irregulares.
+5. Protecção contra desastres naturais
+Monitoramento de escorregamentos e deslizamentos de terra:
+Aplicação de sensores e modelagem geomecânica para prever e evitar deslizamentos de encostas.
+Monitoramento de Assentamentos:
+Análise da subsidência em minas ambandonadas para evitar colapsos e impactos ambientais..
+Autor:
+Ano Académico:
+24
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+1. Análise de Bacias
+2. Perfuração de Poços
+Compreende o estudo da origem, evolução e inversão de bacias. A aplicação da Mecânica das Rochas é útil no estudo das
+alterações no regime de tensões das formações geológicas influenciando a geração, migração, e acumulação de
+hidrocarbonetos.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Análise de tensões in situ para prever colapsos e perdas de fluido.
+Determinar a pressão ideal da lama de perfuração.
+Modelar o comportamento geomecânico do poço
+Quando a rocha é removida durante a perfuração, tensões passam a actuar na parede do poço tendendo a restabelecer um 
+novo equilíbrio, causando então desmoronamentos se não for utilizado fluido de perfuração com peso adequado para conter 
+o colapso da rocha. Um apropriado entendimento do estado de tensão em subsuperfície torna-se extremamente necessário 
+e permite ao engenheiro de petróleo estimar ou calcular parâmetros estáveis para um projecto de perfuração. Ele a 
+Mecânica das Rocha para:
+Influencia directamente a perfuração, a produção e a segurança das operações. O conhecimento adquirido auxilia
+na mitigação de riscos operacionais, na optimização da recuperação de petróleo e na tomada de decisões para
+exploração eficiente dos reservatórios. As suas aplicações incluem:
+Autor:
+Ano Académico:
+25
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+ Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Causado devido a acção mecânica 
+da coluna de perfuração, pasta de 
+cimento mole ou contaminada ou 
+ainda a existência de formações 
+muito moles facilmente laváveis pelo 
+fluido de perfuração.
+Solução: Parar a perfuração e circular 
+para limpeza do poço enquanto aumenta 
+gradativamente o peso do fluido de 
+perfuração. Caso não seja possível 
+aumentar o peso do fluido de perfuração, 
+uma nova coluna de revestimento deverá 
+ser assentada.
+Ocorre quando a poro-pressão é maior do 
+que a pressão exercida pelo fluido de 
+perfuração, a força criada da formação 
+para o poço vence a resistência coesiva da 
+rocha e faz explodir os cascalhos para o 
+poço sobrecarregando o anular podendo 
+prender a coluna de perfuração.
+Perfuração de
+Formações
+Pressurizadas
+Perfuração de
+Formações
+Fracas ou
+Fracturadas
+Quando uma determinada rocha encaixante 
+é muito frágil, a acção mecânica do fluido de 
+perfuração pode fazer com que ela 
+simplesmente desabe para dentro do poço. 
+O uso de PWD (Pressure While Drilling) 
+esteja sendo utilizada irá registar um 
+aumento da pressão de bombeio.
+Solução: Circular para limpeza e prosseguir 
+a perfuração com controle da vibração da 
+coluna para evitar quebra nessa região.
+Solução: Trabalhar coluna para 
+limpeza do poço e seguir a 
+perfuração com cuidado até todo 
+BHA (Bottom Hole Assembly) passar 
+pela sapata.
+Acunhamento
+da Coluna de
+Perfuração por
+Cimento 
+Autor:
+Ano Académico:
+26
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+2. Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Ocorre quando a densidade de um 
+estrato de rocha (geralmente de base 
+salina ou folhelhos móveis) é menor do 
+que a densidade da rocha encaixante, a 
+rocha de menor densidade tende a 
+mover-se para uma posição de equilíbrio 
+que ao ser perfurada flui para o poço.
+Solução:Diminuir a rotação da coluna e 
+diminuir o peso sobre broca
+Quando intercalações mais duras do que o 
+previsto são encontradas, os parâmetros 
+de perfuração são variados na tentativa de 
+cortar a rocha. Nesses casos pode-se 
+comprimir a coluna ou usar altas 
+velocidades de rotação que podem fazer 
+com que a coluna de perfuração entre em 
+ressonância interagindo contra as paredes 
+do poço e provocando desmoronamentos.
+Acção Mecânica
+da Coluna de
+Perfuração na
+Formação
+Pefuração de 
+Formações 
+Reativas ao 
+Fluido de 
+Perfuração
+Formações reactivas ao fluido de perfuração 
+fragilizam e desabam para o poço formando 
+regiões alargadas. Antes da descida de 
+revestimentos o poço deve ser bem 
+condicionado pois podem topar 
+principalmente em trechos de “build up” ou 
+“drop off” de poços desviados.
+Solução: Usar fluido de perfuração inerte 
+(exemplo: óleos sintéticos ou minreal, 
+fluidos base de salmoura, gás seco, etc.).
+Solução: Aumentar o peso do fluido 
+de perfuração se possível ou 
+assentar uma coluna de 
+revestimento extra..
+Pefuração de 
+Formações 
+Móveis
+
+Autor:
+Ano Académico:
+27
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+2. Perfuração de Poços
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Exemplos de problemas de instabilidade de poço:
+Ocorre porque houve erro de projecto ao 
+não prever correctamente a pressão do 
+anular, pela existência de rochas no anular 
+com alto grau de mobilidade, pela expansão 
+térmica do fluido de perfuração confinado no 
+anular e etc.
+Será dificil pescar a coluna de perfuração e 
+geralmente faz-se “back off” (desfazer a 
+conexão entre dois tubos da coluna de 
+perfuração) e abandona-se o trecho de poço 
+abaixo do revestimento colapsado.
+Solução: Ajustes no fluido de perfuração, 
+controlo hidráulico do poço, minimizar a 
+vibração da coluna de perfuração, 
+estabilização mecânica do poço, etc.
+“Wash outs” são alargamentos do poço 
+produzidos pela acção do fluido de perfuração 
+(alta velocidade do fluido, uso de fluidos 
+muitos agressivos, baixa reologia do fluido) 
+sobre formações inconsolidadas. Na perfuração 
+direcional produz-se “wash outs” devido a 
+vibrações excessivas, desvio do poço e o uso de 
+trépanos inadequados.
+Formação de 
+“wash outs”
+Instabilidade de 
+Poços Inclinados
+Nesse exemplo foi encontrado um estrato de 
+rocha encaixado com menor elasticidade e o 
+peso de fluido é insuficiente para manter as 
+paredes do poço estabilizadas.
+Solução: Aumentar o peso do fluido de 
+perfuração. Fazer repassamentos (corrigir o 
+problema de estreitamento ou a rugosidade) do 
+estrato com menor elasticidade e circular para 
+limpar o poço enquanto aumenta-se o peso do 
+fluido de perfuração.
+Solução: Planejar “side track ” (desvio 
+do poço).
+Colapso do 
+Revestimento
+
+Autor:
+Ano Académico:
+28
+Felisberto Queta
+2024/2025
+
+ Âmbitos de aplicação na indústria petrolífera:
+3. Reactivação de falhas em reservatórios
+As falhas em um reservatório de petróleo podem representar uma ambiguidade.
+Se, por um lado, tais falhas actuam como selantes permitindo a acumulação de hidrocarbonetos, por outro lado, 
+elas podem actuar como o caminho de migração desses fluidos, se reactivadas.
+O engenheiro de petróleo precisa estimar o risco de reativação dessas falhas e, por isso, usa os critérios de falha 
+de Mohr-Coulomb.
+1.4 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+4. Análise de Permeabilidade
+Para que a extração de hidrocarbonetos ocorra é preciso que haja fluxo de fluidos através da rocha. Darcy [1856]
+constatou que a permeabilidade é directamente proporcional aos vazios. Ou seja, quanto mais permeável é a
+formação, maior será o fluxo de hidrocarbonetos e consequentemente, maior a produção.
+Para uma análise completa da porosidade e da permeabilidade absoluta, alguns efeitos geomecânicos como a
+compactação e tensões horizontais devem ser levados em conta.
+O estudo da relação entre a extração de fluido e a deformabilidade do reservatório traz uma visão mais
+abrangente dos fenômenos físicos que ocorrem em reservatórios deformáveis.
+Autor:
+Ano Académico:
+29
+Felisberto Queta
+1.3 – Aplicação da Mecânica das Rochas na indústria petrolífera
+SISTEMA PETROLÍFERO
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+Autor:
+Ano Académico:
+30
+Felisberto Queta
+5. Estimulação de Poços:
+A estimulação de poços é caracterizada por uma série de técnicas que têm como principal objectivo maximizar a
+produção de um poço, aumentando a produtividade da formação pela criação de canais condutivos ou correção
+de danos causados durante a perfuração e completação.
+Tais técnicas devem ser antecedidas de um estudo geomecânico, para evitar perda de controlo do fracturamento,
+além de eventuais danos e efeitos negativos ao reservatório.
+6. Métodos de Recuperação de Hidrocarbonetos e Enhaced Oil Recovery (EOR)
+O uso de critérios de falha, como o de Mohr-Coulomb, mostra a iminência do risco de reativação de
+falhas. Os métodos mais avançados de recuperação requerem uma análise mais detalhada do
+comportamento mecânico da região.
+1.3 – Aplicação da Mecânica das Rochas na indústria petrolífera
+CAPÍTULO 1 
+–
+ INTRODUÇÃO À MECÂNICA DAS ROCHAS
+O ácido é injetado 
+abaixo da pressão de 
+fraturamento da 
+formação e dissolve o 
+material na formação 
+que está restringindo 
+o escoamento, ou a 
+própria formação, 
+criando novos 
+caminhos para 
+alcançar o poço
+O ácido é 
+bombeado acima 
+da pressão de 
+fraturamento da 
+formação, que 
+além de aumentar 
+a permeabilidade 
+local com geração 
+de fraturas
+misturas de ácido 
+clorídrico (HCl) para 
+limpar incrustações, 
+como carbonato de 
+cálcio (CaCO3), 
+ferrugem e outros 
+resíduos que 
+restringem o 
+escoamento no 
+poço.
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 31
+Felisberto Queta
+2023/2024
+1. O que é a mecânica das rochas?
+a) O estudo do comportamento das rochas sob diferentes condições de carga e ambiente
+b) O estudo das fundações de edifícios
+c) O estudo de solos para terraplenagem
+d) O estudo do impacto ambiental das construções
+3. O ensaio de compressão uniaxial em rochas é utilizado para determinar:
+a) A densidade da rocha
+b) A resistência ao cisalhamento
+c) O módulo de elasticidade e resistência à compressão da rocha
+d) O teor de umidade da rocha
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia Civil
+2. Qual é o principal objetivo da mecânica das rochas na engenharia civil?
+a) Analisar a resistência das estruturas metálicas
+b) Avaliar o comportamento das rochas em escavações, túneis e taludes
+c) Determinar o impacto ambiental das construções
+d) Melhorar a resistência do concreto
+4. Em túneis escavados em maciços rochosos, qual método é frequentemente utilizado para garantir estabilidade?
+a) Solo grampeado
+b) Concreto armado
+c) Método de suporte primário com concreto projetado e tirantes
+d) Fundações profundas
+5. Em taludes rochosos instáveis, qual técnica pode ser usada para estabilização?
+a) Uso de vegetação para controle da erosão
+b) Injeção de cimento para aumentar a coesão
+c) Uso de tirantes e chumbadores para reforço estrutural
+d) Todas as anteriores
+6. Em projetos de plataformas petrolíferas sobre maciços rochosos, qual factor é essencial para a segurança estrutural?
+a) O peso da plataforma
+b) A permeabilidade e resistência da fundação rochosa
+c) A cor das rochas
+d) A profundidade da plataforma
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 32
+Felisberto Queta
+2023/2024
+1. O que a mecânica das rochas estuda na engenharia de minas?
+a) O comportamento das rochas frente a escavações e esforços mecânicos
+b) A composição química dos minerais
+c) O impacto ambiental da mineração
+d) A eficiência dos equipamentos de perfuração
+3. Qual dos seguintes fatores pode influenciar a estabilidade de taludes em minas a céu aberto?
+a) A presença de descontinuidades no maciço rochoso
+b) A quantidade de minério disponível na jazida
+c) A profundidade do lençol freático
+d) Apenas a resistência à compressão da rocha
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Minas
+2. Qual o principal objetivo da mecânica das rochas na mineração subterrânea?
+a) Determinar a vida útil dos equipamentos de perfuração
+b) Garantir a estabilidade das cavidades escavadas e prevenir colapsos
+c) Reduzir os custos operacionais das minas
+d) Controlar a qualidade do minério extraído
+4. Em minas subterrâneas, qual método é frequentemente usado para reforçar maciços rochosos?
+a) Injeção de cal para estabilizar solos
+b) Uso de concreto armado para suporte primário
+c) Aplicação de tirantes e concreto projetado
+d) Uso de fundações profundas para sustentação das
+5. O que pode causar instabilidade nos taludes de minas a céu aberto?
+a) Chuvas intensas e infiltração de água
+b) Vibrações causadas por detonações
+c) Presença de fraturas e falhas no maciço rochoso
+d) Todas as anteriores
+6. Qual dos seguintes métodos é utilizado para análise de tensões in situ em maciços rochosos?
+a) Ensaio de permeabilidade
+b) Técnica de overcoring
+c) Método de CBR (California Bearing Ratio)
+d) Ensaio de limite de Atterberg
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 33
+Felisberto Queta
+2023/2024
+1. Qual é a principal aplicação da mecânica das rochas na engenharia de petróleo?
+a) Avaliação da estabilidade de taludes em minas
+b) Análise do comportamento das formações rochosas durante a perfuração e produção de petróleo
+c) Determinação da composição química do petróleo
+d) Estudo da resistência de materiais metálicos usados em oleoduto
+3. Qual é o principal objetivo da mecânica das rochas em poços de petróleo?
+a) Garantir a estabilidade do poço e evitar colapsos na formação rochosa
+b) Melhorar a eficiência do refino do petróleo
+c) Analisar a qualidade do óleo extraído
+d) Reduzir a corrosão de tubos de perfuração
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Petróleo
+2. O que significa a sigla "RRT" (Reservoir Rock Testing) na engenharia de petróleo?
+a) Teste de resistência à compressão das rochas
+b) Teste de rochas para avaliação de reservatórios de petróleo
+c) Método de análise química de fluidos de perfuração
+d) Técnica de extração aprimorada de petróleo
+4. Qual dos seguintes parâmetros é fundamental para a análise de estabilidade de um poço de petróleo?
+a) Permeabilidade da formação
+b) Gradiente de fraturamento da rocha
+c) Teor de enxofre do petróleo
+d) Temperatura ambiente do local de extração
+5. O módulo de Young de uma rocha é usado para determinar:
+a) A resistência ao cisalhamento do fluido de perfuração
+b) O comportamento elástico da rocha sob tensão
+c) A quantidade de petróleo presente na formação
+d) A densidade do óleo extraído
+6. O que pode causar instabilidade no poço de petróleo durante a perfuração?
+a) Tensões excessivas na formação rochosa
+b) Pressão inadequada do fluido de perfuração
+c) Presença de fraturas naturais na rocha
+d) Todas as anteriores
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 34
+Felisberto Queta
+2023/2024
+7. A "Janela de Perfuração Segura" refere-se a:
+a) O intervalo de pressões em que a perfuração pode ser realizada sem colapsos ou perdas de circulação
+b) O tempo necessário para concluir a perfuração de um poço
+c) A profundidade máxima permitida para um poço de petróleo
+d) O limite de temperatura que uma broca pode suportar
+9. Na perfuração de formações instáveis, uma técnica comum para evitar desmoronamento da parede do poço é:
+a) A injeção de cimento na formação
+b) O uso de fluidos de perfuração balanceados para estabilizar as tensões na rocha
+c) O aumento da taxa de extração do petróleo
+d) A realização de testes sísmicos constantes
+Quiz: Aplicação da 
+Mecânica das 
+Rochas na 
+Engenharia de 
+Petróleo
+8. Qual fenômeno ocorre quando a pressão de poros de uma rocha excede a resistência da formação?
+a) Colapso do poço
+b) Kick (entrada indesejada de fluidos no poço)
+c) Rockburst
+d) Redução da viscosidade do petróleo
+10. Qual dos seguintes fenômenos pode indicar instabilidade geomecânica em poços de petróleo?
+a) Formação de cavidades ou colapsos no poço
+b) Pressão constante no poço durante a perfuração
+c) Produção de petróleo sem areia
+d) Redução do índice de anisotropia da rocha
+11. O que é a "pressão de poro" em uma formação petrolífera?
+a) A pressão exercida pelos fluidos contidos nos espaços porosos da rocha
+b) A pressão atmosférica que age na superfície do reservatório
+c) A força aplicada pela broca de perfuração na rocha
+d) A resistência mecânica da rocha à compressão
+12. Qual é a função principal do fluido de perfuração em relação à mecânica das rochas?
+a) Reduzir o atrito entre a broca e a rocha
+b) Manter a estabilidade do poço e controlar a pressão da formação
+c) Dissolver hidrocarbonetos para facilitar a extração
+d) Melhorar a qualidade do petróleo extraído
+Autor:
+Ano Académico:
+CAPÍTULO 1 – INTRODUÇÃO À MECÂNICA DAS ROCHAS 35
+Felisberto Queta
+2023/2024
+13. O que pode ocorrer se a pressão do fluido de perfuração for muito maior que a pressão de fraturamento da 
+rocha?
+a) Fraturamento indesejado da formação e perda de circulação
+b) Aumento da eficiência da extração
+c) Redução do teor de água no petróleo
+d) Melhoria da porosidade do reservatório
+15. Quando ocorre o fenômeno de "sanding" (produção de areia) em reservatórios?
+a) Quando a rocha do reservatório é fraca e sofre erosão devido ao fluxo de fluidos
+b) Quando há excesso de pressão na formação
+c) Quando a temperatura do petróleo é muito alta
+d) Quando a permeabilidade da rocha é muito baixa
+Quiz: Aplicação da Mecânica das Rochas na Engenharia de Petróleo
+14. O que são tensões horizontais e verticais in situ em uma formação rochosa?
+a) Tensões naturais da crosta terrestre que influenciam a estabilidade de poços e fraturamento hidráulico
+b) Pressões induzidas pelo fluido de perfuração
+c) Movimentos sísmicos locais causados pela extração de petróleo
+d) Variações de temperatura que afetam a rocha
+Autor:
+Ano Académico:
+REFERENCIAS BIBLIOGRÁFICAS 36
+Felisberto Queta
+2024/2025
+1. Jaeger, J.C., Cook, N.G.W., & Zimmerman, R.W. (2007). Fundamentals of Rock Mechanics (4ª edição). 
+Wiley-Blackwell
+• Este livro aborda a mecânica das rochas de maneira geral, com ênfase em sua aplicação prática na 
+engenharia geotécnica e em projetos de infraestrutura. Ele detalha como as propriedades das rochas 
+influenciam o comportamento estrutural em obras subterrâneas e em fundações.
+2. Goodman, R.E. (1989). Introduction to Rock Mechanics (2ª edição). Wiley.
+• Goodman oferece uma introdução abrangente à mecânica das rochas, cobrindo teoria e práticas 
+aplicadas, com exemplos de engenharia que envolvem a construção de túneis, fundações e outras obras 
+civis que dependem da estabilidade das rochas.
+3. Brady, B. H. G., & Brown, E. T. (2005). Rock Mechanics for Underground Mining (3rd ed.). Springer.
+• Este livro é um clássico na área de mecânica das rochas e cobre aspectos fundamentais que também 
+são aplicáveis à indústria de petróleo, como comportamento das rochas sob tensão e deformação.
+4. Lee, V. John. (1982). Applied Petroleum Reservoir Engineering. Prentice Hall
+• Este livro fornece uma análise detalhada sobre engenharia de reservatórios e aborda conceitos 
+importantes de mecânica das rochas no contexto da produção de petróleo e gás.
+5. Cui, Z. & Dey, S. (2019). Rock Mechanics and Engineering (Vol. 1). CRC Press.
+• Este volume fornece uma cobertura abrangente dos princípios de mecânica das rochas e sua aplicação 
+em diversos setores, incluindo a indústria petrolífera
+
+---

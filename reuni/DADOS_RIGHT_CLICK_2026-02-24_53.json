@@ -1,0 +1,325 @@
+{
+  "timestamp": "2026-02-24T18:56:42.121Z",
+  "metodo": "right_click_contextual_menu",
+  "totalItems": 53,
+  "dados": [
+    {
+      "nivel": 0,
+      "texto": "[gtranslate]",
+      "tipo": "ITEM",
+      "index": 0
+    },
+    {
+      "nivel": 0,
+      "texto": "Procurar",
+      "tipo": "ITEM",
+      "index": 1
+    },
+    {
+      "nivel": 0,
+      "texto": "DECRETO PRESIDENCIAL Nº271/20\nREGISTO E CERTIFICAÇÃO DE EMPRESAS PARA O SECTOR PETROLÍFERO EM ANGOLA\nVER MAIS",
+      "tipo": "ITEM",
+      "index": 2
+    },
+    {
+      "nivel": 0,
+      "texto": "DECRETO PRESIDENCIAL Nº271/20",
+      "tipo": "ITEM",
+      "index": 3
+    },
+    {
+      "nivel": 0,
+      "texto": "REGISTO E CERTIFICAÇÃO DE EMPRESAS PARA O SECTOR PETROLÍFERO EM ANGOLA",
+      "tipo": "ITEM",
+      "index": 4
+    },
+    {
+      "nivel": 0,
+      "texto": "VER MAIS",
+      "tipo": "ITEM",
+      "index": 5
+    },
+    {
+      "nivel": 0,
+      "texto": "Introdução\nRegimes de Contratação\nCiclo de Contratação\nLista de Bens e Serviços\nInstrutivo\nManual\nRegisto de Fornecedor",
+      "tipo": "ITEM",
+      "index": 6
+    },
+    {
+      "nivel": 0,
+      "texto": "INTRODUÇÃO",
+      "tipo": "ITEM",
+      "index": 7
+    },
+    {
+      "nivel": 0,
+      "texto": "2534\nEmpresas Registadas\n1054\nEmpresas Visitadas\n1199\nEmpresas Certificadas",
+      "tipo": "ITEM",
+      "index": 8
+    },
+    {
+      "nivel": 0,
+      "texto": "2534\nEmpresas Registadas",
+      "tipo": "ITEM",
+      "index": 9
+    },
+    {
+      "nivel": 0,
+      "texto": "2534",
+      "tipo": "ITEM",
+      "index": 10
+    },
+    {
+      "nivel": 0,
+      "texto": "Empresas Registadas",
+      "tipo": "ITEM",
+      "index": 11
+    },
+    {
+      "nivel": 0,
+      "texto": "1054\nEmpresas Visitadas",
+      "tipo": "ITEM",
+      "index": 12
+    },
+    {
+      "nivel": 0,
+      "texto": "1054",
+      "tipo": "ITEM",
+      "index": 13
+    },
+    {
+      "nivel": 0,
+      "texto": "Empresas Visitadas",
+      "tipo": "ITEM",
+      "index": 14
+    },
+    {
+      "nivel": 0,
+      "texto": "1199\nEmpresas Certificadas",
+      "tipo": "ITEM",
+      "index": 15
+    },
+    {
+      "nivel": 0,
+      "texto": "1199",
+      "tipo": "ITEM",
+      "index": 16
+    },
+    {
+      "nivel": 0,
+      "texto": "Empresas Certificadas",
+      "tipo": "ITEM",
+      "index": 17
+    },
+    {
+      "nivel": 0,
+      "texto": "A nossa História",
+      "tipo": "ITEM",
+      "index": 18
+    },
+    {
+      "nivel": 0,
+      "texto": "Responsabilidade Social",
+      "tipo": "ITEM",
+      "index": 19
+    },
+    {
+      "nivel": 0,
+      "texto": "Contactos",
+      "tipo": "ITEM",
+      "index": 20
+    },
+    {
+      "nivel": 0,
+      "texto": "Oportunidades\nLicitações 2025\nOferta Permanente\nConferência de Dados 2021\nConferência de Dados 2023",
+      "tipo": "ITEM",
+      "index": 21
+    },
+    {
+      "nivel": 0,
+      "texto": "Oportunidades",
+      "tipo": "ITEM",
+      "index": 22
+    },
+    {
+      "nivel": 0,
+      "texto": "Licitações 2025\nOferta Permanente\nConferência de Dados 2021\nConferência de Dados 2023",
+      "tipo": "ITEM",
+      "index": 23
+    },
+    {
+      "nivel": 0,
+      "texto": "Licitações 2025",
+      "tipo": "ITEM",
+      "index": 24
+    },
+    {
+      "nivel": 0,
+      "texto": "Oferta Permanente",
+      "tipo": "ITEM",
+      "index": 25
+    },
+    {
+      "nivel": 0,
+      "texto": "Conferência de Dados 2021",
+      "tipo": "ITEM",
+      "index": 26
+    },
+    {
+      "nivel": 0,
+      "texto": "Conferência de Dados 2023",
+      "tipo": "ITEM",
+      "index": 27
+    },
+    {
+      "nivel": 0,
+      "texto": "Dados E & P\nPlataforma IONA\nOASIS - Banco de Imagens\nPacotes de DADOS\nMapas E&P",
+      "tipo": "ITEM",
+      "index": 28
+    },
+    {
+      "nivel": 0,
+      "texto": "Dados E & P",
+      "tipo": "ITEM",
+      "index": 29
+    },
+    {
+      "nivel": 0,
+      "texto": "Plataforma IONA\nOASIS - Banco de Imagens\nPacotes de DADOS\nMapas E&P",
+      "tipo": "ITEM",
+      "index": 30
+    },
+    {
+      "nivel": 0,
+      "texto": "Plataforma IONA",
+      "tipo": "ITEM",
+      "index": 31
+    },
+    {
+      "nivel": 0,
+      "texto": "OASIS - Banco de Imagens",
+      "tipo": "ITEM",
+      "index": 32
+    },
+    {
+      "nivel": 0,
+      "texto": "Pacotes de DADOS",
+      "tipo": "ITEM",
+      "index": 33
+    },
+    {
+      "nivel": 0,
+      "texto": "Mapas E&P",
+      "tipo": "ITEM",
+      "index": 34
+    },
+    {
+      "nivel": 0,
+      "texto": "Média\nNotícias\nBoletim Informativo\nVídeos\nRecorte de Imprensa",
+      "tipo": "ITEM",
+      "index": 35
+    },
+    {
+      "nivel": 0,
+      "texto": "Média",
+      "tipo": "ITEM",
+      "index": 36
+    },
+    {
+      "nivel": 0,
+      "texto": "Notícias\nBoletim Informativo\nVídeos\nRecorte de Imprensa",
+      "tipo": "ITEM",
+      "index": 37
+    },
+    {
+      "nivel": 0,
+      "texto": "Notícias",
+      "tipo": "ITEM",
+      "index": 38
+    },
+    {
+      "nivel": 0,
+      "texto": "Boletim Informativo",
+      "tipo": "ITEM",
+      "index": 39
+    },
+    {
+      "nivel": 0,
+      "texto": "Vídeos",
+      "tipo": "ITEM",
+      "index": 40
+    },
+    {
+      "nivel": 0,
+      "texto": "Recorte de Imprensa",
+      "tipo": "ITEM",
+      "index": 41
+    },
+    {
+      "nivel": 0,
+      "texto": "Links Rápidos\nProdução\nConteúdo local\nCódigo de Conduta e Ética\nCanal de Denúncia",
+      "tipo": "ITEM",
+      "index": 42
+    },
+    {
+      "nivel": 0,
+      "texto": "Links Rápidos",
+      "tipo": "ITEM",
+      "index": 43
+    },
+    {
+      "nivel": 0,
+      "texto": "Produção\nConteúdo local\nCódigo de Conduta e Ética\nCanal de Denúncia",
+      "tipo": "ITEM",
+      "index": 44
+    },
+    {
+      "nivel": 0,
+      "texto": "Produção",
+      "tipo": "ITEM",
+      "index": 45
+    },
+    {
+      "nivel": 0,
+      "texto": "Conteúdo local",
+      "tipo": "ITEM",
+      "index": 46
+    },
+    {
+      "nivel": 0,
+      "texto": "Código de Conduta e Ética",
+      "tipo": "ITEM",
+      "index": 47
+    },
+    {
+      "nivel": 0,
+      "texto": "Canal de Denúncia",
+      "tipo": "ITEM",
+      "index": 48
+    },
+    {
+      "nivel": 0,
+      "texto": "Subscrever a nossa newsletter:\nSubscrever",
+      "tipo": "ITEM",
+      "index": 49
+    },
+    {
+      "nivel": 0,
+      "texto": "Subscrever a nossa newsletter:",
+      "tipo": "ITEM",
+      "index": 50
+    },
+    {
+      "nivel": 0,
+      "texto": "Subscrever",
+      "tipo": "ITEM",
+      "index": 51
+    },
+    {
+      "nivel": 0,
+      "texto": "© Copyright 2026 - Todos os direitos reservados",
+      "tipo": "ITEM",
+      "index": 52
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[01:21:57] ═══════════════════════════════════════════════════════
+[01:21:57] 🎯 ANPG - EXTRAÇÃO AUTOMÁTICA COMPLETA
+[01:21:57] ═══════════════════════════════════════════════════════
+[01:21:57] 
+[01:21:57] [1/5] 🚀 Iniciando navegador...
+[01:22:02] ✅ Navegador pronto
+[01:22:02] [2/5] 📍 Abrindo https://anpg.co.ao/conteudo-local/...
+[01:22:33] ✅ Página carregada (Status: 200)
+[01:22:33] [2.5] ⏳ Aguardando Power BI carregar...
+[01:22:34] ✅ Conteúdo detectado
+[01:22:34] [2.6] ⏳ Aguardando 10 segundos para renderização...
+[01:22:44] ✅ Pronto para interação
+[01:22:44] [3/5] 🔄 Expandindo todas as categorias...
+[01:22:44]    Tentativa 1/3 de expansão...
+[01:22:44]    ✓ 31 elementos clicados
+[01:22:47]    Tentativa 2/3 de expansão...
+[01:22:47]    ✓ 30 elementos clicados
+[01:22:50]    Tentativa 3/3 de expansão...
+[01:22:51]    ✓ 30 elementos clicados
+[01:22:54] ✅ Expansão concluída (91 clicks)
+[01:22:54] [3.5] 👆 Executando right-clicks nas empresas...
+[01:22:54] ✅ 0 right-clicks executados
+[01:22:56] [4/5] 📥 Extraindo nomes de empresas...
+[01:22:56] ✅ Extraídos 71 itens da página
+[01:22:56] ✅ Total único: 71 empresas
+[01:22:56] 
+   Primeiras 10 empresas extraídas:
+[01:22:56]    1. Skip to content
+[01:22:56]    2. Nossa História
+[01:22:56]    3. Responsabilidade Social
+[01:22:56]    4. Contactos
+[01:22:56]    5. Oportunidades
+[01:22:56]    6. Licitação 2025
+[01:22:56]    7. Oferta Permanente
+[01:22:56]    8. Licitação 2023
+[01:22:56]    9. Dados de E&P
+[01:22:56]    10. Plataforma IONA
+[01:22:56] [5/5] 💾 Salvando resultados...
+[01:22:56] ✅ CSV: ANPG_EXTRACTED_2026-02-25_71.csv
+[01:22:56] ✅ JSON: ANPG_EXTRACTED_2026-02-25_71.json

@@ -1,0 +1,26 @@
+Referências
+AHMED,T.ReservoirEngineeringHandbook.4thed.GulfProfessionalPublishing,2010.
+ALYAFEI,N.MicroscopicPropertiesofReservoirRocks.QatarUniversity,2019.
+AZIZ,K.;SETTARI,A.PetroleumReservoirSimulation.AppliedSciencePublishers,1979.
+BACHU,S.SequestrationofCO2inGeologicalMedia:CriteriaandApproachforSiteSelection
+inResponsetoClimateChange.EnergyConversionandManagement,v.41,n.9,p.953–970,
+2000.
+BOURDET,D.;AYOUB,J.A.;PIRARD,Y.M.UseofPressureDerivativeinWell-Test
+Interpretation.SPEFormationEvaluation,v.4,n.2,p.293–302,1989.
+DAKE,L.P.ThePracticeofReservoirEngineering.Reviseded.Elsevier,2014.
+HAVLENA,D.;ODEH,A.S.TheMaterialBalanceasanEquationofaStraightLine.Journal
+ofPetroleumTechnology,v.15,n.8,p.896–900,1963.
+JAVADPOUR,F.NanoporesandApparentPermeabilityofGasFlowinMudrocks(Shalesand
+Siltstone).JournalofCanadianPetroleumTechnology,v.48,n.8,p.16–21,2009.
+McCAIN,W.D.ThePropertiesofPetroleumFluids.2nded.PennWellBooks,1990.
+MUSKAT,M.PhysicalPrinciplesofOilProduction.McGraw-Hill,1949.
+PEACEMAN,D.W.FundamentalsofNumericalReservoirSimulation.Elsevier,1977.
+RAMOS,G.A.R.FundamentosComputacionaisemEngenhariadePetróleo.ISPTEC,Luanda,
+2016.
+RAMOS,G.A.R.Engenhariade Reservatórios:MétodosAnalíticoseComputacionais.
+ISPTEC,Luanda,2020.
+ROSA,A.J.;CARVALHO,R.S.;XAVIER,J.A.D.EngenhariadeReservatóriosdePetróleo.
+Interciência,RiodeJaneiro,2006.
+TERRY,R.E.;ROGERS,J.B.;CRAFT,B.C.AppliedPetroleumReservoirEngineering.3rded.
+Pearson,2015.
+YERGIN,D.ThePrize:TheEpicQuestforOil,Money,andPower.Simon&Schuster,1991.

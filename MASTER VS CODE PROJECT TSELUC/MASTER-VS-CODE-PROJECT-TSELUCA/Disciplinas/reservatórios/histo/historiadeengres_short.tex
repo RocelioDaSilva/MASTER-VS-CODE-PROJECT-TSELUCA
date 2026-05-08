@@ -1,0 +1,434 @@
+\documentclass[
+  12pt,
+  a4paper,
+  oneside,
+  brazilian,
+  sumario=tradicional
+]{abntex2}
+
+\PassOptionsToPackage{brazilian}{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage{setspace}
+\geometry{a4paper,left=3cm,right=2cm,top=3cm,bottom=2cm}
+\setlength{\parindent}{1.25cm}
+\OnehalfSpacing
+\usepackage{hyperref}
+\usepackage[alf,abnt-etal-list=0,abnt-etal-cite=3]{abntex2cite}
+
+% Dados mínimos
+\titulo{A história da Engenharia de Reservatórios de Petróleo --- Versão condensada}
+\autor{Rocélio Da Silva}
+\local{Luanda}
+\data{2026}
+\instituicao{Instituto Superior Politécnico de Tecnologias e Ciências (ISPTEC)}
+\begin{document}
+\pretextual
+\imprimircapa
+\begin{resumo}
+Versão condensada do trabalho original: síntese crítica das quatro eras da
+Engenharia de Reservatórios (empírica, fundamentação teórica, consolidação
+científica e era digital), com ênfase em volumetria, EOR e Captura e
+Armazenamento de CO\textsubscript{2}. Destina-se a um público técnico que
+precisa de uma visão compacta e referenciada para uso executivo e didático.
+\vspace{6pt}
+
+Em termos práticos de engenharia de campo, isso implica que pequenas variações
+na permeabilidade efetiva ou na porosidade média podem gerar variações
+significativas nas taxas de produção previstas. A sensibilidade desses
+parâmetros deve ser quantificada por análises de sensibilidade e simulada em
+cenários alternativos para evitar subestimações do risco técnico.
+
+Além disso, a generalização para fluxos multifásicos introduz correlações
+empíricas e parâmetros adicionais (permeabilidades relativas, fatores de
+volume) que precisam ser calibrados com dados laboratoriais e de campo.
+\noindent\textbf{Palavras-chave}: Engenharia de Reservatórios; EOR; CCS; volumetria; Angola.
+\end{resumo}
+\cleardoublepage
+\textual
+% Diagnostic: write body start page to log
+\typeout{BODY_PAGE_START=\thepage}
+
+\chapter{Introdução}
+Esta versão condensada resume os principais marcos e conceitos da Engenharia de
+Reservatórios, priorizando clareza e sintonia com as necessidades de formação
+e decisão em Angola. O objetivo é manter rigor conceitual, reduzir detalhes
+operacionais extensos e oferecer material utilizável em aulas, apresentações
+executivas e relatórios técnicos curtos.
+
+Segue um exemplo de pontos de discussão (para aula):
+\begin{enumerate}
+  \item Como a escolha do método volumétrico afeta decisões de investimento?
+  \item Quais indicadores de produção são mais sensíveis à presença de uma
+    capa de gás versus um influxo de água?
+  \item Em que situações a IA poderia induzir viés nas previsões de declínio?
+\end{enumerate}
+
+Esses pontos facilitam a rápida tradução do texto para atividades pedagógicas
+e para relatórios executivos.
+
+Procedimento prático passo a passo (resumido):
+\begin{enumerate}
+  \item Delimitar a área efetiva com base em sísmica e poços; documentar incerteza.
+  \item Estimar a espessura média útil e porosidade a partir de testemunhos.
+  \item Calcular volume bruto e aplicar fatores de saturação e retrabalho.
+  \item Realizar análise Monte Carlo simples variando $\phi$, $S_w$ e $A$ para obter
+    P10/P50/P90.
+  \item Atualizar estimativa após os primeiros 12 meses de produção usando
+    balanço de materiais.
+\end{enumerate}
+
+O texto enfatiza os elementos que informam decisões estratégicas: como se
+estima o volume recuperável, quais mecanismos naturais guiam a produção,
+como a simulação e as técnicas de EOR alteram o valor econômico de um campo,
+e de que modo a tecnologia digital e o CCS representam oportunidades e
+desafios para Angola.
+
+Esta versão inclui critérios de priorização (o que investigar primeiro em
+
+Checklist rápido para avaliação de EOR (resumido):
+\begin{itemize}
+  \item Existe capacidade de injeção necessária (pressão, poços de injeção)?
+  \item Há disponibilidade de água / CO\textsubscript{2} a custo competitivo?
+  \item Propriedades do óleo (viscosidade, API) são compatíveis com o método?
+  \item Impacto ambiental e exigências regulatórias foram avaliados?
+\end{itemize}
+um campo), recomendações práticas para testes pilotos e um checklist breve
+para tomada de decisão técnica. O objetivo não é substituir o texto completo,
+mas prover uma versão operacional para gestores e docentes.
+
+Adicionalmente, esta síntese apresenta pequenas notas técnicas que podem ser
+utilizadas como checklists em fases de concessão e licenciamento: requisitos
+de dados mínimos para avaliação (p.ex. número de poços de avaliação, dados
+PVT, testes de formação), indicadores de viabilidade econômica preliminar,
+e métricas de sucesso para pilotos de EOR (incremento de TRR, tempo até
+payback). Essas notas facilitam a transição entre análise acadêmica e
+decisão de investimento.
+
+Plano de monitoramento (resumido):
+\begin{enumerate}
+  \item Linha de base sísmica e geoquímica antes da injeção;
+  \item Monitoramento sísmico repetido (4D) em intervalos definidos;
+  \item Rede de poços observadores para medição de pressão e composição;
+  \item Relatórios periódicos e gatilhos de ação se anomalias forem detectadas.
+\end{enumerate}
+
+Esses elementos, quando integrados a sistemas digitais de suporte, permitem
+respostas rápidas e documentadas a qualquer anomalia detectada durante a vida
+útil do projeto CCS.
+
+Além disso, recomenda-se identificar métricas-chave por capítulo (p.ex., tempo
+até payback para um piloto de EOR, incerteza percentual na estimativa volumétrica)
+e incluir um quadro-resumo com 3--5 indicadores que facilite decisões rápidas.
+
+Para uso docente, cada capítulo inclui pontos de discussão sugeridos e uma
+
+pequena lista de leituras recomendadas ao final (retirada da bibliografia
+principal), permitindo que a versão curta seja utilizada em aulas de 1--2
+horas por tema.
+
+\section{Objetivo e Escopo}
+Apresentar, em formato reduzido, os elementos essenciais: fundamentos físicos
+(Lei de Darcy), propriedades de rocha e fluido, métodos de estimativa de
+volumes, mecanismos de produção, evolução histórica da simulação computacional,
+EOR, CCS, e desafios contemporâneos.
+\vspace{6pt}
+\noindent\textbf{Observação sobre contagem de páginas:} esta versão foi projetada
+para que o corpo do texto (capítulos) possa ocupar entre 15 e 20 páginas quando
+ampliada com notas e quadros técnicos; irei ajustar até alcançarmos 15 páginas
+do corpo conforme solicitado.
+
+Como usar esta versão: consulte os quadros-resumo para apresentações executivas
+rápidas; para aulas, selecione um capítulo por encontro e utilize os pontos de
+discussão no final de cada seção; para avaliações de campo, siga o procedimento
+prático e inclua o checklist rápido em submissões técnicas. Estes usos dirigem a
+estrutura do documento e o tornam aplicável em contextos operacionais e
+acadêmicos.
+
+\chapter{Fundamentos essenciais (resumo)}
+\section{Lei de Darcy e implicações}
+A Lei de Darcy relaciona vazão e gradiente de pressão e é a base do modelo de
+escoamento em meios porosos. Sua generalização para fluxos multifásicos e a
+integração com equações de conservação de massa originam os modelos usados em
+simuladores numéricos.
+
+Darcy oferece a linguagem quantitativa: permeabilidade, viscosidade, área e
+gradiente definem vazão. Em escala de reservatório, essa relação é a base
+para a equação de difusividade que governa a evolução da pressão e permite
+prever resposta a produção e injeção.
+
+Na prática, operações de engenharia devem sempre explicitar as hipóteses de
+escala e linearidade subjacentes à Lei de Darcy. Em reservatórios com forte
+heterogeneidade fracturada ou em meios com transporte não-lineares, as
+interpretações quantitativas exigem modelos adaptados e cautela na extrapolação.
+
+Um cálculo de ordem de grandeza pode esclarecer escalas temporais: tomando um
+comprimento característico $L=1000\,$m e uma difusividade efetiva $c\approx1000\,$m\textsuperscript{2}/d, o tempo característico $t\approx L^{2}/c$ é da ordem de $10^{3}$ dias (alguns anos), o que justifica programas de monitoramento plurianuais.
+
+\section{Propriedades críticas}
+Porosidade e permeabilidade controlam armazenamento e fluxo; saturações e
+permeabilidades relativas determinam deslocamento multifásico. A caracterização
+PVT define comportamento do fluido e a estratégia de superfície.
+
+Nos estudos de campo, recomenda-se priorizar: (i) perfis de porosidade via
+logs e testemunhos; (ii) curvas de permeabilidade relativa; (iii) análises PVT
+de amostras representativas; e (iv) integração sísmica para delimitar volume.
+Esses quatro elementos reduzem significativamente a incerteza das estimativas.
+
+Além da caracterização estática, recomenda-se integração com campainhas de
+ensaios: perfis de produção, testes de formação e registros de pressão que
+permitam validar hipóteses de conectividade e permeabilidade efetiva em escala
+de poço. A interação entre dados estáticos (logs, sísmica) e dinâmicos
+(produção/pressão) é a melhor prática industrial para reduzir riscos.
+
+ Dados mínimos e densidade recomendada: como regra prática inicial, proponha ao menos
+ uma malha de avaliação com densidade de 1 poço de avaliação a cada 10--40\,km\textsuperscript{2}
+ em reservatórios heterogêneos, ajustando conforme a variabilidade local. Priorize
+ núcleos representativos e análises PVT que permitam calibrar modelos numéricos.
+
+\chapter{Estimativa de volumes e verificação}
+\section{Métodos resumidos}
+1) Analogia geológica (pré-perfuração). 2) Volumetria integrada: $V_o = A\times h\times \phi(1-S_w)$. 3) Probabilística (P90/P50/P10). 4) Método de performance/declínio para
+validação retrospectiva.
+
+Uma prática operacional é combinar volumetria integrada para estimativa inicial
+com análise probabilística para risco e com balanço de materiais para validação
+dinâmica após início da produção. Isso oferece triangulação metodológica e
+melhora a confiança das decisões de investimento.
+
+Exemplo rápido (ilustrativo): campo com área estimada 40 km\textsuperscript{2},
+espessura média 10 m, porosidade 0{,}18 e saturação inicial de água 0{,}25.
+Aplicando a equação volumétrica simples, obtém-se uma estimativa inicial do
+volume bruto que deve ser ajustada por fator de recuperação e incertezas.
+Documentar esse cálculo passo a passo é obrigatório para transparência técnica.
+
+Exemplo numérico rápido: para A = 40 km\textsuperscript{2} (40\times10^{6}\,m^{2}), h = 10 m, $\phi=0{,}18$ e $S_{w}=0{,}25$ obtém-se:
+
+\[V_{\mathrm{o}} \approx A\times h\times \phi(1-S_{w})
+  \approx 40\times10^{6}\times10\times0{,}18\times0{,}75
+  \approx 5{,}4\times10^{7}\,\mathrm{m}^{3}.
+\]
+
+Convertendo para barris (1\,m^{3}\approx6{,}2898\,bbl) tem-se cerca de $3{,}4\times10^{8}$\,bbl (estimativa bruta), antes de aplicar fator de recuperação e correções.
+
+\section{Recomendação prática}
+Combinar volumetria integrada com análise probabilística e validação por
+declínio; usar balanço de materiais para checagem de consistência dos dados.
+
+Em termos de documentação técnica, documente hipóteses-chave (área efetiva,
+porosidade média, saturação inicial) e matrizes de sensibilidade que relacionem
+essas hipóteses a P10/P50/P90; inclua exigência de revisão anual com dados de
+produção acumulados.
+Fatores de recuperação típicos: como orientação prática e para uso em cenários
+preliminares, considere valores de recuperação primaria na faixa de 5\%--15\% OOIP;
+após injeção de água (secundária) faixas típicas situam-se em 20\%--40\% OOIP;
+EOR comercialmente viável costuma adicionar entre 5\% e 25\% OOIP dependendo do
+caso. Estes números servem apenas como pontos de partida para análises mais
+detalhadas.
+
+\chapter{Técnicas de produção e EOR (síntese)}
+\section{Mecanismos naturais}
+Resumo: expansão de fluido/rocha; gás em solução; capa de gás; influxo de água;
+e segregação gravitacional. Identificar mecanismo dominante orienta estratégia.
+
+Um diagnóstico rápido de mecanismo dominante pode ser obtido com: (i) curva de
+produção e evolução da taxa de gás; (ii) perfil de pressão e taxa de declínio;
+e (iii) resultados do balanço de materiais. Essas três fontes permitem selecionar
+estratégias de injeção adequadas.
+
+\section{EOR -- opções e aplicação}
+Categorias: térmicos (vapor/combustão in situ), miscíveis (CO\textsubscript{2}, N\textsubscript{2}), químicos (polímeros, surfactantes) e microbiológicos.
+Expectativa de ganho adicional típica: +5\% a +25\% OOIP, dependendo do campo.
+
+Decisão de EOR deve ser precedida por: (i) estudos de compatibilidade rocha-fluido;
+(ii) análise econômica sob cenários de preço; (iii) teste piloto em escala
+relevante; e (iv) plano de monitoração e mitigação ambiental.
+
+Em termos de priorização, recomenda-se avaliar primeiro técnicas de baixo custo
+e baixo risco operacional (p.ex., otimização de injeção de água, ajustes de
+completamento) antes de escalar para EOR químico ou térmico, que exigem
+investimentos e infraestrutura maiores.
+
+Projeto piloto: defina objetivos quantificáveis (ex.: incremento de TRR em  \% relativo, redução do declínio em bbl/d), horizonte mínimo de observação (12--24 meses) e critérios de sucesso claros (incremento sustentado de produção, integridade operacional). Use delineamento experimental com poços controle para isolar efeitos e estimar incertezas.
+
+Exemplo breve: um piloto hipotético bem delineado (poços teste + poços controle) pode revelar incrementos de TRR na ordem de 8\%--12\% em 12--24 meses para intervenções químicas ou miscíveis, dependendo de compatibilidade rocha-fluido e escala do teste. Registre métricas de vazão, composição e pressão para quantificar impacto e extrapolar cenários de campo.
+
+\chapter{Era digital e aplicações contemporâneas}
+\section{Simulação e digital twins}
+Modelagem numérica (difusividade, discretização) permite prever comportamento
+de campos; digital twins integram IoT e modelos para operação em tempo real.
+
+Para campos angolanos, recomenda-se implantação progressiva: começar por
+modelos de reservatório calibrados e integrar gradualmente sensores essenciais
+(pressão de fundo de poço, vazão, composição). A fase piloto reduz riscos antes
+de escalar o twin para todo o campo.
+
+Adotar padrões abertos para aquisição e armazenamento de dados (formatos
+compatíveis, metadados claros) reduz fricção entre equipes e facilita o uso
+de ferramentas de análise e IA, além de permitir replicabilidade de estudos.
+
+Recomenda-se um conjunto mínimo de medições para iniciar um "digital twin" prático:
+\begin{itemize}
+  \item Medição de pressão em fundo de poço (BHP) e em poços observadores;
+  \item Medição de vazão de óleo/água/gás com totalizadores e amostragem de composição;
+  \item Sensores de temperatura e qualidade de fluido periódica (PVT);
+  \item Registros sísmicos repetidos (4D) quando justificável economicamente.
+\end{itemize}
+
+\section{IA e análise de dados}
+Aplicações práticas: previsão de declínio, interpretação sísmica 4D, otimização
+de injeção e detecção de anomalias. IA complementa, não substitui, modelos
+físicos; combinação híbrida é recomendada.
+
+Boas práticas: usar IA para tarefas específicas (ex.: predição local de
+declínio) e manter modelos físicos como referência; documentar conjuntos de
+treino e evitar extrapolações fora da faixa de dados.
+
+Governança e validação: estabeleça pipelines de dados versionados, documente
+conjuntos de treino e critérios de validação (métricas, janelas temporais) e
+implemente auditoria periódica de modelos com avaliação por especialistas para
+evitar deriva (model drift) e decisões automatizadas sem supervisão técnica.
+
+\chapter{Captura e Armazenamento de CO\textsubscript{2} (CCS) -- visão prática}
+CCS reutiliza técnicas de caracterização e modelagem de reservatórios para
+armazenar CO\textsubscript{2} em formações salinas ou reservatórios depletados.
+Requer caracterização rigorosa, monitoramento sísmico 4D e planos de contingência.
+
+Do ponto de vista operacional, o fluxo de um projeto CCS envolve: (i) avaliação de
+situação geológica e risco de fuga; (ii) testes de injeção em pequena escala;
+(iii) sistemas de monitoramento permanente; (iv) enquadramento regulatório e
+financeiro. Para Angola, campos maduros com boa integridade de selagem são
+alvos preferenciais.
+
+Do ponto de vista técnico, o armazenamento seguro depende de mecanismos de retenção (residual, dissolvido e estrutural). Programas de monitoramento combinam pressão e composição em poços, vigilância sísmica 4D e amostragens geoquímicas para detectar migração. Defina thresholds operacionais claros e planos de contingência antes da operação em escala.
+
+Cronograma e engajamento: um programa CCS típico segue fases claras — avaliação (1--2 anos), piloto de injeção (1--3 anos) e expansão operacional (vários anos). Envolva autoridades regulatórias, universidades e comunidades locais desde a fase de avaliação para construir confiança e garantir transparência dos dados e métricas de segurança.
+
+\chapter{Desafios e recomendações para Angola}
+\begin{itemize}
+  \item Priorizar capacitação local em simulação numérica, EOR e CCS;
+  \item Criar parcerias para acesso a dados de campo e estágios técnicos;
+  \item Incluir ciência de dados e sustentabilidade no currículo;
+  \item Implementar programas-piloto de reuso de campos maduros para CCS.
+\end{itemize}
+
+Além disso, recomenda-se desenvolver centros de excelência que unam universidade,
+operadores e autoridades regulatórias para acelerar transferência tecnológica e
+criar certificações locais para projetos EOR e CCS.
+
+Medidas regulatórias e institucionais sugeridas:
+\begin{itemize}
+  \item Definir requisitos mínimos de dados e formatos para submissões técnicas;
+  \item Estabelecer procedimentos de licenciamento para pilotos EOR/CCS com métricas de performance;
+  \item Criar programas de incentivo à formação técnica e intercâmbio com operadores.
+\end{itemize}
+
+\chapter{Conclusão}
+Esta versão curta mantém os pontos nucleares do trabalho completo, oferecendo
+um documento executivo e didático que facilita decisões técnicas e pedagógicas.
+
+\chapter{Quadros operacionais}
+\section{Checklist de avaliação rápida}
+\begin{itemize}
+  \item Existência de mapa de limites e estimativa de área efetiva;
+  \item Logs de porosidade e permeabilidade disponíveis e validados;
+  \item Resultados PVT representativos e ensaios de formação básicos;
+  \item Plano de monitoramento mínimo (pressão, vazão, observadores) definido;
+  \item Avaliação preliminar de viabilidade econômica com cenários P10/P50/P90.
+\end{itemize}
+
+\section{Indicadores-chave}
+\begin{itemize}
+  \item Volume bruto estimado (m\textsuperscript{3}) e conversão para barris;
+  \item Faixa P10/P50/P90 para produção cumulativa em horizonte de análise;
+  \item Fator de recuperação projetado e contribuição esperada por EOR (\% OOIP);
+  \item Payback estimado (anos) sob cenários de preço e CAPEX esperado.
+\end{itemize}
+
+\section{Modelo de relatório executivo (síntese)}
+Apresente em uma página: objetivo, hipóteses-chave, estimativa central (P50), riscos principais e recomendação (p.ex., avançar para piloto, requerer dados adicionais).
+
+\section{Pontos para aula e discussão rápida}
+\begin{enumerate}
+  \item Quais são as três hipóteses que mais influenciam a P50 neste caso?
+  \item Que dados eu pediria primeiro ao operador para reduzir incerteza?
+  \item Como escolher entre otimização de injeção e teste de EOR em um piloto?
+\end{enumerate}
+
+\chapter{Estudo de caso breve}
+Objeto: demonstrar um fluxo de trabalho condensado para uma avaliação inicial.
+
+Dados de partida (hipotéticos): área estimada 25\,km\textsuperscript{2} (25\times10^{6}\,m^{2}), espessura média $h=8\,$m, porosidade $\phi=0{,}16$, saturação inicial de água $S_{w}=0{,}30$.
+
+Aplicando a equação volumétrica:
+\[V_{\mathrm{o}} = A\times h\times \phi(1-S_{w}) = 25\times10^{6}\times8\times0{,}16\times0{,}70 \approx 2{,}24\times10^{7}\,\mathrm{m}^{3} .\]
+Convertendo para barris: $V_{\mathrm{o}}\approx2{,}24\times10^{7}\times6{,}2898\approx1{,}41\times10^{8}\,$bbl (estimativa bruta).
+
+Interpretação e próximos passos (sintetizado):
+\begin{itemize}
+  \item Estime fatores de recuperação aplicáveis: primária (5\%--15\%), secundária/\u00e1gua (incremento até 20\%--30\%), EOR (incremento marginal dependendo do método).
+  \item Projete um piloto com poços teste e poços controle, métricas de sucesso (\% incremento de TRR, payback) e duração mínima (12--24 meses).
+  \item Realize análises de sensibilidade (Monte Carlo) variando $A$, $\phi$ e $S_{w}$ para obter P10/P50/P90 e priorizar investigação adicional onde a incerteza mais impacta o valor.
+\end{itemize}
+
+Próximos passos recomendados: (i) validar os exemplos numéricos com dados locais; (ii) preparar um conjunto de slides/quadros-resumo por capítulo para uso em capacitação; e (iii) transformar os checklists em formulários técnicos para submissões de projeto, garantindo rastreabilidade das hipóteses e decisões.
+
+Checklist final antes de submissão: confirmar (a) todas as citações na bibliografia; (b) presença de dados PVT representativos; (c) planos de monitoramento e indicadores definidos; e (d) um sumário executivo de 1 página com P50 e riscos.
+
+\section{Análise de sensibilidade (exemplo expandido)}
+Para demonstrar um procedimento prático de sensibilidade, considere variações discretas dos parâmetros principais e avalie o impacto sobre $V_{\mathrm{o}}$ e os percentis P10/P50/P90.
+
+Exemplo de grade de variação (ilustrativo):
+\begin{itemize}
+  \item Área $A\in\{20,25,30,35,40\}\,$km\textsuperscript{2};
+  \item Porosidade $\phi\in\{0{,}12,0{,}14,0{,}16,0{,}18\}$;
+  \item Saturação inicial $S_{w}\in\{0{,}20,0{,}25,0{,}30\}$.
+\end{itemize}
+
+Calcule $V_{\mathrm{o}}$ para cada combinação (ou amostre aleatoriamente para uma simulação Monte Carlo mais realista) e extraia os percentis. Resultado sintético ilustrativo: P10 $\approx1{,}0\times10^{8}$ bbl, P50 $\approx1{,}4\times10^{8}$ bbl, P90 $\approx1{,}9\times10^{8}$ bbl. Documente entradas e salve as tabelas de resultados para rastreabilidade.
+
+Recomenda-se também reportar uma tabela sucinta com médias, desvios padrão e limites P10/P90 para cada parâmetro crítico, a fim de guiar decisões de coleta de dados adicionais.
+\chapter{Plano de implementação resumido}
+Uma sequência prática e enxuta para implementar avaliações e pilotos:
+\begin{enumerate}
+  \item Reunir dados existentes e validar PVT e logs;
+  \item Definir área efetiva e hipóteses-chave para volumetria;
+  \item Calcular estimativas P10/P50/P90 e preparar matriz de sensibilidade;
+  \item Projetar piloto com delineamento (poços teste e controle) e KPIs;
+  \item Submeter plano piloto com critérios de sucesso e plano de monitoramento;
+  \item Executar piloto, coletar dados e validar modelos numéricos;
+  \item Avaliar resultados e decidir escalonamento ou encerramento;
+  \item Documentar lições aprendidas e atualizar checklist institucional.
+\end{enumerate}
+
+\chapter{Resumo executivo condensado}
+\begin{itemize}
+  \item Objetivo: oferecer uma visão operacional e didática da Engenharia de Reservatórios aplicada a Angola.
+  \item Hipóteses-chave: área efetiva, porosidade média, saturação inicial e fatores de recuperação.
+  \item Estimativa central (P50): use volumetria integrada com validação por balanço e declínio.
+  \item Principais riscos: incerteza de conectividade, disponibilidade de água/CO\textsubscript{2} e requisitos regulatórios.
+  \item Recomendações: priorizar aquisição mínima de dados, projetar pilotos bem delineados e capacitar equipes locais.
+  \item Leituras e recursos: consulte guias técnicos sobre volumetria, simulação numérica e EOR; mantenha a bibliografia anexada para aprofundamento.
+\end{itemize}
+
+\chapter{Anexo: Pontos de verificação rápida}
+Este anexo fornece um conjunto compacto de verificações que devem ser realizadas antes de submeter um plano piloto ou um relatório executivo.
+\begin{itemize}
+  \item Confirme a área efetiva e a metodologia de estimativa utilizada (sísmica versus mapas de poços);
+  \item Verifique a representatividade das amostras PVT e a consistência dos ensaios de formação;
+  \item Cheque distribuição de porosidade e heterogeneidade local (logs, testemunhos, núcleos);
+  \item Assegure que os cenários P10/P50/P90 incluem variações plausíveis em $A$, $\phi$ e $S_w$;
+  \item Documente premissas de mercado usadas em análises econômicas (preço do óleo, CAPEX/ OPEX);
+  \item Liste os indicadores de desempenho do piloto e seus gatilhos de ação (KPIs e limites); 
+  \item Confirme a existência de plano de contingência ambiental e de monitoramento (pressão, composição, sísmica 4D);
+  \item Garanta que responsabilidades institucionais e regulatórias estejam definidas no plano;
+  \item Inclua um sumário de incertezas e recomendações de observação prioritária para reduzir risco técnico.
+\end{itemize}
+
+% Diagnostic: write body end page to log
+\typeout{BODY_PAGE_END=\thepage}
+\postextual
+\bibliography{referencias}
+\end{document}
