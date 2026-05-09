@@ -125,6 +125,7 @@ $watcher.NotifyFilter = [System.IO.NotifyFilters]::LastWrite `
 $ignorePaths = @(".git", ".venv", ".sync_watcher.log", "*.log", "*.tmp")
 
 $lastTrigger = [datetime]::MinValue
+$script:lastPull = [datetime]::MinValue
 $pending = $false
 
 $action = {
@@ -157,7 +158,7 @@ try {
         Start-Sleep -Seconds 5
 
         # Periodic pull every 5 minutes regardless of local changes
-        if ((Get-Date) -gt ($script:lastPull.AddMinutes(5) ?? [datetime]::MinValue)) {
+        if ((Get-Date) -gt $script:lastPull.AddMinutes(5)) {
             Invoke-GitPull | Out-Null
             $script:lastPull = Get-Date
         }
