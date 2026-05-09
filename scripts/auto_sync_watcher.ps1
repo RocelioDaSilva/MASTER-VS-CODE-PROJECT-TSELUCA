@@ -7,11 +7,11 @@ param(
     [switch]$Verbose
 )
 
-# ─────────────────────────────────────────────────────────
+# ---------------------------------------------------------
 # AUTO SYNC WATCHER
 # Watches for file changes and auto-commits + pushes.
 # Runs git pull before each push to stay in sync.
-# ─────────────────────────────────────────────────────────
+# ---------------------------------------------------------
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Continue"
@@ -99,15 +99,15 @@ function Invoke-GitCommitPush {
     $pushOut = & git -C $WatchPath push $Remote $Branch 2>&1
     $pushExit = $LASTEXITCODE
     if ($pushExit -eq 0) {
-        Write-Log "Pushed to $Remote/$Branch ✓"
+        Write-Log "Pushed to $Remote/$Branch OK"
     } else {
         Write-Log "Push failed: $($pushOut | Out-String)" "ERROR"
     }
 }
 
-# ─────────────────────────────────────────────────────────
+# ---------------------------------------------------------
 # Setup FileSystemWatcher
-# ─────────────────────────────────────────────────────────
+# ---------------------------------------------------------
 
 Write-Log "Starting auto-sync watcher on: $WatchPath"
 Write-Log "Debounce: ${DebounceSeconds}s | Remote: $Remote/$Branch | PullOnly: $PullOnly"
@@ -152,6 +152,7 @@ $jobs = @(
 
 # Pull once immediately on startup to make sure we're up to date
 Invoke-GitPull | Out-Null
+$script:lastPull = Get-Date
 
 try {
     while ($true) {
@@ -169,7 +170,7 @@ try {
             $elapsed = ((Get-Date) - $script:lastTrigger).TotalSeconds
             if ($elapsed -ge $DebounceSeconds) {
                 $script:pending = $false
-                Write-Log "Change detected — debounce passed, syncing..."
+                Write-Log "Change detected - debounce passed, syncing..."
                 Invoke-GitCommitPush
             }
         }
