@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$WatchPath = (Split-Path -Parent $PSScriptRoot),
     [int]$DebounceSeconds = 30,
     [string]$Remote = "origin",
@@ -7,11 +7,11 @@ param(
     [switch]$Verbose
 )
 
-# ---------------------------------------------------------
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # AUTO SYNC WATCHER
 # Watches for file changes and auto-commits + pushes.
 # Runs git pull before each push to stay in sync.
-# ---------------------------------------------------------
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Continue"
@@ -105,9 +105,9 @@ function Invoke-GitCommitPush {
     }
 }
 
-# ---------------------------------------------------------
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 # Setup FileSystemWatcher
-# ---------------------------------------------------------
+# â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 Write-Log "Starting auto-sync watcher on: $WatchPath"
 Write-Log "Debounce: ${DebounceSeconds}s | Remote: $Remote/$Branch | PullOnly: $PullOnly"
@@ -152,7 +152,6 @@ $jobs = @(
 
 # Pull once immediately on startup to make sure we're up to date
 Invoke-GitPull | Out-Null
-$script:lastPull = Get-Date
 
 try {
     while ($true) {
@@ -182,3 +181,4 @@ finally {
     $watcher.Dispose()
     Write-Log "Watcher stopped."
 }
+
