@@ -4,6 +4,11 @@ mirror_desktop.log
 *.out
 
 .merge_conflicts/
+.sync_watcher.log
+sync_tracked_files.txt
+sync_untracked_files.txt
+laptop_tracked_files.txt
+sync_differences.txt
 workspace-archive.zip
 full_file_list_manifest.txt
 full_file_list_manifest.sha256
