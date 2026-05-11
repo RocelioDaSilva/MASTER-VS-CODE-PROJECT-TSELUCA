@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-labelledby="actLabel">
+  <title id="actLabel">Act Header</title>
+  <style>
+    :root{--fg:#1a1a1a;--accent:#6b3e26;}
+    svg{font-family: "Cinzel", Georgia, serif;}
+    .act {font-size:44px; fill:var(--fg); font-weight:700;}
+    .label{font-size:14px; fill:var(--fg); opacity:0.85;}
+    .line{stroke:var(--accent);stroke-width:3;stroke-linecap:round;}
+  </style>
+  <rect width="100%" height="100%" fill="none"/>
+  <line x1="40" y1="60" x2="380" y2="60" class="line"/>
+  <line x1="520" y1="60" x2="860" y2="60" class="line"/>
+  <text x="450" y="76" class="act" text-anchor="middle">ACT I</text>
+  <text x="450" y="96" class="label" text-anchor="middle">The Opening</text>
+</svg>

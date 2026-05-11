@@ -1,0 +1,530 @@
+[
+  {
+    "id": "01",
+    "title": "Dawn Ridges \u2014 Warm",
+    "style_group": "A",
+    "group_name": "Vector-flat",
+    "palette": [
+      "#EDE6D9",
+      "#C4A875",
+      "#9B8268",
+      "#7A5A44",
+      "#3A2820"
+    ],
+    "short_description": "Clean warm dawn with flat ochre ridges and sharp pine silhouettes in pure geometric style.",
+    "reproduction_prompt": "vector flat layered pine ridge silhouette banner 2400x400, warm dawn palette, sharp flat geometric shapes, no texture",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10001
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "01_preview.svg",
+    "final_image": "01.svg",
+    "tags": [
+      "dawn",
+      "warm",
+      "flat",
+      "geometric"
+    ]
+  },
+  {
+    "id": "02",
+    "title": "Noon Plains \u2014 Ochre",
+    "style_group": "A",
+    "group_name": "Vector-flat",
+    "palette": [
+      "#F0E8D2",
+      "#D4A860",
+      "#A07040",
+      "#6B4020",
+      "#2A1408"
+    ],
+    "short_description": "Bright amber midday with bold flat-colour layered hills, crisp and minimal.",
+    "reproduction_prompt": "vector flat layered hill banner, bold ochre-amber palette, crisp minimal shapes, noon light, no gradient",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10002
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "02_preview.svg",
+    "final_image": "02.svg",
+    "tags": [
+      "noon",
+      "ochre",
+      "clean",
+      "minimal"
+    ]
+  },
+  {
+    "id": "03",
+    "title": "Dusk Ridges \u2014 Amber",
+    "style_group": "A",
+    "group_name": "Vector-flat",
+    "palette": [
+      "#D8C8BC",
+      "#B09080",
+      "#846050",
+      "#5A3828",
+      "#281408"
+    ],
+    "short_description": "Warm amber dusk with deep-shadowed flat ridges and stylised tree silhouettes.",
+    "reproduction_prompt": "vector flat dusk ridge banner, amber-brown flat palette, strong contrast, pine tree silhouettes",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10003
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "03_preview.svg",
+    "final_image": "03.svg",
+    "tags": [
+      "dusk",
+      "amber",
+      "crisp",
+      "flat"
+    ]
+  },
+  {
+    "id": "04",
+    "title": "Night Ridge \u2014 Dark",
+    "style_group": "A",
+    "group_name": "Vector-flat",
+    "palette": [
+      "#D0D8E4",
+      "#8090A8",
+      "#485870",
+      "#283040",
+      "#101828"
+    ],
+    "short_description": "Cool dark night with minimal flat shapes, crescent moon, and star dots.",
+    "reproduction_prompt": "vector flat night ridge header, cool dark palette, crescent moon, flat star dots, minimal",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10004
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "04_preview.svg",
+    "final_image": "04.svg",
+    "tags": [
+      "night",
+      "dark",
+      "silhouette",
+      "cool"
+    ]
+  },
+  {
+    "id": "05",
+    "title": "Brushed Dawn \u2014 Soft",
+    "style_group": "B",
+    "group_name": "Painterly",
+    "palette": [
+      "#F4E8D8",
+      "#D4A878",
+      "#A07050",
+      "#704030",
+      "#301808"
+    ],
+    "short_description": "Soft painterly dawn with warm washes and subtly blurred pine shapes.",
+    "reproduction_prompt": "painterly soft brushwork pine ridge banner 2400x400, warm dawn palette, gaussian blur, watercolour wash",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10005
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "05_preview.svg",
+    "final_image": "05.svg",
+    "tags": [
+      "dawn",
+      "soft",
+      "painterly",
+      "warm"
+    ]
+  },
+  {
+    "id": "06",
+    "title": "Bloom Noon \u2014 Hazy",
+    "style_group": "B",
+    "group_name": "Painterly",
+    "palette": [
+      "#D0E8F4",
+      "#88B8D8",
+      "#5088B8",
+      "#305878",
+      "#102038"
+    ],
+    "short_description": "Hazy noon with gentle colour bloom and loose, blurred brushwork layers.",
+    "reproduction_prompt": "painterly blue-teal ridge banner, gradient sky, colour bloom noon, blurred pine trees, horizontal strip",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10006
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "06_preview.svg",
+    "final_image": "06.svg",
+    "tags": [
+      "noon",
+      "bloom",
+      "hazy",
+      "brushy"
+    ]
+  },
+  {
+    "id": "07",
+    "title": "Wash Dusk \u2014 Violet",
+    "style_group": "B",
+    "group_name": "Painterly",
+    "palette": [
+      "#D4F0E0",
+      "#88C8A0",
+      "#508868",
+      "#305840",
+      "#102818"
+    ],
+    "short_description": "Violet dusk with painterly gradients and radial vignette glow.",
+    "reproduction_prompt": "painterly violet dusk header, gradient background, pine ridge silhouette, radial vignette glow",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10007
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "07_preview.svg",
+    "final_image": "07.svg",
+    "tags": [
+      "dusk",
+      "violet",
+      "gradient",
+      "glow"
+    ]
+  },
+  {
+    "id": "08",
+    "title": "Inked Night \u2014 Deep",
+    "style_group": "B",
+    "group_name": "Painterly",
+    "palette": [
+      "#E8D0F4",
+      "#C088D8",
+      "#905898",
+      "#583068",
+      "#201028"
+    ],
+    "short_description": "Deep inky night with dark painterly washes and faint warm glow.",
+    "reproduction_prompt": "painterly deep night ridge banner, dark washes, subtle warm glow, ink-watercolour feel",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.45,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10008
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "08_preview.svg",
+    "final_image": "08.svg",
+    "tags": [
+      "night",
+      "deep",
+      "inky",
+      "painterly"
+    ]
+  },
+  {
+    "id": "09",
+    "title": "Frost Ridge \u2014 Snow",
+    "style_group": "C",
+    "group_name": "Atmospheric",
+    "palette": [
+      "#F4F8FC",
+      "#C8DCF0",
+      "#78A8CC",
+      "#3868A0",
+      "#182848"
+    ],
+    "short_description": "Snowy frost twilight with icy ridges, turbulence-displaced fog, and misty pines.",
+    "reproduction_prompt": "atmospheric snowy frost ridge banner 2400x400, icy palette, turbulence fog layer, pine silhouettes, misty",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10009
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "09_preview.svg",
+    "final_image": "09.svg",
+    "tags": [
+      "frost",
+      "snow",
+      "icy",
+      "atmospheric"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Fog Dawn \u2014 Pale",
+    "style_group": "C",
+    "group_name": "Atmospheric",
+    "palette": [
+      "#F8F0E0",
+      "#E0C898",
+      "#A88858",
+      "#686040",
+      "#282818"
+    ],
+    "short_description": "Foggy pale dawn with soft diffused warmth and hazy layered silhouettes.",
+    "reproduction_prompt": "atmospheric foggy pale dawn ridge header, diffused warm light, hazy silhouettes, muted tones",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10010
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "10_preview.svg",
+    "final_image": "10.svg",
+    "tags": [
+      "fog",
+      "pale",
+      "diffused",
+      "dawn"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Haze Clear \u2014 Teal",
+    "style_group": "C",
+    "group_name": "Atmospheric",
+    "palette": [
+      "#D8F0E8",
+      "#90C8B0",
+      "#488878",
+      "#285858",
+      "#102828"
+    ],
+    "short_description": "Hazy teal clear day with atmospheric depth and moisture-blur feel.",
+    "reproduction_prompt": "atmospheric hazy teal clear day ridge banner, layered atmospheric depth, moisture blur, pine silhouettes",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10011
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "11_preview.svg",
+    "final_image": "11.svg",
+    "tags": [
+      "haze",
+      "teal",
+      "deep",
+      "clear"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Starry Dusk \u2014 Indigo",
+    "style_group": "C",
+    "group_name": "Atmospheric",
+    "palette": [
+      "#181C28",
+      "#283C60",
+      "#5878B0",
+      "#98B0D8",
+      "#E0E8F8"
+    ],
+    "short_description": "Starry indigo dusk with deep rich sky, turbulence fog, and pinprick stars.",
+    "reproduction_prompt": "atmospheric starry indigo night ridge header, deep sky, fractal fog, pinprick stars",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10012
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "12_preview.svg",
+    "final_image": "12.svg",
+    "tags": [
+      "stars",
+      "indigo",
+      "dusk",
+      "night"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Grit Dawn \u2014 Worn",
+    "style_group": "D",
+    "group_name": "Textured-grit",
+    "palette": [
+      "#F0E4D4",
+      "#C8A888",
+      "#987860",
+      "#685040",
+      "#281808"
+    ],
+    "short_description": "Gritty worn dawn with fractal-noise grain, displaced ridges, and earthy palette.",
+    "reproduction_prompt": "textured gritty dawn ridge banner 2400x400, fractal grain overlay, earthy palette, displaced edges, pines",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10013
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "13_preview.svg",
+    "final_image": "13.svg",
+    "tags": [
+      "grit",
+      "worn",
+      "grain",
+      "dawn"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Paper Noon \u2014 Aged",
+    "style_group": "D",
+    "group_name": "Textured-grit",
+    "palette": [
+      "#E0F0D8",
+      "#A8C8A0",
+      "#708870",
+      "#485850",
+      "#182018"
+    ],
+    "short_description": "Aged paper noon with vintage fractal grain and faint edge displacement.",
+    "reproduction_prompt": "textured aged paper noon ridge header, fractal grain vintage tone, faint edge displacement",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10014
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "14_preview.svg",
+    "final_image": "14.svg",
+    "tags": [
+      "aged",
+      "paper",
+      "sepia",
+      "noon"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Grain Dusk \u2014 Faded",
+    "style_group": "D",
+    "group_name": "Textured-grit",
+    "palette": [
+      "#E8DCD0",
+      "#C0A090",
+      "#907068",
+      "#604850",
+      "#201818"
+    ],
+    "short_description": "Faded grain dusk with soft film-grain warmth and displaced tree silhouettes.",
+    "reproduction_prompt": "textured faded grain dusk ridge banner, film grain, displaced pines, worn warm tones",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10015
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "15_preview.svg",
+    "final_image": "15.svg",
+    "tags": [
+      "faded",
+      "grain",
+      "film",
+      "dusk"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Scratch Night \u2014 Dark",
+    "style_group": "D",
+    "group_name": "Textured-grit",
+    "palette": [
+      "#302828",
+      "#504848",
+      "#807070",
+      "#B0A0A0",
+      "#E0D8D8"
+    ],
+    "short_description": "Dark scratched night with heavy grain overlay and ink-like displaced forms.",
+    "reproduction_prompt": "textured dark grain night ridge banner, heavy fractal grain, ink-like displaced silhouette",
+    "suggested_settings": {
+      "model": "SDXL",
+      "mode": "img2img",
+      "denoising_strength": 0.55,
+      "sampler": "Euler a",
+      "steps": 28,
+      "guidance_scale": 7.5,
+      "seed": 10016
+    },
+    "upscaler_recommendation": "Real-ESRGAN x4",
+    "thumbnail": "16_preview.svg",
+    "final_image": "16.svg",
+    "tags": [
+      "dark",
+      "scratch",
+      "ink",
+      "night"
+    ]
+  }
+]

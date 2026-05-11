@@ -1,0 +1,65 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor dirs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Obsidian plugin build artifacts
+.obsidian/plugins/*/dist/
+.obsidian/plugins/*/main.js
+.obsidian/workspace
+
+# Build outputs
+*.pdf
+!finished-manuscript/manuscript-integrated-105.pdf
+!finished-manuscript/final_product/*.pdf
+*.epub
+# Large binary files
+*.msi
+*.zip
+
+# Chat archives (keep locally, do not track)
+chatsbyjson/*.json
+
+# Build outputs
+*.pdf
+*.log
+*.aux
+*.fls
+*.fdb_latexmk
+*.exe
+*.dll
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Obsidian metadata (inside subfolders)
+chain-story/.obsidian/
+
+# Smart environment
+.smart-env/

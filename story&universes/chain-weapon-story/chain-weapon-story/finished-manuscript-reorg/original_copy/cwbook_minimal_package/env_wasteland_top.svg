@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e1cfb8"/>
+      <stop offset="1" stop-color="#b89a7f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="120" fill="url(#w1)"/>
+  <g fill="#7a5c3a" opacity="0.95">
+    <polygon points="0,110 80,70 160,90 240,50 320,80 400,40 480,82 560,46 640,72 720,34 800,86 880,52 960,88 1040,60 1120,92 1200,58"/>
+  </g>
+  <text x="1188" y="112" font-family="serif" font-size="10" fill="#8b6840" text-anchor="end" opacity="0.8">WASTELAND · DUSK</text>
+</svg>

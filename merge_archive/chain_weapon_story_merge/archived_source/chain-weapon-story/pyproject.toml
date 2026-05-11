@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 88
+target-version = ['py310']
+exclude = '''/(
+  \.git
+| \.venv
+| venv
+| build
+| dist
+| .github
+| finished-manuscript/final_product
+)/'''
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = E203,W503
