@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex*
+*.synctex.gz
+*.lof
+*.lot
+*.run.xml
+*.gz
+
+# Ignore common build outputs in latex_output
+latex_output/*.aux
+latex_output/*.log
+latex_output/*.out
+latex_output/*.toc
+latex_output/*.fdb_latexmk
+latex_output/*.synctex*
+latex_output/
+# Misc
+*.synctex(busy)
+.venv/
+env/
+__pycache__/

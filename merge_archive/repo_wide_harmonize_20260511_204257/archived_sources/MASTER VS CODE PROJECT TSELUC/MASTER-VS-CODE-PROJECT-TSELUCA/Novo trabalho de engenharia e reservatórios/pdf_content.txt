@@ -1,0 +1,1111 @@
+Revista Angolana de Minerais, Petróleo e Gás 2 (2021) 1–11
+Recuperação Avançada de Petróleo: Estratégia de Planeamento de Projetos nos Campos 
+Petrolíferos Angolanos
+Geraldo  Ramosa  e Kyari  Yatesb
+a Escola de Petrotecnologia e Engenharia, Academia Sonangol, Avenida Luanda Sul, Rua Lateral S10, Talatona, Luanda, Angola.
+a Departamento de Geociências (DGC), Instituto Superior Politécnico de Tecnologias e Ciências (ISPTEC), Avenida Luanda Sul, Rua Lateral S10, Talatona,
+Luanda, Angola
+b Faculdade de Farmácia e Ciências da Vida, Universidade Robert Gordon, Aberdeen, Reino Unido
+I N F O R M A Ç Õ E S S O B R E O A R T I G O
+Palavras-chave: 
+Recuperação 
+Avançada de Petróleo 
+(EOR), campos 
+maduros, triagem de 
+reservatórios
+1.IntroduçãoA exploração de hidrocarbonetos em Angola começou em 1910, com a primeira recuperação de petróleo em 1955. A maioria dos campos 
+petrolíferos angolanos está madura ou em fase de maturação e alguns estão ou podem ser abandonados devido ao limite de recuperação não 
+rentável para além do tipo convencional de produção de petróleo. A recuperação de petróleo é feita principalmente por métodos de 
+recuperação primária e secundária. Além da questão da maturidade, há uma crescente procura de energia devido ao crescimento populacional e 
+às dificuldades em descobrir e desenvolver novos campos como alternativas aos campos petrolíferos atuais. Para uma taxa de produção 
+incremental e sustentada destes campos e, além da instabilidade dos preços do petróleo e das preocupações com o futuro abastecimento de 
+petróleo, Angola começou a trabalhar no sentido de desenvolver tecnologias acessíveis e eficientes, capazes de recuperar o petróleo residual nos 
+reservatórios, bem como prolongar a vida útil de muitos campos atuais, o que pode ser alcançado através da implementação da recuperação 
+avançada de petróleo (EOR). Por conseguinte, este artigo discute a estratégia de planeamento da EOR desde a seleção do projeto, 
+implementação e otimização do projeto, até ao abandono do campo. Além disso, destaca os benefícios mútuos que podem ser obtidos com a 
+colaboração entre o governo e outras partes interessadas em Angola.
+A recuperação é maximizada. Além disso, a ANEWT deve ser
+A matura ção ou diminui ção da produ ção de petróleo nos últimos  anos  e o desafio de 
+recuperar petróleo adicional de campos maduros em Angola tornaram  necess ário o 
+desenvolvimento  de técnicas  avan çadas para recuperar  petróleo além dos 
+mecanismos  prim ários e secund ários. A pressão capilar, a molhabilidade, as forças 
+interfaciais, a alta viscosidade do petróleo, o alto corte  de água, a heterogeneidade  do 
+reservat ório e as forças de viscosidade  de cisalhamento  são algumas  das variáveis 
+que podem  ser atribu ídas à capacidade  ou incapacidade  do petróleo de se mover  em 
+direção ao poço.
+O processo  de recuperação  é mais  complexo  quando  se trata de campos  petrolíferos  
+offshore,  onde  a localização  e o espaçamento  dos poços  e a profundidade  do reservatório  
+são maiores  em comparação  com os campos  petrolíferos  onshore.  Assim,  a 
+implementação  da recuperação  avançada  de petróleo  (EOR)  pode  extrair  até mais  da 
+metade  do conteúdo  original  de petróleo  do reservatório  [1,2,3,4]  e prolongar  a vida 
+produtiva  dos campos  petrolíferos,  particularmente  em campos  onde  os métodos  menos  
+arriscados  e mais  convencionais  foram  esgotados  [5]. No entanto,  a seleção,  o teste  e a 
+implementação  desta  técnica  envolvem  várias  etapas  e desafios,  principalmente  para 
+novos  campos  maduros  (novos  campos  abandonados).
+O estudo  de EOR  requer  dados  extensivos  dos poços, reservat órios ou campos  sob 
+investiga ção, conhecimento  da estrutura  geol ógica e litologia dos campos e estudos 
+experimentais complexos das interações líquido-fluido ou rocha-fluido, bem como a 
+formulação de fluidos [6]. Além da compreens ão limitada  do subsolo,  existem  outras  
+barreiras  à implementa ção de projetos  de EOR , tais como  o fornecimento  de 
+injetantes  seguros  e de baixo  custo , o desafio de implementar o EOR retrospectivamente 
+num local  abandonado  e as preocupa ções com a economia  do projeto  [7].
+Antes  da implementa ção da EOR,  é necess ária uma investiga ção de triagem  para decidir  
+se uma técnica  de EOR  é adequada  ou não para um campo  petrol ífero espec ífico [8,9,10]. 
+Por isso, em Angola,  deve  ser criada  uma Equipa  Nacional  de Trabalho  de EOR  
+(ANEWT)  dentro  da Agência Nacional  do Petróleo, Gás e Biocombust íveis (ANPG)  
+para coordenar  os esfor ços da indústria petrol ífera angolana  e do governo  para conceber  
+e desenvolver  o programa  de EOR  em conjunto  com operadores  e empresas  de servi ços, 
+a fim de garantir  que os hidrocarbonetos  globaisrespons ável por: (1) elaborar  um plano  estrat égico e abrangente  para a implementa ção da 
+EOR  em Angola;  (2) trabalhar  no sentido  de um decreto  legislativo  que oriente  a 
+inclus ão da EOR  nos contratos  de partilha  de produ ção atuais  e futuros;  (3) procurar  
+incentivos  fiscais  e contratuais  para permitir  e reduzir  o risco  econ ómico  da 
+implementa ção da EOR;  (4) criar  uma estrutura  ou centro  nacional  para estudos  sobre  
+EOR  e armazenamento  de CO2; (5) realizar  um estudo  nacional  para avaliar  o potencial  de 
+aplica ção da EOR  em Angola;  (6) impulsionar  a tecnologia  e a cultura  nos projetos  de 
+EOR  atrav és da inova ção; (7) maior  divulga ção e comunica ção com operadores  e 
+prestadores  de servi ços, bem como  com pequenas  e médias empresas;  (8) elabora ção do 
+procedimento  com o compromisso  dos gestores  envolvidos  no programa.
+O sucesso  dos projetos  de EOR  é alcan çado quando  os operadores  concentram  os seus 
+esfor ços na análise de todas  as formas  de maximizar  a recupera ção dos seus campos  
+existentes.  Trata-se  de um projeto  de médio e longo  prazo  com várias etapas,  cujas  três 
+fases  principais  são: (1) analisar  sistematicamente  o potencial  de EOR  dos campos  
+petrol íferos  angolanos;  (2) envolver  a indústria e procurar  sinergias  e oportunidades  de 
+colabora ção para aprofundar  o conhecimento  sobre  EOR;  (3) sempre  que poss ível, 
+iniciar  projetos  de EOR  com operadores  [7], empresas  de servi ços e pequenas  e médias 
+empresas.
+2.Conceitos  e classificação de EOR
+A recupera ção de hidrocarbonetos  está no centro  da produ ção de petróleo a partir  de 
+reservat órios subterr âneos  [11] e ocorre  atrav és de três processos  principais  (Fig. 1): 
+recuperação primária de petróleo (fluxo natural e elevação artificial), recupera ção 
+secundária de petróleo (inunda ção com água e manuten ção da press ão) e recupera ção 
+avan çada de petróleo (EOR),  tamb ém conhecida  como  recupera ção terci ária [11,12,13,14] .
+Durante  as fases  de recupera ção prim ária e secund ária, o petróleo móvel é facilmente  
+extra ído, enquanto  a EOR  é adotada  adequadamente  para extrair  o petróleo imóvel preso  
+sob forças capilares  e viscosas  [6,11]. Muito  trabalho  de pesquisa  e implementa ção em 
+campo  tem sido feito  para melhorar  a recupera ção de petróleo a partir  de
+1
+*Autor correspondente. Geraldo Ramos. E-mail: geraldo.ramos@sonangol.co.ao
+Recebido em 25 de agosto de 2020; Recebido na forma revisada em 22 de novembro de 2020; Aceito em 25 de novembro de 2020
+Assine o DeepL Pro para traduzir documentos maiores.
+Visite www.DeepL.com/pro para mais informações.2
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11
+reservat órios de petróleo esgotados  utilizando  técnicas  não convencionais  de 
+recupera ção de petróleo. Hite et al. [13] referem-se  à recupera ção avan çada de petróleo 
+como  processos  que recuperam  petróleo não produzido  pela recupera ção secund ária. 
+Esta defini ção é bastante  geral,  uma vez que existem  várias técnicas,  como  a IOR 
+(recupera ção avan çada de petróleo), que podem  ser aplicadas  para recuperar  petróleo 
+adicional  além da recupera ção secund ária. Existe  uma confus ão consider ável no uso dos 
+termos  EOR  e IOR (recupera ção melhorada  de petróleo). O termo  IOR (recupera ção 
+melhorada  de petróleo) refere-se  a qualquer  prática para aumentar  a recupera ção de 
+petróleo, como  caracteriza ção e gestão melhoradas  do reservat ório (automa ção, poços 
+inteligentes),  técnicas  avan çadas de perfura ção e outros  métodos  de melhoria  da 
+produ ção. Isto inclui  processos  EOR,  práticas  para aumentar  a efici ência de varredura,  
+como  poços verticais  adicionais  (perfura ção de preenchimento)  ou projetos  de poços 
+complexos  (poços desviados  ou inclinados;  poços horizontais  ou laterais,  poços 
+multilaterais,  poços multilaterais),  estimula ção de reservat órios (fratura,  ácido),  eleva ção 
+artificial  (bombas  de viga,  bombas  submers íveis elétricas  e eleva ção de gás), métodos  de 
+recupera ção secund ária (inje ção de água e gás) [ 15,16,17].
+Figura 1: Categorias de recuperação de petróleo. Adaptado de Ahmed e Meehan [18]
+No entanto,  Lake  [19] define  EOR  como  um processo  de recupera ção de petróleo 
+atrav és da injeção de materiais  que normalmente  não estão presentes  no 
+reservat ório. Esta defini ção exclui  a injeção de água e gás, que são usados  para 
+manter  a press ão do reservat ório, bem como  processos  de gás misc ível ou imisc ível, 
+que tamb ém são processos  EOR.  Além disso,  a EOR  pode  ser vista  como  uma 
+recupera ção de petróleo por injeção de gases  ou produtos  químicos  e/ou energia  
+térmica  no reservat ório. Não se restringe  a uma fase espec ífica da vida produtiva  do 
+reservat ório [20]. Esta defini ção aplica-se  aos processos  de EOR,  mas não se restringe  
+apenas  à recupera ção terci ária, uma vez que os processos  térmicos  podem  ser 
+implementados  numa  fase inicial  da produ ção.
+Para esta investiga ção, definimos  recupera ção avan çada de petróleo (EOR)  como  um 
+conjunto  de tecnologias  de produ ção que envolvem  a injeção de energia  ou fluidos  para 
+melhorar  a recupera ção de petróleo em qualquer  fase da produ ção, seja prim ária, 
+secund ária ou terci ária, a fim de aumentar  a recupera ção total acima  do que é poss ível 
+atrav és de métodos  tradicionais  [21].2.1 Classificação da recuperação  avançada  de petróleo
+Os métodos  de EOR  são classificados  com base em diferentes  técnicas,  bem como  nas 
+aplica ções e processos  físicos  associados  às diferentes  técnicas.  Assim,  os métodos  de 
+recupera ção avan çada de petróleo podem  ser divididos  em quatro  técnicas  (Fig.  2): 
+térmica,  química,  gás misc ível e imisc ível e outros.  Com  base nos processos  físicos  
+associados  a diferentes  técnicas  e métodos,  a EOR  pode  ser classificada  em duas  
+categorias  ligadas  à efici ência de varredura  microsc ópica e macrosc ópica,  com algumas  
+atuando  em ambas  as efici ências  de varredura  microsc ópica e macrosc ópica,  conforme  
+ilustrado  na Fig. 3.
+O potencial  dos processos  térmicos  existe  para petróleos brutos  pesados  que não podem  
+ser produzidos  à press ão e temperatura  originais  do reservat ório. A viscosidade  do 
+petróleo pode  ser drasticamente  reduzida  aumentando  a temperatura  do reservat ório e 
+permitindo  que o petróleo flua mais  facilmente  em direção ao poço de produ ção. O calor  
+para o processo  térmico  é fornecido  pela injeção de vapor  ou água quente,  ou pela 
+queima  de parte  do petróleo no local  (combust ão in situ).  No entanto,  para áreas 
+remotas  onde  o custo  de importa ção de produtos  químicos  pode  ser proibitivo,  foi 
+proposta  a possibilidade  de combust ão in situ [22]. O custo  do aquecimento  nos métodos  
+térmicos  está ligado  ao custo  do petróleo, de modo  que, quando  o preço do petróleo 
+diminui,  o custo  do aquecimento  tamb ém diminui,  o que é uma vantagem  dos métodos  
+térmicos.
+O método  de injeção  química  é utilizado  para reduzir  a viscosidade  ou a tensão  
+interfacial  (IFT)  do petróleo,  ou para aumentar  o volume  varrido  do reservatório.  A 
+injeção  química  envolve  a utilização  de polímeros,  surfactantes,  álcalis  ou uma 
+combinação  destes  para auxiliar  o processo  de recuperação.  A economia  do processo  
+precisa  de ser cuidadosamente  analisada,  independentemente  do preço  do petróleo,  
+devido  ao aumento  dos custos  associados  a este processo  [22].
+Na injeção  miscível,  o fluido  é diretamente  miscível  com o petróleo  no reservatório  ou 
+extrai  componentes  do petróleo  que formam  um banco  de líquido  miscível  tanto  com o 
+reservatório  quanto  com o gás injetado  — dióxido  de carbono,  gases  de hidrocarbonetos,  
+gás liquefeito  de petróleo  (GLP)  ou nitrogénio  (para  reservatórios  profundos  e de alta 
+pressão).  Para uma melhor  recuperação,  as inundações  miscíveis  são frequentemente  
+alternadas  com inundações  de água  para melhorar  a eficiência  de varredura  do processo,  
+uma vez que o fluido  miscível  é geralmente  menos  viscoso  do que o petróleo  e tende  a 
+«dedilhar»  o petróleo,  proporcionando  uma eficiência  de varredura  muito  inferior  a 
+100%.  A inundação  imiscível  com dióxido  de carbono  também  é utilizada,  uma vez que, 
+mesmo  sem miscibilidade,  o dióxido  de carbono  faz o petróleo  inchar  e reduz  a sua 
+viscosidade  [22].
+Figura 2: Classificação dos métodos de recuperação avançada de petróleo. Pres é a pressão de injeção do fluido no reservatório e MMP é a pressão mínima miscível.
+Adaptado de Al−Anazi[2] , Hite et al. [11] , Kokal e Al−Kaabi[13]
+2.2 Recuperação de petróleo  residual
+O principal objetivo dos métodos EOR é a recuperação do petróleo imóvel (petróleo 
+residual) que fica para além da recuperação convencional. Este processo contribui para 
+aumentar o fator de recuperação. A equação do fator de recuperação é resumida por 
+quatro variáveis, conforme mostrado na Equação 1: (1) deslocamento em escala de poros 
+(PSD) − a capacidade do processo de recuperação de deslocar petróleo ou gás, (2) eficiência 
+de varredura (SE) − movimento de petróleo e gás móveis para os poços, (3) drenagem (D) −conexão dos poços ao petróleo e gás e (4) tempo (T) − restrições físicas e comerciais que 
+afetam o fim da vida útil do campo [7] .
+𝑅𝐹 = 𝑃𝑆𝐷×𝑆𝐸×𝐷×𝑇 (1)
+As duas primeiras variáveis são o foco da EOR, enquanto as duas últimas são o foco da IOR. 
+O deslocamento em escala de poros pode ser melhorado por injeção de água de baixa 
+salinidade, injeção de gás miscível e surfactantes, etc. A eficiência de varredura pode ser 
+melhorada pela incorporação de injeção química, como polímeros para
+12
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11injeção de água ou espuma para injeção de gás. A drenagem e o tempo (cortes) são 
+influenciados por técnicas IOR estabelecidas, como poços de preenchimento e workover. 
+Essas quatro variáveis juntas determinam o fator de recuperação geralde um campo. O aumento do fator de recuperação requer que um desses fatores seja 
+aumentado para o mais próximo possível de 1. Portanto, maximizar o fator de recuperação 
+em um campo requer a otimização de todas as quatro variáveis na Equação 1.
+Figura 3: Efeito macroscópico e microscópico da eficiência de varredura da EOR.
+Muggeridge et al. [25] , Smalley et al. [26]  relataram em seus trabalhos os fatores que afetam 
+a eficiência de deslocamento microscópico e macroscópico. De acordo com Muggeridge et 
+al. [25] , os métodos de EOR se concentram em aumentar a eficiência de varredura 
+microscópica e macroscópica. A eficiência de deslocamento microscópico é afetada pelo 
+número capilar [25,27,28]  e pelas características de permeabilidade relativa da rocha [25,29] , 
+sendo que ambos também são afetados pelo comportamento de umectação da rocha na 
+qual o petróleo é encontrado [25] . Portanto, de acordo com Muggeridge et al. [25] , reduzir 
+os efeitos capilares, diminuindo a IFT óleo-água, e modificar a molhabilidade da rocha para 
+um estado ideal de molhabilidade mista são os principais requisitos para aumentar a 
+eficiência de deslocamento microscópico.Os fatores que influenciam a eficiência de varredura macroscópica também foram 
+discutidos no trabalho apresentado por Muggeridge et al. [25] . De acordo com a investigação 
+deles, a eficiência de varredura macroscópica é afetada principalmente pela 
+heterogeneidade geológica no reservatório e pela segregação gravitacional. A melhoria da 
+eficiência de varredura macroscópica depende da minimização do impacto da 
+heterogeneidade geológica, o que é conseguido através de uma mistura de modificação da 
+viscosidade do fluido de deslocamento ou do desvio do fluido injetado das zonas de maior 
+permeabilidade para as de menor permeabilidade que ainda contêm fluido deslocado [25], 
+bem como da segregação gravitacional para inundações de gás ([30]). O resumo da EOR 
+térmica, química e com gás miscível é descrito nas Tabelas 1, 2 e 3, respetivamente. Estas 
+incluem os princípios básicos, mecanismos, limitações, problemas, recuperação típica e 
+utilização típica do agente.
+Tabela 1: Mecanismos de produção térmica EOR, limitações, problemas [2,14,18,19,31,32,33]
+Processo EOR Princípios básicos Mecanismos Limitações Problemas Recuperaçã
+o típica
+(%)Utilizaçã
+o típica 
+do 
+agente
+de agentes
+Vapor Melhoria de a) Redução do petróleo bruto (a)   requer   alto   petróleo (a) Mobilidade adversa 50 – 60 0,5 bbl de 
+petróleo
+varredura e viscosidade; (b) Vapor ; (b) e canalização consumido
+deslocamento destilação;   (c)   Solvente/ Zona produtiva >20 pés 
+parade vapor; (b) Gravidade por barril de 
+petróleo
+eficiências extração;   (d)   Fornecimento minimizar perdas de calor; ocorre uma sobreposição 
+emproduzido
+pressão para impulsionar o óleo; (e) (c) Aplicável à maioria das 
+injeções de vapor viscosasa maioria das injeções de 
+vapor;
+Expansão térmica. óleos; (d) Aplicável a (c)   Perda de calor   ;   
+(d)
+alta permeabilidade Substituição e
+arenitos ou poluição.
+Combustão in 
+situMelhoria da 
+eficiência de 
+varredura e 
+eficiência de 
+deslocamento(a) Diminuição da viscosidade por 
+condução e convecção de calor; 
+(b) O produto da destilação a 
+vapor e da mistura de 
+craqueamento térmico com o 
+petróleo bruto e sua melhoria;
+(c) O coque produzido a partir das 
+frações pesadas do petróleo 
+bruto é queimado; (d) O ar 
+injetado fornece pressão ao 
+reservatório;
+(e) Reduz a saturação do petróleo;
+(f) Vaporização de algum líquido e 
+geração de vapor.areias não consolidadas e   
+es;
+(e) Preferível a reservatórios 
+rasos devido à perda 
+excessiva de calor; (f) 
+Indesejável para camadas de 
+água e gás.
+(a) Se não for depositada 
+uma quantidade suficiente 
+de coque a partir do óleo 
+queimado, o processo de 
+combustão não será 
+sustentado; (b) Se for 
+depositada uma quantidade 
+excessiva de coque, a 
+velocidade de avanço da 
+combustão será lenta e a 
+qualidade do ar necessária 
+para sustentar a combustão 
+será elevada; (c) A saturação 
+e a porosidade do óleo 
+devem ser elevadas para 
+minimizar a perda de calor 
+para a rocha; (d) Tende a 
+varrer a parte superior do 
+reservatório, portanto, a 
+eficiência da varredura é 
+baixa em formações 
+espessas.(a) Relação de 
+mobilidade adversa; (b) 
+Difícil de controlar a 
+combustão e requer 
+grandes investimentos de 
+capital;
+(c) Produz
+gases de 
+combustão que podem 
+causar problemas 
+ambientais; (d) Corrosão 
+severa causada por água 
+quente com baixo pH;
+(e) Emulsões graves de 
+óleo e água; (f)
+Aumento da
+produção de 
+areia, deposição de 
+carbono ou cera e falhas 
+nos tubos como 
+resultado da altas
+ altas 
+temperaturas; (g) 
+Perda excessiva de calor.10 – 15 10 Mscf de ar 
+por barril de 
+petróleo 
+produzido.
+4
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11Tabela 2: Mecanismos de produção, limitações e problemas da EOR química [2,14,18,19,31,32,33]
+Processo EOR Princípios básicos Mecanismos Limitações Problemas Típico
+Recuperaçã
+o (%)Utilização 
+típica do 
+agente
+Surfactante Melhoria
+da eficiência de 
+varredura e 
+deslocamento
+Polímero Melhoria das 
+eficiências de 
+varredura e 
+deslocamento
+Alcalino Melhoria da 
+eficiência de 
+varredura e 
+deslocamento(a) Redução 
+da tensão interfacial; (b) 
+Solubilização do óleo;
+(c) Emulsificação do óleo e 
+da água; (d) Aumento da 
+mobilidade.
+(a) Aumento da viscosidade 
+da água; (b)
+Diminuição da mobilidade 
+da água e    e
+; (c) 
+Contato com um volume 
+maior de água    de    
+o
+reservatório; (d) 
+Reduzir a mobilidade do 
+fluido injetado.
+(a) Controlo 
+da mobilidade; (b) Emulsão 
+e alteração da 
+molhabilidade;
+(c) Redução 
+da tensão interfacial.(a) Varredura de área > 
+50% em uma injeção de água 
+é desejável; (b) 
+Formações homogéneas são 
+preferíveis; (c) Quantidades 
+elevadas de anidrido, sípso ou 
+argilas são indesejáveis;  (d) 
+Concentração de cloretos nas 
+águas da formação < 20.000 
+ppm; (e) e íons divalentes 
+(Ca++ e Mg++) < 500 ppm.
+(a) É necessária uma 
+concentração mais elevada de 
+polímeros para fluidos de 
+maior viscosidade;
+(b) Melhores resultados 
+para inundação com polímeros
+inundação começando 
+antes do WOR excessivo; (d) 
+Evitar projetos convencionais 
+de inundação com polímeros 
+para reservatórios com 
+fraturas excessivas.
+(a) Aplicável a petróleo 
+com viscosidade entre 13 e
+35 API;   (b)   Não
+preferível em reservatórios de 
+carbonato devido à presença 
+de anidrite ou gesso, que 
+consomem uma grande 
+quantidade de produtos 
+químicos alcalinos.(a) Grande adsorção de 
+surfactantes; (b) Possibilidade 
+de separação 
+cromatográfica de produtos 
+químicos;
+(c) Interação entre 
+surfactante e polímero;
+(d) Degradação da 
+mistura de produtos químicos a 
+altas temperaturas; (f) 
+Injetabilidade e estabilidade 
+em alta salinidade; (g) 
+Disponibilidade e retenção 
+química.
+(a) Perda de viscosidade 
+devido à degradação por 
+cisalhamento ou aumento da 
+salinidade e íons divalentes; (b) 
+Limitado ao
+reservatórios
+< 93 °C; (c) Problemas com 
+injetividade, estabilidade e alta 
+salinidade.
+(a) Formação de 
+incrustações em poços 
+produtores; (b) Injetividade, 
+estabilidade e alta salinidade; 
+(c) Disponibilidade e retenção 
+de produtos químicos.15 15 – 25 lb
+de surfactante 
+por barril de 
+petróleo 
+produzido
+5 0,3 – 0,5 lb
+polímero por 
+barril de 
+petróleo
+produzido
+5 35 – 45 lb
+químico por bbl 
+de petróleo 
+produzido
+Tabela 3: Mecanismos de produção de EOR com gás miscível, limitações, problemas [2,14,18,19,31,32,33]
+Processo EOR Básico Mecanismos Limitações Problemas Típico Típicos
+Principais Recuperação (%) agente
+N2 e gases de 
+combust
+ãoMelhoria da 
+eficiência de 
+deslocamento.(a) Vaporizar os 
+componentes mais leves 
+do petróleo bruto; (b) 
+Fornecer um impulso de 
+gás ao reservatório; (c) 
+Aumentar a injetividade;
+(d) Reduzir a 
+viscosidade.a) Miscibilidade com óleos leves a 
+alta pressão; b) Aplicável em 
+reservatórios profundos; c) É 
+desejável que o reservatório seja 
+inclinado para permitir a 
+estabilização por gravidade do 
+deslocamento, que normalmente 
+tem uma relação de mobilidade 
+desfavorável.(a) Baixa eficiência de varredura 
+vertical e horizontal devido 
+à formação de dedos viscosos; 
+(b) A corrosão pode causar 
+problemas no gás de combustão.5 – 15 10 Mscf de 
+solvente por 
+bbl de 
+óleo
+produzido
+CO2 Melhoria da 
+eficiência de 
+deslocamento.(a) Gerar 
+miscibilidade entre o 
+petróleo e o CO2 ; (b) 
+Inchaço do petróleo; (c) 
+Reduzir a viscosidade do 
+petróleo; (d) Reduzir a
+interfacial
+tens ão entre o óleo e o 
+CO2.(a)Controlo deficiente da 
+viscosidade devido à baixa 
+viscosidade do CO2; (b) 
+Disponibilidade de CO2(a) Ruptura precoce do CO2 ; (b) 
+Corrosão nos poços produtores; 
+(c) Repressurização do CO2 para 
+reciclagem; (d) Elevada 
+necessidade de CO2 por barril 
+incremental barril 
+produzido; (e) Estabilidade, 
+sobreposição e fornecimento.5 − 15 10 Mscf de 
+solvente por 
+bbl de 
+petróleo
+produzido.
+Gás de 
+hidrocarbo
+netosMelhoria da 
+eficiência de 
+deslocamento.(a) Gera 
+miscibilidade na 
+condensação e 
+vaporização do gás;
+(b) Inchaço do óleo; (c) 
+Diminui a 
+viscosidade do óleo.(a) A faixa de pressão necessária 
+é de cerca de 1.200 psi para o 
+processo de GLP a 3.000 – 5.000 psi 
+para o acionamento de gás de alta 
+pressão; (b) A formação desejável é 
+uma formação com inclinação 
+acentuada que permita alguma 
+estabilização da gravidade do
+deslocamento que 
+normalmente tem uma mobilidade 
+desfavorável(a)Dedos viscosos devido à baixa 
+eficiência de varredura vertical e 
+horizontal ; (b) É 
+necessária uma grande 
+quantidade de produtos caros; (d) 
+O solvente pode ficar retido e não 
+ser recuperado.5 − 15 10 Mscf de solvente 
+por bbl de 
+petróleo
+produzido
+.5
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11Ao reduzir o IFT [18], o número capilar aumenta e a satura ção residual de petróleo 
+diminui,  conforme  ilustrado  na Fig. 4.O valor  da satura ção residual  de petróleo pode  aproximar-se  de zero quando  o IFT 
+atinge  valores  ultrabaixos  [34]. Assim,  é poss ível produzir  mais  petróleo. 
+Matematicamente,  o número  capilar  é descrito  como:
+𝑁𝑐𝑎=  𝜐𝜇
+𝜎𝐶𝑜𝑠%(2)
+Figura  4: Efeito  do número  capilar  (Nc)  na satura ção residual  de petróleo (Sor).  
+Adaptado  de Ahmed  e Meehan  [18]Onde𝜐 é a velocidade, μ é a viscosidade dinâmica do fluido,𝜎 é a tensão interfacial e𝜃  é 
+o ângulo de contacto.𝜃  está relacionado com a molhabilidade em superfícies específicas 
+[21]. A equação 2 reflete a relação entre duas forças: o arrasto viscoso do fluido (𝜐 μ) sobre 
+a contribuição interfacial dada pela tensão interfacial (𝜎 ). Se este número for pequeno, o 
+movimento do fluido é afetado ou dominado pela capilaridade.
+forças, enquanto  as forças viscosas  dominam  para Nca >1[21] . A Figura  5 ilustra  a meta  
+de EOR  para diferentes  hidrocarbonetos.  Em geral,  as recupera ções médias mundiais  
+de hidrocarbonetos  para recupera ção prim ária estão na faixa  de 5 a 15%  e as 
+secund árias até 1/3 (~33%)  do petróleo original  no local.
+Figura 5: Meta de EOR para diferentes hidrocarbonetos. Assumindo Soi=85%PV e Sw= 15%PV[35]
+3.Oportunidades  e desafios da EOR
+A aplica ção de técnicas  de EOR  envolve  muitas  oportunidades  e desafios,  desde  a 
+fase de projeto  até a fase de implementa ção e monitoramento.  Esses  desafios  podem  
+ser técnicos,  ambientais,  geogr áficos,  logísticos,  econ ómicos  e políticos.
+3.1 Oportunidades de EOR
+A implementa ção de projetos  de EOR  pode  ter impacto  na produ ção nacional  de 
+petróleo devido  ao potencial  de recuperar  mais  de metade  dos hidrocarbonetos  
+presentes  no reservat ório, bem como  prolongar  o ciclo  de vida dos poços.
+Além disso,  a implementa ção da EOR  pode  gerar  outros  projetos,  como  o sequestro  e 
+armazenamento  de dióxido de carbono  (CO2) e o seu transporte  para campos  offshore  
+ou onshore.  O sequestro  de CO2  de usinas  de energia  e fontes  industriais,  além de ser 
+usado  para melhorar  o fator  de recupera ção, tamb ém contribui  para a redu ção das 
+emiss ões de gases  de efeito  estufa . As oportunidades  de captura  de CO2  podem  não ser 
+economicamente  viáveis ou práticas  para uma empresa  petrol ífera individual  [36], 
+portanto,  recomenda-se  uma abordagem  conjunta  entre  as empresas  do setor  
+petrol ífero e o governo.
+A aplica ção da EOR  tamb ém pode  gerar  oportunidades  políticas  que exigem  uma 
+relação próxima  com entidades  governamentais  (Minist ério do Petróleo e Recursos  
+Minerais,  Agência Nacional  de Petróleo e Gás Natural),  empresas  petrol íferas  
+nacionais  (NOCs),  empresas  petrol íferas  internacionais  (IOCs)  e prestadores  de 
+servi ços locais  e internacionais  [36]. Essa  relação requer  a defini ção de objetivos  de 
+longo  e curto  prazo  para alavancar  a implementa ção dos processos  de EOR.  Esses  
+objetivos  devem  incluir  acordos  para compartilhar  riscos  técnicos  e econ ómicos,  
+revisar  os termos  do projeto  e a vida útil do projeto,  bem como  contratos  de partilha  
+de produ ção. Esses  acordos  criam  oportunidades  para pequenas,  médias e grandes  
+empresas  nacionais  e estrangeiras  de logística  e implementa ção, gerando  mais  
+empregos  que podem  melhorar  as condi ções sociais  da popula ção local  e permitindo  a 
+arrecada ção de mais  recursos  financeiros  a nível nacional.
+3.2. Desafios da EOR
+Os desafios  da EOR  são mais  notáveis nas opera ções offshore,  particularmente  nas 
+águas  profundas  e ultraprofundas.  A perfura ção de poços offshore  é maiscaro em compara ção com as opera ções em terra.  O espa ço entre  os poços offshore  
+é maior  em compara ção com os poços em terra,  afetando  negativamente  a 
+aquisi ção de dados  e a caracteriza ção dos reservat órios, o que contribui  para o 
+aumento  do tempo  de resposta  inicial  para atingir  os poços de produ ção.
+As restrições  das infraestruturas  exigem  o redimensionamento  das plataformas  
+existentes  para criar  mais  espaços  e aumentar  a capacidade  de adicionar  mais  peso  
+aos equipamentos  relacionados  com os processos  de EOR.  Esses  equipamentos  
+incluem  aqueles  usados  para misturar  e manusear  injetores,  separar,  tratar  e 
+descartar  água,  manusear  e comprimir  o gás. Para reduzir  o tempo  e os custos  nas 
+operações  de EOR  offshore,  sugerimos  neste  artigo  que, durante  a fase de 
+desenvolvimento , as plataformas sejam redimensionadas ou atualizadas com espaço 
+extra e a capacidade  de adicionar  mais  equipamentos  que possam  ser usados  
+durante  as fases  de teste  e implementação  do EOR.
+A disponibilidade  de dados  sobre  rochas  reservat órias e fluidos  dos campos  em 
+investiga ção e dados  de projetos  globais  de EOR  bem-sucedidos  tamb ém são um dos 
+desafios  durante  a investiga ção e execu ção de projetos  de EOR,  bem como  o 
+desenvolvimento  de técnicas  baratas  e ecol ógicas.  Identificar  técnicas  de EOR  
+adequadas  e sua aplica ção em poços mistos  em campos  onshore  é outro  grande  
+desafio.  Quest ões logísticas  relacionadas  com o fornecimento  de equipamentos  e 
+fluidos  de injeção para opera ções offshore,  bem como  o tratamento  de fluidos  
+produzidos  durante  a implementa ção de processos  de EOR  [36],  constituem  um desafio  
+adicional.
+Os desafios  econ ómicos  e ambientais  dependem  do processo  a ser implementado  
+(térmico,  gasoso  e químico).  Para os processos  térmicos , os principais desafios são a 
+emissão de gases de efeito estufa , nos quais  os processos  de combust ão têm uma 
+percep ção mais  elevada  de alto risco  na sua aplica ção. Os processos  químicos  são 
+aqueles  que têm um longo  período de retorno  do investimento  devido  ao tempo  
+que os produtos  químicos  levam  para reagir  com os fluidos  presentes  no 
+reservat ório, enquanto  o acesso  do dióxido de carbono  (CO2) aos processos  de 
+recupera ção de gás misc ível é um desafio  econ ómico  relacionado  à sua aquisi ção 
+[36].
+4.Estratégia de planeamento  de EOR
+A implementa ção bem-sucedida  de um projeto  de EOR  requer  um planejamento  bom 
+e eficaz  na seleção da técnica  apropriada  para o campo  ou
+6
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11reservat ório em investiga ção [16,37]. Este processo  envolve  a integra ção de um conjunto  
+de parâmetros  que regem  o desempenho  técnico  e econ ómico  de um reservat ório 
+[8,10,37],  mas não se limita  aos fatores  ambientais,  comerciais,  políticos  e governamentais  
+[37,38,39,40]. A aten ção cuidadosa  e a implementa ção passo  a passo  desses  parâmetros  
+aumentam  consideravelmente  a possibilidade  de sucesso  de um projeto  de EOR.  
+Vários problemas  que podem  ser encontrados  durante  a implementa ção do projeto  
+EOR  podem  ser identificados  e evitados  com estudos  de triagem  iniciais  eficientes  [16].
+A fase de planeamento  procura  responder  ao seguinte:  (1) o volume  de petróleo 
+restante  após a recupera ção secund ária, (2) a localiza ção dos recursos  ou reservas,  (3) 
+e as razões pelas  quais  essas  reservas  não foramrecuperadas,  (4) campos  com maior  press ão e decl ínio de produ ção após a 
+recupera ção secund ária e quais  são as causas  desse  decl ínio [16].
+A estrutura  das diferentes  fases  do projeto,  os objetivos,  as descri ções, os recursos  
+humanos,  o equipamento  necess ário, as institui ções e os custos  serão estabelecidos  
+durante  a fase de planeamento.  Serão estabelecidas  parcerias  com algumas  institui ções 
+internas  e externas  para atividades  avan çadas de recupera ção de petróleo em Angola,  
+bem como  para monitoriza ção e sequestro  de CO2  produzido  em atividades  avan çadas 
+de recupera ção de petróleo. A implementa ção do projeto  EOR  envolve  três fases  
+principais  [16,17,41]: (1) seleção do projeto  EOR,  (2) implementa ção e otimiza ção do 
+projeto,  (3) abandono  do campo,  conforme  ilustrado  na Fig. 6.
+4.1. Seleção do projeto  EORFigura 6: Estratégia eficaz de planeamento de EOR. Adaptado de [16,17,41] .
+A fase de gestão de dados  é dedicada  à recolha  e análise de dados.
+Esta é a fase de seleção da técnica  EOR  adequada  e verifica ção da sua viabilidade  
+econ ómica.  Consiste  na gestão de dados,  avalia ção de campo,  triagem  do método 
+EOR,  estudos  de simula ção física e matem ática, estudo  das instala ções do processo  e, 
+em seguida,  viabilidade  do projeto,  incluindo  a avalia ção ambiental  e econ ómica  em 
+escala  real. Se o projeto  for classificado  como  viável, é necess ário o projeto  e a 
+implementa ção do teste  piloto  [41].
+4.1.1. Conceito
+Esta é a fase do projeto  EOR  em que as ideias  são desenvolvidas.  O conceito  do 
+projeto  EOR  é apresentado  aos gestores  de topo para justificar  o início  do projeto,  
+com uma descrição  geral  do contexto,  da necessidade  do projeto,  dos objetivos  do 
+projeto,  dos resultados  esperados  e dos recursos  necessários.  Todos  os documentos  
+necessários  para iniciar  um projeto  serão  fornecidos,  incluindo  modelos  para a 
+proposta  do projeto,  caso de negócio,  estudo  de viabilidade,  definição  do âmbito  do 
+projeto,  recursos  humanos,  recrutamento  de pessoal  e criação  de um gabinete  de 
+projeto.
+4.1.2 Seleção e avaliação do campo
+O principal  objetivo  desta  fase do projeto  é a seleção de campos  potenciais  para a 
+implementa ção. Estes  incluem  (1) campos  com decl ínio de press ão e produ ção após 
+recupera ção secund ária, mas com reservas  potenciais  remanescentes,  (2) utiliza ção 
+dos resultados  da análise geol ógica e modela ção dinâmica  ou de alguns  outros  
+relat órios de produ ção para identificar  os campos  potenciais  de implementa ção de 
+EOR,  (3) campos  com petróleo pesado  que não foi poss ível produzir  com métodos  de 
+produ ção convencionais.  A identifica ção desses  campos  ajudar á a prever  o volume  de 
+atividades  que podem  ser realizadas  durante  as diferentes  fases  do projeto.
+4.1.3. Gestão de dadose integra ção de campos  potenciais  para aplica ção de EOR  em Angola,  incluindo  
+campos  em todo o mundo  onde  essas  técnicas  foram  aplicadas com sucesso. Serão 
+inclu ídos dados de projetos de EOR bem-sucedidos em todo o mundo,  que foram  
+usados  como  base para a triagem  e determina ção da adequa ção da técnica  de EOR  
+investigada.  Os dados  de projetos  de campo  de EOR  bem-sucedidos  são obtidos  
+de relat órios de pesquisa  de EOR  publicados  semestralmente  no Oil and Gas 
+Journal [6,42]. Estes dados compreendem três (3) categorias: dados derivados  de estudos  
+laboratoriais,  dados  gerados  a partir  da simula ção de reservat órios de petróleo sob 
+processos  EOR,  principalmente  utilizando  software  comercial  de simula ção de 
+reservat órios, e dados  de projetos  bem-sucedidos  em todo o mundo  [6,39,43,44] . Os 
+dados  de projetos  bem-sucedidos  em todo o mundo  são a categoria  mais  fiável, 
+pelo facto  de as capacidades  técnicas  e econ ómicas  serem  comprovadas  na prática 
+[6,39].
+Os dados  a serem  recolhidos  e analisados  consistem  nas propriedades  da rocha  e do 
+fluido  do reservat ório: profundidade  do reservat ório, gravidade  API do petróleo, 
+viscosidade  do petróleo, porosidade  da rocha,  permeabilidade  da rocha,  satura ção do 
+petróleo, espessura  líquida,  temperatura  do reservat ório, press ão do reservat ório, 
+salinidade  da água da forma ção, litologia  e composi ção dos hidrocarbonetos.  
+Informa ções adicionais,  como  reservas  remanescentes,  localiza ção e condi ções do 
+poço, espa çamento  entre  poços, produtos  químicos  e preço do petróleo, geometria  do 
+reservat ório e mecanismo  de desempenho  da produ ção, são importantes  para uma boa 
+seleção do processo .
+O sucesso  da triagem  ou de qualquer  outra  simula ção reside  na quantidade  e qualidade  
+do conjunto  de dados  dispon íveis ou coletados.  Isso desempenha  um papel  importante  
+no estabelecimento  dos critérios de triagem  resultantes  da técnica  de EOR  investigada  
+[45,46], minimiza  os desvios  entre  os resultados  reais  e previstos,  bem como  verifica  o 
+desempenho  do modelo  durante  o processo  de teste  [6,39].
+7
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11Durante  a análise dos dados,  são identificados  problemas  que podem  afetar  a 
+qualidade  do conjunto  de dados  [8,47], é analisada  a relação entre  os diferentes  
+parâmetros  [8,39,45,46]  e é realizada  a distribui ção das propriedades  da rocha  
+reservat ório-fluido  para cada  método de EOR  [6]. Estes  incluem  dados  em falta,  
+dados  duplicados  e dados  inconsistentes  [6]. Um bom desempenho  da análise de 
+dados  é muito  importante  para evitar  resultados  enganosos  [47].
+O processamento  de dados  é crucial  para determinar  a qualidade  dos dados  e 
+identificar  aqueles  que podem  ter um impacto  negativo  ou positivo  no resultado  da 
+investiga ção. Em seguida,  os dados  são limpos  para remover  os dados  identificados  
+que podem  ter um efeito  negativo  na efici ência e precis ão dos resultados.  Um 
+exemplo  disso  inclui:  remover  os projetos  de EOR  malsucedidos  e os dados  
+inconsistentes  para projetos  de EOR  e dados  de campos  petrol íferos  sob investiga ção 
+[43,45,46,47].
+Dados  inconsistentes  são definidos  neste  contexto  como  dados  que cont êm 
+discrep âncias  e valores  imposs íveis [45]. Isso pode  resultar  de camposonde  a satura ção de petróleo no final  (atual)  é maior  do que a satura ção de petróleo no 
+início da produ ção, o que parece  ser imposs ível para a produ ção de petróleo em 
+campo.  A consist ência dos dados  de gravidade  e viscosidade  do petróleo tamb ém 
+pode  ser analisada.  Isso evitar á ter dados  de campos  petrol íferos  com alta gravidade  e 
+alta viscosidade  do petróleo simultaneamente,  pois ambos  os parâmetros  são 
+indiretamente  proporcionais  [6].
+4.1.4. Processo de triagem de EOR
+O processo  de triagem  está relacionado  à seleção técnica  do processo  de EOR.  Esta é 
+a fase de seleção técnica  da técnica  de EOR  adequada  para cada  campo  espec ífico, 
+com o objetivo  de melhorar  a efici ência de varredura  ou deslocamento  (Figura  3). O 
+processo  de triagem  é usado  para reduzir  as incertezas  na avalia ção da aplicabilidade  
+da EOR.  A identifica ção de um volume  alvo de hidrocarbonetos  não acess íveis por 
+métodos  de recupera ção prim ária ou secund ária é uma informa ção útil para o sucesso  
+do processo  de triagem,  que depende  de cada  tipo de processo  EOR  para responder  às 
+perguntas  listadas  na Tabela  4[16].
+Tabela 4: Respostas necessárias para a identificação de um volume-alvo não acessível por métodos convencionais [16]
+Processo EOR Perguntas a responder
+EOR miscível (1) Qual é o comportamento de fase previsto entre os fluidos de injeção e os injetantes? (2) Qual é a mobilidade da(s) fase(s) 
+prevista(s)? (3) O processo será miscível por primeiro contacto ou miscibilidade desenvolvida?
+Gás imiscível (1) Qual é a saturação de petróleo restante após a injeção de água? (2) Qual é o gás residual imiscível? (3) Como serão drenados 
+os blocos de falha ou as camadas de baixa permeabilidade?
+Polímero (1) Qual é a concentração de polímero necessária para proporcionar controlo de mobilidade? (2) Que parte do polímero será 
+adsorvida pelas argilas na rocha do reservatório?
+Química
+Outros(1) Qual é o design da carga química para desenvolver a tensão interfacial ultrabaixa necessária para um deslocamento bem-
+sucedido? (2) Até que ponto o produto químico irá interagir com as argilas na rocha reservatório por meio da adsorção? (3) 
+Qual é a salinidade da água do reservatório e como a salinidade afetará a atividade da carga química e mudará durante o 
+processo? (4) Como será realizado o controle da mobilidade do banco de petróleo e do banco químico?
+Térmico (1) Quais são as perdas térmicas previstas no poço, para a rocha de cobertura e base, para a água na formação? (2) A frente 
+térmica pode ser controlada no reservatório? (3) A pressão do reservatório pode ser controlada na faixa necessária para o 
+aquecimento eficiente do fluido do reservatório?
+(1) É possível identificar micróbios que possam ser sustentados no reservatório, utilizar nutrientes in situ e/ou
+biológicos microbianos oxidantes e gerar surfactantes e polímeros, que irão cumprir os objetivos do projeto? (2) Como os micróbios e/ou seus 
+produtos serão transportados de forma estável através do reservatório?
+Qualquer outro EOR (1) O processo selecionado pode ser utilizado no reservatório selecionado, considerando o ambiente rochoso e fluido do 
+reservatório existente? Este processo pode ser implementado de forma a resultar num projeto economicamente 
+atraente?
+Três métodos  podem  ser usados  para selecionar  as técnicas  adequadas  para a 
+recupera ção de petróleo: métodos  convencionais,  métodos  geol ógicos  e métodos  
+avan çados.
+▪A seleção  convencional  é aplicada  utilizando  as opções  de seleção  em 
+ferramentas  analíticas  comerciais  para expandir  a avaliação  e validação da 
+aplicabilidade do processo de recuperação mais viável para o campo  em 
+avaliação[21]. Tabelas,  gráficos  (gráficos  de caixa,  histogramas,  gráficos  de 
+dispersão  ou uma combinação  destes)  são derivados  da combinação  de dados  
+sobre  as propriedades  dos fluidos  e rochas  dos campos  em investigação  e 
+dados  dos campos  onde  estes  métodos  foram  aplicados  com sucesso  são 
+utilizados  no processo  de seleção.  Os dados  de projetos  de EOR  
+implementados  com sucesso  em todo o mundo  são publicados  pela Society  of 
+Petroleum  Engineers (SPE) e pela Oil & Gas Journal e podem ser usados para 
+avaliar a compatibilidade  do projeto  com um método  ou técnica  a ser 
+implementado.  Esses  dados  serão  usados  para estabelecer  ou definir  a faixa de 
+compatibilidade para técnicas avançadas de recuperação para os campos  sob 
+investigação.  Existem  também  softwares  comerciais  no mercado,  como  
+PRIze  (petróleo  pesado),  Sword  (petróleo  leve)  ou outros[21]. A Tabela  5 
+ilustra  os dados  publicados  por Adasani  e Bai [43].
+▪Método  geológico  (Estudo):  O conhecimento  da geologia  do reservatório  é 
+fundamental  para o sucesso  do projeto  EOR[16]. As características  geológicas  
+da base de dados  de um projeto  de EOR  que tenha  sido implementado  com 
+sucesso  serão  utilizadas  para comparar com os dados do campo em investigação. 
+A análise geológica e do reservatório inclui[16,17,21]: (1) litologia, heterogeneidade do 
+reservatório  através  de propriedades  petrofísicas,  tipo de armadilha,análise da estrutura  do reservat ório, diag ênese,  sistema  deposicional,  idade  
+geol ógica,  profundidade,  temperatura,  espessura  porosa,  porosidade,  
+permeabilidade,  continuidade  horizontal  e vertical  do reservat ório, 
+conectividade  atrav és do reservat ório, composi ção da matriz  rochosa,  
+caracteriza ção das propriedades  do petróleo, distribui ção da saturação  do 
+petróleo, etc; (2) revisão de todos os registros, amostras de núcleo, dados de fluidos 
+e resultados  de modelos  geol ógicos  que permitam  um ajuste  satisfat ório do 
+histórico de desempenho  da produ ção; (3) estudo  mineral ógico do 
+reservat ório para determinar  a quantidade  de adsor ção dos injetores,  o que 
+determina  o volume  de injetores  necess ário para o sucesso;  (4) estimativa  de 
+recursos  quando  os dados  diretos  são limitados  ou indispon íveis,  redu ção de 
+incertezas  potenciais  na avalia ção da aplicabilidade  da EOR  ou aumento  dos 
+fatores  de recupera ção em um reservat ório em avaliação.
+▪Método  avançado  de triagem  EOR.  Baseia-se  em técnicas  de mineração  de dados  
+e inteligência  artificial  através  de combinações  simultâneas  de mais  de duas  
+propriedades  de reservatórios  e fluidos[21]. Existem  vários  modelos  de métodos  
+avançados  de seleção  para recuperação  avançada  de petróleo  que aplicam  
+inteligência  artificial,  tais como  Fuzzy  Logic  (FuzzyMLogic),  Neural  Networks  
+(Neural  Network),  NeuroMFuzzy,  etc. Os dados  para este método  são divididos  
+em dois grupos:  dados  de treino  e dados  de validação.  Os dados  são obtidos  a 
+partir  de projetos  de EOR  implementados  com sucesso  em todo o mundo,  nos 
+quais  80%  dos dados  são para treino  e 20%  para validação.  Esses  valores  são 
+selecionados  aleatoriamente  até que o modelo  otimizado  seja identificado.  O 
+modelo  identificado  será usado  para selecionar  a técnica  apropriada.  Uma  vez 
+identificado  o modelo  otimizado,  a fase de teste  será seguida  usando  dados  do 
+campo  em investigação.  Vários  estudos  foram  realizados  usando8
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11métodos  avan çados  de triagem  de EOR  ou intelig ência artificial  (IA) 
+[8,37,39,48,49,50,51,52,53]  com resultados  promissores  na triagem de EOR
+Tabela 5: Resumo dos critérios de triagem de EOR [43] .
+4.1.5 Simulação física
+São realizados testes laboratoriais para verificar se, em escala micro e macro, o método 
+funciona e para determinar os parâmetros físicos críticos de projeto do sistema 
+rocha/fluidos injetados ou o comportamento da rocha em relação ao processo utilizado. 
+A escala micro envolve a especificação dos parâmetros com impacto na eficiência de 
+deslocamento, enquanto que na escala macro são especificados os parâmetros que 
+determinam a eficiência de varredura ideal. Um exemplo em microescala é a 
+determinação da pressão mínima miscível e dos contactos múltiplos para processos 
+miscíveis e experiências de adsorção para a interação rocha-slug, comportamento de fase 
+e IFT para processos químicos [41].
+Um exemplo em macroescala é o tamanho do slug para processos químicos, as 
+proporções de água alternadas com gás (WAG) para deslocamentos miscíveis, os 
+requisitos de pressão e temperatura para processos térmicos. A macroescala também 
+inclui os parâmetros operacionais de campo, tais como a localização do poço, a 
+determinação do padrão, as taxas e pressões de injeção e as especificações de controlo 
+de qualidade dos projetos [41] .
+Testes laboratoriais adicionais consistem em (1) rochas/núcleo nativo; núcleo de rotina e 
+SCAL, porosidade e permeabilidade, difração de raios X (XRD) e microscopia eletrônica de 
+varredura (SEM), análise de energia dispersiva de raios X (EDX), molhabilidade das 
+rochas; (2) teste de formação e injeção de água: pH, salinidade, densidade, viscosidade, 
+análise completa da água, tendência bacteriana e de incrustação; (3) características do 
+petróleo: densidade, viscosidade, ponto de fusão, índice de acidez, composição, tipo de 
+petróleo; (4) teste químico: alcalino-surfactante-polímero (ASP), se necessário, adicionar 
+co-surfactante e solvente, onde cada um pode ser misturado/formulado[41] .
+Vários estudos laboratoriais [54,55]  foram implementados para a interação rocha-fluido ou 
+fluido-fluido com o objetivo de investigar os melhores cenários de EOR para projetos de 
+EOR.
+4.1.6 Simulação matemática
+Modelos de simulação podem ser implementados para otimizar os parâmetros de EOR 
+projetados, o valor presente líquido e reduzir o risco financeiro dos projetos de EOR. De 
+acordo com Hite et al. [16], a modelagem de projetos de EOR requer consistência entre os 
+parâmetros usados no reservatórioprocessos.
+simulação e modelo geológico, depois validado com o desempenho do reservatório pré-
+EOR. Isto requer muito mais dados e tempo do que as técnicas de aumento de escala e os 
+estudos de projeto de recuperação secundária. São necessárias cinco etapas principais 
+para o processo de modelagem de EOR [16]: (1) seleção do simulador de reservatório 
+apropriado, (2) coleta de dados de entrada válidos, (3) correspondência histórica do 
+desempenho passado de produção-pressão do reservatório, (4) previsão do desempenho 
+futuro do projeto de EOR, (5) determinação do projeto ideal de EOR, por meio da 
+realização de análises de sensibilidade.
+Anriansyah[41]  resume na sua apresentação o trabalho árduo que pode ser realizado até à 
+correspondência histórica para a determinação do desempenho do reservatório. Os 
+estudos de sensibilidade são cruciais para projetar e otimizar os projetos técnicos de 
+EOR, nos quais são realizados estudos das instalações do projeto, bem como estudos 
+económicos e ambientais (viabilidade do projeto), para a tomada de decisões. Os dados 
+de entrada para a simulação do reservatório EOR consistem em: (1) modelo geológico 
+estático 3D do reservatório (porosidade, fácies, distribuição da permeabilidade), (2) 
+dados dinâmicos do reservatório (SCAL − análise especial do núcleo, PVT − pressão, 
+volume, temperatura e dados de produção com pressão), (3) estudo laboratorial como 
+tipo de EOR, por exemplo, ASP. Anriansyah[41]descreve o processo completo de simulação 
+física e matemática até a correspondência histórica para estimativa de reservas, 
+desempenho de produção e proposta do melhor cenário de produção.
+4.1.7 Estudos das instalações do projeto
+Os principais estudos das instalações do projeto EOR são estudos das instalações de 
+injeção e produção [41] : (1) instalações de produção: estação coletora de testes de 
+produção, deve ser separada da instalação existente, para garantir medições mais 
+precisas e facilitar o manuseio, especialmente no que diz respeito a emulsões; (2) 
+estudos das instalações de injeção: tratamento de água para atender aos critérios e 
+compatibilidade com o reservatório. O processo também é realizado através de filtragem, 
+óleo livre e tampão de um micróbio, amaciador de água, pH neutro. Portanto, a 
+composição da água deve ser ajustada à condição a partir de um teste de laboratório e o 
+produto químico mantém as suas propriedades conforme formulado. As instalações de 
+injeção necessárias para cada projeto EOR são (1) método químico (ASP), a
+9
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11instalação consiste em um tanque (para produtos químicos) − tanques misturadores (um 
+para o solvente principal e outro para os solventes formulados em laboratório), filtro, 
+tanque de armazenamento/tanque de compensação, bomba de transferência e 
+tubulação entre os equipamentos, bomba de injeção para o poço, (2) método de 
+gás/solvente − a instalação consiste em separador (para absorção, destilação, secador de 
+gás, etc.), tanque de compensação, tubagem para a instalação de superfície até à cabeça 
+do poço e compressores (transferência e injeção), (3) método térmico − a instalação 
+consiste em um trocador de calor e caldeira, tratamento de água, tubulação (com 
+isolamento para transporte de vapor) e bomba, (4) método microbiano − a instalação 
+consiste em tanque misturador (nutrição), tubulações, bombas de transferência e 
+injeção.
+4.1.8 Viabilidade do projeto
+O estudo de viabilidade é realizado para determinar a adequação geral do projeto e o 
+resultado que pode ser usado como orientação durante a implementação piloto. O 
+estudo consiste em determinar (1) dados de quantidade e qualidade da injeção de água e 
+processo de água necessário, (2) quantidade, qualidade e condição operacional da mídia 
+EOR necessária (material químico: tensão interfacial, concentração, etc.), (3) os melhores 
+locais de padrão, incluindo área e tipo de padrão recomendado,
+(4) instalações de superfície necessárias, (5) reservas de petróleo e gás em escala piloto e 
+em escala real e, finalmente, (6) previsão de produção em escala piloto [41] .
+4.1.9 Testes piloto
+O teste piloto deve ser concebido para fornecer as informações quantitativas necessárias 
+para calibrar modelos para prever o desempenho comercial e reduzir o risco do projeto a 
+um nível aceitável [16]  e garantir a eficiência do método EOR selecionado no campo [56] . 
+No entanto, existem algumas incertezas nos parâmetros críticos para a viabilidade do 
+projeto que não podem ser resolvidas em laboratório ou através de modelagem. Em 
+alguns projetos de EOR, os testes piloto não são necessários e os métodos modernos de 
+simulação são suficientes, uma vez que a geologia do reservatório seja compreendida e 
+haja experiência analógica suficiente [16] .
+Portanto, os objetivos dos testes-piloto incluem também a seguinte avaliação do 
+processo EOR para implementação em campo completo[17,57]: (1) avaliar a eficiência da 
+recuperação, (2) avaliar os efeitos da geologia do reservatório no desempenho, (3) 
+reduzir as questões técnicas e económicas nas previsões de produção, (4) obter dados 
+para calibrar modelos de simulação de reservatórios, (5) identificar questões e 
+preocupações operacionais, (6) avaliar o efeito das opções de desenvolvimento na 
+recuperação, (7) avaliar o impacto ambiental, (8) avaliar a estratégia operacional para 
+melhorar a economia e a recuperação.
+Os testes-piloto de EOR variam de testes em poços únicos (apenas com injeção ou 
+incluindo produção) a pilotos de padrão único ou múltiplo [17] . Existem alguns testes 
+adicionais que podem ser necessários: núcleos pré e pós-teste; poços de observação de 
+registro e amostragem e outros métodos de coleta de dados [16] . O teste-piloto é 
+projetado e conduzido como um projeto de pequena escala [56] . Portanto, são 
+necessários pessoal, instalações e poços dedicados e adequados, juntamente com o 
+compromisso de usar os recursos para projetar, implementar e levar o piloto até sua 
+conclusão [16] . A execução do EOR piloto compreende um programa de monitoramento e 
+vigilância e procedimentos de garantia de qualidade (QA)/controle de qualidade (QC) 
+[16,41] .
+Os parâmetros de projeto (superfície e subsolo) com os resultados da resposta piloto são 
+monitorados, estudados, analisados e interpretados. O projeto final e os resultados 
+obtidos no teste piloto são muito úteis para o ajuste fino do modelo de simulação do 
+reservatório [56]. O programa de monitorização e vigilância consiste em (1) monitorizar os 
+poços de produção (teste de produção diário − bruto/líquido, pressão semanal na cabeça 
+do poço, nível dinâmico do fluido, pressão estática mensal no fundo do poço); (2) 
+monitorizar o poço de injeção (taxa diária de injeção, concentração do injetante, pressão 
+no fundo do poço, pressão semanal na cabeça do poço, registo de ativação de oxigénio 
+duas vezes no piloto, teste de queda, conforme necessário); (3) monitorização da planta 
+EOR (químicos/polímeros/gás miscível e imiscível, etc.); (4) programa de vigilância (teste 
+de traçador, teste de pulso, aumento de pressão e fator de pele no mínimo duas vezes no 
+teste piloto. Equilíbrio de padrão, desvio de fluido, realinhamento de padrão para obter 
+dados abrangentes na construção de um nível de confiança a partir do resultado do teste 
+de campo/piloto) [16,41] .
+4.2 Implementação  e otimização do projeto  EOR
+Com base no resultado dos estudos de viabilidade de EOR, o Plano de 
+Desenvolvimento do Campo (FDP) é concebido e implementado [41] , a fim de maximizar a 
+recuperação final num prazo prático [56] . O FDP também incluietapas de atividades necessárias, tais como orientação regulatória, orçamento e 
+preparação subterrânea e superficial. Além disso, também são necessárias aquisições 
+para monitorar a implementação completa do EOR no campo, o contrato de Engenharia, 
+Aquisição, Construção e Instalação, bem como poços de produção e inativos. Medidas de 
+mitigação de riscos também são necessárias para evitar qualquer perturbação indesejada 
+ou outros fatores que possam atrasar a implementação completa do projeto no campo 
+[16,17,41] .
+Portanto, parâmetros como (1) localização das instalações existentes, (2) capacidade 
+e descrição do processo da planta existente, (3) layout da área para definir a 
+acessibilidade da futura expansão das instalações existentes, (4) tubagem existente, ou 
+seja, tamanho, comprimento, caudal máximo e mínimo, limites da bateria, vida útil, 
+relação de redução da tubagem existente, (5) os serviços públicos existentes: a fonte de 
+geração de energia e a potência máxima de produção, (6) as capacidades disponíveis do 
+tanque de armazenamento existente são considerados durante o processo de projeto [56] 
+.
+Antes do início do projeto, o pessoal de campo deve receber formação, pois um projeto 
+de EOR não representa uma atividade habitual nos campos petrolíferos [16],assim como 
+em Angola, onde os projetos de EOR são considerados novos. O planeamento e a gestão 
+do desenvolvimento do projeto EOR devem incluir as expectativas do projeto, a recolha 
+de dados, a garantia de qualidade (QA), o controlo de qualidade (QC), as atividades de 
+monitorização e vigilância a serem realizadas durante a vida útil do projeto [16,41] .
+A vigilância recomendada para a implementação do projeto EOR pode incluir dados de 
+pressão ou temperatura em poços de observação, amostras de fluidos de produção, 
+atividades de controlo de qualidade nas instalações de injeção de fluidos, bem como as 
+atividades normais de operação do campo [16] . As atividades de QA e QC incluem o 
+cálculo do volume total do material, conforme solicitado, seguido de amostragem 
+aleatória e, em seguida, testes laboratoriais para determinar a qualidade e as 
+especificações [41] . O plano de monitorização é monitorizado de forma semelhante na 
+implementação de testes-piloto ou na monitorização dos poços de produção, poços de 
+injeção e instalações de EOR. Alguns dos novos métodos e ferramentas de vigilância 
+disponíveis que podem ser utilizados são medições contínuas de pressão, temperatura e 
+caudal no fundo do poço, tomografia entre poços e ferramentas sísmicas 4-D [27] . 
+Algumas questões técnicas e limitações dos métodos de EOR estão resumidas nas 
+Tabelas 2, 3 e 4, respetivamente.
+4.3 Abandono do projeto EOR
+O abandono do campo é realizado após todas as possibilidades económicas terem sido 
+esgotadas. A vida económica de um projeto geralmente termina quando o fluxo de caixa 
+líquido se torna permanentemente negativo, o que será acompanhado pela desativação 
+do campo, bem como pelo sequestro e armazenamento de CO2, quando viável. 
+Consequentemente, é realizada a viabilidade económica do campo, qualidade e controlo. 
+No caso de o projeto não ser economicamente viável, então (1) criar condições para o 
+abandono do campo, (2) identificar equipas especializadas em sequestro e 
+armazenamento de CO2 , (3) criar condições para o armazenamento de CO2 para uso em 
+quaisquer projetos EOR subsequentes.
+5.Conclusões
+O plano estratégico geral para as etapas de conceção de projetos de EOR nos campos 
+petrolíferos de Angola foi apresentado e proposto neste artigo. Uma vez aplicadas estas 
+técnicas, é possível obter um aumento significativo na recuperação de petróleo, bem 
+como prolongar o ciclo de vida dos reservatórios. O sucesso da implementação de um 
+EOR requer um planeamento eficaz na seleção da técnica adequada para o campo ou 
+reservatório em investigação. Isto inclui dados de boa qualidade e quantidade, um bom 
+processo de seleção, conceção do projeto e compreensão dos parâmetros críticos do 
+reservatório e das incertezas. A Equipa Nacional de Trabalho de EOR de Angola (ANEWT) 
+dentro da Agência Nacional do Petróleo, Gás e Biocombustíveis (ANPG) deve ser criada 
+para coordenar a indústria petrolífera angolana e as tentativas do governo de conceber e 
+desenvolver o programa de EOR em conjunto com operadores e empresas de serviços, a 
+fim de garantir que a recuperação global de hidrocarbonetos seja maximizada. O pessoal 
+de campo e outros funcionários-chave devem ser formados e especializados, e a equipa 
+executora envolvida neste projeto deve ser apoiada pela alta administração na tomada 
+de decisões operacionais e ser independente na área de atuação. A aplicação de 
+incentivos fiscais e contratuais sempre que necessário e a cooperação com operadores, 
+empresas de serviços, universidades, centros de investigação e inovação tecnológica 
+podem resultar em relações mutuamente benéficas e desenvolvimentos no setor.10
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11Agradecimento
+Agradecemos à Sonangol EP pela autorização para preparar e publicar este artigo.
+Conflito  de interesses
+Os autores declaram que não há conflito de interesses em relação à publicação deste 
+manuscrito.
+Referências
+[1]ISCO, T. (2007). Recuperação avançada de petróleo (eor). Uma empresa da Teledyne 
+Technologies.
+[2]Al−Anazi, B. D. (2007). Técnicas avançadas de recuperação de petróleo e injeção de 
+nitrogénio. CSEG Recorder, páginas 29 – 33.
+[3] Aladasani, A. (2012). Critérios de triagem EOR atualizados e modelagem dos 
+impactos das mudanças na salinidade da água na recuperação de petróleo. 
+Universidade de Ciência e Tecnologia do Missouri.
+[4] Akanji, L. (2014). Dos mecanismos de recuperação primária aos terciários: uma 
+evolução das tecnologias para ior/eor em reservatórios de hidrocarbonetos. Em 
+Workshop internacional sobre avanços em engenharia de reservatórios de petróleo 
+e métodos de recuperação avançada de petróleo, Baku, Azerbaijão.
+[5]Lake, L. W. e Walsh, M. P. (2008). Pesquisa bibliográfica de dados de campo sobre 
+recuperação avançada de petróleo (EOR). Relatório técnico, Universidade do Texas 
+em Austin.
+[6]Ramos, G. A. R. (2018). Triagem baseada em neuro-fuzzy para projetos de EOR e 
+investigação experimental de técnicas identificadas em operações de campos 
+petrolíferos. Tese de doutorado, Universidade de Aberdeen.
+[7] McCormack, M. P., Thomas, J. M., Mackie, K., et al. (2014). Maximizar as 
+oportunidades de recuperação avançada de petróleo no Reino Unido através da 
+colaboração. Na Exposição e Conferência Internacional de Petróleo de Abu Dhabi. 
+Sociedade de Engenheiros de Petróleo.
+[8] Ramos, G. A. e Akanji, L. (2017c). Análise de dados e técnica neuro-fuzzy para 
+triagem de EOR: aplicação em campos petrolíferos angolanos. Energies, 10(7):837.
+[9]Ramos, G. e Akanji, L. (2017a). Triagem técnica de métodos de recuperação avançada 
+de petróleo – um estudo de caso do bloco C nos campos petrolíferos offshore de 
+Angola. No Primeiro Workshop de Exploração Petrolífera EAGE/ASGA, páginas cp–
+531. Associação Europeia de Geocientistas e Engenheiros.
+[10] Ramos, G. A. e Akanji, L. (2017b). Aplicação de inteligência artificial para triagem 
+técnica de métodos de recuperação avançada de petróleo. Revista de Ciências do 
+Petróleo, Gás e Petroquímica.
+[11] Kokal, S. e Al−Kaabi, A. (2010). Recuperação avançada de petróleo: desafios e 
+oportunidades. Conselho Mundial do Petróleo, páginas 64–69.
+[12] Stosur, G. J. (2003). EOR: passado, presente e o que os próximos 25 anos podem 
+trazer. SPE 84864.
+[13] Hite, G. J. S. J. R., Carnahan, N. F. e Miller, K. (2003). A sopa de letras de IOR, EOR e 
+AOR: uma comunicação eficaz requer uma definição dos termos. SPE 84908.
+[14] Romero−Zer´on, L., editor (2012). Introdução aos processos de recuperação 
+avançada de petróleo (EOR) e biorremediação de locais contaminados por petróleo. 
+ISBN 978−953−51−0629−6. InTech, Janeza Trdine 9, 51000 Rijeka, Croácia.
+[15] Stosur, G. J., Hite, J. R., Carnahan, N. F., Miller, K.,et al. (2003). A sopa de letras de 
+ior, eor e aor: uma comunicação eficaz requer uma definição dos termos. Em SPE 
+International Improved Oil Recovery Conference in Asia Pacific. Sociedade de 
+Engenheiros de Petróleo.
+[16] Hite, J. R., Bondor, P. L., et al. (2004). Planeamento de projetos eor. Em SPE 
+International Petroleum Conference in Mexico. Sociedade de Engenheiros de 
+Petróleo.
+[17] Al−Mjeni, R., Arora, S., Cherukupalli, P., Van Wunnik, J., Edwards, J., Felber, B. J., 
+Gurpinar, O., Hirasaki, G. J., Miller, C. A., Jackson, C., et al. (2010). Chegou a hora da 
+EOR. Oilfield Review, 2011(22):4.
+[18] Ahmed, T. e Meehan, N. (2012). Gestão e engenharia avançadas de reservatórios. 
+ISBN: 978−0−1238−5548−0. Gulf Professional Publishing é uma editora da Elsevier, 
+2.ª edição.[19] Lake, L. W. (1989). Recuperação Avançada de Petróleo. Englewood Clifts, NJ: 
+Prentice−Hall.
+[20] Sheng, J. J. (2011). Recuperação Avançada de Petróleo Química Moderna − Teoria e 
+Prática. Gulf Profissional Publishing /Elsevier Inc.
+[21] Alvarado, V. e Manrique, E. (2010). Recuperação avançada de petróleo: estratégias 
+de planeamento e desenvolvimento de campos. Gulf Professional Publishing.
+[22] Wright, D., Ie Poidevin, S., Morrison, G., e Thomas, R. (1993). Potencial das 
+aplicações de recuperação avançada de petróleo na Austrália. AGSO Journal of 
+Australian Geology and Geophysics, 14(4):343–351.
+[23] Marle, C. (1991). Retenção e mobilização de petróleo em relatórios críticos sobre 
+química aplicada, volume 33. Conceitos básicos em processos de recuperação 
+avançada de petróleo. Elsivier Applied Science.
+[24] Chauveteau, G. e Sorbie, K. (1991). Conceitos básicos em processos de recuperação 
+avançada de petróleo. Elsevier Applied Science, Londres, 33.
+[25] Muggeridge, A., Cockin, A., Webb, K., Frampton, H., Collins, I., Moulds, T., e Salino, 
+P. (2013). Taxas de recuperação, recuperação avançada de petróleo e limites 
+tecnológicos. Royal Society Publishing.
+[26] Smalley, P. C., Ross, A. W., Brown, C., Moulds, T. P., e Smith, M. J. (2009). Limites 
+técnicos dos reservatórios: uma estrutura para maximizar a recuperação dos 
+campos petrolíferos. SPE Reservoir Evaluation & Engineering, 12(04):610–629.
+[27] Muskat, M. (1953). Recuperação de petróleo a 100%? Química Industrial e de 
+Engenharia, 45(7):1401–1405.
+[28] Arriola, A., Willhite, G. P. e Green, D. W. (1983). Retenção de gotas de petróleo em 
+um poro não circular e mobilização ao entrar em contato com um surfactante. 
+Society of Petroleum Engineers Journal, 23(01):99–114.
+[29] Buckley, S. E. e Leverett, M. (1942). Mecanismo de deslocamento de fluidos em 
+areias. Transações da AIME, 146(01):107–116.
+[30] Fayers, F. J. e Muggeridge, A. H. (1990). Extensões da teoria de Dietz e 
+comportamento das línguas de gravidade em reservatórios ligeiramente inclinados. 
+SPE Reservoir Engineering, 5(04):487–494.
+[31] Goodlett, G., Honarpour, M., Chung, F. e Sarathi, P. (1986b). O papel da triagem e 
+dos estudos de fluxo em laboratório na avaliação do processo EOR. SPE 15172.
+[32] Carcoana, A. (1992). Recuperação Avançada de Petróleo Aplicada. Prentice−Hall, 
+Inc, Englewood Cliffs, Nova Jersey 07632.
+[33] Satter, A., Iqbal, G. M., e Buchwalter, J. L. (2008). Engenharia Prática Avançada de 
+Reservatórios. Assistida por Software de Simulação. PennWell Corporation, 
+Oklahoma, EUA, edição ilustrada.
+[34] Chatzis, I., Morrow, N. R., et al. (1984). Correlação das relações do número capilar 
+para arenito. Revista da Sociedade de Engenheiros de Petróleo, 24(05):555–562.
+[35] Thomas, S. (2008). Recuperação avançada de petróleo − uma visão geral. Ciência e 
+Tecnologia do Petróleo e Gás − Revista do IFP, 63(1):9–19.
+[36] Bondor, P. (2010). EOR – a hora é agora: a sua contribuição para o abastecimento 
+mundial de petróleo. Programa de Palestras Distintas da SPE, Los Angeles.
+[37] Ramos, G. A., Elias, B. e Yates, K. (2020b). Triagem de candidatos a reservatórios 
+para recuperação avançada de petróleo (EOR) em projetos offshore angolanos. 
+Angolan Mineral, Oil & Gas Journal, 1(1):6–10.
+[38] Al−Mutairi, S. M. e Kokal, S. (2011). Potencial de EOR no Médio Oriente: tendências 
+atuais e futuras. SPE 143287.
+[39] Kamari, A., Nikookar, M., Sahranavard, L., e Mohammadi, A. H. (2014). Triagem 
+eficiente de métodos de recuperação avançada de petróleo e análise económica 
+preditiva. Springer, páginas 815–824. DOI 10.1007/s00521−014− 1553−9.
+[40] Mohan, H., Biglarbigi, K., Carolus, M., e Wagener, D. V. (2011). Avaliação do 
+potencial de EOR dos Estados Unidos. SPE 145073.
+[41] Anriansyah, A. (2017). EOR (recuperação avançada de petróleo): viabilidade, 
+implementação e avaliação.
+[42] Koottungal, L. (2014). Inquérito mundial sobre EOR. Petróleo e gás.
+[43] Adasani, A. A. e Bai, B. (2011). Análise de projetos de EOR e critérios de triagem 
+atualizados. Journal of Petroleum Science and Engineering, 79(1–2):10 – 24.11
+Ramos e Yates
+Revista Angolana de Minerais, Petróleo e Gás, vol. 2 (2021) 1–11[44] Zerafat, M., Ayyatollahi, S., Mehranbood, N., e Barzegan, D. (2011). Análise de rede 
+bayesiana como ferramenta para triagem eficiente de EOR. SPE 143282.
+[45] Saleh, L. D., Wei, M., e Bai, B. (2014). Análise de dados e atualização dos critérios de 
+triagem para injeção de polímeros com base em dados de campos petrolíferos. SPE 
+168220.
+[46] Chauhan, P. D. (2014). Análise de dados e resumo para injeção de surfactante-
+polímero com base em projetos de campos petrolíferos e dados laboratoriais. 
+Dissertação de mestrado.
+[47] Nageh, M., Ela, M. A. E., Tayeb, E. S. E., e Sayyouh., H. (2015). Aplicação do uso da 
+lógica difusa como técnica de inteligência artificial nos critérios de triagem das 
+tecnologias EOR. SPE−175883−MS.
+[48] Akanji, L. e Sandrea, R. (2016). Uma abordagem neuro-difusa para a seleção de 
+reservatórios candidatos para EOR. Advances in Petroleum Exploration and 
+Development. 12(1): 1-14. DOI:10.3968/8743.
+[49] Chung, T.-H., Carrol, H. B. e Lindsey, R. (1995). Aplicação do sistema especialista 
+difuso para análise de risco de projetos de EOR. SPE 30741, páginas 411–418.
+[50] Dickson, J. L., Leahy−Dios, A., e Wylie, P. L. (2010). Desenvolvimento de 
+metodologias aprimoradas de triagem para recuperação de hidrocarbonetos. SPE 
+129768.[51] Gharbi, R. B. (2000). Um sistema especialista para selecionar e projetar processos 
+de EOR. Revista de Ciência e Engenharia do Petróleo, 27(1–2):33 – 47.
+[52] Guerillot, D. (1988). Triagem de EOR com um sistema especialista. Em Petroleum 
+Computer Conference. Sociedade de Engenheiros de Petróleo.
+[53] Zhou, C. D., Wu, X.-L., e Cheng, J.-A. (1993). Determinação das propriedades do 
+reservatório em estudos de reservatórios utilizando uma rede neural difusa. SPE 
+26430. Conferência Técnica Anual e Exposição da SPE, Houston, EUA, 3-6 de 
+outubro.
+[54] Goodlett, G., Honarpour, M., Chung, F., e Sarathi, P. (1986a). O papel da triagem e 
+dos estudos de fluxo em laboratório na avaliação do processo EOR. Em SPE Rocky 
+Mountain Regional Meeting. Sociedade de Engenheiros de Petróleo.
+[55] Ramos, G. A., Akanji, L. T., e Afzal, W. (2020a). Uma nova formulação de 
+surfactante-polímero/alcalino-surfactante-polímero para processos de recuperação 
+avançada de petróleo (EOR). Energy & Fuels.
+[56] El Ela, M. A., Sayyouh, H., et al. (2014). Uma abordagem integrada para a aplicação 
+de projetos de recuperação avançada de petróleo. Journal of Petroleum Science 
+Research, 3(4):176–188.
+[57] Teletzke, G. F., Wattenbarger, R. C., Wilkinson, J. R., et al. (2010). Melhores práticas 
+para testes-piloto de recuperação avançada de petróleo. SPE Reservoir Evaluation & 
+Engineering, 13(01):143–154.

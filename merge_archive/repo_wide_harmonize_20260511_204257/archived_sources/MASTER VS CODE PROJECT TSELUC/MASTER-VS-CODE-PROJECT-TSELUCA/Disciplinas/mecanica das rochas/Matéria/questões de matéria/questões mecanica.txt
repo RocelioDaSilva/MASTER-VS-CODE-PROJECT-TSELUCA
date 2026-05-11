@@ -1,0 +1,155 @@
+Definição de Mecânica das Rochas;É uma disciplina da engenharia civil que se ocupa do estudo teórico e prático das propriedades das rochas e das suas respostas (deformações) quando submetidas a uma perturbação aplicada.
+Quais são as três formas de deformação/manifestação das rochas mencionadas no capítulo 1;Juntas ou diáclases (fraturação sem deslocamento perceptível); Falhas (torção com deslocamento relativo de blocos); Dobras (flexão e encurtamento acentuado).
+Qual é o objeto de estudo da Mecânica das Rochas;Rochas e maciços rochosos.
+Qual é o objetivo principal da disciplina de Mecânica das Rochas no contexto do curso (Engenharia de Petróleos);Dotar o estudante de conceitos fundamentais ao entendimento do comportamento das rochas, para aplicação na perfuração de poços.
+Além da Engenharia Civil e de Petróleo, que outra área de engenharia é destacada na aplicação da Mecânica das Rochas nos textos;Engenharia de Minas.
+O que é um recalque uniforme em fundações;Quando todos os pontos da fundação descem igualmente como um corpo rígido, não causando danos estruturais à obra (apenas possíveis problemas em ligações externas).
+O que é um recalque diferencial;Quando diferentes partes da estrutura sofrem rebaixamentos desiguais, resultando em esforços estruturais não previstos, fissuras ou risco de colapso.
+Na Engenharia de Minas, quais são as duas missões principais da Mecânica das Rochas;1. Destruir a rocha de maneira eficiente (perfuração, detonação). 2. Tornar as estruturas rochosas seguras (estabilidade de taludes, controle de colapsos).
+Qual a importância da Mecânica das Rochas na perfuração de poços de petróleo em relação à lama de perfuração;Permite determinar a pressão ideal da lama de perfuração para conter o colapso da rocha e evitar que a parede do poço desmorone ou sofra kick (influxo de fluidos da formação).
+O que é a "Janela de Perfuração Segura";É o intervalo de pressões em que a perfuração pode ser realizada sem causar colapsos (limite inferior) ou perdas de circulação/fraturamento indesejado (limite superior).
+O que é o fenômeno de "sanding" (produção de areia) em reservatórios;Ocorre quando a rocha do reservatório é fraca e sofre erosão devido ao fluxo de fluidos, produzindo areia junto com o óleo/gás.
+Por que as rochas sedimentares são as mais importantes na indústria petrolífera;Porque constituem cerca de 66% da crusta e são as que contêm poros e fraturas que permitem o acúmulo de óleo e gás (rochas-reservatório), além de poderem ser geradoras (folhelho) ou selantes (evaporitos).
+Quais são os três grandes grupos de rochas classificados pela sua génese;Rochas Ígneas (Magmáticas), Rochas Sedimentares e Rochas Metamórficas.
+Como se caracteriza a textura das rochas ígneas plutónicas (intrusivas) e porquê;Textura fanerítica (granulometria grossa) porque o magma arrefece lentamente em profundidade.
+Como se caracteriza a textura das rochas ígneas vulcânicas (extrusivas);Textura vítrea ou afanítica (granulometria fina) devido ao arrefecimento rápido à superfície.
+O que distingue o Metamorfismo Regional do Metamorfismo de Contacto;O Regional abrange extensas áreas devido a pressões e temperaturas elevadas em limites de placas (ex.: ardósia). O de Contacto limita-se à auréola de aquecimento em redor de uma intrusão magmática.
+Dá um exemplo de rocha metamórfica formada a partir de calcário e outra a partir de arenito rico em quartzo;Calcário -> Mármore. Arenito rico em quartzo -> Quartzito.
+Como se classificam as rochas sedimentares quanto à sua origem;Clásticas (detríticas); Quimiogénicas (precipitação química); Biogénicas (matéria orgânica).
+Qual é a definição de "Rocha" segundo o texto do Capítulo 2;Materiais sólidos, consolidados e constituídos naturalmente por um ou mais minerais, com características físicas e mecânicas específicas para cada tipo.
+Qual é a definição de "Solo" no contexto da Engenharia Civil apresentada;São agregados de grãos minerais não consolidados encontrados na superfície terrestre que não oferecem resistência à escavação mecânica e perdem resistência em contacto prolongado com a água.
+O que é um "Maciço Rochoso";Porção definida de uma ou mais formações geológicas, caracterizada por suas rochas (matriz rochosa) e descontinuidades.
+O que são descontinuidades num maciço rochoso;Qualquer plano que separa os blocos da matriz rochosa (ex.: falhas, diáclases, planos de estratificação).
+O que significa Anisotropia num maciço rochoso;Característica do material se comportar de modo diferente conforme a direção considerada (ex.: xistosidade).
+Qual é o grau de alteração W1 segundo a ISRM (1978) e qual a sua característica;W1 (Rocha Sã). Sem quaisquer sinais de alteração.
+Qual é o método utilizado para análise granulométrica de partículas finas (inferiores a 0.075 mm);Método da Sedimentação.
+Qual é a diferença principal entre Conglomerados e Brechas;Conglomerados são formados por clastos arredondados (indicam maior transporte). Brechas são formadas por clastos angulares (indicam pouco transporte e proximidade da fonte).
+Como se define a reactivação de falhas em reservatórios e qual o critério usado para estimar o risco;As falhas podem atuar como selantes ou caminhos de migração. O engenheiro estima o risco de reactivação usando os critérios de falha de Mohr-Coulomb.
+Qual é o efeito geomecânico que deve ser levado em conta na análise da permeabilidade absoluta de um reservatório;A compactação e as tensões horizontais devem ser levadas em conta para uma análise completa da porosidade e permeabilidade.
+Quais são as duas principais técnicas de estimulação de poços mencionadas que requerem estudo geomecânico prévio;O fraturamento hidráulico e a acidificação da matriz (uso de misturas como HCl para limpar incrustações).
+Além da Engenharia de Petróleo, Minas e Civil, que outras aplicações da Mecânica das Rochas são mencionadas no âmbito da Energia e Ambiente;Armazenamento de CO2 (CCS), Armazenamento de Resíduos Nucleares, Energia Geotérmica, Estabilidade de Barragens e Fundações para Energia Eólica/Solar.
+O que é o fenómeno de "kick" durante a perfuração e o que o causa;Ocorre quando a poro-pressão da formação é maior que a pressão exercida pelo fluido de perfuração, fazendo com que os cascalhos "explodam" para dentro do poço.
+O que significa a sigla BHA no contexto da perfuração de poços;Bottom Hole Assembly (Conjunto de fundo de poço).
+Qual a solução recomendada para perfurar formações reativas ao fluido de perfuração (ex.: folhelhos hidratáveis);Usar fluido de perfuração inerte, como óleos sintéticos, óleo mineral, fluidos base de salmoura ou gás seco.
+Como se chama o fenómeno que ocorre quando a densidade de um estrato de rocha (ex.: sal) é menor que a da rocha encaixante e este flui para o poço;Perfuração de Formações Móveis.
+O que é a subsidência em minas subterrâneas ou áreas de produção;É o abatimento ou afundamento gradual da superfície do terreno devido à remoção de material do subsolo ou à compactação do reservatório.
+Em que consiste a Técnica de Overcoring;É um método utilizado para análise de tensões in situ em maciços rochosos.
+Segundo o ciclo petrológico, quais os processos da geodinâmica que dão origem às rochas;Magmatismo (rochas ígneas); Sedimentação e Diagénese (rochas sedimentares); Metamorfismo (rochas metamórficas).
+Qual é a percentagem aproximada de ocorrência de rochas sedimentares na crusta terrestre;Cerca de 66% de todas as rochas da crusta terrestre.
+Como se designa o processo de transformação de sedimentos soltos em rocha sedimentar consolidada;Diagénese.
+Diferencie textura Fanerítica de Afanítica em rochas ígneas;Fanerítica: Cristais grossos visíveis a olho nu (resfriamento lento em profundidade). Afanítica: Cristais muito finos ou invisíveis a olho nu (resfriamento rápido à superfície).
+Qual é a rocha metamórfica que resulta do metamorfismo de grau crescente a partir de argilitos, passando por ardósia e filito;Micaxisto e, em grau mais elevado, Gnaisse.
+O que são Auréolas de Metamorfismo;São as zonas de rocha transformada termicamente que se formam à volta de uma intrusão magmática (Metamorfismo de Contacto).
+Segundo a classificação genética, que tipo de rocha sedimentar é o Carvão e o Folhelho Betuminoso;São Rochas Biogénicas (Caustobiolitos).
+Qual é o principal tipo de rocha sedimentar clástica que funciona como excelente reservatório de petróleo e porquê;O Arenito, porque possui elevada porosidade e os espaços vazios estão geralmente interconectados (alta permeabilidade).
+Que tipo de rocha sedimentar quimiogénica atua frequentemente como selante em sistemas petrolíferos;Os Evaporitos, como o Sal-gema e a Anidrite.
+Qual é a diferença fundamental entre Solo Residual e Solo Sedimentar (Transportado);Solo Residual resulta da meteorização da rocha no próprio local (in situ). Solo Sedimentar resulta da meteorização, transporte e deposição num local diferente da rocha de origem.
+Segundo a ISRM (1978), qual a designação para uma rocha "Medianamente Alterada" (W3);Possui alguma resistência, mas os fragmentos não podem ser quebrados com a mão.
+O que caracteriza um maciço rochoso anisotrópico e heterogéneo;Anisotrópico: Comportamento varia conforme a direção. Heterogéneo: Formado por diferentes tipos de materiais/rochas com propriedades distintas.
+Na classificação textural das rochas sedimentares detríticas, qual o diâmetro mínimo de um clasto para ser classificado como "Cascalho" (e formar um Conglomerado);Diâmetro superior a 2 mm.
+Qual a diferença de granulometria entre o Silte e a Argila;Silte: 0,06 mm a 0,002 mm. Argila: Inferior a 0,002 mm.
+Na classificação da forma dos grãos de Zingg (1935), o que representam as variáveis L, I e S;L = Diâmetro Maior; I = Diâmetro Intermédio; S = Diâmetro Curto.
+O que mede a "Esfericidade" de uma partícula sedimentar;É uma medida de quão próxima a partícula está da forma de uma esfera perfeita.
+O que indica um alto grau de "Arredondamento" dos grãos numa rocha sedimentar;Indica que a partícula foi transportada por longas distâncias e sofreu grande abrasão (maior maturidade textural).
+Como se classifica no Sistema Unificado de Classificação de Solos (ASTM) um Pedregulho Bem Graduado com Argila;Símbolo do grupo: GW-GC.
+Qual o significado das siglas SPT e CPT em ensaios de campo para fundações;SPT: Standard Penetration Test (Sondagem à percussão). CPT: Cone Penetration Test (Ensaio de penetração de cone).
+Que tipo de informação fornece o Ensaio de Compressão Uniaxial em rochas;Determina o Módulo de Elasticidade e a Resistência à Compressão da rocha.
+Segundo o Capítulo 1, qual a definição exata de Juntas ou Diáclases;São fraturas nas rochas sem deslocamento perceptível dos blocos.
+Segundo o Capítulo 1, qual a definição exata de Falhas;São fraturas com torção e deslocamento relativo dos blocos em relação ao plano de fratura.
+Segundo o Capítulo 1, qual a definição exata de Dobras;São deformações que envolvem flexão, encurtamento acentuado e deformação interna da rocha.
+Quais são os seis objetivos específicos da Mecânica das Rochas listados no Capítulo 1;1. Caracterizar o comportamento mecânico das rochas; 2. Prever a estabilidade dos poços; 3. Mitigar riscos geomecânicos; 4. Optimizar a recuperação de petróleo; 5. Reduzir custos operacionais; 6. Garantir a segurança das operações.
+O que significa "Mitigar riscos geomecânicos" no contexto da perfuração de poços;Minimizar problemas como fraturamento indesejado, arenização (produção de areia) e subsidência.
+Quais são as disciplinas em estreita relação com a Mecânica das Rochas mencionadas no contexto geral;Geologia Estrutural e Mecânica dos Solos.
+Quais são as seis disciplinas específicas da indústria do petróleo que se relacionam com a Mecânica das Rochas;1. Geologia do Petróleo; 2. Geofísica; 3. Engenharia de Perfuração; 4. Engenharia de Reservatórios; 5. Petrofísica; 6. Fraturamento Hidráulico.
+Na construção de túneis, qual a diferença de comportamento entre um túnel perpendicular à direção das camadas e um túnel paralelo a essa direção;O texto apenas menciona que o estudo da estabilidade considera a orientação das camadas, mas não detalha o comportamento diferencial.
+Para o estudo da competência do terreno em fundações de grandes estruturas, quais são as cinco etapas metodológicas listadas;1. Levantamento Geológico e Geotécnico; 2. Ensaios em campo e laboratório; 3. Análise da Capacidade de Suporte e Estabilidade; 4. Escolha das Fundações Adequadas; 5. Medidas de Estabilização e Prevenção de Problemas.
+No Levantamento Geológico e Geotécnico, que aspectos da hidrogeologia são investigados;Investigação do nível do lençol freático e estudo da permeabilidade do solo e do fluxo de águas subterrâneas.
+Quais são os quatro tipos de Ensaios de Campo mencionados para fundações;1. Sondagem a percussão (SPT); 2. Ensaio de penetração de cone (CPT); 3. Ensaio de carga em placa; 4. Ensaio de consolidação.
+Quais são os quatro tipos de Ensaios de Laboratório mencionados para fundações;1. Análise granulométrica; 2. Limites de Atterberg; 3. Compactação (Proctor); 4. Resistência ao cisalhamento (Corte direto e Triaxial).
+Quais são os três tipos de recalque de fundações ilustrados no Capítulo 1;(a) Recalque uniforme; (b) Recalque diferencial de corpo rígido; (c) Recalque diferencial com distorção.
+No recalque diferencial com distorção, quais são as possíveis causas listadas;Diferença na resistência do solo, compressibilidade, humidade, carregamento desigual na estrutura ou rebaixamento do lençol freático.
+Na Engenharia de Minas, quais são as seis áreas de aplicação listadas;1. Estabilidade de escavações; 2. Dimensionamento de suporte; 3. Fragmentação e perfuração; 4. Controlo de pressões e deformações; 5. Drenagem; 6. Planeamento e recuperação ambiental.
+No dimensionamento de suporte em minas, que tipo de métodos de suporte são mencionados;Tirantes, concreto projetado e malhas metálicas.
+O que significa "Desmonte controlado" na mineração;Seleção de técnicas adequadas de desmonte com explosivos para minimizar vibrações e impactos ambientais.
+Quais as cinco aplicações da Mecânica das Rochas na Engenharia Ambiental e Energia listadas;1. Gestão de Resíduos e Armazenamento subterrâneo; 2. Energia Geotérmica; 3. Estabilidade de barragens e hidroelétricas; 4. Energia Eólica e Solar; 5. Proteção contra desastres naturais.
+O que significa a sigla CCS em gestão de resíduos;Captura e Armazenamento de Carbono (Carbon Capture and Storage).
+Na Energia Geotérmica, qual a técnica similar ao fraturamento hidráulico usada;Fraturar a rocha para aumento de permeabilidade e otimização da extração de calor.
+Qual o objetivo do monitoramento de sismicidade induzida em projetos geotérmicos;Prevenir pequenos terremotos gerados pelas operações.
+Na indústria petrolífera, o que significa a sigla PWD;Pressure While Drilling (Pressão Durante a Perfuração).
+O que é um "alargamento" do poço (Washout) e o que o causa;É o alargamento do diâmetro do poço causado pela ação mecânica da coluna de perfuração ou pela presença de formações moles facilmente laváveis pelo fluido.
+Como se define o fenómeno de "Perfuração de Formações Pressurizadas";Ocorre quando a poro-pressão é maior que a pressão do fluido, vencendo a resistência coesiva da rocha e lançando cascalhos para o poço.
+Qual a solução para perfurar formações móveis (ex.: sal) que fluem para o poço;Aumentar o peso do fluido de perfuração se possível ou assentar uma coluna de revestimento extra.
+O que causa a "ressonância" da coluna de perfuração e qual a consequência;Causada por altas velocidades de rotação ao encontrar intercalações duras, fazendo a coluna vibrar contra as paredes e provocando desmoronamentos.
+O que diz a Lei de Darcy (1856) citada no contexto de permeabilidade;A permeabilidade é diretamente proporcional aos vazios (porosidade) da rocha.
+Na estimulação de poços, qual o ácido comumente usado para limpar incrustações de carbonato de cálcio;Ácido Clorídrico (HCl).
+Qual a definição exata de Rocha segundo o Capítulo 2;Materiais sólidos, consolidados e constituídos naturalmente por um ou mais minerais, com características físicas e mecânicas específicas para cada tipo.
+O que são rochas porosas e impermeáveis;Rochas com muitos espaços vazios, mas sem conexão entre eles, impedindo o fluxo de fluidos.
+Qual a percentagem de ocorrência de Rochas Ígneas na crusta terrestre;Cerca de 20%.
+Qual a percentagem de ocorrência de Rochas Metamórficas na crusta terrestre;Cerca de 14%.
+Qual a percentagem de ocorrência de Rochas Sedimentares na crusta terrestre;Cerca de 66%.
+Qual é a textura típica das rochas ígneas plutónicas (intrusivas) e qual o nome técnico dessa textura;Textura fanerítica (cristais grossos visíveis a olho nu).
+Qual é a textura típica das rochas ígneas vulcânicas (extrusivas) e os dois nomes técnicos associados;Textura vítrea (material amorfo) ou afanítica (cristais muito finos).
+Dá três exemplos de rochas ígneas plutónicas;Granito, Gabro, Sienito.
+Dá dois exemplos de rochas ígneas vulcânicas;Basalto, Riólito (e Obsidiana).
+Na cristalização do magma, qual a ordem de cristalização dos minerais máficos vs félsicos;Os minerais máficos (escuros, pobres em sílica) cristalizam primeiro; os félsicos (claros, ricos em sílica) cristalizam por último.
+Quais são os dois principais tipos de metamorfismo descritos;Metamorfismo Regional e Metamorfismo de Contacto (Local).
+O que caracteriza o Metamorfismo Regional;Ocorre em extensas áreas, nos limites convergentes de placas, devido a elevadas pressões e temperaturas, provocando compactação e reorientação dos minerais.
+O que caracteriza o Metamorfismo de Contacto;Ocorre localmente, na auréola de contacto entre uma intrusão magmática e a rocha encaixante, devido ao aumento de temperatura que provoca recristalização.
+Que rocha metamórfica se forma a partir de calcário;Mármore.
+Que rocha metamórfica se forma a partir de arenito rico em quartzo;Quartzito.
+Qual é a rocha de origem mais comum para Ardósias, Filitos, Micaxistos e Gnaisses;Argilitos (rochas sedimentares argilosas).
+Qual é a classificação genética das Rochas Sedimentares;Clásticas (detríticas), Quimiogénicas e Biogénicas.
+O que são rochas sedimentares clásticas;Resultam do transporte, deposição e consolidação de sedimentos provenientes da erosão de rochas pré-existentes.
+O que são rochas sedimentares quimiogénicas;Resultam da precipitação química de substâncias dissolvidas na água.
+O que são rochas sedimentares biogénicas;Formam-se a partir da acumulação de matéria orgânica (restos vegetais e/ou animais).
+Que fatores do agente de transporte determinam a forma, tamanho e local de deposição dos sedimentos;Tipo de agente (rio, mar, vento), modo de transporte (dissolução, suspensão, saltação), tempo de transporte e frequência da atuação.
+Porque é que o Arenito é a rocha reservatório preferida;Porque possui espaços porosos grandes e interconectados que podem conter quantidades significativas de hidrocarbonetos.
+Qual a importância dos Evaporitos (Sal-gema, Gesso) nos sistemas petrolíferos;Podem atuar como rochas selantes impermeáveis, impedindo a migração do óleo e gás para fora do reservatório.
+Que tipo de rocha sedimentar é o Carvão;Rocha Biogénica (Caustobiolito - Humito).
+Que tipo de rocha sedimentar é o Folhelho (Shale) betuminoso;Rocha Biogénica rica em matéria orgânica, importante rocha geradora.
+Na classificação quanto à forma dos detritos, que agente de transporte está associado a formas "Cilíndricas";Rio.
+Na classificação quanto à forma dos detritos, que agente de transporte está associado a formas "Discóides";Mar.
+Na classificação quanto à forma dos detritos, que agente de transporte está associado a formas "Esféricas";Vento.
+A que ambiente sedimentar corresponde o agente de transporte "Vento" e que sedimentos produz;Ambiente Eólico ou Desértico; produz Areia e Silte.
+A que ambiente sedimentar corresponde o agente de transporte "Gelo" e que sedimentos produz;Ambiente Glacial; produz Areia, Cascalho e Argila (Till).
+Na tabela de Classificação Genética das Rochas Sedimentares, como se classificam os Calcários Recifais;São Rochas Bioquímicas Carbonatadas (formadas por calcite fabricada pelos corais).
+O que são Diatomitos;Rochas Bioquímicas Silicosas formadas por carapaças siliciosas de foraminíferos (diatomáceas).
+Como se caracteriza o aspeto de uma Rocha Ígnea;Maciço e compacto.
+Como se caracteriza a textura de uma Rocha Metamórfica;Grãos geralmente interconectados e com orientação preferencial.
+Como se caracteriza a forma das partículas nas Rochas Sedimentares;Formas arredondadas ou ovuladas, algumas vezes angulosas.
+Como se define "Solo Residual";Solo resultante da meteorização da rocha sem transporte das partículas (in situ).
+Como se define "Solo Sedimentar ou Transportado";Solo resultante da meteorização, transporte e deposição dos materiais num local diferente da sua origem.
+Quais são as cinco diferenças principais entre Rochas e Solos listadas no Capítulo 2;1. Elevada coesão interna das rochas; 2. Geração de superfícies de fratura nos processos de deformação; 3. Módulos de deformação altos; 4. Baixa permeabilidade; 5. Elevados valores de resistência à tração.
+Qual a designação e sigla do Grau de Alteração W5 segundo a ISRM (1978);W5 - Completamente Alterada (Decomposta, mas a textura original é ainda visível).
+Qual a designação e sigla do Grau de Alteração W3 segundo a ISRM (1978);W3 - Medianamente Alterada (Possui alguma resistência, mas os fragmentos não são quebrados com a mão).
+Qual a definição de "Matriz rochosa" num maciço rochoso;É o material rochoso isento de descontinuidades, ou os blocos de rocha intacta.
+Como se define "Descontinuidade" em Mecânica das Rochas;Qualquer plano que separa os blocos da matriz rochosa num maciço rochoso.
+O que significa "Heterogeneidade" num maciço rochoso;Materiais formados por elementos com características distintas.
+Quais são os cinco fatores geológicos que determinam o comportamento dos maciços rochosos;1. Litologia e propriedades da matriz; 2. Grau de alteração; 3. Estrutura geológica e descontinuidades; 4. Condições hidrogeológicas; 5. Estado de esforços aplicados.
+Qual a influência da água nos maciços rochosos;Reduz a resistência, gera pressões internas e altera as propriedades, dificultando as escavações.
+O que permite quantificar os ensaios de laboratório na matriz rochosa;A natureza da rocha; Resistência à ruptura; Deformação a curto e longo prazo; Influência da água; Comportamento face à meteorização; Comportamento ao longo do tempo.
+Na análise granulométrica (ASTM D422), qual o método usado para partículas >0.075 mm;Peneiração.
+Na análise granulométrica (ASTM D422), qual o método usado para partículas <0.075 mm;Sedimentação.
+Segundo a escala de Wentworth, qual o nome do sedimento com diâmetro entre 2 e 0.06 mm;Areia.
+Segundo a escala de Wentworth, qual o nome do sedimento com diâmetro entre 0.06 e 0.002 mm;Silte.
+Segundo a escala de Wentworth, qual o nome do sedimento com diâmetro inferior a 0.002 mm;Argila.
+Qual a rocha detrítica formada por cascalho (>2 mm);Conglomerado (se clastos arredondados) ou Brecha (se clastos angulares).
+Qual a rocha detrítica formada por silte;Siltito.
+Qual a rocha detrítica formada por argila;Argilito.
+O que indicam partículas angulares numa rocha sedimentar;Permanecem perto da sua fonte de origem (pouco transporte).
+O que indicam partículas esféricas e lisas numa rocha sedimentar;Indicam transporte prolongado por correntes de água ou vento.
+Segundo a classificação da forma de Zingg (1935), se I/L = 0.78 e S/I = 0.83, qual a forma do grão;Com base no diagrama de Zingg, seria classificado como "Esférico" ou "Equidimensional" (valores altos em ambos os eixos).
+Quais são as seis classes de arredondamento de partículas mencionadas;1. Muito Angular; 2. Angular; 3. Sub-angular; 4. Sub-arredondado; 5. Arredondado; 6. Bem arredondado.
+O que mede a "Esfericidade" de uma partícula segundo o método S/L vs (L-I)/(L-S);É a medida de quão próximo a partícula está da forma de uma esfera perfeita, utilizando a razão entre o diâmetro curto e o maior, e a razão das diferenças entre diâmetros.
+No Sistema Unificado de Classificação de Solos (ASTM), o que significa o símbolo "GW";Pedregulho bem graduado (Gravel, Well graded).
+No Sistema Unificado de Classificação de Solos (ASTM), o que significa o símbolo "SP";Areia mal graduada (Sand, Poorly graded).
+No Sistema Unificado de Classificação de Solos (ASTM), o que significa o símbolo "CL";Argila de baixa plasticidade (Clay, Low liquid limit).
+No Sistema Unificado de Classificação de Solos (ASTM), o que significa o símbolo "ML";Silte de baixa plasticidade (M silt, Low liquid limit).
+No Sistema Unificado, qual a condição para um solo ser classificado como Areia (S);Mais de 50% da fração grossa passa na peneira #4 (4.75 mm).
+No Sistema Unificado, qual a condição para um solo ser classificado como Pedregulho (G);Mais de 50% da fração grossa fica retida na peneira #4 (4.75 mm).
+No Sistema Unificado, o que significam as letras "P" e "W" nos símbolos de grupo;P = Poorly graded (mal graduado); W = Well graded (bem graduado).
+Quais são os coeficientes Cu e Cc usados na classificação unificada e suas fórmulas;Cu = D60 / D10 (Coeficiente de uniformidade); Cc = (D30)^2 / (D60 x D10) (Coeficiente de curvatura).
+Qual a condição de Cu e Cc para um Pedregulho ser considerado "Bem Graduado" (GW);Cu ≥ 4 e 1 ≤ Cc ≤ 3.
+Qual a condição de Cu e Cc para uma Areia ser considerada "Bem Graduada" (SW);Cu ≥ 6 e 1 ≤ Cc ≤ 3.
+Se um solo tem P#200 (finos) > 12% e o IP > 7 e pontos acima da Linha A, qual a classificação;CL (Argila magra/arenosa) ou CH (Argila gorda) dependendo do LL.
+O que significa a sigla "LL" e "IP" na classificação de solos;LL = Limite de Liquidez; IP = Índice de Plasticidade.

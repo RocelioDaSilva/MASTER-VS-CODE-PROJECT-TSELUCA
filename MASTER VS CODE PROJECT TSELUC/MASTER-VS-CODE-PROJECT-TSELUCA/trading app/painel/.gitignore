@@ -1,6 +1,0 @@
-# Painel de Busca de Ofertas
-
-Ignore node_modules
-.DS_Store
-.env.local
-.env.*.local

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+  <rect width="800" height="600" fill="#fff"/>
+  <text x="20" y="30" font-family="Arial" font-size="20">IoT protocol stack (placeholder)</text>
+  <g font-family="Arial" font-size="16" fill="#222">
+    <rect x="120" y="70" width="560" height="60" fill="#d9eaf7" stroke="#99c2e6"/>
+    <text x="140" y="105">Application Layer (MQTT, REST, custom APIs)</text>
+    <rect x="120" y="150" width="560" height="60" fill="#f3e8d9" stroke="#e1c89a"/>
+    <text x="140" y="185">Transport/Session (TCP/UDP, TLS)</text>
+    <rect x="120" y="230" width="560" height="60" fill="#e8f6e9" stroke="#b7e0b7"/>
+    <text x="140" y="265">Network/Link (LoRaWAN, 4G, Ethernet)</text>
+    <rect x="120" y="310" width="560" height="60" fill="#fbeef7" stroke="#f0c6e0"/>
+    <text x="140" y="345">Physical/Devices (Sensors, Gateways, Meters)</text>
+  </g>
+  <text x="20" y="580" font-size="12" fill="#666">Replace with IoT diagram from Wikimedia Commons (CC BY-SA) if available.</text>
+</svg>

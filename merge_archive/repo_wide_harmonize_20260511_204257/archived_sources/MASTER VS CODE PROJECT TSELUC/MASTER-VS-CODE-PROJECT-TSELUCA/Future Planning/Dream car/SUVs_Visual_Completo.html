@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 20 SUVs a Combustão - Guia Completo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        .filters {
+            padding: 30px;
+            background: #f8f9fa;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .car-card {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .car-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .ranking {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .car-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+        
+        .car-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .car-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .car-specs {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .consumption {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #333;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #333;
+            margin-top: auto;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .badge {
+            background: #f0f0f0;
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin: 40px 0 25px 0;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .consumption-bar {
+            display: inline-block;
+            background: #667eea;
+            height: 20px;
+            border-radius: 3px;
+            min-width: 30px;
+            text-align: center;
+            color: white;
+            font-size: 0.8em;
+            line-height: 20px;
+            font-weight: bold;
+        }
+        
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        
+        .medal {
+            display: inline-block;
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .filters {
+                flex-direction: column;
+            }
+            
+            .filter-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 TOP 20 SUVs a Combustão</h1>
+            <p><strong>Últimos 15 anos | Sem Híbridos | Priorizando: Confiabilidade, Manutenção, Economia e Conforto</strong></p>
+            <p style="margin-top: 15px; font-size: 0.95em;">Ordenados por Eficiência de Combustível | Brasil 2026</p>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterCars('todos')">📊 Todos os Modelos</button>
+            <button class="filter-btn" onclick="filterCars('top5')">🏆 Top 5 Economia</button>
+            <button class="filter-btn" onclick="filterCars('turbo')">⚡ Turbinados</button>
+            <button class="filter-btn" onclick="filterCars('diesel')">🛢️ Diesel</button>
+            <button class="filter-btn" onclick="filterCars('confiabilidade')">🛡️ Confiáveis</button>
+        </div>
+        
+        <div class="content">
+            <!-- TOP 5 -->
+            <h2 class="section-title">🏆 Top 5 Melhor Consumo de Combustível</h2>
+            <div class="grid" id="top5-grid">
+                <!-- Será preenchido por JavaScript -->
+            </div>
+            
+            <!-- TODOS -->
+            <h2 class="section-title">🚗 Lista Completa (20 Modelos)</h2>
+            <div class="grid" id="all-grid">
+                <!-- Será preenchido por JavaScript -->
+            </div>
+            
+            <!-- COMPARAÇÃO -->
+            <h2 class="section-title">📊 Tabela Comparativa Completa</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Modelo</th>
+                        <th>Motor</th>
+                        <th>Consumo Urbano</th>
+                        <th>Força Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1º</strong> 🥇</td>
+                        <td>Nissan Kicks</td>
+                        <td>1.6 flex</td>
+                        <td><div class="consumption-bar" style="width: 100%">10.5 km/l</div></td>
+                        <td>Líder em eficiência</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2º</strong> 🥈</td>
+                        <td>VW T-Cross / Nivus</td>
+                        <td>1.0 TSI</td>
+                        <td><div class="consumption-bar" style="width: 97%">10.2 km/l</div></td>
+                        <td>Turbo moderno</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3º</strong> 🥉</td>
+                        <td>Peugeot 2008</td>
+                        <td>1.0 Turbo</td>
+                        <td><div class="consumption-bar" style="width: 95%">10.0 km/l</div></td>
+                        <td>Motor PureTech</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4º</strong></td>
+                        <td>Fiat Pulse</td>
+                        <td>1.0 Turbo</td>
+                        <td><div class="consumption-bar" style="width: 94%">9.9 km/l</div></td>
+                        <td>Stellantis moderno</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5º</strong></td>
+                        <td>Hyundai Creta</td>
+                        <td>1.0 Turbo</td>
+                        <td><div class="consumption-bar" style="width: 92%">9.7 km/l</div></td>
+                        <td>TGDI eficiente</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- RECOMENDAÇÕES -->
+            <h2 class="section-title">💡 Recomendações por Perfil</h2>
+            
+            <div class="info-box">
+                <h3>💰 Para Menor Gasto com Combustível (Uso Misto)</h3>
+                <p><strong>1. Nissan Kicks</strong> - Líder isolado, aerodinâmica otimizada, câmbio CVT inteligente</p>
+                <p><strong>2. Volkswagen T-Cross / Nivus</strong> - Motor turbo de 3 cilindros, conforto premium</p>
+                <p><strong>3. Peugeot 2008</strong> - Tecnologia PureTech, design europeu, equipamentos modernos</p>
+                <p><strong>4. Fiat Pulse</strong> - Versátil, turbo T200 confiável, bom custo-benefício</p>
+                <p><strong>5. Hyundai Creta</strong> - Motor TGDI com qualidade coreana, confiabilidade comprovada</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>🔧 Para Manutenção Barata + Economia Equilibrada</h3>
+                <p><strong>Hyundai Creta 1.0 Turbo</strong> - Peças acessíveis, oficinas espalhadas</p>
+                <p><strong>Chevrolet Tracker</strong> - Rede GM consolidada em todo Brasil</p>
+                <p><strong>Renault Duster 1.6 Aspirado</strong> - Motor simples, manutenção previsível</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>🛣️ Para Quem Rode Muito (Melhor Custo/km)</h3>
+                <p><strong>Jeep Compass 2.0 Diesel</strong> - Autonomia até 1000km, economia em estrada</p>
+                <p><strong>Toyota SW4 2.8 Diesel</strong> - Motor durável, revenda garantida, autonomia superior</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>📅 Última atualização: Abril 2026 | 📊 Dados: Inmetro + Testes Imprensa Especializada</p>
+        <p>🔗 Arquivo original: SUVs_combustao_ordenados_por_consumo.md</p>
+    </footer>
+    
+    <script>
+        const cars = [
+            {
+                rank: 1,
+                name: 'Nissan Kicks',
+                motor: '1.6 flex',
+                consumo: '10,5 km/l',
+                image: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=400&h=250&fit=crop',
+                highlight: 'Líder isolado em eficiência, aerodinâmica otimizada',
+                badges: ['Melhor Consumo', 'Confiável', 'Brasil'],
+                tipo: 'top5',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 2,
+                name: 'VW T-Cross',
+                motor: '1.0 TSI',
+                consumo: '10,2 km/l',
+                image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400&h=250&fit=crop',
+                highlight: 'Turbo moderno, excelente equilíbrio potência/economia',
+                badges: ['Turbo', 'Premium', 'Economia'],
+                tipo: 'top5',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 3,
+                name: 'Peugeot 2008',
+                motor: '1.0 Turbo',
+                consumo: '10,0 km/l',
+                image: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=400&h=250&fit=crop',
+                highlight: 'Tecnologia PureTech, design europeu moderno',
+                badges: ['Turbo', 'Europeu', 'Economia'],
+                tipo: 'top5',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 4,
+                name: 'Fiat Pulse',
+                motor: '1.0 Turbo',
+                consumo: '9,9 km/l',
+                image: 'https://images.unsplash.com/photo-1526312426976-f48fea11fa38?w=400&h=250&fit=crop',
+                highlight: 'Motor T200 confiável, bom custo-benefício',
+                badges: ['Turbo', 'Acessível', 'Brasil'],
+                tipo: 'top5',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 5,
+                name: 'Hyundai Creta',
+                motor: '1.0 Turbo',
+                consumo: '9,7 km/l',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop',
+                highlight: 'Motor TGDI, qualidade coreana comprovada',
+                badges: ['Turbo', 'Confiável', 'Maintenção'],
+                tipo: 'top5',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 6,
+                name: 'Chevrolet Tracker',
+                motor: '1.0 Turbo',
+                consumo: '9,6 km/l',
+                image: 'https://images.unsplash.com/photo-1527969377281-f2e4205f442b?w=400&h=250&fit=crop',
+                highlight: 'Motor GM flex turbo, ótima rede de assistência',
+                badges: ['Turbo', 'GM Brasil', 'Suporte'],
+                tipo: 'todos',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 7,
+                name: 'Renault Captur',
+                motor: '1.6 aspirado',
+                consumo: '8,9 km/l',
+                image: 'https://images.unsplash.com/photo-1552898917-c1d4a46a8c5d?w=400&h=250&fit=crop',
+                highlight: 'Motor aspirado simples, manutenção acessível',
+                badges: ['Aspirado', 'Simples', 'Confiável'],
+                tipo: 'todos',
+                categoria: 'confiabilidade'
+            },
+            {
+                rank: 8,
+                name: 'Renault Duster',
+                motor: '1.6 aspirado',
+                consumo: '8,5 km/l',
+                image: 'https://images.unsplash.com/photo-1533473359331-35fba93db51a?w=400&h=250&fit=crop',
+                highlight: 'Robusto, manutenção previsível, bom para off-road',
+                badges: ['Aspirado', 'Robusto', 'Versátil'],
+                tipo: 'todos',
+                categoria: 'confiabilidade'
+            },
+            {
+                rank: 9,
+                name: 'Chery Tiggo 5x',
+                motor: '1.5 Turbo',
+                consumo: '8,3 km/l',
+                image: 'https://images.unsplash.com/photo-1567818735868-e71b99932e29?w=400&h=250&fit=crop',
+                highlight: 'Turbo injeção direta, espaço interno generoso',
+                badges: ['Turbo', 'Espaçoso', 'Novo'],
+                tipo: 'todos',
+                categoria: 'turbo'
+            },
+            {
+                rank: 10,
+                name: 'Jeep Compass',
+                motor: '1.3 Turbo',
+                consumo: '8,0 km/l',
+                image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop',
+                highlight: 'Versão turbo mais econômica que 2.0, bom posicionamento',
+                badges: ['Turbo', 'Premium', 'Jeep'],
+                tipo: 'todos',
+                categoria: 'turbo'
+            },
+            {
+                rank: 11,
+                name: 'Mitsubishi ASX',
+                motor: '2.0 aspirado',
+                consumo: '7,9 km/l',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop',
+                highlight: 'Câmbio CVT, motor durável, conforto de passeio',
+                badges: ['Aspirado', 'CVT', 'Durável'],
+                tipo: 'todos',
+                categoria: 'confiabilidade'
+            },
+            {
+                rank: 12,
+                name: 'Chevrolet Spin',
+                motor: '1.8 flex',
+                consumo: '7,6 km/l',
+                image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=250&fit=crop',
+                highlight: 'Espaço minivan, motor Ecotec confiável, manutenção barata',
+                badges: ['Flex', 'Espaçoso', 'Econômico'],
+                tipo: 'todos',
+                categoria: 'confiabilidade'
+            },
+            {
+                rank: 13,
+                name: 'Ford Territory',
+                motor: '1.8 Turbo',
+                consumo: '7,5 km/l',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop',
+                highlight: 'Turbo moderna, design moderno, tecnologia', 
+                badges: ['Turbo', 'Moderno', 'China'],
+                tipo: 'todos',
+                categoria: 'turbo'
+            },
+            {
+                rank: 14,
+                name: 'Hyundai Tucson',
+                motor: '2.0 aspirado',
+                consumo: '7,4 km/l',
+                image: 'https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=400&h=250&fit=crop',
+                highlight: 'Modelo anterior, motor flex confiável, consumo médio',
+                badges: ['Aspirado', 'Flex', 'Confiável'],
+                tipo: 'todos',
+                categoria: 'confiabilidade'
+            },
+            {
+                rank: 15,
+                name: 'Honda CR-V',
+                motor: '1.5 Turbo / 2.0 asp',
+                consumo: '7,2 km/l',
+                image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400&h=250&fit=crop',
+                highlight: 'Motor turbo moderno, confiabilidade Honda comprovada',
+                badges: ['Turbo', 'Confiável', 'Tecnologia'],
+                tipo: 'todos',
+                categoria: 'turbo confiabilidade'
+            },
+            {
+                rank: 16,
+                name: 'Nissan X-Trail',
+                motor: '2.5 aspirado',
+                consumo: '6,9 km/l',
+                image: 'https://images.unsplash.com/photo-1527969377281-f2e4205f442b?w=400&h=250&fit=crop',
+                highlight: 'Motor 4-cilindros, robusto, comfort ride, confiável',
+                badges: ['Aspirado', 'Robusto', 'Conforto'],
+                tipo: 'todos',
+                categoria: 'confiabilidade'
+            },
+            {
+                rank: 17,
+                name: 'Jeep Compass Diesel',
+                motor: '2.0 Diesel',
+                consumo: '10,5 km/l*',
+                image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop',
+                highlight: 'Melhor autonomia em estrada, melhor custo/km para rodagem alta',
+                badges: ['Diesel', 'Econômico', 'Estrada'],
+                tipo: 'diesel',
+                categoria: 'diesel'
+            },
+            {
+                rank: 18,
+                name: 'Chevrolet Trailblazer Diesel',
+                motor: '2.8 Diesel',
+                consumo: '8,0 km/l*',
+                image: 'https://images.unsplash.com/photo-1527969377281-f2e4205f442b?w=400&h=250&fit=crop',
+                highlight: 'Motor Durmax robusto, grande porte, muito durável',
+                badges: ['Diesel', 'Grande', 'Durável'],
+                tipo: 'diesel',
+                categoria: 'diesel'
+            },
+            {
+                rank: 19,
+                name: 'Mitsubishi Pajero Sport Diesel',
+                motor: '2.4 Diesel',
+                consumo: '7,8 km/l*',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop',
+                highlight: 'Turbodiesel moderno, capacidade off-road, confiável',
+                badges: ['Diesel', 'Off-road', 'Confiável'],
+                tipo: 'diesel',
+                categoria: 'diesel'
+            },
+            {
+                rank: 20,
+                name: 'Toyota SW4 Diesel',
+                motor: '2.8 Diesel',
+                consumo: '7,5 km/l*',
+                image: 'https://images.unsplash.com/photo-1533473359331-35fba93db51a?w=400&h=250&fit=crop',
+                highlight: 'Motor diesel resistente, revenda garantida, autonomia superior',
+                badges: ['Diesel', 'Premium', 'Durável'],
+                tipo: 'diesel',
+                categoria: 'diesel'
+            }
+        ];
+        
+        function createCarCard(car) {
+            return `
+                <div class="car-card">
+                    <div class="ranking">
+                        ${car.rank === 1 ? '🥇' : car.rank === 2 ? '🥈' : car.rank === 3 ? '🥉' : car.rank}
+                    </div>
+                    <img src="${car.image}" alt="${car.name}" class="car-image" onerror="this.src='https://via.placeholder.com/400x250?text=${encodeURIComponent(car.name)}'">
+                    <div class="car-info">
+                        <div class="car-name">${car.name}</div>
+                        <div class="car-specs">
+                            <strong>Motor:</strong> ${car.motor}<br>
+                            <strong>Transmissão:</strong> Automático
+                        </div>
+                        <div class="consumption">⛽ ${car.consumo}</div>
+                        <div class="highlight">
+                            "${car.highlight}"
+                        </div>
+                        <div class="badges">
+                            ${car.badges.map(b => `<span class="badge">${b}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function filterCars(type) {
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Filter and display cars
+            let filtered = cars;
+            
+            if (type === 'top5') {
+                filtered = cars.filter(c => c.tipo === 'top5');
+            } else if (type === 'turbo') {
+                filtered = cars.filter(c => c.categoria.includes('turbo'));
+            } else if (type === 'diesel') {
+                filtered = cars.filter(c => c.tipo === 'diesel');
+            } else if (type === 'confiabilidade') {
+                filtered = cars.filter(c => c.categoria.includes('confiabilidade'));
+            }
+            
+            // Update display
+            const top5Grid = document.getElementById('top5-grid');
+            const allGrid = document.getElementById('all-grid');
+            
+            top5Grid.innerHTML = cars.filter(c => c.tipo === 'top5').map(createCarCard).join('');
+            allGrid.innerHTML = filtered.map(createCarCard).join('');
+            
+            // Scroll para conteúdo
+            setTimeout(() => {
+                allGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const top5Grid = document.getElementById('top5-grid');
+            const allGrid = document.getElementById('all-grid');
+            
+            top5Grid.innerHTML = cars.filter(c => c.tipo === 'top5').map(createCarCard).join('');
+            allGrid.innerHTML = cars.map(createCarCard).join('');
+        });
+    </script>
+</body>
+</html>

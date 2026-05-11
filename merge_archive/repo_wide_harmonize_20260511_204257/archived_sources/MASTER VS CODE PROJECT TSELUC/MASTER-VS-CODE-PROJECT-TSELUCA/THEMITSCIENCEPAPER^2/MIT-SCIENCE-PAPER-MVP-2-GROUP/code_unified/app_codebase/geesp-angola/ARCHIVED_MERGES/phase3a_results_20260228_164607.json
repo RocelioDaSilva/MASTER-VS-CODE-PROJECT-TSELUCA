@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-02-28T16:46:07.800925",
+  "phase": "3A",
+  "categories": {
+    "MCDA Extended": {
+      "status": "ERROR",
+      "coverage": null,
+      "target": 90.0,
+      "time": 18.020775318145752,
+      "passed": false
+    },
+    "LCOE Extended": {
+      "status": "ERROR",
+      "coverage": null,
+      "target": 90.0,
+      "time": 16.319142818450928,
+      "passed": false
+    },
+    "Config & Validators": {
+      "status": "ERROR",
+      "coverage": null,
+      "target": 85.0,
+      "time": 16.703928232192993,
+      "passed": false
+    },
+    "Error Handling": {
+      "status": "ERROR",
+      "coverage": null,
+      "target": 85.0,
+      "time": 11.25124216079712,
+      "passed": false
+    }
+  },
+  "average_coverage": 0,
+  "objectives_completed": 0,
+  "total_objectives": 4
+}

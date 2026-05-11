@@ -1,0 +1,206 @@
+# Merged Artifact: chapter-29-refugee-village-burning.md
+
+This file preserves all source content exactly.
+
+## Sources
+
+- manuscript/Chapters/drafts/Chapter-29-Refugee-Village-Burning.md (sha256: 4f60ec39a7a9b2f9b1010f9127be44b7861b41e2a6e163ff998cc19e79985d10)
+- manuscript/Chapters/finals/Chapter-29-Refugee-Village-Burning.md (sha256: e53d7fb2ecea38fe5ff31e19be803bfd40274c11488dd6fba10a48cfcc9dc024)
+
+---
+
+## Source: manuscript/Chapters/drafts/Chapter-29-Refugee-Village-Burning.md
+
+---
+Title: The Refugee Village Burning
+ChapterID: Chapter-29
+POV: Multiple
+Age: Various
+CanonicalAge: "Various: multiple ages"
+POVPairing: "Ensemble / Multiple"
+Word Target: short draft (~240 words)
+status: Draft
+updated: 2026-04-16
+---
+
+The evacuation order read like deliberate cruelty: burn, clear, and mark the zone. The village's roofs became orange halos, and people who had days ago sung around fires now carried what little they could salvage. 
+
+The narrative follows a family—mother, father, child—who choose different escape routes. One man stays behind to misdirect officers; the child carries a toy that will be lost in ash. The scene shows the bureaucratic steps behind violence and the visceral consequences for ordinary people. 
+
+Aisen's unit arrives too late to save structures but manages to shepherd several families to a hidden path. The action is not heroic in cinematic terms; it is an accumulation of small choices that save a handful of lives. 
+
+After, the survivors huddle in a grove, naming losses aloud. The Covenant's policy had succeeded at erasure, but it had also catalyzed something else—community, hardened into resolve.
+
+---
+
+## Source: manuscript/Chapters/finals/Chapter-29-Refugee-Village-Burning.md
+
+---
+Title: The Refugee Village Burning
+ChapterID: Chapter-29
+POV: Aisen
+Age: 19
+CanonicalAge: "Aisen: 19"
+POVPairing: "Aisen / Ensemble"
+Word Target: ~2,500-3,000 words
+AnchorPoints: Burning of refugee settlement, Aisen forced to act, families separated, chain-spear navigation, fire motif darkened, observation fails to prevent harm, connection to Emma and Davan
+Chronology: Act II – Border Garrison / Military Service
+Tags: refugees, burning, covenant-violence, chain-spear, fire-motif, rescue, cost, moral-injury, Davan, Emma
+status: Draft
+updated: 2026-04-16
+---
+
+The order arrived at the garrison in the fourth hour, written on folio paper with the Covenant's regional seal pressed into indigo wax, and it used the word *clearance*.
+
+Not *burning*. Not *destruction*. Not *the systematic elimination of a settlement containing approximately one hundred and fifty people, many of whom had been displaced once already and who had rebuilt with materials salvaged from previous displacements and who would, after this morning, have nothing left to salvage*. The word was *clearance*, and the folio specified the target as Settlement 6-North, a designation that replaced the name the people who lived there used—Brannfeld, which meant *burned ground* in the old northern dialect, a name that had referred to the land-clearing fires of two generations past and that would, by nightfall, refer to something else entirely.
+
+Sergeant Dahl read the order to the assembled detail at the fourth hour and fifteen minutes. His voice was flat—not the flatness of indifference but the flatness of a man who had read similar orders before and who had learned that the voice must go flat or it would go somewhere else, somewhere that the Covenant's chain of command did not accommodate. Around Aisen, the other conscripts received the briefing in their various postures of obedience: Harren, who was twenty and thick-necked and who followed orders with the reliable blankness of someone who had discovered that thought was optional and less costly than its alternative; Pell, who was eighteen and who bit his lower lip during the briefing in a way that would leave it bleeding by the time they marched; Torssen, who was twenty-three and who stared at a point on the wall behind Dahl's head with an expression that Aisen recognised as the deliberate emptying of a face that would otherwise show something inadmissible.
+
+"Security operation," Dahl said. "Settlement 6-North has been designated non-compliant with border resettlement protocols. Intel suggests the settlement is being used as a staging point for unauthorized border crossings. Our detail provides perimeter support. The clearance team handles the interior."
+
+Perimeter support. Another phrase. The border collected phrases the way the camp collected mud—inevitably, continuously, each one settling over the thing it covered and obscuring its shape.
+
+The march to Brannfeld took forty minutes through air so cold it turned breath into a visible act, each exhalation a small surrender of warmth that the wind collected and dispersed before it rose a handspan from the face that produced it. The Ashenmarch was grey this morning—not the grey of cloud cover, which had texture and movement, but the grey of a sky that had given up on colour, the light arriving without commitment, illuminating without warming, the particular late-winter greyness that was not absence of light but absence of will, the sky performing the minimum function of a sky and nothing more.
+
+Aisen smelled the settlement before he saw it. Woodsmoke—not the sharp, clean woodsmoke of a well-tended fire but the diffuse, layered smokiness of a place where many small fires burned simultaneously in structures too close together, the accumulated exhalation of a community that heated itself with whatever burned. Beneath the smoke, the familiar composition of displacement: latrine trenches, animal pens, the sourness of bodies and the sweetness of cooking grain, the olfactory signature that every refugee settlement on the border shared regardless of its inhabitants, because displacement produced its own chemistry and that chemistry was universal.
+
+They crested the ridge and Brannfeld appeared below.
+
+It was smaller than the main camp—perhaps forty structures arranged not in the administrative grid of the Covenant's design but in the organic clustering of people who had chosen where to build based on drainage and wind shelter and proximity to the people they trusted, the spatial grammar of community rather than management. The structures were improvised: timber frames with canvas and hide stretched over them, some with salvaged planking, a few with actual walls of stacked stone and packed earth that represented weeks of labour and the stubborn insistence that shelter could be built from what the land offered when the system offered nothing. Smoke rose from a dozen points. A path wound between structures toward a central clearing where Aisen could see a well and, beside it, a woman hanging cloth to dry on a rope strung between two posts.
+
+The woman was Emma Vasik.
+
+He knew her at three hundred paces—not by her face, which was too distant to resolve, but by the economy of her movement, the way she reached and pulled and pinned with the practised automaticity of a woman who had performed domestic work all her life and who performed it still because the alternative was stillness and stillness invited the thoughts that work kept at bay. The burn scar on her neck would be there if he were close enough to see it. The child—her daughter—would be nearby, because Emma did not let the daughter out of arm's reach, a radius of protection that she maintained the way other people maintained breathing: constantly, unconsciously, without negotiation.
+
+She had been in the drying barn in Ashenmere. She had told them about Thessaly. She had walked sixteen miles carrying her daughter and had arrived with three days' thirst and a story that Aisen had written into his journal in handwriting tighter than his usual—the testimony of a woman whose bakery had been assessed by a clerk with a ledger, whose village had been declared non-viable, whose life had been translated from the language of bread and stone floors into the language of processing and consolidation. He had written those words and kept them and carried the journal with him to the border, and now Emma Vasik was in the settlement below, and the clearance team was assembling at the eastern tree line, and the word on the folio was *clearance*, and Aisen felt something alter in his chest—not break, not crack, but shift, the way a foundation shifts when the ground beneath it changes composition, a structural adjustment that changed the relationship between the building and the earth it stood on.
+
+"Perimeter positions," Dahl said. "Korv, you're on the northwestern approach with Torssen. Nobody enters, nobody leaves until the clearance team signals all-clear."
+
+Nobody leaves.
+
+Aisen took his position. The chain-spear at his hip was cold against his thigh through the leather wrapping, the weight of it familiar in the way that all daily carried objects become familiar—not noticed until the moment when its presence acquires new meaning, when the tool that has been a tool becomes a question about what a tool is for.
+
+The clearance team entered the settlement from the east at the fifth hour.
+
+They moved with the precision of men performing a rehearsed action—not the precision of soldiers in combat, which was reactive and adaptive, but the administrative precision of a procedure being executed according to specification. There were twelve of them. They carried torches. Not lit—not yet—but held in the grip that anticipated lighting, the posture of men who knew what the next step was and were waiting for the signal that would make it current.
+
+The signal was a whistle. One short note, high-pitched, military-standard, the same whistle that signalled formation changes and watch rotations and all the other regimented moments of garrison life. The whistle that meant *begin*.
+
+The first torch was lit with flint and char cloth, and the flame caught with the yellow-orange eagerness of a fire that had been given something to eat. The torchbearer walked to the nearest structure—a timber-and-canvas shelter on the settlement's eastern edge—and touched the flame to the canvas wall.
+
+Canvas burned fast. This was a fact Aisen knew from supply logistics: canvas was treated against rain but not against fire, and the treatment—tallow-based, flammable—actually accelerated combustion, which meant that the material chosen for its capacity to shelter from weather was the material most efficiently destroyed by the method the Covenant had chosen to implement its clearance. There was a logic to this. The logic was monstrous, and it was logic, and the two qualities coexisted the way they always coexisted in the Covenant's operations, each one making the other worse.
+
+The wall caught. The flame climbed. Inside the shelter, someone screamed.
+
+The scream was not a word. It was a sound that preceded language—the vocal expression of a nervous system receiving information that it could not process through the channels that produced speech, the body making noise because noise was all it had. It was followed by movement: people erupting from the shelter's entrance flap, a man carrying a bundle of cloth that was everything he owned, a woman pulling two children by the hands, the children stumbling because their legs were short and the ground was frozen and the urgency in their mother's grip was a force they were not built to match.
+
+The clearance team moved to the next structure. And the next. The torches advanced in a line, and behind the line the fires grew, and the fires were not separate but were becoming singular, the individual flames finding each other through the proximity of structures that had been built close together for warmth—the very instinct that had made the settlement liveable now making it combustible, the architecture of survival converted into the architecture of destruction by the addition of a single element.
+
+Aisen's position was two hundred paces from the settlement's northwest edge. At that distance, the heat was not yet physical but the light was—a growing orange that overlay the morning's grey, the fire's illumination replacing the sky's, warmer in colour and colder in meaning, the light of destruction colonising the light of day. The smoke rose in columns that the wind bent south, and the smell hit the perimeter positions in waves: burning canvas, burning wood, burning hide, burning grain, burning cloth, the accumulated combustion of everything a community had built and stored and saved, each material contributing its own chemical note to the composition of erasure.
+
+And people. People running.
+
+They poured from the settlement in the patterns that panic produces—not orderly, not random, but the fluid chaos of a group whose individual members were each solving the same problem with different information, each person running toward the exit they knew or the direction they trusted or simply away, away from the heat, away from the sound of their homes becoming fuel. Mothers with children. Men carrying the elderly. A boy—
+
+Davan.
+
+Aisen saw him emerge from the settlement's northern edge, running alone, his thin body moving with the frantic efficiency of a child who had learned to run from things before he had learned what he was running from. The mud-wall builder. The boy from Tent F-3 whose parents had told him to run north and who had run, and who had been found building fortifications from mud in a camp that was not permanent, and who was now running again because the settlement where he had landed after the camp was burning behind him and the only lesson the world had taught him was that running was what you did.
+
+He was heading northwest. Toward Aisen's position. Toward the perimeter that Aisen was ordered to hold, through which nobody was supposed to leave.
+
+"Contact northwest," Torssen said, his voice carrying the professional neutrality of a soldier reporting a datum. "One minor. Shall I intercept?"
+
+The word *intercept* applied to an eight-year-old boy.
+
+"No," Aisen said.
+
+Torssen looked at him. The look lasted one second—the duration in which Torssen's obedience to procedure and his obedience to the hierarchy within the detail negotiated with each other, the two systems of compliance conducting their brief arbitration. Aisen outranked Torssen by nothing—they were both conscripts—but the detail's internal structure was not rank but something closer to the economies Aisen had observed in every group: who spoke with authority, who others deferred to, who had demonstrated competence sufficient to earn the delegation of decision. Aisen had spent weeks improving the camp's distribution. He had earned the deference of someone who had spent those weeks following instructions.
+
+Torssen looked away. Davan ran through the perimeter gap between them, his bare feet—bare feet, in winter, the boy had lost his boots somewhere in the burning—slapping against the frozen ground with a sound that was small and rhythmic and terrible in its smallness, the sound of a child's body performing the only survival function it knew.
+
+"I'm going in," Aisen said.
+
+"Korv—"
+
+"Hold the position. I'm going in."
+
+He unhooked the chain-spear from his belt as he moved down the ridge toward the settlement. The weapon extended to its full length in his hands, the chain links cold even through the grip wrapping, the spear tip catching the firelight as he entered the zone where the heat became physical—a wall of warmth that met the cold air and produced a wind of its own, the fire breathing in oxygen from the surrounding atmosphere and exhaling smoke and heat in a convection that turned the settlement's clearings into corridors of turbulence, the air itself becoming unpredictable.
+
+He used the spear the way he used everything: as an instrument of observation first and action second. The chain's length gave him reach to test structures before approaching—hooking a timber frame to assess whether it would hold or collapse, pulling debris from a path before it fell on someone running below. His mind mapped the settlement the way it had mapped the camp's distribution system: identifying flows, bottlenecks, the places where people accumulated and the routes where they could be redirected.
+
+The central clearing was chaos. Thirty, forty people milling in a space that was filling with smoke, the well at the centre a landmark that people clustered around the way drowning people cluster around floating debris—not because it offered safety but because it offered orientation, a fixed point in a landscape that was becoming unrecognisable as the structures that defined it burned. The clearance team had moved through the eastern half and was advancing west. Their torches were redundant now—the fire carried itself, structure to structure, the flames jumping the narrow gaps between shelters with the ease of something that had found its purpose.
+
+"Northwest path," Aisen shouted. His voice competed with the fire's roar—not a single sound but a continuous exhale, the deep-throated breathing of combustion consuming air faster than the surrounding atmosphere could replace it. "Northwest is clear. Move northwest."
+
+Some heard him. Some didn't. A woman with a child on her hip pushed past him, her face a mask of soot and terror, the child's face buried in her neck. An old man stood in front of a burning structure and did not move, his hands at his sides, his eyes fixed on the fire with an expression that was not shock but recognition—the face of someone watching a thing happen that they had known would happen, the confirmation arriving not as surprise but as the final settlement of a debt that had been accumulating since the first time he had been forced to leave a place.
+
+Aisen grabbed his arm. The old man's eyes moved to him—slow, the pupils contracted against the firelight and reflecting flame. "Sir. Northwest path. You need to move."
+
+"My wife's medicine chest." The old man's voice was quiet and precise, the words organised with the care of someone for whom language still mattered, even now. "In the back room. She needs it."
+
+"Is she—"
+
+"She's outside. By the well. But she'll need the chest. It has her heartseed tincture. Without it, the cold—"
+
+Aisen did not calculate. He hooked the chain-spear to the structure's door frame and pulled. The frame held—the timber was burning at the top but the base was still sound. He ducked under the chain, entered the structure at a crouch, and found the chest in the back corner: a small wooden box, latched, warm to the touch but not burning, the wood dense enough to have resisted the fire's advance for the minutes it had taken the walls around it to catch. He grabbed it and backed out as the roof's central beam cracked above him—a sound like a bone breaking, deep and structural, the timber giving up its integrity in a single report that preceded collapse by perhaps two seconds.
+
+He was clear when the roof fell. The heat of the collapse washed over his back—a physical shove of superheated air that pushed him forward three steps and singed the hair on his neck. The medicine chest was in his hands. He gave it to the old man. The old man clutched it and turned toward the well without speaking, his body obeying the imperative that Aisen's words had not managed to convey but the medicine chest did: *your wife needs you to move*.
+
+The smoke was thickening. Aisen's eyes streamed. His lungs, which had been processing the heated air with increasing difficulty, began to reject it—the first cough arrived involuntarily, a spasm that bent him double, and the second was worse, productive, his body attempting to expel what it had been forced to inhale. He pulled his collar over his mouth and breathed through the fabric, which filtered nothing but the largest particles and gave the psychological comfort of a barrier between himself and the air that was trying to kill him.
+
+He found Emma at the well.
+
+She was standing—not collapsed against a wall this time, not at the end of her body's capacity, but standing with the rigid posture of a woman whose body was fully committed to a single purpose, and the purpose was the child in her arms. Her daughter was perhaps five now—taller than the sleeping bundle Aisen remembered from the drying barn, her face visible over Emma's shoulder, eyes wide and blank with the particular blankness of a child whose capacity for fear had been exhausted and who had entered the null space beyond it, the place where the nervous system stops producing responses because it has run out of responses to produce.
+
+"Emma." His voice was hoarse. "Northwest. There's a gap in the perimeter."
+
+She looked at him. The recognition took a moment—he was soot-covered, his uniform barely distinguishable from the ash-grey of everything else, and the last time she had seen him he had been a boy with a journal in a barn that smelled of leather and garlic. But the recognition came, and when it came it brought something that Aisen had not expected: not relief but fury.
+
+"They burned Thessaly," she said, her voice carrying over the roar with the clarity of someone speaking from a place past the need to shout. "They burned Thessaly. And now they burn this."
+
+"I know. Northwest. Now."
+
+He gathered seven people. That was the number. Seven, out of the hundred and fifty who had lived in Brannfeld that morning—seven whom he could physically direct, whose attention he could capture in the smoke and noise and terror, whom he could shepherd through the northwest gap where Torssen stood having decided not to see them pass, the soldier's eyes fixed on the treeline with the determined blindness of a man choosing which order to obey and choosing the one that allowed him to remain a man.
+
+Seven. Emma and her daughter. The old man and his wife, who clutched her medicine chest with both hands and walked with the tiny, careful steps of someone whose body was failing but whose will was not. A young couple—sixteen, seventeen, holding hands with grips that left white marks on their knuckles, their faces identically streaked with soot and tears. And a woman Aisen did not know, who carried nothing but herself and who walked with the haunted automaticity of someone whose possessions and connections and reasons for being in a specific place had all burned and who was now a body moving through space without a destination, because destination required a future and she had not yet rebuilt one.
+
+Seven out of a hundred and fifty.
+
+The mathematics of it settled into Aisen's chest as he led them into the tree line northwest of Brannfeld, the frozen ground crunching under feet that were blistered and bare and booted in various states of inadequacy. Behind them, the settlement roared. The sound of it was not diminishing with distance because fire, once it reached a certain magnitude, generated its own acoustics—a sustained exhalation that carried through cold air with the persistence of a fact that refused to be left behind. The smoke column rose hundreds of feet, visible for miles, a vertical scar on the grey sky that would be seen from the garrison and from the main camp and from every other settlement on the border, and the seeing of it would communicate what the folio's language had obscured: that *clearance* meant *burning*, that *security operation* meant *destruction*, that the Covenant's words and the Covenant's actions occupied different vocabularies and the distance between them was measured in human lives.
+
+He found a grove of black pine a quarter mile from the settlement—dense enough for concealment, the canopy thick enough to block the smoke column's sight line from the road, the ground beneath carpeted with dead needles that were cold but dry. The old man's wife sat first, her back against a trunk, and her husband sat beside her and opened the medicine chest and administered the heartseed tincture with hands that shook—not from cold, though the cold was absolute, but from the specific tremor of someone performing a precise action while the rest of their body processed an experience that precision could not contain.
+
+Emma sat with her daughter in her lap and rocked, not singing, not speaking, just the motion—the ancient, preverbal rhythm of comfort that precedes language and survives after language fails, the body's oldest response to a child's terror. The daughter's face was pressed into Emma's shoulder. The burn scar on Emma's neck—the scar from Thessaly, from the thing that came out of the tree line that looked like a dog but wasn't—was visible above her collar, pink and puckered and still mending, which meant that Emma Vasik's body was still healing from the last time a place she lived was destroyed, her skin had not yet finished knitting itself back together before the Covenant burned this place too.
+
+The young couple held each other in silence. The woman who carried nothing stood apart, looking back through the trees toward the orange glow that pulsed between the trunks, her face unreadable, her stillness absolute.
+
+Seven people in a grove of black pine, and the sound of a settlement burning, and the cold air that surrounded them carrying the smell of ash and canvas and the chemical signature of possessions that had been grain and cloth and leather and medicine and tools and toys—a child's toy, a small carved horse that Aisen had seen on the ground as they fled, half-buried in mud that was melting from the fire's radial heat, the toy abandoned because hands that carry children cannot also carry horses, the mathematics of flight reducing what a person possesses to what a person can hold.
+
+Davan was not among the seven.
+
+Aisen had seen him run through the perimeter. He had not seen where the boy went after. He told himself the boy was alive—the boy who built mud walls, the boy who ran north because his parents told him to, the boy who had been running since the autumn offensive and who was, perhaps, still running, somewhere in the frozen landscape beyond the tree line, bare feet on frozen ground, an eight-year-old node in the Covenant's logistical architecture experiencing the thing that the architecture's language was designed to prevent him from being called: a child who had been burned out of his third home.
+
+Aisen stood at the grove's edge and watched the fire. The flames had merged into a single conflagration now, the individual structures no longer distinguishable, the settlement becoming one thing—a fire, just a fire, the specificity of what it consumed erased by the generality of what consumed it. The heat reached him even here, a quarter mile distant—a faint warmth on his soot-streaked face that was the ghost of the inferno, the last residue of all those small fires that had warmed all those small shelters arriving at his skin as a reminder that fire was fire, that the element did not distinguish between the flame that cooked a meal and the flame that ate a home, that the difference existed only in the hands that directed it and the orders that those hands obeyed.
+
+The recurring motif. Fire. It had been warmth in the tavern of his childhood, the hearth's orange tongue licking the darkness back from the common room where traders told stories and his mother's stew thickened in the pot. It had been utility at the academy—the forge fires of the armoury, the coal braziers in the lecture halls, the contained and purposeful burning of a fuel converted to a function. It had been survival at the camp—Kaelen's careful fires, the cookfires in the refugee rows, the warmth-as-resource that the cold extracted and the fire replaced. He had grown up in fire's company. He had never been afraid of it.
+
+He was afraid of it now.
+
+Not of the flames—of what the flames meant when directed by a system that had converted *clearance* into *burning* and *security* into *destruction* and *people* into *logistical events* that could be resolved with torches and a whistle. The fire was the Covenant's grammar made physical, the administrative language translated into light and heat and the sound of a hundred and fifty lives being reclassified from *inhabitants* to *displaced*, the word performing in reality the function it performed on the folio: erasing what was there and replacing it with what the system required.
+
+He had observed. He had mapped and counted and cross-referenced. He had improved the distribution system at the camp by six percent. He had fed a boy supplemental rations from the spoilage margin. He had noticed things—the chit discrepancies, the allocation gaps, the informal economies of resistance that formed in the spaces the system left unmanaged. He had noticed all of it. And the noticing had not prevented this, because observation was not intervention, and the distance between seeing and stopping was the distance between a perimeter position and a burning settlement, the distance Aisen had crossed too late and with too little force to save more than seven.
+
+Seven.
+
+The number was a wound. It would remain a wound. It would not heal the way the burn scar on Emma's neck was healing, slowly, with scar tissue that changed the shape of the surface it sealed, because seven was not a number that could be scarred over. It was a number that would stay open—a permanent deficit, the arithmetic of rescue subtracted from the arithmetic of loss, the remainder being a hundred and forty-three people whose names he did not know and whose fates he could not track and whose absence from his count was the precise measure of his insufficiency.
+
+Behind him, in the grove, the old man's wife coughed—a deep, rattling sound that came from a chest already compromised before the smoke and would be worse after. Her husband murmured to her. Emma rocked her daughter. The young couple breathed together in the rhythm that people find when they are trying not to fall apart and have discovered that synchronised breathing is a structure that holds.
+
+Aisen did not return to the perimeter. He stayed in the grove until the fire burned down and the smoke thinned and the grey sky reasserted itself over the orange, the ordinary light replacing the terrible one with the indifference of a system that did not distinguish between the light produced by a sun and the light produced by a burning home. He stayed because the seven people in the grove needed someone between them and the road, and because Torssen would not report him—Torssen, who had looked away while a child ran through the gap, had already made his choice about which version of obedience he could live with—and because leaving would mean returning to the garrison and writing a report that used the word *clearance* about a thing that was *burning* and Aisen was not yet ready to translate his experience into the Covenant's language.
+
+Not yet. But he would have to. The system required its reports the way the fire required its fuel, and the system, like the fire, did not care what it consumed.
+
+He sat in the grove with the seven, and the cold came, and the ash settled, and the smell of Brannfeld's burning folded into the air the way all the border's violences folded into the air—becoming atmosphere, becoming the thing you breathed, becoming the composition of the world you lived in until you could no longer distinguish between the air and what had been done to produce it.
+
+---
+
